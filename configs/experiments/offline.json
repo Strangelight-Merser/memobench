@@ -1,0 +1,8 @@
+{
+  "dataset": "data/v0.2",
+  "split": "dev",
+  "mode": "component",
+  "execution": "offline",
+  "adapter": "full-history-fixture",
+  "reader": "echo-fixture"
+}

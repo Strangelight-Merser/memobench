@@ -6,7 +6,8 @@ import random
 from datetime import datetime, timedelta, timezone
 
 from .schema_v2 import (Episode, Observation, Probe, Gold, Slot, EvidenceLocation,
-                        SandboxReference, ContractError, validate_dataset)
+                        SandboxReference, ContractError, validate_dataset,
+                        OFFICIAL_CAPABILITIES, TECHNICAL_CATEGORIES)
 from .protocol_v2 import adapter_payload
 
 
@@ -134,6 +135,10 @@ def validate_sources(stories):
         if s['story_id'] in ids:
             raise ContractError('重复故事')
         ids.add(s['story_id'])
+        if s['split'] not in ('dev', 'test') or s['official_capability'] not in OFFICIAL_CAPABILITIES:
+            raise ContractError('故事分区或能力错误')
+        if not s['technical_categories'] or set(s['technical_categories']) - set(TECHNICAL_CATEGORIES):
+            raise ContractError('技术分类错误')
         template, split = s['template_id'], s['split']
         if templates.get(template, split) != split:
             raise ContractError('情节模板跨集合')
@@ -143,8 +148,16 @@ def validate_sources(stories):
         groups = set(range(len(s['utterances'])))
         if any(e['utterance'] not in groups for e in s['events']):
             raise ContractError('事件缺少观察依据')
-        if any(len(u) != 2 or not all(u) for u in s['utterances']):
+        if not s['utterances'] or any(len(u) != 2 or not all(isinstance(t, str) and t.strip() for t in u)
+                                     or u[0] == u[1] for u in s['utterances']):
             raise ContractError('需要两种措辞')
+        if len(s['queries']) != 2 or not all(s['queries']) or s['queries'][0] == s['queries'][1]:
+            raise ContractError('需要两种问题措辞')
+        if [e['utterance'] for e in s['events']] != sorted(e['utterance'] for e in s['events']):
+            raise ContractError('事件与观察顺序不一致')
+        keys = [t['key'] for t in s['targets']]
+        if not keys or len(keys) != len(set(keys)):
+            raise ContractError('目标为空或重复')
         truth(s['events'], s['targets'])
 
 
@@ -153,15 +166,24 @@ def build_dataset(root, seed=42):
     stories = read_rows(safe_path(root, 'sources.jsonl'))
     validate_sources(stories)
     reviews = safe_path(root, 'review.jsonl')
-    if not reviews.exists():
-        reviews.write_text(''.join(encode({'story_id': s['story_id'],
+    existing = read_rows(reviews) if reviews.exists() else []
+    known = {r['story_id'] for r in existing}
+    if len(known) != len(existing) or known - {s['story_id'] for s in stories}:
+        raise ContractError('审阅清单重复或包含未知故事')
+    additions = [{'story_id': s['story_id'],
             'source_sha256': digest(s), 'source_type': s['source_type'],
             'evidence_ids': [opaque(s['story_id'], 'observation', i)
                              for i in range(len(s['utterances']))],
             'status': 'pending_review', 'reviewer': None,
             'reviewed_at': None, 'ledger_query_checked': False,
-            'all_variants_checked': False, 'reason': '等待人工逐条核对账本、证据和问题'})
-            for s in stories), encoding='utf-8')
+            'all_variants_checked': False, 'reason': '等待人工逐条核对账本、证据和问题'}
+            for s in stories if s['story_id'] not in known]
+    if additions or not reviews.exists():
+        # 已有行原样保留，仅补上新故事，绝不自动签收。
+        with reviews.open('a', encoding='utf-8') as handle:
+            if reviews.stat().st_size and not reviews.read_bytes().endswith(b'\n'):
+                handle.write('\n')
+            handle.write(''.join(encode(r) for r in additions))
     files = {}
     def save(name, rows):
         content = ''.join(encode(r) for r in rows)
@@ -187,10 +209,14 @@ def build_dataset(root, seed=42):
     for name in ('sources.jsonl', 'review.jsonl'):
         files[name] = hashlib.sha256(safe_path(root, name).read_bytes()).hexdigest()
     manifest = {'schema_version': '0.2', 'seed': seed, 'status': 'pending_review',
-        'generation': 'offline_authored_synthetic_ai_assisted', 'llm_api': 'blocked: no credentials',
+        'generation': 'offline_authored_synthetic_ai_assisted', 'llm_api': 'not_used: offline_only',
         'openkylin': 'NOT_VERIFIED', 'license': 'pending_maintainer_signoff',
         'n_story': len(stories), 'n_query': len(episodes),
         'target_n_story': 60, 'paired_n_story': len(selected),
+        'split_counts': {part: sum(s['split'] == part for s in stories) for part in ('dev', 'test')},
+        'capability_counts': {cap: {part: sum(s['official_capability'] == cap and s['split'] == part
+                                            for s in stories) for part in ('dev', 'test')}
+                              for cap in OFFICIAL_CAPABILITIES},
         'formal_test_n_query': sum(e.split == 'test' and e.story_id in accepted for e in episodes),
         'context_unit': 'Unicode code points in observation.text; not tokens',
         'files': files}
@@ -230,6 +256,10 @@ def validate_release(root):
     accepted = set()
     for s in stories:
         r = reviewed[s['story_id']]
+        if (r['source_sha256'] != digest(s) or r['source_type'] != s['source_type']
+                or r['evidence_ids'] != [opaque(s['story_id'], 'observation', i)
+                                        for i in range(len(s['utterances']))]):
+            raise ContractError('审阅来源或证据已过期')
         if r['status'] not in ('pending_review', 'accepted', 'rejected'):
             raise ContractError('审阅状态错误')
         if r['status'] == 'accepted':
@@ -250,5 +280,148 @@ def validate_release(root):
         rows = read_rows(safe_path(root, f'paired-{size}.jsonl'))
         if rows != [e.to_dict() for e in generate(selected, manifest['seed'], size)]:
             raise ContractError('配对数据不一致')
+    counts = {part: sum(s['split'] == part for s in stories) for part in ('dev', 'test')}
+    capability_counts = {cap: {part: sum(s['official_capability'] == cap and s['split'] == part
+                                        for s in stories) for part in ('dev', 'test')}
+                         for cap in OFFICIAL_CAPABILITIES}
+    if (manifest['n_story'] != len(stories) or manifest['n_query'] != len(actual)
+            or manifest['split_counts'] != counts or manifest['capability_counts'] != capability_counts
+            or manifest['paired_n_story'] != len(selected)
+            or manifest['formal_test_n_query'] != len(read_rows(safe_path(root, 'test.jsonl')))):
+        raise ContractError('清单数量不一致')
     return {'validation': 'ok', 'release_status': 'pending_review',
             'n_story': len(stories), 'formal_test_n_query': len(read_rows(safe_path(root, 'test.jsonl')))}
+
+
+def build_review_page(root, destination):
+    """生成包含私有真值的本地人工审核页；只导出意见，不修改签收清单。"""
+    validate_release(root)
+    stories = read_rows(safe_path(root, 'sources.jsonl'))
+    reviews = {r['story_id']: r for r in read_rows(safe_path(root, 'review.jsonl'))}
+    grouped = {s['story_id']: {} for s in stories}
+    for size, filename in ((2048, 'candidates.jsonl'), (8192, 'paired-8192.jsonl'),
+                           (32768, 'paired-32768.jsonl')):
+        for episode in read_rows(safe_path(root, filename)):
+            grouped[episode['story_id']].setdefault(str(size), []).append(episode)
+    payload = {'capabilities': OFFICIAL_CAPABILITIES,
+               'source_sha256': hashlib.sha256(safe_path(root, 'sources.jsonl').read_bytes()).hexdigest(),
+               'stories': [{'source': s, 'review': reviews[s['story_id']],
+                            'episodes': grouped[s['story_id']]} for s in stories]}
+    # JSON 进入 script 数据块前转义 HTML 分隔符；界面数据一律 textContent。
+    data = encode(payload).replace('&', '\\u0026').replace('<', '\\u003c').replace('>', '\\u003e')
+    page = REVIEW_HTML.replace('__REVIEW_DATA__', data)
+    destination = Path(destination)
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    destination.write_text(page, encoding='utf-8')
+
+
+REVIEW_HTML = r'''<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MemoBench · 候选数据人工审核</title>
+<style>
+*{box-sizing:border-box}body{margin:0;height:100dvh;display:grid;grid-template-rows:auto auto minmax(0,1fr) auto;background:#f2f4f7;color:#172537;font:14px/1.6 system-ui,sans-serif}
+header{padding:12px 24px;background:#152c42;color:white}h1{font-size:20px;margin:0}header p{margin:3px 0;color:#ccd9e5}
+nav{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:12px 24px;background:white;border-bottom:1px solid #cbd5df}
+button,select,input,textarea{font:inherit}button,select{padding:6px 10px}button{cursor:pointer}button:disabled{cursor:default}
+main{min-height:0;display:grid;grid-template-columns:1fr 1.25fr 1fr;gap:12px;padding:12px 24px}
+section{background:white;border:1px solid #d3dce5;border-radius:8px;padding:14px;overflow:auto}h2{font-size:16px;margin:0 0 10px}h3{font-size:14px;margin:12px 0 4px}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f5f7fa;padding:9px;margin:6px 0;font:12px/1.55 ui-monospace,monospace}
+.observation{padding:9px;border-left:3px solid #44829a;margin:8px 0;background:#f1f7fa;white-space:pre-wrap;overflow-wrap:anywhere}
+small{display:block;color:#536779;overflow-wrap:anywhere}footer{padding:10px 24px;background:white;border-top:1px solid #cbd5df}
+.reviewline{display:flex;align-items:center;gap:14px;flex-wrap:wrap}textarea{width:100%;height:50px;margin-top:6px;padding:6px}#notice{color:#9b321f;min-height:23px}label{cursor:pointer}
+@media(max-width:850px){body{height:auto;display:block}main{height:auto;grid-template-columns:1fr}section{max-height:60vh}header,nav,footer{padding:12px}main{padding:12px}}
+</style>
+<header><h1>MemoBench · 候选数据人工审核</h1><p>60 个故事 · 12 开发 / 48 测试候选 · 含私有真值，仅供审阅。导出不会改写数据或批准正式发布。</p></header>
+<nav><button id="prev">上一故事</button><select id="story" aria-label="选择故事"></select><button id="next">下一故事</button>
+<span id="progress"></span><label>审阅者 <input id="reviewer" placeholder="实际审阅者" size="12"></label><button id="export">导出审核 JSON</button></nav>
+<main>
+<section><h2>事件账本与来源</h2><div id="meta"></div><h3>按时间排列的事件</h3><div id="ledger"></div><h3>目标槽位</h3><pre id="targets"></pre></section>
+<section><h2>会话与两种等义表达</h2><label>字符规模 <select id="size" aria-label="字符规模"></select></label><div id="sessions"></div></section>
+<section><h2>问题、真值与证据</h2><div id="questions"></div><h3>账本计算真值</h3><pre id="gold"></pre><h3>证据位置</h3><pre id="evidence"></pre><h3>文件动作与遗忘策略</h3><pre id="actions"></pre></section>
+</main>
+<footer><div class="reviewline">
+<label><input type="radio" name="decision" value="pending_review"> 待审</label><label><input type="radio" name="decision" value="accepted"> 通过</label><label><input type="radio" name="decision" value="rejected"> 拒收</label>
+<label><input type="checkbox" id="ledgerChecked"> 账本与问题一致</label><label><input type="checkbox" id="variantsChecked"> 两种表述及适用配对负载已检查</label>
+</div><textarea id="reason" aria-label="审核原因" placeholder="通过或拒收原因（必填）；拒收应指出具体事件、措辞或真值问题，不能因模型答错而拒收。"></textarea><div id="notice" role="status">修改仅保存在当前页面内存中，关闭前请导出。三档负载仅适用于选定的 12 个测试故事。</div></footer>
+<script type="application/json" id="dataset">__REVIEW_DATA__</script>
+<script>
+'use strict';
+const dataset=JSON.parse(document.getElementById('dataset').textContent);
+const $=id=>document.getElementById(id);
+const records=dataset.stories.map(s=>({...s.review}));
+let current=0;
+const json=x=>JSON.stringify(x,null,2);
+function text(parent,tag,content,className){const e=document.createElement(tag);e.textContent=content;if(className)e.className=className;parent.append(e);return e;}
+function count(){ $('progress').textContent=`${current+1} / ${records.length} · 通过 ${records.filter(r=>r.status==='accepted').length} · 拒收 ${records.filter(r=>r.status==='rejected').length}`; }
+function save(){
+ const r=records[current];
+ const status=document.querySelector('input[name="decision"]:checked').value;
+ const checked=$('ledgerChecked').checked, variants=$('variantsChecked').checked, reason=$('reason').value;
+ if(r.status!==status || r.ledger_query_checked!==checked || r.all_variants_checked!==variants || r.reason!==reason){
+  Object.assign(r,{status,ledger_query_checked:checked,all_variants_checked:variants,reason,
+    reviewer:status==='pending_review'?null:$('reviewer').value.trim(),reviewed_at:status==='pending_review'?null:new Date().toISOString()});
+ }
+ count();
+}
+function renderSessions(){
+ const item=dataset.stories[current], episodes=item.episodes[$('size').value];
+ $('sessions').replaceChildren();$('questions').replaceChildren();
+ episodes.forEach((e,i)=>{
+  text($('sessions'),'h3',`表达 ${i+1} · ${e.variant_id}`);
+  const ids=new Set(e.golds[0].evidence.map(v=>v.observation_id));
+  e.session_ids.forEach((sid,j)=>{
+   text($('sessions'),'h3',`会话 ${j+1} · ${sid}`);
+   const observations=e.observations.filter(o=>o.session_id===sid);
+   observations.filter(o=>ids.has(o.observation_id)).forEach(o=>{
+    text($('sessions'),'small',`${o.observation_id} · ${o.role} · ${o.observed_at}`);
+    text($('sessions'),'div',o.text,'observation');
+   });
+   const details=document.createElement('details');
+   text(details,'summary',`完整会话（${observations.length} 条，含填充噪声，按时间顺序）`);
+   observations.forEach(o=>text(details,'pre',`${o.observation_id} · ${o.observed_at}\n${o.text}`));
+   $('sessions').append(details);
+  });
+  text($('questions'),'h3',`表达 ${i+1} 的问题`);text($('questions'),'div',e.probes[0].query);
+ });
+ const gold=episodes[0].golds[0];
+ $('gold').textContent=json(gold.slots);$('evidence').textContent=json(gold.evidence);
+ $('actions').textContent=json({expected_actions:gold.expected_actions,forget_policies:gold.forget_policies});
+}
+function render(){
+ const item=dataset.stories[current],s=item.source,r=records[current];$('story').value=String(current);
+ $('meta').replaceChildren();
+ text($('meta'),'div',`${dataset.capabilities[s.official_capability]} · ${s.split==='dev'?'开发':'测试候选'} · 原始状态 ${item.review.status}`);
+ text($('meta'),'small',`故事 ${s.story_id}\n情节模板 ${s.template_id}`);
+ text($('meta'),'pre',json({source_type:s.source_type,source_sha256:r.source_sha256,technical_categories:s.technical_categories}));
+ $('ledger').replaceChildren();
+ s.events.forEach((e,i)=>text($('ledger'),'pre',json({event:i+1,...e,evidence_id:r.evidence_ids[e.utterance]})));
+ $('targets').textContent=json(s.targets);
+ $('size').replaceChildren();Object.keys(item.episodes).forEach(n=>{const o=text($('size'),'option',`${n} 字符`);o.value=n;});
+ document.querySelectorAll('input[name="decision"]').forEach(el=>el.checked=el.value===r.status);
+ $('ledgerChecked').checked=r.ledger_query_checked;$('variantsChecked').checked=r.all_variants_checked;$('reason').value=r.reason;
+ $('prev').disabled=current===0;$('next').disabled=current===records.length-1;
+ renderSessions();count();document.querySelectorAll('section').forEach(s=>s.scrollTop=0);
+}
+dataset.stories.forEach((item,i)=>{const s=item.source;const o=text($('story'),'option',`${i+1}. ${dataset.capabilities[s.official_capability]} · ${s.template_id}`);o.value=i;});
+$('prev').onclick=()=>{save();current--;render();};$('next').onclick=()=>{save();current++;render();};
+$('story').onchange=()=>{save();current=Number($('story').value);render();};$('size').onchange=renderSessions;
+document.querySelectorAll('input[name="decision"],#ledgerChecked,#variantsChecked').forEach(e=>e.onchange=save);
+$('reason').oninput=save;
+$('export').onclick=()=>{
+ save();const reviewer=$('reviewer').value.trim();
+ for(let i=0;i<records.length;i++){
+  const r=records[i];if(r.status==='pending_review')continue;
+  if(!reviewer||!r.reason.trim()||r.reason===dataset.stories[i].review.reason||
+     (r.status==='accepted'&&(!r.ledger_query_checked||!r.all_variants_checked))){
+   $('notice').textContent=`第 ${i+1} 个故事：请填写审阅者、具体原因；通过时须勾选两项核对。`;return;
+  }
+ }
+ const output={schema_version:'0.2',source_sha256:dataset.source_sha256,exported_at:new Date().toISOString(),
+  records:records.map(r=>r.status==='pending_review'?r:{...r,reviewer})};
+ const url=URL.createObjectURL(new Blob([json(output)+'\n'],{type:'application/json;charset=utf-8'}));
+ const a=document.createElement('a');a.href=url;a.download='memobench-human-review.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+ $('notice').textContent='审核 JSON 已生成本地下载；仓库数据未改变。维护者核对源摘要后再合入 review.jsonl 并重建。';
+};
+render();
+</script></html>
+'''

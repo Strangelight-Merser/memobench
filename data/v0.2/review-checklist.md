@@ -13,8 +13,12 @@
 8. 通过后在review.jsonl填 status=accepted、reviewer、带时区reviewed_at，两个checked字段设true；保留正确source_sha256。
    拒收则status=rejected并填写可复核的reason；不改掉原始证据，不以模型答错为拒收理由。
 9. 运行构建命令更新固定JSONL和manifest，再运行validate-only。任何源修改导致摘要变化均需重新审阅。
-10. 维护者补齐剩余独立故事、核对总计60账本与问题，签收数据许可，最后决定是否正式发布。
+10. 维护者核对总计60账本与问题、两种等义表述及开发测试模板独立性，签收数据许可，最后决定是否正式发布。
 
 两checked字段：ledger_query_checked表示账本、问题一致；all_variants_checked表示两种表述和配对负载均检查。
 当前采用全量签收门禁，高于其他样本至少25%表面审阅的最低要求。
 正式test为空时不能发布排行榜。JSON签收记录只能记录人的声明，不能在技术上证明审阅真实发生。
+
+可用 docs/review/data-review.html 逐故事审阅（从仓库根目录进入 docs/review/data-review.html）。
+页面导出 records 数组与源摘要，须人工核对后按行合入 review.jsonl；页面不自动写回。
+通过/拒收均填写具体原因，不允许 agent 代签。关闭页面前导出，当前页内存状态不会自动保存。
