@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "memobench"
+version = "0.1.0"
+description = "智能体长期记忆自动化评测 Benchmark（面向 openKylin）"
+readme = "README.md"
+license = {text = "MulanPSL-2.0"}
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+memobench = "memobench.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["memobench*"]
