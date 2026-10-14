@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-14",
+  "python": "3.13.12",
+  "source_commit": "7d8334882baff6f6e270a2a6fdf874a72228268a",
+  "command": "python3 -m memobench.cli run --distract 6 --out docs/experiments/distract-6",
+  "reader": "rule",
+  "seed": 42,
+  "n_per_category": 20,
+  "sessions": 6,
+  "turns": 8,
+  "distracts": [
+    6
+  ],
+  "systems": [
+    "full_context",
+    "hybrid",
+    "session_summary",
+    "profile_store",
+    "bm25_rag",
+    "sliding_window"
+  ],
+  "data_sha256": {
+    "cases.jsonl": "d3b4db7ca8f49b7e73bfa4415d0e9708208d0f9b6951c846559898e26ee449c7"
+  }
+}

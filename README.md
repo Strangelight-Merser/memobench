@@ -2,7 +2,7 @@
 
 **面向 openKylin 的智能体长期记忆自动化评测 Benchmark。** 对应 openKylin 开源 AI 工具赛题，用可复现的多会话对话，比较智能助手是否记得住、更新得对、忘得掉，以及需要多少上下文。
 
-Python >= 3.9，运行时零第三方依赖；默认规则读取器完全离线运行。当前提供合成数据、4 个参考基线、规则/LLM 双读取器、自动评分与 HTML 报告。尚未接入实际 openKylin 麒麟 AI 助手，也未使用真实用户数据。完整说明见 [作品介绍](docs/作品介绍.md)。
+Python >= 3.9，运行时零第三方依赖；默认规则读取器完全离线运行。当前提供合成数据、6 个默认系统、规则/LLM 双读取器、自动评分与 HTML 报告。尚未接入实际 openKylin 麒麟 AI 助手，也未使用真实用户数据。完整说明见 [作品介绍](docs/作品介绍.md)。
 
 ## 六个评测维度
 
@@ -34,6 +34,12 @@ python3 -m memobench.cli run --distract 6
 # 固定数据后，在相同用例上比较系统
 python3 -m memobench.cli generate -n 20 --sessions 6 --turns 8 --seed 42 --distract 6 -o data/memobench.jsonl
 python3 -m memobench.cli run --data data/memobench.jsonl --systems full_context,bm25_rag,profile_store --out results/fixed
+
+# 扫描干扰句数 0、1、2、4、6、8，生成难度曲线
+python3 -m memobench.cli sweep --out docs/experiments/sweep
+
+# 运行单元测试
+python3 -m unittest discover tests
 
 # 查看参数
 python3 -m memobench.cli run --help
@@ -108,22 +114,41 @@ python3 -m memobench.cli run --reader llm --systems full_context,bm25_rag --out 
 
 `MEMOBENCH_BASE_URL` 填 API 前缀，不含 `/chat/completions`，程序会追加该路径。默认模型为 `deepseek-chat`，默认地址为 `https://api.deepseek.com/v1`，默认密钥为空；实际可用性取决于所选服务。代码通过标准库 `urllib.request` 调用接口，无需 SDK。
 
-规则读取器用于在固定模板下尽量隔离记忆策略的影响；LLM 读取器测量“记忆系统 + 模型”的端到端表现。后者会发送召回的记忆和问题，可能产生服务费用；不要提交密钥或未经授权的私人对话。当前版本逐次串行请求，单次超时 60 秒，没有重试与磁盘缓存。本文没有 LLM 实测成绩。
+规则读取器用于在固定模板下尽量隔离记忆策略的影响；LLM 读取器测量“记忆系统 + 模型”的端到端表现。后者会发送召回的记忆和问题，可能产生服务费用；不要提交密钥或未经授权的私人对话。当前版本逐次串行请求，默认单次超时 60 秒；对可重试错误最多重试 3 次，默认启用磁盘缓存。规则读取器结果用于观察模板范围内的“记忆系统上限能力”，不是实际模型表现；LLM 读取器端到端结果待补，本文没有 LLM 实测数字。
 
 ## 真实示例结果
 
-2026-10-14，Python 3.13.12，代码基点 `ac863bb438c6c0724dcf20ae222030f055ff7e2a`。执行 `python3 -m memobench.cli run --distract 6`（归档时以 `--out docs/experiments/distract-6` 指定输出目录）；其余默认参数：规则读取器、seed=42、每类 20 条、6 个会话、每会话目标 8 条用户消息，共 120 条用例、480 条系统评测记录。
+2026-10-14，Python 3.13.12，代码基点 `7d8334882baff6f6e270a2a6fdf874a72228268a`，本次未修改源码。规则读取器、seed=42、每类 20 条、6 个会话、每会话目标 8 条用户消息、每个相关属性 6 条干扰，共 120 条用例、6 个默认系统、720 条系统评测记录。执行命令：`python3 -m memobench.cli run --distract 6 --out docs/experiments/distract-6`。
 
 | 系统 | recall | update | multi | temporal | forget | abstain | 总准确率 | 泄露率 ↓ | 平均上下文字符 ↓ |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| full_context | 100% | 100% | 100% | 100% | 100% | 100% | 100.00% | 0.00% | 863.67 |
-| profile_store | 100% | 100% | 100% | 0% | 100% | 100% | 83.33% | 0.00% | 71.53 |
-| bm25_rag | 100% | 20% | 50% | 100% | 40% | 100% | 68.33% | 23.33% | 77.03 |
-| sliding_window | 0% | 20% | 0% | 0% | 100% | 100% | 36.67% | 0.00% | 218.98 |
+| full_context | 100% | 100% | 100% | 100% | 100% | 100% | 100.00% | 0.00% | 865.59 |
+| hybrid | 100% | 100% | 100% | 100% | 100% | 100% | 100.00% | 0.00% | 34.26 |
+| session_summary | 100% | 100% | 100% | 100% | 100% | 100% | 100.00% | 0.00% | 121.30 |
+| profile_store | 100% | 100% | 100% | 0% | 100% | 100% | 83.33% | 0.00% | 70.73 |
+| bm25_rag | 100% | 45% | 45% | 100% | 60% | 100% | 75.00% | 15.83% | 78.54 |
+| sliding_window | 0% | 25% | 0% | 0% | 100% | 100% | 37.50% | 0.00% | 217.47 |
 
 原始证据：[汇总 JSON](docs/experiments/distract-6/summary.json)、[逐例结果](docs/experiments/distract-6/results.jsonl)、[HTML 报告](docs/experiments/distract-6/report.html)、[复现记录](docs/experiments/distract-6/README.md)。表格保留两位小数，CLI 默认显示整数百分比。
 
-画像覆盖旧值后丢失历史；BM25 top-4 可能漏掉更新或遗忘指令；滑动窗口丢掉早期事实。全量上下文的满分只适用于这组模板和规则读取器，不能推断真实助手或 LLM 满分。详见作品介绍中的方法边界与结果分析。
+hybrid 按问题筛选属性并保留变更历史，在本组中以平均 34.26 字符达到 100%；session_summary 在会话结束时用规则提取事实与事件，以平均 121.30 字符达到 100%，它不是 LLM 摘要。画像覆盖旧值后丢失历史；BM25 top-4 可能漏掉更新、遗忘或第二条事实；滑动窗口丢掉早期事实。这些规则读取器成绩仅反映当前模板内的“记忆系统上限能力”，LLM 读取器端到端结果待补。
+
+### 难度扫描（干扰句 0→8）
+
+执行 `python3 -m memobench.cli sweep --out docs/experiments/sweep`，其余参数与上表相同，每档 120 条用例；下表为总准确率。
+
+| 系统 / 干扰句数 | 0 | 1 | 2 | 4 | 6 | 8 |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| full_context | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% |
+| hybrid | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% |
+| session_summary | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% | 100.00% |
+| profile_store | 84.17% | 84.17% | 83.33% | 84.17% | 83.33% | 83.33% |
+| bm25_rag | 100.00% | 100.00% | 98.33% | 85.00% | 75.00% | 68.33% |
+| sliding_window | 39.17% | 40.83% | 43.33% | 42.50% | 37.50% | 36.67% |
+
+full_context、hybrid、session_summary 在全部扫描档位均为 100%；BM25 总准确率从无干扰时的 100.00% 降至 8 条干扰时的 68.33%，但 update 从 6 条干扰时的 45% 回升到 8 条时的 55%，并非每个维度都单调下降。profile_store 总准确率在 83.33%–84.17% 之间，sliding_window 在 36.67%–43.33% 之间波动。各档干扰数会改变随机采样过程，因此这是一组单种子难度扫描，不能解释为逐题配对的因果曲线。
+
+原始证据：[扫描 JSON](docs/experiments/sweep/sweep.json)、[难度曲线 HTML](docs/experiments/sweep/sweep.html)、[扫描复现记录](docs/experiments/sweep/README.md)。详见作品介绍中的方法边界与结果分析。
 
 ## 贡献与许可证
 
@@ -136,4 +161,4 @@ python3 -m memobench.cli run --reader llm --systems full_context,bm25_rag --out 
 - 扩展多模态记忆：从截图、文档等输入中评估事实来源、更新与遗忘。
 - 提供英文版文档与数据，检验跨语言表现。
 
-这些为后续计划，当前可复现范围是中文合成文本与四个参考基线。
+这些为后续计划，当前可复现范围是中文合成文本与六个默认系统。

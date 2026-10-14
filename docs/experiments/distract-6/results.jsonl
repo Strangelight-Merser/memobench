@@ -1,0 +1,720 @@
+{"case_id": "recall-0", "category": "recall", "system": "full_context", "answer": "上海", "correct": true, "leaked": false, "latency_ms": 0.022041989723220468, "context_chars": 835}
+{"case_id": "update-0", "category": "update", "system": "full_context", "answer": "/data/projects", "correct": true, "leaked": false, "latency_ms": 0.012750009773299098, "context_chars": 839}
+{"case_id": "multi-0", "category": "multi", "system": "full_context", "answer": "flatpak；Java", "correct": true, "leaked": false, "latency_ms": 0.013667013263329864, "context_chars": 858}
+{"case_id": "temporal-0", "category": "temporal", "system": "full_context", "answer": "上海", "correct": true, "leaked": false, "latency_ms": 0.007124996045604348, "context_chars": 827}
+{"case_id": "forget-0", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0076669966802001, "context_chars": 879}
+{"case_id": "abstain-0", "category": "abstain", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.006374990334734321, "context_chars": 805}
+{"case_id": "recall-1", "category": "recall", "system": "full_context", "answer": "openKylin 1.0.2", "correct": true, "leaked": false, "latency_ms": 0.006457994459196925, "context_chars": 931}
+{"case_id": "update-1", "category": "update", "system": "full_context", "answer": "loongarch64", "correct": true, "leaked": false, "latency_ms": 0.00695799826644361, "context_chars": 893}
+{"case_id": "multi-1", "category": "multi", "system": "full_context", "answer": "Arc A770；360 安全浏览器", "correct": true, "leaked": false, "latency_ms": 0.011583993909880519, "context_chars": 909}
+{"case_id": "temporal-1", "category": "temporal", "system": "full_context", "answer": "RX 7800", "correct": true, "leaked": false, "latency_ms": 0.005749985575675964, "context_chars": 823}
+{"case_id": "forget-1", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.006417016265913844, "context_chars": 843}
+{"case_id": "abstain-1", "category": "abstain", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.005749985575675964, "context_chars": 843}
+{"case_id": "recall-2", "category": "recall", "system": "full_context", "answer": "openKylin 2.0", "correct": true, "leaked": false, "latency_ms": 0.005833018803969026, "context_chars": 895}
+{"case_id": "update-2", "category": "update", "system": "full_context", "answer": "北京", "correct": true, "leaked": false, "latency_ms": 0.00595799065195024, "context_chars": 834}
+{"case_id": "multi-2", "category": "multi", "system": "full_context", "answer": "~/dev；深圳", "correct": true, "leaked": false, "latency_ms": 0.012416014214977622, "context_chars": 874}
+{"case_id": "temporal-2", "category": "temporal", "system": "full_context", "answer": "C++", "correct": true, "leaked": false, "latency_ms": 0.006582995411008596, "context_chars": 859}
+{"case_id": "forget-2", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.006374990334734321, "context_chars": 872}
+{"case_id": "abstain-2", "category": "abstain", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.005917012458667159, "context_chars": 865}
+{"case_id": "recall-3", "category": "recall", "system": "full_context", "answer": "Java", "correct": true, "leaked": false, "latency_ms": 0.005707988748326898, "context_chars": 819}
+{"case_id": "update-3", "category": "update", "system": "full_context", "answer": "奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.006208021659404039, "context_chars": 857}
+{"case_id": "multi-3", "category": "multi", "system": "full_context", "answer": "openKylin 1.0.2；mate-terminal", "correct": true, "leaked": false, "latency_ms": 0.012125005014240742, "context_chars": 938}
+{"case_id": "temporal-3", "category": "temporal", "system": "full_context", "answer": "openKylin 1.0.2", "correct": true, "leaked": false, "latency_ms": 0.006000016583129764, "context_chars": 936}
+{"case_id": "forget-3", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.006124988431110978, "context_chars": 891}
+{"case_id": "abstain-3", "category": "abstain", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.006208021659404039, "context_chars": 884}
+{"case_id": "recall-4", "category": "recall", "system": "full_context", "answer": "GNOME", "correct": true, "leaked": false, "latency_ms": 0.005750014679506421, "context_chars": 853}
+{"case_id": "update-4", "category": "update", "system": "full_context", "answer": "RX 7800", "correct": true, "leaked": false, "latency_ms": 0.006457994459196925, "context_chars": 907}
+{"case_id": "multi-4", "category": "multi", "system": "full_context", "answer": "Vim；奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.012208009138703346, "context_chars": 894}
+{"case_id": "temporal-4", "category": "temporal", "system": "full_context", "answer": "riscv64", "correct": true, "leaked": false, "latency_ms": 0.005584006430581212, "context_chars": 913}
+{"case_id": "forget-4", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.006209011189639568, "context_chars": 901}
+{"case_id": "abstain-4", "category": "abstain", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.005707988748326898, "context_chars": 903}
+{"case_id": "recall-5", "category": "recall", "system": "full_context", "answer": "摩尔线程 S80", "correct": true, "leaked": false, "latency_ms": 0.005707988748326898, "context_chars": 854}
+{"case_id": "update-5", "category": "update", "system": "full_context", "answer": "openKylin 2.0", "correct": true, "leaked": false, "latency_ms": 0.005790992872789502, "context_chars": 939}
+{"case_id": "multi-5", "category": "multi", "system": "full_context", "answer": "成都；源码编译", "correct": true, "leaked": false, "latency_ms": 0.010792020475491881, "context_chars": 820}
+{"case_id": "temporal-5", "category": "temporal", "system": "full_context", "answer": "Arc A770", "correct": true, "leaked": false, "latency_ms": 0.005874986527487636, "context_chars": 877}
+{"case_id": "forget-5", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.005709007382392883, "context_chars": 827}
+{"case_id": "abstain-5", "category": "abstain", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.005416979547590017, "context_chars": 850}
+{"case_id": "recall-6", "category": "recall", "system": "full_context", "answer": "~/work", "correct": true, "leaked": false, "latency_ms": 0.005500012775883079, "context_chars": 875}
+{"case_id": "update-6", "category": "update", "system": "full_context", "answer": "mate-terminal", "correct": true, "leaked": false, "latency_ms": 0.005749985575675964, "context_chars": 865}
+{"case_id": "multi-6", "category": "multi", "system": "full_context", "answer": "openKylin 1.0.2；loongarch64", "correct": true, "leaked": false, "latency_ms": 0.011916999937966466, "context_chars": 945}
+{"case_id": "temporal-6", "category": "temporal", "system": "full_context", "answer": "RTX 4060", "correct": true, "leaked": false, "latency_ms": 0.006000016583129764, "context_chars": 862}
+{"case_id": "forget-6", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.005791982403025031, "context_chars": 854}
+{"case_id": "abstain-6", "category": "abstain", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.005375011824071407, "context_chars": 873}
+{"case_id": "recall-7", "category": "recall", "system": "full_context", "answer": "Xfce", "correct": true, "leaked": false, "latency_ms": 0.00566698145121336, "context_chars": 892}
+{"case_id": "update-7", "category": "update", "system": "full_context", "answer": "Rime 中州韵", "correct": true, "leaked": false, "latency_ms": 0.006500020390376449, "context_chars": 867}
+{"case_id": "multi-7", "category": "multi", "system": "full_context", "answer": "/data/projects；Chromium", "correct": true, "leaked": false, "latency_ms": 0.01087499549612403, "context_chars": 875}
+{"case_id": "temporal-7", "category": "temporal", "system": "full_context", "answer": "奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.005917012458667159, "context_chars": 898}
+{"case_id": "forget-7", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.005790992872789502, "context_chars": 825}
+{"case_id": "abstain-7", "category": "abstain", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.004749977961182594, "context_chars": 813}
+{"case_id": "recall-8", "category": "recall", "system": "full_context", "answer": "openKylin 2.0", "correct": true, "leaked": false, "latency_ms": 0.00604201341047883, "context_chars": 930}
+{"case_id": "update-8", "category": "update", "system": "full_context", "answer": "Python", "correct": true, "leaked": false, "latency_ms": 0.006165995728224516, "context_chars": 869}
+{"case_id": "multi-8", "category": "multi", "system": "full_context", "answer": "riscv64；Emacs", "correct": true, "leaked": false, "latency_ms": 0.012750009773299098, "context_chars": 898}
+{"case_id": "temporal-8", "category": "temporal", "system": "full_context", "answer": "Java", "correct": true, "leaked": false, "latency_ms": 0.005499983672052622, "context_chars": 831}
+{"case_id": "forget-8", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.005458015948534012, "context_chars": 828}
+{"case_id": "abstain-8", "category": "abstain", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.005709007382392883, "context_chars": 822}
+{"case_id": "recall-9", "category": "recall", "system": "full_context", "answer": "openKylin 2.0 SP1", "correct": true, "leaked": false, "latency_ms": 0.006207992555573583, "context_chars": 953}
+{"case_id": "update-9", "category": "update", "system": "full_context", "answer": "Rime 中州韵", "correct": true, "leaked": false, "latency_ms": 0.006499991286545992, "context_chars": 856}
+{"case_id": "multi-9", "category": "multi", "system": "full_context", "answer": "Rust；成都", "correct": true, "leaked": false, "latency_ms": 0.011625001206994057, "context_chars": 846}
+{"case_id": "temporal-9", "category": "temporal", "system": "full_context", "answer": "mate-terminal", "correct": true, "leaked": false, "latency_ms": 0.005583016900345683, "context_chars": 882}
+{"case_id": "forget-9", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.006333983037620783, "context_chars": 924}
+{"case_id": "abstain-9", "category": "abstain", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.00562501372769475, "context_chars": 902}
+{"case_id": "recall-10", "category": "recall", "system": "full_context", "answer": "mate-terminal", "correct": true, "leaked": false, "latency_ms": 0.005707988748326898, "context_chars": 878}
+{"case_id": "update-10", "category": "update", "system": "full_context", "answer": "VS Code", "correct": true, "leaked": false, "latency_ms": 0.005457986844703555, "context_chars": 880}
+{"case_id": "multi-10", "category": "multi", "system": "full_context", "answer": "Rime 中州韵；Neovim", "correct": true, "leaked": false, "latency_ms": 0.012250005966052413, "context_chars": 902}
+{"case_id": "temporal-10", "category": "temporal", "system": "full_context", "answer": "北京", "correct": true, "leaked": false, "latency_ms": 0.005500012775883079, "context_chars": 817}
+{"case_id": "forget-10", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.005750014679506421, "context_chars": 843}
+{"case_id": "abstain-10", "category": "abstain", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.005208014044910669, "context_chars": 917}
+{"case_id": "recall-11", "category": "recall", "system": "full_context", "answer": "kare", "correct": true, "leaked": false, "latency_ms": 0.005458976374939084, "context_chars": 825}
+{"case_id": "update-11", "category": "update", "system": "full_context", "answer": "/data/projects", "correct": true, "leaked": false, "latency_ms": 0.005875015631318092, "context_chars": 877}
+{"case_id": "multi-11", "category": "multi", "system": "full_context", "answer": "Rime 中州韵；flatpak", "correct": true, "leaked": false, "latency_ms": 0.011708005331456661, "context_chars": 825}
+{"case_id": "temporal-11", "category": "temporal", "system": "full_context", "answer": "riscv64", "correct": true, "leaked": false, "latency_ms": 0.006415997631847858, "context_chars": 885}
+{"case_id": "forget-11", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.005749985575675964, "context_chars": 838}
+{"case_id": "abstain-11", "category": "abstain", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.005457986844703555, "context_chars": 905}
+{"case_id": "recall-12", "category": "recall", "system": "full_context", "answer": "Vim", "correct": true, "leaked": false, "latency_ms": 0.005667010555043817, "context_chars": 847}
+{"case_id": "update-12", "category": "update", "system": "full_context", "answer": "aarch64", "correct": true, "leaked": false, "latency_ms": 0.006374990334734321, "context_chars": 920}
+{"case_id": "multi-12", "category": "multi", "system": "full_context", "answer": "长沙；riscv64", "correct": true, "leaked": false, "latency_ms": 0.012083997717127204, "context_chars": 858}
+{"case_id": "temporal-12", "category": "temporal", "system": "full_context", "answer": "Chromium", "correct": true, "leaked": false, "latency_ms": 0.00604201341047883, "context_chars": 865}
+{"case_id": "forget-12", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.005249981768429279, "context_chars": 842}
+{"case_id": "abstain-12", "category": "abstain", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.005500012775883079, "context_chars": 863}
+{"case_id": "recall-13", "category": "recall", "system": "full_context", "answer": "Java", "correct": true, "leaked": false, "latency_ms": 0.005165988113731146, "context_chars": 880}
+{"case_id": "update-13", "category": "update", "system": "full_context", "answer": "Arc A770", "correct": true, "leaked": false, "latency_ms": 0.006332993507385254, "context_chars": 894}
+{"case_id": "multi-13", "category": "multi", "system": "full_context", "answer": "Kate；x86_64", "correct": true, "leaked": false, "latency_ms": 0.011625001206994057, "context_chars": 855}
+{"case_id": "temporal-13", "category": "temporal", "system": "full_context", "answer": "Firefox", "correct": true, "leaked": false, "latency_ms": 0.00566698145121336, "context_chars": 861}
+{"case_id": "forget-13", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.005874986527487636, "context_chars": 860}
+{"case_id": "abstain-13", "category": "abstain", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.005125009920448065, "context_chars": 864}
+{"case_id": "recall-14", "category": "recall", "system": "full_context", "answer": "openKylin 2.0 SP1", "correct": true, "leaked": false, "latency_ms": 0.0072499969974160194, "context_chars": 917}
+{"case_id": "update-14", "category": "update", "system": "full_context", "answer": "RX 7800", "correct": true, "leaked": false, "latency_ms": 0.00825000461190939, "context_chars": 890}
+{"case_id": "multi-14", "category": "multi", "system": "full_context", "answer": "aarch64；kitty", "correct": true, "leaked": false, "latency_ms": 0.013165990822017193, "context_chars": 878}
+{"case_id": "temporal-14", "category": "temporal", "system": "full_context", "answer": "apt", "correct": true, "leaked": false, "latency_ms": 0.006499991286545992, "context_chars": 867}
+{"case_id": "forget-14", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.006832997314631939, "context_chars": 865}
+{"case_id": "abstain-14", "category": "abstain", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.011750002158805728, "context_chars": 867}
+{"case_id": "recall-15", "category": "recall", "system": "full_context", "answer": "Kate", "correct": true, "leaked": false, "latency_ms": 0.008209026418626308, "context_chars": 814}
+{"case_id": "update-15", "category": "update", "system": "full_context", "answer": "kare", "correct": true, "leaked": false, "latency_ms": 0.008708011591807008, "context_chars": 832}
+{"case_id": "multi-15", "category": "multi", "system": "full_context", "answer": "aarch64；mate-terminal", "correct": true, "leaked": false, "latency_ms": 0.014958000974729657, "context_chars": 908}
+{"case_id": "temporal-15", "category": "temporal", "system": "full_context", "answer": "flatpak", "correct": true, "leaked": false, "latency_ms": 0.007291004294529557, "context_chars": 817}
+{"case_id": "forget-15", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.007583992555737495, "context_chars": 856}
+{"case_id": "abstain-15", "category": "abstain", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.00666698906570673, "context_chars": 838}
+{"case_id": "recall-16", "category": "recall", "system": "full_context", "answer": "riscv64", "correct": true, "leaked": false, "latency_ms": 0.007499998901039362, "context_chars": 852}
+{"case_id": "update-16", "category": "update", "system": "full_context", "answer": "奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.006916990969330072, "context_chars": 878}
+{"case_id": "multi-16", "category": "multi", "system": "full_context", "answer": "RX 7800；上海", "correct": true, "leaked": false, "latency_ms": 0.013957993360236287, "context_chars": 817}
+{"case_id": "temporal-16", "category": "temporal", "system": "full_context", "answer": "Kate", "correct": true, "leaked": false, "latency_ms": 0.007333001121878624, "context_chars": 890}
+{"case_id": "forget-16", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.006916990969330072, "context_chars": 863}
+{"case_id": "abstain-16", "category": "abstain", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.006165995728224516, "context_chars": 856}
+{"case_id": "recall-17", "category": "recall", "system": "full_context", "answer": "~/work", "correct": true, "leaked": false, "latency_ms": 0.006750022293999791, "context_chars": 852}
+{"case_id": "update-17", "category": "update", "system": "full_context", "answer": "奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.006707996362820268, "context_chars": 889}
+{"case_id": "multi-17", "category": "multi", "system": "full_context", "answer": "UKUI；源码编译", "correct": true, "leaked": false, "latency_ms": 0.013708980986848474, "context_chars": 813}
+{"case_id": "temporal-17", "category": "temporal", "system": "full_context", "answer": "~/dev", "correct": true, "leaked": false, "latency_ms": 0.007124996045604348, "context_chars": 873}
+{"case_id": "forget-17", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.007124996045604348, "context_chars": 895}
+{"case_id": "abstain-17", "category": "abstain", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0070829992182552814, "context_chars": 820}
+{"case_id": "recall-18", "category": "recall", "system": "full_context", "answer": "~/work", "correct": true, "leaked": false, "latency_ms": 0.00662502134218812, "context_chars": 823}
+{"case_id": "update-18", "category": "update", "system": "full_context", "answer": "北京", "correct": true, "leaked": false, "latency_ms": 0.006667018169537187, "context_chars": 773}
+{"case_id": "multi-18", "category": "multi", "system": "full_context", "answer": "Java；openKylin 2.0 SP1", "correct": true, "leaked": false, "latency_ms": 0.014625024050474167, "context_chars": 891}
+{"case_id": "temporal-18", "category": "temporal", "system": "full_context", "answer": "RX 7800", "correct": true, "leaked": false, "latency_ms": 0.006791000487282872, "context_chars": 807}
+{"case_id": "forget-18", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.006417016265913844, "context_chars": 837}
+{"case_id": "abstain-18", "category": "abstain", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.006499991286545992, "context_chars": 825}
+{"case_id": "recall-19", "category": "recall", "system": "full_context", "answer": "Xfce", "correct": true, "leaked": false, "latency_ms": 0.005583977326750755, "context_chars": 794}
+{"case_id": "update-19", "category": "update", "system": "full_context", "answer": "奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.005958019755780697, "context_chars": 859}
+{"case_id": "multi-19", "category": "multi", "system": "full_context", "answer": "Vim；奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.014457997167482972, "context_chars": 866}
+{"case_id": "temporal-19", "category": "temporal", "system": "full_context", "answer": "Emacs", "correct": true, "leaked": false, "latency_ms": 0.007333001121878624, "context_chars": 873}
+{"case_id": "forget-19", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.006207992555573583, "context_chars": 861}
+{"case_id": "abstain-19", "category": "abstain", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.006500020390376449, "context_chars": 882}
+{"case_id": "recall-0", "category": "recall", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.004165980499237776, "context_chars": 220}
+{"case_id": "update-0", "category": "update", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0040000013541430235, "context_chars": 214}
+{"case_id": "multi-0", "category": "multi", "system": "sliding_window", "answer": "不知道；不知道", "correct": false, "leaked": false, "latency_ms": 0.005541980499401689, "context_chars": 217}
+{"case_id": "temporal-0", "category": "temporal", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.003249995643272996, "context_chars": 218}
+{"case_id": "forget-0", "category": "forget", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.003374996595084667, "context_chars": 233}
+{"case_id": "abstain-0", "category": "abstain", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0032920215744525194, "context_chars": 200}
+{"case_id": "recall-1", "category": "recall", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.003249995643272996, "context_chars": 221}
+{"case_id": "update-1", "category": "update", "system": "sliding_window", "answer": "loongarch64", "correct": true, "leaked": false, "latency_ms": 0.0034999975468963385, "context_chars": 232}
+{"case_id": "multi-1", "category": "multi", "system": "sliding_window", "answer": "不知道；不知道", "correct": false, "leaked": false, "latency_ms": 0.004124973202124238, "context_chars": 207}
+{"case_id": "temporal-1", "category": "temporal", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0034999975468963385, "context_chars": 181}
+{"case_id": "forget-1", "category": "forget", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0033329997677356005, "context_chars": 212}
+{"case_id": "abstain-1", "category": "abstain", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.003209017449989915, "context_chars": 188}
+{"case_id": "recall-2", "category": "recall", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0027919886633753777, "context_chars": 224}
+{"case_id": "update-2", "category": "update", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0028339854907244444, "context_chars": 215}
+{"case_id": "multi-2", "category": "multi", "system": "sliding_window", "answer": "不知道；不知道", "correct": false, "leaked": false, "latency_ms": 0.005083013093098998, "context_chars": 230}
+{"case_id": "temporal-2", "category": "temporal", "system": "sliding_window", "answer": "Python", "correct": false, "leaked": false, "latency_ms": 0.0034589902497828007, "context_chars": 226}
+{"case_id": "forget-2", "category": "forget", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0029999937396496534, "context_chars": 213}
+{"case_id": "abstain-2", "category": "abstain", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0031249946914613247, "context_chars": 222}
+{"case_id": "recall-3", "category": "recall", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0029579969123005867, "context_chars": 193}
+{"case_id": "update-3", "category": "update", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0028329959604889154, "context_chars": 213}
+{"case_id": "multi-3", "category": "multi", "system": "sliding_window", "answer": "不知道；不知道", "correct": false, "leaked": false, "latency_ms": 0.0051670067477971315, "context_chars": 266}
+{"case_id": "temporal-3", "category": "temporal", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0027920177672058344, "context_chars": 247}
+{"case_id": "forget-3", "category": "forget", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0029170187190175056, "context_chars": 213}
+{"case_id": "abstain-3", "category": "abstain", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0029579969123005867, "context_chars": 238}
+{"case_id": "recall-4", "category": "recall", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0026250199880450964, "context_chars": 220}
+{"case_id": "update-4", "category": "update", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.002541986759752035, "context_chars": 237}
+{"case_id": "multi-4", "category": "multi", "system": "sliding_window", "answer": "不知道；不知道", "correct": false, "leaked": false, "latency_ms": 0.005500012775883079, "context_chars": 237}
+{"case_id": "temporal-4", "category": "temporal", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0025840126909315586, "context_chars": 229}
+{"case_id": "forget-4", "category": "forget", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0034580007195472717, "context_chars": 271}
+{"case_id": "abstain-4", "category": "abstain", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0028329959604889154, "context_chars": 208}
+{"case_id": "recall-5", "category": "recall", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0024579931050539017, "context_chars": 195}
+{"case_id": "update-5", "category": "update", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.002916989615187049, "context_chars": 258}
+{"case_id": "multi-5", "category": "multi", "system": "sliding_window", "answer": "不知道；不知道", "correct": false, "leaked": false, "latency_ms": 0.004750007065013051, "context_chars": 217}
+{"case_id": "temporal-5", "category": "temporal", "system": "sliding_window", "answer": "RX 7800", "correct": false, "leaked": false, "latency_ms": 0.0030410010367631912, "context_chars": 198}
+{"case_id": "forget-5", "category": "forget", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0032910029403865337, "context_chars": 205}
+{"case_id": "abstain-5", "category": "abstain", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0028339854907244444, "context_chars": 203}
+{"case_id": "recall-6", "category": "recall", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.002834014594554901, "context_chars": 207}
+{"case_id": "update-6", "category": "update", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.002415996277704835, "context_chars": 195}
+{"case_id": "multi-6", "category": "multi", "system": "sliding_window", "answer": "不知道；loongarch64", "correct": false, "leaked": false, "latency_ms": 0.00491601531393826, "context_chars": 228}
+{"case_id": "temporal-6", "category": "temporal", "system": "sliding_window", "answer": "RX 7800", "correct": false, "leaked": false, "latency_ms": 0.00304199056699872, "context_chars": 232}
+{"case_id": "forget-6", "category": "forget", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0027909991331398487, "context_chars": 231}
+{"case_id": "abstain-6", "category": "abstain", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002749991836026311, "context_chars": 221}
+{"case_id": "recall-7", "category": "recall", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0027909991331398487, "context_chars": 208}
+{"case_id": "update-7", "category": "update", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.003042019670829177, "context_chars": 242}
+{"case_id": "multi-7", "category": "multi", "system": "sliding_window", "answer": "不知道；不知道", "correct": false, "leaked": false, "latency_ms": 0.0035410048440098763, "context_chars": 194}
+{"case_id": "temporal-7", "category": "temporal", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.002874992787837982, "context_chars": 216}
+{"case_id": "forget-7", "category": "forget", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.00291600008495152, "context_chars": 210}
+{"case_id": "abstain-7", "category": "abstain", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0026249908842146397, "context_chars": 200}
+{"case_id": "recall-8", "category": "recall", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.002707995008677244, "context_chars": 221}
+{"case_id": "update-8", "category": "update", "system": "sliding_window", "answer": "Python", "correct": true, "leaked": false, "latency_ms": 0.0031660019885748625, "context_chars": 231}
+{"case_id": "multi-8", "category": "multi", "system": "sliding_window", "answer": "不知道；不知道", "correct": false, "leaked": false, "latency_ms": 0.004499976057559252, "context_chars": 222}
+{"case_id": "temporal-8", "category": "temporal", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0024170149117708206, "context_chars": 203}
+{"case_id": "forget-8", "category": "forget", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0029579969123005867, "context_chars": 224}
+{"case_id": "abstain-8", "category": "abstain", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002833025064319372, "context_chars": 196}
+{"case_id": "recall-9", "category": "recall", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.002874992787837982, "context_chars": 229}
+{"case_id": "update-9", "category": "update", "system": "sliding_window", "answer": "Rime 中州韵", "correct": true, "leaked": false, "latency_ms": 0.0036249984987080097, "context_chars": 220}
+{"case_id": "multi-9", "category": "multi", "system": "sliding_window", "answer": "不知道；不知道", "correct": false, "leaked": false, "latency_ms": 0.003916997229680419, "context_chars": 200}
+{"case_id": "temporal-9", "category": "temporal", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0024579931050539017, "context_chars": 219}
+{"case_id": "forget-9", "category": "forget", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002707995008677244, "context_chars": 235}
+{"case_id": "abstain-9", "category": "abstain", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0027909991331398487, "context_chars": 214}
+{"case_id": "recall-10", "category": "recall", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0024590117391198874, "context_chars": 204}
+{"case_id": "update-10", "category": "update", "system": "sliding_window", "answer": "VS Code", "correct": true, "leaked": false, "latency_ms": 0.0030410010367631912, "context_chars": 206}
+{"case_id": "multi-10", "category": "multi", "system": "sliding_window", "answer": "不知道；不知道", "correct": false, "leaked": false, "latency_ms": 0.0043339969124644995, "context_chars": 236}
+{"case_id": "temporal-10", "category": "temporal", "system": "sliding_window", "answer": "长沙", "correct": false, "leaked": false, "latency_ms": 0.002875021891668439, "context_chars": 206}
+{"case_id": "forget-10", "category": "forget", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002583983587101102, "context_chars": 233}
+{"case_id": "abstain-10", "category": "abstain", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0025840126909315586, "context_chars": 215}
+{"case_id": "recall-11", "category": "recall", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0031249946914613247, "context_chars": 214}
+{"case_id": "update-11", "category": "update", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0029579969123005867, "context_chars": 233}
+{"case_id": "multi-11", "category": "multi", "system": "sliding_window", "answer": "不知道；flatpak", "correct": false, "leaked": false, "latency_ms": 0.00495798303745687, "context_chars": 200}
+{"case_id": "temporal-11", "category": "temporal", "system": "sliding_window", "answer": "aarch64", "correct": false, "leaked": false, "latency_ms": 0.003583001671358943, "context_chars": 241}
+{"case_id": "forget-11", "category": "forget", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0029170187190175056, "context_chars": 218}
+{"case_id": "abstain-11", "category": "abstain", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002582994056865573, "context_chars": 202}
+{"case_id": "recall-12", "category": "recall", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0027919886633753777, "context_chars": 193}
+{"case_id": "update-12", "category": "update", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0031249946914613247, "context_chars": 226}
+{"case_id": "multi-12", "category": "multi", "system": "sliding_window", "answer": "不知道；不知道", "correct": false, "leaked": false, "latency_ms": 0.005124980816617608, "context_chars": 224}
+{"case_id": "temporal-12", "category": "temporal", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0026669877115637064, "context_chars": 218}
+{"case_id": "forget-12", "category": "forget", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0024579931050539017, "context_chars": 183}
+{"case_id": "abstain-12", "category": "abstain", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0030410010367631912, "context_chars": 217}
+{"case_id": "recall-13", "category": "recall", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0024999899324029684, "context_chars": 223}
+{"case_id": "update-13", "category": "update", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0029590155463665724, "context_chars": 228}
+{"case_id": "multi-13", "category": "multi", "system": "sliding_window", "answer": "不知道；x86_64", "correct": false, "leaked": false, "latency_ms": 0.005332985892891884, "context_chars": 223}
+{"case_id": "temporal-13", "category": "temporal", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0029589864425361156, "context_chars": 228}
+{"case_id": "forget-13", "category": "forget", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0027920177672058344, "context_chars": 229}
+{"case_id": "abstain-13", "category": "abstain", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002416985807940364, "context_chars": 195}
+{"case_id": "recall-14", "category": "recall", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0024170149117708206, "context_chars": 241}
+{"case_id": "update-14", "category": "update", "system": "sliding_window", "answer": "RX 7800", "correct": true, "leaked": false, "latency_ms": 0.003082997864112258, "context_chars": 221}
+{"case_id": "multi-14", "category": "multi", "system": "sliding_window", "answer": "不知道；不知道", "correct": false, "leaked": false, "latency_ms": 0.0041660096030682325, "context_chars": 233}
+{"case_id": "temporal-14", "category": "temporal", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.002708984538912773, "context_chars": 265}
+{"case_id": "forget-14", "category": "forget", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002667016815394163, "context_chars": 218}
+{"case_id": "abstain-14", "category": "abstain", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0024999899324029684, "context_chars": 217}
+{"case_id": "recall-15", "category": "recall", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0027909991331398487, "context_chars": 205}
+{"case_id": "update-15", "category": "update", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0024579931050539017, "context_chars": 207}
+{"case_id": "multi-15", "category": "multi", "system": "sliding_window", "answer": "不知道；不知道", "correct": false, "leaked": false, "latency_ms": 0.004750007065013051, "context_chars": 228}
+{"case_id": "temporal-15", "category": "temporal", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0040000013541430235, "context_chars": 208}
+{"case_id": "forget-15", "category": "forget", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0033329997677356005, "context_chars": 221}
+{"case_id": "abstain-15", "category": "abstain", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0029170187190175056, "context_chars": 212}
+{"case_id": "recall-16", "category": "recall", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.00304199056699872, "context_chars": 215}
+{"case_id": "update-16", "category": "update", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0029170187190175056, "context_chars": 234}
+{"case_id": "multi-16", "category": "multi", "system": "sliding_window", "answer": "不知道；不知道", "correct": false, "leaked": false, "latency_ms": 0.005165988113731146, "context_chars": 219}
+{"case_id": "temporal-16", "category": "temporal", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0031249946914613247, "context_chars": 226}
+{"case_id": "forget-16", "category": "forget", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0026669877115637064, "context_chars": 208}
+{"case_id": "abstain-16", "category": "abstain", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0027500209398567677, "context_chars": 206}
+{"case_id": "recall-17", "category": "recall", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0029999937396496534, "context_chars": 221}
+{"case_id": "update-17", "category": "update", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0027909991331398487, "context_chars": 242}
+{"case_id": "multi-17", "category": "multi", "system": "sliding_window", "answer": "不知道；源码编译", "correct": false, "leaked": false, "latency_ms": 0.0050000089686363935, "context_chars": 207}
+{"case_id": "temporal-17", "category": "temporal", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0031660019885748625, "context_chars": 195}
+{"case_id": "forget-17", "category": "forget", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002500019036233425, "context_chars": 212}
+{"case_id": "abstain-17", "category": "abstain", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002540997229516506, "context_chars": 204}
+{"case_id": "recall-18", "category": "recall", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0024999899324029684, "context_chars": 179}
+{"case_id": "update-18", "category": "update", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0029999937396496534, "context_chars": 189}
+{"case_id": "multi-18", "category": "multi", "system": "sliding_window", "answer": "不知道；不知道", "correct": false, "leaked": false, "latency_ms": 0.004458008334040642, "context_chars": 220}
+{"case_id": "temporal-18", "category": "temporal", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0026659981813281775, "context_chars": 195}
+{"case_id": "forget-18", "category": "forget", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002582994056865573, "context_chars": 219}
+{"case_id": "abstain-18", "category": "abstain", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0025830231606960297, "context_chars": 206}
+{"case_id": "recall-19", "category": "recall", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.002541986759752035, "context_chars": 209}
+{"case_id": "update-19", "category": "update", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.002749991836026311, "context_chars": 222}
+{"case_id": "multi-19", "category": "multi", "system": "sliding_window", "answer": "不知道；不知道", "correct": false, "leaked": false, "latency_ms": 0.003958994057029486, "context_chars": 210}
+{"case_id": "temporal-19", "category": "temporal", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 0.0031249946914613247, "context_chars": 218}
+{"case_id": "forget-19", "category": "forget", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0027909991331398487, "context_chars": 211}
+{"case_id": "abstain-19", "category": "abstain", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002541986759752035, "context_chars": 239}
+{"case_id": "recall-0", "category": "recall", "system": "bm25_rag", "answer": "上海", "correct": true, "leaked": false, "latency_ms": 0.25725000887177885, "context_chars": 57}
+{"case_id": "update-0", "category": "update", "system": "bm25_rag", "answer": "~/dev", "correct": false, "leaked": true, "latency_ms": 0.19687498570419848, "context_chars": 72}
+{"case_id": "multi-0", "category": "multi", "system": "bm25_rag", "answer": "flatpak；Java", "correct": true, "leaked": false, "latency_ms": 0.2367919951211661, "context_chars": 62}
+{"case_id": "temporal-0", "category": "temporal", "system": "bm25_rag", "answer": "上海", "correct": true, "leaked": false, "latency_ms": 0.1844999787863344, "context_chars": 49}
+{"case_id": "forget-0", "category": "forget", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.18504101899452507, "context_chars": 78}
+{"case_id": "abstain-0", "category": "abstain", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.17470799502916634, "context_chars": 84}
+{"case_id": "recall-1", "category": "recall", "system": "bm25_rag", "answer": "openKylin 1.0.2", "correct": true, "leaked": false, "latency_ms": 0.20116701489314437, "context_chars": 109}
+{"case_id": "update-1", "category": "update", "system": "bm25_rag", "answer": "x86_64", "correct": false, "leaked": true, "latency_ms": 0.20970901823602617, "context_chars": 83}
+{"case_id": "multi-1", "category": "multi", "system": "bm25_rag", "answer": "Arc A770；360 安全浏览器", "correct": true, "leaked": false, "latency_ms": 0.21933301468379796, "context_chars": 72}
+{"case_id": "temporal-1", "category": "temporal", "system": "bm25_rag", "answer": "RX 7800", "correct": true, "leaked": false, "latency_ms": 0.1818750170059502, "context_chars": 78}
+{"case_id": "forget-1", "category": "forget", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.1865419908426702, "context_chars": 62}
+{"case_id": "abstain-1", "category": "abstain", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.1815830182749778, "context_chars": 70}
+{"case_id": "recall-2", "category": "recall", "system": "bm25_rag", "answer": "openKylin 2.0", "correct": true, "leaked": false, "latency_ms": 0.17995797679759562, "context_chars": 111}
+{"case_id": "update-2", "category": "update", "system": "bm25_rag", "answer": "北京", "correct": true, "leaked": false, "latency_ms": 0.178459013113752, "context_chars": 55}
+{"case_id": "multi-2", "category": "multi", "system": "bm25_rag", "answer": "~/dev；深圳", "correct": true, "leaked": false, "latency_ms": 0.20683399634435773, "context_chars": 59}
+{"case_id": "temporal-2", "category": "temporal", "system": "bm25_rag", "answer": "C++", "correct": true, "leaked": false, "latency_ms": 0.1970000157598406, "context_chars": 71}
+{"case_id": "forget-2", "category": "forget", "system": "bm25_rag", "answer": "RTX 4060", "correct": false, "leaked": true, "latency_ms": 0.1772920077200979, "context_chars": 86}
+{"case_id": "abstain-2", "category": "abstain", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.18433399964123964, "context_chars": 95}
+{"case_id": "recall-3", "category": "recall", "system": "bm25_rag", "answer": "Java", "correct": true, "leaked": false, "latency_ms": 0.19241601694375277, "context_chars": 70}
+{"case_id": "update-3", "category": "update", "system": "bm25_rag", "answer": "奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.19354099640622735, "context_chars": 85}
+{"case_id": "multi-3", "category": "multi", "system": "bm25_rag", "answer": "openKylin 1.0.2；不知道", "correct": false, "leaked": false, "latency_ms": 0.21345799905247986, "context_chars": 105}
+{"case_id": "temporal-3", "category": "temporal", "system": "bm25_rag", "answer": "openKylin 1.0.2", "correct": true, "leaked": false, "latency_ms": 0.19687501480802894, "context_chars": 103}
+{"case_id": "forget-3", "category": "forget", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.18387497402727604, "context_chars": 92}
+{"case_id": "abstain-3", "category": "abstain", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.17833398305810988, "context_chars": 108}
+{"case_id": "recall-4", "category": "recall", "system": "bm25_rag", "answer": "GNOME", "correct": true, "leaked": false, "latency_ms": 0.18470900249667466, "context_chars": 87}
+{"case_id": "update-4", "category": "update", "system": "bm25_rag", "answer": "RX 7800", "correct": true, "leaked": false, "latency_ms": 0.20500001846812665, "context_chars": 78}
+{"case_id": "multi-4", "category": "multi", "system": "bm25_rag", "answer": "Vim；奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.24429100449196994, "context_chars": 68}
+{"case_id": "temporal-4", "category": "temporal", "system": "bm25_rag", "answer": "riscv64", "correct": true, "leaked": false, "latency_ms": 0.22633300977759063, "context_chars": 85}
+{"case_id": "forget-4", "category": "forget", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.20308300736360252, "context_chars": 102}
+{"case_id": "abstain-4", "category": "abstain", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.19595798221416771, "context_chars": 83}
+{"case_id": "recall-5", "category": "recall", "system": "bm25_rag", "answer": "摩尔线程 S80", "correct": true, "leaked": false, "latency_ms": 0.1734999823383987, "context_chars": 85}
+{"case_id": "update-5", "category": "update", "system": "bm25_rag", "answer": "openKylin 2.0", "correct": true, "leaked": false, "latency_ms": 0.19508300465531647, "context_chars": 113}
+{"case_id": "multi-5", "category": "multi", "system": "bm25_rag", "answer": "成都；源码编译", "correct": true, "leaked": false, "latency_ms": 0.20829201093874872, "context_chars": 57}
+{"case_id": "temporal-5", "category": "temporal", "system": "bm25_rag", "answer": "Arc A770", "correct": true, "leaked": false, "latency_ms": 0.1914160093292594, "context_chars": 71}
+{"case_id": "forget-5", "category": "forget", "system": "bm25_rag", "answer": "GNOME", "correct": false, "leaked": true, "latency_ms": 0.19883399363607168, "context_chars": 72}
+{"case_id": "abstain-5", "category": "abstain", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.1903749944176525, "context_chars": 78}
+{"case_id": "recall-6", "category": "recall", "system": "bm25_rag", "answer": "~/work", "correct": true, "leaked": false, "latency_ms": 0.18970901146531105, "context_chars": 80}
+{"case_id": "update-6", "category": "update", "system": "bm25_rag", "answer": "Alacritty", "correct": false, "leaked": true, "latency_ms": 0.18512498354539275, "context_chars": 77}
+{"case_id": "multi-6", "category": "multi", "system": "bm25_rag", "answer": "openKylin 1.0.2；不知道", "correct": false, "leaked": false, "latency_ms": 0.23700000019744039, "context_chars": 111}
+{"case_id": "temporal-6", "category": "temporal", "system": "bm25_rag", "answer": "RTX 4060", "correct": true, "leaked": false, "latency_ms": 0.20308399689383805, "context_chars": 78}
+{"case_id": "forget-6", "category": "forget", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.1808340020943433, "context_chars": 72}
+{"case_id": "abstain-6", "category": "abstain", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.1782500185072422, "context_chars": 94}
+{"case_id": "recall-7", "category": "recall", "system": "bm25_rag", "answer": "Xfce", "correct": true, "leaked": false, "latency_ms": 0.18720899242907763, "context_chars": 73}
+{"case_id": "update-7", "category": "update", "system": "bm25_rag", "answer": "fcitx5 拼音", "correct": false, "leaked": true, "latency_ms": 0.2038750099018216, "context_chars": 69}
+{"case_id": "multi-7", "category": "multi", "system": "bm25_rag", "answer": "不知道；Chromium", "correct": false, "leaked": false, "latency_ms": 0.22958300542086363, "context_chars": 77}
+{"case_id": "temporal-7", "category": "temporal", "system": "bm25_rag", "answer": "奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.20416700863279402, "context_chars": 84}
+{"case_id": "forget-7", "category": "forget", "system": "bm25_rag", "answer": "Vim", "correct": false, "leaked": true, "latency_ms": 0.1805420033633709, "context_chars": 69}
+{"case_id": "abstain-7", "category": "abstain", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.18779200036078691, "context_chars": 88}
+{"case_id": "recall-8", "category": "recall", "system": "bm25_rag", "answer": "openKylin 2.0", "correct": true, "leaked": false, "latency_ms": 0.1909160055220127, "context_chars": 101}
+{"case_id": "update-8", "category": "update", "system": "bm25_rag", "answer": "Go", "correct": false, "leaked": true, "latency_ms": 0.21304099936969578, "context_chars": 69}
+{"case_id": "multi-8", "category": "multi", "system": "bm25_rag", "answer": "riscv64；Emacs", "correct": true, "leaked": false, "latency_ms": 0.230958015890792, "context_chars": 80}
+{"case_id": "temporal-8", "category": "temporal", "system": "bm25_rag", "answer": "Java", "correct": true, "leaked": false, "latency_ms": 0.19229197641834617, "context_chars": 69}
+{"case_id": "forget-8", "category": "forget", "system": "bm25_rag", "answer": "Go", "correct": false, "leaked": true, "latency_ms": 0.17979199765250087, "context_chars": 62}
+{"case_id": "abstain-8", "category": "abstain", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.19345799228176475, "context_chars": 76}
+{"case_id": "recall-9", "category": "recall", "system": "bm25_rag", "answer": "openKylin 2.0 SP1", "correct": true, "leaked": false, "latency_ms": 0.2114999806508422, "context_chars": 109}
+{"case_id": "update-9", "category": "update", "system": "bm25_rag", "answer": "搜狗输入法", "correct": false, "leaked": true, "latency_ms": 0.194708991330117, "context_chars": 71}
+{"case_id": "multi-9", "category": "multi", "system": "bm25_rag", "answer": "Rust；不知道", "correct": false, "leaked": false, "latency_ms": 0.21637501777149737, "context_chars": 67}
+{"case_id": "temporal-9", "category": "temporal", "system": "bm25_rag", "answer": "mate-terminal", "correct": true, "leaked": false, "latency_ms": 0.1907499972730875, "context_chars": 89}
+{"case_id": "forget-9", "category": "forget", "system": "bm25_rag", "answer": "Arc A770", "correct": false, "leaked": true, "latency_ms": 0.2041249827016145, "context_chars": 77}
+{"case_id": "abstain-9", "category": "abstain", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.196542008779943, "context_chars": 97}
+{"case_id": "recall-10", "category": "recall", "system": "bm25_rag", "answer": "mate-terminal", "correct": true, "leaked": false, "latency_ms": 0.18070900114253163, "context_chars": 85}
+{"case_id": "update-10", "category": "update", "system": "bm25_rag", "answer": "VS Code", "correct": true, "leaked": false, "latency_ms": 0.2011669857893139, "context_chars": 78}
+{"case_id": "multi-10", "category": "multi", "system": "bm25_rag", "answer": "Rime 中州韵；Neovim", "correct": true, "leaked": false, "latency_ms": 0.24529200163669884, "context_chars": 66}
+{"case_id": "temporal-10", "category": "temporal", "system": "bm25_rag", "answer": "北京", "correct": true, "leaked": false, "latency_ms": 0.18429200281389058, "context_chars": 51}
+{"case_id": "forget-10", "category": "forget", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.18733300385065377, "context_chars": 57}
+{"case_id": "abstain-10", "category": "abstain", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.18066700431518257, "context_chars": 94}
+{"case_id": "recall-11", "category": "recall", "system": "bm25_rag", "answer": "kare", "correct": true, "leaked": false, "latency_ms": 0.18729199655354023, "context_chars": 59}
+{"case_id": "update-11", "category": "update", "system": "bm25_rag", "answer": "~/dev", "correct": false, "leaked": true, "latency_ms": 0.2002919791266322, "context_chars": 79}
+{"case_id": "multi-11", "category": "multi", "system": "bm25_rag", "answer": "Rime 中州韵；不知道", "correct": false, "leaked": false, "latency_ms": 0.229124998440966, "context_chars": 72}
+{"case_id": "temporal-11", "category": "temporal", "system": "bm25_rag", "answer": "riscv64", "correct": true, "leaked": false, "latency_ms": 0.21533400285989046, "context_chars": 88}
+{"case_id": "forget-11", "category": "forget", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.18324999837204814, "context_chars": 69}
+{"case_id": "abstain-11", "category": "abstain", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.21458297851495445, "context_chars": 96}
+{"case_id": "recall-12", "category": "recall", "system": "bm25_rag", "answer": "Vim", "correct": true, "leaked": false, "latency_ms": 0.19691602210514247, "context_chars": 64}
+{"case_id": "update-12", "category": "update", "system": "bm25_rag", "answer": "loongarch64", "correct": false, "leaked": true, "latency_ms": 0.22329197963699698, "context_chars": 97}
+{"case_id": "multi-12", "category": "multi", "system": "bm25_rag", "answer": "长沙；不知道", "correct": false, "leaked": false, "latency_ms": 0.22045901278033853, "context_chars": 53}
+{"case_id": "temporal-12", "category": "temporal", "system": "bm25_rag", "answer": "Chromium", "correct": true, "leaked": false, "latency_ms": 0.21704199025407434, "context_chars": 81}
+{"case_id": "forget-12", "category": "forget", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.18691702280193567, "context_chars": 78}
+{"case_id": "abstain-12", "category": "abstain", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.1720000000204891, "context_chars": 88}
+{"case_id": "recall-13", "category": "recall", "system": "bm25_rag", "answer": "Java", "correct": true, "leaked": false, "latency_ms": 0.19950000569224358, "context_chars": 76}
+{"case_id": "update-13", "category": "update", "system": "bm25_rag", "answer": "摩尔线程 S80", "correct": false, "leaked": true, "latency_ms": 0.19645900465548038, "context_chars": 77}
+{"case_id": "multi-13", "category": "multi", "system": "bm25_rag", "answer": "Kate；不知道", "correct": false, "leaked": false, "latency_ms": 0.22487499518319964, "context_chars": 64}
+{"case_id": "temporal-13", "category": "temporal", "system": "bm25_rag", "answer": "Firefox", "correct": true, "leaked": false, "latency_ms": 0.20695800776593387, "context_chars": 77}
+{"case_id": "forget-13", "category": "forget", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.17462499090470374, "context_chars": 74}
+{"case_id": "abstain-13", "category": "abstain", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.19520899513736367, "context_chars": 95}
+{"case_id": "recall-14", "category": "recall", "system": "bm25_rag", "answer": "openKylin 2.0 SP1", "correct": true, "leaked": false, "latency_ms": 0.20504099666140974, "context_chars": 116}
+{"case_id": "update-14", "category": "update", "system": "bm25_rag", "answer": "RX 7800", "correct": true, "leaked": false, "latency_ms": 0.20341601339168847, "context_chars": 90}
+{"case_id": "multi-14", "category": "multi", "system": "bm25_rag", "answer": "aarch64；不知道", "correct": false, "leaked": false, "latency_ms": 0.2349589776713401, "context_chars": 78}
+{"case_id": "temporal-14", "category": "temporal", "system": "bm25_rag", "answer": "apt", "correct": true, "leaked": false, "latency_ms": 0.2018329978454858, "context_chars": 63}
+{"case_id": "forget-14", "category": "forget", "system": "bm25_rag", "answer": "奇安信浏览器", "correct": false, "leaked": true, "latency_ms": 0.20549999317154288, "context_chars": 84}
+{"case_id": "abstain-14", "category": "abstain", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.17899999511428177, "context_chars": 93}
+{"case_id": "recall-15", "category": "recall", "system": "bm25_rag", "answer": "Kate", "correct": true, "leaked": false, "latency_ms": 0.18333402113057673, "context_chars": 66}
+{"case_id": "update-15", "category": "update", "system": "bm25_rag", "answer": "apt", "correct": false, "leaked": true, "latency_ms": 0.1985830022022128, "context_chars": 60}
+{"case_id": "multi-15", "category": "multi", "system": "bm25_rag", "answer": "aarch64；不知道", "correct": false, "leaked": false, "latency_ms": 0.22750001517124474, "context_chars": 84}
+{"case_id": "temporal-15", "category": "temporal", "system": "bm25_rag", "answer": "flatpak", "correct": true, "leaked": false, "latency_ms": 0.19704198348335922, "context_chars": 66}
+{"case_id": "forget-15", "category": "forget", "system": "bm25_rag", "answer": "~/dev", "correct": false, "leaked": true, "latency_ms": 0.18266699044033885, "context_chars": 72}
+{"case_id": "abstain-15", "category": "abstain", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.1914160093292594, "context_chars": 92}
+{"case_id": "recall-16", "category": "recall", "system": "bm25_rag", "answer": "riscv64", "correct": true, "leaked": false, "latency_ms": 0.20374997984617949, "context_chars": 82}
+{"case_id": "update-16", "category": "update", "system": "bm25_rag", "answer": "奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.19216601504012942, "context_chars": 86}
+{"case_id": "multi-16", "category": "multi", "system": "bm25_rag", "answer": "RX 7800；上海", "correct": true, "leaked": false, "latency_ms": 0.21604198263958097, "context_chars": 68}
+{"case_id": "temporal-16", "category": "temporal", "system": "bm25_rag", "answer": "Kate", "correct": true, "leaked": false, "latency_ms": 0.1975419872906059, "context_chars": 66}
+{"case_id": "forget-16", "category": "forget", "system": "bm25_rag", "answer": "讯飞输入法", "correct": false, "leaked": true, "latency_ms": 0.19462499767541885, "context_chars": 74}
+{"case_id": "abstain-16", "category": "abstain", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.18125001224689186, "context_chars": 65}
+{"case_id": "recall-17", "category": "recall", "system": "bm25_rag", "answer": "~/work", "correct": true, "leaked": false, "latency_ms": 0.18520798766985536, "context_chars": 77}
+{"case_id": "update-17", "category": "update", "system": "bm25_rag", "answer": "奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.20708399824798107, "context_chars": 95}
+{"case_id": "multi-17", "category": "multi", "system": "bm25_rag", "answer": "UKUI；不知道", "correct": false, "leaked": false, "latency_ms": 0.22037499002180994, "context_chars": 75}
+{"case_id": "temporal-17", "category": "temporal", "system": "bm25_rag", "answer": "~/dev", "correct": true, "leaked": false, "latency_ms": 0.2083329891320318, "context_chars": 65}
+{"case_id": "forget-17", "category": "forget", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.21612501586787403, "context_chars": 84}
+{"case_id": "abstain-17", "category": "abstain", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.19054199219681323, "context_chars": 92}
+{"case_id": "recall-18", "category": "recall", "system": "bm25_rag", "answer": "~/work", "correct": true, "leaked": false, "latency_ms": 0.19087499822489917, "context_chars": 72}
+{"case_id": "update-18", "category": "update", "system": "bm25_rag", "answer": "上海", "correct": false, "leaked": true, "latency_ms": 0.1916250039357692, "context_chars": 53}
+{"case_id": "multi-18", "category": "multi", "system": "bm25_rag", "answer": "Java；不知道", "correct": false, "leaked": false, "latency_ms": 0.2281250199303031, "context_chars": 66}
+{"case_id": "temporal-18", "category": "temporal", "system": "bm25_rag", "answer": "RX 7800", "correct": true, "leaked": false, "latency_ms": 0.20450001466087997, "context_chars": 71}
+{"case_id": "forget-18", "category": "forget", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.19879199680872262, "context_chars": 80}
+{"case_id": "abstain-18", "category": "abstain", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.19541700021363795, "context_chars": 73}
+{"case_id": "recall-19", "category": "recall", "system": "bm25_rag", "answer": "Xfce", "correct": true, "leaked": false, "latency_ms": 0.1760419982019812, "context_chars": 78}
+{"case_id": "update-19", "category": "update", "system": "bm25_rag", "answer": "奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.20208299974910915, "context_chars": 88}
+{"case_id": "multi-19", "category": "multi", "system": "bm25_rag", "answer": "Vim；奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.22354201064445078, "context_chars": 72}
+{"case_id": "temporal-19", "category": "temporal", "system": "bm25_rag", "answer": "Emacs", "correct": true, "leaked": false, "latency_ms": 0.21104200277477503, "context_chars": 65}
+{"case_id": "forget-19", "category": "forget", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.1923340023495257, "context_chars": 83}
+{"case_id": "abstain-19", "category": "abstain", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.18649999401532114, "context_chars": 79}
+{"case_id": "recall-0", "category": "recall", "system": "profile_store", "answer": "上海", "correct": true, "leaked": false, "latency_ms": 0.004208006430417299, "context_chars": 57}
+{"case_id": "update-0", "category": "update", "system": "profile_store", "answer": "/data/projects", "correct": true, "leaked": false, "latency_ms": 0.003083987394347787, "context_chars": 81}
+{"case_id": "multi-0", "category": "multi", "system": "profile_store", "answer": "flatpak；Java", "correct": true, "leaked": false, "latency_ms": 0.006208021659404039, "context_chars": 128}
+{"case_id": "temporal-0", "category": "temporal", "system": "profile_store", "answer": "长沙", "correct": false, "leaked": false, "latency_ms": 0.002167013008147478, "context_chars": 42}
+{"case_id": "forget-0", "category": "forget", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0019160215742886066, "context_chars": 48}
+{"case_id": "abstain-0", "category": "abstain", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002500019036233425, "context_chars": 79}
+{"case_id": "recall-1", "category": "recall", "system": "profile_store", "answer": "openKylin 1.0.2", "correct": true, "leaked": false, "latency_ms": 0.0027919886633753777, "context_chars": 109}
+{"case_id": "update-1", "category": "update", "system": "profile_store", "answer": "loongarch64", "correct": true, "leaked": false, "latency_ms": 0.002249988028779626, "context_chars": 62}
+{"case_id": "multi-1", "category": "multi", "system": "profile_store", "answer": "Arc A770；360 安全浏览器", "correct": true, "leaked": false, "latency_ms": 0.0053340045269578695, "context_chars": 118}
+{"case_id": "temporal-1", "category": "temporal", "system": "profile_store", "answer": "摩尔线程 S80", "correct": false, "leaked": false, "latency_ms": 0.0017080164980143309, "context_chars": 35}
+{"case_id": "forget-1", "category": "forget", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0019169820006936789, "context_chars": 41}
+{"case_id": "abstain-1", "category": "abstain", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002082990249618888, "context_chars": 59}
+{"case_id": "recall-2", "category": "recall", "system": "profile_store", "answer": "openKylin 2.0", "correct": true, "leaked": false, "latency_ms": 0.0018750142771750689, "context_chars": 55}
+{"case_id": "update-2", "category": "update", "system": "profile_store", "answer": "北京", "correct": true, "leaked": false, "latency_ms": 0.0019590079318732023, "context_chars": 42}
+{"case_id": "multi-2", "category": "multi", "system": "profile_store", "answer": "~/dev；深圳", "correct": true, "leaked": false, "latency_ms": 0.005292007699608803, "context_chars": 111}
+{"case_id": "temporal-2", "category": "temporal", "system": "profile_store", "answer": "Python", "correct": false, "leaked": false, "latency_ms": 0.002166023477911949, "context_chars": 58}
+{"case_id": "forget-2", "category": "forget", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0017500133253633976, "context_chars": 45}
+{"case_id": "abstain-2", "category": "abstain", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002209009835496545, "context_chars": 69}
+{"case_id": "recall-3", "category": "recall", "system": "profile_store", "answer": "Java", "correct": true, "leaked": false, "latency_ms": 0.0024999899324029684, "context_chars": 72}
+{"case_id": "update-3", "category": "update", "system": "profile_store", "answer": "奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.002208980731666088, "context_chars": 60}
+{"case_id": "multi-3", "category": "multi", "system": "profile_store", "answer": "openKylin 1.0.2；mate-terminal", "correct": true, "leaked": false, "latency_ms": 0.005124980816617608, "context_chars": 152}
+{"case_id": "temporal-3", "category": "temporal", "system": "profile_store", "answer": "openKylin 2.0", "correct": false, "leaked": false, "latency_ms": 0.0021250161807984114, "context_chars": 75}
+{"case_id": "forget-3", "category": "forget", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0017079873941838741, "context_chars": 58}
+{"case_id": "abstain-3", "category": "abstain", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.00200001522898674, "context_chars": 70}
+{"case_id": "recall-4", "category": "recall", "system": "profile_store", "answer": "GNOME", "correct": true, "leaked": false, "latency_ms": 0.0019170111045241356, "context_chars": 58}
+{"case_id": "update-4", "category": "update", "system": "profile_store", "answer": "RX 7800", "correct": true, "leaked": false, "latency_ms": 0.0019589788280427456, "context_chars": 59}
+{"case_id": "multi-4", "category": "multi", "system": "profile_store", "answer": "Vim；奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.0046660134103149176, "context_chars": 115}
+{"case_id": "temporal-4", "category": "temporal", "system": "profile_store", "answer": "aarch64", "correct": false, "leaked": false, "latency_ms": 0.0019169820006936789, "context_chars": 59}
+{"case_id": "forget-4", "category": "forget", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0017080164980143309, "context_chars": 60}
+{"case_id": "abstain-4", "category": "abstain", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0018749851733446121, "context_chars": 54}
+{"case_id": "recall-5", "category": "recall", "system": "profile_store", "answer": "摩尔线程 S80", "correct": true, "leaked": false, "latency_ms": 0.002209009835496545, "context_chars": 60}
+{"case_id": "update-5", "category": "update", "system": "profile_store", "answer": "openKylin 2.0", "correct": true, "leaked": false, "latency_ms": 0.002208980731666088, "context_chars": 79}
+{"case_id": "multi-5", "category": "multi", "system": "profile_store", "answer": "成都；源码编译", "correct": true, "leaked": false, "latency_ms": 0.005417008651420474, "context_chars": 112}
+{"case_id": "temporal-5", "category": "temporal", "system": "profile_store", "answer": "RX 7800", "correct": false, "leaked": false, "latency_ms": 0.002166023477911949, "context_chars": 59}
+{"case_id": "forget-5", "category": "forget", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0017500133253633976, "context_chars": 41}
+{"case_id": "abstain-5", "category": "abstain", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002082990249618888, "context_chars": 54}
+{"case_id": "recall-6", "category": "recall", "system": "profile_store", "answer": "~/work", "correct": true, "leaked": false, "latency_ms": 0.0023329921532422304, "context_chars": 80}
+{"case_id": "update-6", "category": "update", "system": "profile_store", "answer": "mate-terminal", "correct": true, "leaked": false, "latency_ms": 0.002083979779854417, "context_chars": 63}
+{"case_id": "multi-6", "category": "multi", "system": "profile_store", "answer": "openKylin 1.0.2；loongarch64", "correct": true, "leaked": false, "latency_ms": 0.005624984623864293, "context_chars": 151}
+{"case_id": "temporal-6", "category": "temporal", "system": "profile_store", "answer": "RX 7800", "correct": false, "leaked": false, "latency_ms": 0.0020830193534493446, "context_chars": 61}
+{"case_id": "forget-6", "category": "forget", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002082990249618888, "context_chars": 64}
+{"case_id": "abstain-6", "category": "abstain", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002040993422269821, "context_chars": 59}
+{"case_id": "recall-7", "category": "recall", "system": "profile_store", "answer": "Xfce", "correct": true, "leaked": false, "latency_ms": 0.002375018084421754, "context_chars": 85}
+{"case_id": "update-7", "category": "update", "system": "profile_store", "answer": "Rime 中州韵", "correct": true, "leaked": false, "latency_ms": 0.002207991201430559, "context_chars": 57}
+{"case_id": "multi-7", "category": "multi", "system": "profile_store", "answer": "/data/projects；Chromium", "correct": true, "leaked": false, "latency_ms": 0.004791974788531661, "context_chars": 104}
+{"case_id": "temporal-7", "category": "temporal", "system": "profile_store", "answer": "360 安全浏览器", "correct": false, "leaked": false, "latency_ms": 0.002582994056865573, "context_chars": 87}
+{"case_id": "forget-7", "category": "forget", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0021669839043170214, "context_chars": 60}
+{"case_id": "abstain-7", "category": "abstain", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.001667009200900793, "context_chars": 36}
+{"case_id": "recall-8", "category": "recall", "system": "profile_store", "answer": "openKylin 2.0", "correct": true, "leaked": false, "latency_ms": 0.0021669839043170214, "context_chars": 75}
+{"case_id": "update-8", "category": "update", "system": "profile_store", "answer": "Python", "correct": true, "leaked": false, "latency_ms": 0.002042012056335807, "context_chars": 54}
+{"case_id": "multi-8", "category": "multi", "system": "profile_store", "answer": "riscv64；Emacs", "correct": true, "leaked": false, "latency_ms": 0.005333014996722341, "context_chars": 124}
+{"case_id": "temporal-8", "category": "temporal", "system": "profile_store", "answer": "Go", "correct": false, "leaked": false, "latency_ms": 0.002040993422269821, "context_chars": 52}
+{"case_id": "forget-8", "category": "forget", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0017090060282498598, "context_chars": 35}
+{"case_id": "abstain-8", "category": "abstain", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002375018084421754, "context_chars": 71}
+{"case_id": "recall-9", "category": "recall", "system": "profile_store", "answer": "openKylin 2.0 SP1", "correct": true, "leaked": false, "latency_ms": 0.0027500209398567677, "context_chars": 109}
+{"case_id": "update-9", "category": "update", "system": "profile_store", "answer": "Rime 中州韵", "correct": true, "leaked": false, "latency_ms": 0.0021249870769679546, "context_chars": 59}
+{"case_id": "multi-9", "category": "multi", "system": "profile_store", "answer": "Rust；成都", "correct": true, "leaked": false, "latency_ms": 0.005292007699608803, "context_chars": 109}
+{"case_id": "temporal-9", "category": "temporal", "system": "profile_store", "answer": "Konsole", "correct": false, "leaked": false, "latency_ms": 0.0019579892978072166, "context_chars": 59}
+{"case_id": "forget-9", "category": "forget", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.00200001522898674, "context_chars": 65}
+{"case_id": "abstain-9", "category": "abstain", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002083979779854417, "context_chars": 63}
+{"case_id": "recall-10", "category": "recall", "system": "profile_store", "answer": "mate-terminal", "correct": true, "leaked": false, "latency_ms": 0.002041022526100278, "context_chars": 61}
+{"case_id": "update-10", "category": "update", "system": "profile_store", "answer": "VS Code", "correct": true, "leaked": false, "latency_ms": 0.0017079873941838741, "context_chars": 36}
+{"case_id": "multi-10", "category": "multi", "system": "profile_store", "answer": "Rime 中州韵；Neovim", "correct": true, "leaked": false, "latency_ms": 0.005707988748326898, "context_chars": 140}
+{"case_id": "temporal-10", "category": "temporal", "system": "profile_store", "answer": "长沙", "correct": false, "leaked": false, "latency_ms": 0.002082990249618888, "context_chars": 57}
+{"case_id": "forget-10", "category": "forget", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0013329845387488604, "context_chars": 15}
+{"case_id": "abstain-10", "category": "abstain", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0016249832697212696, "context_chars": 42}
+{"case_id": "recall-11", "category": "recall", "system": "profile_store", "answer": "kare", "correct": true, "leaked": false, "latency_ms": 0.0016250123735517263, "context_chars": 28}
+{"case_id": "update-11", "category": "update", "system": "profile_store", "answer": "/data/projects", "correct": true, "leaked": false, "latency_ms": 0.0023329921532422304, "context_chars": 88}
+{"case_id": "multi-11", "category": "multi", "system": "profile_store", "answer": "Rime 中州韵；flatpak", "correct": true, "leaked": false, "latency_ms": 0.005208014044910669, "context_chars": 138}
+{"case_id": "temporal-11", "category": "temporal", "system": "profile_store", "answer": "aarch64", "correct": false, "leaked": false, "latency_ms": 0.002209009835496545, "context_chars": 88}
+{"case_id": "forget-11", "category": "forget", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0015829864423722029, "context_chars": 46}
+{"case_id": "abstain-11", "category": "abstain", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0018749851733446121, "context_chars": 62}
+{"case_id": "recall-12", "category": "recall", "system": "profile_store", "answer": "Vim", "correct": true, "leaked": false, "latency_ms": 0.0021250161807984114, "context_chars": 73}
+{"case_id": "update-12", "category": "update", "system": "profile_store", "answer": "aarch64", "correct": true, "leaked": false, "latency_ms": 0.0019169820006936789, "context_chars": 63}
+{"case_id": "multi-12", "category": "multi", "system": "profile_store", "answer": "长沙；riscv64", "correct": true, "leaked": false, "latency_ms": 0.004458997864276171, "context_chars": 101}
+{"case_id": "temporal-12", "category": "temporal", "system": "profile_store", "answer": "Firefox", "correct": false, "leaked": false, "latency_ms": 0.0021669839043170214, "context_chars": 82}
+{"case_id": "forget-12", "category": "forget", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0015829864423722029, "context_chars": 45}
+{"case_id": "abstain-12", "category": "abstain", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0019580184016376734, "context_chars": 68}
+{"case_id": "recall-13", "category": "recall", "system": "profile_store", "answer": "Java", "correct": true, "leaked": false, "latency_ms": 0.0018749851733446121, "context_chars": 54}
+{"case_id": "update-13", "category": "update", "system": "profile_store", "answer": "Arc A770", "correct": true, "leaked": false, "latency_ms": 0.0022500171326100826, "context_chars": 81}
+{"case_id": "multi-13", "category": "multi", "system": "profile_store", "answer": "Kate；x86_64", "correct": true, "leaked": false, "latency_ms": 0.004499976057559252, "context_chars": 112}
+{"case_id": "temporal-13", "category": "temporal", "system": "profile_store", "answer": "Chromium", "correct": false, "leaked": false, "latency_ms": 0.0018330174498260021, "context_chars": 58}
+{"case_id": "forget-13", "category": "forget", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0015420082490891218, "context_chars": 42}
+{"case_id": "abstain-13", "category": "abstain", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0017920101527124643, "context_chars": 58}
+{"case_id": "recall-14", "category": "recall", "system": "profile_store", "answer": "openKylin 2.0 SP1", "correct": true, "leaked": false, "latency_ms": 0.00200001522898674, "context_chars": 57}
+{"case_id": "update-14", "category": "update", "system": "profile_store", "answer": "RX 7800", "correct": true, "leaked": false, "latency_ms": 0.0019999861251562834, "context_chars": 54}
+{"case_id": "multi-14", "category": "multi", "system": "profile_store", "answer": "aarch64；kitty", "correct": true, "leaked": false, "latency_ms": 0.0050000089686363935, "context_chars": 112}
+{"case_id": "temporal-14", "category": "temporal", "system": "profile_store", "answer": "flatpak", "correct": false, "leaked": false, "latency_ms": 0.0024579931050539017, "context_chars": 74}
+{"case_id": "forget-14", "category": "forget", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0017499842215329409, "context_chars": 46}
+{"case_id": "abstain-14", "category": "abstain", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002500019036233425, "context_chars": 88}
+{"case_id": "recall-15", "category": "recall", "system": "profile_store", "answer": "Kate", "correct": true, "leaked": false, "latency_ms": 0.002249988028779626, "context_chars": 70}
+{"case_id": "update-15", "category": "update", "system": "profile_store", "answer": "kare", "correct": true, "leaked": false, "latency_ms": 0.0022500171326100826, "context_chars": 70}
+{"case_id": "multi-15", "category": "multi", "system": "profile_store", "answer": "aarch64；mate-terminal", "correct": true, "leaked": false, "latency_ms": 0.005750014679506421, "context_chars": 145}
+{"case_id": "temporal-15", "category": "temporal", "system": "profile_store", "answer": "apt", "correct": false, "leaked": false, "latency_ms": 0.002042012056335807, "context_chars": 45}
+{"case_id": "forget-15", "category": "forget", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0019170111045241356, "context_chars": 56}
+{"case_id": "abstain-15", "category": "abstain", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002042012056335807, "context_chars": 59}
+{"case_id": "recall-16", "category": "recall", "system": "profile_store", "answer": "riscv64", "correct": true, "leaked": false, "latency_ms": 0.00204198295250535, "context_chars": 63}
+{"case_id": "update-16", "category": "update", "system": "profile_store", "answer": "奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.002542015863582492, "context_chars": 86}
+{"case_id": "multi-16", "category": "multi", "system": "profile_store", "answer": "RX 7800；上海", "correct": true, "leaked": false, "latency_ms": 0.004959001671522856, "context_chars": 103}
+{"case_id": "temporal-16", "category": "temporal", "system": "profile_store", "answer": "VS Code", "correct": false, "leaked": false, "latency_ms": 0.0019169820006936789, "context_chars": 56}
+{"case_id": "forget-16", "category": "forget", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0018330174498260021, "context_chars": 43}
+{"case_id": "abstain-16", "category": "abstain", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002249988028779626, "context_chars": 65}
+{"case_id": "recall-17", "category": "recall", "system": "profile_store", "answer": "~/work", "correct": true, "leaked": false, "latency_ms": 0.0024580222088843584, "context_chars": 81}
+{"case_id": "update-17", "category": "update", "system": "profile_store", "answer": "奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.0017909915186464787, "context_chars": 42}
+{"case_id": "multi-17", "category": "multi", "system": "profile_store", "answer": "UKUI；源码编译", "correct": true, "leaked": false, "latency_ms": 0.005084002623334527, "context_chars": 109}
+{"case_id": "temporal-17", "category": "temporal", "system": "profile_store", "answer": "~/work", "correct": false, "leaked": false, "latency_ms": 0.002415996277704835, "context_chars": 73}
+{"case_id": "forget-17", "category": "forget", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0018749851733446121, "context_chars": 54}
+{"case_id": "abstain-17", "category": "abstain", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002374988980591297, "context_chars": 82}
+{"case_id": "recall-18", "category": "recall", "system": "profile_store", "answer": "~/work", "correct": true, "leaked": false, "latency_ms": 0.002375018084421754, "context_chars": 72}
+{"case_id": "update-18", "category": "update", "system": "profile_store", "answer": "北京", "correct": true, "leaked": false, "latency_ms": 0.0019589788280427456, "context_chars": 38}
+{"case_id": "multi-18", "category": "multi", "system": "profile_store", "answer": "Java；openKylin 2.0 SP1", "correct": true, "leaked": false, "latency_ms": 0.006000016583129764, "context_chars": 163}
+{"case_id": "temporal-18", "category": "temporal", "system": "profile_store", "answer": "Arc A770", "correct": false, "leaked": false, "latency_ms": 0.0019999861251562834, "context_chars": 55}
+{"case_id": "forget-18", "category": "forget", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0017080164980143309, "context_chars": 46}
+{"case_id": "abstain-18", "category": "abstain", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0023329921532422304, "context_chars": 72}
+{"case_id": "recall-19", "category": "recall", "system": "profile_store", "answer": "Xfce", "correct": true, "leaked": false, "latency_ms": 0.0016250123735517263, "context_chars": 34}
+{"case_id": "update-19", "category": "update", "system": "profile_store", "answer": "奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.0015420082490891218, "context_chars": 40}
+{"case_id": "multi-19", "category": "multi", "system": "profile_store", "answer": "Vim；奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.0048749789129942656, "context_chars": 130}
+{"case_id": "temporal-19", "category": "temporal", "system": "profile_store", "answer": "VS Code", "correct": false, "leaked": false, "latency_ms": 0.0018750142771750689, "context_chars": 57}
+{"case_id": "forget-19", "category": "forget", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0012080126907676458, "context_chars": 22}
+{"case_id": "abstain-19", "category": "abstain", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002042012056335807, "context_chars": 70}
+{"case_id": "recall-0", "category": "recall", "system": "hybrid", "answer": "上海", "correct": true, "leaked": false, "latency_ms": 0.006499991286545992, "context_chars": 20}
+{"case_id": "update-0", "category": "update", "system": "hybrid", "answer": "/data/projects", "correct": true, "leaked": false, "latency_ms": 0.003958994057029486, "context_chars": 56}
+{"case_id": "multi-0", "category": "multi", "system": "hybrid", "answer": "flatpak；Java", "correct": true, "leaked": false, "latency_ms": 0.004915986210107803, "context_chars": 50}
+{"case_id": "temporal-0", "category": "temporal", "system": "hybrid", "answer": "上海", "correct": true, "leaked": false, "latency_ms": 0.0027500209398567677, "context_chars": 41}
+{"case_id": "forget-0", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0016250123735517263, "context_chars": 0}
+{"case_id": "abstain-0", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.001500011421740055, "context_chars": 0}
+{"case_id": "recall-1", "category": "recall", "system": "hybrid", "answer": "openKylin 1.0.2", "correct": true, "leaked": false, "latency_ms": 0.002208980731666088, "context_chars": 33}
+{"case_id": "update-1", "category": "update", "system": "hybrid", "answer": "loongarch64", "correct": true, "leaked": false, "latency_ms": 0.0038750004023313522, "context_chars": 112}
+{"case_id": "multi-1", "category": "multi", "system": "hybrid", "answer": "Arc A770；360 安全浏览器", "correct": true, "leaked": false, "latency_ms": 0.0038750004023313522, "context_chars": 54}
+{"case_id": "temporal-1", "category": "temporal", "system": "hybrid", "answer": "RX 7800", "correct": true, "leaked": false, "latency_ms": 0.002333021257072687, "context_chars": 51}
+{"case_id": "forget-1", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0015409896150231361, "context_chars": 0}
+{"case_id": "abstain-1", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.001333013642579317, "context_chars": 0}
+{"case_id": "recall-2", "category": "recall", "system": "hybrid", "answer": "openKylin 2.0", "correct": true, "leaked": false, "latency_ms": 0.0017919810488820076, "context_chars": 32}
+{"case_id": "update-2", "category": "update", "system": "hybrid", "answer": "北京", "correct": true, "leaked": false, "latency_ms": 0.0026250199880450964, "context_chars": 61}
+{"case_id": "multi-2", "category": "multi", "system": "hybrid", "answer": "~/dev；深圳", "correct": true, "leaked": false, "latency_ms": 0.003583001671358943, "context_chars": 43}
+{"case_id": "temporal-2", "category": "temporal", "system": "hybrid", "answer": "C++", "correct": true, "leaked": false, "latency_ms": 0.002500019036233425, "context_chars": 51}
+{"case_id": "forget-2", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0012499804142862558, "context_chars": 0}
+{"case_id": "abstain-2", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0014169781934469938, "context_chars": 0}
+{"case_id": "recall-3", "category": "recall", "system": "hybrid", "answer": "Java", "correct": true, "leaked": false, "latency_ms": 0.0021659943740814924, "context_chars": 24}
+{"case_id": "update-3", "category": "update", "system": "hybrid", "answer": "奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.002667016815394163, "context_chars": 52}
+{"case_id": "multi-3", "category": "multi", "system": "hybrid", "answer": "openKylin 1.0.2；mate-terminal", "correct": true, "leaked": false, "latency_ms": 0.00404199818149209, "context_chars": 65}
+{"case_id": "temporal-3", "category": "temporal", "system": "hybrid", "answer": "openKylin 1.0.2", "correct": true, "leaked": false, "latency_ms": 0.0024999899324029684, "context_chars": 65}
+{"case_id": "forget-3", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0014580145943909883, "context_chars": 0}
+{"case_id": "abstain-3", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0015409896150231361, "context_chars": 0}
+{"case_id": "recall-4", "category": "recall", "system": "hybrid", "answer": "GNOME", "correct": true, "leaked": false, "latency_ms": 0.00191599247045815, "context_chars": 25}
+{"case_id": "update-4", "category": "update", "system": "hybrid", "answer": "RX 7800", "correct": true, "leaked": false, "latency_ms": 0.0034580007195472717, "context_chars": 103}
+{"case_id": "multi-4", "category": "multi", "system": "hybrid", "answer": "Vim；奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.0037080026231706142, "context_chars": 47}
+{"case_id": "temporal-4", "category": "temporal", "system": "hybrid", "answer": "riscv64", "correct": true, "leaked": false, "latency_ms": 0.0024580222088843584, "context_chars": 55}
+{"case_id": "forget-4", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0012499804142862558, "context_chars": 0}
+{"case_id": "abstain-4", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0014999823179095984, "context_chars": 0}
+{"case_id": "recall-5", "category": "recall", "system": "hybrid", "answer": "摩尔线程 S80", "correct": true, "leaked": false, "latency_ms": 0.00200001522898674, "context_chars": 27}
+{"case_id": "update-5", "category": "update", "system": "hybrid", "answer": "openKylin 2.0", "correct": true, "leaked": false, "latency_ms": 0.0024589826352894306, "context_chars": 66}
+{"case_id": "multi-5", "category": "multi", "system": "hybrid", "answer": "成都；源码编译", "correct": true, "leaked": false, "latency_ms": 0.003249995643272996, "context_chars": 43}
+{"case_id": "temporal-5", "category": "temporal", "system": "hybrid", "answer": "Arc A770", "correct": true, "leaked": false, "latency_ms": 0.0021659943740814924, "context_chars": 53}
+{"case_id": "forget-5", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0011249794624745846, "context_chars": 0}
+{"case_id": "abstain-5", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0012080126907676458, "context_chars": 0}
+{"case_id": "recall-6", "category": "recall", "system": "hybrid", "answer": "~/work", "correct": true, "leaked": false, "latency_ms": 0.0019579892978072166, "context_chars": 24}
+{"case_id": "update-6", "category": "update", "system": "hybrid", "answer": "mate-terminal", "correct": true, "leaked": false, "latency_ms": 0.002542015863582492, "context_chars": 58}
+{"case_id": "multi-6", "category": "multi", "system": "hybrid", "answer": "openKylin 1.0.2；loongarch64", "correct": true, "leaked": false, "latency_ms": 0.0038750004023313522, "context_chars": 64}
+{"case_id": "temporal-6", "category": "temporal", "system": "hybrid", "answer": "RTX 4060", "correct": true, "leaked": false, "latency_ms": 0.002375018084421754, "context_chars": 53}
+{"case_id": "forget-6", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.001333013642579317, "context_chars": 0}
+{"case_id": "abstain-6", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0012920063454657793, "context_chars": 0}
+{"case_id": "recall-7", "category": "recall", "system": "hybrid", "answer": "Xfce", "correct": true, "leaked": false, "latency_ms": 0.0019999861251562834, "context_chars": 24}
+{"case_id": "update-7", "category": "update", "system": "hybrid", "answer": "Rime 中州韵", "correct": true, "leaked": false, "latency_ms": 0.003749999450519681, "context_chars": 103}
+{"case_id": "multi-7", "category": "multi", "system": "hybrid", "answer": "/data/projects；Chromium", "correct": true, "leaked": false, "latency_ms": 0.003583001671358943, "context_chars": 59}
+{"case_id": "temporal-7", "category": "temporal", "system": "hybrid", "answer": "奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.002540997229516506, "context_chars": 53}
+{"case_id": "forget-7", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0014169781934469938, "context_chars": 0}
+{"case_id": "abstain-7", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0012500095181167126, "context_chars": 0}
+{"case_id": "recall-8", "category": "recall", "system": "hybrid", "answer": "openKylin 2.0", "correct": true, "leaked": false, "latency_ms": 0.0019590079318732023, "context_chars": 32}
+{"case_id": "update-8", "category": "update", "system": "hybrid", "answer": "Python", "correct": true, "leaked": false, "latency_ms": 0.003374996595084667, "context_chars": 97}
+{"case_id": "multi-8", "category": "multi", "system": "hybrid", "answer": "riscv64；Emacs", "correct": true, "leaked": false, "latency_ms": 0.0036669953260570765, "context_chars": 51}
+{"case_id": "temporal-8", "category": "temporal", "system": "hybrid", "answer": "Java", "correct": true, "leaked": false, "latency_ms": 0.002249988028779626, "context_chars": 46}
+{"case_id": "forget-8", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0012080126907676458, "context_chars": 0}
+{"case_id": "abstain-8", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0014170072972774506, "context_chars": 0}
+{"case_id": "recall-9", "category": "recall", "system": "hybrid", "answer": "openKylin 2.0 SP1", "correct": true, "leaked": false, "latency_ms": 0.0019169820006936789, "context_chars": 36}
+{"case_id": "update-9", "category": "update", "system": "hybrid", "answer": "Rime 中州韵", "correct": true, "leaked": false, "latency_ms": 0.0031249946914613247, "context_chars": 104}
+{"case_id": "multi-9", "category": "multi", "system": "hybrid", "answer": "Rust；成都", "correct": true, "leaked": false, "latency_ms": 0.003209017449989915, "context_chars": 44}
+{"case_id": "temporal-9", "category": "temporal", "system": "hybrid", "answer": "mate-terminal", "correct": true, "leaked": false, "latency_ms": 0.002207991201430559, "context_chars": 56}
+{"case_id": "forget-9", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0012920063454657793, "context_chars": 0}
+{"case_id": "abstain-9", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0013750104699283838, "context_chars": 0}
+{"case_id": "recall-10", "category": "recall", "system": "hybrid", "answer": "mate-terminal", "correct": true, "leaked": false, "latency_ms": 0.0019999861251562834, "context_chars": 31}
+{"case_id": "update-10", "category": "update", "system": "hybrid", "answer": "VS Code", "correct": true, "leaked": false, "latency_ms": 0.0023339816834777594, "context_chars": 50}
+{"case_id": "multi-10", "category": "multi", "system": "hybrid", "answer": "Rime 中州韵；Neovim", "correct": true, "leaked": false, "latency_ms": 0.0036249984987080097, "context_chars": 52}
+{"case_id": "temporal-10", "category": "temporal", "system": "hybrid", "answer": "北京", "correct": true, "leaked": false, "latency_ms": 0.002249988028779626, "context_chars": 41}
+{"case_id": "forget-10", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0012919772416353226, "context_chars": 0}
+{"case_id": "abstain-10", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0011659867595881224, "context_chars": 0}
+{"case_id": "recall-11", "category": "recall", "system": "hybrid", "answer": "kare", "correct": true, "leaked": false, "latency_ms": 0.00200001522898674, "context_chars": 23}
+{"case_id": "update-11", "category": "update", "system": "hybrid", "answer": "/data/projects", "correct": true, "leaked": false, "latency_ms": 0.002582994056865573, "context_chars": 56}
+{"case_id": "multi-11", "category": "multi", "system": "hybrid", "answer": "Rime 中州韵；flatpak", "correct": true, "leaked": false, "latency_ms": 0.003708992153406143, "context_chars": 53}
+{"case_id": "temporal-11", "category": "temporal", "system": "hybrid", "answer": "riscv64", "correct": true, "leaked": false, "latency_ms": 0.002416985807940364, "context_chars": 54}
+{"case_id": "forget-11", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0014160177670419216, "context_chars": 0}
+{"case_id": "abstain-11", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0013750104699283838, "context_chars": 0}
+{"case_id": "recall-12", "category": "recall", "system": "hybrid", "answer": "Vim", "correct": true, "leaked": false, "latency_ms": 0.0017499842215329409, "context_chars": 22}
+{"case_id": "update-12", "category": "update", "system": "hybrid", "answer": "aarch64", "correct": true, "leaked": false, "latency_ms": 0.002667016815394163, "context_chars": 86}
+{"case_id": "multi-12", "category": "multi", "system": "hybrid", "answer": "长沙；riscv64", "correct": true, "leaked": false, "latency_ms": 0.0034999975468963385, "context_chars": 47}
+{"case_id": "temporal-12", "category": "temporal", "system": "hybrid", "answer": "Chromium", "correct": true, "leaked": false, "latency_ms": 0.002209009835496545, "context_chars": 54}
+{"case_id": "forget-12", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0009999785106629133, "context_chars": 0}
+{"case_id": "abstain-12", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.001333013642579317, "context_chars": 0}
+{"case_id": "recall-13", "category": "recall", "system": "hybrid", "answer": "Java", "correct": true, "leaked": false, "latency_ms": 0.0018329883459955454, "context_chars": 24}
+{"case_id": "update-13", "category": "update", "system": "hybrid", "answer": "Arc A770", "correct": true, "leaked": false, "latency_ms": 0.0033329997677356005, "context_chars": 103}
+{"case_id": "multi-13", "category": "multi", "system": "hybrid", "answer": "Kate；x86_64", "correct": true, "leaked": false, "latency_ms": 0.003541994374245405, "context_chars": 50}
+{"case_id": "temporal-13", "category": "temporal", "system": "hybrid", "answer": "Firefox", "correct": true, "leaked": false, "latency_ms": 0.0022919848561286926, "context_chars": 54}
+{"case_id": "forget-13", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0011669762898236513, "context_chars": 0}
+{"case_id": "abstain-13", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0013750104699283838, "context_chars": 0}
+{"case_id": "recall-14", "category": "recall", "system": "hybrid", "answer": "openKylin 2.0 SP1", "correct": true, "leaked": false, "latency_ms": 0.00191599247045815, "context_chars": 35}
+{"case_id": "update-14", "category": "update", "system": "hybrid", "answer": "RX 7800", "correct": true, "leaked": false, "latency_ms": 0.0032910029403865337, "context_chars": 105}
+{"case_id": "multi-14", "category": "multi", "system": "hybrid", "answer": "aarch64；kitty", "correct": true, "leaked": false, "latency_ms": 0.0034580007195472717, "context_chars": 51}
+{"case_id": "temporal-14", "category": "temporal", "system": "hybrid", "answer": "apt", "correct": true, "leaked": false, "latency_ms": 0.0023329921532422304, "context_chars": 48}
+{"case_id": "forget-14", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.001333013642579317, "context_chars": 0}
+{"case_id": "abstain-14", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0014170072972774506, "context_chars": 0}
+{"case_id": "recall-15", "category": "recall", "system": "hybrid", "answer": "Kate", "correct": true, "leaked": false, "latency_ms": 0.0018330174498260021, "context_chars": 24}
+{"case_id": "update-15", "category": "update", "system": "hybrid", "answer": "kare", "correct": true, "leaked": false, "latency_ms": 0.0029999937396496534, "context_chars": 68}
+{"case_id": "multi-15", "category": "multi", "system": "hybrid", "answer": "aarch64；mate-terminal", "correct": true, "leaked": false, "latency_ms": 0.003583001671358943, "context_chars": 58}
+{"case_id": "temporal-15", "category": "temporal", "system": "hybrid", "answer": "flatpak", "correct": true, "leaked": false, "latency_ms": 0.0021250161807984114, "context_chars": 48}
+{"case_id": "forget-15", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0012500095181167126, "context_chars": 0}
+{"case_id": "abstain-15", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0012499804142862558, "context_chars": 0}
+{"case_id": "recall-16", "category": "recall", "system": "hybrid", "answer": "riscv64", "correct": true, "leaked": false, "latency_ms": 0.0019589788280427456, "context_chars": 27}
+{"case_id": "update-16", "category": "update", "system": "hybrid", "answer": "奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.002334010787308216, "context_chars": 53}
+{"case_id": "multi-16", "category": "multi", "system": "hybrid", "answer": "RX 7800；上海", "correct": true, "leaked": false, "latency_ms": 0.0033329997677356005, "context_chars": 45}
+{"case_id": "temporal-16", "category": "temporal", "system": "hybrid", "answer": "Kate", "correct": true, "leaked": false, "latency_ms": 0.0022909953258931637, "context_chars": 49}
+{"case_id": "forget-16", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.001374981366097927, "context_chars": 0}
+{"case_id": "abstain-16", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0012919772416353226, "context_chars": 0}
+{"case_id": "recall-17", "category": "recall", "system": "hybrid", "answer": "~/work", "correct": true, "leaked": false, "latency_ms": 0.0018749851733446121, "context_chars": 24}
+{"case_id": "update-17", "category": "update", "system": "hybrid", "answer": "奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.0027919886633753777, "context_chars": 80}
+{"case_id": "multi-17", "category": "multi", "system": "hybrid", "answer": "UKUI；源码编译", "correct": true, "leaked": false, "latency_ms": 0.0034170225262641907, "context_chars": 47}
+{"case_id": "temporal-17", "category": "temporal", "system": "hybrid", "answer": "~/dev", "correct": true, "leaked": false, "latency_ms": 0.002375018084421754, "context_chars": 47}
+{"case_id": "forget-17", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0013750104699283838, "context_chars": 0}
+{"case_id": "abstain-17", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0014590041246265173, "context_chars": 0}
+{"case_id": "recall-18", "category": "recall", "system": "hybrid", "answer": "~/work", "correct": true, "leaked": false, "latency_ms": 0.0019169820006936789, "context_chars": 24}
+{"case_id": "update-18", "category": "update", "system": "hybrid", "answer": "北京", "correct": true, "leaked": false, "latency_ms": 0.002707995008677244, "context_chars": 60}
+{"case_id": "multi-18", "category": "multi", "system": "hybrid", "answer": "Java；openKylin 2.0 SP1", "correct": true, "leaked": false, "latency_ms": 0.0038330035749822855, "context_chars": 59}
+{"case_id": "temporal-18", "category": "temporal", "system": "hybrid", "answer": "RX 7800", "correct": true, "leaked": false, "latency_ms": 0.002249988028779626, "context_chars": 52}
+{"case_id": "forget-18", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0012920063454657793, "context_chars": 0}
+{"case_id": "abstain-18", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.001500011421740055, "context_chars": 0}
+{"case_id": "recall-19", "category": "recall", "system": "hybrid", "answer": "Xfce", "correct": true, "leaked": false, "latency_ms": 0.0015420082490891218, "context_chars": 25}
+{"case_id": "update-19", "category": "update", "system": "hybrid", "answer": "奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.002082990249618888, "context_chars": 52}
+{"case_id": "multi-19", "category": "multi", "system": "hybrid", "answer": "Vim；奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.0031249946914613247, "context_chars": 47}
+{"case_id": "temporal-19", "category": "temporal", "system": "hybrid", "answer": "Emacs", "correct": true, "leaked": false, "latency_ms": 0.0020830193534493446, "context_chars": 50}
+{"case_id": "forget-19", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0014169781934469938, "context_chars": 0}
+{"case_id": "abstain-19", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0014169781934469938, "context_chars": 0}
+{"case_id": "recall-0", "category": "recall", "system": "session_summary", "answer": "上海", "correct": true, "leaked": false, "latency_ms": 0.0036669953260570765, "context_chars": 57}
+{"case_id": "update-0", "category": "update", "system": "session_summary", "answer": "/data/projects", "correct": true, "leaked": false, "latency_ms": 0.0034580007195472717, "context_chars": 130}
+{"case_id": "multi-0", "category": "multi", "system": "session_summary", "answer": "flatpak；Java", "correct": true, "leaked": false, "latency_ms": 0.006749993190169334, "context_chars": 175}
+{"case_id": "temporal-0", "category": "temporal", "system": "session_summary", "answer": "上海", "correct": true, "leaked": false, "latency_ms": 0.002667016815394163, "context_chars": 87}
+{"case_id": "forget-0", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.003208988346159458, "context_chars": 126}
+{"case_id": "abstain-0", "category": "abstain", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002500019036233425, "context_chars": 99}
+{"case_id": "recall-1", "category": "recall", "system": "session_summary", "answer": "openKylin 1.0.2", "correct": true, "leaked": false, "latency_ms": 0.0026659981813281775, "context_chars": 109}
+{"case_id": "update-1", "category": "update", "system": "session_summary", "answer": "loongarch64", "correct": true, "leaked": false, "latency_ms": 0.003209017449989915, "context_chars": 139}
+{"case_id": "multi-1", "category": "multi", "system": "session_summary", "answer": "Arc A770；360 安全浏览器", "correct": true, "leaked": false, "latency_ms": 0.0050419766921550035, "context_chars": 118}
+{"case_id": "temporal-1", "category": "temporal", "system": "session_summary", "answer": "RX 7800", "correct": true, "leaked": false, "latency_ms": 0.002249988028779626, "context_chars": 78}
+{"case_id": "forget-1", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0027909991331398487, "context_chars": 110}
+{"case_id": "abstain-1", "category": "abstain", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0024579931050539017, "context_chars": 93}
+{"case_id": "recall-2", "category": "recall", "system": "session_summary", "answer": "openKylin 2.0", "correct": true, "leaked": false, "latency_ms": 0.002416985807940364, "context_chars": 87}
+{"case_id": "update-2", "category": "update", "system": "session_summary", "answer": "北京", "correct": true, "leaked": false, "latency_ms": 0.002416985807940364, "context_chars": 93}
+{"case_id": "multi-2", "category": "multi", "system": "session_summary", "answer": "~/dev；深圳", "correct": true, "leaked": false, "latency_ms": 0.006874994141981006, "context_chars": 207}
+{"case_id": "temporal-2", "category": "temporal", "system": "session_summary", "answer": "C++", "correct": true, "leaked": false, "latency_ms": 0.0027920177672058344, "context_chars": 142}
+{"case_id": "forget-2", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002542015863582492, "context_chars": 128}
+{"case_id": "abstain-2", "category": "abstain", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0024579931050539017, "context_chars": 112}
+{"case_id": "recall-3", "category": "recall", "system": "session_summary", "answer": "Java", "correct": true, "leaked": false, "latency_ms": 0.0022909953258931637, "context_chars": 95}
+{"case_id": "update-3", "category": "update", "system": "session_summary", "answer": "奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.002749991836026311, "context_chars": 132}
+{"case_id": "multi-3", "category": "multi", "system": "session_summary", "answer": "openKylin 1.0.2；mate-terminal", "correct": true, "leaked": false, "latency_ms": 0.0070829992182552814, "context_chars": 218}
+{"case_id": "temporal-3", "category": "temporal", "system": "session_summary", "answer": "openKylin 1.0.2", "correct": true, "leaked": false, "latency_ms": 0.002875021891668439, "context_chars": 133}
+{"case_id": "forget-3", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0031249946914613247, "context_chars": 150}
+{"case_id": "abstain-3", "category": "abstain", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.003167020622640848, "context_chars": 152}
+{"case_id": "recall-4", "category": "recall", "system": "session_summary", "answer": "GNOME", "correct": true, "leaked": false, "latency_ms": 0.0023329921532422304, "context_chars": 87}
+{"case_id": "update-4", "category": "update", "system": "session_summary", "answer": "RX 7800", "correct": true, "leaked": false, "latency_ms": 0.003374996595084667, "context_chars": 153}
+{"case_id": "multi-4", "category": "multi", "system": "session_summary", "answer": "Vim；奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.0075410061981529, "context_chars": 218}
+{"case_id": "temporal-4", "category": "temporal", "system": "session_summary", "answer": "riscv64", "correct": true, "leaked": false, "latency_ms": 0.0023329921532422304, "context_chars": 85}
+{"case_id": "forget-4", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.003207998815923929, "context_chars": 162}
+{"case_id": "abstain-4", "category": "abstain", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002540997229516506, "context_chars": 97}
+{"case_id": "recall-5", "category": "recall", "system": "session_summary", "answer": "摩尔线程 S80", "correct": true, "leaked": false, "latency_ms": 0.0027909991331398487, "context_chars": 110}
+{"case_id": "update-5", "category": "update", "system": "session_summary", "answer": "openKylin 2.0", "correct": true, "leaked": false, "latency_ms": 0.0025840126909315586, "context_chars": 113}
+{"case_id": "multi-5", "category": "multi", "system": "session_summary", "answer": "成都；源码编译", "correct": true, "leaked": false, "latency_ms": 0.00504200579598546, "context_chars": 112}
+{"case_id": "temporal-5", "category": "temporal", "system": "session_summary", "answer": "Arc A770", "correct": true, "leaked": false, "latency_ms": 0.002582994056865573, "context_chars": 120}
+{"case_id": "forget-5", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0024579931050539017, "context_chars": 115}
+{"case_id": "abstain-5", "category": "abstain", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.00204198295250535, "context_chars": 73}
+{"case_id": "recall-6", "category": "recall", "system": "session_summary", "answer": "~/work", "correct": true, "leaked": false, "latency_ms": 0.0021249870769679546, "context_chars": 80}
+{"case_id": "update-6", "category": "update", "system": "session_summary", "answer": "mate-terminal", "correct": true, "leaked": false, "latency_ms": 0.002708024112507701, "context_chars": 133}
+{"case_id": "multi-6", "category": "multi", "system": "session_summary", "answer": "openKylin 1.0.2；loongarch64", "correct": true, "leaked": false, "latency_ms": 0.006583984941244125, "context_chars": 209}
+{"case_id": "temporal-6", "category": "temporal", "system": "session_summary", "answer": "RTX 4060", "correct": true, "leaked": false, "latency_ms": 0.003207998815923929, "context_chars": 152}
+{"case_id": "forget-6", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002541986759752035, "context_chars": 97}
+{"case_id": "abstain-6", "category": "abstain", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0019579892978072166, "context_chars": 59}
+{"case_id": "recall-7", "category": "recall", "system": "session_summary", "answer": "Xfce", "correct": true, "leaked": false, "latency_ms": 0.002874992787837982, "context_chars": 125}
+{"case_id": "update-7", "category": "update", "system": "session_summary", "answer": "Rime 中州韵", "correct": true, "leaked": false, "latency_ms": 0.0036249984987080097, "context_chars": 164}
+{"case_id": "multi-7", "category": "multi", "system": "session_summary", "answer": "/data/projects；Chromium", "correct": true, "leaked": false, "latency_ms": 0.005542009603232145, "context_chars": 144}
+{"case_id": "temporal-7", "category": "temporal", "system": "session_summary", "answer": "奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.0029999937396496534, "context_chars": 136}
+{"case_id": "forget-7", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0027920177672058344, "context_chars": 109}
+{"case_id": "abstain-7", "category": "abstain", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0016659905668348074, "context_chars": 36}
+{"case_id": "recall-8", "category": "recall", "system": "session_summary", "answer": "openKylin 2.0", "correct": true, "leaked": false, "latency_ms": 0.0031249946914613247, "context_chars": 163}
+{"case_id": "update-8", "category": "update", "system": "session_summary", "answer": "Python", "correct": true, "leaked": false, "latency_ms": 0.0031669915188103914, "context_chars": 138}
+{"case_id": "multi-8", "category": "multi", "system": "session_summary", "answer": "riscv64；Emacs", "correct": true, "leaked": false, "latency_ms": 0.0075410061981529, "context_chars": 230}
+{"case_id": "temporal-8", "category": "temporal", "system": "session_summary", "answer": "Java", "correct": true, "leaked": false, "latency_ms": 0.002500019036233425, "context_chars": 90}
+{"case_id": "forget-8", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0024999899324029684, "context_chars": 81}
+{"case_id": "abstain-8", "category": "abstain", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0026669877115637064, "context_chars": 112}
+{"case_id": "recall-9", "category": "recall", "system": "session_summary", "answer": "openKylin 2.0 SP1", "correct": true, "leaked": false, "latency_ms": 0.0029590155463665724, "context_chars": 171}
+{"case_id": "update-9", "category": "update", "system": "session_summary", "answer": "Rime 中州韵", "correct": true, "leaked": false, "latency_ms": 0.0034590193536132574, "context_chars": 193}
+{"case_id": "multi-9", "category": "multi", "system": "session_summary", "answer": "Rust；成都", "correct": true, "leaked": false, "latency_ms": 0.005875015631318092, "context_chars": 160}
+{"case_id": "temporal-9", "category": "temporal", "system": "session_summary", "answer": "mate-terminal", "correct": true, "leaked": false, "latency_ms": 0.002042012056335807, "context_chars": 89}
+{"case_id": "forget-9", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0028329959604889154, "context_chars": 119}
+{"case_id": "abstain-9", "category": "abstain", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002582994056865573, "context_chars": 111}
+{"case_id": "recall-10", "category": "recall", "system": "session_summary", "answer": "mate-terminal", "correct": true, "leaked": false, "latency_ms": 0.0026669877115637064, "context_chars": 111}
+{"case_id": "update-10", "category": "update", "system": "session_summary", "answer": "VS Code", "correct": true, "leaked": false, "latency_ms": 0.002374988980591297, "context_chars": 78}
+{"case_id": "multi-10", "category": "multi", "system": "session_summary", "answer": "Rime 中州韵；Neovim", "correct": true, "leaked": false, "latency_ms": 0.007499998901039362, "context_chars": 227}
+{"case_id": "temporal-10", "category": "temporal", "system": "session_summary", "answer": "北京", "correct": true, "leaked": false, "latency_ms": 0.0024590117391198874, "context_chars": 89}
+{"case_id": "forget-10", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0021669839043170214, "context_chars": 57}
+{"case_id": "abstain-10", "category": "abstain", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.001667009200900793, "context_chars": 42}
+{"case_id": "recall-11", "category": "recall", "system": "session_summary", "answer": "kare", "correct": true, "leaked": false, "latency_ms": 0.0021250161807984114, "context_chars": 59}
+{"case_id": "update-11", "category": "update", "system": "session_summary", "answer": "/data/projects", "correct": true, "leaked": false, "latency_ms": 0.0026659981813281775, "context_chars": 110}
+{"case_id": "multi-11", "category": "multi", "system": "session_summary", "answer": "Rime 中州韵；flatpak", "correct": true, "leaked": false, "latency_ms": 0.007000024197623134, "context_chars": 193}
+{"case_id": "temporal-11", "category": "temporal", "system": "session_summary", "answer": "riscv64", "correct": true, "leaked": false, "latency_ms": 0.003749999450519681, "context_chars": 196}
+{"case_id": "forget-11", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0028329959604889154, "context_chars": 115}
+{"case_id": "abstain-11", "category": "abstain", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002374988980591297, "context_chars": 87}
+{"case_id": "recall-12", "category": "recall", "system": "session_summary", "answer": "Vim", "correct": true, "leaked": false, "latency_ms": 0.002875021891668439, "context_chars": 108}
+{"case_id": "update-12", "category": "update", "system": "session_summary", "answer": "aarch64", "correct": true, "leaked": false, "latency_ms": 0.0031660019885748625, "context_chars": 149}
+{"case_id": "multi-12", "category": "multi", "system": "session_summary", "answer": "长沙；riscv64", "correct": true, "leaked": false, "latency_ms": 0.006416026735678315, "context_chars": 194}
+{"case_id": "temporal-12", "category": "temporal", "system": "session_summary", "answer": "Chromium", "correct": true, "leaked": false, "latency_ms": 0.002875021891668439, "context_chars": 157}
+{"case_id": "forget-12", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0019999861251562834, "context_chars": 78}
+{"case_id": "abstain-12", "category": "abstain", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0021249870769679546, "context_chars": 88}
+{"case_id": "recall-13", "category": "recall", "system": "session_summary", "answer": "Java", "correct": true, "leaked": false, "latency_ms": 0.001834006980061531, "context_chars": 54}
+{"case_id": "update-13", "category": "update", "system": "session_summary", "answer": "Arc A770", "correct": true, "leaked": false, "latency_ms": 0.003541994374245405, "context_chars": 176}
+{"case_id": "multi-13", "category": "multi", "system": "session_summary", "answer": "Kate；x86_64", "correct": true, "leaked": false, "latency_ms": 0.007041991921141744, "context_chars": 193}
+{"case_id": "temporal-13", "category": "temporal", "system": "session_summary", "answer": "Firefox", "correct": true, "leaked": false, "latency_ms": 0.002582994056865573, "context_chars": 103}
+{"case_id": "forget-13", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0021249870769679546, "context_chars": 74}
+{"case_id": "abstain-13", "category": "abstain", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0018749851733446121, "context_chars": 58}
+{"case_id": "recall-14", "category": "recall", "system": "session_summary", "answer": "openKylin 2.0 SP1", "correct": true, "leaked": false, "latency_ms": 0.0022500171326100826, "context_chars": 87}
+{"case_id": "update-14", "category": "update", "system": "session_summary", "answer": "RX 7800", "correct": true, "leaked": false, "latency_ms": 0.002875021891668439, "context_chars": 129}
+{"case_id": "multi-14", "category": "multi", "system": "session_summary", "answer": "aarch64；kitty", "correct": true, "leaked": false, "latency_ms": 0.005875015631318092, "context_chars": 153}
+{"case_id": "temporal-14", "category": "temporal", "system": "session_summary", "answer": "apt", "correct": true, "leaked": false, "latency_ms": 0.0029579969123005867, "context_chars": 135}
+{"case_id": "forget-14", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002874992787837982, "context_chars": 128}
+{"case_id": "abstain-14", "category": "abstain", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0022920139599591494, "context_chars": 88}
+{"case_id": "recall-15", "category": "recall", "system": "session_summary", "answer": "Kate", "correct": true, "leaked": false, "latency_ms": 0.002500019036233425, "context_chars": 89}
+{"case_id": "update-15", "category": "update", "system": "session_summary", "answer": "kare", "correct": true, "leaked": false, "latency_ms": 0.003416993422433734, "context_chars": 147}
+{"case_id": "multi-15", "category": "multi", "system": "session_summary", "answer": "aarch64；mate-terminal", "correct": true, "leaked": false, "latency_ms": 0.006458023563027382, "context_chars": 183}
+{"case_id": "temporal-15", "category": "temporal", "system": "session_summary", "answer": "flatpak", "correct": true, "leaked": false, "latency_ms": 0.0024579931050539017, "context_chars": 87}
+{"case_id": "forget-15", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002749991836026311, "context_chars": 120}
+{"case_id": "abstain-15", "category": "abstain", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002082990249618888, "context_chars": 85}
+{"case_id": "recall-16", "category": "recall", "system": "session_summary", "answer": "riscv64", "correct": true, "leaked": false, "latency_ms": 0.0029999937396496534, "context_chars": 158}
+{"case_id": "update-16", "category": "update", "system": "session_summary", "answer": "奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.0024579931050539017, "context_chars": 113}
+{"case_id": "multi-16", "category": "multi", "system": "session_summary", "answer": "RX 7800；上海", "correct": true, "leaked": false, "latency_ms": 0.005667010555043817, "context_chars": 166}
+{"case_id": "temporal-16", "category": "temporal", "system": "session_summary", "answer": "Kate", "correct": true, "leaked": false, "latency_ms": 0.0027909991331398487, "context_chars": 116}
+{"case_id": "forget-16", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.00270901364274323, "context_chars": 92}
+{"case_id": "abstain-16", "category": "abstain", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002249988028779626, "context_chars": 65}
+{"case_id": "recall-17", "category": "recall", "system": "session_summary", "answer": "~/work", "correct": true, "leaked": false, "latency_ms": 0.002708984538912773, "context_chars": 104}
+{"case_id": "update-17", "category": "update", "system": "session_summary", "answer": "奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.002500019036233425, "context_chars": 95}
+{"case_id": "multi-17", "category": "multi", "system": "session_summary", "answer": "UKUI；源码编译", "correct": true, "leaked": false, "latency_ms": 0.006499991286545992, "context_chars": 178}
+{"case_id": "temporal-17", "category": "temporal", "system": "session_summary", "answer": "~/dev", "correct": true, "leaked": false, "latency_ms": 0.003082997864112258, "context_chars": 136}
+{"case_id": "forget-17", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0031249946914613247, "context_chars": 138}
+{"case_id": "abstain-17", "category": "abstain", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0029170187190175056, "context_chars": 134}
+{"case_id": "recall-18", "category": "recall", "system": "session_summary", "answer": "~/work", "correct": true, "leaked": false, "latency_ms": 0.0026250199880450964, "context_chars": 99}
+{"case_id": "update-18", "category": "update", "system": "session_summary", "answer": "北京", "correct": true, "leaked": false, "latency_ms": 0.00270901364274323, "context_chars": 91}
+{"case_id": "multi-18", "category": "multi", "system": "session_summary", "answer": "Java；openKylin 2.0 SP1", "correct": true, "leaked": false, "latency_ms": 0.008041999535635114, "context_chars": 243}
+{"case_id": "temporal-18", "category": "temporal", "system": "session_summary", "answer": "RX 7800", "correct": true, "leaked": false, "latency_ms": 0.002749991836026311, "context_chars": 117}
+{"case_id": "forget-18", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.002334010787308216, "context_chars": 80}
+{"case_id": "abstain-18", "category": "abstain", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0027909991331398487, "context_chars": 111}
+{"case_id": "recall-19", "category": "recall", "system": "session_summary", "answer": "Xfce", "correct": true, "leaked": false, "latency_ms": 0.0017079873941838741, "context_chars": 34}
+{"case_id": "update-19", "category": "update", "system": "session_summary", "answer": "奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.0019580184016376734, "context_chars": 65}
+{"case_id": "multi-19", "category": "multi", "system": "session_summary", "answer": "Vim；奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 0.006499991286545992, "context_chars": 196}
+{"case_id": "temporal-19", "category": "temporal", "system": "session_summary", "answer": "Emacs", "correct": true, "leaked": false, "latency_ms": 0.003082997864112258, "context_chars": 135}
+{"case_id": "forget-19", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0018750142771750689, "context_chars": 58}
+{"case_id": "abstain-19", "category": "abstain", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.0024170149117708206, "context_chars": 89}

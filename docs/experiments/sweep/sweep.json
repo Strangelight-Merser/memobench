@@ -1,0 +1,487 @@
+{
+  "meta": {
+    "reader": "rule",
+    "systems": [
+      "full_context",
+      "sliding_window",
+      "bm25_rag",
+      "profile_store",
+      "hybrid",
+      "session_summary"
+    ],
+    "n": 20,
+    "sessions": 6,
+    "turns": 8,
+    "seed": 42
+  },
+  "levels": [
+    {
+      "distract": 0,
+      "n_cases": 120,
+      "summary": {
+        "full_context": {
+          "recall": 1.0,
+          "update": 1.0,
+          "multi": 1.0,
+          "temporal": 1.0,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 1.0,
+          "leak_rate": 0.0,
+          "avg_ctx": 824.3666666666667,
+          "avg_ms": 0.005926732895507787
+        },
+        "sliding_window": {
+          "recall": 0.0,
+          "update": 0.3,
+          "multi": 0.0,
+          "temporal": 0.05,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 0.39166666666666666,
+          "leak_rate": 0.0,
+          "avg_ctx": 208.16666666666666,
+          "avg_ms": 0.0027857490446573743
+        },
+        "bm25_rag": {
+          "recall": 1.0,
+          "update": 1.0,
+          "multi": 1.0,
+          "temporal": 1.0,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 1.0,
+          "leak_rate": 0.0,
+          "avg_ctx": 64.86666666666666,
+          "avg_ms": 0.18327426538841488
+        },
+        "profile_store": {
+          "recall": 1.0,
+          "update": 1.0,
+          "multi": 1.0,
+          "temporal": 0.05,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 0.8416666666666667,
+          "leak_rate": 0.0,
+          "avg_ctx": 15.525,
+          "avg_ms": 0.0014847239071968943
+        },
+        "hybrid": {
+          "recall": 1.0,
+          "update": 1.0,
+          "multi": 1.0,
+          "temporal": 1.0,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 1.0,
+          "leak_rate": 0.0,
+          "avg_ctx": 33.99166666666667,
+          "avg_ms": 0.0025471490516792983
+        },
+        "session_summary": {
+          "recall": 1.0,
+          "update": 1.0,
+          "multi": 1.0,
+          "temporal": 1.0,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 1.0,
+          "leak_rate": 0.0,
+          "avg_ctx": 32.63333333333333,
+          "avg_ms": 0.001678798192491134
+        }
+      }
+    },
+    {
+      "distract": 1,
+      "n_cases": 120,
+      "summary": {
+        "full_context": {
+          "recall": 1.0,
+          "update": 1.0,
+          "multi": 1.0,
+          "temporal": 1.0,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 1.0,
+          "leak_rate": 0.0,
+          "avg_ctx": 834.4333333333333,
+          "avg_ms": 0.005944098423545559
+        },
+        "sliding_window": {
+          "recall": 0.0,
+          "update": 0.45,
+          "multi": 0.0,
+          "temporal": 0.0,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 0.4083333333333333,
+          "leak_rate": 0.0,
+          "avg_ctx": 206.76666666666668,
+          "avg_ms": 0.00272181787295267
+        },
+        "bm25_rag": {
+          "recall": 1.0,
+          "update": 1.0,
+          "multi": 1.0,
+          "temporal": 1.0,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 1.0,
+          "leak_rate": 0.0,
+          "avg_ctx": 74.725,
+          "avg_ms": 0.18653054915679
+        },
+        "profile_store": {
+          "recall": 1.0,
+          "update": 1.0,
+          "multi": 1.0,
+          "temporal": 0.05,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 0.8416666666666667,
+          "leak_rate": 0.0,
+          "avg_ctx": 29.741666666666667,
+          "avg_ms": 0.001880558314345156
+        },
+        "hybrid": {
+          "recall": 1.0,
+          "update": 1.0,
+          "multi": 1.0,
+          "temporal": 1.0,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 1.0,
+          "leak_rate": 0.0,
+          "avg_ctx": 35.175,
+          "avg_ms": 0.001892009216438358
+        },
+        "session_summary": {
+          "recall": 1.0,
+          "update": 1.0,
+          "multi": 1.0,
+          "temporal": 1.0,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 1.0,
+          "leak_rate": 0.0,
+          "avg_ctx": 47.541666666666664,
+          "avg_ms": 0.0018662991351448
+        }
+      }
+    },
+    {
+      "distract": 2,
+      "n_cases": 120,
+      "summary": {
+        "full_context": {
+          "recall": 1.0,
+          "update": 1.0,
+          "multi": 1.0,
+          "temporal": 1.0,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 1.0,
+          "leak_rate": 0.0,
+          "avg_ctx": 834.3333333333334,
+          "avg_ms": 0.006207615903501089
+        },
+        "sliding_window": {
+          "recall": 0.0,
+          "update": 0.6,
+          "multi": 0.0,
+          "temporal": 0.0,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 0.43333333333333335,
+          "leak_rate": 0.0,
+          "avg_ctx": 208.95,
+          "avg_ms": 0.002859742623210574
+        },
+        "bm25_rag": {
+          "recall": 1.0,
+          "update": 0.9,
+          "multi": 1.0,
+          "temporal": 1.0,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 0.9833333333333333,
+          "leak_rate": 0.016666666666666666,
+          "avg_ctx": 77.58333333333333,
+          "avg_ms": 0.1940601107586796
+        },
+        "profile_store": {
+          "recall": 1.0,
+          "update": 1.0,
+          "multi": 1.0,
+          "temporal": 0.0,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 0.8333333333333334,
+          "leak_rate": 0.0,
+          "avg_ctx": 43.44166666666667,
+          "avg_ms": 0.001941297280912598
+        },
+        "hybrid": {
+          "recall": 1.0,
+          "update": 1.0,
+          "multi": 1.0,
+          "temporal": 1.0,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 1.0,
+          "leak_rate": 0.0,
+          "avg_ctx": 34.75833333333333,
+          "avg_ms": 0.0019444145436864346
+        },
+        "session_summary": {
+          "recall": 1.0,
+          "update": 1.0,
+          "multi": 1.0,
+          "temporal": 1.0,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 1.0,
+          "leak_rate": 0.0,
+          "avg_ctx": 64.43333333333334,
+          "avg_ms": 0.002229206438641995
+        }
+      }
+    },
+    {
+      "distract": 4,
+      "n_cases": 120,
+      "summary": {
+        "full_context": {
+          "recall": 1.0,
+          "update": 1.0,
+          "multi": 1.0,
+          "temporal": 1.0,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 1.0,
+          "leak_rate": 0.0,
+          "avg_ctx": 844.4583333333334,
+          "avg_ms": 0.006874774408061057
+        },
+        "sliding_window": {
+          "recall": 0.0,
+          "update": 0.55,
+          "multi": 0.0,
+          "temporal": 0.0,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 0.425,
+          "leak_rate": 0.0,
+          "avg_ctx": 212.10833333333332,
+          "avg_ms": 0.0030597007328954837
+        },
+        "bm25_rag": {
+          "recall": 1.0,
+          "update": 0.55,
+          "multi": 0.7,
+          "temporal": 1.0,
+          "forget": 0.85,
+          "abstain": 1.0,
+          "overall": 0.85,
+          "leak_rate": 0.1,
+          "avg_ctx": 79.8,
+          "avg_ms": 0.19436076690908521
+        },
+        "profile_store": {
+          "recall": 1.0,
+          "update": 1.0,
+          "multi": 1.0,
+          "temporal": 0.05,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 0.8416666666666667,
+          "leak_rate": 0.0,
+          "avg_ctx": 57.05833333333333,
+          "avg_ms": 0.0022826248217218867
+        },
+        "hybrid": {
+          "recall": 1.0,
+          "update": 1.0,
+          "multi": 1.0,
+          "temporal": 1.0,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 1.0,
+          "leak_rate": 0.0,
+          "avg_ctx": 34.375,
+          "avg_ms": 0.0021347087264681854
+        },
+        "session_summary": {
+          "recall": 1.0,
+          "update": 1.0,
+          "multi": 1.0,
+          "temporal": 1.0,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 1.0,
+          "leak_rate": 0.0,
+          "avg_ctx": 90.375,
+          "avg_ms": 0.002740982260244588
+        }
+      }
+    },
+    {
+      "distract": 6,
+      "n_cases": 120,
+      "summary": {
+        "full_context": {
+          "recall": 1.0,
+          "update": 1.0,
+          "multi": 1.0,
+          "temporal": 1.0,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 1.0,
+          "leak_rate": 0.0,
+          "avg_ctx": 865.5916666666667,
+          "avg_ms": 0.007286483257000024
+        },
+        "sliding_window": {
+          "recall": 0.0,
+          "update": 0.25,
+          "multi": 0.0,
+          "temporal": 0.0,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 0.375,
+          "leak_rate": 0.0,
+          "avg_ctx": 217.46666666666667,
+          "avg_ms": 0.0032055007371430597
+        },
+        "bm25_rag": {
+          "recall": 1.0,
+          "update": 0.45,
+          "multi": 0.45,
+          "temporal": 1.0,
+          "forget": 0.6,
+          "abstain": 1.0,
+          "overall": 0.75,
+          "leak_rate": 0.15833333333333333,
+          "avg_ctx": 78.54166666666667,
+          "avg_ms": 0.2026570012579517
+        },
+        "profile_store": {
+          "recall": 1.0,
+          "update": 1.0,
+          "multi": 1.0,
+          "temporal": 0.0,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 0.8333333333333334,
+          "leak_rate": 0.0,
+          "avg_ctx": 70.73333333333333,
+          "avg_ms": 0.0025010837513643005
+        },
+        "hybrid": {
+          "recall": 1.0,
+          "update": 1.0,
+          "multi": 1.0,
+          "temporal": 1.0,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 1.0,
+          "leak_rate": 0.0,
+          "avg_ctx": 34.25833333333333,
+          "avg_ms": 0.0022204755320368954
+        },
+        "session_summary": {
+          "recall": 1.0,
+          "update": 1.0,
+          "multi": 1.0,
+          "temporal": 1.0,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 1.0,
+          "leak_rate": 0.0,
+          "avg_ctx": 121.3,
+          "avg_ms": 0.003299681945160652
+        }
+      }
+    },
+    {
+      "distract": 8,
+      "n_cases": 120,
+      "summary": {
+        "full_context": {
+          "recall": 1.0,
+          "update": 1.0,
+          "multi": 1.0,
+          "temporal": 1.0,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 1.0,
+          "leak_rate": 0.0,
+          "avg_ctx": 873.5166666666667,
+          "avg_ms": 0.0072458414554906385
+        },
+        "sliding_window": {
+          "recall": 0.0,
+          "update": 0.2,
+          "multi": 0.0,
+          "temporal": 0.0,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 0.36666666666666664,
+          "leak_rate": 0.0,
+          "avg_ctx": 218.94166666666666,
+          "avg_ms": 0.0032483081061703465
+        },
+        "bm25_rag": {
+          "recall": 1.0,
+          "update": 0.55,
+          "multi": 0.15,
+          "temporal": 0.95,
+          "forget": 0.45,
+          "abstain": 1.0,
+          "overall": 0.6833333333333333,
+          "leak_rate": 0.16666666666666666,
+          "avg_ctx": 74.6,
+          "avg_ms": 0.2058187177074918
+        },
+        "profile_store": {
+          "recall": 1.0,
+          "update": 1.0,
+          "multi": 1.0,
+          "temporal": 0.0,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 0.8333333333333334,
+          "leak_rate": 0.0,
+          "avg_ctx": 76.48333333333333,
+          "avg_ms": 0.0026919910548410067
+        },
+        "hybrid": {
+          "recall": 1.0,
+          "update": 1.0,
+          "multi": 1.0,
+          "temporal": 1.0,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 1.0,
+          "leak_rate": 0.0,
+          "avg_ctx": 32.75,
+          "avg_ms": 0.0025555406561276564
+        },
+        "session_summary": {
+          "recall": 1.0,
+          "update": 1.0,
+          "multi": 1.0,
+          "temporal": 1.0,
+          "forget": 1.0,
+          "abstain": 1.0,
+          "overall": 1.0,
+          "leak_rate": 0.0,
+          "avg_ctx": 151.6,
+          "avg_ms": 0.003757982631213963
+        }
+      }
+    }
+  ]
+}
