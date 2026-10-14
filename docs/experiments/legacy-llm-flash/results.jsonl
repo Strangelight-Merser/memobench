@@ -1,0 +1,720 @@
+{"case_id": "recall-0", "category": "recall", "system": "full_context", "answer": "上海。", "correct": true, "leaked": false, "latency_ms": 2692.513666988816, "context_chars": 835}
+{"case_id": "update-0", "category": "update", "system": "full_context", "answer": "不确定；你最后说还在考虑是否换成 /data/projects，尚未决定。", "correct": true, "leaked": false, "latency_ms": 12531.698625010904, "context_chars": 839}
+{"case_id": "multi-0", "category": "multi", "system": "full_context", "answer": "你的包管理偏好是 **flatpak**，主力开发语言是 **Java**。", "correct": true, "leaked": false, "latency_ms": 3221.5905000048224, "context_chars": 858}
+{"case_id": "temporal-0", "category": "temporal", "system": "full_context", "answer": "上海。", "correct": true, "leaked": false, "latency_ms": 2157.4220829934347, "context_chars": 827}
+{"case_id": "forget-0", "category": "forget", "system": "full_context", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 3191.346290986985, "context_chars": 879}
+{"case_id": "abstain-0", "category": "abstain", "system": "full_context", "answer": "你曾提到：笔记本上一个系统的常用浏览器是 Firefox，并且你还在考虑是否换成 Chromium，尚未决定。", "correct": false, "leaked": false, "latency_ms": 4166.996083979029, "context_chars": 805}
+{"case_id": "recall-1", "category": "recall", "system": "full_context", "answer": "根据记忆，你的系统版本是 openKylin 1.0.2。", "correct": true, "leaked": false, "latency_ms": 4417.798833979759, "context_chars": 931}
+{"case_id": "update-1", "category": "update", "system": "full_context", "answer": "loongarch64。", "correct": true, "leaked": false, "latency_ms": 3337.0259999937844, "context_chars": 893}
+{"case_id": "multi-1", "category": "multi", "system": "full_context", "answer": "显卡型号是 Arc A770；常用浏览器是 360 安全浏览器。", "correct": true, "leaked": false, "latency_ms": 2896.2812919926364, "context_chars": 909}
+{"case_id": "temporal-1", "category": "temporal", "system": "full_context", "answer": "RX 7800", "correct": true, "leaked": false, "latency_ms": 3632.4829579971265, "context_chars": 823}
+{"case_id": "forget-1", "category": "forget", "system": "full_context", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 1906.65029201773, "context_chars": 843}
+{"case_id": "abstain-1", "category": "abstain", "system": "full_context", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 3577.133666985901, "context_chars": 843}
+{"case_id": "recall-2", "category": "recall", "system": "full_context", "answer": "openKylin 2.0。", "correct": true, "leaked": false, "latency_ms": 3492.9577080183662, "context_chars": 895}
+{"case_id": "update-2", "category": "update", "system": "full_context", "answer": "北京。", "correct": true, "leaked": false, "latency_ms": 1936.4287909993436, "context_chars": 834}
+{"case_id": "multi-2", "category": "multi", "system": "full_context", "answer": "工作目录是 `~/dev`；所在城市是深圳。", "correct": true, "leaked": false, "latency_ms": 2440.8620829926804, "context_chars": 874}
+{"case_id": "temporal-2", "category": "temporal", "system": "full_context", "answer": "C++。", "correct": true, "leaked": false, "latency_ms": 3403.202916000737, "context_chars": 859}
+{"case_id": "forget-2", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1961.4642919914331, "context_chars": 872}
+{"case_id": "abstain-2", "category": "abstain", "system": "full_context", "answer": "aarch64。", "correct": false, "leaked": false, "latency_ms": 3654.119874991011, "context_chars": 865}
+{"case_id": "recall-3", "category": "recall", "system": "full_context", "answer": "你之前提到的主力开发语言是 Java（曾考虑换成 Rust，但还没决定）。", "correct": true, "leaked": false, "latency_ms": 3326.3180000067223, "context_chars": 819}
+{"case_id": "update-3", "category": "update", "system": "full_context", "answer": "奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 2358.355957985623, "context_chars": 857}
+{"case_id": "multi-3", "category": "multi", "system": "full_context", "answer": "记得。你的系统版本是 openKylin 1.0.2，默认终端是 mate-terminal。", "correct": true, "leaked": false, "latency_ms": 3763.0309170053806, "context_chars": 938}
+{"case_id": "temporal-3", "category": "temporal", "system": "full_context", "answer": "你一开始说的系统版本是 openKylin 1.0.2。", "correct": true, "leaked": false, "latency_ms": 4170.435749983881, "context_chars": 936}
+{"case_id": "forget-3", "category": "forget", "system": "full_context", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 1949.397249991307, "context_chars": 891}
+{"case_id": "abstain-3", "category": "abstain", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1961.7559580074158, "context_chars": 884}
+{"case_id": "recall-4", "category": "recall", "system": "full_context", "answer": "GNOME。", "correct": true, "leaked": false, "latency_ms": 2171.9931669940706, "context_chars": 853}
+{"case_id": "update-4", "category": "update", "system": "full_context", "answer": "RX 7800。", "correct": true, "leaked": false, "latency_ms": 3228.1782499921974, "context_chars": 907}
+{"case_id": "multi-4", "category": "multi", "system": "full_context", "answer": "常用编辑器是 Vim，常用浏览器是奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 3651.8366249802057, "context_chars": 894}
+{"case_id": "temporal-4", "category": "temporal", "system": "full_context", "answer": "riscv64。", "correct": true, "leaked": false, "latency_ms": 3229.9065830011386, "context_chars": 913}
+{"case_id": "forget-4", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1618.7763749912847, "context_chars": 901}
+{"case_id": "abstain-4", "category": "abstain", "system": "full_context", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 2522.423082991736, "context_chars": 903}
+{"case_id": "recall-5", "category": "recall", "system": "full_context", "answer": "摩尔线程 S80。", "correct": true, "leaked": false, "latency_ms": 2681.3468340260442, "context_chars": 854}
+{"case_id": "update-5", "category": "update", "system": "full_context", "answer": "openKylin 2.0。", "correct": true, "leaked": false, "latency_ms": 3733.5720410046633, "context_chars": 939}
+{"case_id": "multi-5", "category": "multi", "system": "full_context", "answer": "你的所在城市是：成都。  \n你的包管理偏好是：源码编译。", "correct": true, "leaked": false, "latency_ms": 4426.95062502753, "context_chars": 820}
+{"case_id": "temporal-5", "category": "temporal", "system": "full_context", "answer": "Arc A770。", "correct": true, "leaked": false, "latency_ms": 2956.5669169824105, "context_chars": 877}
+{"case_id": "forget-5", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2071.3505409948993, "context_chars": 827}
+{"case_id": "abstain-5", "category": "abstain", "system": "full_context", "answer": "不知道。你只提到过在考虑要不要把主力开发语言换成 C++，还没决定。", "correct": true, "leaked": false, "latency_ms": 3315.7879580103327, "context_chars": 850}
+{"case_id": "recall-6", "category": "recall", "system": "full_context", "answer": "你之前提到的工作目录是 `~/work`。", "correct": true, "leaked": false, "latency_ms": 2675.4233749816194, "context_chars": 875}
+{"case_id": "update-6", "category": "update", "system": "full_context", "answer": "mate-terminal。", "correct": true, "leaked": false, "latency_ms": 2632.5753330020234, "context_chars": 865}
+{"case_id": "multi-6", "category": "multi", "system": "full_context", "answer": "系统版本：openKylin 1.0.2  \nCPU 架构：loongarch64", "correct": true, "leaked": false, "latency_ms": 3558.883749996312, "context_chars": 945}
+{"case_id": "temporal-6", "category": "temporal", "system": "full_context", "answer": "原来记录是 **RTX 4060**，后来你更正为 **RX 7800**。", "correct": true, "leaked": false, "latency_ms": 7151.638290990377, "context_chars": 862}
+{"case_id": "forget-6", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 3040.0212079985067, "context_chars": 854}
+{"case_id": "abstain-6", "category": "abstain", "system": "full_context", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 3991.2606250145473, "context_chars": 873}
+{"case_id": "recall-7", "category": "recall", "system": "full_context", "answer": "Xfce。", "correct": true, "leaked": false, "latency_ms": 2978.4357919998, "context_chars": 892}
+{"case_id": "update-7", "category": "update", "system": "full_context", "answer": "Rime 中州韵。", "correct": true, "leaked": false, "latency_ms": 4359.904957993422, "context_chars": 867}
+{"case_id": "multi-7", "category": "multi", "system": "full_context", "answer": "记得：工作目录是 `/data/projects`；常用浏览器是 Chromium。", "correct": true, "leaked": false, "latency_ms": 5721.116417000303, "context_chars": 875}
+{"case_id": "temporal-7", "category": "temporal", "system": "full_context", "answer": "奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 2043.6260840215255, "context_chars": 898}
+{"case_id": "forget-7", "category": "forget", "system": "full_context", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 1824.4925829931162, "context_chars": 825}
+{"case_id": "abstain-7", "category": "abstain", "system": "full_context", "answer": "不知道。记忆里只提到你上一个系统的常用编辑器是 Emacs，以及你在考虑 Vim/Kate/VS Code，但没确认当前常用编辑器。", "correct": true, "leaked": false, "latency_ms": 3184.795791981742, "context_chars": 813}
+{"case_id": "recall-8", "category": "recall", "system": "full_context", "answer": "openKylin 2.0。", "correct": true, "leaked": false, "latency_ms": 3414.92024998297, "context_chars": 930}
+{"case_id": "update-8", "category": "update", "system": "full_context", "answer": "Python。", "correct": true, "leaked": false, "latency_ms": 2228.7346250086557, "context_chars": 869}
+{"case_id": "multi-8", "category": "multi", "system": "full_context", "answer": "你的 CPU 架构是 **riscv64**，常用编辑器是 **Emacs**（你还在考虑是否换成 Neovim，尚未决定）。", "correct": true, "leaked": false, "latency_ms": 1916.4814999967348, "context_chars": 898}
+{"case_id": "temporal-8", "category": "temporal", "system": "full_context", "answer": "Java。", "correct": true, "leaked": false, "latency_ms": 2063.497333001578, "context_chars": 831}
+{"case_id": "forget-8", "category": "forget", "system": "full_context", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 2903.543709020596, "context_chars": 828}
+{"case_id": "abstain-8", "category": "abstain", "system": "full_context", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 4113.667875004467, "context_chars": 822}
+{"case_id": "recall-9", "category": "recall", "system": "full_context", "answer": "openKylin 2.0 SP1。", "correct": true, "leaked": false, "latency_ms": 2165.6661670131143, "context_chars": 953}
+{"case_id": "update-9", "category": "update", "system": "full_context", "answer": "Rime 中州韵。", "correct": true, "leaked": false, "latency_ms": 2433.3318329881877, "context_chars": 856}
+{"case_id": "multi-9", "category": "multi", "system": "full_context", "answer": "主力开发语言是 **Rust**；所在城市是 **成都**。", "correct": true, "leaked": false, "latency_ms": 3692.6943750004284, "context_chars": 846}
+{"case_id": "temporal-9", "category": "temporal", "system": "full_context", "answer": "mate-terminal", "correct": true, "leaked": false, "latency_ms": 2010.172166978009, "context_chars": 882}
+{"case_id": "forget-9", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2231.1507079866715, "context_chars": 924}
+{"case_id": "abstain-9", "category": "abstain", "system": "full_context", "answer": "你提到过，你的常用输入法是 **Rime 中州韵**。", "correct": false, "leaked": false, "latency_ms": 2655.2529170003254, "context_chars": 902}
+{"case_id": "recall-10", "category": "recall", "system": "full_context", "answer": "你的默认终端是 mate-terminal。", "correct": true, "leaked": false, "latency_ms": 3384.799125022255, "context_chars": 878}
+{"case_id": "update-10", "category": "update", "system": "full_context", "answer": "记得，是 VS Code。", "correct": true, "leaked": false, "latency_ms": 2528.9734159887303, "context_chars": 880}
+{"case_id": "multi-10", "category": "multi", "system": "full_context", "answer": "常用输入法：Rime 中州韵；常用编辑器：Neovim。", "correct": true, "leaked": false, "latency_ms": 2604.170000005979, "context_chars": 902}
+{"case_id": "temporal-10", "category": "temporal", "system": "full_context", "answer": "北京。", "correct": true, "leaked": false, "latency_ms": 2688.1267499993555, "context_chars": 817}
+{"case_id": "forget-10", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2087.2652920079418, "context_chars": 843}
+{"case_id": "abstain-10", "category": "abstain", "system": "full_context", "answer": "记忆里你提到：笔记本上一个系统的常用编辑器是 VS Code。", "correct": false, "leaked": false, "latency_ms": 3584.4196660036687, "context_chars": 917}
+{"case_id": "recall-11", "category": "recall", "system": "full_context", "answer": "你的包管理偏好是 **kare**（你还在考虑是否换成 apt，尚未决定）。", "correct": true, "leaked": false, "latency_ms": 2518.195749988081, "context_chars": 825}
+{"case_id": "update-11", "category": "update", "system": "full_context", "answer": "记得，最新工作目录是 `/data/projects`。", "correct": true, "leaked": false, "latency_ms": 4814.029667002615, "context_chars": 877}
+{"case_id": "multi-11", "category": "multi", "system": "full_context", "answer": "你的常用输入法是 **Rime 中州韵**，包管理偏好是 **Flatpak**。", "correct": true, "leaked": false, "latency_ms": 3104.6856660104822, "context_chars": 825}
+{"case_id": "temporal-11", "category": "temporal", "system": "full_context", "answer": "riscv64。", "correct": true, "leaked": false, "latency_ms": 2337.604291009484, "context_chars": 885}
+{"case_id": "forget-11", "category": "forget", "system": "full_context", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 2976.0601249872707, "context_chars": 838}
+{"case_id": "abstain-11", "category": "abstain", "system": "full_context", "answer": "不知道。记忆里只提到你的笔记本上有系统分别是 x86_64 和 aarch64，无法确定你当前的 CPU 架构。", "correct": true, "leaked": false, "latency_ms": 5233.24945801869, "context_chars": 905}
+{"case_id": "recall-12", "category": "recall", "system": "full_context", "answer": "记得，你的常用编辑器是 Vim。", "correct": true, "leaked": false, "latency_ms": 1868.6586669937242, "context_chars": 847}
+{"case_id": "update-12", "category": "update", "system": "full_context", "answer": "aarch64。", "correct": true, "leaked": false, "latency_ms": 2962.27237500716, "context_chars": 920}
+{"case_id": "multi-12", "category": "multi", "system": "full_context", "answer": "你的所在城市是长沙；你的 CPU 架构是 riscv64。", "correct": true, "leaked": false, "latency_ms": 4167.411750007886, "context_chars": 858}
+{"case_id": "temporal-12", "category": "temporal", "system": "full_context", "answer": "Chromium。", "correct": true, "leaked": false, "latency_ms": 2803.477417008253, "context_chars": 865}
+{"case_id": "forget-12", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 3285.0486670213286, "context_chars": 842}
+{"case_id": "abstain-12", "category": "abstain", "system": "full_context", "answer": "不知道。记忆里只提到你笔记本上一个系统的显卡型号是 RTX 4060，当前显卡型号未明确。", "correct": true, "leaked": false, "latency_ms": 4089.4733750028536, "context_chars": 863}
+{"case_id": "recall-13", "category": "recall", "system": "full_context", "answer": "Java。", "correct": true, "leaked": false, "latency_ms": 3751.7956249939743, "context_chars": 880}
+{"case_id": "update-13", "category": "update", "system": "full_context", "answer": "你现在的显卡型号是 Arc A770。", "correct": true, "leaked": false, "latency_ms": 2913.015625003027, "context_chars": 894}
+{"case_id": "multi-13", "category": "multi", "system": "full_context", "answer": "你的常用编辑器是 Kate；CPU 架构是 x86_64。", "correct": true, "leaked": false, "latency_ms": 3269.552207988454, "context_chars": 855}
+{"case_id": "temporal-13", "category": "temporal", "system": "full_context", "answer": "Firefox", "correct": true, "leaked": false, "latency_ms": 3351.6659589949995, "context_chars": 861}
+{"case_id": "forget-13", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2585.4102080047596, "context_chars": 860}
+{"case_id": "abstain-13", "category": "abstain", "system": "full_context", "answer": "你提到过：笔记本上一个系统的常用浏览器是 Firefox；你还在考虑要不要把常用浏览器换成 Firefox，但还没决定。", "correct": false, "leaked": false, "latency_ms": 2962.9783330019563, "context_chars": 864}
+{"case_id": "recall-14", "category": "recall", "system": "full_context", "answer": "你明确提到过当前系统版本是 **openKylin 2.0 SP1**；另外也提过笔记本上一个系统是 **openKylin 2.0** 和 **openKylin 1.0.2**。", "correct": true, "leaked": false, "latency_ms": 9451.996290998068, "context_chars": 917}
+{"case_id": "update-14", "category": "update", "system": "full_context", "answer": "RX 7800", "correct": true, "leaked": false, "latency_ms": 5693.276292004157, "context_chars": 890}
+{"case_id": "multi-14", "category": "multi", "system": "full_context", "answer": "你的 CPU 架构是 aarch64，默认终端是 kitty。", "correct": true, "leaked": false, "latency_ms": 3524.3175420037005, "context_chars": 878}
+{"case_id": "temporal-14", "category": "temporal", "system": "full_context", "answer": "apt。", "correct": true, "leaked": false, "latency_ms": 2246.4630419854075, "context_chars": 867}
+{"case_id": "forget-14", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 4289.9491249991115, "context_chars": 865}
+{"case_id": "abstain-14", "category": "abstain", "system": "full_context", "answer": "记忆里没有明确你当前的默认终端。只记得：你在考虑要不要换成 mate-terminal，还没决定；你提到笔记本上一个系统的默认终端是 mate-terminal。", "correct": false, "leaked": false, "latency_ms": 3881.270957994275, "context_chars": 867}
+{"case_id": "recall-15", "category": "recall", "system": "full_context", "answer": "你的常用编辑器是 Kate。", "correct": true, "leaked": false, "latency_ms": 2882.446957984939, "context_chars": 814}
+{"case_id": "update-15", "category": "update", "system": "full_context", "answer": "kare", "correct": true, "leaked": false, "latency_ms": 2675.5767909926362, "context_chars": 832}
+{"case_id": "multi-15", "category": "multi", "system": "full_context", "answer": "你的 CPU 架构是 aarch64，默认终端是 mate-terminal。", "correct": true, "leaked": false, "latency_ms": 5694.508124986896, "context_chars": 908}
+{"case_id": "temporal-15", "category": "temporal", "system": "full_context", "answer": "flatpak。", "correct": true, "leaked": false, "latency_ms": 4545.332041016081, "context_chars": 817}
+{"case_id": "forget-15", "category": "forget", "system": "full_context", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 2749.2327080108225, "context_chars": 856}
+{"case_id": "abstain-15", "category": "abstain", "system": "full_context", "answer": "不知道。记忆里只提到你在考虑换成 fcitx5 拼音，还没决定。", "correct": true, "leaked": false, "latency_ms": 3472.5289169873577, "context_chars": 838}
+{"case_id": "recall-16", "category": "recall", "system": "full_context", "answer": "riscv64", "correct": true, "leaked": false, "latency_ms": 3630.4657080036122, "context_chars": 852}
+{"case_id": "update-16", "category": "update", "system": "full_context", "answer": "记得，你的常用浏览器现在是奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 2878.206749999663, "context_chars": 878}
+{"case_id": "multi-16", "category": "multi", "system": "full_context", "answer": "显卡型号：RX 7800；所在城市：上海。", "correct": true, "leaked": false, "latency_ms": 3402.3210000013933, "context_chars": 817}
+{"case_id": "temporal-16", "category": "temporal", "system": "full_context", "answer": "Kate。", "correct": true, "leaked": false, "latency_ms": 3060.055915993871, "context_chars": 890}
+{"case_id": "forget-16", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 3002.0474590128288, "context_chars": 863}
+{"case_id": "abstain-16", "category": "abstain", "system": "full_context", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 3950.248915993143, "context_chars": 856}
+{"case_id": "recall-17", "category": "recall", "system": "full_context", "answer": "你的工作目录是 `~/work`（你还在考虑是否换成 `~/dev`，尚未决定）。", "correct": true, "leaked": false, "latency_ms": 4122.204083018005, "context_chars": 852}
+{"case_id": "update-17", "category": "update", "system": "full_context", "answer": "奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 3187.373207998462, "context_chars": 889}
+{"case_id": "multi-17", "category": "multi", "system": "full_context", "answer": "默认桌面环境是 UKUI；包管理偏好是源码编译。", "correct": true, "leaked": false, "latency_ms": 2526.70716700959, "context_chars": 813}
+{"case_id": "temporal-17", "category": "temporal", "system": "full_context", "answer": "原来（更正前）是 `~/dev`。", "correct": true, "leaked": false, "latency_ms": 3060.5101250112057, "context_chars": 873}
+{"case_id": "forget-17", "category": "forget", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2470.780375006143, "context_chars": 895}
+{"case_id": "abstain-17", "category": "abstain", "system": "full_context", "answer": "不知道你当前的默认终端是什么。记忆里只提到：你笔记本上一个系统的默认终端是 Alacritty，并且你在考虑要不要换成 Konsole，还没决定。", "correct": true, "leaked": false, "latency_ms": 4133.505875011906, "context_chars": 820}
+{"case_id": "recall-18", "category": "recall", "system": "full_context", "answer": "记得，你的工作目录是 `~/work`。你还考虑过是否换成 `~/dev`，但还没决定。", "correct": true, "leaked": false, "latency_ms": 3700.4923750064336, "context_chars": 823}
+{"case_id": "update-18", "category": "update", "system": "full_context", "answer": "北京。", "correct": true, "leaked": false, "latency_ms": 2372.3611250170507, "context_chars": 773}
+{"case_id": "multi-18", "category": "multi", "system": "full_context", "answer": "主力开发语言是 Java；系统版本是 openKylin 2.0 SP1。", "correct": true, "leaked": false, "latency_ms": 2222.899874992436, "context_chars": 891}
+{"case_id": "temporal-18", "category": "temporal", "system": "full_context", "answer": "RX 7800。", "correct": true, "leaked": false, "latency_ms": 2638.1603750051, "context_chars": 807}
+{"case_id": "forget-18", "category": "forget", "system": "full_context", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 2568.0588749819435, "context_chars": 837}
+{"case_id": "abstain-18", "category": "abstain", "system": "full_context", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2536.2337499973364, "context_chars": 825}
+{"case_id": "recall-19", "category": "recall", "system": "full_context", "answer": "你的默认桌面环境是 Xfce。", "correct": true, "leaked": false, "latency_ms": 5169.71374998684, "context_chars": 794}
+{"case_id": "update-19", "category": "update", "system": "full_context", "answer": "奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 8336.904875002801, "context_chars": 859}
+{"case_id": "multi-19", "category": "multi", "system": "full_context", "answer": "你的常用编辑器是 **Vim**，常用浏览器是 **奇安信浏览器**。", "correct": true, "leaked": false, "latency_ms": 2465.311333973659, "context_chars": 866}
+{"case_id": "temporal-19", "category": "temporal", "system": "full_context", "answer": "Emacs。", "correct": true, "leaked": false, "latency_ms": 2202.139041997725, "context_chars": 873}
+{"case_id": "forget-19", "category": "forget", "system": "full_context", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 2704.7262499982025, "context_chars": 861}
+{"case_id": "abstain-19", "category": "abstain", "system": "full_context", "answer": "你之前提到：上一个系统的常用编辑器是 Neovim。当前常用编辑器没有明确记录。", "correct": false, "leaked": false, "latency_ms": 5519.900459010387, "context_chars": 882}
+{"case_id": "recall-0", "category": "recall", "system": "sliding_window", "answer": "不知道。", "correct": false, "leaked": false, "latency_ms": 3626.693250000244, "context_chars": 220}
+{"case_id": "update-0", "category": "update", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 1843.592916004127, "context_chars": 214}
+{"case_id": "multi-0", "category": "multi", "system": "sliding_window", "answer": "包管理偏好：flatpak（上一个系统）。主力开发语言：不知道（只提到在考虑换 Rust/Java，尚未决定）。", "correct": true, "leaked": false, "latency_ms": 4842.298915988067, "context_chars": 217}
+{"case_id": "temporal-0", "category": "temporal", "system": "sliding_window", "answer": "上海。", "correct": true, "leaked": false, "latency_ms": 3008.2754169998225, "context_chars": 218}
+{"case_id": "forget-0", "category": "forget", "system": "sliding_window", "answer": "记得，是 Rime 中州韵。", "correct": false, "leaked": false, "latency_ms": 3129.2380419909023, "context_chars": 233}
+{"case_id": "abstain-0", "category": "abstain", "system": "sliding_window", "answer": "不知道。你只提到在考虑把常用浏览器换成 Chromium，还没决定。", "correct": true, "leaked": false, "latency_ms": 4442.706874979194, "context_chars": 200}
+{"case_id": "recall-1", "category": "recall", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 4154.326874995604, "context_chars": 221}
+{"case_id": "update-1", "category": "update", "system": "sliding_window", "answer": "loongarch64。", "correct": true, "leaked": false, "latency_ms": 2016.7274170089513, "context_chars": 232}
+{"case_id": "multi-1", "category": "multi", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 3051.5307919995394, "context_chars": 207}
+{"case_id": "temporal-1", "category": "temporal", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 2623.2574169989675, "context_chars": 181}
+{"case_id": "forget-1", "category": "forget", "system": "sliding_window", "answer": "Python。", "correct": false, "leaked": false, "latency_ms": 3039.4136249960866, "context_chars": 212}
+{"case_id": "abstain-1", "category": "abstain", "system": "sliding_window", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 1783.2746669882908, "context_chars": 188}
+{"case_id": "recall-2", "category": "recall", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 8554.156500002136, "context_chars": 224}
+{"case_id": "update-2", "category": "update", "system": "sliding_window", "answer": "不知道。", "correct": false, "leaked": false, "latency_ms": 2612.3417080088984, "context_chars": 215}
+{"case_id": "multi-2", "category": "multi", "system": "sliding_window", "answer": "工作目录：不知道  \n所在城市：不知道", "correct": false, "leaked": false, "latency_ms": 2534.2239999736194, "context_chars": 230}
+{"case_id": "temporal-2", "category": "temporal", "system": "sliding_window", "answer": "Rust", "correct": false, "leaked": false, "latency_ms": 2187.913750007283, "context_chars": 226}
+{"case_id": "forget-2", "category": "forget", "system": "sliding_window", "answer": "RTX 4060", "correct": false, "leaked": true, "latency_ms": 3709.87854199484, "context_chars": 213}
+{"case_id": "abstain-2", "category": "abstain", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 3883.207000006223, "context_chars": 222}
+{"case_id": "recall-3", "category": "recall", "system": "sliding_window", "answer": "C++（你提到的是你室友的主力开发语言）。", "correct": false, "leaked": false, "latency_ms": 2870.180417026859, "context_chars": 193}
+{"case_id": "update-3", "category": "update", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 3175.038333021803, "context_chars": 213}
+{"case_id": "multi-3", "category": "multi", "system": "sliding_window", "answer": "系统版本：你提过笔记本上一个系统是 openKylin 2.0，是否换 openKylin 2.0 SP1 还没决定。  \n默认终端：不知道；记忆里只有你同事的默认终端是 Alacritty。", "correct": false, "leaked": false, "latency_ms": 3761.7789579962846, "context_chars": 266}
+{"case_id": "temporal-3", "category": "temporal", "system": "sliding_window", "answer": "openKylin 2.0。", "correct": false, "leaked": false, "latency_ms": 2989.3902920011897, "context_chars": 247}
+{"case_id": "forget-3", "category": "forget", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2036.2891670083627, "context_chars": 213}
+{"case_id": "abstain-3", "category": "abstain", "system": "sliding_window", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 2199.5294579828624, "context_chars": 238}
+{"case_id": "recall-4", "category": "recall", "system": "sliding_window", "answer": "不知道。", "correct": false, "leaked": false, "latency_ms": 2928.6131659755483, "context_chars": 220}
+{"case_id": "update-4", "category": "update", "system": "sliding_window", "answer": "不知道。", "correct": false, "leaked": false, "latency_ms": 4745.47620798694, "context_chars": 237}
+{"case_id": "multi-4", "category": "multi", "system": "sliding_window", "answer": "不知道。", "correct": false, "leaked": false, "latency_ms": 3293.1549999921117, "context_chars": 237}
+{"case_id": "temporal-4", "category": "temporal", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 2609.1202500101645, "context_chars": 229}
+{"case_id": "forget-4", "category": "forget", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 3449.3081659893505, "context_chars": 271}
+{"case_id": "abstain-4", "category": "abstain", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1873.23974998435, "context_chars": 208}
+{"case_id": "recall-5", "category": "recall", "system": "sliding_window", "answer": "不知道。", "correct": false, "leaked": false, "latency_ms": 3133.6329170153476, "context_chars": 195}
+{"case_id": "update-5", "category": "update", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 2221.32904198952, "context_chars": 258}
+{"case_id": "multi-5", "category": "multi", "system": "sliding_window", "answer": "所在城市：不知道。  \n包管理偏好：尚未确定，你还在考虑是否换成 flatpak 或 apt，未做决定。", "correct": false, "leaked": false, "latency_ms": 5196.4899160084315, "context_chars": 217}
+{"case_id": "temporal-5", "category": "temporal", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 4003.3088750205934, "context_chars": 198}
+{"case_id": "forget-5", "category": "forget", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2155.3742499963846, "context_chars": 205}
+{"case_id": "abstain-5", "category": "abstain", "system": "sliding_window", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 2423.752583010355, "context_chars": 203}
+{"case_id": "recall-6", "category": "recall", "system": "sliding_window", "answer": "你之前提到的工作目录是 `~/dev`。", "correct": false, "leaked": false, "latency_ms": 2103.61287498381, "context_chars": 207}
+{"case_id": "update-6", "category": "update", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 3063.060582993785, "context_chars": 195}
+{"case_id": "multi-6", "category": "multi", "system": "sliding_window", "answer": "系统版本：不知道（记忆里只提到上一个系统是 openKylin 2.0）。CPU 架构：loongarch64。", "correct": false, "leaked": false, "latency_ms": 3998.6373749852646, "context_chars": 228}
+{"case_id": "temporal-6", "category": "temporal", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 2725.285458989674, "context_chars": 232}
+{"case_id": "forget-6", "category": "forget", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2181.0736659972463, "context_chars": 231}
+{"case_id": "abstain-6", "category": "abstain", "system": "sliding_window", "answer": "记得你提到过：你在考虑把常用输入法换成讯飞输入法，但还没决定；你笔记本上一个系统的常用输入法是讯飞输入法。当前常用输入法是什么，记忆里没有明确。", "correct": false, "leaked": false, "latency_ms": 3300.562832999276, "context_chars": 221}
+{"case_id": "recall-7", "category": "recall", "system": "sliding_window", "answer": "KDE Plasma。", "correct": false, "leaked": false, "latency_ms": 8443.392542016227, "context_chars": 208}
+{"case_id": "update-7", "category": "update", "system": "sliding_window", "answer": "不知道。", "correct": false, "leaked": false, "latency_ms": 2942.1441659796983, "context_chars": 242}
+{"case_id": "multi-7", "category": "multi", "system": "sliding_window", "answer": "不知道。", "correct": false, "leaked": false, "latency_ms": 2310.0072079978418, "context_chars": 194}
+{"case_id": "temporal-7", "category": "temporal", "system": "sliding_window", "answer": "Firefox。", "correct": false, "leaked": false, "latency_ms": 5241.51304201223, "context_chars": 216}
+{"case_id": "forget-7", "category": "forget", "system": "sliding_window", "answer": "Kate", "correct": false, "leaked": false, "latency_ms": 1915.9515830106102, "context_chars": 210}
+{"case_id": "abstain-7", "category": "abstain", "system": "sliding_window", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 2203.1998329912312, "context_chars": 200}
+{"case_id": "recall-8", "category": "recall", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 2027.3107499815524, "context_chars": 221}
+{"case_id": "update-8", "category": "update", "system": "sliding_window", "answer": "Python。", "correct": true, "leaked": false, "latency_ms": 2824.7991249954794, "context_chars": 231}
+{"case_id": "multi-8", "category": "multi", "system": "sliding_window", "answer": "CPU 架构：不知道。  \n常用编辑器：不知道（记忆里只提到你上一个系统的常用编辑器是 Neovim，且你还在考虑是否更换）。", "correct": false, "leaked": false, "latency_ms": 5418.949667015113, "context_chars": 222}
+{"case_id": "temporal-8", "category": "temporal", "system": "sliding_window", "answer": "不知道。", "correct": false, "leaked": false, "latency_ms": 3065.991625015158, "context_chars": 203}
+{"case_id": "forget-8", "category": "forget", "system": "sliding_window", "answer": "不知道。记忆中只提到你在考虑要不要换成 Python（还没决定），但没有说当前主力开发语言是什么。", "correct": true, "leaked": false, "latency_ms": 3768.0192919797264, "context_chars": 224}
+{"case_id": "abstain-8", "category": "abstain", "system": "sliding_window", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 3169.0081670240033, "context_chars": 196}
+{"case_id": "recall-9", "category": "recall", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 1814.3819580145646, "context_chars": 229}
+{"case_id": "update-9", "category": "update", "system": "sliding_window", "answer": "Rime 中州韵。", "correct": true, "leaked": false, "latency_ms": 2308.5614580195397, "context_chars": 220}
+{"case_id": "multi-9", "category": "multi", "system": "sliding_window", "answer": "不知道。", "correct": false, "leaked": false, "latency_ms": 3139.542082994012, "context_chars": 200}
+{"case_id": "temporal-9", "category": "temporal", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 5852.027375018224, "context_chars": 219}
+{"case_id": "forget-9", "category": "forget", "system": "sliding_window", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 3716.9157919997815, "context_chars": 235}
+{"case_id": "abstain-9", "category": "abstain", "system": "sliding_window", "answer": "不知道。记忆中只提到你同事的常用输入法是 fcitx5 拼音。", "correct": true, "leaked": false, "latency_ms": 3230.23545902106, "context_chars": 214}
+{"case_id": "recall-10", "category": "recall", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 3123.988500010455, "context_chars": 204}
+{"case_id": "update-10", "category": "update", "system": "sliding_window", "answer": "记得，是 VS Code。", "correct": true, "leaked": false, "latency_ms": 1815.2425839798525, "context_chars": 206}
+{"case_id": "multi-10", "category": "multi", "system": "sliding_window", "answer": "常用输入法：不知道；常用编辑器：Neovim（笔记本上一个系统）。", "correct": false, "leaked": false, "latency_ms": 8384.952583990525, "context_chars": 236}
+{"case_id": "temporal-10", "category": "temporal", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 2551.436541019939, "context_chars": 206}
+{"case_id": "forget-10", "category": "forget", "system": "sliding_window", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 3948.5840419947635, "context_chars": 233}
+{"case_id": "abstain-10", "category": "abstain", "system": "sliding_window", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 1661.9163749855943, "context_chars": 215}
+{"case_id": "recall-11", "category": "recall", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 1908.8032500003465, "context_chars": 214}
+{"case_id": "update-11", "category": "update", "system": "sliding_window", "answer": "记得，是 `/data/projects`。", "correct": true, "leaked": false, "latency_ms": 2611.222458013799, "context_chars": 233}
+{"case_id": "multi-11", "category": "multi", "system": "sliding_window", "answer": "常用输入法：不知道；包管理偏好：flatpak。", "correct": false, "leaked": false, "latency_ms": 3621.6420000127982, "context_chars": 200}
+{"case_id": "temporal-11", "category": "temporal", "system": "sliding_window", "answer": "最早提到的是 **loongarch64**（当时说的是你同事的 CPU 架构）；你自己的 CPU 架构后来更正为 **aarch64**。", "correct": false, "leaked": false, "latency_ms": 11164.299249998294, "context_chars": 241}
+{"case_id": "forget-11", "category": "forget", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2256.2149580044206, "context_chars": 218}
+{"case_id": "abstain-11", "category": "abstain", "system": "sliding_window", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 2072.0925420173444, "context_chars": 202}
+{"case_id": "recall-12", "category": "recall", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 3759.610540990252, "context_chars": 193}
+{"case_id": "update-12", "category": "update", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 2413.6768329772167, "context_chars": 226}
+{"case_id": "multi-12", "category": "multi", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 2094.702750007855, "context_chars": 224}
+{"case_id": "temporal-12", "category": "temporal", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 2721.6007910028566, "context_chars": 218}
+{"case_id": "forget-12", "category": "forget", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1883.9570839772932, "context_chars": 183}
+{"case_id": "abstain-12", "category": "abstain", "system": "sliding_window", "answer": "根据记忆，你笔记本上一个系统的显卡型号是 RTX 4060。", "correct": false, "leaked": false, "latency_ms": 4168.289666995406, "context_chars": 217}
+{"case_id": "recall-13", "category": "recall", "system": "sliding_window", "answer": "不知道。记忆里只提到你让我比较“主力开发语言选 Rust 的优缺点”，没有说明你当前的主力开发语言是什么。", "correct": false, "leaked": false, "latency_ms": 3458.4547909907997, "context_chars": 223}
+{"case_id": "update-13", "category": "update", "system": "sliding_window", "answer": "不知道。", "correct": false, "leaked": false, "latency_ms": 4619.6730000083335, "context_chars": 228}
+{"case_id": "multi-13", "category": "multi", "system": "sliding_window", "answer": "常用编辑器：不知道（只提到在考虑换 Neovim，还没决定）。  \nCPU 架构：x86_64。", "correct": false, "leaked": false, "latency_ms": 4360.891709016869, "context_chars": 223}
+{"case_id": "temporal-13", "category": "temporal", "system": "sliding_window", "answer": "不知道。", "correct": false, "leaked": false, "latency_ms": 5006.2969170103315, "context_chars": 228}
+{"case_id": "forget-13", "category": "forget", "system": "sliding_window", "answer": "Alacritty。", "correct": false, "leaked": false, "latency_ms": 1906.5076249826234, "context_chars": 229}
+{"case_id": "abstain-13", "category": "abstain", "system": "sliding_window", "answer": "不知道。你只让我比较过常用浏览器选 Firefox 的优缺点。", "correct": true, "leaked": false, "latency_ms": 4907.161374983843, "context_chars": 195}
+{"case_id": "recall-14", "category": "recall", "system": "sliding_window", "answer": "你提到过 **openKylin 2.0**，以及考虑换成 **openKylin 2.0 SP1**。", "correct": true, "leaked": false, "latency_ms": 2447.0049169904087, "context_chars": 241}
+{"case_id": "update-14", "category": "update", "system": "sliding_window", "answer": "RX 7800", "correct": true, "leaked": false, "latency_ms": 3138.451332983095, "context_chars": 221}
+{"case_id": "multi-14", "category": "multi", "system": "sliding_window", "answer": "不知道。记忆里没有你确定的 CPU 架构和默认终端；只提到你在考虑换成 loongarch64、默认终端换 Konsole 或选 kitty，均未决定。", "correct": false, "leaked": false, "latency_ms": 3926.6157500096597, "context_chars": 233}
+{"case_id": "temporal-14", "category": "temporal", "system": "sliding_window", "answer": "不知道。", "correct": false, "leaked": false, "latency_ms": 3512.767917010933, "context_chars": 265}
+{"case_id": "forget-14", "category": "forget", "system": "sliding_window", "answer": "Chromium。", "correct": false, "leaked": false, "latency_ms": 2573.7747919920366, "context_chars": 218}
+{"case_id": "abstain-14", "category": "abstain", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 4468.120834004367, "context_chars": 217}
+{"case_id": "recall-15", "category": "recall", "system": "sliding_window", "answer": "不知道。", "correct": false, "leaked": false, "latency_ms": 2431.7898750014137, "context_chars": 205}
+{"case_id": "update-15", "category": "update", "system": "sliding_window", "answer": "不知道。", "correct": false, "leaked": false, "latency_ms": 2329.381999996258, "context_chars": 207}
+{"case_id": "multi-15", "category": "multi", "system": "sliding_window", "answer": "CPU 架构：riscv64（你提过笔记本上一个系统是这个架构）。  \n默认终端：不知道。", "correct": false, "leaked": false, "latency_ms": 10702.410124999005, "context_chars": 228}
+{"case_id": "temporal-15", "category": "temporal", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 2885.4502089961898, "context_chars": 208}
+{"case_id": "forget-15", "category": "forget", "system": "sliding_window", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 2743.389292008942, "context_chars": 221}
+{"case_id": "abstain-15", "category": "abstain", "system": "sliding_window", "answer": "讯飞输入法。", "correct": false, "leaked": false, "latency_ms": 2792.3179590143263, "context_chars": 212}
+{"case_id": "recall-16", "category": "recall", "system": "sliding_window", "answer": "loongarch64", "correct": false, "leaked": false, "latency_ms": 4375.291083008051, "context_chars": 215}
+{"case_id": "update-16", "category": "update", "system": "sliding_window", "answer": "不知道。", "correct": false, "leaked": false, "latency_ms": 10533.245124999667, "context_chars": 234}
+{"case_id": "multi-16", "category": "multi", "system": "sliding_window", "answer": "记忆中有两个显卡型号：RX 7800 和 RTX 4060；所在城市是深圳。", "correct": false, "leaked": false, "latency_ms": 7091.328834008891, "context_chars": 219}
+{"case_id": "temporal-16", "category": "temporal", "system": "sliding_window", "answer": "Kate。", "correct": true, "leaked": false, "latency_ms": 3843.7046660110354, "context_chars": 226}
+{"case_id": "forget-16", "category": "forget", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1563.987375004217, "context_chars": 208}
+{"case_id": "abstain-16", "category": "abstain", "system": "sliding_window", "answer": "长沙。你还在考虑换成成都，但尚未决定。", "correct": false, "leaked": false, "latency_ms": 2108.1893329974264, "context_chars": 206}
+{"case_id": "recall-17", "category": "recall", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 1732.5937080022413, "context_chars": 221}
+{"case_id": "update-17", "category": "update", "system": "sliding_window", "answer": "不知道。", "correct": false, "leaked": false, "latency_ms": 2701.6880410083104, "context_chars": 242}
+{"case_id": "multi-17", "category": "multi", "system": "sliding_window", "answer": "默认桌面环境：不知道。包管理偏好：源码编译。", "correct": false, "leaked": false, "latency_ms": 3230.7006669871043, "context_chars": 207}
+{"case_id": "temporal-17", "category": "temporal", "system": "sliding_window", "answer": "`~/work`", "correct": false, "leaked": false, "latency_ms": 2275.149416003842, "context_chars": 195}
+{"case_id": "forget-17", "category": "forget", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2295.5112920026295, "context_chars": 212}
+{"case_id": "abstain-17", "category": "abstain", "system": "sliding_window", "answer": "不知道你当前的默认终端是什么。记忆里只有：你在考虑要不要换成 Konsole，还没决定。", "correct": true, "leaked": false, "latency_ms": 2212.8817919874564, "context_chars": 204}
+{"case_id": "recall-18", "category": "recall", "system": "sliding_window", "answer": "不知道。", "correct": false, "leaked": false, "latency_ms": 2082.211291010026, "context_chars": 179}
+{"case_id": "update-18", "category": "update", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 1795.8764999930281, "context_chars": 189}
+{"case_id": "multi-18", "category": "multi", "system": "sliding_window", "answer": "不知道。", "correct": false, "leaked": false, "latency_ms": 2937.2614579915535, "context_chars": 220}
+{"case_id": "temporal-18", "category": "temporal", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 1438.0189590156078, "context_chars": 195}
+{"case_id": "forget-18", "category": "forget", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1827.5392499926966, "context_chars": 219}
+{"case_id": "abstain-18", "category": "abstain", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2105.6191670068074, "context_chars": 206}
+{"case_id": "recall-19", "category": "recall", "system": "sliding_window", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 6893.574290996185, "context_chars": 209}
+{"case_id": "update-19", "category": "update", "system": "sliding_window", "answer": "不知道。", "correct": false, "leaked": false, "latency_ms": 1954.105167009402, "context_chars": 222}
+{"case_id": "multi-19", "category": "multi", "system": "sliding_window", "answer": "不知道。", "correct": false, "leaked": false, "latency_ms": 3552.323166979477, "context_chars": 210}
+{"case_id": "temporal-19", "category": "temporal", "system": "sliding_window", "answer": "Kate", "correct": false, "leaked": false, "latency_ms": 2693.12195898965, "context_chars": 218}
+{"case_id": "forget-19", "category": "forget", "system": "sliding_window", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 3965.145999973174, "context_chars": 211}
+{"case_id": "abstain-19", "category": "abstain", "system": "sliding_window", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2674.2920829856303, "context_chars": 239}
+{"case_id": "recall-0", "category": "recall", "system": "bm25_rag", "answer": "记得，上海。", "correct": true, "leaked": false, "latency_ms": 1753.6837080260739, "context_chars": 57}
+{"case_id": "update-0", "category": "update", "system": "bm25_rag", "answer": "~/dev", "correct": false, "leaked": true, "latency_ms": 1924.3909579818137, "context_chars": 72}
+{"case_id": "multi-0", "category": "multi", "system": "bm25_rag", "answer": "包管理偏好是 flatpak，主力开发语言是 Java。", "correct": true, "leaked": false, "latency_ms": 2893.2276659761555, "context_chars": 62}
+{"case_id": "temporal-0", "category": "temporal", "system": "bm25_rag", "answer": "不知道。", "correct": false, "leaked": false, "latency_ms": 3417.7930419973563, "context_chars": 49}
+{"case_id": "forget-0", "category": "forget", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2574.311915988801, "context_chars": 78}
+{"case_id": "abstain-0", "category": "abstain", "system": "bm25_rag", "answer": "不知道，只记得你笔记本上一个系统的常用浏览器是 Firefox。", "correct": true, "leaked": false, "latency_ms": 3766.7394159943797, "context_chars": 84}
+{"case_id": "recall-1", "category": "recall", "system": "bm25_rag", "answer": "openKylin 1.0.2", "correct": true, "leaked": false, "latency_ms": 1993.652499979362, "context_chars": 109}
+{"case_id": "update-1", "category": "update", "system": "bm25_rag", "answer": "x86_64。", "correct": false, "leaked": true, "latency_ms": 2289.8842910071835, "context_chars": 83}
+{"case_id": "multi-1", "category": "multi", "system": "bm25_rag", "answer": "你的显卡型号是 Arc A770，常用浏览器是 360 安全浏览器。", "correct": true, "leaked": false, "latency_ms": 2760.9588330087718, "context_chars": 72}
+{"case_id": "temporal-1", "category": "temporal", "system": "bm25_rag", "answer": "RX 7800。", "correct": true, "leaked": false, "latency_ms": 2014.9954999797046, "context_chars": 78}
+{"case_id": "forget-1", "category": "forget", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1751.201792008942, "context_chars": 62}
+{"case_id": "abstain-1", "category": "abstain", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 4039.1481669794302, "context_chars": 70}
+{"case_id": "recall-2", "category": "recall", "system": "bm25_rag", "answer": "openKylin 2.0。", "correct": true, "leaked": false, "latency_ms": 4203.436707990477, "context_chars": 111}
+{"case_id": "update-2", "category": "update", "system": "bm25_rag", "answer": "北京", "correct": true, "leaked": false, "latency_ms": 1939.6275419858284, "context_chars": 55}
+{"case_id": "multi-2", "category": "multi", "system": "bm25_rag", "answer": "工作目录是 ~/dev，所在城市是深圳。", "correct": true, "leaked": false, "latency_ms": 3039.8009170021396, "context_chars": 59}
+{"case_id": "temporal-2", "category": "temporal", "system": "bm25_rag", "answer": "C++", "correct": true, "leaked": false, "latency_ms": 2501.604374992894, "context_chars": 71}
+{"case_id": "forget-2", "category": "forget", "system": "bm25_rag", "answer": "RTX 4060。", "correct": false, "leaked": true, "latency_ms": 1936.2418749951757, "context_chars": 86}
+{"case_id": "abstain-2", "category": "abstain", "system": "bm25_rag", "answer": "aarch64", "correct": false, "leaked": false, "latency_ms": 2141.1800410132855, "context_chars": 95}
+{"case_id": "recall-3", "category": "recall", "system": "bm25_rag", "answer": "Java", "correct": true, "leaked": false, "latency_ms": 2692.087083007209, "context_chars": 70}
+{"case_id": "update-3", "category": "update", "system": "bm25_rag", "answer": "奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 1771.0680839954875, "context_chars": 85}
+{"case_id": "multi-3", "category": "multi", "system": "bm25_rag", "answer": "记得：你的系统版本是 openKylin 1.0.2；你上一个系统的默认终端是 Alacritty，上一个系统版本是 openKylin 2.0。当前默认终端不知道。", "correct": false, "leaked": false, "latency_ms": 5339.097249991028, "context_chars": 105}
+{"case_id": "temporal-3", "category": "temporal", "system": "bm25_rag", "answer": "openKylin 1.0.2", "correct": true, "leaked": false, "latency_ms": 2436.650959018152, "context_chars": 103}
+{"case_id": "forget-3", "category": "forget", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1958.1041249912232, "context_chars": 92}
+{"case_id": "abstain-3", "category": "abstain", "system": "bm25_rag", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 2484.250042005442, "context_chars": 108}
+{"case_id": "recall-4", "category": "recall", "system": "bm25_rag", "answer": "GNOME。", "correct": true, "leaked": false, "latency_ms": 3117.021207988728, "context_chars": 87}
+{"case_id": "update-4", "category": "update", "system": "bm25_rag", "answer": "RX 7800。", "correct": true, "leaked": false, "latency_ms": 1676.0697499848902, "context_chars": 78}
+{"case_id": "multi-4", "category": "multi", "system": "bm25_rag", "answer": "常用编辑器是 Vim，常用浏览器是奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 2750.3274580230936, "context_chars": 68}
+{"case_id": "temporal-4", "category": "temporal", "system": "bm25_rag", "answer": "riscv64", "correct": true, "leaked": false, "latency_ms": 2145.3609590244014, "context_chars": 85}
+{"case_id": "forget-4", "category": "forget", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 3650.5132089951076, "context_chars": 102}
+{"case_id": "abstain-4", "category": "abstain", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1761.4948750124313, "context_chars": 83}
+{"case_id": "recall-5", "category": "recall", "system": "bm25_rag", "answer": "摩尔线程 S80。", "correct": true, "leaked": false, "latency_ms": 3669.996500015259, "context_chars": 85}
+{"case_id": "update-5", "category": "update", "system": "bm25_rag", "answer": "openKylin 2.0", "correct": true, "leaked": false, "latency_ms": 1862.1938749856781, "context_chars": 113}
+{"case_id": "multi-5", "category": "multi", "system": "bm25_rag", "answer": "你的所在城市是成都；包管理偏好是源码编译。", "correct": true, "leaked": false, "latency_ms": 2242.7103749942034, "context_chars": 57}
+{"case_id": "temporal-5", "category": "temporal", "system": "bm25_rag", "answer": "Arc A770。", "correct": true, "leaked": false, "latency_ms": 3116.7287089920137, "context_chars": 71}
+{"case_id": "forget-5", "category": "forget", "system": "bm25_rag", "answer": "GNOME", "correct": false, "leaked": true, "latency_ms": 1998.5290420008823, "context_chars": 72}
+{"case_id": "abstain-5", "category": "abstain", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1723.1229589961004, "context_chars": 78}
+{"case_id": "recall-6", "category": "recall", "system": "bm25_rag", "answer": "~/work", "correct": true, "leaked": false, "latency_ms": 1836.3274159783032, "context_chars": 80}
+{"case_id": "update-6", "category": "update", "system": "bm25_rag", "answer": "Alacritty。", "correct": false, "leaked": true, "latency_ms": 4845.241874980275, "context_chars": 77}
+{"case_id": "multi-6", "category": "multi", "system": "bm25_rag", "answer": "系统版本是 openKylin 1.0.2；CPU 架构不知道。", "correct": false, "leaked": false, "latency_ms": 2829.633292014478, "context_chars": 111}
+{"case_id": "temporal-6", "category": "temporal", "system": "bm25_rag", "answer": "RTX 4060", "correct": true, "leaked": false, "latency_ms": 2432.8014999919105, "context_chars": 78}
+{"case_id": "forget-6", "category": "forget", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1622.5278750061989, "context_chars": 72}
+{"case_id": "abstain-6", "category": "abstain", "system": "bm25_rag", "answer": "你笔记本上一个系统的常用输入法是讯飞输入法；是否更换为讯飞，你还没决定。", "correct": false, "leaked": false, "latency_ms": 4994.025583000621, "context_chars": 94}
+{"case_id": "recall-7", "category": "recall", "system": "bm25_rag", "answer": "Xfce。", "correct": true, "leaked": false, "latency_ms": 2712.646165979095, "context_chars": 73}
+{"case_id": "update-7", "category": "update", "system": "bm25_rag", "answer": "fcitx5 拼音。", "correct": false, "leaked": true, "latency_ms": 1498.0889589933213, "context_chars": 69}
+{"case_id": "multi-7", "category": "multi", "system": "bm25_rag", "answer": "记得：工作目录是 `~/dev`，常用浏览器是 Chromium。", "correct": false, "leaked": false, "latency_ms": 3361.8318750231992, "context_chars": 77}
+{"case_id": "temporal-7", "category": "temporal", "system": "bm25_rag", "answer": "奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 2868.200041993987, "context_chars": 84}
+{"case_id": "forget-7", "category": "forget", "system": "bm25_rag", "answer": "Vim", "correct": false, "leaked": true, "latency_ms": 1863.8850839924999, "context_chars": 69}
+{"case_id": "abstain-7", "category": "abstain", "system": "bm25_rag", "answer": "Emacs。", "correct": false, "leaked": false, "latency_ms": 2773.9613329758868, "context_chars": 88}
+{"case_id": "recall-8", "category": "recall", "system": "bm25_rag", "answer": "openKylin 2.0", "correct": true, "leaked": false, "latency_ms": 2983.4799589880276, "context_chars": 101}
+{"case_id": "update-8", "category": "update", "system": "bm25_rag", "answer": "Go", "correct": false, "leaked": true, "latency_ms": 2695.7413339987397, "context_chars": 69}
+{"case_id": "multi-8", "category": "multi", "system": "bm25_rag", "answer": "你的CPU架构是 riscv64，常用编辑器是 Emacs。", "correct": true, "leaked": false, "latency_ms": 1800.9563339874148, "context_chars": 80}
+{"case_id": "temporal-8", "category": "temporal", "system": "bm25_rag", "answer": "Java", "correct": true, "leaked": false, "latency_ms": 2256.862749985885, "context_chars": 69}
+{"case_id": "forget-8", "category": "forget", "system": "bm25_rag", "answer": "Go。", "correct": false, "leaked": true, "latency_ms": 2023.2323340023868, "context_chars": 62}
+{"case_id": "abstain-8", "category": "abstain", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2001.52820799849, "context_chars": 76}
+{"case_id": "recall-9", "category": "recall", "system": "bm25_rag", "answer": "openKylin 2.0 SP1。", "correct": true, "leaked": false, "latency_ms": 1591.344709013356, "context_chars": 109}
+{"case_id": "update-9", "category": "update", "system": "bm25_rag", "answer": "搜狗输入法。", "correct": false, "leaked": true, "latency_ms": 5046.83787500835, "context_chars": 71}
+{"case_id": "multi-9", "category": "multi", "system": "bm25_rag", "answer": "主力开发语言是 Rust；所在城市不知道。", "correct": false, "leaked": false, "latency_ms": 2110.7688329939265, "context_chars": 67}
+{"case_id": "temporal-9", "category": "temporal", "system": "bm25_rag", "answer": "mate-terminal", "correct": true, "leaked": false, "latency_ms": 2471.0402920027263, "context_chars": 89}
+{"case_id": "forget-9", "category": "forget", "system": "bm25_rag", "answer": "Arc A770。", "correct": false, "leaked": true, "latency_ms": 1666.0387080046348, "context_chars": 77}
+{"case_id": "abstain-9", "category": "abstain", "system": "bm25_rag", "answer": "Rime 中州韵。", "correct": false, "leaked": false, "latency_ms": 2126.786125008948, "context_chars": 97}
+{"case_id": "recall-10", "category": "recall", "system": "bm25_rag", "answer": "mate-terminal", "correct": true, "leaked": false, "latency_ms": 2086.6927500173915, "context_chars": 85}
+{"case_id": "update-10", "category": "update", "system": "bm25_rag", "answer": "记得，是 VS Code。", "correct": true, "leaked": false, "latency_ms": 2242.698666988872, "context_chars": 78}
+{"case_id": "multi-10", "category": "multi", "system": "bm25_rag", "answer": "常用输入法：Rime 中州韵；常用编辑器：Neovim。", "correct": true, "leaked": false, "latency_ms": 1908.98125001695, "context_chars": 66}
+{"case_id": "temporal-10", "category": "temporal", "system": "bm25_rag", "answer": "北京。", "correct": true, "leaked": false, "latency_ms": 1838.6243330023717, "context_chars": 51}
+{"case_id": "forget-10", "category": "forget", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2126.645334006753, "context_chars": 57}
+{"case_id": "abstain-10", "category": "abstain", "system": "bm25_rag", "answer": "你上一个系统的常用编辑器是 VS Code。当前常用编辑器不知道。", "correct": true, "leaked": false, "latency_ms": 3211.731334013166, "context_chars": 94}
+{"case_id": "recall-11", "category": "recall", "system": "bm25_rag", "answer": "kare", "correct": true, "leaked": false, "latency_ms": 2282.230584009085, "context_chars": 59}
+{"case_id": "update-11", "category": "update", "system": "bm25_rag", "answer": "记得，是 ~/dev。", "correct": false, "leaked": true, "latency_ms": 5776.754374994198, "context_chars": 79}
+{"case_id": "multi-11", "category": "multi", "system": "bm25_rag", "answer": "常用输入法：Rime 中州韵。包管理偏好：不知道。", "correct": false, "leaked": false, "latency_ms": 3902.790416002972, "context_chars": 72}
+{"case_id": "temporal-11", "category": "temporal", "system": "bm25_rag", "answer": "riscv64", "correct": true, "leaked": false, "latency_ms": 1674.158333975356, "context_chars": 88}
+{"case_id": "forget-11", "category": "forget", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2683.768541988684, "context_chars": 69}
+{"case_id": "abstain-11", "category": "abstain", "system": "bm25_rag", "answer": "无法确定：记忆里你的笔记本上一个系统有 x86_64，也有 aarch64。", "correct": true, "leaked": false, "latency_ms": 9049.627041997155, "context_chars": 96}
+{"case_id": "recall-12", "category": "recall", "system": "bm25_rag", "answer": "记得，是 Vim。", "correct": true, "leaked": false, "latency_ms": 4631.423375016311, "context_chars": 64}
+{"case_id": "update-12", "category": "update", "system": "bm25_rag", "answer": "loongarch64", "correct": false, "leaked": true, "latency_ms": 2279.0567920019384, "context_chars": 97}
+{"case_id": "multi-12", "category": "multi", "system": "bm25_rag", "answer": "所在城市：长沙；CPU 架构：不知道。", "correct": false, "leaked": false, "latency_ms": 2631.065875000786, "context_chars": 53}
+{"case_id": "temporal-12", "category": "temporal", "system": "bm25_rag", "answer": "Chromium", "correct": true, "leaked": false, "latency_ms": 1770.4590829962399, "context_chars": 81}
+{"case_id": "forget-12", "category": "forget", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 5172.576500015566, "context_chars": 78}
+{"case_id": "abstain-12", "category": "abstain", "system": "bm25_rag", "answer": "你的笔记本上一个系统的显卡型号是 RTX 4060。", "correct": false, "leaked": false, "latency_ms": 2501.1543330037966, "context_chars": 88}
+{"case_id": "recall-13", "category": "recall", "system": "bm25_rag", "answer": "Java。", "correct": true, "leaked": false, "latency_ms": 3522.1438339794986, "context_chars": 76}
+{"case_id": "update-13", "category": "update", "system": "bm25_rag", "answer": "摩尔线程 S80。", "correct": false, "leaked": true, "latency_ms": 1597.0903749985155, "context_chars": 77}
+{"case_id": "multi-13", "category": "multi", "system": "bm25_rag", "answer": "常用编辑器是 Kate；CPU 架构不知道。", "correct": false, "leaked": false, "latency_ms": 1877.9979169776198, "context_chars": 64}
+{"case_id": "temporal-13", "category": "temporal", "system": "bm25_rag", "answer": "Firefox", "correct": true, "leaked": false, "latency_ms": 1665.0581670110114, "context_chars": 77}
+{"case_id": "forget-13", "category": "forget", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2578.374208009336, "context_chars": 74}
+{"case_id": "abstain-13", "category": "abstain", "system": "bm25_rag", "answer": "你曾提到：笔记本上一个系统的常用浏览器是Firefox。记忆中没有明确你当前的常用浏览器。", "correct": false, "leaked": false, "latency_ms": 3484.344875003444, "context_chars": 95}
+{"case_id": "recall-14", "category": "recall", "system": "bm25_rag", "answer": "你提到过：openKylin 2.0 SP1、openKylin 2.0、openKylin 1.0.2。", "correct": true, "leaked": false, "latency_ms": 3397.811166010797, "context_chars": 116}
+{"case_id": "update-14", "category": "update", "system": "bm25_rag", "answer": "RX 7800。", "correct": true, "leaked": false, "latency_ms": 2544.939916988369, "context_chars": 90}
+{"case_id": "multi-14", "category": "multi", "system": "bm25_rag", "answer": "你的 CPU 架构是 aarch64；默认终端：不知道。", "correct": false, "leaked": false, "latency_ms": 2132.0597500016447, "context_chars": 78}
+{"case_id": "temporal-14", "category": "temporal", "system": "bm25_rag", "answer": "apt。", "correct": true, "leaked": false, "latency_ms": 3772.123999980977, "context_chars": 63}
+{"case_id": "forget-14", "category": "forget", "system": "bm25_rag", "answer": "奇安信浏览器。", "correct": false, "leaked": true, "latency_ms": 3159.328458015807, "context_chars": 84}
+{"case_id": "abstain-14", "category": "abstain", "system": "bm25_rag", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 3023.9289999881294, "context_chars": 93}
+{"case_id": "recall-15", "category": "recall", "system": "bm25_rag", "answer": "Kate。", "correct": true, "leaked": false, "latency_ms": 2599.000165995676, "context_chars": 66}
+{"case_id": "update-15", "category": "update", "system": "bm25_rag", "answer": "apt", "correct": false, "leaked": true, "latency_ms": 2055.5448749801144, "context_chars": 60}
+{"case_id": "multi-15", "category": "multi", "system": "bm25_rag", "answer": "你的CPU架构是aarch64；默认终端不知道。", "correct": false, "leaked": false, "latency_ms": 3274.7218330041505, "context_chars": 84}
+{"case_id": "temporal-15", "category": "temporal", "system": "bm25_rag", "answer": "flatpak", "correct": true, "leaked": false, "latency_ms": 1968.7835829972755, "context_chars": 66}
+{"case_id": "forget-15", "category": "forget", "system": "bm25_rag", "answer": "~/dev", "correct": false, "leaked": true, "latency_ms": 3519.122082972899, "context_chars": 72}
+{"case_id": "abstain-15", "category": "abstain", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2853.318332985509, "context_chars": 92}
+{"case_id": "recall-16", "category": "recall", "system": "bm25_rag", "answer": "riscv64", "correct": true, "leaked": false, "latency_ms": 2248.0349999968894, "context_chars": 82}
+{"case_id": "update-16", "category": "update", "system": "bm25_rag", "answer": "记得，是奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 2892.558833002113, "context_chars": 86}
+{"case_id": "multi-16", "category": "multi", "system": "bm25_rag", "answer": "显卡型号：RX 7800；所在城市：上海。", "correct": true, "leaked": false, "latency_ms": 2280.5645000189543, "context_chars": 68}
+{"case_id": "temporal-16", "category": "temporal", "system": "bm25_rag", "answer": "Kate", "correct": true, "leaked": false, "latency_ms": 3383.5930000059307, "context_chars": 66}
+{"case_id": "forget-16", "category": "forget", "system": "bm25_rag", "answer": "讯飞输入法。", "correct": false, "leaked": true, "latency_ms": 2581.1023749993183, "context_chars": 74}
+{"case_id": "abstain-16", "category": "abstain", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 4139.423500018893, "context_chars": 65}
+{"case_id": "recall-17", "category": "recall", "system": "bm25_rag", "answer": "~/work", "correct": true, "leaked": false, "latency_ms": 2828.449416003423, "context_chars": 77}
+{"case_id": "update-17", "category": "update", "system": "bm25_rag", "answer": "奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 2000.2172499953303, "context_chars": 95}
+{"case_id": "multi-17", "category": "multi", "system": "bm25_rag", "answer": "默认桌面环境是UKUI；包管理偏好不知道。", "correct": false, "leaked": false, "latency_ms": 4291.315708018374, "context_chars": 75}
+{"case_id": "temporal-17", "category": "temporal", "system": "bm25_rag", "answer": "~/dev", "correct": true, "leaked": false, "latency_ms": 3579.7311660135165, "context_chars": 65}
+{"case_id": "forget-17", "category": "forget", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2493.4759589959867, "context_chars": 84}
+{"case_id": "abstain-17", "category": "abstain", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2648.087209003279, "context_chars": 92}
+{"case_id": "recall-18", "category": "recall", "system": "bm25_rag", "answer": "记得，是 ~/work。", "correct": true, "leaked": false, "latency_ms": 3570.092082984047, "context_chars": 72}
+{"case_id": "update-18", "category": "update", "system": "bm25_rag", "answer": "上海。", "correct": false, "leaked": true, "latency_ms": 3348.352792003425, "context_chars": 53}
+{"case_id": "multi-18", "category": "multi", "system": "bm25_rag", "answer": "主力开发语言是 Java；系统版本不知道。", "correct": false, "leaked": false, "latency_ms": 2422.1725840179715, "context_chars": 66}
+{"case_id": "temporal-18", "category": "temporal", "system": "bm25_rag", "answer": "RX 7800", "correct": true, "leaked": false, "latency_ms": 2364.8543749877717, "context_chars": 71}
+{"case_id": "forget-18", "category": "forget", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1589.9093749758322, "context_chars": 80}
+{"case_id": "abstain-18", "category": "abstain", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1916.3854170183185, "context_chars": 73}
+{"case_id": "recall-19", "category": "recall", "system": "bm25_rag", "answer": "Xfce。", "correct": true, "leaked": false, "latency_ms": 2372.742167004617, "context_chars": 78}
+{"case_id": "update-19", "category": "update", "system": "bm25_rag", "answer": "奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 2600.8967910020147, "context_chars": 88}
+{"case_id": "multi-19", "category": "multi", "system": "bm25_rag", "answer": "你的常用编辑器是 Vim，常用浏览器是奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 2695.729625003878, "context_chars": 72}
+{"case_id": "temporal-19", "category": "temporal", "system": "bm25_rag", "answer": "Emacs。", "correct": true, "leaked": false, "latency_ms": 12197.97204202041, "context_chars": 65}
+{"case_id": "forget-19", "category": "forget", "system": "bm25_rag", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2987.8787500201724, "context_chars": 83}
+{"case_id": "abstain-19", "category": "abstain", "system": "bm25_rag", "answer": "Neovim。", "correct": false, "leaked": false, "latency_ms": 3583.2380409992766, "context_chars": 79}
+{"case_id": "recall-0", "category": "recall", "system": "profile_store", "answer": "记得，上海。", "correct": true, "leaked": false, "latency_ms": 0.3593339934013784, "context_chars": 57}
+{"case_id": "update-0", "category": "update", "system": "profile_store", "answer": "/data/projects", "correct": true, "leaked": false, "latency_ms": 1839.0732500120066, "context_chars": 81}
+{"case_id": "multi-0", "category": "multi", "system": "profile_store", "answer": "包管理偏好是 flatpak；主力开发语言是 Java。", "correct": true, "leaked": false, "latency_ms": 1801.6898750211112, "context_chars": 128}
+{"case_id": "temporal-0", "category": "temporal", "system": "profile_store", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 4014.284958015196, "context_chars": 42}
+{"case_id": "forget-0", "category": "forget", "system": "profile_store", "answer": "记得，Rime 中州韵。", "correct": false, "leaked": false, "latency_ms": 3430.2101249923, "context_chars": 48}
+{"case_id": "abstain-0", "category": "abstain", "system": "profile_store", "answer": "你笔记本上一个系统的常用浏览器是 Firefox。", "correct": false, "leaked": false, "latency_ms": 19241.592333011795, "context_chars": 79}
+{"case_id": "recall-1", "category": "recall", "system": "profile_store", "answer": "openKylin 1.0.2", "correct": true, "leaked": false, "latency_ms": 3.248624998377636, "context_chars": 109}
+{"case_id": "update-1", "category": "update", "system": "profile_store", "answer": "loongarch64。", "correct": true, "leaked": false, "latency_ms": 1935.302750003757, "context_chars": 62}
+{"case_id": "multi-1", "category": "multi", "system": "profile_store", "answer": "显卡型号是Arc A770，常用浏览器是360安全浏览器。", "correct": true, "leaked": false, "latency_ms": 1854.3520419916604, "context_chars": 118}
+{"case_id": "temporal-1", "category": "temporal", "system": "profile_store", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 1961.1384170129895, "context_chars": 35}
+{"case_id": "forget-1", "category": "forget", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1933.7290840048809, "context_chars": 41}
+{"case_id": "abstain-1", "category": "abstain", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2346.6162080003414, "context_chars": 59}
+{"case_id": "recall-2", "category": "recall", "system": "profile_store", "answer": "openKylin 2.0", "correct": true, "leaked": false, "latency_ms": 4012.852124986239, "context_chars": 55}
+{"case_id": "update-2", "category": "update", "system": "profile_store", "answer": "北京", "correct": true, "leaked": false, "latency_ms": 2090.1077909802552, "context_chars": 42}
+{"case_id": "multi-2", "category": "multi", "system": "profile_store", "answer": "工作目录是 ~/dev，所在城市是深圳。", "correct": true, "leaked": false, "latency_ms": 3232.1027500147466, "context_chars": 111}
+{"case_id": "temporal-2", "category": "temporal", "system": "profile_store", "answer": "Python", "correct": false, "leaked": false, "latency_ms": 1950.8432500006165, "context_chars": 58}
+{"case_id": "forget-2", "category": "forget", "system": "profile_store", "answer": "RTX 4060", "correct": false, "leaked": true, "latency_ms": 2966.9730410096236, "context_chars": 45}
+{"case_id": "abstain-2", "category": "abstain", "system": "profile_store", "answer": "aarch64", "correct": false, "leaked": false, "latency_ms": 2636.476166982902, "context_chars": 69}
+{"case_id": "recall-3", "category": "recall", "system": "profile_store", "answer": "Java", "correct": true, "leaked": false, "latency_ms": 2885.319167020498, "context_chars": 72}
+{"case_id": "update-3", "category": "update", "system": "profile_store", "answer": "奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 2455.465583014302, "context_chars": 60}
+{"case_id": "multi-3", "category": "multi", "system": "profile_store", "answer": "记得：系统版本是 openKylin 1.0.2，默认终端是 mate-terminal。", "correct": true, "leaked": false, "latency_ms": 2759.371749998536, "context_chars": 152}
+{"case_id": "temporal-3", "category": "temporal", "system": "profile_store", "answer": "openKylin 2.0", "correct": false, "leaked": false, "latency_ms": 2735.8746670070104, "context_chars": 75}
+{"case_id": "forget-3", "category": "forget", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2509.210084012011, "context_chars": 58}
+{"case_id": "abstain-3", "category": "abstain", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2005.6967090058606, "context_chars": 70}
+{"case_id": "recall-4", "category": "recall", "system": "profile_store", "answer": "GNOME", "correct": true, "leaked": false, "latency_ms": 2639.906083000824, "context_chars": 58}
+{"case_id": "update-4", "category": "update", "system": "profile_store", "answer": "RX 7800", "correct": true, "leaked": false, "latency_ms": 2175.8570419915486, "context_chars": 59}
+{"case_id": "multi-4", "category": "multi", "system": "profile_store", "answer": "常用编辑器是 Vim，常用浏览器是奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 2079.0617919992656, "context_chars": 115}
+{"case_id": "temporal-4", "category": "temporal", "system": "profile_store", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 2898.077249992639, "context_chars": 59}
+{"case_id": "forget-4", "category": "forget", "system": "profile_store", "answer": "openKylin 1.0.2", "correct": false, "leaked": false, "latency_ms": 3194.627249991754, "context_chars": 60}
+{"case_id": "abstain-4", "category": "abstain", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2002.136082999641, "context_chars": 54}
+{"case_id": "recall-5", "category": "recall", "system": "profile_store", "answer": "摩尔线程 S80。", "correct": true, "leaked": false, "latency_ms": 1710.9205420129001, "context_chars": 60}
+{"case_id": "update-5", "category": "update", "system": "profile_store", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 13037.073624989716, "context_chars": 79}
+{"case_id": "multi-5", "category": "multi", "system": "profile_store", "answer": "你的所在城市是成都；你的包管理偏好是源码编译。", "correct": true, "leaked": false, "latency_ms": 2139.894166000886, "context_chars": 112}
+{"case_id": "temporal-5", "category": "temporal", "system": "profile_store", "answer": "RX 7800。", "correct": false, "leaked": false, "latency_ms": 2915.994667011546, "context_chars": 59}
+{"case_id": "forget-5", "category": "forget", "system": "profile_store", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 2856.082250014879, "context_chars": 41}
+{"case_id": "abstain-5", "category": "abstain", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1899.1617500141729, "context_chars": 54}
+{"case_id": "recall-6", "category": "recall", "system": "profile_store", "answer": "~/work", "correct": true, "leaked": false, "latency_ms": 0.7561669917777181, "context_chars": 80}
+{"case_id": "update-6", "category": "update", "system": "profile_store", "answer": "mate-terminal。", "correct": true, "leaked": false, "latency_ms": 2405.4345409967937, "context_chars": 63}
+{"case_id": "multi-6", "category": "multi", "system": "profile_store", "answer": "系统版本是 openKylin 1.0.2，CPU 架构是 loongarch64。", "correct": true, "leaked": false, "latency_ms": 2607.1652499958873, "context_chars": 151}
+{"case_id": "temporal-6", "category": "temporal", "system": "profile_store", "answer": "Arc A770。", "correct": false, "leaked": false, "latency_ms": 3241.93849999574, "context_chars": 61}
+{"case_id": "forget-6", "category": "forget", "system": "profile_store", "answer": "RTX 4060", "correct": false, "leaked": false, "latency_ms": 2980.485125008272, "context_chars": 64}
+{"case_id": "abstain-6", "category": "abstain", "system": "profile_store", "answer": "只记得你笔记本上一个系统的常用输入法是讯飞输入法。", "correct": false, "leaked": false, "latency_ms": 11078.397833014606, "context_chars": 59}
+{"case_id": "recall-7", "category": "recall", "system": "profile_store", "answer": "Xfce。", "correct": true, "leaked": false, "latency_ms": 1731.528458010871, "context_chars": 85}
+{"case_id": "update-7", "category": "update", "system": "profile_store", "answer": "Rime 中州韵。", "correct": true, "leaked": false, "latency_ms": 1798.9390830043703, "context_chars": 57}
+{"case_id": "multi-7", "category": "multi", "system": "profile_store", "answer": "记得：工作目录是 `/data/projects`，常用浏览器是 Chromium。", "correct": true, "leaked": false, "latency_ms": 2852.513457997702, "context_chars": 104}
+{"case_id": "temporal-7", "category": "temporal", "system": "profile_store", "answer": "360 安全浏览器。", "correct": false, "leaked": false, "latency_ms": 1883.9648750144988, "context_chars": 87}
+{"case_id": "forget-7", "category": "forget", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2932.0105410006363, "context_chars": 60}
+{"case_id": "abstain-7", "category": "abstain", "system": "profile_store", "answer": "Emacs。", "correct": false, "leaked": false, "latency_ms": 2414.907875005156, "context_chars": 36}
+{"case_id": "recall-8", "category": "recall", "system": "profile_store", "answer": "openKylin 2.0", "correct": true, "leaked": false, "latency_ms": 2102.888207999058, "context_chars": 75}
+{"case_id": "update-8", "category": "update", "system": "profile_store", "answer": "Python", "correct": true, "leaked": false, "latency_ms": 1787.1156250184868, "context_chars": 54}
+{"case_id": "multi-8", "category": "multi", "system": "profile_store", "answer": "CPU 架构是 riscv64，常用编辑器是 Emacs。", "correct": true, "leaked": false, "latency_ms": 2076.1199590051547, "context_chars": 124}
+{"case_id": "temporal-8", "category": "temporal", "system": "profile_store", "answer": "Go。", "correct": false, "leaked": false, "latency_ms": 2814.717625005869, "context_chars": 52}
+{"case_id": "forget-8", "category": "forget", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1802.5047090195585, "context_chars": 35}
+{"case_id": "abstain-8", "category": "abstain", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1982.4187500053085, "context_chars": 71}
+{"case_id": "recall-9", "category": "recall", "system": "profile_store", "answer": "openKylin 2.0 SP1", "correct": true, "leaked": false, "latency_ms": 2713.741207990097, "context_chars": 109}
+{"case_id": "update-9", "category": "update", "system": "profile_store", "answer": "Rime 中州韵。", "correct": true, "leaked": false, "latency_ms": 2919.6157080004923, "context_chars": 59}
+{"case_id": "multi-9", "category": "multi", "system": "profile_store", "answer": "你的主力开发语言是Rust，所在城市是成都。", "correct": true, "leaked": false, "latency_ms": 1753.6482499854174, "context_chars": 109}
+{"case_id": "temporal-9", "category": "temporal", "system": "profile_store", "answer": "Konsole", "correct": false, "leaked": false, "latency_ms": 1830.8356250054203, "context_chars": 59}
+{"case_id": "forget-9", "category": "forget", "system": "profile_store", "answer": "RTX 4060", "correct": false, "leaked": false, "latency_ms": 3281.292208004743, "context_chars": 65}
+{"case_id": "abstain-9", "category": "abstain", "system": "profile_store", "answer": "记得，你的常用输入法是 Rime 中州韵。", "correct": false, "leaked": false, "latency_ms": 2553.963834012393, "context_chars": 63}
+{"case_id": "recall-10", "category": "recall", "system": "profile_store", "answer": "mate-terminal", "correct": true, "leaked": false, "latency_ms": 1997.386250004638, "context_chars": 61}
+{"case_id": "update-10", "category": "update", "system": "profile_store", "answer": "VS Code。", "correct": true, "leaked": false, "latency_ms": 2715.6669170071837, "context_chars": 36}
+{"case_id": "multi-10", "category": "multi", "system": "profile_store", "answer": "常用输入法：Rime 中州韵；常用编辑器：Neovim。", "correct": true, "leaked": false, "latency_ms": 3604.7275419987272, "context_chars": 140}
+{"case_id": "temporal-10", "category": "temporal", "system": "profile_store", "answer": "长沙", "correct": false, "leaked": false, "latency_ms": 2166.364542004885, "context_chars": 57}
+{"case_id": "forget-10", "category": "forget", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1737.2847080114298, "context_chars": 15}
+{"case_id": "abstain-10", "category": "abstain", "system": "profile_store", "answer": "VS Code", "correct": false, "leaked": false, "latency_ms": 2456.6118749789894, "context_chars": 42}
+{"case_id": "recall-11", "category": "recall", "system": "profile_store", "answer": "kare", "correct": true, "leaked": false, "latency_ms": 1890.8231250243261, "context_chars": 28}
+{"case_id": "update-11", "category": "update", "system": "profile_store", "answer": "记得，是 `/data/projects`。", "correct": true, "leaked": false, "latency_ms": 2544.048665993614, "context_chars": 88}
+{"case_id": "multi-11", "category": "multi", "system": "profile_store", "answer": "你的常用输入法是 Rime 中州韵；包管理偏好是 flatpak。", "correct": true, "leaked": false, "latency_ms": 2128.7016659916844, "context_chars": 138}
+{"case_id": "temporal-11", "category": "temporal", "system": "profile_store", "answer": "aarch64", "correct": false, "leaked": false, "latency_ms": 3700.4778750124387, "context_chars": 88}
+{"case_id": "forget-11", "category": "forget", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1803.2080419943668, "context_chars": 46}
+{"case_id": "abstain-11", "category": "abstain", "system": "profile_store", "answer": "aarch64", "correct": false, "leaked": false, "latency_ms": 2560.086000012234, "context_chars": 62}
+{"case_id": "recall-12", "category": "recall", "system": "profile_store", "answer": "记得，是 Vim。", "correct": true, "leaked": false, "latency_ms": 4645.667791977758, "context_chars": 73}
+{"case_id": "update-12", "category": "update", "system": "profile_store", "answer": "aarch64", "correct": true, "leaked": false, "latency_ms": 2062.4859999807086, "context_chars": 63}
+{"case_id": "multi-12", "category": "multi", "system": "profile_store", "answer": "你的所在城市是长沙，CPU 架构是 riscv64。", "correct": true, "leaked": false, "latency_ms": 2848.024083999917, "context_chars": 101}
+{"case_id": "temporal-12", "category": "temporal", "system": "profile_store", "answer": "Firefox。", "correct": false, "leaked": false, "latency_ms": 1902.3774999950547, "context_chars": 82}
+{"case_id": "forget-12", "category": "forget", "system": "profile_store", "answer": "RTX 4060", "correct": false, "leaked": false, "latency_ms": 3457.1005000034347, "context_chars": 45}
+{"case_id": "abstain-12", "category": "abstain", "system": "profile_store", "answer": "你的笔记本上一个系统的显卡型号是 RTX 4060。", "correct": false, "leaked": false, "latency_ms": 2942.2485410177615, "context_chars": 68}
+{"case_id": "recall-13", "category": "recall", "system": "profile_store", "answer": "Java", "correct": true, "leaked": false, "latency_ms": 2236.26570898341, "context_chars": 54}
+{"case_id": "update-13", "category": "update", "system": "profile_store", "answer": "Arc A770", "correct": true, "leaked": false, "latency_ms": 2319.444291992113, "context_chars": 81}
+{"case_id": "multi-13", "category": "multi", "system": "profile_store", "answer": "常用编辑器是 Kate，CPU 架构是 x86_64。", "correct": true, "leaked": false, "latency_ms": 2230.100541986758, "context_chars": 112}
+{"case_id": "temporal-13", "category": "temporal", "system": "profile_store", "answer": "Chromium", "correct": false, "leaked": false, "latency_ms": 3018.9655830035917, "context_chars": 58}
+{"case_id": "forget-13", "category": "forget", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2803.8785840035416, "context_chars": 42}
+{"case_id": "abstain-13", "category": "abstain", "system": "profile_store", "answer": "你笔记本上一个系统的常用浏览器是 Firefox。", "correct": false, "leaked": false, "latency_ms": 2210.9579580137506, "context_chars": 58}
+{"case_id": "recall-14", "category": "recall", "system": "profile_store", "answer": "你提到当前系统版本是 openKylin 2.0 SP1；笔记本上一个系统是 openKylin 1.0.2。", "correct": true, "leaked": false, "latency_ms": 2999.8745000048075, "context_chars": 57}
+{"case_id": "update-14", "category": "update", "system": "profile_store", "answer": "不知道", "correct": false, "leaked": false, "latency_ms": 2162.688500015065, "context_chars": 54}
+{"case_id": "multi-14", "category": "multi", "system": "profile_store", "answer": "CPU 架构：aarch64  \n默认终端：kitty", "correct": true, "leaked": false, "latency_ms": 1947.3487919894978, "context_chars": 112}
+{"case_id": "temporal-14", "category": "temporal", "system": "profile_store", "answer": "flatpak", "correct": false, "leaked": false, "latency_ms": 2255.867333005881, "context_chars": 74}
+{"case_id": "forget-14", "category": "forget", "system": "profile_store", "answer": "Chromium。", "correct": false, "leaked": false, "latency_ms": 3848.142708011437, "context_chars": 46}
+{"case_id": "abstain-14", "category": "abstain", "system": "profile_store", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 3062.748416996328, "context_chars": 88}
+{"case_id": "recall-15", "category": "recall", "system": "profile_store", "answer": "Kate。", "correct": true, "leaked": false, "latency_ms": 1734.9582499882672, "context_chars": 70}
+{"case_id": "update-15", "category": "update", "system": "profile_store", "answer": "kare。", "correct": true, "leaked": false, "latency_ms": 2728.0943329969887, "context_chars": 70}
+{"case_id": "multi-15", "category": "multi", "system": "profile_store", "answer": "CPU 架构是 aarch64，默认终端是 mate-terminal。", "correct": true, "leaked": false, "latency_ms": 2055.3128749888856, "context_chars": 145}
+{"case_id": "temporal-15", "category": "temporal", "system": "profile_store", "answer": "apt", "correct": false, "leaked": false, "latency_ms": 2519.1201249836013, "context_chars": 45}
+{"case_id": "forget-15", "category": "forget", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 4894.285334012238, "context_chars": 56}
+{"case_id": "abstain-15", "category": "abstain", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 10538.728500017896, "context_chars": 59}
+{"case_id": "recall-16", "category": "recall", "system": "profile_store", "answer": "riscv64", "correct": true, "leaked": false, "latency_ms": 2013.0833330040332, "context_chars": 63}
+{"case_id": "update-16", "category": "update", "system": "profile_store", "answer": "奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 4671.854583983077, "context_chars": 86}
+{"case_id": "multi-16", "category": "multi", "system": "profile_store", "answer": "显卡型号：RX 7800；所在城市：上海。", "correct": true, "leaked": false, "latency_ms": 2241.7106670036446, "context_chars": 103}
+{"case_id": "temporal-16", "category": "temporal", "system": "profile_store", "answer": "VS Code", "correct": false, "leaked": false, "latency_ms": 2371.7034999863245, "context_chars": 56}
+{"case_id": "forget-16", "category": "forget", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 3754.1879999917, "context_chars": 43}
+{"case_id": "abstain-16", "category": "abstain", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2194.8070419894066, "context_chars": 65}
+{"case_id": "recall-17", "category": "recall", "system": "profile_store", "answer": "~/work", "correct": true, "leaked": false, "latency_ms": 2082.943791989237, "context_chars": 81}
+{"case_id": "update-17", "category": "update", "system": "profile_store", "answer": "奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 2921.8463750148658, "context_chars": 42}
+{"case_id": "multi-17", "category": "multi", "system": "profile_store", "answer": "默认桌面环境是 UKUI；包管理偏好是源码编译。", "correct": true, "leaked": false, "latency_ms": 1838.9867079968099, "context_chars": 109}
+{"case_id": "temporal-17", "category": "temporal", "system": "profile_store", "answer": "~/work", "correct": false, "leaked": false, "latency_ms": 1873.7511670042295, "context_chars": 73}
+{"case_id": "forget-17", "category": "forget", "system": "profile_store", "answer": "loongarch64。", "correct": false, "leaked": true, "latency_ms": 7166.35258300812, "context_chars": 54}
+{"case_id": "abstain-17", "category": "abstain", "system": "profile_store", "answer": "不知道你当前的默认终端；只记得你笔记本上一个系统的默认终端是 Alacritty。", "correct": true, "leaked": false, "latency_ms": 4495.758042001398, "context_chars": 82}
+{"case_id": "recall-18", "category": "recall", "system": "profile_store", "answer": "记得，是 ~/work。", "correct": true, "leaked": false, "latency_ms": 1650.0489169848152, "context_chars": 72}
+{"case_id": "update-18", "category": "update", "system": "profile_store", "answer": "北京", "correct": true, "leaked": false, "latency_ms": 2233.4567079960834, "context_chars": 38}
+{"case_id": "multi-18", "category": "multi", "system": "profile_store", "answer": "主力开发语言是Java，系统版本是openKylin 2.0 SP1。", "correct": true, "leaked": false, "latency_ms": 1824.9197500117589, "context_chars": 163}
+{"case_id": "temporal-18", "category": "temporal", "system": "profile_store", "answer": "Arc A770", "correct": false, "leaked": false, "latency_ms": 1454.249540984165, "context_chars": 55}
+{"case_id": "forget-18", "category": "forget", "system": "profile_store", "answer": "Alacritty", "correct": false, "leaked": true, "latency_ms": 3610.2210829849355, "context_chars": 46}
+{"case_id": "abstain-18", "category": "abstain", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2111.0245830204803, "context_chars": 72}
+{"case_id": "recall-19", "category": "recall", "system": "profile_store", "answer": "Xfce", "correct": true, "leaked": false, "latency_ms": 1857.9157500062138, "context_chars": 34}
+{"case_id": "update-19", "category": "update", "system": "profile_store", "answer": "奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 2881.1739169759676, "context_chars": 40}
+{"case_id": "multi-19", "category": "multi", "system": "profile_store", "answer": "你的常用编辑器是 Vim，常用浏览器是奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 2025.2854999853298, "context_chars": 130}
+{"case_id": "temporal-19", "category": "temporal", "system": "profile_store", "answer": "VS Code", "correct": false, "leaked": false, "latency_ms": 5715.939666988561, "context_chars": 57}
+{"case_id": "forget-19", "category": "forget", "system": "profile_store", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 4508.262832998298, "context_chars": 22}
+{"case_id": "abstain-19", "category": "abstain", "system": "profile_store", "answer": "Neovim", "correct": false, "leaked": false, "latency_ms": 2306.1071249831, "context_chars": 70}
+{"case_id": "recall-0", "category": "recall", "system": "hybrid", "answer": "记得，上海。", "correct": true, "leaked": false, "latency_ms": 3214.132791996235, "context_chars": 20}
+{"case_id": "update-0", "category": "update", "system": "hybrid", "answer": "/data/projects", "correct": true, "leaked": false, "latency_ms": 2146.787834004499, "context_chars": 56}
+{"case_id": "multi-0", "category": "multi", "system": "hybrid", "answer": "包管理偏好是 Flatpak；主力开发语言是 Java。", "correct": true, "leaked": false, "latency_ms": 2429.34608401265, "context_chars": 50}
+{"case_id": "temporal-0", "category": "temporal", "system": "hybrid", "answer": "上海", "correct": true, "leaked": false, "latency_ms": 1902.907542011235, "context_chars": 41}
+{"case_id": "forget-0", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1640.745375014376, "context_chars": 0}
+{"case_id": "abstain-0", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1883.3450830134097, "context_chars": 0}
+{"case_id": "recall-1", "category": "recall", "system": "hybrid", "answer": "openKylin 1.0.2", "correct": true, "leaked": false, "latency_ms": 1829.0934590040706, "context_chars": 33}
+{"case_id": "update-1", "category": "update", "system": "hybrid", "answer": "loongarch64", "correct": true, "leaked": false, "latency_ms": 3390.2952499920502, "context_chars": 112}
+{"case_id": "multi-1", "category": "multi", "system": "hybrid", "answer": "显卡型号：Arc A770；常用浏览器：360 安全浏览器。", "correct": true, "leaked": false, "latency_ms": 3163.7615830113646, "context_chars": 54}
+{"case_id": "temporal-1", "category": "temporal", "system": "hybrid", "answer": "RX 7800", "correct": true, "leaked": false, "latency_ms": 2106.55762499664, "context_chars": 51}
+{"case_id": "forget-1", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2798.3403749822173, "context_chars": 0}
+{"case_id": "abstain-1", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1531.7815419984981, "context_chars": 0}
+{"case_id": "recall-2", "category": "recall", "system": "hybrid", "answer": "openKylin 2.0。", "correct": true, "leaked": false, "latency_ms": 2275.6543750001583, "context_chars": 32}
+{"case_id": "update-2", "category": "update", "system": "hybrid", "answer": "北京", "correct": true, "leaked": false, "latency_ms": 2939.445958007127, "context_chars": 61}
+{"case_id": "multi-2", "category": "multi", "system": "hybrid", "answer": "工作目录是 ~/dev，所在城市是深圳。", "correct": true, "leaked": false, "latency_ms": 2493.9978340116795, "context_chars": 43}
+{"case_id": "temporal-2", "category": "temporal", "system": "hybrid", "answer": "C++。", "correct": true, "leaked": false, "latency_ms": 1988.2694169937167, "context_chars": 51}
+{"case_id": "forget-2", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1908.3694999862928, "context_chars": 0}
+{"case_id": "abstain-2", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2478.2172499981243, "context_chars": 0}
+{"case_id": "recall-3", "category": "recall", "system": "hybrid", "answer": "Java", "correct": true, "leaked": false, "latency_ms": 1979.778625012841, "context_chars": 24}
+{"case_id": "update-3", "category": "update", "system": "hybrid", "answer": "奇安信浏览器", "correct": true, "leaked": false, "latency_ms": 3031.8541250017006, "context_chars": 52}
+{"case_id": "multi-3", "category": "multi", "system": "hybrid", "answer": "记得。系统版本是 openKylin 1.0.2，默认终端是 mate-terminal。", "correct": true, "leaked": false, "latency_ms": 2325.780750019476, "context_chars": 65}
+{"case_id": "temporal-3", "category": "temporal", "system": "hybrid", "answer": "openKylin 1.0.2。", "correct": true, "leaked": false, "latency_ms": 1880.2332910127006, "context_chars": 65}
+{"case_id": "forget-3", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2372.851082996931, "context_chars": 0}
+{"case_id": "abstain-3", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2393.5337500006426, "context_chars": 0}
+{"case_id": "recall-4", "category": "recall", "system": "hybrid", "answer": "GNOME。", "correct": true, "leaked": false, "latency_ms": 1853.7746659712866, "context_chars": 25}
+{"case_id": "update-4", "category": "update", "system": "hybrid", "answer": "RX 7800", "correct": true, "leaked": false, "latency_ms": 4548.068750009406, "context_chars": 103}
+{"case_id": "multi-4", "category": "multi", "system": "hybrid", "answer": "常用编辑器是 Vim，常用浏览器是奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 2878.351208026288, "context_chars": 47}
+{"case_id": "temporal-4", "category": "temporal", "system": "hybrid", "answer": "riscv64", "correct": true, "leaked": false, "latency_ms": 1964.8670419992413, "context_chars": 55}
+{"case_id": "forget-4", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.5366660188883543, "context_chars": 0}
+{"case_id": "abstain-4", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2399.8091669927817, "context_chars": 0}
+{"case_id": "recall-5", "category": "recall", "system": "hybrid", "answer": "摩尔线程 S80。", "correct": true, "leaked": false, "latency_ms": 1409.7333750105463, "context_chars": 27}
+{"case_id": "update-5", "category": "update", "system": "hybrid", "answer": "openKylin 2.0", "correct": true, "leaked": false, "latency_ms": 1942.193541006418, "context_chars": 66}
+{"case_id": "multi-5", "category": "multi", "system": "hybrid", "answer": "你的所在城市是成都；包管理偏好是源码编译。", "correct": true, "leaked": false, "latency_ms": 2050.170917005744, "context_chars": 43}
+{"case_id": "temporal-5", "category": "temporal", "system": "hybrid", "answer": "Arc A770。", "correct": true, "leaked": false, "latency_ms": 3529.2857500026003, "context_chars": 53}
+{"case_id": "forget-5", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2180.4591249965597, "context_chars": 0}
+{"case_id": "abstain-5", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 4067.0030000037514, "context_chars": 0}
+{"case_id": "recall-6", "category": "recall", "system": "hybrid", "answer": "~/work", "correct": true, "leaked": false, "latency_ms": 1745.7113330019638, "context_chars": 24}
+{"case_id": "update-6", "category": "update", "system": "hybrid", "answer": "mate-terminal。", "correct": true, "leaked": false, "latency_ms": 2183.5496249841526, "context_chars": 58}
+{"case_id": "multi-6", "category": "multi", "system": "hybrid", "answer": "系统版本是 openKylin 1.0.2，CPU 架构是 loongarch64。", "correct": true, "leaked": false, "latency_ms": 1561.435833980795, "context_chars": 64}
+{"case_id": "temporal-6", "category": "temporal", "system": "hybrid", "answer": "RTX 4060", "correct": true, "leaked": false, "latency_ms": 2494.346958003007, "context_chars": 53}
+{"case_id": "forget-6", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1747.4983329884708, "context_chars": 0}
+{"case_id": "abstain-6", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.830375007353723, "context_chars": 0}
+{"case_id": "recall-7", "category": "recall", "system": "hybrid", "answer": "Xfce。", "correct": true, "leaked": false, "latency_ms": 2613.760749984067, "context_chars": 24}
+{"case_id": "update-7", "category": "update", "system": "hybrid", "answer": "Rime 中州韵。", "correct": true, "leaked": false, "latency_ms": 4221.918625000399, "context_chars": 103}
+{"case_id": "multi-7", "category": "multi", "system": "hybrid", "answer": "记得：工作目录是 `/data/projects`，常用浏览器是 Chromium。", "correct": true, "leaked": false, "latency_ms": 1826.4293750107754, "context_chars": 59}
+{"case_id": "temporal-7", "category": "temporal", "system": "hybrid", "answer": "奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 1916.9483330042567, "context_chars": 53}
+{"case_id": "forget-7", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1806.4807079790626, "context_chars": 0}
+{"case_id": "abstain-7", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1557.4764999910258, "context_chars": 0}
+{"case_id": "recall-8", "category": "recall", "system": "hybrid", "answer": "openKylin 2.0。", "correct": true, "leaked": false, "latency_ms": 1877.6933749904856, "context_chars": 32}
+{"case_id": "update-8", "category": "update", "system": "hybrid", "answer": "Python", "correct": true, "leaked": false, "latency_ms": 1744.3797920132056, "context_chars": 97}
+{"case_id": "multi-8", "category": "multi", "system": "hybrid", "answer": "CPU 架构是 riscv64，常用编辑器是 Emacs。", "correct": true, "leaked": false, "latency_ms": 2898.169666994363, "context_chars": 51}
+{"case_id": "temporal-8", "category": "temporal", "system": "hybrid", "answer": "Java", "correct": true, "leaked": false, "latency_ms": 1865.041332988767, "context_chars": 46}
+{"case_id": "forget-8", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.6545830110553652, "context_chars": 0}
+{"case_id": "abstain-8", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.38154100184328854, "context_chars": 0}
+{"case_id": "recall-9", "category": "recall", "system": "hybrid", "answer": "openKylin 2.0 SP1。", "correct": true, "leaked": false, "latency_ms": 1932.549958000891, "context_chars": 36}
+{"case_id": "update-9", "category": "update", "system": "hybrid", "answer": "Rime 中州韵", "correct": true, "leaked": false, "latency_ms": 2314.890999987256, "context_chars": 104}
+{"case_id": "multi-9", "category": "multi", "system": "hybrid", "answer": "主力开发语言是 Rust，所在城市是成都。", "correct": true, "leaked": false, "latency_ms": 1629.4882090005558, "context_chars": 44}
+{"case_id": "temporal-9", "category": "temporal", "system": "hybrid", "answer": "mate-terminal。", "correct": true, "leaked": false, "latency_ms": 2853.8133339898195, "context_chars": 56}
+{"case_id": "forget-9", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.5990420177113265, "context_chars": 0}
+{"case_id": "abstain-9", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.542583002243191, "context_chars": 0}
+{"case_id": "recall-10", "category": "recall", "system": "hybrid", "answer": "mate-terminal。", "correct": true, "leaked": false, "latency_ms": 2113.791999989189, "context_chars": 31}
+{"case_id": "update-10", "category": "update", "system": "hybrid", "answer": "记得，是 VS Code。", "correct": true, "leaked": false, "latency_ms": 2032.114959001774, "context_chars": 50}
+{"case_id": "multi-10", "category": "multi", "system": "hybrid", "answer": "常用输入法是 Rime 中州韵；常用编辑器是 Neovim。", "correct": true, "leaked": false, "latency_ms": 2809.0614170068875, "context_chars": 52}
+{"case_id": "temporal-10", "category": "temporal", "system": "hybrid", "answer": "北京", "correct": true, "leaked": false, "latency_ms": 2800.821624987293, "context_chars": 41}
+{"case_id": "forget-10", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2676.925375009887, "context_chars": 0}
+{"case_id": "abstain-10", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.557416002266109, "context_chars": 0}
+{"case_id": "recall-11", "category": "recall", "system": "hybrid", "answer": "kare。", "correct": true, "leaked": false, "latency_ms": 3252.2531670110766, "context_chars": 23}
+{"case_id": "update-11", "category": "update", "system": "hybrid", "answer": "记得，是 `/data/projects`。", "correct": true, "leaked": false, "latency_ms": 2642.914666008437, "context_chars": 56}
+{"case_id": "multi-11", "category": "multi", "system": "hybrid", "answer": "常用输入法：Rime 中州韵；包管理偏好：flatpak。", "correct": true, "leaked": false, "latency_ms": 2295.525041001383, "context_chars": 53}
+{"case_id": "temporal-11", "category": "temporal", "system": "hybrid", "answer": "riscv64", "correct": true, "leaked": false, "latency_ms": 1927.0694169972558, "context_chars": 54}
+{"case_id": "forget-11", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1731.274999998277, "context_chars": 0}
+{"case_id": "abstain-11", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2700.1394999970216, "context_chars": 0}
+{"case_id": "recall-12", "category": "recall", "system": "hybrid", "answer": "记得，是 Vim。", "correct": true, "leaked": false, "latency_ms": 2513.9341659960337, "context_chars": 22}
+{"case_id": "update-12", "category": "update", "system": "hybrid", "answer": "aarch64。", "correct": true, "leaked": false, "latency_ms": 2082.7961250033695, "context_chars": 86}
+{"case_id": "multi-12", "category": "multi", "system": "hybrid", "answer": "你的所在城市是长沙，CPU 架构是 riscv64。", "correct": true, "leaked": false, "latency_ms": 3303.6165829980746, "context_chars": 47}
+{"case_id": "temporal-12", "category": "temporal", "system": "hybrid", "answer": "Chromium。", "correct": true, "leaked": false, "latency_ms": 3341.994375019567, "context_chars": 54}
+{"case_id": "forget-12", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.5958749970886856, "context_chars": 0}
+{"case_id": "abstain-12", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 7052.87387498538, "context_chars": 0}
+{"case_id": "recall-13", "category": "recall", "system": "hybrid", "answer": "Java。", "correct": true, "leaked": false, "latency_ms": 1576.0612500016578, "context_chars": 24}
+{"case_id": "update-13", "category": "update", "system": "hybrid", "answer": "Arc A770", "correct": true, "leaked": false, "latency_ms": 2209.002208983293, "context_chars": 103}
+{"case_id": "multi-13", "category": "multi", "system": "hybrid", "answer": "常用编辑器是 Kate；CPU 架构是 x86_64。", "correct": true, "leaked": false, "latency_ms": 2037.4794589879457, "context_chars": 50}
+{"case_id": "temporal-13", "category": "temporal", "system": "hybrid", "answer": "Firefox。", "correct": true, "leaked": false, "latency_ms": 2769.122249999782, "context_chars": 54}
+{"case_id": "forget-13", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2680.1692090230063, "context_chars": 0}
+{"case_id": "abstain-13", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.6803750002291054, "context_chars": 0}
+{"case_id": "recall-14", "category": "recall", "system": "hybrid", "answer": "openKylin 2.0 SP1", "correct": true, "leaked": false, "latency_ms": 2426.094541006023, "context_chars": 35}
+{"case_id": "update-14", "category": "update", "system": "hybrid", "answer": "RX 7800。", "correct": true, "leaked": false, "latency_ms": 5602.268291986547, "context_chars": 105}
+{"case_id": "multi-14", "category": "multi", "system": "hybrid", "answer": "你的 CPU 架构是 aarch64，默认终端是 kitty。", "correct": true, "leaked": false, "latency_ms": 2003.0641249904875, "context_chars": 51}
+{"case_id": "temporal-14", "category": "temporal", "system": "hybrid", "answer": "apt", "correct": true, "leaked": false, "latency_ms": 2126.2098340084776, "context_chars": 48}
+{"case_id": "forget-14", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1832.9852079914417, "context_chars": 0}
+{"case_id": "abstain-14", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 4494.235833990388, "context_chars": 0}
+{"case_id": "recall-15", "category": "recall", "system": "hybrid", "answer": "Kate。", "correct": true, "leaked": false, "latency_ms": 1940.2403749991208, "context_chars": 24}
+{"case_id": "update-15", "category": "update", "system": "hybrid", "answer": "目前是 kare。", "correct": true, "leaked": false, "latency_ms": 1933.65033401642, "context_chars": 68}
+{"case_id": "multi-15", "category": "multi", "system": "hybrid", "answer": "CPU 架构是 aarch64，默认终端是 mate-terminal。", "correct": true, "leaked": false, "latency_ms": 4382.344624988036, "context_chars": 58}
+{"case_id": "temporal-15", "category": "temporal", "system": "hybrid", "answer": "flatpak。", "correct": true, "leaked": false, "latency_ms": 2666.35258399765, "context_chars": 48}
+{"case_id": "forget-15", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1781.7352499987464, "context_chars": 0}
+{"case_id": "abstain-15", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2487.8442079934757, "context_chars": 0}
+{"case_id": "recall-16", "category": "recall", "system": "hybrid", "answer": "riscv64", "correct": true, "leaked": false, "latency_ms": 2017.6865000103135, "context_chars": 27}
+{"case_id": "update-16", "category": "update", "system": "hybrid", "answer": "记得，是奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 1568.8924999849405, "context_chars": 53}
+{"case_id": "multi-16", "category": "multi", "system": "hybrid", "answer": "你的显卡型号是 RX 7800，所在城市是上海。", "correct": true, "leaked": false, "latency_ms": 2346.590583008947, "context_chars": 45}
+{"case_id": "temporal-16", "category": "temporal", "system": "hybrid", "answer": "Kate。", "correct": true, "leaked": false, "latency_ms": 2029.5247089816257, "context_chars": 49}
+{"case_id": "forget-16", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2128.527417022269, "context_chars": 0}
+{"case_id": "abstain-16", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1880.1435419882182, "context_chars": 0}
+{"case_id": "recall-17", "category": "recall", "system": "hybrid", "answer": "~/work", "correct": true, "leaked": false, "latency_ms": 2064.279999991413, "context_chars": 24}
+{"case_id": "update-17", "category": "update", "system": "hybrid", "answer": "奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 3882.3060000140686, "context_chars": 80}
+{"case_id": "multi-17", "category": "multi", "system": "hybrid", "answer": "默认桌面环境是 UKUI，包管理偏好是源码编译。", "correct": true, "leaked": false, "latency_ms": 1997.1339170006104, "context_chars": 47}
+{"case_id": "temporal-17", "category": "temporal", "system": "hybrid", "answer": "~/dev", "correct": true, "leaked": false, "latency_ms": 3987.5950409914367, "context_chars": 47}
+{"case_id": "forget-17", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2697.1393330022693, "context_chars": 0}
+{"case_id": "abstain-17", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.46120802289806306, "context_chars": 0}
+{"case_id": "recall-18", "category": "recall", "system": "hybrid", "answer": "记得，是 ~/work。", "correct": true, "leaked": false, "latency_ms": 1446.1399170104414, "context_chars": 24}
+{"case_id": "update-18", "category": "update", "system": "hybrid", "answer": "北京。", "correct": true, "leaked": false, "latency_ms": 2149.8302910185885, "context_chars": 60}
+{"case_id": "multi-18", "category": "multi", "system": "hybrid", "answer": "主力开发语言是 Java；系统版本是 openKylin 2.0 SP1。", "correct": true, "leaked": false, "latency_ms": 2178.4544170077424, "context_chars": 59}
+{"case_id": "temporal-18", "category": "temporal", "system": "hybrid", "answer": "RX 7800", "correct": true, "leaked": false, "latency_ms": 2165.536540996982, "context_chars": 52}
+{"case_id": "forget-18", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1805.6614169909153, "context_chars": 0}
+{"case_id": "abstain-18", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.7640410040039569, "context_chars": 0}
+{"case_id": "recall-19", "category": "recall", "system": "hybrid", "answer": "Xfce。", "correct": true, "leaked": false, "latency_ms": 2098.055833019316, "context_chars": 25}
+{"case_id": "update-19", "category": "update", "system": "hybrid", "answer": "奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 3380.756124999607, "context_chars": 52}
+{"case_id": "multi-19", "category": "multi", "system": "hybrid", "answer": "你的常用编辑器是 Vim，常用浏览器是奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 1801.0072089964524, "context_chars": 47}
+{"case_id": "temporal-19", "category": "temporal", "system": "hybrid", "answer": "Emacs。", "correct": true, "leaked": false, "latency_ms": 1861.7692909901962, "context_chars": 50}
+{"case_id": "forget-19", "category": "forget", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.5836249911226332, "context_chars": 0}
+{"case_id": "abstain-19", "category": "abstain", "system": "hybrid", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.5438329826574773, "context_chars": 0}
+{"case_id": "recall-0", "category": "recall", "system": "session_summary", "answer": "记得，上海。", "correct": true, "leaked": false, "latency_ms": 0.7752079982310534, "context_chars": 57}
+{"case_id": "update-0", "category": "update", "system": "session_summary", "answer": "/data/projects", "correct": true, "leaked": false, "latency_ms": 3104.6652079967316, "context_chars": 130}
+{"case_id": "multi-0", "category": "multi", "system": "session_summary", "answer": "包管理偏好：flatpak；主力开发语言：Java。", "correct": true, "leaked": false, "latency_ms": 1985.0444170006085, "context_chars": 175}
+{"case_id": "temporal-0", "category": "temporal", "system": "session_summary", "answer": "上海。", "correct": true, "leaked": false, "latency_ms": 1755.4614169930574, "context_chars": 87}
+{"case_id": "forget-0", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2267.495875013992, "context_chars": 126}
+{"case_id": "abstain-0", "category": "abstain", "system": "session_summary", "answer": "你笔记本上一个系统的常用浏览器是 Firefox。", "correct": false, "leaked": false, "latency_ms": 3866.5322920132894, "context_chars": 99}
+{"case_id": "recall-1", "category": "recall", "system": "session_summary", "answer": "openKylin 1.0.2", "correct": true, "leaked": false, "latency_ms": 0.7891670102253556, "context_chars": 109}
+{"case_id": "update-1", "category": "update", "system": "session_summary", "answer": "loongarch64", "correct": true, "leaked": false, "latency_ms": 1657.4628329835832, "context_chars": 139}
+{"case_id": "multi-1", "category": "multi", "system": "session_summary", "answer": "显卡型号是Arc A770，常用浏览器是360安全浏览器。", "correct": true, "leaked": false, "latency_ms": 0.6401669816114008, "context_chars": 118}
+{"case_id": "temporal-1", "category": "temporal", "system": "session_summary", "answer": "RX 7800。", "correct": true, "leaked": false, "latency_ms": 0.541499990504235, "context_chars": 78}
+{"case_id": "forget-1", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 3008.699333004188, "context_chars": 110}
+{"case_id": "abstain-1", "category": "abstain", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 3986.445916991215, "context_chars": 93}
+{"case_id": "recall-2", "category": "recall", "system": "session_summary", "answer": "openKylin 2.0", "correct": true, "leaked": false, "latency_ms": 2020.8702080126386, "context_chars": 87}
+{"case_id": "update-2", "category": "update", "system": "session_summary", "answer": "北京", "correct": true, "leaked": false, "latency_ms": 2894.1766250063665, "context_chars": 93}
+{"case_id": "multi-2", "category": "multi", "system": "session_summary", "answer": "工作目录：~/dev；所在城市：深圳。", "correct": true, "leaked": false, "latency_ms": 2472.957916004816, "context_chars": 207}
+{"case_id": "temporal-2", "category": "temporal", "system": "session_summary", "answer": "C++", "correct": true, "leaked": false, "latency_ms": 1659.8511250049341, "context_chars": 142}
+{"case_id": "forget-2", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2213.5114169795997, "context_chars": 128}
+{"case_id": "abstain-2", "category": "abstain", "system": "session_summary", "answer": "aarch64", "correct": false, "leaked": false, "latency_ms": 2161.989750020439, "context_chars": 112}
+{"case_id": "recall-3", "category": "recall", "system": "session_summary", "answer": "Java。", "correct": true, "leaked": false, "latency_ms": 2534.511416015448, "context_chars": 95}
+{"case_id": "update-3", "category": "update", "system": "session_summary", "answer": "奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 1596.8262079986744, "context_chars": 132}
+{"case_id": "multi-3", "category": "multi", "system": "session_summary", "answer": "记得：系统版本是 openKylin 1.0.2，默认终端是 mate-terminal。", "correct": true, "leaked": false, "latency_ms": 2874.135666002985, "context_chars": 218}
+{"case_id": "temporal-3", "category": "temporal", "system": "session_summary", "answer": "openKylin 1.0.2", "correct": true, "leaked": false, "latency_ms": 2455.855750013143, "context_chars": 133}
+{"case_id": "forget-3", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2203.4704580146354, "context_chars": 150}
+{"case_id": "abstain-3", "category": "abstain", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1666.196541977115, "context_chars": 152}
+{"case_id": "recall-4", "category": "recall", "system": "session_summary", "answer": "GNOME。", "correct": true, "leaked": false, "latency_ms": 1.2403749860823154, "context_chars": 87}
+{"case_id": "update-4", "category": "update", "system": "session_summary", "answer": "RX 7800", "correct": true, "leaked": false, "latency_ms": 4154.984833992785, "context_chars": 153}
+{"case_id": "multi-4", "category": "multi", "system": "session_summary", "answer": "常用编辑器是 Vim，常用浏览器是奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 3108.548208983848, "context_chars": 218}
+{"case_id": "temporal-4", "category": "temporal", "system": "session_summary", "answer": "riscv64", "correct": true, "leaked": false, "latency_ms": 0.7374999986495823, "context_chars": 85}
+{"case_id": "forget-4", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1980.4661250091158, "context_chars": 162}
+{"case_id": "abstain-4", "category": "abstain", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2094.2618339904584, "context_chars": 97}
+{"case_id": "recall-5", "category": "recall", "system": "session_summary", "answer": "摩尔线程 S80。", "correct": true, "leaked": false, "latency_ms": 2535.723291017348, "context_chars": 110}
+{"case_id": "update-5", "category": "update", "system": "session_summary", "answer": "openKylin 2.0", "correct": true, "leaked": false, "latency_ms": 1.5660839853808284, "context_chars": 113}
+{"case_id": "multi-5", "category": "multi", "system": "session_summary", "answer": "你的所在城市是成都；你的包管理偏好是源码编译。", "correct": true, "leaked": false, "latency_ms": 0.3435840189922601, "context_chars": 112}
+{"case_id": "temporal-5", "category": "temporal", "system": "session_summary", "answer": "Arc A770", "correct": true, "leaked": false, "latency_ms": 1817.2206669987645, "context_chars": 120}
+{"case_id": "forget-5", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1936.1681249865796, "context_chars": 115}
+{"case_id": "abstain-5", "category": "abstain", "system": "session_summary", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 3000.383458012948, "context_chars": 73}
+{"case_id": "recall-6", "category": "recall", "system": "session_summary", "answer": "~/work", "correct": true, "leaked": false, "latency_ms": 0.4214169748593122, "context_chars": 80}
+{"case_id": "update-6", "category": "update", "system": "session_summary", "answer": "mate-terminal。", "correct": true, "leaked": false, "latency_ms": 2094.631833024323, "context_chars": 133}
+{"case_id": "multi-6", "category": "multi", "system": "session_summary", "answer": "系统版本：openKylin 1.0.2；CPU 架构：loongarch64。", "correct": true, "leaked": false, "latency_ms": 2565.0330829957966, "context_chars": 209}
+{"case_id": "temporal-6", "category": "temporal", "system": "session_summary", "answer": "RTX 4060。", "correct": true, "leaked": false, "latency_ms": 2333.6808329913765, "context_chars": 152}
+{"case_id": "forget-6", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1570.0467909919098, "context_chars": 97}
+{"case_id": "abstain-6", "category": "abstain", "system": "session_summary", "answer": "只记得你笔记本上一个系统的常用输入法是讯飞输入法。", "correct": false, "leaked": false, "latency_ms": 0.6969579844735563, "context_chars": 59}
+{"case_id": "recall-7", "category": "recall", "system": "session_summary", "answer": "Xfce。", "correct": true, "leaked": false, "latency_ms": 2345.6827079935465, "context_chars": 125}
+{"case_id": "update-7", "category": "update", "system": "session_summary", "answer": "Rime 中州韵。", "correct": true, "leaked": false, "latency_ms": 2867.851624992909, "context_chars": 164}
+{"case_id": "multi-7", "category": "multi", "system": "session_summary", "answer": "记得。工作目录是 `/data/projects`，常用浏览器是 Chromium。", "correct": true, "leaked": false, "latency_ms": 2208.8238750002347, "context_chars": 144}
+{"case_id": "temporal-7", "category": "temporal", "system": "session_summary", "answer": "奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 1961.656583007425, "context_chars": 136}
+{"case_id": "forget-7", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 3033.4959999891, "context_chars": 109}
+{"case_id": "abstain-7", "category": "abstain", "system": "session_summary", "answer": "Emacs。", "correct": false, "leaked": false, "latency_ms": 0.88429098832421, "context_chars": 36}
+{"case_id": "recall-8", "category": "recall", "system": "session_summary", "answer": "openKylin 2.0。", "correct": true, "leaked": false, "latency_ms": 1764.4223750103265, "context_chars": 163}
+{"case_id": "update-8", "category": "update", "system": "session_summary", "answer": "Python", "correct": true, "leaked": false, "latency_ms": 1911.4208339888137, "context_chars": 138}
+{"case_id": "multi-8", "category": "multi", "system": "session_summary", "answer": "CPU 架构是 riscv64，常用编辑器是 Emacs。", "correct": true, "leaked": false, "latency_ms": 2161.029208014952, "context_chars": 230}
+{"case_id": "temporal-8", "category": "temporal", "system": "session_summary", "answer": "Java", "correct": true, "leaked": false, "latency_ms": 2375.522957998328, "context_chars": 90}
+{"case_id": "forget-8", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1695.827166986419, "context_chars": 81}
+{"case_id": "abstain-8", "category": "abstain", "system": "session_summary", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 2804.44262502715, "context_chars": 112}
+{"case_id": "recall-9", "category": "recall", "system": "session_summary", "answer": "openKylin 2.0 SP1", "correct": true, "leaked": false, "latency_ms": 2124.273333000019, "context_chars": 171}
+{"case_id": "update-9", "category": "update", "system": "session_summary", "answer": "Rime 中州韵。", "correct": true, "leaked": false, "latency_ms": 4190.572041989071, "context_chars": 193}
+{"case_id": "multi-9", "category": "multi", "system": "session_summary", "answer": "Rust，成都。", "correct": true, "leaked": false, "latency_ms": 1464.0011249866802, "context_chars": 160}
+{"case_id": "temporal-9", "category": "temporal", "system": "session_summary", "answer": "mate-terminal", "correct": true, "leaked": false, "latency_ms": 0.5190420197322965, "context_chars": 89}
+{"case_id": "forget-9", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1782.2548749973066, "context_chars": 119}
+{"case_id": "abstain-9", "category": "abstain", "system": "session_summary", "answer": "记得，Rime 中州韵。", "correct": false, "leaked": false, "latency_ms": 3381.8469159887172, "context_chars": 111}
+{"case_id": "recall-10", "category": "recall", "system": "session_summary", "answer": "mate-terminal", "correct": true, "leaked": false, "latency_ms": 2063.885042007314, "context_chars": 111}
+{"case_id": "update-10", "category": "update", "system": "session_summary", "answer": "记得，是 VS Code。", "correct": true, "leaked": false, "latency_ms": 0.7276250107679516, "context_chars": 78}
+{"case_id": "multi-10", "category": "multi", "system": "session_summary", "answer": "常用输入法：Rime 中州韵。常用编辑器：Neovim。", "correct": true, "leaked": false, "latency_ms": 2735.533333005151, "context_chars": 227}
+{"case_id": "temporal-10", "category": "temporal", "system": "session_summary", "answer": "北京", "correct": true, "leaked": false, "latency_ms": 2195.5692500050645, "context_chars": 89}
+{"case_id": "forget-10", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.3488750080578029, "context_chars": 57}
+{"case_id": "abstain-10", "category": "abstain", "system": "session_summary", "answer": "VS Code", "correct": false, "leaked": false, "latency_ms": 0.40950000402517617, "context_chars": 42}
+{"case_id": "recall-11", "category": "recall", "system": "session_summary", "answer": "kare", "correct": true, "leaked": false, "latency_ms": 0.3304170095361769, "context_chars": 59}
+{"case_id": "update-11", "category": "update", "system": "session_summary", "answer": "记得，最新工作目录是 `/data/projects`。", "correct": true, "leaked": false, "latency_ms": 2215.963541995734, "context_chars": 110}
+{"case_id": "multi-11", "category": "multi", "system": "session_summary", "answer": "你的常用输入法是 **Rime 中州韵**；包管理偏好是 **flatpak**。", "correct": true, "leaked": false, "latency_ms": 2854.4035000086296, "context_chars": 193}
+{"case_id": "temporal-11", "category": "temporal", "system": "session_summary", "answer": "riscv64", "correct": true, "leaked": false, "latency_ms": 1556.5068330033682, "context_chars": 196}
+{"case_id": "forget-11", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2594.04470899608, "context_chars": 115}
+{"case_id": "abstain-11", "category": "abstain", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 8316.01429200964, "context_chars": 87}
+{"case_id": "recall-12", "category": "recall", "system": "session_summary", "answer": "记得，是 Vim。", "correct": true, "leaked": false, "latency_ms": 2865.699957998004, "context_chars": 108}
+{"case_id": "update-12", "category": "update", "system": "session_summary", "answer": "aarch64", "correct": true, "leaked": false, "latency_ms": 3080.5937090190127, "context_chars": 149}
+{"case_id": "multi-12", "category": "multi", "system": "session_summary", "answer": "你的所在城市是长沙，CPU 架构是 riscv64。", "correct": true, "leaked": false, "latency_ms": 1856.0895420087036, "context_chars": 194}
+{"case_id": "temporal-12", "category": "temporal", "system": "session_summary", "answer": "Chromium。", "correct": true, "leaked": false, "latency_ms": 2385.8814170234837, "context_chars": 157}
+{"case_id": "forget-12", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.6175409944262356, "context_chars": 78}
+{"case_id": "abstain-12", "category": "abstain", "system": "session_summary", "answer": "不知道。记忆里只提到你笔记本上一个系统的显卡型号是 RTX 4060。", "correct": true, "leaked": false, "latency_ms": 4370.40679200436, "context_chars": 88}
+{"case_id": "recall-13", "category": "recall", "system": "session_summary", "answer": "Java", "correct": true, "leaked": false, "latency_ms": 0.3834160161204636, "context_chars": 54}
+{"case_id": "update-13", "category": "update", "system": "session_summary", "answer": "Arc A770。", "correct": true, "leaked": false, "latency_ms": 2643.618208996486, "context_chars": 176}
+{"case_id": "multi-13", "category": "multi", "system": "session_summary", "answer": "常用编辑器是 Kate，CPU 架构是 x86_64。", "correct": true, "leaked": false, "latency_ms": 2405.8274170092773, "context_chars": 193}
+{"case_id": "temporal-13", "category": "temporal", "system": "session_summary", "answer": "Firefox", "correct": true, "leaked": false, "latency_ms": 2829.513999982737, "context_chars": 103}
+{"case_id": "forget-13", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.532749982085079, "context_chars": 74}
+{"case_id": "abstain-13", "category": "abstain", "system": "session_summary", "answer": "你笔记本上一个系统的常用浏览器是 Firefox。", "correct": false, "leaked": false, "latency_ms": 0.22595800692215562, "context_chars": 58}
+{"case_id": "recall-14", "category": "recall", "system": "session_summary", "answer": "你提到过：openKylin 2.0 SP1、openKylin 2.0、openKylin 1.0.2。", "correct": true, "leaked": false, "latency_ms": 3323.2506249914877, "context_chars": 87}
+{"case_id": "update-14", "category": "update", "system": "session_summary", "answer": "RX 7800", "correct": true, "leaked": false, "latency_ms": 2263.9933330065105, "context_chars": 129}
+{"case_id": "multi-14", "category": "multi", "system": "session_summary", "answer": "你的 CPU 架构是 aarch64，默认终端是 kitty。", "correct": true, "leaked": false, "latency_ms": 1757.971125014592, "context_chars": 153}
+{"case_id": "temporal-14", "category": "temporal", "system": "session_summary", "answer": "apt", "correct": true, "leaked": false, "latency_ms": 2982.5949170044623, "context_chars": 135}
+{"case_id": "forget-14", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2064.5187920017634, "context_chars": 128}
+{"case_id": "abstain-14", "category": "abstain", "system": "session_summary", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 0.6170000124257058, "context_chars": 88}
+{"case_id": "recall-15", "category": "recall", "system": "session_summary", "answer": "Kate。", "correct": true, "leaked": false, "latency_ms": 2592.679332999978, "context_chars": 89}
+{"case_id": "update-15", "category": "update", "system": "session_summary", "answer": "kare", "correct": true, "leaked": false, "latency_ms": 3068.1838329765014, "context_chars": 147}
+{"case_id": "multi-15", "category": "multi", "system": "session_summary", "answer": "你的 CPU 架构是 aarch64，默认终端是 mate-terminal。", "correct": true, "leaked": false, "latency_ms": 2031.007084005978, "context_chars": 183}
+{"case_id": "temporal-15", "category": "temporal", "system": "session_summary", "answer": "flatpak", "correct": true, "leaked": false, "latency_ms": 1966.289375006454, "context_chars": 87}
+{"case_id": "forget-15", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 1933.1155420222785, "context_chars": 120}
+{"case_id": "abstain-15", "category": "abstain", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 3868.808875005925, "context_chars": 85}
+{"case_id": "recall-16", "category": "recall", "system": "session_summary", "answer": "riscv64", "correct": true, "leaked": false, "latency_ms": 1996.375083021121, "context_chars": 158}
+{"case_id": "update-16", "category": "update", "system": "session_summary", "answer": "奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 2659.380415978376, "context_chars": 113}
+{"case_id": "multi-16", "category": "multi", "system": "session_summary", "answer": "显卡型号：RX 7800；所在城市：上海。", "correct": true, "leaked": false, "latency_ms": 3710.4843329871073, "context_chars": 166}
+{"case_id": "temporal-16", "category": "temporal", "system": "session_summary", "answer": "Kate。", "correct": true, "leaked": false, "latency_ms": 3175.8108329959214, "context_chars": 116}
+{"case_id": "forget-16", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2500.4297090054024, "context_chars": 92}
+{"case_id": "abstain-16", "category": "abstain", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.5957079993095249, "context_chars": 65}
+{"case_id": "recall-17", "category": "recall", "system": "session_summary", "answer": "~/work", "correct": true, "leaked": false, "latency_ms": 2140.248874988174, "context_chars": 104}
+{"case_id": "update-17", "category": "update", "system": "session_summary", "answer": "奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 0.7059170166030526, "context_chars": 95}
+{"case_id": "multi-17", "category": "multi", "system": "session_summary", "answer": "默认桌面环境是 UKUI；包管理偏好是源码编译。", "correct": true, "leaked": false, "latency_ms": 3814.4525419920683, "context_chars": 178}
+{"case_id": "temporal-17", "category": "temporal", "system": "session_summary", "answer": "~/dev", "correct": true, "leaked": false, "latency_ms": 1938.8043750077486, "context_chars": 136}
+{"case_id": "forget-17", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2184.774124994874, "context_chars": 138}
+{"case_id": "abstain-17", "category": "abstain", "system": "session_summary", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 3470.996041985927, "context_chars": 134}
+{"case_id": "recall-18", "category": "recall", "system": "session_summary", "answer": "记得，是 ~/work。", "correct": true, "leaked": false, "latency_ms": 1985.759125003824, "context_chars": 99}
+{"case_id": "update-18", "category": "update", "system": "session_summary", "answer": "北京。", "correct": true, "leaked": false, "latency_ms": 2985.65650000819, "context_chars": 91}
+{"case_id": "multi-18", "category": "multi", "system": "session_summary", "answer": "Java；openKylin 2.0 SP1。", "correct": true, "leaked": false, "latency_ms": 2173.9655420242343, "context_chars": 243}
+{"case_id": "temporal-18", "category": "temporal", "system": "session_summary", "answer": "RX 7800", "correct": true, "leaked": false, "latency_ms": 1972.6782090147026, "context_chars": 117}
+{"case_id": "forget-18", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 0.64825001754798, "context_chars": 80}
+{"case_id": "abstain-18", "category": "abstain", "system": "session_summary", "answer": "不知道。", "correct": true, "leaked": false, "latency_ms": 2229.850833013188, "context_chars": 111}
+{"case_id": "recall-19", "category": "recall", "system": "session_summary", "answer": "Xfce", "correct": true, "leaked": false, "latency_ms": 0.951208989135921, "context_chars": 34}
+{"case_id": "update-19", "category": "update", "system": "session_summary", "answer": "奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 1979.2716660012957, "context_chars": 65}
+{"case_id": "multi-19", "category": "multi", "system": "session_summary", "answer": "你的常用编辑器是 Vim，常用浏览器是奇安信浏览器。", "correct": true, "leaked": false, "latency_ms": 3750.984749989584, "context_chars": 196}
+{"case_id": "temporal-19", "category": "temporal", "system": "session_summary", "answer": "Emacs", "correct": true, "leaked": false, "latency_ms": 2462.991250009509, "context_chars": 135}
+{"case_id": "forget-19", "category": "forget", "system": "session_summary", "answer": "不知道", "correct": true, "leaked": false, "latency_ms": 2437.293374998262, "context_chars": 58}
+{"case_id": "abstain-19", "category": "abstain", "system": "session_summary", "answer": "Neovim。", "correct": false, "leaked": false, "latency_ms": 2579.3696670152713, "context_chars": 89}
