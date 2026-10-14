@@ -10,7 +10,11 @@ def _norm(s):
 def score(case: Case, answer: str):
     """返回 (是否正确, 是否泄露了应遗忘/已过期的信息)。"""
     a = _norm(answer)
-    leaked = any(_norm(f) in a for f in case.forbidden)
+    # 先剔除正确答案，避免“openKylin 2.0”被“openKylin 2.0 SP1”误判为泄露
+    rest = a
+    for x in sorted(case.answers, key=len, reverse=True):
+        rest = rest.replace(_norm(x), "")
+    leaked = any(_norm(f) in rest for f in case.forbidden)
     if case.answers == [ABSTAIN]:
         ok = any(w in answer for w in _ABSTAIN_WORDS) and not leaked
     else:

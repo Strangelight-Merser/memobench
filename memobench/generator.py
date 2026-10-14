@@ -36,6 +36,15 @@ FILLERS = [
 ]
 ASSISTANT_ACK = "好的，我记下了。"
 
+QUESTIONS = {
+    "recall": ["我的{a}是什么？", "还记得我的{a}吗？", "我的{a}是啥来着？", "我之前提到的{a}是什么？"],
+    "update": ["我现在的{a}是什么？", "我的{a}最后改成了什么？", "还记得我最新的{a}吗？", "目前我的{a}是啥来着？"],
+    "multi": ["我的{a}和{b}分别是什么？", "还记得我的{a}和{b}吗？", "帮我回忆一下我的{a}和{b}。", "我的{a}是啥，{b}又是啥？"],
+    "temporal": ["我最初说的{a}是什么？", "我一开始说的{a}是什么？", "改之前我的{a}是什么？", "我的{a}原来是什么？"],
+    "forget": ["我的{a}是什么？", "还记得我的{a}吗？", "我的{a}是啥来着？", "能告诉我我的{a}吗？"],
+    "abstain": ["我的{a}是什么？", "还记得我的{a}吗？", "我的{a}是啥来着？", "能说说我的{a}吗？"],
+}
+
 
 def state(attr, value):
     return f"我的{attr}是{value}。"
@@ -104,6 +113,9 @@ def generate(n_per_category=20, n_sessions=6, turns_per_session=8, seed=42, n_di
     cases = []
     attrs = list(ATTRS)
 
+    def question(category, a, b=None):
+        return rng.choice(QUESTIONS[category]).format(a=a, b=b)
+
     def new():
         return _Builder(rng, n_sessions, turns_per_session, n_distract)
 
@@ -111,33 +123,40 @@ def generate(n_per_category=20, n_sessions=6, turns_per_session=8, seed=42, n_di
         # recall：首个会话陈述，最后提问
         a = rng.choice(attrs); v = rng.choice(ATTRS[a])
         b = new(); b.put(0, state(a, v)); b.noise(a)
-        cases.append(Case(f"recall-{k}", "recall", b.build(), f"我的{a}是什么？", [v]))
+        cases.append(Case(f"recall-{k}", "recall", b.build(), question("recall", a), [v]))
 
         # update：先陈述，后续会话修改（可能多次）
-        a = rng.choice(attrs); vals = rng.sample(ATTRS[a], min(3, len(ATTRS[a])))
+        a = rng.choice(attrs); latest = rng.choice(ATTRS[a])
+        # 评分按子串检查禁用值，避免旧版本号包含在最终版本号中。
+        previous = [v for v in ATTRS[a] if v.lower().replace(" ", "") not in latest.lower().replace(" ", "")]
+        n_updates = rng.randint(1, min(3, len(previous)))
+        vals = rng.sample(previous, n_updates) + [latest]
         b = new(); b.put(0, state(a, vals[0]))
-        b.put(rng.randrange(1, n_sessions), change(a, vals[1])); b.noise(a)
-        cases.append(Case(f"update-{k}", "update", b.build(), f"我的{a}是什么？", [vals[1]], [vals[0]]))
+        sessions = sorted(rng.randrange(1, n_sessions) for _ in range(n_updates))
+        for session, value in zip(sessions, vals[1:]):
+            b.put(session, change(a, value))
+        b.noise(a)
+        cases.append(Case(f"update-{k}", "update", b.build(), question("update", a), [vals[-1]], vals[:-1]))
 
         # multi：两条事实分散在不同会话
         a1, a2 = rng.sample(attrs, 2)
         v1, v2 = rng.choice(ATTRS[a1]), rng.choice(ATTRS[a2])
         b = new(); b.put(0, state(a1, v1)); b.put(rng.randrange(1, n_sessions), state(a2, v2)); b.noise(a1, a2)
-        cases.append(Case(f"multi-{k}", "multi", b.build(), f"我的{a1}和{a2}分别是什么？", [v1, v2]))
+        cases.append(Case(f"multi-{k}", "multi", b.build(), question("multi", a1, a2), [v1, v2]))
 
         # temporal：问最初的值
         a = rng.choice(attrs); vals = rng.sample(ATTRS[a], 2)
         b = new(); b.put(0, state(a, vals[0])); b.put(rng.randrange(1, n_sessions), change(a, vals[1])); b.noise(a)
-        cases.append(Case(f"temporal-{k}", "temporal", b.build(), f"我最初说的{a}是什么？", [vals[0]]))
+        cases.append(Case(f"temporal-{k}", "temporal", b.build(), question("temporal", a), [vals[0]]))
 
         # forget：陈述后要求遗忘
         a = rng.choice(attrs); v = rng.choice(ATTRS[a])
         b = new(); b.put(0, state(a, v)); b.put(rng.randrange(1, n_sessions), forget(a)); b.noise(a)
-        cases.append(Case(f"forget-{k}", "forget", b.build(), f"我的{a}是什么？", [ABSTAIN], [v]))
+        cases.append(Case(f"forget-{k}", "forget", b.build(), question("forget", a), [ABSTAIN], [v]))
 
         # abstain：问从未提过的属性（但对话里有其他事实做干扰）
         a, other = rng.sample(attrs, 2)
         b = new(); b.put(0, state(other, rng.choice(ATTRS[other]))); b.noise(a)
-        cases.append(Case(f"abstain-{k}", "abstain", b.build(), f"我的{a}是什么？", [ABSTAIN]))
+        cases.append(Case(f"abstain-{k}", "abstain", b.build(), question("abstain", a), [ABSTAIN]))
 
     return cases
