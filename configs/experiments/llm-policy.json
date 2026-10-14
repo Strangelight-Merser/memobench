@@ -1,0 +1,21 @@
+{
+  "status": "pending_review",
+  "health_probe": "blocked",
+  "reason": "尚未核验运行当天官方模型文档和真实 API 健康状态；无 DeepSeek key，禁止把候选配置视为调用白名单",
+  "endpoint_env": "MEMOBENCH_ENDPOINT",
+  "model_env": "MEMOBENCH_MODEL",
+  "key_env": "MEMOBENCH_API_KEY",
+  "parameters": {"temperature": 0, "max_tokens": 512},
+  "limits": {"max_requests": 100, "max_output_tokens": 512, "max_total_tokens": 100000, "max_cost": null},
+  "prices": null,
+  "cache_dir": null,
+  "live": false,
+  "timeout": 60,
+  "max_retries": 2,
+  "approved_models": [],
+  "model_policy": {
+    "Qwen": "优先选择当天官方文档列出的固定快照，健康探测后记录请求和返回模型名",
+    "DeepSeek": "返回 alias 时不能保证权重冻结，version/digest 未核验须为 null"
+  },
+  "openkylin": "NOT_VERIFIED"
+}

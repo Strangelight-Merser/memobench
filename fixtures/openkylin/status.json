@@ -1,0 +1,10 @@
+{
+  "status": "blocked",
+  "reason": "卡2的既有 v2 故事尚未出现在本分支，不能编造12故事正式用例。",
+  "required_story_count": 12,
+  "assembled_story_count": 0,
+  "story_ids": [],
+  "review_status": "pending_review",
+  "native_agent_results": null,
+  "openkylin_acceptance": "NOT_VERIFIED"
+}

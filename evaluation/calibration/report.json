@@ -1,0 +1,25 @@
+{
+  "status": "pending_review",
+  "publish_judge_ranking": false,
+  "fallback": "manual_adjudication",
+  "metrics": {
+    "n": 0,
+    "pending": 0,
+    "agreement": null,
+    "cohen_kappa": null,
+    "confusion_matrix": {
+      "human_false": {
+        "model_false": 0,
+        "model_true": 0
+      },
+      "human_true": {
+        "model_false": 0,
+        "model_true": 0
+      }
+    },
+    "false_accept_count": 0,
+    "false_accept_denominator": 0,
+    "false_accept_rate": null
+  },
+  "items": []
+}

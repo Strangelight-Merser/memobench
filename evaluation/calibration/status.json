@@ -1,0 +1,12 @@
+{
+  "status": "pending_review",
+  "development_fixture_count": 20,
+  "real_development_output_count": 0,
+  "independent_holdout_output_count": 0,
+  "human_reviewed_count": 0,
+  "live_judge_status": "blocked",
+  "calibration_status": "NOT_VERIFIED",
+  "publish_judge_ranking": false,
+  "blockers": ["卡6传输尚未接入", "无真实API凭据", "尚未采集60个独立留出输出", "用户尚未盲标"],
+  "openkylin_status": "NOT_VERIFIED"
+}

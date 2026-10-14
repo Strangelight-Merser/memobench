@@ -1,0 +1,30 @@
+test_bad_json_or_failed_process_never_ready (test_adapters_v2.AdapterTests.test_bad_json_or_failed_process_never_ready) ... ok
+test_cleanup_failure_reported_without_retry (test_adapters_v2.AdapterTests.test_cleanup_failure_reported_without_retry) ... ok
+test_close_only_owned_data_and_reject_restart (test_adapters_v2.AdapterTests.test_close_only_owned_data_and_reject_restart) ... ok
+test_duplicate_observation_id (test_adapters_v2.AdapterTests.test_duplicate_observation_id) ... ok
+test_end_session_must_wait_for_flush (test_adapters_v2.AdapterTests.test_end_session_must_wait_for_flush) ... ok
+test_invalid_response_scope_and_evidence (test_adapters_v2.AdapterTests.test_invalid_response_scope_and_evidence) ... ok
+test_public_boundary_and_all_roles (test_adapters_v2.AdapterTests.test_public_boundary_and_all_roles) ... ok
+test_query_timeout_and_failed_end_session (test_adapters_v2.AdapterTests.test_query_timeout_and_failed_end_session) ... ok
+test_scope_and_reset_rejected_before_send (test_adapters_v2.AdapterTests.test_scope_and_reset_rejected_before_send) ... ok
+test_sessions_preserve_memory_and_native_response (test_adapters_v2.AdapterTests.test_sessions_preserve_memory_and_native_response) ... ok
+test_shell_text_is_data_and_env_isolated (test_adapters_v2.AdapterTests.test_shell_text_is_data_and_env_isolated) ... ok
+test_timeout_after_write_no_retry (test_adapters_v2.AdapterTests.test_timeout_after_write_no_retry) ... ok
+test_unknown_blocks_query_and_does_not_repeat (test_adapters_v2.AdapterTests.test_unknown_blocks_query_and_does_not_repeat) ... ok
+test_variant_and_episode_isolation (test_adapters_v2.AdapterTests.test_variant_and_episode_isolation) ... ok
+test_write_and_query_deduplication (test_adapters_v2.AdapterTests.test_write_and_query_deduplication) ... ok
+test_cli_exit_two_without_network (test_adapters_v2.ProbeTests.test_cli_exit_two_without_network) ... ok
+test_missing_install_and_credentials_blocked (test_adapters_v2.ProbeTests.test_missing_install_and_credentials_blocked) ... ok
+test_no_live_executes_nothing (test_adapters_v2.ProbeTests.test_no_live_executes_nothing) ... ok
+test_version_help_success_not_lifecycle_pass (test_adapters_v2.ProbeTests.test_version_help_success_not_lifecycle_pass) ... ok
+test_fixed_argv_and_endpoint_validation (test_adapters_v2.TransportTests.test_fixed_argv_and_endpoint_validation) ... ok
+test_http_error_no_retry_no_secret (test_adapters_v2.TransportTests.test_http_error_no_retry_no_secret) ... ok
+test_http_fixture_no_socket (test_adapters_v2.TransportTests.test_http_fixture_no_socket) ... ok
+test_live_required (test_adapters_v2.TransportTests.test_live_required) ... ok
+test_redirect_refused (test_adapters_v2.TransportTests.test_redirect_refused) ... ok
+test_strict_json (test_adapters_v2.TransportTests.test_strict_json) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 2.233s
+
+OK

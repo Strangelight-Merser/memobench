@@ -1,0 +1,79 @@
+{
+  "status": "blocked",
+  "recorded_at": "2026-10-14T12:21:08.973537+00:00",
+  "host": {
+    "system": "Darwin",
+    "machine": "arm64",
+    "python": "3.13.12"
+  },
+  "openkylin": "NOT_VERIFIED",
+  "live": true,
+  "agents": [
+    {
+      "adapter_id": "kylin-agent-runtime",
+      "status": "blocked",
+      "reasons": [
+        "executable_not_found：PATH 未发现候选命令，不代表全盘未安装",
+        "credential_missing：未提供所选服务的环境变量",
+        "native_binding_not_verified：尚无该安装版本的会话、响应、flush 和隔离证据"
+      ],
+      "capabilities": {
+        "native_answer": "unknown",
+        "retrieved_evidence": "unknown",
+        "write_usage": "unknown",
+        "flush": "unknown",
+        "restart": "unknown",
+        "storage_inspection": "unknown"
+      },
+      "commands": [],
+      "execution_mode": "NOT_VERIFIED",
+      "models": [],
+      "model_configuration": "NOT_VERIFIED",
+      "session": "NOT_VERIFIED",
+      "cross_session_memory": "NOT_VERIFIED",
+      "state_directory": "NOT_VERIFIED",
+      "async_flush": "NOT_VERIFIED",
+      "cleanup": "NOT_VERIFIED",
+      "permission_isolation": "NOT_VERIFIED",
+      "review": "pending_review",
+      "comparison_scope": "整体系统比较",
+      "executable_found": false,
+      "missing_credentials": [
+        "DEEPSEEK_API_KEY"
+      ]
+    },
+    {
+      "adapter_id": "openclaw",
+      "status": "blocked",
+      "reasons": [
+        "executable_not_found：PATH 未发现候选命令，不代表全盘未安装",
+        "credential_missing：未提供所选服务的环境变量",
+        "native_binding_not_verified：尚无该安装版本的会话、响应、flush 和隔离证据"
+      ],
+      "capabilities": {
+        "native_answer": "unknown",
+        "retrieved_evidence": "unknown",
+        "write_usage": "unknown",
+        "flush": "unknown",
+        "restart": "unknown",
+        "storage_inspection": "unknown"
+      },
+      "commands": [],
+      "execution_mode": "gateway_pending_verification",
+      "models": [],
+      "model_configuration": "NOT_VERIFIED",
+      "session": "NOT_VERIFIED",
+      "cross_session_memory": "NOT_VERIFIED",
+      "state_directory": "NOT_VERIFIED",
+      "async_flush": "NOT_VERIFIED",
+      "cleanup": "NOT_VERIFIED",
+      "permission_isolation": "NOT_VERIFIED",
+      "review": "pending_review",
+      "comparison_scope": "整体系统比较",
+      "executable_found": false,
+      "missing_credentials": [
+        "DEEPSEEK_API_KEY"
+      ]
+    }
+  ]
+}

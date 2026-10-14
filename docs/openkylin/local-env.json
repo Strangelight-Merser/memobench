@@ -1,0 +1,41 @@
+{
+  "recorded_at": "2026-10-14T12:20:31.623500+00:00",
+  "status": "NOT_VERIFIED",
+  "openkylin_detected": false,
+  "acceptance": "NOT_VERIFIED",
+  "reason": "not_openkylin",
+  "execution_host": {
+    "os_release": {
+      "status": "NOT_VERIFIED",
+      "raw": null,
+      "fields": {}
+    },
+    "uname": {
+      "system": "Darwin",
+      "node": "huaiyideMacBook-Air.local",
+      "release": "24.6.0",
+      "version": "Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:40 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8132",
+      "machine": "arm64",
+      "processor": "arm"
+    },
+    "python": {
+      "version": "3.13.12",
+      "executable": "/opt/homebrew/Caskroom/miniconda/base/bin/python3"
+    },
+    "dpkg_architecture": {
+      "status": "blocked",
+      "reason": "executable_not_found",
+      "returncode": null
+    },
+    "tools": {},
+    "tool_versions_status": "NOT_VERIFIED"
+  },
+  "model_service_host": {
+    "status": "NOT_VERIFIED",
+    "reason": "not_probed",
+    "host": null
+  },
+  "permission_isolation": {
+    "status": "NOT_VERIFIED"
+  }
+}

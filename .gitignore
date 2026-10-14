@@ -1,5 +1,8 @@
 __pycache__/
 *.egg-info/
 results/
-data/
+artifacts/
+.cache/
 .codex-logs/
+/data/*
+!/data/v0.2/

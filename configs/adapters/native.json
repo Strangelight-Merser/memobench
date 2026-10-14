@@ -1,0 +1,20 @@
+{
+  "agents": [
+    {
+      "adapter_id": "kylin-agent-runtime",
+      "executables": ["kylin-agent-runtime"],
+      "help_args": [["--help"]],
+      "required_env": ["DEEPSEEK_API_KEY"],
+      "execution_mode": "NOT_VERIFIED",
+      "binding_status": "blocked"
+    },
+    {
+      "adapter_id": "openclaw",
+      "executables": ["openclaw"],
+      "help_args": [["--help"], ["agent", "--help"]],
+      "required_env": ["DEEPSEEK_API_KEY"],
+      "execution_mode": "gateway_pending_verification",
+      "binding_status": "blocked"
+    }
+  ]
+}
