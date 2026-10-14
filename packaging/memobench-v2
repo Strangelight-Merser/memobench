@@ -1,0 +1,7 @@
+#!/usr/bin/python3
+"""deb 的 v2 入口；不改 cwd，不写 HOME。"""
+import sys
+sys.dont_write_bytecode = True
+sys.path.insert(0, '/usr/share/memobench')
+from memobench.cli_v2 import main
+raise SystemExit(main())

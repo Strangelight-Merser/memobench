@@ -16,6 +16,8 @@ OFFICIAL_CAPABILITIES = {
 AnswerState = Literal["answer", "unknown", "forgotten", "conflict"]
 Support = Literal["supported", "unsupported", "unknown"]
 Mode = Literal["component", "native_agent"]
+ReviewStatus = Literal["pending_review", "accepted", "rejected"]
+REVIEW_STATUSES = get_args(ReviewStatus)
 
 
 class ContractError(ValueError):
@@ -232,6 +234,45 @@ class EvidenceLocation(Record):
                   0 <= self.start < self.end), "evidence.span")
 
 
+@dataclass
+class ExpectedFileAction(Record):
+    operation: Literal["create", "render"]
+    path: str
+    sha256: str
+    template_sha256: Optional[str] = None
+    old_paths: List[str] = field(default_factory=list)
+    old_template_sha256: Optional[str] = None
+
+    def validate(self):
+        super().validate()
+        for path in [self.path] + self.old_paths:
+            SandboxReference('file', path)
+            _require(all(part not in ('', '.') for part in path.split('/')), "file.path")
+        for name in ('sha256', 'template_sha256', 'old_template_sha256'):
+            value = getattr(self, name)
+            if value is not None or name == 'sha256':
+                _require(isinstance(value, str) and bool(re.fullmatch('[0-9a-f]{64}', value)), name)
+        _require(self.operation != 'render' or self.template_sha256 is not None,
+                 'file.template_sha256')
+
+
+@dataclass
+class ForgetPolicy(Record):
+    slot: str
+    mode: Literal["literal_disclosure"]
+    values: List[str]
+    retained_text: Optional[str] = None
+
+    def validate(self):
+        super().validate()
+        _text(self.slot, "forget.slot")
+        _require(bool(self.values), "forget.values")
+        for value in self.values:
+            _text(value, "forget.value")
+        if self.retained_text is not None:
+            _text(self.retained_text, "forget.retained_text")
+
+
 @dataclass(repr=False)
 class Gold(Record):
     probe_id: str
@@ -331,6 +372,7 @@ class Prediction(Record):
     slots: Optional[List[Slot]] = None
     retrieved_evidence: Optional[List[str]] = None
     usage: Optional[Dict[str, Any]] = None
+    file_actions: Optional[List[Dict[str, Any]]] = None
 
     def validate(self):
         super().validate()

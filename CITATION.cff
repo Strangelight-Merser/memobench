@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "引用时请同时记录实际代码提交、数据与评分器哈希；0.2.0 为开发候选合同版本。"
+title: "MemoBench：面向 openKylin 智能体的证据驱动记忆回归评测工具"
+type: software
+authors:
+  - name: "MemoBench contributors"
+version: "0.2.0"
+license: MulanPSL-2.0
+abstract: "证据驱动的记忆回归评测开发工具。数据 pending_review；真实智能体、openKylin 和 LLM 结果未验证。软件许可不覆盖未签收数据及第三方材料。"

@@ -1,0 +1,9 @@
+Package: memobench
+Version: 0.2.0
+Section: devel
+Priority: optional
+Architecture: all
+Depends: python3 (>= 3.9)
+Maintainer: MemoBench contributors
+Description: Evidence-driven memory regression evaluation CLI
+ Development candidate; native agents and openKylin are not verified.

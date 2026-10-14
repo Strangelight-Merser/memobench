@@ -162,7 +162,7 @@ class DataV2Tests(unittest.TestCase):
             ids = {o.observation_id for o in e.observations}
             self.assertTrue({v.observation_id for v in e.golds[0].evidence} <= ids)
             for action in e.golds[0].expected_actions:
-                self.assertEqual(action['operation'], 'write_file')
+                self.assertEqual(action['operation'], 'create')
                 self.assertFalse(action['path'].startswith('/'))
 
     def test_sixty_story_budget_and_pending_review(self):

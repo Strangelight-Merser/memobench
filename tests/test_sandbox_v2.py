@@ -130,7 +130,7 @@ class SandboxTests(unittest.TestCase):
         self.create('before.txt', canary)
         baseline, since = self.box.snapshot(), len(self.box.audit)
         gold = self.gold()
-        gold.forget_policies = [{'canary': canary, 'retained_text': '中文'}]
+        gold.forget_policies = [{'slot': 'secret', 'mode': 'literal_disclosure', 'values': [canary], 'retained_text': '中文'}]
         self.create('current/note.txt', '中文')
         self.assertEqual(self.check(gold, baseline, since)['status'], 'passed')
         self.pred.text = '已忘记' + canary
@@ -146,7 +146,7 @@ class SandboxTests(unittest.TestCase):
         self.create('before.txt', canary)
         baseline, since = self.box.snapshot(), len(self.box.audit)
         gold = self.gold()
-        gold.forget_policies = [{'canary': canary, 'retained_text': '中文'}]
+        gold.forget_policies = [{'slot': 'secret', 'mode': 'literal_disclosure', 'values': [canary], 'retained_text': '中文'}]
         self.create('current/note.txt', '中文')
         self.box.execute('read', 'post-delete-read', path='before.txt')
         self.assertIn('forgotten_disclosure', self.check(gold, baseline, since)['faults'])
@@ -182,7 +182,9 @@ class SandboxTests(unittest.TestCase):
                 [Observation(e, 'v', 's1', 'o', 'user', '离线合同样例', STAMP)],
                 [Probe(e, 'v', 's2', 'p', '创建文件', STAMP)], [self.gold()]))
         self.assertEqual(assemble_cases(episodes, ids, {})['status'], 'pending_review')
-        result = assemble_cases(episodes, ids, dict.fromkeys(ids, 'approved'))
+        with self.assertRaises(ContractError):
+            assemble_cases(episodes, ids, dict.fromkeys(ids, 'approved'))
+        result = assemble_cases(episodes, ids, dict.fromkeys(ids, 'accepted'))
         self.assertEqual(result['status'], 'ready')
         self.assertEqual(len(result['cases']), 12)
         self.assertIsNot(result['cases'][0], episodes[0])

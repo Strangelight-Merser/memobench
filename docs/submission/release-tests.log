@@ -1,0 +1,11 @@
+test_ci_has_no_live_secrets_or_privileged_pr (test_release_v2.ReleaseTests.test_ci_has_no_live_secrets_or_privileged_pr) ... ok
+test_deb_archive_control_payload_and_cli (test_release_v2.ReleaseTests.test_deb_archive_control_payload_and_cli) ... ok
+test_missing_and_tampered_hashes (test_release_v2.ReleaseTests.test_missing_and_tampered_hashes) ... ok
+test_result_placeholder_and_secret_are_errors_without_echo (test_release_v2.ReleaseTests.test_result_placeholder_and_secret_are_errors_without_echo) ... ok
+test_unsafe_inventory_path (test_release_v2.ReleaseTests.test_unsafe_inventory_path) ... ok
+test_worktree_checks_and_honest_blockers (test_release_v2.ReleaseTests.test_worktree_checks_and_honest_blockers) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.606s
+
+OK

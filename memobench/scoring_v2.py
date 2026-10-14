@@ -3,7 +3,7 @@ from decimal import Decimal
 import json
 import math
 
-from .schema_v2 import ContractError, Gold, Prediction, Slot
+from .schema_v2 import ContractError, Gold, Prediction, Slot, ForgetPolicy
 
 METRICS = ("answer_correct", "current_value_misuse", "forgotten_disclosure",
            "unknown_assertion", "evidence_supported", "task_completed")
@@ -119,10 +119,9 @@ def score(gold, prediction, *, task_checks=None):
     disclosures = []
     slots = structured_slots(prediction)
     for policy in gold.forget_policies:
-        if (set(policy) != {"slot", "mode", "values"} or
-                policy.get("mode") != "literal_disclosure" or
-                type(policy.get("values")) is not list or not policy["values"] or
-                any(type(v) is not str or not v for v in policy["values"])):
+        try:
+            policy = ForgetPolicy.from_dict(policy).to_dict()
+        except ContractError:
             policies_known = False
             continue
         surface = prediction.text or ""

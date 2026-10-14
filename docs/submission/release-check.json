@@ -1,0 +1,16 @@
+{
+  "offline_checks": "passed",
+  "release_status": "blocked",
+  "errors": [],
+  "blockers": [
+    "data pending_review: human signoff required",
+    "data license pending_maintainer_signoff",
+    "formal test set empty",
+    "native agents and openKylin NOT_VERIFIED",
+    "LLM results and judge calibration pending",
+    "remote CI logs and clean-clone/anonymous access not verified",
+    "final PDF/video and submission consistency require human review"
+  ],
+  "scanned_files": 75,
+  "scan_scope": "controlled working-tree files only; not git history or proof of no secrets"
+}

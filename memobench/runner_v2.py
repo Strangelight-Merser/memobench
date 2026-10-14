@@ -1,4 +1,5 @@
 """唯一 v2 编排器。离线 fixture 验证链路，不构成真实系统成绩。"""
+from dataclasses import replace
 from datetime import datetime, timezone
 import hashlib
 import json
@@ -15,7 +16,7 @@ from .judge_v2 import judge, overall_label
 from .scoring_v2 import summarize as summarize_scores, strict_json
 from .stats_v2 import Sample, summarize as summarize_stats
 from .llm_v2 import CostLedger, LLMClient, Limits
-from .sandbox_v2 import native_isolation_status, validate_actions
+from .sandbox_v2 import native_isolation_status, validate_actions, FileSandbox, verify_task
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -92,6 +93,25 @@ def fixture_reader(probe, recalled):
                       retrieved_evidence=recalled.retrieved_evidence)
 
 
+def offline_file_checks(gold, prediction):
+    """只执行假适配器显式返回的工具请求；不从 gold 生成操作或内容。"""
+    with tempfile.TemporaryDirectory(prefix='memobench-files-') as directory:
+        with FileSandbox(Path(directory) / 'case') as sandbox:
+            for index, action in enumerate(prediction.file_actions):
+                if (set(action) != {'operation', 'arguments'} or
+                        type(action['arguments']) is not dict):
+                    raise ValueError('invalid file action request')
+                sandbox.execute(action['operation'], 'file:' + str(index), **action['arguments'])
+            checks, results = [], []
+            for action in gold.expected_actions:
+                checked = verify_task(sandbox, replace(gold, expected_actions=[action]), prediction,
+                                      baseline={}, audit_since=0)
+                checks.append(checked['status'] == 'passed')
+                results.append(checked)
+            return checks, {'audit': sandbox.audit, 'checks': results,
+                            'artifacts': sandbox.snapshot()}
+
+
 def execute_case(episode, factory, *, mode, reader=fixture_reader, operation_prefix,
                  execution='offline', judge_transport=None):
     """factory 无私有参数；一个完整 episode/variant 一个全新实例。"""
@@ -156,16 +176,24 @@ def execute_case(episode, factory, *, mode, reader=fixture_reader, operation_pre
                         actual_execution = execution
                 validate_prediction(prediction, item, caps, seen)
                 gold = golds[item.probe_id]
-                task_status = None
+                task_status, task_checks, task_verification = None, None, None
                 if gold.expected_actions:
-                    try:
-                        validate_actions(gold)
-                        task_status = 'blocked: trusted_tool_execution_unavailable'
-                    except ValueError:
-                        task_status = 'blocked: data_sandbox_action_contract_mismatch'
-                scored = judge(gold, prediction, item, seen, caps, transport=judge_transport)
+                    validate_actions(gold)
+                    task_status = 'blocked: trusted_tool_execution_unavailable'
+                    if execution == 'offline' and prediction.file_actions is not None:
+                        task_checks, task_verification = offline_file_checks(gold, prediction)
+                        task_status = 'passed' if all(task_checks) else 'failed'
+                scored = judge(gold, prediction, item, seen, caps, transport=judge_transport,
+                               task_checks=task_checks)
+                if task_verification and any('forgotten_disclosure' in check['faults']
+                                              for check in task_verification['checks']):
+                    from .scoring_v2 import result as scoring_result
+                    scored['metrics']['forgotten_disclosure'] = True
+                    scored = scoring_result(gold, scored['metrics'], scored.get('review_reason'),
+                                            source=scored['source'])
                 rows.append({'prediction': prediction.to_dict(), 'execution': actual_execution,
                              'score': scored, 'raw_reader': raw, 'task_status': task_status,
+                             'task_verification': task_verification,
                              'evidence_locations': [e.to_dict() for e in gold.evidence]})
                 if prediction.status != 'ok':
                     raise RuntimeError('prediction_failed')
@@ -329,9 +357,7 @@ def run(config, out, *, live=False, resume=False):
         reader=reader_kind, cost=total_ledger.summary(),
         prior_failed_attempts=prior_failed_attempts, interrupted_attempts=interrupted_attempts,
         integration_gaps=[
-            '卡2 write_file/content 动作与卡5 create/render 动作合同不匹配，文件任务未验收',
-            '卡3 literal_disclosure 与卡5 canary/retained_text 遗忘政策不同，未自动转换',
-            '卡2 accepted 与卡5 approved 审阅状态不同，未提升签收状态',
+            'echo-fixture 不发起文件操作；文件任务需显式工具请求及可信产物验证',
             'native 产品桥与外部权限隔离未验证；不支持中断 native 原地续跑',
             '离线 echo-fixture 非 LLM Reader；语义裁判与人工校准未执行'])
     if client:

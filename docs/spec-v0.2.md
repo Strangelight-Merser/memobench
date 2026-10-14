@@ -40,7 +40,7 @@ observed_at 为故事内事件时间，answered_at 为实际回答时间；两�
 | `EvidenceLocation` | `observation_id: str; start: int或null = null; end: int或null = null` |
 | `Gold` | `probe_id: str; slots: list[Slot]; evidence: list[EvidenceLocation]; canonical_state_ledger: list[dict]; expected_actions: list[dict]; forget_policies: list[dict]; technical_categories: list[str]; official_capabilities: list[str]` |
 | `Episode` | `episode_id, variant_id, story_id: str; split: dev/test; session_ids: list[str]; observations: list[Observation]; probes: list[Probe]; golds: list[Gold]` |
-| `Prediction` | `episode_id, variant_id, session_id, probe_id: str; status: ok/unsupported/error/timeout; text: str或null; answered_at: str; state: answer/unknown/forgotten/conflict或null = null; slots: list[Slot]或null = null; retrieved_evidence: list[str]或null = null; usage: dict或null = null` |
+| `Prediction` | `episode_id, variant_id, session_id, probe_id: str; status: ok/unsupported/error/timeout; text: str或null; answered_at: str; state: answer/unknown/forgotten/conflict或null = null; slots: list[Slot]或null = null; retrieved_evidence: list[str]或null = null; usage: dict或null = null; file_actions: list[dict]或null = null` |
 | `AdapterCapabilities` | `native_answer, retrieved_evidence, write_usage, flush, restart, storage_inspection`，各为 `supported/unsupported/unknown`，默认 `unknown` |
 | `ModelRecord` | `provider, endpoint_id, requested_model: str; returned_model: str或null; parameters: dict; version, digest: str或null; recorded_at: str` |
 | `RunManifest` | `run_id: str; mode: component/native_agent; execution: offline/online/replay; adapter_id, adapter_version: str; capabilities: AdapterCapabilities; models: list[ModelRecord]; started_at: str; finished_at: str或null; code_hash, data_hash, scorer_hash: str; schema_version: str = "0.2"` |
@@ -50,11 +50,51 @@ observed_at 为故事内事件时间，answered_at 为实际回答时间；两�
 证据 start/end 是 observation.text 的 Python 字符偏移 `[start, end)`，不是字节或 token；
 两者均 null 表示整条观察。Gold 至少有一个 slot 或 expected action。
 
-账本、预期动作、遗忘政策为评测器私有的 JSON 记录，具体事件/动作语义由卡2、3、5定义；
-本合同只验证其 JSON 类型，不假装已验证业务真值。所有用于定位观察的依据统一置于
+账本、预期动作、遗忘政策仍为评测器私有的 JSON 记录；统一业务格式见下节。
+Gold 基础合同验证 JSON 类型，文件验证器及评分器使用下述共同格式，不把格式验证当作真值审核。
+所有用于定位观察的依据统一置于
 `evidence`，不要依赖自由字典中的自定义 ID 自动得到引用检查。
 沙箱 path 只允许相对路径且拒绝 `..`、反斜杠、NUL；这里只做语法验证。
 符号链接、实际文件访问、工具白名单和权限隔离属于卡5。cwd 不构成安全边界。
+
+## v2 集成字段（统一格式）
+
+- 审核枚举 `ReviewStatus / REVIEW_STATUSES`：`pending_review / accepted / rejected`。
+  数据发布门禁和 sandbox 组装均使用 `accepted`，不再接受 `approved`。
+  accepted 仍要求真实人工记录、源摘要和两项核对；代码不会自动签收。
+- `ExpectedFileAction`：必填 `operation: create/render`、相对 `path`、输出 UTF-8 文本
+  `sha256`；可选 `old_paths=[]`、`template_sha256=null`、`old_template_sha256=null`。
+  render 必须提供 template_sha256。Gold.expected_actions 存其字典格式，不能放工具执行内容；
+  create 工具参数是 path/text，render 工具参数是 path/template/values。
+  不再生成或消费 write_file/content 预期动作。现有数据要求逐字复制模板内容，故生成 create，
+  不冒充已执行模板文件渲染；render 的模板来源和哈希另由文件工具验证。
+- `ForgetPolicy`：必填 `slot: str, mode: literal_disclosure, values: list[str]`；
+  可选 `retained_text: str|null = null`。values 是明确要求删除的虚构值，不能为空。
+  从删除请求之后检查回答及新文件、工具输出、文件名中的逐字披露，包括否定句；
+  retained_text 非 null 时，文件任务还检查最终回答或产物是否保留该无关偏好。
+  不据此宣称存储物理擦除。sources.jsonl 保留原始创作记录，生成器将其编译为此格式；
+  评分器和 sandbox 不接受另一套 canary/retained_text 字典。
+- canonical_state_ledger 保留原始事件，另附每个目标的
+  `{"slot": "print.copies", "scope": "current", "previous_values": [2]}`。
+  previous_values 从同一实体键的事件回放推导，涵盖 set/copy/join；去重并排除最终正确值，
+  不把其他人/设备/项目的值当旧值，不把未生效的建议算成旧值。
+  answer 目标默认 current，非 answer 目标使用 unknown/forgotten/conflict；
+  历史目标须显式标 historical。只有 current 且有旧值的行进入当前值误用分母。
+  这些字段只存在于私有 Gold，不添加到公开输入。
+
+`Prediction.file_actions` 是向后兼容的可选扩展，缺省或 null 表示没有可执行工具请求，
+文件完成度保持未测。列表中每项为 `{"operation": "create", "arguments": {"path": "a.txt", "text": "内容"}}`，
+使用 FileSandbox 的 create/read/list/render/audit 白名单；空列表表示显式没有执行动作，
+有文件任务时会因缺少产物判失败。请求是不可信模型输出，不能作为验收凭证。
+离线 runner 在每个 probe 的全新临时目录执行显式请求，以空快照为基线，验证真实文件哈希、
+动作日志和遗忘政策，并保存 audit/checks/artifacts（哈希）到结果；临时文件随检查结束清理。
+请求内容绝不从 gold 填充。此扩展只用于离线工具 fixture；online/native 仍需独立权限隔离和工具接入。
+默认 echo-fixture 不产生 file_actions，因此命令行 smoke 的文件完成度仍为未测。
+
+旧 Prediction JSON 省略新增字段可继续读取；原三字段 literal_disclosure 策略省略 retained_text
+可继续读取。已冲突的动作及 approved 审核命名不设兼容分支，需要重建数据。
+数据重建保留全部 pending_review，正式 test 仍为空。dev 集没有遗忘样本；端到端测试跑完
+24 个 dev variant，并另用现有待审遗忘候选检查输出/新文件披露，不能混入 dev 统计。
 
 ## 两套分类保持独立
 

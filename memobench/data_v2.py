@@ -7,7 +7,7 @@ from datetime import datetime, timedelta, timezone
 
 from .schema_v2 import (Episode, Observation, Probe, Gold, Slot, EvidenceLocation,
                         SandboxReference, ContractError, validate_dataset,
-                        OFFICIAL_CAPABILITIES, TECHNICAL_CATEGORIES)
+                        OFFICIAL_CAPABILITIES, TECHNICAL_CATEGORIES, REVIEW_STATUSES, ForgetPolicy)
 from .protocol_v2 import adapter_payload
 
 
@@ -65,6 +65,35 @@ def truth(events, targets):
             for t in targets]
 
 
+def scoring_ledger(events, targets):
+    """保留事件依据，另附各目标的作用域与曾经成立的值；不混入其他实体。"""
+    rows = [dict(event) for event in events]
+    final = {s.name: s for s in truth(events, targets)}
+    for target in targets:
+        key = target['key']
+        previous = []
+        for end in range(1, len(events) + 1):
+            slot = truth(events[:end], [target])[0]
+            if slot.state == 'answer' and slot.value not in previous:
+                previous.append(slot.value)
+        current = final[key]
+        previous = [v for v in previous if current.state != 'answer' or v != current.value]
+        rows.append({'slot': key, 'scope': target.get('scope', 'current' if current.state == 'answer' else current.state),
+                     'previous_values': previous})
+    return rows
+
+
+def forget_policies(story, slots):
+    # sources 是原始创作记录，发布 Gold 只生成统一协议，消费者不做旧格式兼容。
+    policies = []
+    for source in story.get('forget_policies', []):
+        retained = next((s.value for s in slots if s.state == 'answer'
+                         and s.name in ('template', 'language')), None)
+        policies.append(ForgetPolicy(source['key'], 'literal_disclosure',
+                                     [source['value']], retained).to_dict())
+    return policies
+
+
 def generate(stories, seed=42, context_chars=2048, turns_per_session=40):
     """字符预算仅计 observation.text；两会话各至少指定条数。"""
     if type(turns_per_session) is not int or turns_per_session < 1:
@@ -118,10 +147,10 @@ def generate(stories, seed=42, context_chars=2048, turns_per_session=40):
                 values = {s.name: s.value for s in slots if s.state == 'answer'}
                 path, content = values['output_path'], values['template']
                 SandboxReference('output', path)
-                actions = [{'operation': 'write_file', 'path': path, 'content': content,
+                actions = [{'operation': 'create', 'path': path,
                             'sha256': hashlib.sha256(content.encode()).hexdigest()}]
-            gold = Gold(probe.probe_id, slots, evidence, story['events'], actions,
-                        story.get('forget_policies', []), story['technical_categories'],
+            gold = Gold(probe.probe_id, slots, evidence, scoring_ledger(story['events'], story['targets']), actions,
+                        forget_policies(story, slots), story['technical_categories'],
                         [story['official_capability']])
             episodes.append(Episode(eid, vid, sid, story['split'], sessions,
                                     observations, [probe], [gold]))
@@ -260,7 +289,7 @@ def validate_release(root):
                 or r['evidence_ids'] != [opaque(s['story_id'], 'observation', i)
                                         for i in range(len(s['utterances']))]):
             raise ContractError('审阅来源或证据已过期')
-        if r['status'] not in ('pending_review', 'accepted', 'rejected'):
+        if r['status'] not in REVIEW_STATUSES:
             raise ContractError('审阅状态错误')
         if r['status'] == 'accepted':
             if not (r['source_sha256'] == digest(s) and r['reviewer'] and r['reviewed_at']

@@ -1,0 +1,74 @@
+{
+  "full_context": {
+    "recall": 1.0,
+    "update": 1.0,
+    "multi": 1.0,
+    "temporal": 1.0,
+    "forget": 1.0,
+    "abstain": 1.0,
+    "overall": 1.0,
+    "leak_rate": 0.0,
+    "avg_ctx": 865.5916666666667,
+    "avg_ms": 0.007860708137741312
+  },
+  "sliding_window": {
+    "recall": 0.0,
+    "update": 0.25,
+    "multi": 0.0,
+    "temporal": 0.0,
+    "forget": 1.0,
+    "abstain": 1.0,
+    "overall": 0.375,
+    "leak_rate": 0.0,
+    "avg_ctx": 217.46666666666667,
+    "avg_ms": 0.003455150726949796
+  },
+  "bm25_rag": {
+    "recall": 1.0,
+    "update": 0.45,
+    "multi": 0.45,
+    "temporal": 1.0,
+    "forget": 0.6,
+    "abstain": 1.0,
+    "overall": 0.75,
+    "leak_rate": 0.15833333333333333,
+    "avg_ctx": 78.54166666666667,
+    "avg_ms": 0.21888507617404684
+  },
+  "profile_store": {
+    "recall": 1.0,
+    "update": 1.0,
+    "multi": 1.0,
+    "temporal": 0.0,
+    "forget": 1.0,
+    "abstain": 1.0,
+    "overall": 0.8333333333333334,
+    "leak_rate": 0.0,
+    "avg_ctx": 70.73333333333333,
+    "avg_ms": 0.003237175648488725
+  },
+  "hybrid": {
+    "recall": 1.0,
+    "update": 1.0,
+    "multi": 1.0,
+    "temporal": 1.0,
+    "forget": 1.0,
+    "abstain": 1.0,
+    "overall": 1.0,
+    "leak_rate": 0.0,
+    "avg_ctx": 34.25833333333333,
+    "avg_ms": 0.0026121168048121035
+  },
+  "session_summary": {
+    "recall": 1.0,
+    "update": 1.0,
+    "multi": 1.0,
+    "temporal": 1.0,
+    "forget": 1.0,
+    "abstain": 1.0,
+    "overall": 1.0,
+    "leak_rate": 0.0,
+    "avg_ctx": 121.3,
+    "avg_ms": 0.0036823250411543995
+  }
+}

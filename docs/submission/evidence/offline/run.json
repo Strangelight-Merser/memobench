@@ -1,0 +1,1 @@
+{"config":{"adapter":"full-history-fixture","dataset":"data/v0.2","execution":"offline","mode":"component","reader":"echo-fixture","split":"dev"},"data_notice":"候选数据，未签收","dataset_validation":{"formal_test_n_query":0,"n_story":60,"release_status":"pending_review","validation":"ok"},"fixture":true,"identity":"02245ce933586f63e75fd090b7210e466070f81c4ec329e27b36b75a3e67099a"}

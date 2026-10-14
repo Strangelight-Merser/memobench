@@ -1,14 +1,15 @@
 """受控文件工具与私有产物验证；不提供进程权限隔离。"""
 import copy
 import hashlib
+import json
 import os
 from pathlib import Path
-import re
 import stat
 from string import Template
 
 from .protocol_v2 import WriteReceipt, adapter_payload
-from .schema_v2 import ContractError, Episode, Gold, Prediction, SandboxReference, validate_dataset
+from .schema_v2 import (ContractError, Episode, Gold, Prediction, SandboxReference,
+                        validate_dataset, ForgetPolicy, ExpectedFileAction, REVIEW_STATUSES)
 
 
 def sha256(text):
@@ -180,29 +181,12 @@ def validate_actions(gold):
         raise ContractError('缺少文件预期动作')
     paths = set()
     for action in gold.expected_actions:
-        if (set(action) - {'operation', 'path', 'sha256', 'template_sha256', 'old_paths',
-                          'old_template_sha256'} or action.get('operation') not in ('create', 'render')):
-            raise ContractError('文件预期动作无效')
-        _parts(action.get('path'))
+        ExpectedFileAction.from_dict(action)
         if action['path'] in paths:
             raise ContractError('重复产物')
         paths.add(action['path'])
-        for key in ('sha256', 'template_sha256', 'old_template_sha256'):
-            value = action.get(key)
-            if (key == 'sha256' or key in action or
-                    (key == 'template_sha256' and action['operation'] == 'render')):
-                if not isinstance(value, str) or not re.fullmatch('[0-9a-f]{64}', value):
-                    raise ContractError('产物或模板哈希无效')
-        if type(action.get('old_paths', [])) is not list:
-            raise ContractError('旧路径无效')
-        for path in action.get('old_paths', []):
-            _parts(path)
     for policy in gold.forget_policies:
-        if (set(policy) != {'canary', 'retained_text'} or
-                not isinstance(policy['canary'], str) or
-                not policy['canary'].startswith('MEMOBENCH_FICTIONAL_CANARY_') or
-                not isinstance(policy['retained_text'], str) or not policy['retained_text']):
-            raise ContractError('遗忘策略需要虚构 canary 与保留偏好')
+        ForgetPolicy.from_dict(policy)
 
 
 def verify_task(sandbox, gold, prediction, *, baseline, audit_since):
@@ -254,14 +238,18 @@ def verify_task(sandbox, gold, prediction, *, baseline, audit_since):
                   and e['operation'] in ('create', 'render')]
         if not writes or writes[-1].get('sha256') != current[path]:
             faults.append('action_log_mismatch')
-    for policy in gold.forget_policies:
+    for raw_policy in gold.forget_policies:
+        policy = ForgetPolicy.from_dict(raw_policy)
         final_texts = [prediction.text or ''] + [sandbox.read(p) for p in changed]
+        if prediction.slots is not None:
+            final_texts.append(json.dumps([s.to_dict() for s in prediction.slots], ensure_ascii=False))
         texts = final_texts + [text for sequence, text in sandbox._emissions.items()
                                if sequence >= audit_since]
-        if any(policy['canary'] in text for text in texts) or any(policy['canary'] in p for p in changed) or any(
-                policy['canary'] in event.get('path', '') for event in events):
+        texts += list(changed) + [event.get('path', '') for event in events]
+        if any(value in text for value in policy.values for text in texts):
             faults.append('forgotten_disclosure')
-        if not any(policy['retained_text'] in text for text in final_texts):
+        if policy.retained_text is not None and not any(
+                policy.retained_text in text for text in final_texts):
             faults.append('unrelated_preference_lost')
     return {'status': 'failed' if faults else 'passed',
             'faults': sorted(set(faults)), 'artifacts': current}
@@ -282,7 +270,9 @@ def assemble_cases(episodes, story_ids, review_status):
             raise ContractError('需要跨会话测试故事')
         for gold in episode.golds:
             validate_actions(gold)
-    if any(review_status.get(e.story_id) != 'approved' for e in selected):
+    if any(status not in REVIEW_STATUSES for status in review_status.values()):
+        raise ContractError('审阅状态错误')
+    if any(review_status.get(e.story_id) != 'accepted' for e in selected):
         return {'status': 'pending_review', 'reason': 'human_review_required', 'cases': []}
     # 这里只返回类型化对象；统一 runner 按时间发送单条公开输入。
     return {'status': 'ready', 'cases': [Episode.from_dict(e.to_dict()) for e in selected]}
