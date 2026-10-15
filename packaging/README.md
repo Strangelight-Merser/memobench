@@ -9,7 +9,7 @@ bash tools/build_deb.sh
 bash tools/build_deb.sh --candidate
 ```
 
-默认输出 `packaging/dist/`（卡8独占路径），可传 `--out /tmp/memobench_0.2.0_all.deb`。包内入口 `/usr/bin/memobench-v2` 使用 `/usr/bin/python3` 调用 `/usr/share/memobench/memobench/cli_v2.py`。包含核心源码与judge提示；数据许可待签收，包不携带数据、配置、gold或实验结果。运行完整评测需从源码仓库根目录使用其中配置与数据；包本身提供CLI，不是独立数据发行版。路径参数按调用者cwd解析。
+默认输出 `packaging/dist/`（卡8独占路径），可传 `--out /tmp/memobench_0.2.0_all.deb`。包内入口 `/usr/bin/memobench-v2` 使用 `/usr/bin/python3` 调用 `/usr/share/memobench/memobench/cli_v2.py`。包含核心源码与judge提示；此 CLI 安装包不携带数据、配置、gold或实验结果。运行完整评测需从源码仓库根目录使用其中配置与数据；包本身提供CLI，不是独立数据发行版。路径参数按调用者cwd解析。
 
 构建只用标准库生成deb的ar/control/data归档，不依赖dpkg-deb，不下载模型，不调用API，不写HOME，不安装服务或maintainer scripts。最低3.9来自核心使用的标准库API；实际测试版本见submission/VALIDATION.md，CI矩阵不能代替未运行的版本验证。
 

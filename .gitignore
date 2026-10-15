@@ -7,3 +7,5 @@ artifacts/
 /data/*
 !/data/v0.2/
 !/data/v0.2-ai-reviewed/
+!/data/LICENSE.md
+!/data/PUBLIC_LICENSE.json

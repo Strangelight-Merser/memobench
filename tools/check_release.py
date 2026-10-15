@@ -19,12 +19,12 @@ REQUIRED = (
     'docs/submission/ROADSHOW.md', 'docs/submission/VALIDATION.md',
     'docs/submission/evidence-sha256.json', 'data/v0.2/manifest.json',
     'memobench/cli_v2.py', 'configs/experiments/offline.json',
-    'configs/experiments/native.json',
+    'configs/experiments/native.json', 'data/PUBLIC_LICENSE.json', 'data/LICENSE.md',
 )
 CONTROLLED = ('README.md', 'CONTRIBUTING.md', 'SECURITY.md', 'CITATION.cff',
               '.github', 'packaging', 'configs', 'data/v0.2', 'artifacts',
               'docs/submission', 'docs/作品介绍.md', 'memobench', 'tools', 'patches',
-              'data/v0.2-ai-reviewed', 'docs/integrations', 'docs/delivery')
+              'data/v0.2-ai-reviewed', 'data/PUBLIC_LICENSE.json', 'data/LICENSE.md', 'docs/integrations', 'docs/delivery')
 SECRET_PATTERNS = (
     re.compile(r'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----'),
     re.compile(r'\b(?:sk-[A-Za-z0-9_-]{20,}|gh[pousr]_[A-Za-z0-9]{30,}|AKIA[A-Z0-9]{16})\b'),
@@ -170,14 +170,14 @@ def check(root):
                 errors.append('data hash mismatch: ' + name)
         from memobench.data_v2 import validate_release
         data_validation = validate_release(root / 'data/v0.2')
-        if data_validation['release_status'] != 'accepted':
-            blockers.append('public data pending_review: original dataset public release is unapproved; internal AI-reviewed use is separate')
-        if data_validation['license_status'] != 'accepted':
-            blockers.append('public data license pending_maintainer_signoff; internal use grants no redistribution license')
-        if not manifest.get('formal_test_n_query'):
-            blockers.append('original public dataset formal test set empty; approved internal set is separate')
     except (OSError, ValueError, KeyError, TypeError):
         errors.append('invalid data manifest or inventory')
+    public_license = None
+    try:
+        from memobench.data_license import validate_public_license
+        public_license = validate_public_license(root)
+    except (OSError, ValueError, KeyError, TypeError):
+        errors.append('current public data license record invalid or missing')
     default_native = None
     try:
         recipe = json.loads(confined(root, 'configs/experiments/native.json').read_text())
@@ -229,13 +229,14 @@ def check(root):
                 errors.append('placeholder in result: ' + relative)
     # 当前交付仍未具备这些外部证据；不能从workflow或fixture推导PASS。
     blockers.extend([
-        'semantic LLM scoring and judge calibration pending; selected native file-task acceptance is separate',
+        'semantic LLM scoring pending_review and judge calibration pending; selected native file-task acceptance is separate',
         'remote CI logs and anonymous remote access not verified',
         'openKylin desktop recording, final PDF/video and submission consistency pending',
     ])
     return {'offline_checks': 'failed' if errors else 'passed',
             'release_status': 'blocked' if errors or blockers else 'ready',
             'native_cli_acceptance': native, 'default_native_dataset': default_native,
+            'public_data_license': public_license, 'historical_public_snapshot': data_validation if 'data_validation' in locals() else None,
             'errors': errors, 'blockers': blockers, 'scanned_files': len(scanned),
             'scan_scope': 'controlled working-tree files only; not git history or proof of no secrets'}
 

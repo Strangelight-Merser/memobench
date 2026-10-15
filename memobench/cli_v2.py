@@ -29,6 +29,11 @@ def main(argv=None):
     try:
         if args.command == 'validate':
             result = validate_release(args.dataset)
+            from .data_license import ROOT, DATASETS, validate_public_license
+            if Path(args.dataset).resolve() in {(ROOT / name).resolve() for name in DATASETS}:
+                permission = validate_public_license(dataset=args.dataset)
+                result = dict(result, historical_snapshot_license_status=result['license_status'],
+                              license_status=permission['status'], public_license=permission)
         elif args.command == 'run':
             result = run(read(args.config), args.out, live=args.live, resume=args.resume)
             report(args.out, Path(args.out) / 'report.html')

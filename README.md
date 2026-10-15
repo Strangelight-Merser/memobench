@@ -1,6 +1,6 @@
 # MemoBench v2
 
-当前内部数据已完成独立 AI 审核与主复核，无需用户填写审核表：59 故事通过、青禾 1 故事排除，内部 test 为47故事/94改写。默认 native recipe 已切换到 `data/v0.2-ai-reviewed` + `internal_evaluation`；[当前审核与内部运行说明](docs/integrations/ai-review-20261015/ENGINEERING.md)。公开数据许可另行处理，不阻塞已授权内部使用。
+当前数据已完成独立 AI 审核与主复核，无需用户填写审核表：59 故事通过、青禾 1 故事排除，内部 test 为47故事/94改写。默认 native recipe 已切换到 `data/v0.2-ai-reviewed` + `internal_evaluation`；[当前审核与内部运行说明](docs/integrations/ai-review-20261015/ENGINEERING.md)。自建合成数据现按 [CC BY 4.0](data/LICENSE.md) 公开；无需额外填表。历史审批快照保留原字节，当前公开授权见 [PUBLIC_LICENSE.json](data/PUBLIC_LICENSE.json)。
 
 **面向 openKylin 智能体的证据驱动记忆回归评测工具。** 检查跨会话信息是否被正确用于后续回答与文件任务，保留输入、输出、评分理由和版本证据，服务开发者复现与定位回归。
 
@@ -67,6 +67,6 @@ v2 接口及 public/private 边界见 [协议合同](docs/spec-v0.2.md)。同一
 - [离线 CI](.github/workflows/ci.yml)：配置入库不等于远端运行成功，实际日志状态见验收记录。
 - [可选 deb](packaging/README.md)：候选合同版本 `0.2.0`，`memobench-v2` 指向 `memobench.cli_v2`。legacy 模块版本仍为 `0.1.0`，两者分别披露。未完成 openKylin 安装、运行、卸载，不标记已适配。
 
-代码沿用 [MulanPSL-2.0](LICENSE)。自建数据公开再分发须维护者单独确认许可；第三方数据和系统保留各自许可，不重许可为木兰。数据与代码包含 AI 辅助开发；当前内部数据已完成明确标识的独立 AI 审核与主复核，不宣称人工签收或未见留出。
+代码沿用 [MulanPSL-2.0](LICENSE)。自建合成数据采用 [CC BY 4.0](data/LICENSE.md)；第三方数据和系统保留各自许可，不重许可为木兰。数据与代码包含 AI 辅助开发；当前数据已完成明确标识的独立 AI 审核与主复核，不宣称人工签收或未见留出。
 
-[2026-10-15 远端文件审计与审批闭环](docs/integrations/native-audit-20261015/ENGINEERING.md)：两产品各一次真实合成开发文件任务通过；该历史记录之后，内部数据已完成上述 AI 审核，公开许可仍未授予，未产生正式比较成绩。
+[2026-10-15 远端文件审计与审批闭环](docs/integrations/native-audit-20261015/ENGINEERING.md)：两产品各一次真实合成开发文件任务通过；该历史记录之后，内部数据已完成上述 AI 审核，当前公开许可已由维护者明确授权为 CC BY 4.0，未产生正式比较成绩。

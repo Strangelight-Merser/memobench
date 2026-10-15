@@ -97,7 +97,7 @@ python3 -m unittest discover tests
 
 独立审核接受 59 故事，拒收青禾 1 个故事（gold 禁用路径约束不完整），不是因为被测系统答错而筛题。12 个 dev 故事、47 个内部 test 故事，每故事两改写；内部 test 共 94 variants，不是 94 个独立故事。内容修复须新审核与新指纹，不静默修改原件。
 
-内部 usage-approval 只证明用户授权范围、来源核查与 internal_evaluation_only，不是数据公开许可证，也不继承代码许可证。公开再分发许可仍未授予；维护者以后需要公开分发时再决定许可，不阻塞当前已授权的内部评测。详情见 docs/integrations/ai-review-20261015/ENGINEERING.md。
+内部 usage-approval 只证明用户授权范围、来源核查与 internal_evaluation_only，不是数据公开许可证，也不继承代码许可证。维护者现已明确授权自建合成数据按 [CC BY 4.0](../data/LICENSE.md) 公开，当前授权及原始文件摘要见 [PUBLIC_LICENSE.json](../data/PUBLIC_LICENSE.json)。历史 usage-approval 保持原样，其内部用途字段不再限制本次公开许可。详情见 docs/integrations/ai-review-20261015/ENGINEERING.md。
 
 仓库现有忽略规则覆盖 `data/`。本卡不改 `.gitignore`；集成者纳入版本控制时需显式强制添加 `data/v0.2/`，否则固定数据不会随仓库交付。
 

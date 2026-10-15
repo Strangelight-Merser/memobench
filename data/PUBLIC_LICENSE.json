@@ -1,0 +1,51 @@
+{
+  "schema_version": "public-data-license-1",
+  "license_id": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "MemoBench contributors",
+  "authorization": {
+    "source": "direct_user_message_current_thread",
+    "authority": "project_maintainer_user",
+    "statement": "那就公开，数据用 CC BY 4.0。把项目里这些自设限制和说明改一致，原始证据保留，双包解压的问题也一起修好，尽快弄成能提交的版本，别再让我填表。"
+  },
+  "datasets": {
+    "data/v0.2": {
+      "candidates.jsonl": "16e4881a275a62dbb75814bcb531d21d872a57658a7f8f3d789fde64fb371763",
+      "dev.jsonl": "ec2936cee80a8a4cbfc61ebc915e6f482b596ff3dafc59b433a9101592f05efa",
+      "generation-record.md": "21e80dfaeef0216c5b0f8679c322e559e8cc22b1f34cc7c9426c347bd3674b16",
+      "manifest.json": "6923f27955701afaabc9b90c3ce4db827fc6adf4297c2510606a0ebea9fc8f04",
+      "paired-2048.jsonl": "5433c80c921b3d36c18958125645a3bf9e506582e58c452be25135f88b95d5ef",
+      "paired-32768.jsonl": "5d6d4f69c36abda2390a37f066c49d37d5d036f600b27ced069273b07401d835",
+      "paired-8192.jsonl": "a0b932d1935c6f49cb482a0d5aeb32641933488f1c956172d17a9fdd5be366f5",
+      "public.jsonl": "4a3a308ae83786509638e19212d1c330c68b52d80448d0f2eb9034929571dfb8",
+      "rejections.jsonl": "7e1041fa5e45cb4fc162897576081caf043301b038d08d1ff0ce72ffdb19216b",
+      "review-checklist.md": "752a887955acdbd028c4e8f5de72ecba21245e5887d21d655f093c27eae33375",
+      "review.jsonl": "6f9f4c4efdaad5faa91a734859c3e0781ab456d106d42dc5d9c2b9cc9747d480",
+      "sources.jsonl": "2d5c046750fc9f82abbb6788a671c8c14bc16399de27cd573432d8b537118926",
+      "test.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "verification.md": "df0d8c0325d9166b191455660471e09a83f02c4d1f92d3bd9ca343d6b6fbdce0"
+    },
+    "data/v0.2-ai-reviewed": {
+      "README.md": "a35155f2a96d69585d2b96a473ee1181fa1f877f849ebbf5f4c157ad25794146",
+      "approval.json": "9077fdc8904098afff471624c6a6f936822dcd22abbfe90513ff6b866ec6ecea",
+      "candidates.jsonl": "16e4881a275a62dbb75814bcb531d21d872a57658a7f8f3d789fde64fb371763",
+      "dev.jsonl": "ec2936cee80a8a4cbfc61ebc915e6f482b596ff3dafc59b433a9101592f05efa",
+      "evidence/251fba344c334a26928365bfd8355a5bf4bc39ef1e4b4d3eece281d6008d102f.json": "251fba344c334a26928365bfd8355a5bf4bc39ef1e4b4d3eece281d6008d102f",
+      "evidence/cf4c03d7d8c869f4f9dc286cb6334287ad996c14c0fe567c04aee6291c1b6505.json": "cf4c03d7d8c869f4f9dc286cb6334287ad996c14c0fe567c04aee6291c1b6505",
+      "evidence/f6d0107c28a20ba94f880d17b2605666ff2bd8ecd8e9c50e3caf37b44aa35baf.json": "f6d0107c28a20ba94f880d17b2605666ff2bd8ecd8e9c50e3caf37b44aa35baf",
+      "generation-record.md": "21e80dfaeef0216c5b0f8679c322e559e8cc22b1f34cc7c9426c347bd3674b16",
+      "manifest.json": "dfb1ab2839597d72966216630ee5e4eac8a3342064441d10f8cc43d98c5f15f1",
+      "paired-2048.jsonl": "5433c80c921b3d36c18958125645a3bf9e506582e58c452be25135f88b95d5ef",
+      "paired-32768.jsonl": "5d6d4f69c36abda2390a37f066c49d37d5d036f600b27ced069273b07401d835",
+      "paired-8192.jsonl": "a0b932d1935c6f49cb482a0d5aeb32641933488f1c956172d17a9fdd5be366f5",
+      "public.jsonl": "4a3a308ae83786509638e19212d1c330c68b52d80448d0f2eb9034929571dfb8",
+      "rejections.jsonl": "7e1041fa5e45cb4fc162897576081caf043301b038d08d1ff0ce72ffdb19216b",
+      "review-checklist.md": "752a887955acdbd028c4e8f5de72ecba21245e5887d21d655f093c27eae33375",
+      "review.jsonl": "6f9f4c4efdaad5faa91a734859c3e0781ab456d106d42dc5d9c2b9cc9747d480",
+      "sources.jsonl": "2d5c046750fc9f82abbb6788a671c8c14bc16399de27cd573432d8b537118926",
+      "test.jsonl": "ca09cae20c7474450f1f7a3a822c249cdaa2093f82c06b32f570a22f33e8f8cd",
+      "usage-approval.json": "17e9e2cac835be26f2e5b86a01f928a3bd0e1b63ccc1012a252c8b42aadcedae",
+      "verification.md": "df0d8c0325d9166b191455660471e09a83f02c4d1f92d3bd9ca343d6b6fbdce0"
+    }
+  }
+}
