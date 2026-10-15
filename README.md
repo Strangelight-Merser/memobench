@@ -24,6 +24,8 @@ python3 -m unittest discover tests
 python3 tools/check_release.py --root .
 ```
 
+`offline.json` 是不能执行文件工具的 echo fixture：当前生成 24 个 case 的报告，4 个文件任务明确拒绝，退出码为 2（`completed_with_errors`），不是程序崩溃，也不是文件任务通过。CI 精确检查这 4 个拒绝原因；其他错误仍失败。
+
 对原始 `data/v0.2` 的 validate 退出 0 仅表示结构与门禁验证通过，仍保留 `pending_review`。以下为历史离线 fixture 验证口径。v2 运行保留 `manifest.json`、`hashes.json`、`run.json`、逐 case 记录、`summary.json` 和静态 HTML。echo fixture 不理解自然语言；分数不能解释为记忆模型性能。本次实跑为12故事、24个case，评分均待复核。报告还列出卡2/卡5文件动作、卡3/卡5遗忘政策和审核状态的接口差异，文件任务未验收；仅卡7负责后续集成，详见 [实际报告](docs/submission/evidence/offline/report.html)。
 
 ## 显式在线路径

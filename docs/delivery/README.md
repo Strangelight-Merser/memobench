@@ -21,7 +21,7 @@ python3 -m memobench.cli_v2 run --config configs/experiments/offline.json --out 
 python3 tools/check_release.py --root .
 ```
 
-输出路径必须尚不存在。离线验证不调用模型。release 的工程检查通过与正式公开发布 ready 分别报告：数据公开许可、语义裁判校准、远端 CI 与 PDF/视频尚未完成，不将其静默视为通过。
+输出路径必须尚不存在。离线验证不调用模型。`offline.json` 会生成 24 个 case 的报告，并因 fixture 不支持真实文件工具而明确拒绝 4 个任务，退出码为 2；CI 检查这些精确拒绝原因，不将其当作任务通过。release 的工程检查通过与正式公开发布 ready 分别报告：数据公开许可、语义裁判校准、远端 CI 与 PDF/视频尚未完成，不将其静默视为通过。
 
 ## 便携化与历史真实验收
 
