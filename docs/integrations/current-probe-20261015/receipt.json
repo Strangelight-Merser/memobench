@@ -1,0 +1,104 @@
+{
+  "products": {
+    "openclaw": {
+      "status": "passed",
+      "checks": {
+        "same_session": true,
+        "cross_session": true,
+        "cross_case_no_canary": true,
+        "cross_case_unknown": true,
+        "cleanup": true,
+        "file_task": true
+      },
+      "observe": 1,
+      "query": 4,
+      "cleanup_receipts": [
+        {
+          "operation_id": "df8704c8ca4a41d1ae9efa26ad31c2a5",
+          "status": "ready",
+          "usage": null
+        },
+        {
+          "operation_id": "426259b37b214d06aef08e6aa8ba066e",
+          "status": "ready",
+          "usage": null
+        }
+      ],
+      "started_at": "2026-10-15T05:52:37.057174+00:00",
+      "finished_at": "2026-10-15T05:53:20.116155+00:00",
+      "probe_sha256": "24ba02c094ba56101aef8158a9d544f0c8024ef68d23e29d7db8c6580c0c900f",
+      "exports": [
+        {
+          "namespace": "37a2bed7e34e447fb380841a0768e459",
+          "path": "37a2bed7e34e447fb380841a0768e459.json",
+          "sha256": "2885f4f0ed39a221d6b90cc833863ac01743217ce5ad289b84e463d7aca6226e"
+        },
+        {
+          "namespace": "7b681ce747744adeaec7e699cac72e53",
+          "path": "7b681ce747744adeaec7e699cac72e53.json",
+          "sha256": "0a4ca4a53f8ad9afdaed6c2aaedb7fc0f5e7cd889892f24282b7a94c924af121"
+        }
+      ]
+    },
+    "kylin": {
+      "status": "passed",
+      "checks": {
+        "same_session": true,
+        "cross_session": true,
+        "cross_case_no_canary": true,
+        "cross_case_unknown": true,
+        "profile_cross_session": true,
+        "cleanup": true,
+        "file_task": true,
+        "profile_turns_completed": true,
+        "profile_persisted": true,
+        "profile_prompt_injected": true
+      },
+      "observe": 2,
+      "query": 5,
+      "cleanup_receipts": [
+        {
+          "operation_id": "5735968c3da741f8b281eba1574217fd",
+          "status": "ready",
+          "usage": null
+        },
+        {
+          "operation_id": "6f379f4edace4ae486bc2f128eb9ad49",
+          "status": "ready",
+          "usage": null
+        },
+        {
+          "operation_id": "65c90f66f78a418f8de388b83e2646ba",
+          "status": "ready",
+          "usage": null
+        }
+      ],
+      "started_at": "2026-10-15T05:52:43.672864+00:00",
+      "finished_at": "2026-10-15T05:54:46.766528+00:00",
+      "probe_sha256": "0005fc38a290dad48404eada0a46f164d9cf0943509f3bfef9ebc2788fa9f681",
+      "exports": [
+        {
+          "namespace": "e082d7d1e2284f5b9cb55a49204dd5fe",
+          "path": "e082d7d1e2284f5b9cb55a49204dd5fe.json",
+          "sha256": "66a9388e5fc18deee7006e5f76879a2214fcb5d1421922270198c07388b48dd9"
+        },
+        {
+          "namespace": "a6b94745338149ca8df7aa6fa59da072",
+          "path": "a6b94745338149ca8df7aa6fa59da072.json",
+          "sha256": "154637181ffcd766482f3be1ccf85b5c62c61d4a9d234a6a031f4b74b8398790"
+        },
+        {
+          "namespace": "633f648d20df4881967d9dcec01f8ed4",
+          "path": "633f648d20df4881967d9dcec01f8ed4.json",
+          "sha256": "14cc2ac3045e05d5c00003f70bca7e114e25bcc9bc31f1805ddc3ca3f611f85d"
+        }
+      ]
+    }
+  },
+  "preparation_status": "ready_for_scope_and_budget_review",
+  "blockers": [],
+  "model_calls_in_probe": 12,
+  "full_plan_executed": false,
+  "provider_requests": null,
+  "cost": null
+}

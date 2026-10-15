@@ -1,0 +1,15 @@
+test_audit_failure_preserves_native_prediction_and_blocks_task (test_remote_artifacts_v2.BridgeAuditFailureTests.test_audit_failure_preserves_native_prediction_and_blocks_task) ... ok
+test_deleted_baseline_is_not_silent_success (test_remote_artifacts_v2.RemoteArtifactTests.test_deleted_baseline_is_not_silent_success) ... ok
+test_duplicate_reordered_and_wrong_tool_results_fail (test_remote_artifacts_v2.RemoteArtifactTests.test_duplicate_reordered_and_wrong_tool_results_fail) ... ok
+test_forbidden_path_even_when_native_write_same_bytes (test_remote_artifacts_v2.RemoteArtifactTests.test_forbidden_path_even_when_native_write_same_bytes) ... ok
+test_missing_result_and_old_session_cannot_support_write (test_remote_artifacts_v2.RemoteArtifactTests.test_missing_result_and_old_session_cannot_support_write) ... ok
+test_parent_symlink_and_deletion_unsupported (test_remote_artifacts_v2.RemoteArtifactTests.test_parent_symlink_and_deletion_unsupported) ... ok
+test_real_bytes_and_current_native_trace (test_remote_artifacts_v2.RemoteArtifactTests.test_real_bytes_and_current_native_trace) ... ok
+test_tampered_bytes_scope_missing_trace (test_remote_artifacts_v2.RemoteArtifactTests.test_tampered_bytes_scope_missing_trace) ... ok
+test_transcript_prefix_replaced (test_remote_artifacts_v2.RemoteArtifactTests.test_transcript_prefix_replaced) ... ok
+test_workspace_links_rejected (test_remote_artifacts_v2.RemoteArtifactTests.test_workspace_links_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.058s
+
+OK

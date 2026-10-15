@@ -1,0 +1,10 @@
+{
+  "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:07:20) [Clang 20.1.8 ]",
+  "platform": "macOS-15.6-arm64-arm-64bit-Mach-O",
+  "commands": [
+    "python3 -m unittest discover -s tests -p test_native_preparation_v2.py -v",
+    "python3 -m unittest discover -s tests -p test_cli_v2.py -v",
+    "python3 -m unittest discover -s tests -v",
+    "python3 tools/prepare_native_run.py --ssh-config /Users/huaiyi/Documents/oschina/.local-vm/ssh_config --out docs/integrations/native-preparation-20261015/current-blocked-plan"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": "native-run-recipe-1",
+  "dataset": "data/v0.2-ai-reviewed",
+  "split": "test",
+  "products": [
+    "kylin",
+    "openclaw"
+  ],
+  "purpose": "internal_evaluation",
+  "case_selection": [
+    {
+      "story_id": "e6a7a9059f826b02f8edd920",
+      "variant_id": "d012611aa89b90909fcea7b9"
+    }
+  ]
+}

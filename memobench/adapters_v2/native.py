@@ -45,6 +45,7 @@ class NativeAdapter:
         self._home = None
         self._homes = []
         self.cleanup_receipts = []
+        self.evidence_index = []
         self._closed = False
         self._uncertain = False
         self._lock = threading.Lock()
@@ -156,6 +157,63 @@ class NativeAdapter:
         _check(type(probe) is Probe, "query.type")
         return self._call("query", operation_id, adapter_payload(probe),
                           lambda: self._scope(probe), lambda: None)
+
+    def task_checkpoint(self, probe, operation_id):
+        """Evaluator-only local artifact handle; never sent to the product with gold."""
+        if not hasattr(self.transport, 'task_checkpoint'):
+            return None
+        self._scope(probe)
+        checkpoint = self.transport.task_checkpoint(operation_id, adapter_payload(probe), self._home)
+        if hasattr(self.transport, 'task_evidence'):
+            from ..native_artifacts_v2 import unpack
+            expected = {'run': self.run_directory.name, 'namespace': self.transport.namespaces[str(self._home)],
+                        'episode_id': probe.episode_id, 'variant_id': probe.variant_id,
+                        'session_id': probe.session_id, 'operation_id': operation_id,
+                        'bridge_sha256': self.transport.bridge_sha256}
+            _check(checkpoint['binding'] == expected, 'remote artifact scope mismatch')
+            unpack(checkpoint['baseline'])
+            return checkpoint
+        from ..sandbox_v2 import FileSandbox
+        sandbox = checkpoint['sandbox']
+        _check(type(sandbox) is FileSandbox, 'untrusted artifact handle')
+        _check(sandbox.root.resolve().is_relative_to(self._home.resolve()), 'artifact home mismatch')
+        binding = {'run': self.run_directory.name, 'namespace': self._home.name, 'operation_id': operation_id, 'session_id': probe.session_id,
+                   'episode_id': probe.episode_id, 'variant_id': probe.variant_id}
+        _check(checkpoint['binding'] == binding, 'artifact scope mismatch')
+        return {'sandbox': sandbox, 'binding': binding, 'baseline': sandbox.snapshot(),
+                'audit_since': len(sandbox.audit)}
+
+    def verify_task(self, gold, prediction, checkpoint, operation_id):
+        if hasattr(self.transport, 'task_evidence'):
+            from ..native_artifacts_v2 import verify_remote_task
+            payload = {'episode_id': prediction.episode_id, 'variant_id': prediction.variant_id,
+                       'session_id': prediction.session_id}
+            evidence = self.transport.task_evidence(operation_id, payload, self._home)
+            record = {'binding': checkpoint['binding'], 'checkpoint': checkpoint, 'evidence': evidence}
+            self.evidence_index.append(record)
+            try:
+                checked = verify_remote_task(gold, prediction, checkpoint, evidence)
+            except Exception as exc:
+                record['verification_error_type'] = type(exc).__name__
+                raise
+            record['verification'] = checked
+            return checked
+        from ..sandbox_v2 import verify_task
+        _check(checkpoint['binding']['operation_id'] == operation_id, 'artifact operation mismatch')
+        # A handle exists only for an evaluator-controlled local tool transport.
+        from dataclasses import replace
+        checks = [verify_task(checkpoint['sandbox'], replace(gold, expected_actions=[action]), prediction,
+                              baseline=checkpoint['baseline'], audit_since=checkpoint['audit_since'])
+                  for action in gold.expected_actions]
+        checked = {'status': 'passed' if all(c['status'] == 'passed' for c in checks) else 'failed',
+                   'checks': checks, 'faults': sorted({f for c in checks for f in c['faults']}),
+                   'artifacts': checkpoint['sandbox'].snapshot()}
+        checked['binding'] = checkpoint['binding']
+        self.evidence_index.append({'binding': checkpoint['binding'],
+                                    'baseline': checkpoint['baseline'],
+                                    'audit': checkpoint['sandbox'].audit[checkpoint['audit_since']:],
+                                    'verification': checked})
+        return checked
 
     def close(self):
         with self._lock:

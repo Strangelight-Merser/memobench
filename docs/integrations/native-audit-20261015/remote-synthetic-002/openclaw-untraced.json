@@ -1,0 +1,332 @@
+{
+  "product": "openclaw",
+  "synthetic_transport_audit": true,
+  "untraced_extra": true,
+  "result": {
+    "status": "failed",
+    "error": {
+      "stage": "artifact_evidence",
+      "type": "RuntimeError"
+    },
+    "cleanup_error": null,
+    "blocked_write": null,
+    "cleanup_receipts": [
+      {
+        "operation_id": "1c743ac9a0e3440293882c95bb0f7085",
+        "status": "ready",
+        "usage": null
+      }
+    ],
+    "operation_evidence": [
+      {
+        "binding": {
+          "run": "memobench-native-k20ru_m7",
+          "namespace": "524f43c9e42f4446b4d14a3b4d018910",
+          "episode_id": "synthetic-audit",
+          "variant_id": "v",
+          "session_id": "s2",
+          "operation_id": "openclaw-untraced:query:p",
+          "bridge_sha256": "69c3a6169ef73e279ebc35d5e7b0e437ed0257d5d59e3fc958afb5ab7d102603"
+        },
+        "checkpoint": {
+          "binding": {
+            "run": "memobench-native-k20ru_m7",
+            "namespace": "524f43c9e42f4446b4d14a3b4d018910",
+            "episode_id": "synthetic-audit",
+            "variant_id": "v",
+            "session_id": "s2",
+            "operation_id": "openclaw-untraced:query:p",
+            "bridge_sha256": "69c3a6169ef73e279ebc35d5e7b0e437ed0257d5d59e3fc958afb5ab7d102603"
+          },
+          "baseline": {},
+          "transcript": {
+            "count": 0,
+            "prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          }
+        },
+        "evidence": {
+          "binding": {
+            "run": "memobench-native-k20ru_m7",
+            "namespace": "524f43c9e42f4446b4d14a3b4d018910",
+            "episode_id": "synthetic-audit",
+            "variant_id": "v",
+            "session_id": "s2",
+            "operation_id": "openclaw-untraced:query:p",
+            "bridge_sha256": "69c3a6169ef73e279ebc35d5e7b0e437ed0257d5d59e3fc958afb5ab7d102603"
+          },
+          "baseline": {},
+          "after": {
+            "extra.txt": {
+              "sha256": "c63175fe6912d7b43984d27aa209ccc7011edb4eeab938a5ef91949c8cb7c3e8",
+              "size": 24,
+              "content_base64": "dW50cmFjZWQgc3ludGhldGljIHdyaXRl"
+            },
+            "reports/synthetic.txt": {
+              "sha256": "e315d2370075b5c022a1b552774b62ed847aeda2efde7e6fb476fae748e52856",
+              "size": 15,
+              "content_base64": "c3ludGhldGljIGhlbGxv"
+            }
+          },
+          "complete": true,
+          "audit": {
+            "product_session": "synthetic-9f477faaa21945e3a6eb23ac5f4734a6",
+            "checkpoint": {
+              "count": 0,
+              "prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            "terminal": {
+              "count": 2,
+              "prefix_sha256": "e140ec33ce2334d3a4355765580c2fd6db418cf9fad4288751586df1ca44e3d3"
+            },
+            "events": [
+              {
+                "call_id": "c446787c32f54d6c927debcb99b22121",
+                "tool": "write",
+                "path": "reports/synthetic.txt",
+                "operation": "write",
+                "arguments": {
+                  "path": "reports/synthetic.txt",
+                  "content": "synthetic hello"
+                },
+                "native_call": {
+                  "source": "agents/main/sessions/sessions.sqlite",
+                  "position": 1,
+                  "session_id": "synthetic-9f477faaa21945e3a6eb23ac5f4734a6",
+                  "message": {
+                    "role": "assistant",
+                    "content": [
+                      {
+                        "type": "toolCall",
+                        "id": "c446787c32f54d6c927debcb99b22121",
+                        "name": "write",
+                        "arguments": {
+                          "path": "reports/synthetic.txt",
+                          "content": "synthetic hello"
+                        }
+                      }
+                    ]
+                  }
+                },
+                "native_result": {
+                  "source": "agents/main/sessions/sessions.sqlite",
+                  "position": 2,
+                  "session_id": "synthetic-9f477faaa21945e3a6eb23ac5f4734a6",
+                  "message": {
+                    "role": "toolResult",
+                    "toolCallId": "c446787c32f54d6c927debcb99b22121",
+                    "isError": false,
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "synthetic tool result"
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "complete": true
+          }
+        },
+        "verification": {
+          "status": "unsupported",
+          "checks": [
+            {
+              "status": "failed",
+              "faults": [
+                "unsupported_native_tool_execution"
+              ]
+            }
+          ],
+          "faults": [
+            "unsupported_native_tool_execution"
+          ],
+          "binding": {
+            "run": "memobench-native-k20ru_m7",
+            "namespace": "524f43c9e42f4446b4d14a3b4d018910",
+            "episode_id": "synthetic-audit",
+            "variant_id": "v",
+            "session_id": "s2",
+            "operation_id": "openclaw-untraced:query:p",
+            "bridge_sha256": "69c3a6169ef73e279ebc35d5e7b0e437ed0257d5d59e3fc958afb5ab7d102603"
+          },
+          "artifacts": {
+            "extra.txt": "c63175fe6912d7b43984d27aa209ccc7011edb4eeab938a5ef91949c8cb7c3e8",
+            "reports/synthetic.txt": "e315d2370075b5c022a1b552774b62ed847aeda2efde7e6fb476fae748e52856"
+          },
+          "deleted_paths": [],
+          "audit_coverage": "direct_file_tools_only; exec and render unsupported",
+          "source": "bridge_workspace_bytes_and_native_tool_trace"
+        }
+      }
+    ],
+    "results": [
+      {
+        "prediction": {
+          "episode_id": "synthetic-audit",
+          "variant_id": "v",
+          "session_id": "s2",
+          "probe_id": "p",
+          "status": "ok",
+          "text": "synthetic fixture answer",
+          "answered_at": "2026-10-15T05:06:19.398777+00:00",
+          "state": null,
+          "slots": null,
+          "retrieved_evidence": null,
+          "usage": null,
+          "file_actions": null
+        },
+        "execution": "offline",
+        "score": {
+          "probe_id": "p",
+          "status": "pending_review",
+          "source": "rules",
+          "metrics": {
+            "answer_correct": null,
+            "current_value_misuse": null,
+            "forgotten_disclosure": null,
+            "unknown_assertion": null,
+            "evidence_supported": null,
+            "task_completed": null
+          },
+          "eligible": {
+            "answer_correct": false,
+            "current_value_misuse": false,
+            "forgotten_disclosure": false,
+            "unknown_assertion": false,
+            "evidence_supported": false,
+            "task_completed": true
+          },
+          "errors": [],
+          "review_reason": "blocked: judge_transport_unavailable"
+        },
+        "raw_reader": null,
+        "task_status": "blocked: unsupported_native_tool_execution",
+        "task_verification": {
+          "status": "unsupported",
+          "checks": [
+            {
+              "status": "failed",
+              "faults": [
+                "unsupported_native_tool_execution"
+              ]
+            }
+          ],
+          "faults": [
+            "unsupported_native_tool_execution"
+          ],
+          "binding": {
+            "run": "memobench-native-k20ru_m7",
+            "namespace": "524f43c9e42f4446b4d14a3b4d018910",
+            "episode_id": "synthetic-audit",
+            "variant_id": "v",
+            "session_id": "s2",
+            "operation_id": "openclaw-untraced:query:p",
+            "bridge_sha256": "69c3a6169ef73e279ebc35d5e7b0e437ed0257d5d59e3fc958afb5ab7d102603"
+          },
+          "artifacts": {
+            "extra.txt": "c63175fe6912d7b43984d27aa209ccc7011edb4eeab938a5ef91949c8cb7c3e8",
+            "reports/synthetic.txt": "e315d2370075b5c022a1b552774b62ed847aeda2efde7e6fb476fae748e52856"
+          },
+          "deleted_paths": [],
+          "audit_coverage": "direct_file_tools_only; exec and render unsupported",
+          "source": "bridge_workspace_bytes_and_native_tool_trace"
+        },
+        "evidence_locations": []
+      }
+    ],
+    "events": [
+      {
+        "method": "reset_case",
+        "receipt": {
+          "operation_id": "openclaw-untraced:reset",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "begin_session",
+        "receipt": {
+          "operation_id": "openclaw-untraced:begin:s1",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "observe",
+        "receipt": {
+          "operation_id": "openclaw-untraced:observe:o1",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "end_session",
+        "receipt": {
+          "operation_id": "openclaw-untraced:end:s1",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "begin_session",
+        "receipt": {
+          "operation_id": "openclaw-untraced:begin:s2",
+          "status": "ready",
+          "usage": null
+        }
+      }
+    ],
+    "cost_records": [
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "offline",
+        "status": "ready",
+        "recorded_at": "2026-10-15T05:06:18.259260+00:00"
+      },
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "offline",
+        "status": "ready",
+        "recorded_at": "2026-10-15T05:06:18.388672+00:00"
+      },
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "offline",
+        "status": "ready",
+        "recorded_at": "2026-10-15T05:06:18.536195+00:00"
+      },
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "offline",
+        "status": "ready",
+        "recorded_at": "2026-10-15T05:06:18.664892+00:00"
+      },
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "offline",
+        "status": "ready",
+        "recorded_at": "2026-10-15T05:06:18.798904+00:00"
+      },
+      {
+        "stage": "read",
+        "usage": null,
+        "cost": null,
+        "execution": "offline",
+        "status": "ok",
+        "recorded_at": "2026-10-15T05:06:19.146290+00:00"
+      }
+    ],
+    "finished_at": "2026-10-15T05:06:19.430095+00:00"
+  }
+}

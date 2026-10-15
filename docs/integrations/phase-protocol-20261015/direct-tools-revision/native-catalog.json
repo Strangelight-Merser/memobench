@@ -1,0 +1,154 @@
+{
+  "model_calls": 0,
+  "tool_names": [
+    "read",
+    "edit",
+    "write",
+    "apply_patch",
+    "memory_search",
+    "memory_get"
+  ],
+  "compacted": false,
+  "tools_same_reference": true,
+  "tool_search_enabled": false,
+  "schemas": {
+    "read": {
+      "type": "object",
+      "required": [
+        "path"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "description": "File path; relative/absolute."
+        },
+        "offset": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Start line; 1-based."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max lines."
+        },
+        "cursor": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Character position within the start line; 0-based."
+        },
+        "optional": {
+          "type": "boolean",
+          "const": true,
+          "description": "Missing paths return structured not_found instead of failing."
+        }
+      }
+    },
+    "edit": {
+      "type": "object",
+      "required": [
+        "path",
+        "edits"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "description": "File path; relative/absolute."
+        },
+        "edits": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "oldText",
+              "newText"
+            ],
+            "properties": {
+              "oldText": {
+                "type": "string",
+                "description": "Exact original text; unique and non-overlapping in this call."
+              },
+              "newText": {
+                "type": "string",
+                "description": "Replacement text."
+              }
+            }
+          },
+          "description": "Targeted replacements against original file; no overlap/nesting. Merge nearby changes."
+        }
+      }
+    },
+    "write": {
+      "type": "object",
+      "required": [
+        "path",
+        "content"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "description": "File path; relative/absolute."
+        },
+        "content": {
+          "type": "string",
+          "description": "File content."
+        }
+      }
+    },
+    "memory_search": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string"
+        },
+        "maxResults": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "minScore": {
+          "type": "number"
+        },
+        "corpus": {
+          "type": "string",
+          "enum": [
+            "memory",
+            "wiki",
+            "all",
+            "sessions"
+          ]
+        }
+      },
+      "required": [
+        "query"
+      ],
+      "additionalProperties": false
+    },
+    "memory_get": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string"
+        },
+        "from": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "lines": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "corpus": {
+          "type": "string",
+          "enum": [
+            "memory",
+            "wiki",
+            "all"
+          ]
+        }
+      },
+      "required": [
+        "path"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

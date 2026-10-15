@@ -1,0 +1,26 @@
+{
+  "source": "Transcribed from live py-spy dump using authorized VM sudo; no locals or environment collected",
+  "guest_pid": 21944,
+  "python": "3.12.2",
+  "thread": "MainThread",
+  "stack_top_to_bottom": [
+    "ssl.read",
+    "httpcore._backends.sync.read",
+    "httpcore._sync.http11._receive_response_body",
+    "httpx.Response.iter_raw",
+    "httpx.Response.iter_bytes",
+    "httpx.Response.read",
+    "httpx.Client.send",
+    "openai._base_client.request",
+    "openai.chat.completions.create",
+    "agent.user_profile.extractors._request_chat_completions",
+    "agent.user_profile.service.observe",
+    "agent.user_profile_runtime.observe",
+    "agent.user_profile_runtime.commit_user_profile_session",
+    "cli._run_cleanup"
+  ],
+  "observed": "Blocked while receiving the non-streaming HTTP response body after native main-turn completion. Ordinary timeout=60 did not end the operation before the 300-second process deadline.",
+  "inference": "Consistent with documented DeepSeek keepalive empty lines; this stack sample alone does not capture the actual response bytes.",
+  "official_source": "https://api-docs.deepseek.com/quick_start/rate_limit/",
+  "regression": "SDK plus HTTP mock transport reproduces endless keepalive chunks; the patched reader raises at cumulative deadline and closes the response."
+}

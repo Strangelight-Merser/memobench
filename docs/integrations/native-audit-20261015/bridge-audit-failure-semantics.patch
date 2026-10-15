@@ -1,0 +1,24 @@
+--- real-query-version
++++ final-deploy-version
+@@ -414,10 +414,17 @@
+             evidence['files_before'] = files_before
+             evidence['files_after'] = inventory(home)
+             if checkpoint:
+-                evidence['artifacts'] = {'binding': checkpoint['binding'], 'baseline': checkpoint['baseline'],
+-                    'after': workspace_snapshot(home), 'complete': evidence['ok'],
+-                    'audit': native_file_audit(native_records(home, product), checkpoint['transcript'],
+-                        session.get('product_session')) if evidence['ok'] else None}
++                artifacts = {'binding': checkpoint['binding'], 'baseline': checkpoint['baseline'],
++                             'after': None, 'complete': False, 'audit': None}
++                try:
++                    artifacts['after'] = workspace_snapshot(home)
++                    if evidence['ok']:
++                        artifacts['audit'] = native_file_audit(native_records(home, product), checkpoint['transcript'],
++                                                              session.get('product_session'))
++                        artifacts['complete'] = True
++                except (ValueError, OSError, sqlite3.Error, KeyError, TypeError) as exc:
++                    artifacts['audit_error_type'] = type(exc).__name__
++                evidence['artifacts'] = artifacts
+             if not evidence['ok']:
+                 raise RuntimeError('product call failed; see operation evidence')
+             if method == 'query':

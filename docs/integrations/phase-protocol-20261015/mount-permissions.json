@@ -1,0 +1,172 @@
+{
+  "bridge_sha256": "f902baf78d332e13160234c624d2714a4786e836d5e5a635a73465fd04e3a0cd",
+  "model_calls": 0,
+  "records": [
+    {
+      "product": "kylin",
+      "phase": "observe",
+      "results": {
+        "relative_task_write": {
+          "succeeded": false,
+          "errno": 30,
+          "errno_name": "EROFS"
+        },
+        "absolute_task_write": {
+          "succeeded": false,
+          "errno": 30,
+          "errno_name": "EROFS"
+        },
+        "parent_task_write": {
+          "succeeded": false,
+          "errno": 30,
+          "errno_name": "EROFS"
+        },
+        "symlink_task_write": {
+          "succeeded": false,
+          "errno": 30,
+          "errno_name": "EROFS"
+        },
+        "rename_task_mount": {
+          "succeeded": false,
+          "errno": 16,
+          "errno_name": "EBUSY"
+        },
+        "replace_task_mount": {
+          "succeeded": false,
+          "errno": 16,
+          "errno_name": "EBUSY"
+        },
+        "phase_policy_write": {
+          "succeeded": true,
+          "errno": null
+        },
+        "native_memory_write": {
+          "succeeded": true,
+          "errno": null
+        },
+        "native_state_write": {
+          "succeeded": true,
+          "errno": null
+        }
+      }
+    },
+    {
+      "product": "kylin",
+      "phase": "query",
+      "results": {
+        "relative_task_write": {
+          "succeeded": true,
+          "errno": null
+        },
+        "absolute_task_write": {
+          "succeeded": true,
+          "errno": null
+        },
+        "parent_task_write": {
+          "succeeded": true,
+          "errno": null
+        },
+        "symlink_task_write": {
+          "succeeded": true,
+          "errno": null
+        },
+        "phase_policy_write": {
+          "succeeded": true,
+          "errno": null
+        },
+        "native_memory_write": {
+          "succeeded": true,
+          "errno": null
+        },
+        "native_state_write": {
+          "succeeded": true,
+          "errno": null
+        }
+      }
+    },
+    {
+      "product": "openclaw",
+      "phase": "observe",
+      "results": {
+        "relative_task_write": {
+          "succeeded": false,
+          "errno": 30,
+          "errno_name": "EROFS"
+        },
+        "absolute_task_write": {
+          "succeeded": false,
+          "errno": 30,
+          "errno_name": "EROFS"
+        },
+        "parent_task_write": {
+          "succeeded": false,
+          "errno": 30,
+          "errno_name": "EROFS"
+        },
+        "symlink_task_write": {
+          "succeeded": false,
+          "errno": 30,
+          "errno_name": "EROFS"
+        },
+        "rename_task_mount": {
+          "succeeded": false,
+          "errno": 16,
+          "errno_name": "EBUSY"
+        },
+        "replace_task_mount": {
+          "succeeded": false,
+          "errno": 16,
+          "errno_name": "EBUSY"
+        },
+        "phase_policy_write": {
+          "succeeded": false,
+          "errno": 30,
+          "errno_name": "EROFS"
+        },
+        "native_memory_write": {
+          "succeeded": true,
+          "errno": null
+        },
+        "native_state_write": {
+          "succeeded": true,
+          "errno": null
+        }
+      }
+    },
+    {
+      "product": "openclaw",
+      "phase": "query",
+      "results": {
+        "relative_task_write": {
+          "succeeded": true,
+          "errno": null
+        },
+        "absolute_task_write": {
+          "succeeded": true,
+          "errno": null
+        },
+        "parent_task_write": {
+          "succeeded": true,
+          "errno": null
+        },
+        "symlink_task_write": {
+          "succeeded": true,
+          "errno": null
+        },
+        "phase_policy_write": {
+          "succeeded": false,
+          "errno": 30,
+          "errno_name": "EROFS"
+        },
+        "native_memory_write": {
+          "succeeded": true,
+          "errno": null
+        },
+        "native_state_write": {
+          "succeeded": true,
+          "errno": null
+        }
+      }
+    }
+  ]
+}

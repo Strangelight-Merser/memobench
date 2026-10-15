@@ -1,0 +1,113 @@
+{
+  "kylin": {
+    "probe_status": "passed",
+    "probe_checks": {
+      "same_session": true,
+      "cross_session": true,
+      "cross_case_no_canary": true,
+      "cross_case_unknown": true,
+      "profile_cross_session": true,
+      "cleanup": true,
+      "file_task": true,
+      "profile_turns_completed": true,
+      "profile_persisted": true,
+      "profile_prompt_injected": true
+    },
+    "file_query_status": "ok",
+    "file_task_status": "passed",
+    "file_error": null,
+    "cleanup_receipts": [
+      {
+        "operation_id": "d018cf61afbc4b67af9bdf939e48a5d4",
+        "status": "ready",
+        "usage": null
+      }
+    ],
+    "closed": true,
+    "audit_complete": true,
+    "audit_events": [
+      {
+        "tool": "read_file",
+        "path": ".",
+        "succeeded": false
+      },
+      {
+        "tool": "write_file",
+        "path": "reports/e7af974dd1214aedb6ff210226aafc4a.txt",
+        "succeeded": true
+      },
+      {
+        "tool": "read_file",
+        "path": "reports/e7af974dd1214aedb6ff210226aafc4a.txt",
+        "succeeded": true
+      }
+    ]
+  },
+  "openclaw": {
+    "probe_status": "passed",
+    "probe_checks": {
+      "same_session": true,
+      "cross_session": true,
+      "cross_case_no_canary": true,
+      "cross_case_unknown": true,
+      "cleanup": true,
+      "file_task": true
+    },
+    "file_query_status": "ok",
+    "file_task_status": "passed",
+    "file_error": null,
+    "cleanup_receipts": [
+      {
+        "operation_id": "41fc7b684d2243dfad377fb603a843f1",
+        "status": "ready",
+        "usage": null
+      }
+    ],
+    "closed": true,
+    "audit_complete": true,
+    "audit_events": [
+      {
+        "tool": "read",
+        "path": ".",
+        "succeeded": false
+      },
+      {
+        "tool": "write",
+        "path": "reports/6e3f61ce089e4bfc8943e6a877a76c38.txt",
+        "succeeded": true
+      },
+      {
+        "tool": "read",
+        "path": "reports/6e3f61ce089e4bfc8943e6a877a76c38.txt",
+        "succeeded": true
+      }
+    ]
+  },
+  "files_sha256": {
+    "current-plan/kylin.json": "c3b22b688a269fe77fe01a59d86f764e3f38d2bf4185673b52691c1b6ec04b68",
+    "current-plan/openclaw.json": "d4248cd5c025cf582f7cdcaa8ac14a60fc1c78e49cd0687708ca8c73e7a37520",
+    "current-plan/plan.json": "86f1cd219de98d6252b5b8afb4019038390bff5f9037ff63a93fd68edb03caca",
+    "deployment.json": "e3b1c378c95617701ceb646066dac74e13598658879809bd83335d9d7fc37332",
+    "kylin/24dc8f5e402f46a093963e6cff5358a1.json": "00781013458dfc3b73ac028bb2a57927aabb466425cf69bc88a695f9d4969d30",
+    "kylin/4d0f7bf7b003437395b29f365a8952af.json": "84785ea8c7e5a0888ac0f4f0b47fe99fdcaea5cc2a2925b81d07b83c930d92a8",
+    "kylin/89abfbdc868a490ab20d1f89fd44736d.json": "84e538f011df57354d746cac5b4d71a509e170dbe45a2acf0a0ccd3bff2acf8c",
+    "kylin/probe.json": "066350e64aa35c10a28fd7c3190608b74088bb5186bf9699f25dfde96d39dc77",
+    "kylin-command.log": "1bc9c0a7df5af481bef195b327c27c8f954d192683f9d2cadd1b1dd7fe5414d6",
+    "kylin-file-command.log": "652ec62d0254f0ee710352293190e76a2a671f0b5052baab0a63497345202364",
+    "kylin-file-raw-d0cce4f288e54a1eb4b7be1d7f8c50f1.json": "a9c9fb3925b6e92cba7169533623ac05918f2e950108f56c16dcc16859512124",
+    "kylin-file-regression.json": "9df8e6acc14169a0c42c13a3f26f4d63447b9a77a9b41eef2baa74ff58eecd41",
+    "openclaw/1a4db35e0dd94dc59fe35abb4ea8a8e9.json": "2c2553cd3c53da66ab9a05c125a3d2809fc6ea359362cb97f4fd5d83c78dbd92",
+    "openclaw/6a80854f53874b37b830f80d4415221b.json": "a87dbd1b004ea13a01c67babe201c4a71aea41122141f5690ac4ba2fead1d56e",
+    "openclaw/probe.json": "b78d4774b1339f232da799df8d1a20beb9c7b20cf1f66b08d09dc3459a9f377a",
+    "openclaw-command.log": "1b82e310751a64a89893518abf229fc354359e646e5c4ed5d15a47945b4c8e59",
+    "openclaw-file-command.log": "40c4a94caa314642e3a51061e9b3dbb8384a59ec85ced0cae8dc63018edb78eb",
+    "openclaw-file-raw-2399b7ce4b0048209330e31f5b69fdf2.json": "37766599db9f92c68a54fadeb944ef465dbcf6a4f01948d7760aabd50f2d4f72",
+    "openclaw-file-regression.json": "60a3e296e0040f85db996fe4cad80de073a0c4d44dcd010e7668078ff1a2bc86",
+    "prepare.log": "86f1cd219de98d6252b5b8afb4019038390bff5f9037ff63a93fd68edb03caca",
+    "run-file-regression.py": "b45300c076c9bafdc4cfa7fb20536fded6808be1f1bd5dc3b5711a654ea90463",
+    "scope.json": "5fd52cee0ca13aa1ac15dbdaeacf016662e8534acbfa20dec969dae217858b53"
+  },
+  "product_calls": 14,
+  "provider_requests": null,
+  "cost": null
+}

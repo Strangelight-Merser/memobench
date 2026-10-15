@@ -1,0 +1,502 @@
+{
+  "fixture": true,
+  "execution": "offline",
+  "summary": {
+    "mode": "native_agent",
+    "partitions": {
+      "offline": {
+        "statistics": {
+          "execution": "offline",
+          "n_story": 1,
+          "n_query": 1,
+          "n_repeat": 1,
+          "n_repeat_planned": 1,
+          "n_expected": 1,
+          "n_received": 1,
+          "n_replay": 0,
+          "missing": 0,
+          "unscored": 0,
+          "ok": 1,
+          "timeout": 0,
+          "error": 0,
+          "unsupported": 0,
+          "timeout_rate": 0.0,
+          "error_rate": 0.0,
+          "micro_mean": 0.0,
+          "story_macro_mean": 0.0,
+          "denominator": 1,
+          "capabilities": {
+            "long_term_retention": {
+              "n_expected": 0,
+              "denominator": 0,
+              "mean": null
+            },
+            "memory_retrieval": {
+              "n_expected": 0,
+              "denominator": 0,
+              "mean": null
+            },
+            "dynamic_update": {
+              "n_expected": 0,
+              "denominator": 0,
+              "mean": null
+            },
+            "similarity_discrimination": {
+              "n_expected": 0,
+              "denominator": 0,
+              "mean": null
+            },
+            "boundary_recognition": {
+              "n_expected": 0,
+              "denominator": 0,
+              "mean": null
+            },
+            "task_reuse": {
+              "n_expected": 1,
+              "denominator": 1,
+              "mean": 0.0
+            }
+          }
+        },
+        "scoring": {
+          "n": 1,
+          "metrics": {
+            "answer_correct": {
+              "numerator": 0,
+              "denominator": 0,
+              "eligible": 0,
+              "pending": 0,
+              "rate": null
+            },
+            "current_value_misuse": {
+              "numerator": 0,
+              "denominator": 0,
+              "eligible": 0,
+              "pending": 0,
+              "rate": null
+            },
+            "forgotten_disclosure": {
+              "numerator": 0,
+              "denominator": 0,
+              "eligible": 0,
+              "pending": 0,
+              "rate": null
+            },
+            "unknown_assertion": {
+              "numerator": 0,
+              "denominator": 0,
+              "eligible": 0,
+              "pending": 0,
+              "rate": null
+            },
+            "evidence_supported": {
+              "numerator": 0,
+              "denominator": 0,
+              "eligible": 0,
+              "pending": 0,
+              "rate": null
+            },
+            "task_completed": {
+              "numerator": 0,
+              "denominator": 1,
+              "eligible": 1,
+              "pending": 0,
+              "rate": 0.0
+            }
+          },
+          "pending_review": 0
+        }
+      }
+    },
+    "n_case": 1,
+    "failed_cases": 0,
+    "publish_ranking": false,
+    "status": "completed",
+    "data_notice": "候选数据，未签收",
+    "dataset_validation": {
+      "release_status": "pending_review"
+    },
+    "fixture": true,
+    "reader": "native",
+    "cost": {
+      "stages": {
+        "write": {
+          "n_calls": 0,
+          "cost": null,
+          "usage": null
+        },
+        "embedding": {
+          "n_calls": 0,
+          "cost": null,
+          "usage": null
+        },
+        "retrieval": {
+          "n_calls": 0,
+          "cost": null,
+          "usage": null
+        },
+        "read": {
+          "n_calls": 0,
+          "cost": null,
+          "usage": null
+        },
+        "judge": {
+          "n_calls": 0,
+          "cost": null,
+          "usage": null
+        }
+      },
+      "total_cost": null
+    },
+    "prior_failed_attempts": 0,
+    "interrupted_attempts": 0,
+    "integration_gaps": [
+      "echo-fixture 不发起文件操作；文件任务需显式工具请求及可信产物验证",
+      "native 产品桥与外部权限隔离未验证；不支持中断 native 原地续跑",
+      "离线 echo-fixture 非 LLM Reader；语义裁判与人工校准未执行"
+    ]
+  },
+  "case": {
+    "attempt_id": "1c1c2ca912f14414898bd90ca2dd515b",
+    "blocked_write": null,
+    "cleanup_error": null,
+    "cleanup_receipts": [
+      {
+        "operation_id": "5c5c3e0e29c1400eb73ec20b0974c15f",
+        "status": "ready",
+        "usage": null
+      }
+    ],
+    "cost_records": [
+      {
+        "cost": null,
+        "execution": "offline",
+        "recorded_at": "2026-10-15T04:51:34.853393+00:00",
+        "stage": "write",
+        "status": "ready",
+        "usage": null
+      },
+      {
+        "cost": null,
+        "execution": "offline",
+        "recorded_at": "2026-10-15T04:51:34.853533+00:00",
+        "stage": "write",
+        "status": "ready",
+        "usage": null
+      },
+      {
+        "cost": null,
+        "execution": "offline",
+        "recorded_at": "2026-10-15T04:51:34.853767+00:00",
+        "stage": "write",
+        "status": "ready",
+        "usage": null
+      },
+      {
+        "cost": null,
+        "execution": "offline",
+        "recorded_at": "2026-10-15T04:51:34.853894+00:00",
+        "stage": "write",
+        "status": "ready",
+        "usage": null
+      },
+      {
+        "cost": null,
+        "execution": "offline",
+        "recorded_at": "2026-10-15T04:51:34.854017+00:00",
+        "stage": "write",
+        "status": "ready",
+        "usage": null
+      },
+      {
+        "cost": null,
+        "execution": "offline",
+        "recorded_at": "2026-10-15T04:51:34.854993+00:00",
+        "stage": "read",
+        "status": "ok",
+        "usage": null
+      },
+      {
+        "cost": null,
+        "execution": "offline",
+        "recorded_at": "2026-10-15T04:51:34.855819+00:00",
+        "stage": "write",
+        "status": "ready",
+        "usage": null
+      }
+    ],
+    "error": null,
+    "events": [
+      {
+        "method": "reset_case",
+        "receipt": {
+          "operation_id": "4fea1b2d569a41a7b3f779e50be1c93b:1c1c2ca912f14414898bd90ca2dd515b:reset",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "begin_session",
+        "receipt": {
+          "operation_id": "4fea1b2d569a41a7b3f779e50be1c93b:1c1c2ca912f14414898bd90ca2dd515b:begin:s1",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "observe",
+        "receipt": {
+          "operation_id": "4fea1b2d569a41a7b3f779e50be1c93b:1c1c2ca912f14414898bd90ca2dd515b:observe:o1",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "end_session",
+        "receipt": {
+          "operation_id": "4fea1b2d569a41a7b3f779e50be1c93b:1c1c2ca912f14414898bd90ca2dd515b:end:s1",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "begin_session",
+        "receipt": {
+          "operation_id": "4fea1b2d569a41a7b3f779e50be1c93b:1c1c2ca912f14414898bd90ca2dd515b:begin:s2",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "end_session",
+        "receipt": {
+          "operation_id": "4fea1b2d569a41a7b3f779e50be1c93b:1c1c2ca912f14414898bd90ca2dd515b:end:s2",
+          "status": "ready",
+          "usage": null
+        }
+      }
+    ],
+    "finished_at": "2026-10-15T04:51:34.856238+00:00",
+    "operation_evidence": [
+      {
+        "audit": [
+          {
+            "operation": "create",
+            "operation_id": "4fea1b2d569a41a7b3f779e50be1c93b:1c1c2ca912f14414898bd90ca2dd515b:query:p",
+            "path": "reports/Qinghe/week.txt",
+            "sequence": 0,
+            "sha256": "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824",
+            "status": "ready"
+          },
+          {
+            "operation": "create",
+            "operation_id": "4fea1b2d569a41a7b3f779e50be1c93b:1c1c2ca912f14414898bd90ca2dd515b:query:p:old",
+            "path": "old/Qinghe/week.txt",
+            "sequence": 1,
+            "sha256": "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824",
+            "status": "ready"
+          }
+        ],
+        "baseline": {},
+        "binding": {
+          "episode_id": "synthetic",
+          "namespace": "case-yj_m0vm5",
+          "operation_id": "4fea1b2d569a41a7b3f779e50be1c93b:1c1c2ca912f14414898bd90ca2dd515b:query:p",
+          "run": "memobench-native-vvajr19o",
+          "session_id": "s2",
+          "variant_id": "v1"
+        },
+        "verification": {
+          "artifacts": {
+            "old/Qinghe/week.txt": "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824",
+            "reports/Qinghe/week.txt": "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824"
+          },
+          "binding": {
+            "episode_id": "synthetic",
+            "namespace": "case-yj_m0vm5",
+            "operation_id": "4fea1b2d569a41a7b3f779e50be1c93b:1c1c2ca912f14414898bd90ca2dd515b:query:p",
+            "run": "memobench-native-vvajr19o",
+            "session_id": "s2",
+            "variant_id": "v1"
+          },
+          "checks": [
+            {
+              "artifacts": {
+                "old/Qinghe/week.txt": "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824",
+                "reports/Qinghe/week.txt": "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824"
+              },
+              "faults": [
+                "old_path_reuse"
+              ],
+              "status": "failed"
+            }
+          ],
+          "faults": [
+            "old_path_reuse"
+          ],
+          "status": "failed"
+        }
+      }
+    ],
+    "results": [
+      {
+        "evidence_locations": [],
+        "execution": "offline",
+        "prediction": {
+          "answered_at": "2026-01-01T00:00:00Z",
+          "episode_id": "synthetic",
+          "file_actions": null,
+          "probe_id": "p",
+          "retrieved_evidence": null,
+          "session_id": "s2",
+          "slots": null,
+          "state": null,
+          "status": "ok",
+          "text": "native full answer",
+          "usage": null,
+          "variant_id": "v1"
+        },
+        "raw_reader": null,
+        "score": {
+          "eligible": {
+            "answer_correct": false,
+            "current_value_misuse": false,
+            "evidence_supported": false,
+            "forgotten_disclosure": false,
+            "task_completed": true,
+            "unknown_assertion": false
+          },
+          "errors": [
+            "task_completed"
+          ],
+          "metrics": {
+            "answer_correct": null,
+            "current_value_misuse": null,
+            "evidence_supported": null,
+            "forgotten_disclosure": null,
+            "task_completed": false,
+            "unknown_assertion": null
+          },
+          "probe_id": "p",
+          "review_reason": "semantic_judge_required",
+          "source": "rules",
+          "status": "scored"
+        },
+        "task_status": "failed",
+        "task_verification": {
+          "artifacts": {
+            "old/Qinghe/week.txt": "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824",
+            "reports/Qinghe/week.txt": "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824"
+          },
+          "binding": {
+            "episode_id": "synthetic",
+            "namespace": "case-yj_m0vm5",
+            "operation_id": "4fea1b2d569a41a7b3f779e50be1c93b:1c1c2ca912f14414898bd90ca2dd515b:query:p",
+            "run": "memobench-native-vvajr19o",
+            "session_id": "s2",
+            "variant_id": "v1"
+          },
+          "checks": [
+            {
+              "artifacts": {
+                "old/Qinghe/week.txt": "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824",
+                "reports/Qinghe/week.txt": "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824"
+              },
+              "faults": [
+                "old_path_reuse"
+              ],
+              "status": "failed"
+            }
+          ],
+          "faults": [
+            "old_path_reuse"
+          ],
+          "status": "failed"
+        }
+      }
+    ],
+    "started_at": "2026-10-15T04:51:34.852469+00:00",
+    "status": "completed"
+  },
+  "transport_calls": [
+    [
+      "reset_case",
+      "4fea1b2d569a41a7b3f779e50be1c93b:1c1c2ca912f14414898bd90ca2dd515b:reset",
+      {
+        "episode_id": "synthetic",
+        "variant_id": "v1"
+      }
+    ],
+    [
+      "begin_session",
+      "4fea1b2d569a41a7b3f779e50be1c93b:1c1c2ca912f14414898bd90ca2dd515b:begin:s1",
+      {
+        "episode_id": "synthetic",
+        "variant_id": "v1",
+        "session_id": "s1"
+      }
+    ],
+    [
+      "observe",
+      "4fea1b2d569a41a7b3f779e50be1c93b:1c1c2ca912f14414898bd90ca2dd515b:observe:o1",
+      {
+        "episode_id": "synthetic",
+        "variant_id": "v1",
+        "session_id": "s1",
+        "observation_id": "o1",
+        "role": "user",
+        "text": "Write hello to reports/Qinghe/week.txt. Do not use old/Qinghe/week.txt.",
+        "observed_at": "2026-01-01T00:00:00Z",
+        "sandbox_references": []
+      }
+    ],
+    [
+      "end_session",
+      "4fea1b2d569a41a7b3f779e50be1c93b:1c1c2ca912f14414898bd90ca2dd515b:end:s1",
+      {
+        "episode_id": "synthetic",
+        "variant_id": "v1",
+        "session_id": "s1"
+      }
+    ],
+    [
+      "begin_session",
+      "4fea1b2d569a41a7b3f779e50be1c93b:1c1c2ca912f14414898bd90ca2dd515b:begin:s2",
+      {
+        "episode_id": "synthetic",
+        "variant_id": "v1",
+        "session_id": "s2"
+      }
+    ],
+    [
+      "query",
+      "4fea1b2d569a41a7b3f779e50be1c93b:1c1c2ca912f14414898bd90ca2dd515b:query:p",
+      {
+        "episode_id": "synthetic",
+        "variant_id": "v1",
+        "session_id": "s2",
+        "probe_id": "p",
+        "query": "Perform the remembered task.",
+        "observed_at": "2026-01-02T00:00:00Z",
+        "sandbox_references": []
+      }
+    ],
+    [
+      "end_session",
+      "4fea1b2d569a41a7b3f779e50be1c93b:1c1c2ca912f14414898bd90ca2dd515b:end:s2",
+      {
+        "episode_id": "synthetic",
+        "variant_id": "v1",
+        "session_id": "s2"
+      }
+    ],
+    [
+      "close",
+      "5c5c3e0e29c1400eb73ec20b0974c15f",
+      {
+        "episode_id": "synthetic",
+        "variant_id": "v1"
+      }
+    ]
+  ]
+}

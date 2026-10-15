@@ -1,0 +1,53 @@
+[
+  {
+    "session": "20261015_105041_ae0157",
+    "profile_completed": true,
+    "events": [
+      "2026-10-15 10:50:59,747 INFO [20261015_105041_ae0157] agent.user_profile_runtime: User-profile extraction LLM call starting: messages=2 model=deepseek-flash attempt=1/1",
+      "2026-10-15 10:51:02,971 INFO [20261015_105041_ae0157] agent.user_profile_runtime: User-profile extraction LLM call completed: applied=1 deleted=0 conflicts=0 rejected=0 attempts=1"
+    ]
+  },
+  {
+    "session": "20261015_105104_24c91d",
+    "profile_completed": true,
+    "events": [
+      "2026-10-15 10:51:34,817 INFO [20261015_105104_24c91d] agent.user_profile_runtime: User-profile extraction skipped: precheck found no profile update"
+    ]
+  },
+  {
+    "session": "20261015_105014_3a2d65",
+    "profile_completed": true,
+    "events": [
+      "2026-10-15 10:50:39,872 INFO [20261015_105014_3a2d65] agent.user_profile_runtime: User-profile extraction skipped: precheck found no profile update"
+    ]
+  },
+  {
+    "session": "20261015_104809_d41f30",
+    "profile_completed": true,
+    "events": [
+      "2026-10-15 10:48:35,993 INFO [20261015_104809_d41f30] agent.user_profile_runtime: User-profile extraction LLM call starting: messages=2 model=deepseek-flash attempt=1/1",
+      "2026-10-15 10:48:39,635 INFO [20261015_104809_d41f30] agent.user_profile_runtime: User-profile extraction LLM call completed: applied=1 deleted=0 conflicts=0 rejected=0 attempts=1"
+    ]
+  },
+  {
+    "session": "20261015_104809_d41f30",
+    "profile_completed": true,
+    "events": [
+      "2026-10-15 10:48:58,318 INFO [20261015_104809_d41f30] agent.user_profile_runtime: User-profile extraction skipped: precheck found no profile update"
+    ]
+  },
+  {
+    "session": "20261015_104900_3b6972",
+    "profile_completed": true,
+    "events": [
+      "2026-10-15 10:49:45,229 INFO [20261015_104900_3b6972] agent.user_profile_runtime: User-profile extraction skipped: precheck found no profile update"
+    ]
+  },
+  {
+    "session": "20261015_104900_3b6972",
+    "profile_completed": true,
+    "events": [
+      "2026-10-15 10:50:12,075 INFO [20261015_104900_3b6972] agent.user_profile_runtime: User-profile extraction skipped: precheck found no profile update"
+    ]
+  }
+]

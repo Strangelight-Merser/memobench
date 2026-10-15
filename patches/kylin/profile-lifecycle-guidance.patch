@@ -1,0 +1,25 @@
+diff --git a/agent/system_prompt.py b/agent/system_prompt.py
+index 9dcb83e..d271e32 100644
+--- a/agent/system_prompt.py
++++ b/agent/system_prompt.py
+@@ -225,6 +225,20 @@ def build_system_prompt_parts(agent: Any, system_message: Optional[str] = None)
+     # print("====此处构建/注入工具相关行为指导信息")
+     tool_guidance = []
+ 
++    if getattr(agent, "_user_profile_runtime", None) is not None:
++        tool_guidance.append(
++            "Native user-profile persistence is enabled. After this conversation "
++            "turn returns, the runtime automatically extracts supported user facts "
++            "and preferences from the dialogue, validates them, and saves them in "
++            "the encrypted profile for later sessions. The memory tool recalls "
++            "past conversations; it is not a profile-write API. When the user "
++            "provides a name or preference to remember, acknowledge it and finish "
++            "the turn so the native extraction can run. Do not search for or edit "
++            "internal profile files, keys, runtime source, or obsolete USER.md files "
++            "to perform that save. Do not claim extraction has already completed "
++            "before the runtime has actually processed the turn."
++        )
++
+     if "memory" in agent.valid_tool_names:
+         tool_guidance.append(MEMORY_GUIDANCE)
+     if "skill_manage" in agent.valid_tool_names:

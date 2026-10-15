@@ -1,0 +1,142 @@
+{
+  "bridge_sha256": "d1e29805c756dd99aff69d2f4a906f52163d87df274000d64acedc99daaf541d",
+  "product_calls": 14,
+  "automatic_retries": 0,
+  "provider_requests": null,
+  "cost": null,
+  "probes": {
+    "kylin": {
+      "status": "passed",
+      "checks": {
+        "same_session": true,
+        "cross_session": true,
+        "cross_case_no_canary": true,
+        "cross_case_unknown": true,
+        "profile_cross_session": true,
+        "cleanup": true,
+        "file_task": true,
+        "profile_turns_completed": true,
+        "profile_persisted": true,
+        "profile_prompt_injected": true
+      },
+      "exports": [
+        {
+          "namespace": "85c1a840fd44474996aa918005a40657",
+          "path": "85c1a840fd44474996aa918005a40657.json",
+          "sha256": "6ac14194ff955468fab2bc6c98f2e90611b3e09cbe0865caa2d368564b964c4f"
+        },
+        {
+          "namespace": "aba73bce4a40449f8f5f632f906c7d92",
+          "path": "aba73bce4a40449f8f5f632f906c7d92.json",
+          "sha256": "adf727bd35feec94e93724797adba1324e6789df6dd2522b33d81602134b09e0"
+        },
+        {
+          "namespace": "aa319e8065e3481799d253a63ea26d45",
+          "path": "aa319e8065e3481799d253a63ea26d45.json",
+          "sha256": "7017bc7f2665de35db0d5dd7fe71f65d346744135faa6aa6e777d1d9eb85041a"
+        }
+      ]
+    },
+    "openclaw": {
+      "status": "passed",
+      "checks": {
+        "same_session": true,
+        "cross_session": true,
+        "cross_case_no_canary": true,
+        "cross_case_unknown": true,
+        "cleanup": true,
+        "file_task": true
+      },
+      "exports": [
+        {
+          "namespace": "f33d2b6b1fc94355a41b7f93280931be",
+          "path": "f33d2b6b1fc94355a41b7f93280931be.json",
+          "sha256": "fa82255a07af5d43f9f0d42dfeef54d0c61c007265af640fa173d916af23260a"
+        },
+        {
+          "namespace": "f6fff34ba2f34646ab0692934d1fbf55",
+          "path": "f6fff34ba2f34646ab0692934d1fbf55.json",
+          "sha256": "689b49553f76b5f94a38976bc536c9e0cfcdd2b9af2c7af98570b03a551db0d0"
+        }
+      ]
+    }
+  },
+  "smoke": {
+    "task_status": "passed",
+    "cleanup": [
+      {
+        "operation_id": "a4d5fe819db447f0b83dc8925a9feaf4",
+        "status": "ready",
+        "usage": null
+      }
+    ],
+    "closed": true,
+    "turns": {
+      "observe": {
+        "task_workspace_unchanged": true,
+        "tool_summary": {
+          "calls": 3,
+          "tools": [
+            "read",
+            "memory_search",
+            "write"
+          ],
+          "failures": 0
+        },
+        "tool_names": [
+          "read",
+          "edit",
+          "write",
+          "apply_patch",
+          "skills_read",
+          "memory_search",
+          "memory_get"
+        ]
+      },
+      "query": {
+        "task_workspace_unchanged": null,
+        "tool_summary": {
+          "calls": 2,
+          "tools": [
+            "write",
+            "read"
+          ],
+          "failures": 0
+        },
+        "tool_names": [
+          "read",
+          "edit",
+          "write",
+          "apply_patch",
+          "skills_read",
+          "memory_search",
+          "memory_get"
+        ]
+      }
+    },
+    "query_baseline_empty": true,
+    "query_audit_complete": true
+  },
+  "files_sha256": {
+    "PRIMARY_REVIEW.json": "46ef297c7875ff3b3621c3e537f5a3cd10b756b8bd2f02163e4347ba650fd988",
+    "check-native-catalog.py": "ff7a7f3543543f93d3d8eed07775186b2a49ed0bba276a41a19075ad81b1db5b",
+    "deployment.json": "c068e09c3483bf523fea75b7f7baa7556c0453c438535bfa7d9188ba7b3df01b",
+    "native-catalog-stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native-catalog.json": "f9d3c7e7770f80c4bfb10acc4ddcd55c321b5e85584b684fba30d41ef7debe1d",
+    "phase-tests.log": "0b9a11459fdd1400393133c01fa5d8c9f47b577252011aa9f0b89d580c4b9b7e",
+    "probe-kylin/85c1a840fd44474996aa918005a40657.json": "6ac14194ff955468fab2bc6c98f2e90611b3e09cbe0865caa2d368564b964c4f",
+    "probe-kylin/aa319e8065e3481799d253a63ea26d45.json": "7017bc7f2665de35db0d5dd7fe71f65d346744135faa6aa6e777d1d9eb85041a",
+    "probe-kylin/aba73bce4a40449f8f5f632f906c7d92.json": "adf727bd35feec94e93724797adba1324e6789df6dd2522b33d81602134b09e0",
+    "probe-kylin/probe.json": "a549da0b981973ced9a95897186eb6d088c4fe3d43df2ef15a3de1b6f9d585fe",
+    "probe-kylin.log": "93f8db779b874a05867cdfe2c704572a999cc0f88494af88a73164fe1e7c6f9a",
+    "probe-openclaw/f33d2b6b1fc94355a41b7f93280931be.json": "fa82255a07af5d43f9f0d42dfeef54d0c61c007265af640fa173d916af23260a",
+    "probe-openclaw/f6fff34ba2f34646ab0692934d1fbf55.json": "689b49553f76b5f94a38976bc536c9e0cfcdd2b9af2c7af98570b03a551db0d0",
+    "probe-openclaw/probe.json": "b33bc3fe710ee6f457bd311bf9443fed32592ce661f0d266895c11ce3a4c1c24",
+    "probe-openclaw.log": "4ede3a800e0252a2e51a6785c59e06f479faa136548848132a2fc02c1c5fec5f",
+    "run-phase-smoke.py": "c851b82eb6e0fa059526c69adcaa0f954ca5b161338413b8671cf65fb38e8a66",
+    "smoke-openclaw-raw-494980c0f7e1404590b470baeb7179f0.json": "528ff3c7adb3325079f11a908bb68e2bb62ce1262b99613e2ae7aea81f53058b",
+    "smoke-openclaw.json": "888d02e5d404fb4532d9749e9fa690b998f3319c90112a7443fcbd9ba5aa25d2",
+    "smoke-openclaw.log": "40c4a94caa314642e3a51061e9b3dbb8384a59ec85ced0cae8dc63018edb78eb",
+    "tests-all.log": "b21aaeec25de7c7d811dc9ad972c26a9ce2c89a080cdb2ddeee843ca9143cba1"
+  }
+}

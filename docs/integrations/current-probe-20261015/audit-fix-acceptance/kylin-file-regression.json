@@ -1,0 +1,499 @@
+{
+  "product": "kylin",
+  "synthetic_development_only": true,
+  "model_product_queries": 1,
+  "expected": {
+    "path": "reports/e7af974dd1214aedb6ff210226aafc4a.txt",
+    "sha256": "f77c2f7ea131132dfb8c6f97c00aabe5b11e5b129bcb7cc6e1583f6f3959342a"
+  },
+  "public_input": {
+    "episode_id": "audit-fix-synthetic-6a25eb4b60494c3e887bdbb0b228fc1f",
+    "variant_id": "v1",
+    "session_ids": [
+      "s1"
+    ],
+    "observations": [],
+    "probes": [
+      {
+        "episode_id": "audit-fix-synthetic-6a25eb4b60494c3e887bdbb0b228fc1f",
+        "variant_id": "v1",
+        "session_id": "s1",
+        "probe_id": "q",
+        "query": "这是公开合成开发任务。请先用原生 read 工具读取 /home/mb/case/workspace 根目录本身（目录不是文件，预期工具会返回错误；不要把该错误当任务终止）。随后继续用原生直接文件写入工具创建 reports/e7af974dd1214aedb6ff210226aafc4a.txt，内容精确为 PUBLIC-SYNTHETIC-64ed62b9436d468f985e5f0a75170616，不加换行，不用exec或shell。最后简述读目录失败和文件写入结果。",
+        "observed_at": "2026-10-15T00:00:00Z",
+        "sandbox_references": []
+      }
+    ]
+  },
+  "result": {
+    "status": "completed",
+    "error": null,
+    "cleanup_error": null,
+    "blocked_write": null,
+    "cleanup_receipts": [
+      {
+        "operation_id": "d018cf61afbc4b67af9bdf939e48a5d4",
+        "status": "ready",
+        "usage": null
+      }
+    ],
+    "operation_evidence": [
+      {
+        "binding": {
+          "run": "memobench-native-ot8zoo0r",
+          "namespace": "d0cce4f288e54a1eb4b7be1d7f8c50f1",
+          "episode_id": "audit-fix-synthetic-6a25eb4b60494c3e887bdbb0b228fc1f",
+          "variant_id": "v1",
+          "session_id": "s1",
+          "operation_id": "audit-fix-synthetic-6a25eb4b60494c3e887bdbb0b228fc1f:query:q",
+          "bridge_sha256": "6b0ad695c89dc233901eca4561b73a5158db339dcef41e72932394c033da1c81"
+        },
+        "checkpoint": {
+          "binding": {
+            "run": "memobench-native-ot8zoo0r",
+            "namespace": "d0cce4f288e54a1eb4b7be1d7f8c50f1",
+            "episode_id": "audit-fix-synthetic-6a25eb4b60494c3e887bdbb0b228fc1f",
+            "variant_id": "v1",
+            "session_id": "s1",
+            "operation_id": "audit-fix-synthetic-6a25eb4b60494c3e887bdbb0b228fc1f:query:q",
+            "bridge_sha256": "6b0ad695c89dc233901eca4561b73a5158db339dcef41e72932394c033da1c81"
+          },
+          "baseline": {},
+          "transcript": {
+            "count": 0,
+            "prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          }
+        },
+        "evidence": {
+          "binding": {
+            "run": "memobench-native-ot8zoo0r",
+            "namespace": "d0cce4f288e54a1eb4b7be1d7f8c50f1",
+            "episode_id": "audit-fix-synthetic-6a25eb4b60494c3e887bdbb0b228fc1f",
+            "variant_id": "v1",
+            "session_id": "s1",
+            "operation_id": "audit-fix-synthetic-6a25eb4b60494c3e887bdbb0b228fc1f:query:q",
+            "bridge_sha256": "6b0ad695c89dc233901eca4561b73a5158db339dcef41e72932394c033da1c81"
+          },
+          "baseline": {},
+          "after": {
+            "reports/e7af974dd1214aedb6ff210226aafc4a.txt": {
+              "sha256": "f77c2f7ea131132dfb8c6f97c00aabe5b11e5b129bcb7cc6e1583f6f3959342a",
+              "size": 49,
+              "content_base64": "UFVCTElDLVNZTlRIRVRJQy02NGVkNjJiOTQzNmQ0NjhmOTg1ZTVmMGE3NTE3MDYxNg=="
+            }
+          },
+          "complete": true,
+          "audit": {
+            "product_session": "20261015_141858_258758",
+            "checkpoint": {
+              "count": 0,
+              "prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            "terminal": {
+              "count": 8,
+              "prefix_sha256": "f67ca321ad4394fcbeb0ceb548b1f1b9bffb17608d8da88e3ac50fd681c63cd8"
+            },
+            "events": [
+              {
+                "call_id": "call_00_mUq0vn3rLfaTmu5NL9Qz3465",
+                "tool": "read_file",
+                "path": ".",
+                "succeeded": false,
+                "operation": "read",
+                "arguments": {
+                  "path": "/home/mb/case/workspace"
+                },
+                "native_call": {
+                  "source": "kylin/messages",
+                  "position": 2,
+                  "session_id": "20261015_141858_258758",
+                  "tool_call": {
+                    "id": "call_00_mUq0vn3rLfaTmu5NL9Qz3465",
+                    "name": "read_file",
+                    "arguments": {
+                      "path": "/home/mb/case/workspace"
+                    }
+                  }
+                },
+                "native_result": {
+                  "source": "kylin/messages",
+                  "position": 3,
+                  "session_id": "20261015_141858_258758",
+                  "message": {
+                    "role": "tool",
+                    "content": "{\"content\": \"\", \"total_lines\": 0, \"file_size\": 0, \"truncated\": false, \"is_binary\": false, \"is_image\": false, \"error\": \"File not found: /home/mb/case/workspace\", \"similar_files\": [\"/home/mb/case/workspace\"]}",
+                    "tool_call_id": "call_00_mUq0vn3rLfaTmu5NL9Qz3465",
+                    "tool_calls": [],
+                    "tool_name": "read_file"
+                  }
+                }
+              },
+              {
+                "call_id": "call_00_Fq6vHfFg3qcqnVrjfZ4D6296",
+                "tool": "write_file",
+                "path": "reports/e7af974dd1214aedb6ff210226aafc4a.txt",
+                "succeeded": true,
+                "operation": "write",
+                "arguments": {
+                  "path": "/home/mb/case/workspace/reports/e7af974dd1214aedb6ff210226aafc4a.txt",
+                  "content": "PUBLIC-SYNTHETIC-64ed62b9436d468f985e5f0a75170616"
+                },
+                "native_call": {
+                  "source": "kylin/messages",
+                  "position": 4,
+                  "session_id": "20261015_141858_258758",
+                  "tool_call": {
+                    "id": "call_00_Fq6vHfFg3qcqnVrjfZ4D6296",
+                    "name": "write_file",
+                    "arguments": {
+                      "path": "/home/mb/case/workspace/reports/e7af974dd1214aedb6ff210226aafc4a.txt",
+                      "content": "PUBLIC-SYNTHETIC-64ed62b9436d468f985e5f0a75170616"
+                    }
+                  }
+                },
+                "native_result": {
+                  "source": "kylin/messages",
+                  "position": 5,
+                  "session_id": "20261015_141858_258758",
+                  "message": {
+                    "role": "tool",
+                    "content": "{\"bytes_written\": 49, \"dirs_created\": true, \"lint\": {\"status\": \"skipped\", \"message\": \"No linter for .txt files\"}}",
+                    "tool_call_id": "call_00_Fq6vHfFg3qcqnVrjfZ4D6296",
+                    "tool_calls": [],
+                    "tool_name": "write_file"
+                  }
+                }
+              },
+              {
+                "call_id": "call_00_Bzd5CE7SZoWCToamxw0y6492",
+                "tool": "read_file",
+                "path": "reports/e7af974dd1214aedb6ff210226aafc4a.txt",
+                "succeeded": true,
+                "operation": "read",
+                "arguments": {
+                  "path": "/home/mb/case/workspace/reports/e7af974dd1214aedb6ff210226aafc4a.txt"
+                },
+                "native_call": {
+                  "source": "kylin/messages",
+                  "position": 6,
+                  "session_id": "20261015_141858_258758",
+                  "tool_call": {
+                    "id": "call_00_Bzd5CE7SZoWCToamxw0y6492",
+                    "name": "read_file",
+                    "arguments": {
+                      "path": "/home/mb/case/workspace/reports/e7af974dd1214aedb6ff210226aafc4a.txt"
+                    }
+                  }
+                },
+                "native_result": {
+                  "source": "kylin/messages",
+                  "position": 7,
+                  "session_id": "20261015_141858_258758",
+                  "message": {
+                    "role": "tool",
+                    "content": "{\"content\": \"     1|PUBLIC-SYNTHETIC-64ed62b9436d468f985e5f0a75170616\", \"total_lines\": 0, \"file_size\": 49, \"truncated\": false, \"is_binary\": false, \"is_image\": false}",
+                    "tool_call_id": "call_00_Bzd5CE7SZoWCToamxw0y6492",
+                    "tool_calls": [],
+                    "tool_name": "read_file"
+                  }
+                }
+              }
+            ],
+            "complete": true
+          },
+          "native_records": [
+            {
+              "source": "kylin/messages",
+              "position": 1,
+              "session_id": "20261015_141858_258758",
+              "message": {
+                "role": "user",
+                "content": "这是公开合成开发任务。请先用原生 read 工具读取 /home/mb/case/workspace 根目录本身（目录不是文件，预期工具会返回错误；不要把该错误当任务终止）。随后继续用原生直接文件写入工具创建 reports/e7af974dd1214aedb6ff210226aafc4a.txt，内容精确为 PUBLIC-SYNTHETIC-64ed62b9436d468f985e5f0a75170616，不加换行，不用exec或shell。最后简述读目录失败和文件写入结果。",
+                "tool_call_id": null,
+                "tool_calls": [],
+                "tool_name": null
+              }
+            },
+            {
+              "source": "kylin/messages",
+              "position": 2,
+              "session_id": "20261015_141858_258758",
+              "message": {
+                "role": "assistant",
+                "content": "",
+                "tool_call_id": null,
+                "tool_calls": [
+                  {
+                    "id": "call_00_mUq0vn3rLfaTmu5NL9Qz3465",
+                    "call_id": "call_00_mUq0vn3rLfaTmu5NL9Qz3465",
+                    "response_item_id": "fc_00_mUq0vn3rLfaTmu5NL9Qz3465",
+                    "type": "function",
+                    "function": {
+                      "name": "read_file",
+                      "arguments": "{\"path\": \"/home/mb/case/workspace\"}"
+                    }
+                  }
+                ],
+                "tool_name": null
+              }
+            },
+            {
+              "source": "kylin/messages",
+              "position": 3,
+              "session_id": "20261015_141858_258758",
+              "message": {
+                "role": "tool",
+                "content": "{\"content\": \"\", \"total_lines\": 0, \"file_size\": 0, \"truncated\": false, \"is_binary\": false, \"is_image\": false, \"error\": \"File not found: /home/mb/case/workspace\", \"similar_files\": [\"/home/mb/case/workspace\"]}",
+                "tool_call_id": "call_00_mUq0vn3rLfaTmu5NL9Qz3465",
+                "tool_calls": [],
+                "tool_name": "read_file"
+              }
+            },
+            {
+              "source": "kylin/messages",
+              "position": 4,
+              "session_id": "20261015_141858_258758",
+              "message": {
+                "role": "assistant",
+                "content": "",
+                "tool_call_id": null,
+                "tool_calls": [
+                  {
+                    "id": "call_00_Fq6vHfFg3qcqnVrjfZ4D6296",
+                    "call_id": "call_00_Fq6vHfFg3qcqnVrjfZ4D6296",
+                    "response_item_id": "fc_00_Fq6vHfFg3qcqnVrjfZ4D6296",
+                    "type": "function",
+                    "function": {
+                      "name": "write_file",
+                      "arguments": "{\"path\": \"/home/mb/case/workspace/reports/e7af974dd1214aedb6ff210226aafc4a.txt\", \"content\": \"PUBLIC-SYNTHETIC-64ed62b9436d468f985e5f0a75170616\"}"
+                    }
+                  }
+                ],
+                "tool_name": null
+              }
+            },
+            {
+              "source": "kylin/messages",
+              "position": 5,
+              "session_id": "20261015_141858_258758",
+              "message": {
+                "role": "tool",
+                "content": "{\"bytes_written\": 49, \"dirs_created\": true, \"lint\": {\"status\": \"skipped\", \"message\": \"No linter for .txt files\"}}",
+                "tool_call_id": "call_00_Fq6vHfFg3qcqnVrjfZ4D6296",
+                "tool_calls": [],
+                "tool_name": "write_file"
+              }
+            },
+            {
+              "source": "kylin/messages",
+              "position": 6,
+              "session_id": "20261015_141858_258758",
+              "message": {
+                "role": "assistant",
+                "content": "",
+                "tool_call_id": null,
+                "tool_calls": [
+                  {
+                    "id": "call_00_Bzd5CE7SZoWCToamxw0y6492",
+                    "call_id": "call_00_Bzd5CE7SZoWCToamxw0y6492",
+                    "response_item_id": "fc_00_Bzd5CE7SZoWCToamxw0y6492",
+                    "type": "function",
+                    "function": {
+                      "name": "read_file",
+                      "arguments": "{\"path\": \"/home/mb/case/workspace/reports/e7af974dd1214aedb6ff210226aafc4a.txt\"}"
+                    }
+                  }
+                ],
+                "tool_name": null
+              }
+            },
+            {
+              "source": "kylin/messages",
+              "position": 7,
+              "session_id": "20261015_141858_258758",
+              "message": {
+                "role": "tool",
+                "content": "{\"content\": \"     1|PUBLIC-SYNTHETIC-64ed62b9436d468f985e5f0a75170616\", \"total_lines\": 0, \"file_size\": 49, \"truncated\": false, \"is_binary\": false, \"is_image\": false}",
+                "tool_call_id": "call_00_Bzd5CE7SZoWCToamxw0y6492",
+                "tool_calls": [],
+                "tool_name": "read_file"
+              }
+            },
+            {
+              "source": "kylin/messages",
+              "position": 8,
+              "session_id": "20261015_141858_258758",
+              "message": {
+                "role": "assistant",
+                "content": "完成。\n\n1) 读取目录失败：对 /home/mb/case/workspace 调用原生 read 工具（该路径是目录而非文件），工具返回 error: \"File not found: /home/mb/case/workspace\"。这是预期的目录读取错误，已按说明忽略，未中断任务。\n\n2) 文件写入结果：用原生直接文件写入工具创建了 /home/mb/case/workspace/reports/e7af974dd1214aedb6ff210226aafc4a.txt，自动创建了 reports 目录，写入 49 字节。回读校验内容为 PUBLIC-SYNTHETIC-64ed62b9436d468f985e5f0a75170616，恰好 49 字节即无末尾换行，符合要求。全程未使用 exec/shell。",
+                "tool_call_id": null,
+                "tool_calls": [],
+                "tool_name": null
+              }
+            }
+          ],
+          "audit_stage": "native_file_audit"
+        },
+        "verification": {
+          "status": "passed",
+          "checks": [
+            {
+              "status": "passed",
+              "faults": []
+            }
+          ],
+          "faults": [],
+          "binding": {
+            "run": "memobench-native-ot8zoo0r",
+            "namespace": "d0cce4f288e54a1eb4b7be1d7f8c50f1",
+            "episode_id": "audit-fix-synthetic-6a25eb4b60494c3e887bdbb0b228fc1f",
+            "variant_id": "v1",
+            "session_id": "s1",
+            "operation_id": "audit-fix-synthetic-6a25eb4b60494c3e887bdbb0b228fc1f:query:q",
+            "bridge_sha256": "6b0ad695c89dc233901eca4561b73a5158db339dcef41e72932394c033da1c81"
+          },
+          "artifacts": {
+            "reports/e7af974dd1214aedb6ff210226aafc4a.txt": "f77c2f7ea131132dfb8c6f97c00aabe5b11e5b129bcb7cc6e1583f6f3959342a"
+          },
+          "deleted_paths": [],
+          "audit_coverage": "direct_file_tools_only; exec and render unsupported",
+          "source": "bridge_workspace_bytes_and_native_tool_trace"
+        }
+      }
+    ],
+    "results": [
+      {
+        "prediction": {
+          "episode_id": "audit-fix-synthetic-6a25eb4b60494c3e887bdbb0b228fc1f",
+          "variant_id": "v1",
+          "session_id": "s1",
+          "probe_id": "q",
+          "status": "ok",
+          "text": "完成。\n\n1) 读取目录失败：对 /home/mb/case/workspace 调用原生 read 工具（该路径是目录而非文件），工具返回 error: \"File not found: /home/mb/case/workspace\"。这是预期的目录读取错误，已按说明忽略，未中断任务。\n\n2) 文件写入结果：用原生直接文件写入工具创建了 /home/mb/case/workspace/reports/e7af974dd1214aedb6ff210226aafc4a.txt，自动创建了 reports 目录，写入 49 字节。回读校验内容为 PUBLIC-SYNTHETIC-64ed62b9436d468f985e5f0a75170616，恰好 49 字节即无末尾换行，符合要求。全程未使用 exec/shell。",
+          "answered_at": "2026-10-15T06:19:20.733421+00:00",
+          "state": null,
+          "slots": null,
+          "retrieved_evidence": null,
+          "usage": null,
+          "file_actions": null
+        },
+        "execution": "online",
+        "score": {
+          "probe_id": "q",
+          "status": "scored",
+          "source": "rules",
+          "metrics": {
+            "answer_correct": null,
+            "current_value_misuse": null,
+            "forgotten_disclosure": null,
+            "unknown_assertion": null,
+            "evidence_supported": null,
+            "task_completed": true
+          },
+          "eligible": {
+            "answer_correct": false,
+            "current_value_misuse": false,
+            "forgotten_disclosure": false,
+            "unknown_assertion": false,
+            "evidence_supported": false,
+            "task_completed": true
+          },
+          "errors": [],
+          "review_reason": "semantic_judge_required"
+        },
+        "raw_reader": null,
+        "task_status": "passed",
+        "task_verification": {
+          "status": "passed",
+          "checks": [
+            {
+              "status": "passed",
+              "faults": []
+            }
+          ],
+          "faults": [],
+          "binding": {
+            "run": "memobench-native-ot8zoo0r",
+            "namespace": "d0cce4f288e54a1eb4b7be1d7f8c50f1",
+            "episode_id": "audit-fix-synthetic-6a25eb4b60494c3e887bdbb0b228fc1f",
+            "variant_id": "v1",
+            "session_id": "s1",
+            "operation_id": "audit-fix-synthetic-6a25eb4b60494c3e887bdbb0b228fc1f:query:q",
+            "bridge_sha256": "6b0ad695c89dc233901eca4561b73a5158db339dcef41e72932394c033da1c81"
+          },
+          "artifacts": {
+            "reports/e7af974dd1214aedb6ff210226aafc4a.txt": "f77c2f7ea131132dfb8c6f97c00aabe5b11e5b129bcb7cc6e1583f6f3959342a"
+          },
+          "deleted_paths": [],
+          "audit_coverage": "direct_file_tools_only; exec and render unsupported",
+          "source": "bridge_workspace_bytes_and_native_tool_trace"
+        },
+        "evidence_locations": []
+      }
+    ],
+    "events": [
+      {
+        "method": "reset_case",
+        "receipt": {
+          "operation_id": "audit-fix-synthetic-6a25eb4b60494c3e887bdbb0b228fc1f:reset",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "begin_session",
+        "receipt": {
+          "operation_id": "audit-fix-synthetic-6a25eb4b60494c3e887bdbb0b228fc1f:begin:s1",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "end_session",
+        "receipt": {
+          "operation_id": "audit-fix-synthetic-6a25eb4b60494c3e887bdbb0b228fc1f:end:s1",
+          "status": "ready",
+          "usage": null
+        }
+      }
+    ],
+    "cost_records": [
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "online",
+        "status": "ready",
+        "recorded_at": "2026-10-15T06:18:57.533650+00:00"
+      },
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "online",
+        "status": "ready",
+        "recorded_at": "2026-10-15T06:18:57.664408+00:00"
+      },
+      {
+        "stage": "read",
+        "usage": null,
+        "cost": null,
+        "execution": "online",
+        "status": "ok",
+        "recorded_at": "2026-10-15T06:19:20.493202+00:00"
+      },
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "online",
+        "status": "ready",
+        "recorded_at": "2026-10-15T06:19:20.972225+00:00"
+      }
+    ],
+    "finished_at": "2026-10-15T06:19:21.138084+00:00"
+  },
+  "namespaces": [
+    "d0cce4f288e54a1eb4b7be1d7f8c50f1"
+  ]
+}

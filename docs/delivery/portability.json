@@ -1,0 +1,20 @@
+{
+  "model_calls": 0,
+  "deployed_runtime_unchanged": true,
+  "verified_online_bridge_sha256": "d1e29805c756dd99aff69d2f4a906f52163d87df274000d64acedc99daaf541d",
+  "portable_source_sha256": "c92eff4b51206b23186a6de04d84d0f1763b35f7ce16dff9f40c8f561beb8b3d",
+  "change": "Replace personal Mac data-path absence assertion with stronger /Users tree absence assertion; private sentinel and provider isolation checks unchanged.",
+  "actual_vm_mount_checks": {
+    "kylin": {
+      "returncode": 0,
+      "stdout": "isolated",
+      "stderr": ""
+    },
+    "openclaw": {
+      "returncode": 0,
+      "stdout": "isolated",
+      "stderr": ""
+    }
+  },
+  "online_status": "historical d1 version verified; portable change verified offline only"
+}

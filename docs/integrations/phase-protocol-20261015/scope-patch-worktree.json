@@ -1,0 +1,11 @@
+{
+  "local_working_copy": "/var/folders/qh/smby8tjs56s7zrmf7_0klzhc0000gn/T/memobench-execution-scope-886qa71t",
+  "baseline": {
+    "completion_review.py": "c1e6db5e8fa85bcd2db89743be9f999b3bfcde785b69e5383aaaa1db28a507f1",
+    "conversation_loop.py": "a32ab2259dec2ec5749fea7af52db0d26870c1c6616555547d9372441aae376e"
+  },
+  "modified": {
+    "completion_review.py": "15d8728eac8cb05edf832129e2206009790de753131dd97e7b3f94479ddb3dc0",
+    "conversation_loop.py": "3ee4c84af082e69c93fa66b2c9a4169cd196e8a31618b4101aed4bfb83df0823"
+  }
+}

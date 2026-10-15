@@ -1,0 +1,5 @@
+{
+  "real_query_sha256": "dc22dd2e533ed1ec64f4cdf5bc6e9acecdb7d9f565c35088ab9a61c1b99521a2",
+  "final_sha256": "1b22e1637d4c535f64d074347ebede46b4291172ce73eb938d01c5f430097d6d",
+  "change": "Only artifact collection error handling; preserve native Prediction, keep task blocked. No additional model queries."
+}

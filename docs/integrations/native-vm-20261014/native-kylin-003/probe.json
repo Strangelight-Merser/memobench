@@ -1,0 +1,74 @@
+{
+  "product": "kylin",
+  "started_at": "2026-10-15T02:33:09.306466+00:00",
+  "scope": "synthetic integration acceptance only",
+  "capabilities": {
+    "native_answer": "supported",
+    "retrieved_evidence": "unsupported",
+    "write_usage": "unsupported",
+    "flush": "unsupported",
+    "restart": "unsupported",
+    "storage_inspection": "supported"
+  },
+  "canary": "MB-D108912565C4",
+  "events": [
+    {
+      "method": "reset_case",
+      "receipt": {
+        "operation_id": "b72cb76c9df34f73a438e73d212b6d13",
+        "status": "ready",
+        "usage": null
+      }
+    },
+    {
+      "method": "begin_session",
+      "receipt": {
+        "operation_id": "e788be6367fc4cd8978a168652e3c818",
+        "status": "ready",
+        "usage": null
+      }
+    },
+    {
+      "method": "public_observation",
+      "input": {
+        "episode_id": "memory",
+        "variant_id": "v1",
+        "session_id": "s1",
+        "observation_id": "o1",
+        "role": "user",
+        "text": "请记住：我的虚构测试项目“蓝帆”的代号是 MB-D108912565C4。后面的新会话会询问，请保存到你的长期记忆。",
+        "observed_at": "2026-10-15T02:33:09.617788+00:00",
+        "sandbox_references": []
+      }
+    },
+    {
+      "method": "observe",
+      "receipt": {
+        "operation_id": "210b649533744d4bb668457e216fcb1b",
+        "status": "unknown",
+        "usage": null
+      }
+    }
+  ],
+  "checks": {
+    "cleanup": true,
+    "file_task": false
+  },
+  "publish_ranking": false,
+  "execution": "online",
+  "model": "deepseek-flash",
+  "openclaw_mode": "embedded_explicit; optional Gateway flush unsupported",
+  "error": "ContractError: 无效字段: write.not_ready",
+  "namespaces": [
+    "e5b7daf2b80e4c6eae26930664b378c7"
+  ],
+  "cleanup_receipts": [
+    {
+      "operation_id": "8f219b47c6874580a905b1a4d06829e1",
+      "status": "ready",
+      "usage": null
+    }
+  ],
+  "finished_at": "2026-10-15T02:38:10.213212+00:00",
+  "status": "incomplete"
+}

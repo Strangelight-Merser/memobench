@@ -1,7 +1,7 @@
 {
-  "dataset": "data/v0.2",
+  "schema_version": "native-run-recipe-1",
+  "dataset": "data/v0.2-ai-reviewed",
   "split": "test",
-  "mode": "native_agent",
-  "execution": "online",
-  "binding_status": "blocked: product bridges and external permission isolation NOT_VERIFIED"
+  "products": ["kylin", "openclaw"],
+  "purpose": "internal_evaluation"
 }

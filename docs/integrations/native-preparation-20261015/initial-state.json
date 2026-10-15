@@ -1,0 +1,10 @@
+{
+  "git_status": " M README.md\n M docs/integrations/README.md\n M docs/openkylin/README.md\n M memobench/adapters_v2/native.py\n M memobench/data_v2.py\n M memobench/runner_v2.py\n M tools/check_release.py\n?? docs/integrations/KYLIN_PROFILE_FIX.md\n?? docs/integrations/NATIVE_VM.md\n?? docs/integrations/kylin-profile-fix-20261014/\n?? docs/integrations/native-audit-20261015/\n?? docs/integrations/native-vm-20261014/\n?? docs/integrations/offline-native-20261015/\n?? docs/openkylin/VM_ACCESS.md\n?? memobench/adapters_v2/factory.py\n?? memobench/adapters_v2/ssh_vm.py\n?? memobench/approval_v2.py\n?? memobench/native_artifacts_v2.py\n?? patches/\n?? tests/test_approval_v2.py\n?? tests/test_native_offline_v2.py\n?? tests/test_native_vm_binding.py\n?? tests/test_remote_artifacts_v2.py\n?? tools/dataset_approvals.py\n?? tools/native_vm_product.py\n?? tools/probe_native_vm.py\n?? tools/verify_native_file_query.py\n?? tools/verify_remote_audit_synthetic.py\n?? tools/vm_proxy.py\n",
+  "sha256": {
+    "memobench/adapters_v2/factory.py": "2da15a5efe3807a4466252332a09b25b9e1ad7acb8224b0b74c146ee036136b9",
+    "tools/probe_native_vm.py": "8442c467d59e13e5eb576e71435141fe99151728d87c32fc8b3241cba1ffc455",
+    "configs/experiments/native.json": "1b4e1d5e4a23f18fa33c5552fd65f1cbb696e1f18c8c97c58b29c7d01c1c514e",
+    "memobench/data_v2.py": "34bb9fddc37e733dc9b10a0bf341c89afebf84440e8b5f83a18b432b288efd7d",
+    "memobench/approval_v2.py": "6593d545ff6eefbfb7b0595ac13c044abcdc30134d95f458af7657de0b847d16"
+  }
+}

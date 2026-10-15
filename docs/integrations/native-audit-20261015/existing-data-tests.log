@@ -1,0 +1,24 @@
+test_architecture_requires_evidence (test_data_v2.DataV2Tests.test_architecture_requires_evidence) ... ok
+test_build_deterministic_and_review_gate (test_data_v2.DataV2Tests.test_build_deterministic_and_review_gate) ... ok
+test_conflict_forget_and_inference (test_data_v2.DataV2Tests.test_conflict_forget_and_inference) ... ok
+test_evidence_and_actions (test_data_v2.DataV2Tests.test_evidence_and_actions) ... ok
+test_expanded_truth_regressions (test_data_v2.DataV2Tests.test_expanded_truth_regressions) ... ok
+test_expansion_preserves_existing_review (test_data_v2.DataV2Tests.test_expansion_preserves_existing_review) ... ok
+test_forty_turns_and_character_scale (test_data_v2.DataV2Tests.test_forty_turns_and_character_scale) ... ok
+test_frozen_schema_roundtrip (test_data_v2.DataV2Tests.test_frozen_schema_roundtrip) ... ok
+test_ledger_is_independent_from_wording (test_data_v2.DataV2Tests.test_ledger_is_independent_from_wording) ... ok
+test_paths_reject_escape_and_symlink (test_data_v2.DataV2Tests.test_paths_reject_escape_and_symlink) ... ok
+test_private_fields_never_exported (test_data_v2.DataV2Tests.test_private_fields_never_exported) ... ok
+test_review_page_frozen_payload_and_safe_embedding (test_data_v2.DataV2Tests.test_review_page_frozen_payload_and_safe_embedding) ... ok
+test_seed_bytes_and_stream_isolation (test_data_v2.DataV2Tests.test_seed_bytes_and_stream_isolation) ... ok
+test_sixty_story_budget_and_pending_review (test_data_v2.DataV2Tests.test_sixty_story_budget_and_pending_review) ... ok
+test_source_pair_and_order_validation (test_data_v2.DataV2Tests.test_source_pair_and_order_validation) ... ok
+test_static_release_is_offline_and_pending (test_data_v2.DataV2Tests.test_static_release_is_offline_and_pending) ... ok
+test_story_template_split (test_data_v2.DataV2Tests.test_story_template_split) ... ok
+test_tampered_public_and_unsigned_test_rejected (test_data_v2.DataV2Tests.test_tampered_public_and_unsigned_test_rejected) ... ok
+test_two_variants_share_truth (test_data_v2.DataV2Tests.test_two_variants_share_truth) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 9.494s
+
+OK

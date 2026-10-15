@@ -1,0 +1,365 @@
+{
+  "real_product_query": true,
+  "scope": "synthetic developer file audit only; NOT benchmark scores",
+  "execution": "online",
+  "product": "openclaw",
+  "planned_query_count": 1,
+  "attempted_query_count": 1,
+  "bridge_sha256": "dc22dd2e533ed1ec64f4cdf5bc6e9acecdb7d9f565c35088ab9a61c1b99521a2",
+  "public_input": {
+    "episode_id": "synthetic-real-audit-c2f87fa434264bb49a403106d6c65e45",
+    "variant_id": "v1",
+    "session_ids": [
+      "s1"
+    ],
+    "observations": [],
+    "probes": [
+      {
+        "episode_id": "synthetic-real-audit-c2f87fa434264bb49a403106d6c65e45",
+        "variant_id": "v1",
+        "session_id": "s1",
+        "probe_id": "p",
+        "query": "请使用原生文件写入工具，在当前工作目录下新建 reports/audit-c2f87fa434264bb49a403106d6c65e45.txt。文件完整内容是以下JSON字符串解码后的文本，含结尾一个换行：\"MemoBench synthetic developer audit c2f87fa434264bb49a403106d6c65e45\\n\"。完成后回答完成。",
+        "observed_at": "2026-01-01T00:00:00Z",
+        "sandbox_references": []
+      }
+    ]
+  },
+  "exports": [
+    {
+      "namespace": "3ce7c8f2443c4c36b71ca85be75fa402",
+      "path": "3ce7c8f2443c4c36b71ca85be75fa402.json",
+      "sha256": "dae84e413c6218cc81cc8721757ead83c89aa35698302688e605783872e997d0"
+    }
+  ],
+  "result": {
+    "status": "completed",
+    "error": null,
+    "cleanup_error": null,
+    "blocked_write": null,
+    "cleanup_receipts": [
+      {
+        "operation_id": "2b1b2ea5d84d4b838a39f79d1b50dad7",
+        "status": "ready",
+        "usage": null
+      }
+    ],
+    "operation_evidence": [
+      {
+        "binding": {
+          "run": "memobench-native-st8u226b",
+          "namespace": "3ce7c8f2443c4c36b71ca85be75fa402",
+          "episode_id": "synthetic-real-audit-c2f87fa434264bb49a403106d6c65e45",
+          "variant_id": "v1",
+          "session_id": "s1",
+          "operation_id": "openclaw:c2f87fa434264bb49a403106d6c65e45:query:p",
+          "bridge_sha256": "dc22dd2e533ed1ec64f4cdf5bc6e9acecdb7d9f565c35088ab9a61c1b99521a2"
+        },
+        "checkpoint": {
+          "binding": {
+            "run": "memobench-native-st8u226b",
+            "namespace": "3ce7c8f2443c4c36b71ca85be75fa402",
+            "episode_id": "synthetic-real-audit-c2f87fa434264bb49a403106d6c65e45",
+            "variant_id": "v1",
+            "session_id": "s1",
+            "operation_id": "openclaw:c2f87fa434264bb49a403106d6c65e45:query:p",
+            "bridge_sha256": "dc22dd2e533ed1ec64f4cdf5bc6e9acecdb7d9f565c35088ab9a61c1b99521a2"
+          },
+          "baseline": {},
+          "transcript": {
+            "count": 0,
+            "prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          }
+        },
+        "evidence": {
+          "binding": {
+            "run": "memobench-native-st8u226b",
+            "namespace": "3ce7c8f2443c4c36b71ca85be75fa402",
+            "episode_id": "synthetic-real-audit-c2f87fa434264bb49a403106d6c65e45",
+            "variant_id": "v1",
+            "session_id": "s1",
+            "operation_id": "openclaw:c2f87fa434264bb49a403106d6c65e45:query:p",
+            "bridge_sha256": "dc22dd2e533ed1ec64f4cdf5bc6e9acecdb7d9f565c35088ab9a61c1b99521a2"
+          },
+          "baseline": {},
+          "after": {
+            "reports/audit-c2f87fa434264bb49a403106d6c65e45.txt": {
+              "sha256": "39d439a123aae81fe066cff8d822327fd8eddf3d58b3f7ed545cbf17edea8fc0",
+              "size": 69,
+              "content_base64": "TWVtb0JlbmNoIHN5bnRoZXRpYyBkZXZlbG9wZXIgYXVkaXQgYzJmODdmYTQzNDI2NGJiNDlhNDAzMTA2ZDZjNjVlNDUK"
+            }
+          },
+          "complete": true,
+          "audit": {
+            "product_session": "de6b6883-a60e-4fd3-8128-b9f495ae06b3",
+            "checkpoint": {
+              "count": 0,
+              "prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            "terminal": {
+              "count": 12,
+              "prefix_sha256": "39c311a31649db744b660641a828bc193fd317db983a12f81d0df031da3a4779"
+            },
+            "events": [
+              {
+                "call_id": "call_00_RCbHAZP42pRTeaH4MRGD1009",
+                "tool": "write",
+                "path": "reports/audit-c2f87fa434264bb49a403106d6c65e45.txt",
+                "operation": "write",
+                "arguments": {
+                  "path": "/home/mb/case/workspace/reports/audit-c2f87fa434264bb49a403106d6c65e45.txt",
+                  "content": "MemoBench synthetic developer audit c2f87fa434264bb49a403106d6c65e45\n"
+                },
+                "native_call": {
+                  "source": "agents/main/agent/openclaw-agent.sqlite",
+                  "position": 5,
+                  "session_id": "de6b6883-a60e-4fd3-8128-b9f495ae06b3",
+                  "tool_call": {
+                    "id": "call_00_RCbHAZP42pRTeaH4MRGD1009",
+                    "name": "write",
+                    "arguments": {
+                      "path": "/home/mb/case/workspace/reports/audit-c2f87fa434264bb49a403106d6c65e45.txt",
+                      "content": "MemoBench synthetic developer audit c2f87fa434264bb49a403106d6c65e45\n"
+                    }
+                  }
+                },
+                "native_result": {
+                  "source": "agents/main/agent/openclaw-agent.sqlite",
+                  "position": 6,
+                  "session_id": "de6b6883-a60e-4fd3-8128-b9f495ae06b3",
+                  "message": {
+                    "role": "toolResult",
+                    "toolCallId": "call_00_RCbHAZP42pRTeaH4MRGD1009",
+                    "toolName": "write",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Successfully wrote 69 bytes to /home/mb/case/workspace/reports/audit-c2f87fa434264bb49a403106d6c65e45.txt"
+                      }
+                    ],
+                    "details": {
+                      "changed": true,
+                      "created": true,
+                      "diff": "+1 MemoBench synthetic developer audit c2f87fa434264bb49a403106d6c65e45",
+                      "firstChangedLine": 1,
+                      "patch": "--- /home/mb/case/workspace/reports/audit-c2f87fa434264bb49a403106d6c65e45.txt\n+++ /home/mb/case/workspace/reports/audit-c2f87fa434264bb49a403106d6c65e45.txt\n@@ -0,0 +1,1 @@\n+MemoBench synthetic developer audit c2f87fa434264bb49a403106d6c65e45\n"
+                    },
+                    "isError": false,
+                    "timestamp": 1792040986639,
+                    "__openclaw": {
+                      "runId": "e8993a1f-951d-478e-8124-b1bb5100f385"
+                    }
+                  }
+                }
+              },
+              {
+                "call_id": "call_00_g4vaiqmeeNKcD9NHBXUG5503",
+                "tool": "read",
+                "path": "reports/audit-c2f87fa434264bb49a403106d6c65e45.txt",
+                "operation": "read",
+                "arguments": {
+                  "path": "/home/mb/case/workspace/reports/audit-c2f87fa434264bb49a403106d6c65e45.txt"
+                },
+                "native_call": {
+                  "source": "agents/main/agent/openclaw-agent.sqlite",
+                  "position": 8,
+                  "session_id": "de6b6883-a60e-4fd3-8128-b9f495ae06b3",
+                  "tool_call": {
+                    "id": "call_00_g4vaiqmeeNKcD9NHBXUG5503",
+                    "name": "read",
+                    "arguments": {
+                      "path": "/home/mb/case/workspace/reports/audit-c2f87fa434264bb49a403106d6c65e45.txt"
+                    }
+                  }
+                },
+                "native_result": {
+                  "source": "agents/main/agent/openclaw-agent.sqlite",
+                  "position": 9,
+                  "session_id": "de6b6883-a60e-4fd3-8128-b9f495ae06b3",
+                  "message": {
+                    "role": "toolResult",
+                    "toolCallId": "call_00_g4vaiqmeeNKcD9NHBXUG5503",
+                    "toolName": "read",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "MemoBench synthetic developer audit c2f87fa434264bb49a403106d6c65e45\n"
+                      }
+                    ],
+                    "details": {
+                      "kind": "text",
+                      "content": "MemoBench synthetic developer audit c2f87fa434264bb49a403106d6c65e45\n"
+                    },
+                    "isError": false,
+                    "timestamp": 1792040987609,
+                    "__openclaw": {
+                      "runId": "e8993a1f-951d-478e-8124-b1bb5100f385"
+                    }
+                  }
+                }
+              }
+            ],
+            "complete": true
+          }
+        },
+        "verification": {
+          "status": "passed",
+          "checks": [
+            {
+              "status": "passed",
+              "faults": []
+            }
+          ],
+          "faults": [],
+          "binding": {
+            "run": "memobench-native-st8u226b",
+            "namespace": "3ce7c8f2443c4c36b71ca85be75fa402",
+            "episode_id": "synthetic-real-audit-c2f87fa434264bb49a403106d6c65e45",
+            "variant_id": "v1",
+            "session_id": "s1",
+            "operation_id": "openclaw:c2f87fa434264bb49a403106d6c65e45:query:p",
+            "bridge_sha256": "dc22dd2e533ed1ec64f4cdf5bc6e9acecdb7d9f565c35088ab9a61c1b99521a2"
+          },
+          "artifacts": {
+            "reports/audit-c2f87fa434264bb49a403106d6c65e45.txt": "39d439a123aae81fe066cff8d822327fd8eddf3d58b3f7ed545cbf17edea8fc0"
+          },
+          "deleted_paths": [],
+          "audit_coverage": "direct_file_tools_only; exec and render unsupported",
+          "source": "bridge_workspace_bytes_and_native_tool_trace"
+        }
+      }
+    ],
+    "results": [
+      {
+        "prediction": {
+          "episode_id": "synthetic-real-audit-c2f87fa434264bb49a403106d6c65e45",
+          "variant_id": "v1",
+          "session_id": "s1",
+          "probe_id": "p",
+          "status": "ok",
+          "text": "完成。已用原生写入工具在 `/home/mb/case/workspace/reports/audit-c2f87fa434264bb49a403106d6c65e45.txt` 创建文件，内容为解码后的文本（69 字节，含结尾换行），并已回读校验一致。",
+          "answered_at": "2026-10-15T05:09:48.876066+00:00",
+          "state": null,
+          "slots": null,
+          "retrieved_evidence": null,
+          "usage": null,
+          "file_actions": null
+        },
+        "execution": "online",
+        "score": {
+          "probe_id": "p",
+          "status": "scored",
+          "source": "rules",
+          "metrics": {
+            "answer_correct": null,
+            "current_value_misuse": null,
+            "forgotten_disclosure": null,
+            "unknown_assertion": null,
+            "evidence_supported": null,
+            "task_completed": true
+          },
+          "eligible": {
+            "answer_correct": false,
+            "current_value_misuse": false,
+            "forgotten_disclosure": false,
+            "unknown_assertion": false,
+            "evidence_supported": false,
+            "task_completed": true
+          },
+          "errors": [],
+          "review_reason": "semantic_judge_required"
+        },
+        "raw_reader": null,
+        "task_status": "passed",
+        "task_verification": {
+          "status": "passed",
+          "checks": [
+            {
+              "status": "passed",
+              "faults": []
+            }
+          ],
+          "faults": [],
+          "binding": {
+            "run": "memobench-native-st8u226b",
+            "namespace": "3ce7c8f2443c4c36b71ca85be75fa402",
+            "episode_id": "synthetic-real-audit-c2f87fa434264bb49a403106d6c65e45",
+            "variant_id": "v1",
+            "session_id": "s1",
+            "operation_id": "openclaw:c2f87fa434264bb49a403106d6c65e45:query:p",
+            "bridge_sha256": "dc22dd2e533ed1ec64f4cdf5bc6e9acecdb7d9f565c35088ab9a61c1b99521a2"
+          },
+          "artifacts": {
+            "reports/audit-c2f87fa434264bb49a403106d6c65e45.txt": "39d439a123aae81fe066cff8d822327fd8eddf3d58b3f7ed545cbf17edea8fc0"
+          },
+          "deleted_paths": [],
+          "audit_coverage": "direct_file_tools_only; exec and render unsupported",
+          "source": "bridge_workspace_bytes_and_native_tool_trace"
+        },
+        "evidence_locations": []
+      }
+    ],
+    "events": [
+      {
+        "method": "reset_case",
+        "receipt": {
+          "operation_id": "openclaw:c2f87fa434264bb49a403106d6c65e45:reset",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "begin_session",
+        "receipt": {
+          "operation_id": "openclaw:c2f87fa434264bb49a403106d6c65e45:begin:s1",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "end_session",
+        "receipt": {
+          "operation_id": "openclaw:c2f87fa434264bb49a403106d6c65e45:end:s1",
+          "status": "ready",
+          "usage": null
+        }
+      }
+    ],
+    "cost_records": [
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "online",
+        "status": "ready",
+        "recorded_at": "2026-10-15T05:09:38.476053+00:00"
+      },
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "online",
+        "status": "ready",
+        "recorded_at": "2026-10-15T05:09:38.603860+00:00"
+      },
+      {
+        "stage": "read",
+        "usage": null,
+        "cost": null,
+        "execution": "online",
+        "status": "ok",
+        "recorded_at": "2026-10-15T05:09:48.618904+00:00"
+      },
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "online",
+        "status": "ready",
+        "recorded_at": "2026-10-15T05:09:48.876013+00:00"
+      }
+    ],
+    "finished_at": "2026-10-15T05:09:49.004707+00:00"
+  },
+  "api_cost": null
+}

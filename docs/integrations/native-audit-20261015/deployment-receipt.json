@@ -1,0 +1,103 @@
+{
+  "path": "/home/mb/memobench-native/native_vm_product.py",
+  "old_sha256": "6996e5353c68087d2988f5814ed59d0c6fa0337712dcd10fc4b8c10c17b9ad5f",
+  "backup": "/home/mb/memobench-native/native_vm_product.py.backup-6996e5353c68087d2988f5814ed59d0c6fa0337712dcd10fc4b8c10c17b9ad5f",
+  "new_sha256": "1b22e1637d4c535f64d074347ebede46b4291172ce73eb938d01c5f430097d6d",
+  "py_compile": "passed",
+  "model_api_calls": 0,
+  "local_sha256": "1b22e1637d4c535f64d074347ebede46b4291172ce73eb938d01c5f430097d6d",
+  "checks": [
+    {
+      "product": "kylin",
+      "model_api_calls": 0,
+      "calls": [
+        {
+          "method": "reset_case",
+          "receipt": {
+            "operation_id": "no-api:kylin:reset",
+            "status": "ready",
+            "usage": null
+          }
+        },
+        {
+          "method": "begin_session",
+          "receipt": {
+            "operation_id": "no-api:kylin:begin",
+            "status": "ready",
+            "usage": null
+          }
+        }
+      ],
+      "default_bridge_path": true,
+      "checkpoint": {
+        "binding": {
+          "run": "memobench-native-57drpv16",
+          "namespace": "515e87eb91a1413589c250f7dcb1f50a",
+          "episode_id": "deployment-synthetic-no-query",
+          "variant_id": "v1",
+          "session_id": "s1",
+          "operation_id": "no-api:kylin:unused-query",
+          "bridge_sha256": "1b22e1637d4c535f64d074347ebede46b4291172ce73eb938d01c5f430097d6d"
+        },
+        "baseline": {},
+        "transcript": {
+          "count": 0,
+          "prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      },
+      "cleanup_receipts": [
+        {
+          "operation_id": "0071d9cee0374fa4b53316c709fb4d12",
+          "status": "ready",
+          "usage": null
+        }
+      ]
+    },
+    {
+      "product": "openclaw",
+      "model_api_calls": 0,
+      "calls": [
+        {
+          "method": "reset_case",
+          "receipt": {
+            "operation_id": "no-api:openclaw:reset",
+            "status": "ready",
+            "usage": null
+          }
+        },
+        {
+          "method": "begin_session",
+          "receipt": {
+            "operation_id": "no-api:openclaw:begin",
+            "status": "ready",
+            "usage": null
+          }
+        }
+      ],
+      "default_bridge_path": true,
+      "checkpoint": {
+        "binding": {
+          "run": "memobench-native-5e9rbvei",
+          "namespace": "0c197e05e8ec4b4c9f78dab6775b4637",
+          "episode_id": "deployment-synthetic-no-query",
+          "variant_id": "v1",
+          "session_id": "s1",
+          "operation_id": "no-api:openclaw:unused-query",
+          "bridge_sha256": "1b22e1637d4c535f64d074347ebede46b4291172ce73eb938d01c5f430097d6d"
+        },
+        "baseline": {},
+        "transcript": {
+          "count": 0,
+          "prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      },
+      "cleanup_receipts": [
+        {
+          "operation_id": "0dc8c820342b47788592bc008eb7ff2e",
+          "status": "ready",
+          "usage": null
+        }
+      ]
+    }
+  ]
+}

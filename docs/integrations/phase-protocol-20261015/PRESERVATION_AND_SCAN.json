@@ -1,0 +1,18 @@
+{
+  "original_data_old_evidence_scoring_files_verified": 112,
+  "original_files_unchanged": true,
+  "intermediate_openclaw_failure_verified_files": 3,
+  "intermediate_failure_unchanged": true,
+  "credential_pattern_scan": {
+    "files": 152,
+    "match_paths": [],
+    "scope": "common API-key and private-key patterns; provider credential file never included"
+  },
+  "scoring_and_judge_unchanged": true,
+  "complete_case_reviews": [
+    "PRIMARY_KYLIN_COMPLETE_RUN_REVIEW.json",
+    "PRIMARY_OPENCLAW_COMPLETE_RUN_REVIEW.json",
+    "FINAL_ACCEPTANCE_REVIEW.md"
+  ],
+  "no_model_calls_after_acceptance": true
+}

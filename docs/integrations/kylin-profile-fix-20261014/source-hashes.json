@@ -1,0 +1,18 @@
+{
+  "upstream_commit": "246652c0fdb687953ef8ef25973081bf1298f0c6",
+  "files": {
+    "patches/kylin/profile-deepseek-bounded.patch": "d2251ca4cf12e4cfdbc7e2112c777d1b948fb117d36e2cdabdcefd42597437ae",
+    "patches/kylin/completion-output-contract.patch": "71d7401962c45cd36303751b4557d3c2e5b53cfc8d1e7ca73a44e49dcc133ecf",
+    "patches/kylin/profile-lifecycle-guidance.patch": "66fd806c3c900f91efacd42c98c6b96100fcf81b3edeca4fbdfd802cb627b8f9",
+    "patches/kylin/test_profile_deepseek_bounded.py": "569069ab650cdfc5231a1d15ebb07406554f899efb3bc35a86efd545111648de",
+    "patches/kylin/test_profile_lifecycle_guidance.py": "27163399badeadc9fe35e8910d2f7737a421b22ff5463165ca9944bc50ae284a",
+    "tools/native_vm_product.py": "6996e5353c68087d2988f5814ed59d0c6fa0337712dcd10fc4b8c10c17b9ad5f",
+    "tools/probe_native_vm.py": "16309ad933c1ce365c0e62874868c219e583c42518da3a02af02ae1c1da41cce",
+    "tests/test_native_vm_binding.py": "fa0e6799ac10098785d24160ecda7259f63f1b987604f8e9e179c3a849772804"
+  },
+  "patched_product_files": {
+    "agent/user_profile/extractors.py": "c3283f5d1dd9da12b158df404d63ecdcdf9ac9846c461de447351c6455d1c489",
+    "agent/completion_review.py": "c1e6db5e8fa85bcd2db89743be9f999b3bfcde785b69e5383aaaa1db28a507f1",
+    "agent/system_prompt.py": "b7c6b39d4b3b660cedd495b801e67046f20a14e277875f1c75a32c9db791a0bb"
+  }
+}

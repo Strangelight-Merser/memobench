@@ -1,0 +1,23 @@
+{
+  "memobench": {
+    "passed": 192,
+    "seconds": 37.573,
+    "command": "python3 -m unittest discover -s tests"
+  },
+  "kylin_profile": {
+    "passed": 32,
+    "seconds": 1.52,
+    "command": "scripts/run_tests.sh tests/agent/test_user_profile_runtime.py tests/agent/test_user_profile_cli.py tests/agent/test_profile_deepseek_bounded.py"
+  },
+  "kylin_completion_review": {
+    "passed": 66,
+    "seconds": 5.75,
+    "command": "scripts/run_tests.sh tests/agent/test_completion_review.py tests/run_agent/test_completion_review_flow.py"
+  },
+  "final_kylin_combined": {
+    "passed": 115,
+    "seconds": 7.0,
+    "log": "upstream-tests.txt",
+    "scope": "profile extraction, native completion review, conversation loop and system prompt; all three patches installed"
+  }
+}

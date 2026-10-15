@@ -1,0 +1,10 @@
+test_failed_process_does_not_accept_old_answer (test_native_vm_binding.NativeVMBindingTests.test_failed_process_does_not_accept_old_answer) ... ok
+test_kylin_reads_current_committed_answer_not_debug_stdout (test_native_vm_binding.NativeVMBindingTests.test_kylin_reads_current_committed_answer_not_debug_stdout) ... ok
+test_openclaw_has_no_openai_credential_alias (test_native_vm_binding.NativeVMBindingTests.test_openclaw_has_no_openai_credential_alias) ... ok
+test_timeout_preserves_diagnostics_without_key (test_native_vm_binding.NativeVMBindingTests.test_timeout_preserves_diagnostics_without_key) ... ok
+test_transport_requires_explicit_live (test_native_vm_binding.NativeVMBindingTests.test_transport_requires_explicit_live) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.007s
+
+OK

@@ -1,0 +1,11 @@
+test_native_memory_events_never_count_as_task_events (test_phase_protocol_v2.PhaseProtocolTests.test_native_memory_events_never_count_as_task_events) ... ok
+test_observe_mount_protects_tasks_but_keeps_native_home_writable (test_phase_protocol_v2.PhaseProtocolTests.test_observe_mount_protects_tasks_but_keeps_native_home_writable) ... ok
+test_observe_workspace_change_blocks_ready_and_retains_native_answer (test_phase_protocol_v2.PhaseProtocolTests.test_observe_workspace_change_blocks_ready_and_retains_native_answer) ... ok
+test_openclaw_native_directory_roles_are_separate (test_phase_protocol_v2.PhaseProtocolTests.test_openclaw_native_directory_roles_are_separate) ... ok
+test_phase_does_not_rewrite_public_text_or_resume_id (test_phase_protocol_v2.PhaseProtocolTests.test_phase_does_not_rewrite_public_text_or_resume_id) ... ok
+test_system_policy_refresh_preserves_native_memory_configuration (test_phase_protocol_v2.PhaseProtocolTests.test_system_policy_refresh_preserves_native_memory_configuration) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.006s
+
+OK

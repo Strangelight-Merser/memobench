@@ -1,0 +1,331 @@
+{
+  "product": "kylin",
+  "started_at": "2026-10-15T02:48:08.179113+00:00",
+  "scope": "synthetic integration acceptance only",
+  "capabilities": {
+    "native_answer": "supported",
+    "retrieved_evidence": "unsupported",
+    "write_usage": "unsupported",
+    "flush": "unsupported",
+    "restart": "unsupported",
+    "storage_inspection": "supported"
+  },
+  "canary": "MB-1D0855F6CCF9",
+  "events": [
+    {
+      "method": "reset_case",
+      "receipt": {
+        "operation_id": "a964bc26e991464db51fd9bc92ff47c0",
+        "status": "ready",
+        "usage": null
+      }
+    },
+    {
+      "method": "begin_session",
+      "receipt": {
+        "operation_id": "1b3fcb005e564e66b0965bdaa7231b31",
+        "status": "ready",
+        "usage": null
+      }
+    },
+    {
+      "method": "public_observation",
+      "input": {
+        "episode_id": "memory",
+        "variant_id": "v1",
+        "session_id": "s1",
+        "observation_id": "o1",
+        "role": "user",
+        "text": "请记住：我的虚构测试项目“蓝帆”的代号是 MB-1D0855F6CCF9。后面的新会话会询问，请保存到你的长期记忆。",
+        "observed_at": "2026-10-15T02:48:08.479681+00:00",
+        "sandbox_references": []
+      }
+    },
+    {
+      "method": "observe",
+      "receipt": {
+        "operation_id": "9144dc6e079b453291295c2d8b5572e9",
+        "status": "ready",
+        "usage": null
+      }
+    },
+    {
+      "method": "query",
+      "input": {
+        "episode_id": "memory",
+        "variant_id": "v1",
+        "session_id": "s1",
+        "probe_id": "q1",
+        "query": "蓝帆项目的代号是什么？只回答代号；不知道就回答不知道。",
+        "observed_at": "2026-10-15T02:48:40.719946+00:00",
+        "sandbox_references": []
+      },
+      "prediction": {
+        "episode_id": "memory",
+        "variant_id": "v1",
+        "session_id": "s1",
+        "probe_id": "q1",
+        "status": "ok",
+        "text": "MB-1D0855F6CCF9",
+        "answered_at": "2026-10-15T02:48:58.539802+00:00",
+        "state": null,
+        "slots": null,
+        "retrieved_evidence": null,
+        "usage": null,
+        "file_actions": null
+      }
+    },
+    {
+      "method": "end_session",
+      "receipt": {
+        "operation_id": "d1261eef87bf42a0a0dae13a0c04a7eb",
+        "status": "ready",
+        "usage": null
+      }
+    },
+    {
+      "method": "begin_session",
+      "receipt": {
+        "operation_id": "2a1c1a2cc6cf46c3af9f80d518022ae2",
+        "status": "ready",
+        "usage": null
+      }
+    },
+    {
+      "method": "query",
+      "input": {
+        "episode_id": "memory",
+        "variant_id": "v1",
+        "session_id": "s2",
+        "probe_id": "q2",
+        "query": "我以前告诉过你的蓝帆项目代号是什么？只回答代号；不知道就回答不知道。",
+        "observed_at": "2026-10-15T02:48:59.000458+00:00",
+        "sandbox_references": []
+      },
+      "prediction": {
+        "episode_id": "memory",
+        "variant_id": "v1",
+        "session_id": "s2",
+        "probe_id": "q2",
+        "status": "ok",
+        "text": "MB-1D0855F6CCF9\n\n（来源已核实：你 2026-10-15 会话原话“我的虚构测试项目‘蓝帆’的代号是 MB-1D0855F6CCF9”，本地备份 /home/mb/case/Documents/蓝帆项目代号备忘.txt 内容一致。）",
+        "answered_at": "2026-10-15T02:49:45.527717+00:00",
+        "state": null,
+        "slots": null,
+        "retrieved_evidence": null,
+        "usage": null,
+        "file_actions": null
+      }
+    },
+    {
+      "method": "query",
+      "input": {
+        "episode_id": "memory",
+        "variant_id": "v1",
+        "session_id": "s2",
+        "probe_id": "q3",
+        "query": "请把蓝帆项目代号写到当前工作目录的 notes/code.txt，文件只含代号和一个换行。如果不知道就不要写。",
+        "observed_at": "2026-10-15T02:49:45.408450+00:00",
+        "sandbox_references": []
+      },
+      "prediction": {
+        "episode_id": "memory",
+        "variant_id": "v1",
+        "session_id": "s2",
+        "probe_id": "q3",
+        "status": "ok",
+        "text": "已写入。\n\n文件：/home/mb/case/workspace/notes/code.txt\n内容：MB-1D0855F6CCF9 加一个换行（16 字节，仅一行）",
+        "answered_at": "2026-10-15T02:50:13.096960+00:00",
+        "state": null,
+        "slots": null,
+        "retrieved_evidence": null,
+        "usage": null,
+        "file_actions": null
+      }
+    },
+    {
+      "method": "end_session",
+      "receipt": {
+        "operation_id": "8d5c757cb2df48c7b0a768d878ddae0b",
+        "status": "ready",
+        "usage": null
+      }
+    },
+    {
+      "method": "reset_case",
+      "receipt": {
+        "operation_id": "1d5a4371a1ab4cba9ad0f672af296c86",
+        "status": "ready",
+        "usage": null
+      }
+    },
+    {
+      "method": "begin_session",
+      "receipt": {
+        "operation_id": "77cc539194834462aadfac778fd4e2b2",
+        "status": "ready",
+        "usage": null
+      }
+    },
+    {
+      "method": "query",
+      "input": {
+        "episode_id": "isolation",
+        "variant_id": "v1",
+        "session_id": "s1",
+        "probe_id": "q4",
+        "query": "我以前告诉过你的蓝帆项目代号是什么？只回答代号；不知道就回答不知道。",
+        "observed_at": "2026-10-15T02:50:13.571011+00:00",
+        "sandbox_references": []
+      },
+      "prediction": {
+        "episode_id": "isolation",
+        "variant_id": "v1",
+        "session_id": "s1",
+        "probe_id": "q4",
+        "status": "ok",
+        "text": "不知道\n\n（记忆库中没有任何相关记录，我无法确认你曾告诉过我蓝帆项目的代号。）",
+        "answered_at": "2026-10-15T02:50:40.112153+00:00",
+        "state": null,
+        "slots": null,
+        "retrieved_evidence": null,
+        "usage": null,
+        "file_actions": null
+      }
+    },
+    {
+      "method": "end_session",
+      "receipt": {
+        "operation_id": "b0f74e025bb54a4bb68f278a8b5f7cce",
+        "status": "ready",
+        "usage": null
+      }
+    },
+    {
+      "method": "reset_case",
+      "receipt": {
+        "operation_id": "ae45c5f2f8b24f32b5040626da3d3ae7",
+        "status": "ready",
+        "usage": null
+      }
+    },
+    {
+      "method": "begin_session",
+      "receipt": {
+        "operation_id": "ba61c3d6a4a14c248942fb49411fa5a6",
+        "status": "ready",
+        "usage": null
+      }
+    },
+    {
+      "method": "public_observation",
+      "input": {
+        "episode_id": "profile",
+        "variant_id": "v1",
+        "session_id": "p1",
+        "observation_id": "profile-o1",
+        "role": "user",
+        "text": "以后请称呼我为青竹3F5BFE，这是我希望你记住的昵称。",
+        "observed_at": "2026-10-15T02:50:40.603282+00:00",
+        "sandbox_references": []
+      }
+    },
+    {
+      "method": "observe",
+      "receipt": {
+        "operation_id": "5f217930660e45f7b6d6e88c33dcd7b1",
+        "status": "ready",
+        "usage": null
+      }
+    },
+    {
+      "method": "end_session",
+      "receipt": {
+        "operation_id": "684f76ad43ed4eea9f513bd6a88f07bd",
+        "status": "ready",
+        "usage": null
+      }
+    },
+    {
+      "method": "begin_session",
+      "receipt": {
+        "operation_id": "ababb5360cbc4167a29f9b8f50b9bd34",
+        "status": "ready",
+        "usage": null
+      }
+    },
+    {
+      "method": "query",
+      "input": {
+        "episode_id": "profile",
+        "variant_id": "v1",
+        "session_id": "p2",
+        "probe_id": "profile-q1",
+        "query": "我希望你如何称呼我？只回答昵称，不知道就回答不知道。",
+        "observed_at": "2026-10-15T02:51:03.596095+00:00",
+        "sandbox_references": []
+      },
+      "prediction": {
+        "episode_id": "profile",
+        "variant_id": "v1",
+        "session_id": "p2",
+        "probe_id": "profile-q1",
+        "status": "ok",
+        "text": "青竹3F5BFE",
+        "answered_at": "2026-10-15T02:51:35.050282+00:00",
+        "state": null,
+        "slots": null,
+        "retrieved_evidence": null,
+        "usage": null,
+        "file_actions": null
+      }
+    },
+    {
+      "method": "end_session",
+      "receipt": {
+        "operation_id": "1f35b91b5f344169849a40b7a7f9aa7c",
+        "status": "ready",
+        "usage": null
+      }
+    }
+  ],
+  "checks": {
+    "same_session": true,
+    "cross_session": false,
+    "cross_case_no_canary": true,
+    "profile_cross_session": true,
+    "cleanup": true,
+    "profile_turns_completed": true,
+    "file_task": true,
+    "profile_persisted": true
+  },
+  "publish_ranking": false,
+  "execution": "online",
+  "model": "deepseek-flash",
+  "openclaw_mode": "embedded_explicit; optional Gateway flush unsupported",
+  "profile_canary": "青竹3F5BFE",
+  "namespaces": [
+    "24a7561445a146b789068c903123b65f",
+    "a9aba054ae6d4aedbc4df4bbdeb6509a",
+    "65a429fc250c4d7ab9bd8a9df3f17bda"
+  ],
+  "cleanup_receipts": [
+    {
+      "operation_id": "344b23ae82e144f38048c8eb4c1e0548",
+      "status": "ready",
+      "usage": null
+    },
+    {
+      "operation_id": "1093f94d744647668eb26369a0d1f601",
+      "status": "ready",
+      "usage": null
+    },
+    {
+      "operation_id": "7f5577f267e44b9c93cb1178aea7448d",
+      "status": "ready",
+      "usage": null
+    }
+  ],
+  "finished_at": "2026-10-15T02:51:36.115755+00:00",
+  "status": "incomplete"
+}

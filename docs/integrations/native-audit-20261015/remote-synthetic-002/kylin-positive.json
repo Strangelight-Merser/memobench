@@ -1,0 +1,327 @@
+{
+  "product": "kylin",
+  "synthetic_transport_audit": true,
+  "untraced_extra": false,
+  "result": {
+    "status": "completed",
+    "error": null,
+    "cleanup_error": null,
+    "blocked_write": null,
+    "cleanup_receipts": [
+      {
+        "operation_id": "d06d59e35b744c02a8c2d09dde4f490f",
+        "status": "ready",
+        "usage": null
+      }
+    ],
+    "operation_evidence": [
+      {
+        "binding": {
+          "run": "memobench-native-k8et7kvz",
+          "namespace": "26811e3f028d4e5d9a3c96df01621fce",
+          "episode_id": "synthetic-audit",
+          "variant_id": "v",
+          "session_id": "s2",
+          "operation_id": "kylin-positive:query:p",
+          "bridge_sha256": "69c3a6169ef73e279ebc35d5e7b0e437ed0257d5d59e3fc958afb5ab7d102603"
+        },
+        "checkpoint": {
+          "binding": {
+            "run": "memobench-native-k8et7kvz",
+            "namespace": "26811e3f028d4e5d9a3c96df01621fce",
+            "episode_id": "synthetic-audit",
+            "variant_id": "v",
+            "session_id": "s2",
+            "operation_id": "kylin-positive:query:p",
+            "bridge_sha256": "69c3a6169ef73e279ebc35d5e7b0e437ed0257d5d59e3fc958afb5ab7d102603"
+          },
+          "baseline": {},
+          "transcript": {
+            "count": 0,
+            "prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          }
+        },
+        "evidence": {
+          "binding": {
+            "run": "memobench-native-k8et7kvz",
+            "namespace": "26811e3f028d4e5d9a3c96df01621fce",
+            "episode_id": "synthetic-audit",
+            "variant_id": "v",
+            "session_id": "s2",
+            "operation_id": "kylin-positive:query:p",
+            "bridge_sha256": "69c3a6169ef73e279ebc35d5e7b0e437ed0257d5d59e3fc958afb5ab7d102603"
+          },
+          "baseline": {},
+          "after": {
+            "reports/synthetic.txt": {
+              "sha256": "e315d2370075b5c022a1b552774b62ed847aeda2efde7e6fb476fae748e52856",
+              "size": 15,
+              "content_base64": "c3ludGhldGljIGhlbGxv"
+            }
+          },
+          "complete": true,
+          "audit": {
+            "product_session": "synthetic-56c258e958b14b199535dafaf26b367a",
+            "checkpoint": {
+              "count": 0,
+              "prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            "terminal": {
+              "count": 2,
+              "prefix_sha256": "33c5aa9fca3d404de051e4b658b2c090de9468279d92d236cd2ef7dd221ecc60"
+            },
+            "events": [
+              {
+                "call_id": "05c74c6e45904722933ffc9871676481",
+                "tool": "write_file",
+                "path": "reports/synthetic.txt",
+                "operation": "write",
+                "arguments": {
+                  "path": "reports/synthetic.txt",
+                  "content": "synthetic hello"
+                },
+                "native_call": {
+                  "source": "kylin/messages",
+                  "position": 1,
+                  "session_id": "synthetic-56c258e958b14b199535dafaf26b367a",
+                  "message": {
+                    "role": "assistant",
+                    "content": null,
+                    "tool_call_id": null,
+                    "tool_calls": [
+                      {
+                        "id": "05c74c6e45904722933ffc9871676481",
+                        "function": {
+                          "name": "write_file",
+                          "arguments": "{\"path\": \"reports/synthetic.txt\", \"content\": \"synthetic hello\"}"
+                        }
+                      }
+                    ],
+                    "tool_name": null
+                  }
+                },
+                "native_result": {
+                  "source": "kylin/messages",
+                  "position": 2,
+                  "session_id": "synthetic-56c258e958b14b199535dafaf26b367a",
+                  "message": {
+                    "role": "tool",
+                    "content": "{\"success\":true}",
+                    "tool_call_id": "05c74c6e45904722933ffc9871676481",
+                    "tool_calls": [],
+                    "tool_name": "write_file"
+                  }
+                }
+              }
+            ],
+            "complete": true
+          }
+        },
+        "verification": {
+          "status": "passed",
+          "checks": [
+            {
+              "status": "passed",
+              "faults": []
+            }
+          ],
+          "faults": [],
+          "binding": {
+            "run": "memobench-native-k8et7kvz",
+            "namespace": "26811e3f028d4e5d9a3c96df01621fce",
+            "episode_id": "synthetic-audit",
+            "variant_id": "v",
+            "session_id": "s2",
+            "operation_id": "kylin-positive:query:p",
+            "bridge_sha256": "69c3a6169ef73e279ebc35d5e7b0e437ed0257d5d59e3fc958afb5ab7d102603"
+          },
+          "artifacts": {
+            "reports/synthetic.txt": "e315d2370075b5c022a1b552774b62ed847aeda2efde7e6fb476fae748e52856"
+          },
+          "deleted_paths": [],
+          "audit_coverage": "direct_file_tools_only; exec and render unsupported",
+          "source": "bridge_workspace_bytes_and_native_tool_trace"
+        }
+      }
+    ],
+    "results": [
+      {
+        "prediction": {
+          "episode_id": "synthetic-audit",
+          "variant_id": "v",
+          "session_id": "s2",
+          "probe_id": "p",
+          "status": "ok",
+          "text": "synthetic fixture answer",
+          "answered_at": "2026-10-15T05:06:15.376213+00:00",
+          "state": null,
+          "slots": null,
+          "retrieved_evidence": null,
+          "usage": null,
+          "file_actions": null
+        },
+        "execution": "offline",
+        "score": {
+          "probe_id": "p",
+          "status": "scored",
+          "source": "rules",
+          "metrics": {
+            "answer_correct": null,
+            "current_value_misuse": null,
+            "forgotten_disclosure": null,
+            "unknown_assertion": null,
+            "evidence_supported": null,
+            "task_completed": true
+          },
+          "eligible": {
+            "answer_correct": false,
+            "current_value_misuse": false,
+            "forgotten_disclosure": false,
+            "unknown_assertion": false,
+            "evidence_supported": false,
+            "task_completed": true
+          },
+          "errors": [],
+          "review_reason": "semantic_judge_required"
+        },
+        "raw_reader": null,
+        "task_status": "passed",
+        "task_verification": {
+          "status": "passed",
+          "checks": [
+            {
+              "status": "passed",
+              "faults": []
+            }
+          ],
+          "faults": [],
+          "binding": {
+            "run": "memobench-native-k8et7kvz",
+            "namespace": "26811e3f028d4e5d9a3c96df01621fce",
+            "episode_id": "synthetic-audit",
+            "variant_id": "v",
+            "session_id": "s2",
+            "operation_id": "kylin-positive:query:p",
+            "bridge_sha256": "69c3a6169ef73e279ebc35d5e7b0e437ed0257d5d59e3fc958afb5ab7d102603"
+          },
+          "artifacts": {
+            "reports/synthetic.txt": "e315d2370075b5c022a1b552774b62ed847aeda2efde7e6fb476fae748e52856"
+          },
+          "deleted_paths": [],
+          "audit_coverage": "direct_file_tools_only; exec and render unsupported",
+          "source": "bridge_workspace_bytes_and_native_tool_trace"
+        },
+        "evidence_locations": []
+      }
+    ],
+    "events": [
+      {
+        "method": "reset_case",
+        "receipt": {
+          "operation_id": "kylin-positive:reset",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "begin_session",
+        "receipt": {
+          "operation_id": "kylin-positive:begin:s1",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "observe",
+        "receipt": {
+          "operation_id": "kylin-positive:observe:o1",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "end_session",
+        "receipt": {
+          "operation_id": "kylin-positive:end:s1",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "begin_session",
+        "receipt": {
+          "operation_id": "kylin-positive:begin:s2",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "end_session",
+        "receipt": {
+          "operation_id": "kylin-positive:end:s2",
+          "status": "ready",
+          "usage": null
+        }
+      }
+    ],
+    "cost_records": [
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "offline",
+        "status": "ready",
+        "recorded_at": "2026-10-15T05:06:14.316611+00:00"
+      },
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "offline",
+        "status": "ready",
+        "recorded_at": "2026-10-15T05:06:14.445917+00:00"
+      },
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "offline",
+        "status": "ready",
+        "recorded_at": "2026-10-15T05:06:14.581666+00:00"
+      },
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "offline",
+        "status": "ready",
+        "recorded_at": "2026-10-15T05:06:14.716981+00:00"
+      },
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "offline",
+        "status": "ready",
+        "recorded_at": "2026-10-15T05:06:14.847552+00:00"
+      },
+      {
+        "stage": "read",
+        "usage": null,
+        "cost": null,
+        "execution": "offline",
+        "status": "ok",
+        "recorded_at": "2026-10-15T05:06:15.120956+00:00"
+      },
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "offline",
+        "status": "ready",
+        "recorded_at": "2026-10-15T05:06:15.380887+00:00"
+      }
+    ],
+    "finished_at": "2026-10-15T05:06:15.511842+00:00"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "os_release": "NAME=\"openKylin\"\nFULL_NAME=\"openKylin\"\nVERSION=\"2.0 SP2 (nile)\"\nVERSION_US=\"2.0 SP2 (nile)\"\nID=openkylin\nPRETTY_NAME=\"openKylin 2.0 SP2\"\nVERSION_ID=\"2.0\"\nHOME_URL=\"https://www.openkylin.top/\"\nVERSION_CODENAME=nile\nPRODUCT_FEATURES=3\n",
+  "kernel": "6.6.0-25-generic",
+  "architecture": "aarch64",
+  "python": "3.12.2",
+  "kylin_source_commit": "246652c0fdb687953ef8ef25973081bf1298f0c6",
+  "kylin_source_archive_sha256": "23d2316c6f0fbd66b478a775782b83c257637792782afb47a1912f4df4ebdadc",
+  "node": "24.22.0",
+  "openclaw": "2026.10.3",
+  "ssh_active": "active",
+  "bwrap_version": "bubblewrap 0.9.0",
+  "bridge_sha256": "da1f347bb4b7bfa3e02dd0ed5ebe420e5a246d53ceea59ec31ed10a3c82cc165",
+  "ssh_reboot_verified": true,
+  "reboot_guest_local_started_at": "2026-10-15 10:39:54",
+  "boot_id": "6117686a-2fb4-47b9-88fe-609c32cc78da"
+}

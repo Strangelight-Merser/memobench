@@ -1,0 +1,12 @@
+{
+  "status": " M README.md\n M docs/integrations/README.md\n M docs/openkylin/README.md\n?? docs/integrations/KYLIN_PROFILE_FIX.md\n?? docs/integrations/NATIVE_VM.md\n?? docs/integrations/kylin-profile-fix-20261014/\n?? docs/integrations/native-vm-20261014/\n?? docs/openkylin/VM_ACCESS.md\n?? memobench/adapters_v2/ssh_vm.py\n?? patches/\n?? tests/test_native_vm_binding.py\n?? tools/native_vm_product.py\n?? tools/probe_native_vm.py\n?? tools/vm_proxy.py\n",
+  "head": "64589a6ef17331ea2485ad933d2eb2cb8255fb8f",
+  "sha256": {
+    "memobench/runner_v2.py": "6aa10fc92c4c912544d3397be227a49c4a5ff2bc93941bee3e5530895e053879",
+    "memobench/adapters_v2/native.py": "0e5a950b3bb51ae448de36e700b4ab8e026e3b1acab88b5469d0de4bd01c067c",
+    "memobench/adapters_v2/ssh_vm.py": "4b228839eba23fbe82b8d5cdefbd88c434763bdb68121002043aaf3c0c24c90d",
+    "tools/native_vm_product.py": "6996e5353c68087d2988f5814ed59d0c6fa0337712dcd10fc4b8c10c17b9ad5f",
+    "tools/probe_native_vm.py": "16309ad933c1ce365c0e62874868c219e583c42518da3a02af02ae1c1da41cce",
+    "memobench/sandbox_v2.py": "f9d1cee40e5e1ac768eeb4b1b20e5b1a4acdb895a23ff64e39875b9a7b3ea084"
+  }
+}

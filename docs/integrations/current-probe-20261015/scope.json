@@ -1,0 +1,26 @@
+{
+  "scope": "synthetic development integration; not benchmark/ranking",
+  "products": {
+    "openclaw": {
+      "observe": 1,
+      "query": 4
+    },
+    "kylin": {
+      "observe": 2,
+      "query": 5
+    }
+  },
+  "probe_attempts_per_product": 1,
+  "probe_automatic_retries": 0,
+  "transport_timeout_seconds": 330,
+  "product_process_timeout_seconds": 300,
+  "openclaw_native_timeout_seconds": 100,
+  "kylin_native_profile_max_attempts": 2,
+  "native_memory_enabled": true,
+  "kylin_native_profile_enabled": true,
+  "private_dataset_or_gold_sent": false,
+  "bridge_sha256": "1b22e1637d4c535f64d074347ebede46b4291172ce73eb938d01c5f430097d6d",
+  "remote_bridge_sha256": "1b22e1637d4c535f64d074347ebede46b4291172ce73eb938d01c5f430097d6d",
+  "provider_requests": null,
+  "cost": null
+}

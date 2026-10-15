@@ -1,0 +1,1673 @@
+{
+  "f4d1f8a6e6c3e66961eaaa1a06164a63512942ae8a85308746849a82d57ef40d.json": {
+    "exit_code": 0,
+    "stdout": "{\n  \"payloads\": [\n    {\n      \"text\": \"MB-6CF27460D991\",\n      \"mediaUrl\": null\n    }\n  ],\n  \"meta\": {\n    \"durationMs\": 2645,\n    \"agentMeta\": {\n      \"sessionId\": \"f1852122-cc92-4f7b-abd9-137bc2c1a875\",\n      \"sessionFile\": \"agent:main:explicit:f1852122-cc92-4f7b-abd9-137bc2c1a875\",\n      \"provider\": \"deepseek\",\n      \"model\": \"deepseek-flash\",\n      \"contextTokens\": 65536,\n      \"contextTokensSource\": \"resolved\",\n      \"agentHarnessId\": \"openclaw\",\n      \"credentialSource\": {\n        \"kind\": \"direct\",\n        \"evidence\": \"environment\",\n        \"authorization\": \"declared\"\n      },\n      \"usage\": {\n        \"input\": 3804,\n        \"output\": 8,\n        \"cacheRead\": 3200,\n        \"cacheWrite\": 0,\n        \"total\": 7012,\n        \"cost\": {\n          \"total\": 0\n        }\n      },\n      \"lastCallUsage\": {\n        \"input\": 3804,\n        \"output\": 8,\n        \"cacheRead\": 3200,\n        \"cacheWrite\": 0,\n        \"cost\": {\n          \"total\": 0\n        },\n        \"contextUsage\": {\n          \"state\": \"available\",\n          \"promptTokens\": 7004,\n          \"totalTokens\": 7012\n        },\n        \"total\": 7012\n      },\n      \"promptTokens\": 7004,\n      \"contextBudgetStatus\": {\n        \"schemaVersion\": 1,\n        \"source\": \"pre-prompt-estimate\",\n        \"updatedAt\": 1792043574205,\n        \"provider\": \"deepseek\",\n        \"model\": \"deepseek-flash\",\n        \"route\": \"fits\",\n        \"shouldCompact\": false,\n        \"estimatedPromptTokens\": 11731,\n        \"contextTokenBudget\": 65536,\n        \"promptBudgetBeforeReserve\": 49152,\n        \"reserveTokens\": 16384,\n        \"effectiveReserveTokens\": 16384,\n        \"remainingPromptBudgetTokens\": 37421,\n        \"overflowTokens\": 0,\n        \"toolResultReducibleChars\": 0,\n        \"messageCount\": 9,\n        \"unwindowedMessageCount\": 9,\n        \"sessionId\": \"f1852122-cc92-4f7b-abd9-137bc2c1a875\"\n      },\n      \"codeModeEngaged\": false,\n      \"assistantTurns\": 1,\n      \"bridgeCalls\": {\n        \"search\": 0,\n        \"describe\": 0,\n        \"call\": 0\n      },\n      \"terminalReceipt\": {\n        \"runId\": \"baa2e93e-9daa-4142-a526-80a79258da2a\",\n        \"sessionId\": \"f1852122-cc92-4f7b-abd9-137bc2c1a875\",\n        \"turnId\": \"baa2e93e-9daa-4142-a526-80a79258da2a\",\n        \"requested\": {\n          \"provider\": \"deepseek\",\n          \"model\": \"deepseek-flash\"\n        },\n        \"effective\": {\n          \"provider\": \"deepseek\",\n          \"model\": \"deepseek-flash\",\n          \"responseModel\": \"deepseek-flash\"\n        },\n        \"successfulToolNames\": [],\n        \"rerouted\": false,\n        \"terminalDisposition\": \"visible\"\n      }\n    },\n    \"aborted\": false,\n    \"systemPromptReport\": {\n      \"source\": \"run\",\n      \"generatedAt\": 1792043573883,\n      \"sessionId\": \"f1852122-cc92-4f7b-abd9-137bc2c1a875\",\n      \"sessionKey\": \"agent:main:explicit:f1852122-cc92-4f7b-abd9-137bc2c1a875\",\n      \"provider\": \"deepseek\",\n      \"model\": \"deepseek-flash\",\n      \"workspaceDir\": \"/home/mb/case/workspace\",\n      \"bootstrapMaxChars\": 20000,\n      \"bootstrapTotalMaxChars\": 60000,\n      \"bootstrapTruncation\": {\n        \"warningMode\": \"always\",\n        \"warningShown\": false,\n        \"truncatedFiles\": 0,\n        \"nearLimitFiles\": 0,\n        \"totalNearLimit\": false\n      },\n      \"sandbox\": {\n        \"mode\": \"off\",\n        \"sandboxed\": false\n      },\n      \"systemPrompt\": {\n        \"chars\": 15925,\n        \"hash\": \"39050f0a9b5bde20708c7bedf16de3ec40a1d771569e599bd2ecdebe4b502fc0\",\n        \"projectContextChars\": 2560,\n        \"nonProjectContextChars\": 13365\n      },\n      \"injectedWorkspaceFiles\": [\n        {\n          \"name\": \"AGENTS.md\",\n          \"path\": \"/home/mb/case/workspace/AGENTS.md\",\n          \"missing\": true,\n          \"rawChars\": 0,\n          \"injectedChars\": 56,\n          \"truncated\": false\n        },\n        {\n          \"name\": \"SOUL.md\",\n          \"path\": \"/home/mb/case/workspace/SOUL.md\",\n          \"missing\": true,\n          \"rawChars\": 0,\n          \"injectedChars\": 54,\n          \"truncated\": false\n        },\n        {\n          \"name\": \"IDENTITY.md\",\n          \"path\": \"/home/mb/case/workspace/IDENTITY.md\",\n          \"missing\": true,\n          \"rawChars\": 0,\n          \"injectedChars\": 58,\n          \"truncated\": false\n        },\n        {\n          \"name\": \"BOOTSTRAP.md\",\n          \"path\": \"/home/mb/case/workspace/BOOTSTRAP.md\",\n          \"missing\": true,\n          \"rawChars\": 0,\n          \"injectedChars\": 0,\n          \"truncated\": false\n        },\n        {\n          \"name\": \"MEMORY.md\",\n          \"path\": \"/home/mb/case/workspace/MEMORY.md\",\n          \"missing\": false,\n          \"rawChars\": 170,\n          \"injectedChars\": 170,\n          \"truncated\": false\n        }\n      ],\n      \"skills\": {\n        \"promptChars\": 6129,\n        \"hash\": \"85f2b34f95eb275b30b49639aaf72904f8b193aeb68f7d41a4500d1c1328d5b6\",\n        \"entries\": [\n          {\n            \"name\": \"add-model-provider\",\n            \"blockChars\": 318\n          },\n          {\n            \"name\": \"browser-automation\",\n            \"blockChars\": 324\n          },\n          {\n            \"name\": \"canvas\",\n            \"blockChars\": 243\n          },\n          {\n            \"name\": \"clawhub\",\n            \"blockChars\": 317\n          },\n          {\n            \"name\": \"cloud-image-bake\",\n            \"blockChars\": 304\n          },\n          {\n            \"name\": \"configure-channel\",\n            \"blockChars\": 306\n          },\n          {\n            \"name\": \"control-ui\",\n            \"blockChars\": 357\n          },\n          {\n            \"name\": \"diagnose-gateway\",\n            \"blockChars\": 298\n          },\n          {\n            \"name\": \"diagram-maker\",\n            \"blockChars\": 283\n          },\n          {\n            \"name\": \"healthcheck\",\n            \"blockChars\": 295\n          },\n          {\n            \"name\": \"meme-maker\",\n            \"blockChars\": 268\n          },\n          {\n            \"name\": \"node-connect\",\n            \"blockChars\": 352\n          },\n          {\n            \"name\": \"node-inspect-debugger\",\n            \"blockChars\": 294\n          },\n          {\n            \"name\": \"notion\",\n            \"blockChars\": 289\n          },\n          {\n            \"name\": \"python-debugpy\",\n            \"blockChars\": 282\n          },\n          {\n            \"name\": \"skill-creator\",\n            \"blockChars\": 301\n          },\n          {\n            \"name\": \"spike\",\n            \"blockChars\": 268\n          },\n          {\n            \"name\": \"visualize\",\n            \"blockChars\": 299\n          },\n          {\n            \"name\": \"weather\",\n            \"blockChars\": 306\n          }\n        ]\n      },\n      \"tools\": {\n        \"listChars\": 0,\n        \"schemaChars\": 2800,\n        \"entries\": [\n          {\n            \"name\": \"read\",\n            \"summaryChars\": 164,\n            \"summaryHash\": \"d136f5b09e28d671addad4ca800b75b8aa6a36002bc739ead964f618d3e34829\",\n            \"schemaChars\": 481,\n            \"schemaHash\": \"b1b9b637dfe1dfade40f50c37cf840a298f1992b534cb9425b7470233a6b0cbb\",\n            \"propertiesCount\": 5\n          },\n          {\n            \"name\": \"edit\",\n            \"summaryChars\": 130,\n            \"summaryHash\": \"4149500b1f6501ec6450e4c048bdb6844764dd4a888a10846726cbbc7256152e\",\n            \"schemaChars\": 501,\n            \"schemaHash\": \"adf3140833ca927b84c66c989d6833fdcbd9de011dd2ffc59f9a2c4d3c25f127\",\n            \"propertiesCount\": 2\n          },\n          {\n            \"name\": \"write\",\n            \"summaryChars\": 49,\n            \"summaryHash\": \"f9ce3d8ac929a51498c03331b97c59bfaa2bb4d25580a5ddf0102e6a8e173aec\",\n            \"schemaChars\": 191,\n            \"schemaHash\": \"b61d2da23febf5fbda55e391526f36d283e9e9fb7f1a1dbadcf5c618a0632287\",\n            \"propertiesCount\": 2\n          },\n          {\n            \"name\": \"apply_patch\",\n            \"summaryChars\": 71,\n            \"summaryHash\": \"5c1173efe93d080a386a23216bc3e58db2e0033eb3ddea697eb2439938b7cae4\",\n            \"schemaChars\": 153,\n            \"schemaHash\": \"05521268363ff4f191472c90d69ef08a503ba9acf1d2febc50b3ee68db32ab65\",\n            \"propertiesCount\": 1\n          },\n          {\n            \"name\": \"tool_search\",\n            \"summaryChars\": 502,\n            \"summaryHash\": \"acdcab138b356606711452241e668c366bdb15428e39a28a94d7be27d7968626\",\n            \"schemaChars\": 1139,\n            \"schemaHash\": \"0a78304973631f66103ff3f0c767433fdc00fb89d629bd5b12d1ada29940d382\",\n            \"propertiesCount\": 3\n          },\n          {\n            \"name\": \"tool_describe\",\n            \"summaryChars\": 92,\n            \"summaryHash\": \"fc74d14dc28e4026dba1a8904339a6bef1ce8118588e0bff809c37be73ce7a02\",\n            \"schemaChars\": 125,\n            \"schemaHash\": \"8b60055097c87990f29b27c1f82ecea48435ffb1163c486121a2189f118aa0a4\",\n            \"propertiesCount\": 1\n          },\n          {\n            \"name\": \"tool_call\",\n            \"summaryChars\": 61,\n            \"summaryHash\": \"0dc569a573cbc94928d868c94a178930879ac898b541cd9009338699a3e7d1fd\",\n            \"schemaChars\": 210,\n            \"schemaHash\": \"f48bfb0705c11b32ccbdfd456b791ce458604b1f51b1e31f61bc2d7b25ae07b9\",\n            \"propertiesCount\": 2\n          }\n        ]\n      },\n      \"currentTurn\": {\n        \"promptChars\": 27,\n        \"runtimeContextChars\": 0,\n        \"modelOnlyPromptChars\": 0\n      }\n    },\n    \"finalPromptText\": \"蓝帆项目的代号是什么？只回答代号；不知道就回答不知道。\",\n    \"finalAssistantVisibleText\": \"MB-6CF27460D991\",\n    \"finalAssistantRawText\": \"MB-6CF27460D991\",\n    \"replayInvalid\": false,\n    \"livenessState\": \"working\",\n    \"stopReason\": \"stop\",\n    \"executionTrace\": {\n      \"winnerProvider\": \"deepseek\",\n      \"winnerModel\": \"deepseek-flash\",\n      \"attempts\": [\n        {\n          \"provider\": \"deepseek\",\n          \"model\": \"deepseek-flash\",\n          \"result\": \"success\",\n          \"stage\": \"assistant\"\n        }\n      ],\n      \"fallbackUsed\": false,\n      \"runner\": \"embedded\"\n    },\n    \"requestShaping\": {\n      \"thinking\": \"off\"\n    },\n    \"completion\": {\n      \"stopReason\": \"stop\",\n      \"finishReason\": \"stop\"\n    },\n    \"terminalReply\": {\n      \"disposition\": \"visible\",\n      \"text\": \"MB-6CF27460D991\"\n    }\n  }\n}\n",
+    "stderr": "[agent/embedded] tool-search: cataloged 7 tools behind compact prompt surface\n[provider-transport-fetch] [model-fetch] response provider=deepseek api=openai-completions model=deepseek-flash status=200 elapsedMs=1251 dispatcher=new contentType=text/event-stream; charset=utf-8\n[agents/agent-command] [agent] run baa2e93e-9daa-4142-a526-80a79258da2a ended with stopReason=stop\n[state/agent-db] agent database clean-close receipt: active-leases\n[session-sqlite] SQLite reclamation Worker failed pid=11 threadId=0 isMainThread=true reclamationKind=maintenance-plan elapsedMs=41 outcome=rejected error=\"Session mutation and executor cleanup failed | Agent database execution admission is closed\" errorFrame=\"at createSqliteLifecycleAggregateError (file:///home/mb/memobench-native/openclaw/node_modules/openclaw/dist/sqlite-lifecycle-errors-DuOygjcn.mjs:28:9)\"\n[state/agent-db] agent database clean-close receipt: written\n",
+    "finished_at": "2026-10-15T05:52:56.430672+00:00",
+    "mode": "embedded_explicit",
+    "product_session": "f1852122-cc92-4f7b-abd9-137bc2c1a875",
+    "native_log": "",
+    "answer": "MB-6CF27460D991",
+    "meta": {
+      "durationMs": 2645,
+      "agentMeta": {
+        "sessionId": "f1852122-cc92-4f7b-abd9-137bc2c1a875",
+        "sessionFile": "agent:main:explicit:f1852122-cc92-4f7b-abd9-137bc2c1a875",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "contextTokens": 65536,
+        "contextTokensSource": "resolved",
+        "agentHarnessId": "openclaw",
+        "credentialSource": {
+          "kind": "direct",
+          "evidence": "environment",
+          "authorization": "declared"
+        },
+        "usage": {
+          "input": 3804,
+          "output": 8,
+          "cacheRead": 3200,
+          "cacheWrite": 0,
+          "total": 7012,
+          "cost": {
+            "total": 0
+          }
+        },
+        "lastCallUsage": {
+          "input": 3804,
+          "output": 8,
+          "cacheRead": 3200,
+          "cacheWrite": 0,
+          "cost": {
+            "total": 0
+          },
+          "contextUsage": {
+            "state": "available",
+            "promptTokens": 7004,
+            "totalTokens": 7012
+          },
+          "total": 7012
+        },
+        "promptTokens": 7004,
+        "contextBudgetStatus": {
+          "schemaVersion": 1,
+          "source": "pre-prompt-estimate",
+          "updatedAt": 1792043574205,
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "route": "fits",
+          "shouldCompact": false,
+          "estimatedPromptTokens": 11731,
+          "contextTokenBudget": 65536,
+          "promptBudgetBeforeReserve": 49152,
+          "reserveTokens": 16384,
+          "effectiveReserveTokens": 16384,
+          "remainingPromptBudgetTokens": 37421,
+          "overflowTokens": 0,
+          "toolResultReducibleChars": 0,
+          "messageCount": 9,
+          "unwindowedMessageCount": 9,
+          "sessionId": "f1852122-cc92-4f7b-abd9-137bc2c1a875"
+        },
+        "codeModeEngaged": false,
+        "assistantTurns": 1,
+        "bridgeCalls": {
+          "search": 0,
+          "describe": 0,
+          "call": 0
+        },
+        "terminalReceipt": {
+          "runId": "baa2e93e-9daa-4142-a526-80a79258da2a",
+          "sessionId": "f1852122-cc92-4f7b-abd9-137bc2c1a875",
+          "turnId": "baa2e93e-9daa-4142-a526-80a79258da2a",
+          "requested": {
+            "provider": "deepseek",
+            "model": "deepseek-flash"
+          },
+          "effective": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "responseModel": "deepseek-flash"
+          },
+          "successfulToolNames": [],
+          "rerouted": false,
+          "terminalDisposition": "visible"
+        }
+      },
+      "aborted": false,
+      "systemPromptReport": {
+        "source": "run",
+        "generatedAt": 1792043573883,
+        "sessionId": "f1852122-cc92-4f7b-abd9-137bc2c1a875",
+        "sessionKey": "agent:main:explicit:f1852122-cc92-4f7b-abd9-137bc2c1a875",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "workspaceDir": "/home/mb/case/workspace",
+        "bootstrapMaxChars": 20000,
+        "bootstrapTotalMaxChars": 60000,
+        "bootstrapTruncation": {
+          "warningMode": "always",
+          "warningShown": false,
+          "truncatedFiles": 0,
+          "nearLimitFiles": 0,
+          "totalNearLimit": false
+        },
+        "sandbox": {
+          "mode": "off",
+          "sandboxed": false
+        },
+        "systemPrompt": {
+          "chars": 15925,
+          "hash": "39050f0a9b5bde20708c7bedf16de3ec40a1d771569e599bd2ecdebe4b502fc0",
+          "projectContextChars": 2560,
+          "nonProjectContextChars": 13365
+        },
+        "injectedWorkspaceFiles": [
+          {
+            "name": "AGENTS.md",
+            "path": "/home/mb/case/workspace/AGENTS.md",
+            "missing": true,
+            "rawChars": 0,
+            "injectedChars": 56,
+            "truncated": false
+          },
+          {
+            "name": "SOUL.md",
+            "path": "/home/mb/case/workspace/SOUL.md",
+            "missing": true,
+            "rawChars": 0,
+            "injectedChars": 54,
+            "truncated": false
+          },
+          {
+            "name": "IDENTITY.md",
+            "path": "/home/mb/case/workspace/IDENTITY.md",
+            "missing": true,
+            "rawChars": 0,
+            "injectedChars": 58,
+            "truncated": false
+          },
+          {
+            "name": "BOOTSTRAP.md",
+            "path": "/home/mb/case/workspace/BOOTSTRAP.md",
+            "missing": true,
+            "rawChars": 0,
+            "injectedChars": 0,
+            "truncated": false
+          },
+          {
+            "name": "MEMORY.md",
+            "path": "/home/mb/case/workspace/MEMORY.md",
+            "missing": false,
+            "rawChars": 170,
+            "injectedChars": 170,
+            "truncated": false
+          }
+        ],
+        "skills": {
+          "promptChars": 6129,
+          "hash": "85f2b34f95eb275b30b49639aaf72904f8b193aeb68f7d41a4500d1c1328d5b6",
+          "entries": [
+            {
+              "name": "add-model-provider",
+              "blockChars": 318
+            },
+            {
+              "name": "browser-automation",
+              "blockChars": 324
+            },
+            {
+              "name": "canvas",
+              "blockChars": 243
+            },
+            {
+              "name": "clawhub",
+              "blockChars": 317
+            },
+            {
+              "name": "cloud-image-bake",
+              "blockChars": 304
+            },
+            {
+              "name": "configure-channel",
+              "blockChars": 306
+            },
+            {
+              "name": "control-ui",
+              "blockChars": 357
+            },
+            {
+              "name": "diagnose-gateway",
+              "blockChars": 298
+            },
+            {
+              "name": "diagram-maker",
+              "blockChars": 283
+            },
+            {
+              "name": "healthcheck",
+              "blockChars": 295
+            },
+            {
+              "name": "meme-maker",
+              "blockChars": 268
+            },
+            {
+              "name": "node-connect",
+              "blockChars": 352
+            },
+            {
+              "name": "node-inspect-debugger",
+              "blockChars": 294
+            },
+            {
+              "name": "notion",
+              "blockChars": 289
+            },
+            {
+              "name": "python-debugpy",
+              "blockChars": 282
+            },
+            {
+              "name": "skill-creator",
+              "blockChars": 301
+            },
+            {
+              "name": "spike",
+              "blockChars": 268
+            },
+            {
+              "name": "visualize",
+              "blockChars": 299
+            },
+            {
+              "name": "weather",
+              "blockChars": 306
+            }
+          ]
+        },
+        "tools": {
+          "listChars": 0,
+          "schemaChars": 2800,
+          "entries": [
+            {
+              "name": "read",
+              "summaryChars": 164,
+              "summaryHash": "d136f5b09e28d671addad4ca800b75b8aa6a36002bc739ead964f618d3e34829",
+              "schemaChars": 481,
+              "schemaHash": "b1b9b637dfe1dfade40f50c37cf840a298f1992b534cb9425b7470233a6b0cbb",
+              "propertiesCount": 5
+            },
+            {
+              "name": "edit",
+              "summaryChars": 130,
+              "summaryHash": "4149500b1f6501ec6450e4c048bdb6844764dd4a888a10846726cbbc7256152e",
+              "schemaChars": 501,
+              "schemaHash": "adf3140833ca927b84c66c989d6833fdcbd9de011dd2ffc59f9a2c4d3c25f127",
+              "propertiesCount": 2
+            },
+            {
+              "name": "write",
+              "summaryChars": 49,
+              "summaryHash": "f9ce3d8ac929a51498c03331b97c59bfaa2bb4d25580a5ddf0102e6a8e173aec",
+              "schemaChars": 191,
+              "schemaHash": "b61d2da23febf5fbda55e391526f36d283e9e9fb7f1a1dbadcf5c618a0632287",
+              "propertiesCount": 2
+            },
+            {
+              "name": "apply_patch",
+              "summaryChars": 71,
+              "summaryHash": "5c1173efe93d080a386a23216bc3e58db2e0033eb3ddea697eb2439938b7cae4",
+              "schemaChars": 153,
+              "schemaHash": "05521268363ff4f191472c90d69ef08a503ba9acf1d2febc50b3ee68db32ab65",
+              "propertiesCount": 1
+            },
+            {
+              "name": "tool_search",
+              "summaryChars": 502,
+              "summaryHash": "acdcab138b356606711452241e668c366bdb15428e39a28a94d7be27d7968626",
+              "schemaChars": 1139,
+              "schemaHash": "0a78304973631f66103ff3f0c767433fdc00fb89d629bd5b12d1ada29940d382",
+              "propertiesCount": 3
+            },
+            {
+              "name": "tool_describe",
+              "summaryChars": 92,
+              "summaryHash": "fc74d14dc28e4026dba1a8904339a6bef1ce8118588e0bff809c37be73ce7a02",
+              "schemaChars": 125,
+              "schemaHash": "8b60055097c87990f29b27c1f82ecea48435ffb1163c486121a2189f118aa0a4",
+              "propertiesCount": 1
+            },
+            {
+              "name": "tool_call",
+              "summaryChars": 61,
+              "summaryHash": "0dc569a573cbc94928d868c94a178930879ac898b541cd9009338699a3e7d1fd",
+              "schemaChars": 210,
+              "schemaHash": "f48bfb0705c11b32ccbdfd456b791ce458604b1f51b1e31f61bc2d7b25ae07b9",
+              "propertiesCount": 2
+            }
+          ]
+        },
+        "currentTurn": {
+          "promptChars": 27,
+          "runtimeContextChars": 0,
+          "modelOnlyPromptChars": 0
+        }
+      },
+      "finalPromptText": "蓝帆项目的代号是什么？只回答代号；不知道就回答不知道。",
+      "finalAssistantVisibleText": "MB-6CF27460D991",
+      "finalAssistantRawText": "MB-6CF27460D991",
+      "replayInvalid": false,
+      "livenessState": "working",
+      "stopReason": "stop",
+      "executionTrace": {
+        "winnerProvider": "deepseek",
+        "winnerModel": "deepseek-flash",
+        "attempts": [
+          {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "result": "success",
+            "stage": "assistant"
+          }
+        ],
+        "fallbackUsed": false,
+        "runner": "embedded"
+      },
+      "requestShaping": {
+        "thinking": "off"
+      },
+      "completion": {
+        "stopReason": "stop",
+        "finishReason": "stop"
+      },
+      "terminalReply": {
+        "disposition": "visible",
+        "text": "MB-6CF27460D991"
+      }
+    },
+    "ok": true,
+    "files_before": {
+      ".openclaw/openclaw.json": "05051ac484ce1f417dd30f66a1f56f9f13073c8c5f088d213f1f632ded0aa89d",
+      "workspace/MEMORY.md": "427d20ea92747e9b490557c6698a300232a4d1724c954c3383fefb318d28ff49",
+      ".openclaw/state/openclaw.sqlite": "b4bf48d8b116937f99dd09a27c939b2000e433090fe9074556144245c760846e",
+      ".openclaw/state/openclaw-quarantine.sqlite": "401869a62e15c97c2e851f1d499f176d71810c7bb72d004c50dcf6cdd03eb372",
+      ".openclaw/agents/main/agent/openclaw-agent.sqlite-shm": "30ef8a40fd55955718b4f640aab0172ca0bc794cde6367ac2b8877da42048327",
+      ".openclaw/agents/main/agent/openclaw-agent.sqlite-wal": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      ".openclaw/agents/main/agent/openclaw-agent.sqlite": "ad54c53f61004b831061983509f5720dee432996eae100a4caefe2faf4a48d52"
+    },
+    "files_after": {
+      ".openclaw/openclaw.json": "05051ac484ce1f417dd30f66a1f56f9f13073c8c5f088d213f1f632ded0aa89d",
+      "workspace/MEMORY.md": "427d20ea92747e9b490557c6698a300232a4d1724c954c3383fefb318d28ff49",
+      ".openclaw/state/openclaw.sqlite": "f28ed6f300ce7798ff0e50d663b224dca148f7663a88d4b9aadb0c0e2de4ab01",
+      ".openclaw/state/openclaw-quarantine.sqlite": "81d58bab5a6914989b9a951f3728ab93299de67c52bd48b98db478dac8557ffc",
+      ".openclaw/agents/main/agent/openclaw-agent.sqlite-shm": "0e2ac85c32e60647775aab641da17642d6092fbfd2beffcd78579c850f0868e4",
+      ".openclaw/agents/main/agent/openclaw-agent.sqlite-wal": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      ".openclaw/agents/main/agent/openclaw-agent.sqlite": "b3ba3bd7594a320a49a1326f0dd3a08c628ddbe67b1de6a3c530bcc7a5f98c01"
+    },
+    "binding": {
+      "namespace": "37a2bed7e34e447fb380841a0768e459",
+      "operation_id": "b9c57446affb4b5eb5e0c9facd832a76",
+      "session_id": "s1",
+      "method": "query",
+      "bridge_sha256": "1b22e1637d4c535f64d074347ebede46b4291172ce73eb938d01c5f430097d6d"
+    }
+  },
+  "control.json": {
+    "run_id": "memobench-native-e0_8ar_8",
+    "product": "openclaw",
+    "episode_id": "memory",
+    "variant_id": "v1",
+    "session": null,
+    "sessions": {
+      "s1": {
+        "product_session": "f1852122-cc92-4f7b-abd9-137bc2c1a875"
+      },
+      "s2": {
+        "product_session": "d7bc6247-a7fd-4f2b-b7df-0011f3eb5387"
+      }
+    },
+    "operations": {
+      "445ddf56d05c42629551aaaa54c3f01a": {
+        "status": "completed",
+        "method": "reset_case",
+        "session_id": null,
+        "at": "2026-10-15T05:52:37.571002+00:00",
+        "evidence": "ed41c27f6dd760fb30ca6d6ac110144279e6917c308f67ce801b1ce1bdd71929.json"
+      },
+      "7a2c61c6d2af43a7aabf361199f19a8e": {
+        "status": "completed",
+        "method": "begin_session",
+        "session_id": "s1",
+        "at": "2026-10-15T05:52:37.807237+00:00"
+      },
+      "df8d2367113d46dead8d74ce7611f5c2": {
+        "status": "completed",
+        "method": "observe",
+        "session_id": "s1",
+        "at": "2026-10-15T05:52:37.976774+00:00",
+        "evidence": "ce49e1efa2fb44ff7177f09b365348add48036329a6d0c312d818f7ae5bc2d31.json"
+      },
+      "b9c57446affb4b5eb5e0c9facd832a76": {
+        "status": "completed",
+        "method": "query",
+        "session_id": "s1",
+        "at": "2026-10-15T05:52:50.086678+00:00",
+        "evidence": "f4d1f8a6e6c3e66961eaaa1a06164a63512942ae8a85308746849a82d57ef40d.json"
+      },
+      "08d9ce35d9744e6a82d9cdc37a7b37f5": {
+        "status": "completed",
+        "method": "end_session",
+        "session_id": "s1",
+        "at": "2026-10-15T05:52:56.566942+00:00",
+        "evidence": "7101e447a364fd75b52baf361ae906a036220b38ff516c10277944441eb90431.json"
+      },
+      "ccbfc1d4a7084233945457a3f0af6e8a": {
+        "status": "completed",
+        "method": "begin_session",
+        "session_id": "s2",
+        "at": "2026-10-15T05:52:56.706340+00:00"
+      },
+      "d7d4d54bf2a849c38db34710fe8086fa": {
+        "status": "completed",
+        "method": "query",
+        "session_id": "s2",
+        "at": "2026-10-15T05:52:56.848532+00:00",
+        "evidence": "465aeb24c5c35bd8c150a4d7e349988e04f7feb20ab56d59e2860891d5e36eb0.json"
+      },
+      "c5a03982f88f45ac80b73922fa82f5c2": {
+        "status": "completed",
+        "method": "query",
+        "session_id": "s2",
+        "at": "2026-10-15T05:53:03.050126+00:00",
+        "evidence": "6c7ba7c75ed33093bf72dd6b17e54f21883b40aef1ccf7081e8747c5957a44c4.json"
+      },
+      "4825ce067f984311a9b52d6c615744c7": {
+        "status": "completed",
+        "method": "end_session",
+        "session_id": "s2",
+        "at": "2026-10-15T05:53:10.506721+00:00",
+        "evidence": "60e84be4db3d4180abf931419068fcf51592d0f1f6f922497a65affa536ec843.json"
+      },
+      "df8704c8ca4a41d1ae9efa26ad31c2a5": {
+        "status": "completed",
+        "method": "close",
+        "session_id": null,
+        "at": "2026-10-15T05:53:20.033392+00:00",
+        "evidence": "ee7f069b11f1a52bcf8dcbb945640ead79d5595a8bab1cade11251497ca329be.json"
+      }
+    },
+    "uncertain": false,
+    "bridge_sha256": "1b22e1637d4c535f64d074347ebede46b4291172ce73eb938d01c5f430097d6d",
+    "closed": true
+  },
+  "6c7ba7c75ed33093bf72dd6b17e54f21883b40aef1ccf7081e8747c5957a44c4.json": {
+    "exit_code": 0,
+    "stdout": "{\n  \"payloads\": [\n    {\n      \"text\": \"已写入 notes/code.txt，内容为代号 MB-6CF27460D991 加一个换行。\",\n      \"mediaUrl\": null\n    }\n  ],\n  \"meta\": {\n    \"durationMs\": 3492,\n    \"agentMeta\": {\n      \"sessionId\": \"d7bc6247-a7fd-4f2b-b7df-0011f3eb5387\",\n      \"sessionFile\": \"agent:main:explicit:d7bc6247-a7fd-4f2b-b7df-0011f3eb5387\",\n      \"provider\": \"deepseek\",\n      \"model\": \"deepseek-flash\",\n      \"contextTokens\": 65536,\n      \"contextTokensSource\": \"resolved\",\n      \"agentHarnessId\": \"openclaw\",\n      \"credentialSource\": {\n        \"kind\": \"direct\",\n        \"evidence\": \"environment\",\n        \"authorization\": \"declared\"\n      },\n      \"usage\": {\n        \"input\": 290,\n        \"output\": 97,\n        \"cacheRead\": 10368,\n        \"cacheWrite\": 0,\n        \"total\": 10755,\n        \"cost\": {\n          \"total\": 0\n        }\n      },\n      \"lastCallUsage\": {\n        \"input\": 134,\n        \"output\": 24,\n        \"cacheRead\": 5248,\n        \"cacheWrite\": 0,\n        \"cost\": {\n          \"total\": 0\n        },\n        \"contextUsage\": {\n          \"state\": \"available\",\n          \"promptTokens\": 5382,\n          \"totalTokens\": 5406\n        },\n        \"total\": 5406\n      },\n      \"promptTokens\": 5382,\n      \"contextBudgetStatus\": {\n        \"schemaVersion\": 1,\n        \"source\": \"pre-prompt-estimate\",\n        \"updatedAt\": 1792043587284,\n        \"provider\": \"deepseek\",\n        \"model\": \"deepseek-flash\",\n        \"route\": \"fits\",\n        \"shouldCompact\": false,\n        \"estimatedPromptTokens\": 10095,\n        \"contextTokenBudget\": 65536,\n        \"promptBudgetBeforeReserve\": 49152,\n        \"reserveTokens\": 16384,\n        \"effectiveReserveTokens\": 16384,\n        \"remainingPromptBudgetTokens\": 39057,\n        \"overflowTokens\": 0,\n        \"toolResultReducibleChars\": 0,\n        \"messageCount\": 2,\n        \"unwindowedMessageCount\": 2,\n        \"sessionId\": \"d7bc6247-a7fd-4f2b-b7df-0011f3eb5387\"\n      },\n      \"codeModeEngaged\": false,\n      \"assistantTurns\": 2,\n      \"bridgeCalls\": {\n        \"search\": 0,\n        \"describe\": 0,\n        \"call\": 0\n      },\n      \"terminalReceipt\": {\n        \"runId\": \"1059be12-efe9-4739-86b6-b0a71bcb79e4\",\n        \"sessionId\": \"d7bc6247-a7fd-4f2b-b7df-0011f3eb5387\",\n        \"turnId\": \"1059be12-efe9-4739-86b6-b0a71bcb79e4\",\n        \"requested\": {\n          \"provider\": \"deepseek\",\n          \"model\": \"deepseek-flash\"\n        },\n        \"effective\": {\n          \"provider\": \"deepseek\",\n          \"model\": \"deepseek-flash\",\n          \"responseModel\": \"deepseek-flash\"\n        },\n        \"successfulToolNames\": [\n          \"write\"\n        ],\n        \"rerouted\": false,\n        \"terminalDisposition\": \"visible\"\n      }\n    },\n    \"aborted\": false,\n    \"systemPromptReport\": {\n      \"source\": \"run\",\n      \"generatedAt\": 1792043586953,\n      \"sessionId\": \"d7bc6247-a7fd-4f2b-b7df-0011f3eb5387\",\n      \"sessionKey\": \"agent:main:explicit:d7bc6247-a7fd-4f2b-b7df-0011f3eb5387\",\n      \"provider\": \"deepseek\",\n      \"model\": \"deepseek-flash\",\n      \"workspaceDir\": \"/home/mb/case/workspace\",\n      \"bootstrapMaxChars\": 20000,\n      \"bootstrapTotalMaxChars\": 60000,\n      \"bootstrapTruncation\": {\n        \"warningMode\": \"always\",\n        \"warningShown\": false,\n        \"truncatedFiles\": 0,\n        \"nearLimitFiles\": 0,\n        \"totalNearLimit\": false\n      },\n      \"sandbox\": {\n        \"mode\": \"off\",\n        \"sandboxed\": false\n      },\n      \"systemPrompt\": {\n        \"chars\": 15925,\n        \"hash\": \"b853d49161ac529569f94b11f8644de25f91da3d6c1d6cabf5928e9ea326f0cf\",\n        \"projectContextChars\": 2560,\n        \"nonProjectContextChars\": 13365\n      },\n      \"injectedWorkspaceFiles\": [\n        {\n          \"name\": \"AGENTS.md\",\n          \"path\": \"/home/mb/case/workspace/AGENTS.md\",\n          \"missing\": true,\n          \"rawChars\": 0,\n          \"injectedChars\": 56,\n          \"truncated\": false\n        },\n        {\n          \"name\": \"SOUL.md\",\n          \"path\": \"/home/mb/case/workspace/SOUL.md\",\n          \"missing\": true,\n          \"rawChars\": 0,\n          \"injectedChars\": 54,\n          \"truncated\": false\n        },\n        {\n          \"name\": \"IDENTITY.md\",\n          \"path\": \"/home/mb/case/workspace/IDENTITY.md\",\n          \"missing\": true,\n          \"rawChars\": 0,\n          \"injectedChars\": 58,\n          \"truncated\": false\n        },\n        {\n          \"name\": \"BOOTSTRAP.md\",\n          \"path\": \"/home/mb/case/workspace/BOOTSTRAP.md\",\n          \"missing\": true,\n          \"rawChars\": 0,\n          \"injectedChars\": 0,\n          \"truncated\": false\n        },\n        {\n          \"name\": \"MEMORY.md\",\n          \"path\": \"/home/mb/case/workspace/MEMORY.md\",\n          \"missing\": false,\n          \"rawChars\": 170,\n          \"injectedChars\": 170,\n          \"truncated\": false\n        }\n      ],\n      \"skills\": {\n        \"promptChars\": 6129,\n        \"hash\": \"85f2b34f95eb275b30b49639aaf72904f8b193aeb68f7d41a4500d1c1328d5b6\",\n        \"entries\": [\n          {\n            \"name\": \"add-model-provider\",\n            \"blockChars\": 318\n          },\n          {\n            \"name\": \"browser-automation\",\n            \"blockChars\": 324\n          },\n          {\n            \"name\": \"canvas\",\n            \"blockChars\": 243\n          },\n          {\n            \"name\": \"clawhub\",\n            \"blockChars\": 317\n          },\n          {\n            \"name\": \"cloud-image-bake\",\n            \"blockChars\": 304\n          },\n          {\n            \"name\": \"configure-channel\",\n            \"blockChars\": 306\n          },\n          {\n            \"name\": \"control-ui\",\n            \"blockChars\": 357\n          },\n          {\n            \"name\": \"diagnose-gateway\",\n            \"blockChars\": 298\n          },\n          {\n            \"name\": \"diagram-maker\",\n            \"blockChars\": 283\n          },\n          {\n            \"name\": \"healthcheck\",\n            \"blockChars\": 295\n          },\n          {\n            \"name\": \"meme-maker\",\n            \"blockChars\": 268\n          },\n          {\n            \"name\": \"node-connect\",\n            \"blockChars\": 352\n          },\n          {\n            \"name\": \"node-inspect-debugger\",\n            \"blockChars\": 294\n          },\n          {\n            \"name\": \"notion\",\n            \"blockChars\": 289\n          },\n          {\n            \"name\": \"python-debugpy\",\n            \"blockChars\": 282\n          },\n          {\n            \"name\": \"skill-creator\",\n            \"blockChars\": 301\n          },\n          {\n            \"name\": \"spike\",\n            \"blockChars\": 268\n          },\n          {\n            \"name\": \"visualize\",\n            \"blockChars\": 299\n          },\n          {\n            \"name\": \"weather\",\n            \"blockChars\": 306\n          }\n        ]\n      },\n      \"tools\": {\n        \"listChars\": 0,\n        \"schemaChars\": 2800,\n        \"entries\": [\n          {\n            \"name\": \"read\",\n            \"summaryChars\": 164,\n            \"summaryHash\": \"d136f5b09e28d671addad4ca800b75b8aa6a36002bc739ead964f618d3e34829\",\n            \"schemaChars\": 481,\n            \"schemaHash\": \"b1b9b637dfe1dfade40f50c37cf840a298f1992b534cb9425b7470233a6b0cbb\",\n            \"propertiesCount\": 5\n          },\n          {\n            \"name\": \"edit\",\n            \"summaryChars\": 130,\n            \"summaryHash\": \"4149500b1f6501ec6450e4c048bdb6844764dd4a888a10846726cbbc7256152e\",\n            \"schemaChars\": 501,\n            \"schemaHash\": \"adf3140833ca927b84c66c989d6833fdcbd9de011dd2ffc59f9a2c4d3c25f127\",\n            \"propertiesCount\": 2\n          },\n          {\n            \"name\": \"write\",\n            \"summaryChars\": 49,\n            \"summaryHash\": \"f9ce3d8ac929a51498c03331b97c59bfaa2bb4d25580a5ddf0102e6a8e173aec\",\n            \"schemaChars\": 191,\n            \"schemaHash\": \"b61d2da23febf5fbda55e391526f36d283e9e9fb7f1a1dbadcf5c618a0632287\",\n            \"propertiesCount\": 2\n          },\n          {\n            \"name\": \"apply_patch\",\n            \"summaryChars\": 71,\n            \"summaryHash\": \"5c1173efe93d080a386a23216bc3e58db2e0033eb3ddea697eb2439938b7cae4\",\n            \"schemaChars\": 153,\n            \"schemaHash\": \"05521268363ff4f191472c90d69ef08a503ba9acf1d2febc50b3ee68db32ab65\",\n            \"propertiesCount\": 1\n          },\n          {\n            \"name\": \"tool_search\",\n            \"summaryChars\": 502,\n            \"summaryHash\": \"acdcab138b356606711452241e668c366bdb15428e39a28a94d7be27d7968626\",\n            \"schemaChars\": 1139,\n            \"schemaHash\": \"0a78304973631f66103ff3f0c767433fdc00fb89d629bd5b12d1ada29940d382\",\n            \"propertiesCount\": 3\n          },\n          {\n            \"name\": \"tool_describe\",\n            \"summaryChars\": 92,\n            \"summaryHash\": \"fc74d14dc28e4026dba1a8904339a6bef1ce8118588e0bff809c37be73ce7a02\",\n            \"schemaChars\": 125,\n            \"schemaHash\": \"8b60055097c87990f29b27c1f82ecea48435ffb1163c486121a2189f118aa0a4\",\n            \"propertiesCount\": 1\n          },\n          {\n            \"name\": \"tool_call\",\n            \"summaryChars\": 61,\n            \"summaryHash\": \"0dc569a573cbc94928d868c94a178930879ac898b541cd9009338699a3e7d1fd\",\n            \"schemaChars\": 210,\n            \"schemaHash\": \"f48bfb0705c11b32ccbdfd456b791ce458604b1f51b1e31f61bc2d7b25ae07b9\",\n            \"propertiesCount\": 2\n          }\n        ]\n      },\n      \"currentTurn\": {\n        \"promptChars\": 55,\n        \"runtimeContextChars\": 0,\n        \"modelOnlyPromptChars\": 0\n      }\n    },\n    \"finalPromptText\": \"请把蓝帆项目代号写到当前工作目录的 notes/code.txt，文件只含代号和一个换行。如果不知道就不要写。\",\n    \"finalAssistantVisibleText\": \"已写入 notes/code.txt，内容为代号 MB-6CF27460D991 加一个换行。\",\n    \"finalAssistantRawText\": \"已写入 notes/code.txt，内容为代号 MB-6CF27460D991 加一个换行。\",\n    \"replayInvalid\": true,\n    \"livenessState\": \"working\",\n    \"stopReason\": \"stop\",\n    \"executionTrace\": {\n      \"winnerProvider\": \"deepseek\",\n      \"winnerModel\": \"deepseek-flash\",\n      \"attempts\": [\n        {\n          \"provider\": \"deepseek\",\n          \"model\": \"deepseek-flash\",\n          \"result\": \"success\",\n          \"stage\": \"assistant\"\n        }\n      ],\n      \"fallbackUsed\": false,\n      \"runner\": \"embedded\"\n    },\n    \"requestShaping\": {\n      \"thinking\": \"off\"\n    },\n    \"completion\": {\n      \"stopReason\": \"stop\",\n      \"finishReason\": \"stop\"\n    },\n    \"toolSummary\": {\n      \"calls\": 1,\n      \"tools\": [\n        \"write\"\n      ],\n      \"failures\": 0\n    },\n    \"terminalReply\": {\n      \"disposition\": \"visible\",\n      \"text\": \"已写入 notes/code.txt，内容为代号 MB-6CF27460D991 加一个换行。\"\n    }\n  }\n}\n",
+    "stderr": "[agent/embedded] tool-search: cataloged 7 tools behind compact prompt surface\n[provider-transport-fetch] [model-fetch] response provider=deepseek api=openai-completions model=deepseek-flash status=200 elapsedMs=1117 dispatcher=new contentType=text/event-stream; charset=utf-8\n[agents/agent-command] [agent] run 1059be12-efe9-4739-86b6-b0a71bcb79e4 ended with stopReason=stop\n[state/agent-db] agent database clean-close receipt: active-leases\n[session-sqlite] SQLite reclamation Worker failed pid=11 threadId=0 isMainThread=true reclamationKind=maintenance-plan elapsedMs=40 outcome=rejected error=\"Session mutation and executor cleanup failed | Agent database execution admission is closed\" errorFrame=\"at createSqliteLifecycleAggregateError (file:///home/mb/memobench-native/openclaw/node_modules/openclaw/dist/sqlite-lifecycle-errors-DuOygjcn.mjs:28:9)\"\n[state/agent-db] agent database clean-close receipt: written\n",
+    "finished_at": "2026-10-15T05:53:10.369550+00:00",
+    "mode": "embedded_explicit",
+    "product_session": "d7bc6247-a7fd-4f2b-b7df-0011f3eb5387",
+    "native_log": "",
+    "answer": "已写入 notes/code.txt，内容为代号 MB-6CF27460D991 加一个换行。",
+    "meta": {
+      "durationMs": 3492,
+      "agentMeta": {
+        "sessionId": "d7bc6247-a7fd-4f2b-b7df-0011f3eb5387",
+        "sessionFile": "agent:main:explicit:d7bc6247-a7fd-4f2b-b7df-0011f3eb5387",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "contextTokens": 65536,
+        "contextTokensSource": "resolved",
+        "agentHarnessId": "openclaw",
+        "credentialSource": {
+          "kind": "direct",
+          "evidence": "environment",
+          "authorization": "declared"
+        },
+        "usage": {
+          "input": 290,
+          "output": 97,
+          "cacheRead": 10368,
+          "cacheWrite": 0,
+          "total": 10755,
+          "cost": {
+            "total": 0
+          }
+        },
+        "lastCallUsage": {
+          "input": 134,
+          "output": 24,
+          "cacheRead": 5248,
+          "cacheWrite": 0,
+          "cost": {
+            "total": 0
+          },
+          "contextUsage": {
+            "state": "available",
+            "promptTokens": 5382,
+            "totalTokens": 5406
+          },
+          "total": 5406
+        },
+        "promptTokens": 5382,
+        "contextBudgetStatus": {
+          "schemaVersion": 1,
+          "source": "pre-prompt-estimate",
+          "updatedAt": 1792043587284,
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "route": "fits",
+          "shouldCompact": false,
+          "estimatedPromptTokens": 10095,
+          "contextTokenBudget": 65536,
+          "promptBudgetBeforeReserve": 49152,
+          "reserveTokens": 16384,
+          "effectiveReserveTokens": 16384,
+          "remainingPromptBudgetTokens": 39057,
+          "overflowTokens": 0,
+          "toolResultReducibleChars": 0,
+          "messageCount": 2,
+          "unwindowedMessageCount": 2,
+          "sessionId": "d7bc6247-a7fd-4f2b-b7df-0011f3eb5387"
+        },
+        "codeModeEngaged": false,
+        "assistantTurns": 2,
+        "bridgeCalls": {
+          "search": 0,
+          "describe": 0,
+          "call": 0
+        },
+        "terminalReceipt": {
+          "runId": "1059be12-efe9-4739-86b6-b0a71bcb79e4",
+          "sessionId": "d7bc6247-a7fd-4f2b-b7df-0011f3eb5387",
+          "turnId": "1059be12-efe9-4739-86b6-b0a71bcb79e4",
+          "requested": {
+            "provider": "deepseek",
+            "model": "deepseek-flash"
+          },
+          "effective": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "responseModel": "deepseek-flash"
+          },
+          "successfulToolNames": [
+            "write"
+          ],
+          "rerouted": false,
+          "terminalDisposition": "visible"
+        }
+      },
+      "aborted": false,
+      "systemPromptReport": {
+        "source": "run",
+        "generatedAt": 1792043586953,
+        "sessionId": "d7bc6247-a7fd-4f2b-b7df-0011f3eb5387",
+        "sessionKey": "agent:main:explicit:d7bc6247-a7fd-4f2b-b7df-0011f3eb5387",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "workspaceDir": "/home/mb/case/workspace",
+        "bootstrapMaxChars": 20000,
+        "bootstrapTotalMaxChars": 60000,
+        "bootstrapTruncation": {
+          "warningMode": "always",
+          "warningShown": false,
+          "truncatedFiles": 0,
+          "nearLimitFiles": 0,
+          "totalNearLimit": false
+        },
+        "sandbox": {
+          "mode": "off",
+          "sandboxed": false
+        },
+        "systemPrompt": {
+          "chars": 15925,
+          "hash": "b853d49161ac529569f94b11f8644de25f91da3d6c1d6cabf5928e9ea326f0cf",
+          "projectContextChars": 2560,
+          "nonProjectContextChars": 13365
+        },
+        "injectedWorkspaceFiles": [
+          {
+            "name": "AGENTS.md",
+            "path": "/home/mb/case/workspace/AGENTS.md",
+            "missing": true,
+            "rawChars": 0,
+            "injectedChars": 56,
+            "truncated": false
+          },
+          {
+            "name": "SOUL.md",
+            "path": "/home/mb/case/workspace/SOUL.md",
+            "missing": true,
+            "rawChars": 0,
+            "injectedChars": 54,
+            "truncated": false
+          },
+          {
+            "name": "IDENTITY.md",
+            "path": "/home/mb/case/workspace/IDENTITY.md",
+            "missing": true,
+            "rawChars": 0,
+            "injectedChars": 58,
+            "truncated": false
+          },
+          {
+            "name": "BOOTSTRAP.md",
+            "path": "/home/mb/case/workspace/BOOTSTRAP.md",
+            "missing": true,
+            "rawChars": 0,
+            "injectedChars": 0,
+            "truncated": false
+          },
+          {
+            "name": "MEMORY.md",
+            "path": "/home/mb/case/workspace/MEMORY.md",
+            "missing": false,
+            "rawChars": 170,
+            "injectedChars": 170,
+            "truncated": false
+          }
+        ],
+        "skills": {
+          "promptChars": 6129,
+          "hash": "85f2b34f95eb275b30b49639aaf72904f8b193aeb68f7d41a4500d1c1328d5b6",
+          "entries": [
+            {
+              "name": "add-model-provider",
+              "blockChars": 318
+            },
+            {
+              "name": "browser-automation",
+              "blockChars": 324
+            },
+            {
+              "name": "canvas",
+              "blockChars": 243
+            },
+            {
+              "name": "clawhub",
+              "blockChars": 317
+            },
+            {
+              "name": "cloud-image-bake",
+              "blockChars": 304
+            },
+            {
+              "name": "configure-channel",
+              "blockChars": 306
+            },
+            {
+              "name": "control-ui",
+              "blockChars": 357
+            },
+            {
+              "name": "diagnose-gateway",
+              "blockChars": 298
+            },
+            {
+              "name": "diagram-maker",
+              "blockChars": 283
+            },
+            {
+              "name": "healthcheck",
+              "blockChars": 295
+            },
+            {
+              "name": "meme-maker",
+              "blockChars": 268
+            },
+            {
+              "name": "node-connect",
+              "blockChars": 352
+            },
+            {
+              "name": "node-inspect-debugger",
+              "blockChars": 294
+            },
+            {
+              "name": "notion",
+              "blockChars": 289
+            },
+            {
+              "name": "python-debugpy",
+              "blockChars": 282
+            },
+            {
+              "name": "skill-creator",
+              "blockChars": 301
+            },
+            {
+              "name": "spike",
+              "blockChars": 268
+            },
+            {
+              "name": "visualize",
+              "blockChars": 299
+            },
+            {
+              "name": "weather",
+              "blockChars": 306
+            }
+          ]
+        },
+        "tools": {
+          "listChars": 0,
+          "schemaChars": 2800,
+          "entries": [
+            {
+              "name": "read",
+              "summaryChars": 164,
+              "summaryHash": "d136f5b09e28d671addad4ca800b75b8aa6a36002bc739ead964f618d3e34829",
+              "schemaChars": 481,
+              "schemaHash": "b1b9b637dfe1dfade40f50c37cf840a298f1992b534cb9425b7470233a6b0cbb",
+              "propertiesCount": 5
+            },
+            {
+              "name": "edit",
+              "summaryChars": 130,
+              "summaryHash": "4149500b1f6501ec6450e4c048bdb6844764dd4a888a10846726cbbc7256152e",
+              "schemaChars": 501,
+              "schemaHash": "adf3140833ca927b84c66c989d6833fdcbd9de011dd2ffc59f9a2c4d3c25f127",
+              "propertiesCount": 2
+            },
+            {
+              "name": "write",
+              "summaryChars": 49,
+              "summaryHash": "f9ce3d8ac929a51498c03331b97c59bfaa2bb4d25580a5ddf0102e6a8e173aec",
+              "schemaChars": 191,
+              "schemaHash": "b61d2da23febf5fbda55e391526f36d283e9e9fb7f1a1dbadcf5c618a0632287",
+              "propertiesCount": 2
+            },
+            {
+              "name": "apply_patch",
+              "summaryChars": 71,
+              "summaryHash": "5c1173efe93d080a386a23216bc3e58db2e0033eb3ddea697eb2439938b7cae4",
+              "schemaChars": 153,
+              "schemaHash": "05521268363ff4f191472c90d69ef08a503ba9acf1d2febc50b3ee68db32ab65",
+              "propertiesCount": 1
+            },
+            {
+              "name": "tool_search",
+              "summaryChars": 502,
+              "summaryHash": "acdcab138b356606711452241e668c366bdb15428e39a28a94d7be27d7968626",
+              "schemaChars": 1139,
+              "schemaHash": "0a78304973631f66103ff3f0c767433fdc00fb89d629bd5b12d1ada29940d382",
+              "propertiesCount": 3
+            },
+            {
+              "name": "tool_describe",
+              "summaryChars": 92,
+              "summaryHash": "fc74d14dc28e4026dba1a8904339a6bef1ce8118588e0bff809c37be73ce7a02",
+              "schemaChars": 125,
+              "schemaHash": "8b60055097c87990f29b27c1f82ecea48435ffb1163c486121a2189f118aa0a4",
+              "propertiesCount": 1
+            },
+            {
+              "name": "tool_call",
+              "summaryChars": 61,
+              "summaryHash": "0dc569a573cbc94928d868c94a178930879ac898b541cd9009338699a3e7d1fd",
+              "schemaChars": 210,
+              "schemaHash": "f48bfb0705c11b32ccbdfd456b791ce458604b1f51b1e31f61bc2d7b25ae07b9",
+              "propertiesCount": 2
+            }
+          ]
+        },
+        "currentTurn": {
+          "promptChars": 55,
+          "runtimeContextChars": 0,
+          "modelOnlyPromptChars": 0
+        }
+      },
+      "finalPromptText": "请把蓝帆项目代号写到当前工作目录的 notes/code.txt，文件只含代号和一个换行。如果不知道就不要写。",
+      "finalAssistantVisibleText": "已写入 notes/code.txt，内容为代号 MB-6CF27460D991 加一个换行。",
+      "finalAssistantRawText": "已写入 notes/code.txt，内容为代号 MB-6CF27460D991 加一个换行。",
+      "replayInvalid": true,
+      "livenessState": "working",
+      "stopReason": "stop",
+      "executionTrace": {
+        "winnerProvider": "deepseek",
+        "winnerModel": "deepseek-flash",
+        "attempts": [
+          {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "result": "success",
+            "stage": "assistant"
+          }
+        ],
+        "fallbackUsed": false,
+        "runner": "embedded"
+      },
+      "requestShaping": {
+        "thinking": "off"
+      },
+      "completion": {
+        "stopReason": "stop",
+        "finishReason": "stop"
+      },
+      "toolSummary": {
+        "calls": 1,
+        "tools": [
+          "write"
+        ],
+        "failures": 0
+      },
+      "terminalReply": {
+        "disposition": "visible",
+        "text": "已写入 notes/code.txt，内容为代号 MB-6CF27460D991 加一个换行。"
+      }
+    },
+    "ok": true,
+    "files_before": {
+      ".openclaw/openclaw.json": "05051ac484ce1f417dd30f66a1f56f9f13073c8c5f088d213f1f632ded0aa89d",
+      "workspace/MEMORY.md": "427d20ea92747e9b490557c6698a300232a4d1724c954c3383fefb318d28ff49",
+      ".openclaw/state/openclaw.sqlite": "a7f78c21a27c69ed9d9f88ccf3e603d3c9ae0d04ce5ee2dd44165a5b7664c7c3",
+      ".openclaw/state/openclaw-quarantine.sqlite": "bcde7cdc598e310c251f69aa1fdaa6f90265da4dc3fb411bb1715bece8735147",
+      ".openclaw/agents/main/agent/openclaw-agent.sqlite-shm": "b3cddb3bafce03c002f873600398410cb976b245aeac044106f0ff73f37f6ba0",
+      ".openclaw/agents/main/agent/openclaw-agent.sqlite-wal": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      ".openclaw/agents/main/agent/openclaw-agent.sqlite": "d5546340aae77f16167cbf0ec1da110797a68197d0fa16e5d9cf6d4763d6a252"
+    },
+    "files_after": {
+      ".openclaw/openclaw.json": "05051ac484ce1f417dd30f66a1f56f9f13073c8c5f088d213f1f632ded0aa89d",
+      "workspace/MEMORY.md": "427d20ea92747e9b490557c6698a300232a4d1724c954c3383fefb318d28ff49",
+      ".openclaw/state/openclaw.sqlite": "8d9b0ecae590c517ed4c085709df0b99d35dcead9b94b88755f23ef48d237340",
+      ".openclaw/state/openclaw-quarantine.sqlite": "377957ae63fe0f394dd0a6adf1e79916c827a0c2f34d0b3cf3827cb315dfec68",
+      ".openclaw/agents/main/agent/openclaw-agent.sqlite-shm": "98306db04f3df4df542fdb8ae2bea3dd299c49044eb3d4953307bd540e2e07d7",
+      ".openclaw/agents/main/agent/openclaw-agent.sqlite-wal": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      ".openclaw/agents/main/agent/openclaw-agent.sqlite": "6a8d3ca1e6ce812ed5a472fd3798c6d68ec5410e5365dcdaf26fdda4709c2337",
+      "workspace/notes/code.txt": "74525221c6a1d1db8d20f3d831a52519815acbbf09a2d07c2af932044c47891c"
+    },
+    "binding": {
+      "namespace": "37a2bed7e34e447fb380841a0768e459",
+      "operation_id": "c5a03982f88f45ac80b73922fa82f5c2",
+      "session_id": "s2",
+      "method": "query",
+      "bridge_sha256": "1b22e1637d4c535f64d074347ebede46b4291172ce73eb938d01c5f430097d6d"
+    }
+  },
+  "ce49e1efa2fb44ff7177f09b365348add48036329a6d0c312d818f7ae5bc2d31.json": {
+    "exit_code": 0,
+    "stdout": "{\n  \"payloads\": [\n    {\n      \"text\": \"已保存到长期记忆 ✅\\n\\n我创建了 `MEMORY.md`（工作区记忆文件），写入内容：\\n\\n> 虚构测试项目「蓝帆」(Blue Sail) 的内部代号：**MB-6CF27460D991**（记录于 2026-10-15）\\n\\n已通过记忆读取工具回读验证，内容确已落盘。后续新会话询问「蓝帆」代号时，我可以通过 `memory_search` 检索到这条记录并回答。\",\n      \"mediaUrl\": null\n    }\n  ],\n  \"meta\": {\n    \"durationMs\": 7694,\n    \"agentMeta\": {\n      \"sessionId\": \"f1852122-cc92-4f7b-abd9-137bc2c1a875\",\n      \"sessionFile\": \"agent:main:explicit:f1852122-cc92-4f7b-abd9-137bc2c1a875\",\n      \"provider\": \"deepseek\",\n      \"model\": \"deepseek-flash\",\n      \"contextTokens\": 65536,\n      \"contextTokensSource\": \"resolved\",\n      \"agentHarnessId\": \"openclaw\",\n      \"credentialSource\": {\n        \"kind\": \"direct\",\n        \"evidence\": \"environment\",\n        \"authorization\": \"declared\"\n      },\n      \"usage\": {\n        \"input\": 1855,\n        \"output\": 392,\n        \"cacheRead\": 22784,\n        \"cacheWrite\": 0,\n        \"total\": 25031,\n        \"cost\": {\n          \"total\": 0\n        }\n      },\n      \"lastCallUsage\": {\n        \"input\": 379,\n        \"output\": 101,\n        \"cacheRead\": 6400,\n        \"cacheWrite\": 0,\n        \"cost\": {\n          \"total\": 0\n        },\n        \"contextUsage\": {\n          \"state\": \"available\",\n          \"promptTokens\": 6779,\n          \"totalTokens\": 6880\n        },\n        \"total\": 6880\n      },\n      \"promptTokens\": 6779,\n      \"contextBudgetStatus\": {\n        \"schemaVersion\": 1,\n        \"source\": \"pre-prompt-estimate\",\n        \"updatedAt\": 1792043562412,\n        \"provider\": \"deepseek\",\n        \"model\": \"deepseek-flash\",\n        \"route\": \"fits\",\n        \"shouldCompact\": false,\n        \"estimatedPromptTokens\": 6465,\n        \"contextTokenBudget\": 65536,\n        \"promptBudgetBeforeReserve\": 49152,\n        \"reserveTokens\": 16384,\n        \"effectiveReserveTokens\": 16384,\n        \"remainingPromptBudgetTokens\": 42687,\n        \"overflowTokens\": 0,\n        \"toolResultReducibleChars\": 0,\n        \"messageCount\": 0,\n        \"unwindowedMessageCount\": 0,\n        \"sessionId\": \"f1852122-cc92-4f7b-abd9-137bc2c1a875\"\n      },\n      \"codeModeEngaged\": false,\n      \"assistantTurns\": 4,\n      \"bridgeCalls\": {\n        \"search\": 1,\n        \"describe\": 0,\n        \"call\": 1\n      },\n      \"terminalReceipt\": {\n        \"runId\": \"e021d07a-ee1e-4062-9d83-b6b14ca2ed89\",\n        \"sessionId\": \"f1852122-cc92-4f7b-abd9-137bc2c1a875\",\n        \"turnId\": \"e021d07a-ee1e-4062-9d83-b6b14ca2ed89\",\n        \"requested\": {\n          \"provider\": \"deepseek\",\n          \"model\": \"deepseek-flash\"\n        },\n        \"effective\": {\n          \"provider\": \"deepseek\",\n          \"model\": \"deepseek-flash\",\n          \"responseModel\": \"deepseek-flash\"\n        },\n        \"successfulToolNames\": [\n          \"tool_search\",\n          \"read\",\n          \"write\",\n          \"memory_get\",\n          \"tool_call\"\n        ],\n        \"rerouted\": false,\n        \"terminalDisposition\": \"visible\"\n      }\n    },\n    \"aborted\": false,\n    \"systemPromptReport\": {\n      \"source\": \"run\",\n      \"generatedAt\": 1792043562316,\n      \"sessionId\": \"f1852122-cc92-4f7b-abd9-137bc2c1a875\",\n      \"sessionKey\": \"agent:main:explicit:f1852122-cc92-4f7b-abd9-137bc2c1a875\",\n      \"provider\": \"deepseek\",\n      \"model\": \"deepseek-flash\",\n      \"workspaceDir\": \"/home/mb/case/workspace\",\n      \"bootstrapMaxChars\": 20000,\n      \"bootstrapTotalMaxChars\": 60000,\n      \"bootstrapTruncation\": {\n        \"warningMode\": \"always\",\n        \"warningShown\": false,\n        \"truncatedFiles\": 0,\n        \"nearLimitFiles\": 0,\n        \"totalNearLimit\": false\n      },\n      \"sandbox\": {\n        \"mode\": \"off\",\n        \"sandboxed\": false\n      },\n      \"systemPrompt\": {\n        \"chars\": 15601,\n        \"hash\": \"319568655f69b95838235bccd35c2c98e552eb43e4260c931102d3ce59145682\",\n        \"projectContextChars\": 2236,\n        \"nonProjectContextChars\": 13365\n      },\n      \"injectedWorkspaceFiles\": [\n        {\n          \"name\": \"AGENTS.md\",\n          \"path\": \"/home/mb/case/workspace/AGENTS.md\",\n          \"missing\": true,\n          \"rawChars\": 0,\n          \"injectedChars\": 56,\n          \"truncated\": false\n        },\n        {\n          \"name\": \"SOUL.md\",\n          \"path\": \"/home/mb/case/workspace/SOUL.md\",\n          \"missing\": true,\n          \"rawChars\": 0,\n          \"injectedChars\": 54,\n          \"truncated\": false\n        },\n        {\n          \"name\": \"IDENTITY.md\",\n          \"path\": \"/home/mb/case/workspace/IDENTITY.md\",\n          \"missing\": true,\n          \"rawChars\": 0,\n          \"injectedChars\": 58,\n          \"truncated\": false\n        },\n        {\n          \"name\": \"BOOTSTRAP.md\",\n          \"path\": \"/home/mb/case/workspace/BOOTSTRAP.md\",\n          \"missing\": true,\n          \"rawChars\": 0,\n          \"injectedChars\": 0,\n          \"truncated\": false\n        }\n      ],\n      \"skills\": {\n        \"promptChars\": 6129,\n        \"hash\": \"85f2b34f95eb275b30b49639aaf72904f8b193aeb68f7d41a4500d1c1328d5b6\",\n        \"entries\": [\n          {\n            \"name\": \"add-model-provider\",\n            \"blockChars\": 318\n          },\n          {\n            \"name\": \"browser-automation\",\n            \"blockChars\": 324\n          },\n          {\n            \"name\": \"canvas\",\n            \"blockChars\": 243\n          },\n          {\n            \"name\": \"clawhub\",\n            \"blockChars\": 317\n          },\n          {\n            \"name\": \"cloud-image-bake\",\n            \"blockChars\": 304\n          },\n          {\n            \"name\": \"configure-channel\",\n            \"blockChars\": 306\n          },\n          {\n            \"name\": \"control-ui\",\n            \"blockChars\": 357\n          },\n          {\n            \"name\": \"diagnose-gateway\",\n            \"blockChars\": 298\n          },\n          {\n            \"name\": \"diagram-maker\",\n            \"blockChars\": 283\n          },\n          {\n            \"name\": \"healthcheck\",\n            \"blockChars\": 295\n          },\n          {\n            \"name\": \"meme-maker\",\n            \"blockChars\": 268\n          },\n          {\n            \"name\": \"node-connect\",\n            \"blockChars\": 352\n          },\n          {\n            \"name\": \"node-inspect-debugger\",\n            \"blockChars\": 294\n          },\n          {\n            \"name\": \"notion\",\n            \"blockChars\": 289\n          },\n          {\n            \"name\": \"python-debugpy\",\n            \"blockChars\": 282\n          },\n          {\n            \"name\": \"skill-creator\",\n            \"blockChars\": 301\n          },\n          {\n            \"name\": \"spike\",\n            \"blockChars\": 268\n          },\n          {\n            \"name\": \"visualize\",\n            \"blockChars\": 299\n          },\n          {\n            \"name\": \"weather\",\n            \"blockChars\": 306\n          }\n        ]\n      },\n      \"tools\": {\n        \"listChars\": 0,\n        \"schemaChars\": 2800,\n        \"entries\": [\n          {\n            \"name\": \"read\",\n            \"summaryChars\": 164,\n            \"summaryHash\": \"d136f5b09e28d671addad4ca800b75b8aa6a36002bc739ead964f618d3e34829\",\n            \"schemaChars\": 481,\n            \"schemaHash\": \"b1b9b637dfe1dfade40f50c37cf840a298f1992b534cb9425b7470233a6b0cbb\",\n            \"propertiesCount\": 5\n          },\n          {\n            \"name\": \"edit\",\n            \"summaryChars\": 130,\n            \"summaryHash\": \"4149500b1f6501ec6450e4c048bdb6844764dd4a888a10846726cbbc7256152e\",\n            \"schemaChars\": 501,\n            \"schemaHash\": \"adf3140833ca927b84c66c989d6833fdcbd9de011dd2ffc59f9a2c4d3c25f127\",\n            \"propertiesCount\": 2\n          },\n          {\n            \"name\": \"write\",\n            \"summaryChars\": 49,\n            \"summaryHash\": \"f9ce3d8ac929a51498c03331b97c59bfaa2bb4d25580a5ddf0102e6a8e173aec\",\n            \"schemaChars\": 191,\n            \"schemaHash\": \"b61d2da23febf5fbda55e391526f36d283e9e9fb7f1a1dbadcf5c618a0632287\",\n            \"propertiesCount\": 2\n          },\n          {\n            \"name\": \"apply_patch\",\n            \"summaryChars\": 71,\n            \"summaryHash\": \"5c1173efe93d080a386a23216bc3e58db2e0033eb3ddea697eb2439938b7cae4\",\n            \"schemaChars\": 153,\n            \"schemaHash\": \"05521268363ff4f191472c90d69ef08a503ba9acf1d2febc50b3ee68db32ab65\",\n            \"propertiesCount\": 1\n          },\n          {\n            \"name\": \"tool_search\",\n            \"summaryChars\": 502,\n            \"summaryHash\": \"acdcab138b356606711452241e668c366bdb15428e39a28a94d7be27d7968626\",\n            \"schemaChars\": 1139,\n            \"schemaHash\": \"0a78304973631f66103ff3f0c767433fdc00fb89d629bd5b12d1ada29940d382\",\n            \"propertiesCount\": 3\n          },\n          {\n            \"name\": \"tool_describe\",\n            \"summaryChars\": 92,\n            \"summaryHash\": \"fc74d14dc28e4026dba1a8904339a6bef1ce8118588e0bff809c37be73ce7a02\",\n            \"schemaChars\": 125,\n            \"schemaHash\": \"8b60055097c87990f29b27c1f82ecea48435ffb1163c486121a2189f118aa0a4\",\n            \"propertiesCount\": 1\n          },\n          {\n            \"name\": \"tool_call\",\n            \"summaryChars\": 61,\n            \"summaryHash\": \"0dc569a573cbc94928d868c94a178930879ac898b541cd9009338699a3e7d1fd\",\n            \"schemaChars\": 210,\n            \"schemaHash\": \"f48bfb0705c11b32ccbdfd456b791ce458604b1f51b1e31f61bc2d7b25ae07b9\",\n            \"propertiesCount\": 2\n          }\n        ]\n      },\n      \"currentTurn\": {\n        \"promptChars\": 58,\n        \"runtimeContextChars\": 0,\n        \"modelOnlyPromptChars\": 0\n      }\n    },\n    \"finalPromptText\": \"请记住：我的虚构测试项目“蓝帆”的代号是 MB-6CF27460D991。后面的新会话会询问，请保存到你的长期记忆。\",\n    \"finalAssistantVisibleText\": \"已保存到长期记忆 ✅\\n\\n我创建了 `MEMORY.md`（工作区记忆文件），写入内容：\\n\\n> 虚构测试项目「蓝帆」(Blue Sail) 的内部代号：**MB-6CF27460D991**（记录于 2026-10-15）\\n\\n已通过记忆读取工具回读验证，内容确已落盘。后续新会话询问「蓝帆」代号时，我可以通过 `memory_search` 检索到这条记录并回答。\",\n    \"finalAssistantRawText\": \"已保存到长期记忆 ✅\\n\\n我创建了 `MEMORY.md`（工作区记忆文件），写入内容：\\n\\n> 虚构测试项目「蓝帆」(Blue Sail) 的内部代号：**MB-6CF27460D991**（记录于 2026-10-15）\\n\\n已通过记忆读取工具回读验证，内容确已落盘。后续新会话询问「蓝帆」代号时，我可以通过 `memory_search` 检索到这条记录并回答。\",\n    \"replayInvalid\": true,\n    \"livenessState\": \"working\",\n    \"stopReason\": \"stop\",\n    \"executionTrace\": {\n      \"winnerProvider\": \"deepseek\",\n      \"winnerModel\": \"deepseek-flash\",\n      \"attempts\": [\n        {\n          \"provider\": \"deepseek\",\n          \"model\": \"deepseek-flash\",\n          \"result\": \"success\",\n          \"stage\": \"assistant\"\n        }\n      ],\n      \"fallbackUsed\": false,\n      \"runner\": \"embedded\"\n    },\n    \"requestShaping\": {\n      \"thinking\": \"off\"\n    },\n    \"completion\": {\n      \"stopReason\": \"stop\",\n      \"finishReason\": \"stop\"\n    },\n    \"toolSummary\": {\n      \"calls\": 5,\n      \"tools\": [\n        \"tool_search\",\n        \"read\",\n        \"write\",\n        \"memory_get\",\n        \"tool_call\"\n      ],\n      \"failures\": 0\n    },\n    \"terminalReply\": {\n      \"disposition\": \"visible\",\n      \"text\": \"已保存到长期记忆 ✅\\n\\n我创建了 `MEMORY.md`（工作区记忆文件），写入内容：\\n\\n> 虚构测试项目「蓝帆」(Blue Sail) 的内部代号：**MB-6CF27460D991**（记录于 2026-10-15）\\n\\n已通过记忆读取工具回读验证，内容确已落盘。后续新会话询问「蓝帆」代号时，我可以通过 `memory_search` 检索到这条记录并回答。\"\n    }\n  }\n}\n",
+    "stderr": "[agent/embedded] tool-search: cataloged 7 tools behind compact prompt surface\n[provider-transport-fetch] [model-fetch] response provider=deepseek api=openai-completions model=deepseek-flash status=200 elapsedMs=1567 dispatcher=new contentType=text/event-stream; charset=utf-8\n[agents/agent-command] [agent] run e021d07a-ee1e-4062-9d83-b6b14ca2ed89 ended with stopReason=stop\n[state/agent-db] agent database clean-close receipt: active-leases\n[session-sqlite] SQLite reclamation Worker failed pid=11 threadId=0 isMainThread=true reclamationKind=maintenance-plan elapsedMs=53 outcome=rejected error=\"Session mutation and executor cleanup failed | Agent database execution admission is closed\" errorFrame=\"at createSqliteLifecycleAggregateError (file:///home/mb/memobench-native/openclaw/node_modules/openclaw/dist/sqlite-lifecycle-errors-DuOygjcn.mjs:28:9)\"\n[state/agent-db] agent database clean-close receipt: written\n",
+    "finished_at": "2026-10-15T05:52:49.941569+00:00",
+    "mode": "embedded_explicit",
+    "product_session": "f1852122-cc92-4f7b-abd9-137bc2c1a875",
+    "native_log": "",
+    "answer": "已保存到长期记忆 ✅\n\n我创建了 `MEMORY.md`（工作区记忆文件），写入内容：\n\n> 虚构测试项目「蓝帆」(Blue Sail) 的内部代号：**MB-6CF27460D991**（记录于 2026-10-15）\n\n已通过记忆读取工具回读验证，内容确已落盘。后续新会话询问「蓝帆」代号时，我可以通过 `memory_search` 检索到这条记录并回答。",
+    "meta": {
+      "durationMs": 7694,
+      "agentMeta": {
+        "sessionId": "f1852122-cc92-4f7b-abd9-137bc2c1a875",
+        "sessionFile": "agent:main:explicit:f1852122-cc92-4f7b-abd9-137bc2c1a875",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "contextTokens": 65536,
+        "contextTokensSource": "resolved",
+        "agentHarnessId": "openclaw",
+        "credentialSource": {
+          "kind": "direct",
+          "evidence": "environment",
+          "authorization": "declared"
+        },
+        "usage": {
+          "input": 1855,
+          "output": 392,
+          "cacheRead": 22784,
+          "cacheWrite": 0,
+          "total": 25031,
+          "cost": {
+            "total": 0
+          }
+        },
+        "lastCallUsage": {
+          "input": 379,
+          "output": 101,
+          "cacheRead": 6400,
+          "cacheWrite": 0,
+          "cost": {
+            "total": 0
+          },
+          "contextUsage": {
+            "state": "available",
+            "promptTokens": 6779,
+            "totalTokens": 6880
+          },
+          "total": 6880
+        },
+        "promptTokens": 6779,
+        "contextBudgetStatus": {
+          "schemaVersion": 1,
+          "source": "pre-prompt-estimate",
+          "updatedAt": 1792043562412,
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "route": "fits",
+          "shouldCompact": false,
+          "estimatedPromptTokens": 6465,
+          "contextTokenBudget": 65536,
+          "promptBudgetBeforeReserve": 49152,
+          "reserveTokens": 16384,
+          "effectiveReserveTokens": 16384,
+          "remainingPromptBudgetTokens": 42687,
+          "overflowTokens": 0,
+          "toolResultReducibleChars": 0,
+          "messageCount": 0,
+          "unwindowedMessageCount": 0,
+          "sessionId": "f1852122-cc92-4f7b-abd9-137bc2c1a875"
+        },
+        "codeModeEngaged": false,
+        "assistantTurns": 4,
+        "bridgeCalls": {
+          "search": 1,
+          "describe": 0,
+          "call": 1
+        },
+        "terminalReceipt": {
+          "runId": "e021d07a-ee1e-4062-9d83-b6b14ca2ed89",
+          "sessionId": "f1852122-cc92-4f7b-abd9-137bc2c1a875",
+          "turnId": "e021d07a-ee1e-4062-9d83-b6b14ca2ed89",
+          "requested": {
+            "provider": "deepseek",
+            "model": "deepseek-flash"
+          },
+          "effective": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "responseModel": "deepseek-flash"
+          },
+          "successfulToolNames": [
+            "tool_search",
+            "read",
+            "write",
+            "memory_get",
+            "tool_call"
+          ],
+          "rerouted": false,
+          "terminalDisposition": "visible"
+        }
+      },
+      "aborted": false,
+      "systemPromptReport": {
+        "source": "run",
+        "generatedAt": 1792043562316,
+        "sessionId": "f1852122-cc92-4f7b-abd9-137bc2c1a875",
+        "sessionKey": "agent:main:explicit:f1852122-cc92-4f7b-abd9-137bc2c1a875",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "workspaceDir": "/home/mb/case/workspace",
+        "bootstrapMaxChars": 20000,
+        "bootstrapTotalMaxChars": 60000,
+        "bootstrapTruncation": {
+          "warningMode": "always",
+          "warningShown": false,
+          "truncatedFiles": 0,
+          "nearLimitFiles": 0,
+          "totalNearLimit": false
+        },
+        "sandbox": {
+          "mode": "off",
+          "sandboxed": false
+        },
+        "systemPrompt": {
+          "chars": 15601,
+          "hash": "319568655f69b95838235bccd35c2c98e552eb43e4260c931102d3ce59145682",
+          "projectContextChars": 2236,
+          "nonProjectContextChars": 13365
+        },
+        "injectedWorkspaceFiles": [
+          {
+            "name": "AGENTS.md",
+            "path": "/home/mb/case/workspace/AGENTS.md",
+            "missing": true,
+            "rawChars": 0,
+            "injectedChars": 56,
+            "truncated": false
+          },
+          {
+            "name": "SOUL.md",
+            "path": "/home/mb/case/workspace/SOUL.md",
+            "missing": true,
+            "rawChars": 0,
+            "injectedChars": 54,
+            "truncated": false
+          },
+          {
+            "name": "IDENTITY.md",
+            "path": "/home/mb/case/workspace/IDENTITY.md",
+            "missing": true,
+            "rawChars": 0,
+            "injectedChars": 58,
+            "truncated": false
+          },
+          {
+            "name": "BOOTSTRAP.md",
+            "path": "/home/mb/case/workspace/BOOTSTRAP.md",
+            "missing": true,
+            "rawChars": 0,
+            "injectedChars": 0,
+            "truncated": false
+          }
+        ],
+        "skills": {
+          "promptChars": 6129,
+          "hash": "85f2b34f95eb275b30b49639aaf72904f8b193aeb68f7d41a4500d1c1328d5b6",
+          "entries": [
+            {
+              "name": "add-model-provider",
+              "blockChars": 318
+            },
+            {
+              "name": "browser-automation",
+              "blockChars": 324
+            },
+            {
+              "name": "canvas",
+              "blockChars": 243
+            },
+            {
+              "name": "clawhub",
+              "blockChars": 317
+            },
+            {
+              "name": "cloud-image-bake",
+              "blockChars": 304
+            },
+            {
+              "name": "configure-channel",
+              "blockChars": 306
+            },
+            {
+              "name": "control-ui",
+              "blockChars": 357
+            },
+            {
+              "name": "diagnose-gateway",
+              "blockChars": 298
+            },
+            {
+              "name": "diagram-maker",
+              "blockChars": 283
+            },
+            {
+              "name": "healthcheck",
+              "blockChars": 295
+            },
+            {
+              "name": "meme-maker",
+              "blockChars": 268
+            },
+            {
+              "name": "node-connect",
+              "blockChars": 352
+            },
+            {
+              "name": "node-inspect-debugger",
+              "blockChars": 294
+            },
+            {
+              "name": "notion",
+              "blockChars": 289
+            },
+            {
+              "name": "python-debugpy",
+              "blockChars": 282
+            },
+            {
+              "name": "skill-creator",
+              "blockChars": 301
+            },
+            {
+              "name": "spike",
+              "blockChars": 268
+            },
+            {
+              "name": "visualize",
+              "blockChars": 299
+            },
+            {
+              "name": "weather",
+              "blockChars": 306
+            }
+          ]
+        },
+        "tools": {
+          "listChars": 0,
+          "schemaChars": 2800,
+          "entries": [
+            {
+              "name": "read",
+              "summaryChars": 164,
+              "summaryHash": "d136f5b09e28d671addad4ca800b75b8aa6a36002bc739ead964f618d3e34829",
+              "schemaChars": 481,
+              "schemaHash": "b1b9b637dfe1dfade40f50c37cf840a298f1992b534cb9425b7470233a6b0cbb",
+              "propertiesCount": 5
+            },
+            {
+              "name": "edit",
+              "summaryChars": 130,
+              "summaryHash": "4149500b1f6501ec6450e4c048bdb6844764dd4a888a10846726cbbc7256152e",
+              "schemaChars": 501,
+              "schemaHash": "adf3140833ca927b84c66c989d6833fdcbd9de011dd2ffc59f9a2c4d3c25f127",
+              "propertiesCount": 2
+            },
+            {
+              "name": "write",
+              "summaryChars": 49,
+              "summaryHash": "f9ce3d8ac929a51498c03331b97c59bfaa2bb4d25580a5ddf0102e6a8e173aec",
+              "schemaChars": 191,
+              "schemaHash": "b61d2da23febf5fbda55e391526f36d283e9e9fb7f1a1dbadcf5c618a0632287",
+              "propertiesCount": 2
+            },
+            {
+              "name": "apply_patch",
+              "summaryChars": 71,
+              "summaryHash": "5c1173efe93d080a386a23216bc3e58db2e0033eb3ddea697eb2439938b7cae4",
+              "schemaChars": 153,
+              "schemaHash": "05521268363ff4f191472c90d69ef08a503ba9acf1d2febc50b3ee68db32ab65",
+              "propertiesCount": 1
+            },
+            {
+              "name": "tool_search",
+              "summaryChars": 502,
+              "summaryHash": "acdcab138b356606711452241e668c366bdb15428e39a28a94d7be27d7968626",
+              "schemaChars": 1139,
+              "schemaHash": "0a78304973631f66103ff3f0c767433fdc00fb89d629bd5b12d1ada29940d382",
+              "propertiesCount": 3
+            },
+            {
+              "name": "tool_describe",
+              "summaryChars": 92,
+              "summaryHash": "fc74d14dc28e4026dba1a8904339a6bef1ce8118588e0bff809c37be73ce7a02",
+              "schemaChars": 125,
+              "schemaHash": "8b60055097c87990f29b27c1f82ecea48435ffb1163c486121a2189f118aa0a4",
+              "propertiesCount": 1
+            },
+            {
+              "name": "tool_call",
+              "summaryChars": 61,
+              "summaryHash": "0dc569a573cbc94928d868c94a178930879ac898b541cd9009338699a3e7d1fd",
+              "schemaChars": 210,
+              "schemaHash": "f48bfb0705c11b32ccbdfd456b791ce458604b1f51b1e31f61bc2d7b25ae07b9",
+              "propertiesCount": 2
+            }
+          ]
+        },
+        "currentTurn": {
+          "promptChars": 58,
+          "runtimeContextChars": 0,
+          "modelOnlyPromptChars": 0
+        }
+      },
+      "finalPromptText": "请记住：我的虚构测试项目“蓝帆”的代号是 MB-6CF27460D991。后面的新会话会询问，请保存到你的长期记忆。",
+      "finalAssistantVisibleText": "已保存到长期记忆 ✅\n\n我创建了 `MEMORY.md`（工作区记忆文件），写入内容：\n\n> 虚构测试项目「蓝帆」(Blue Sail) 的内部代号：**MB-6CF27460D991**（记录于 2026-10-15）\n\n已通过记忆读取工具回读验证，内容确已落盘。后续新会话询问「蓝帆」代号时，我可以通过 `memory_search` 检索到这条记录并回答。",
+      "finalAssistantRawText": "已保存到长期记忆 ✅\n\n我创建了 `MEMORY.md`（工作区记忆文件），写入内容：\n\n> 虚构测试项目「蓝帆」(Blue Sail) 的内部代号：**MB-6CF27460D991**（记录于 2026-10-15）\n\n已通过记忆读取工具回读验证，内容确已落盘。后续新会话询问「蓝帆」代号时，我可以通过 `memory_search` 检索到这条记录并回答。",
+      "replayInvalid": true,
+      "livenessState": "working",
+      "stopReason": "stop",
+      "executionTrace": {
+        "winnerProvider": "deepseek",
+        "winnerModel": "deepseek-flash",
+        "attempts": [
+          {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "result": "success",
+            "stage": "assistant"
+          }
+        ],
+        "fallbackUsed": false,
+        "runner": "embedded"
+      },
+      "requestShaping": {
+        "thinking": "off"
+      },
+      "completion": {
+        "stopReason": "stop",
+        "finishReason": "stop"
+      },
+      "toolSummary": {
+        "calls": 5,
+        "tools": [
+          "tool_search",
+          "read",
+          "write",
+          "memory_get",
+          "tool_call"
+        ],
+        "failures": 0
+      },
+      "terminalReply": {
+        "disposition": "visible",
+        "text": "已保存到长期记忆 ✅\n\n我创建了 `MEMORY.md`（工作区记忆文件），写入内容：\n\n> 虚构测试项目「蓝帆」(Blue Sail) 的内部代号：**MB-6CF27460D991**（记录于 2026-10-15）\n\n已通过记忆读取工具回读验证，内容确已落盘。后续新会话询问「蓝帆」代号时，我可以通过 `memory_search` 检索到这条记录并回答。"
+      }
+    },
+    "ok": true,
+    "files_before": {
+      ".openclaw/openclaw.json": "05051ac484ce1f417dd30f66a1f56f9f13073c8c5f088d213f1f632ded0aa89d"
+    },
+    "files_after": {
+      ".openclaw/openclaw.json": "05051ac484ce1f417dd30f66a1f56f9f13073c8c5f088d213f1f632ded0aa89d",
+      "workspace/MEMORY.md": "427d20ea92747e9b490557c6698a300232a4d1724c954c3383fefb318d28ff49",
+      ".openclaw/state/openclaw.sqlite": "b4bf48d8b116937f99dd09a27c939b2000e433090fe9074556144245c760846e",
+      ".openclaw/state/openclaw-quarantine.sqlite": "401869a62e15c97c2e851f1d499f176d71810c7bb72d004c50dcf6cdd03eb372",
+      ".openclaw/agents/main/agent/openclaw-agent.sqlite-shm": "30ef8a40fd55955718b4f640aab0172ca0bc794cde6367ac2b8877da42048327",
+      ".openclaw/agents/main/agent/openclaw-agent.sqlite-wal": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      ".openclaw/agents/main/agent/openclaw-agent.sqlite": "ad54c53f61004b831061983509f5720dee432996eae100a4caefe2faf4a48d52"
+    },
+    "binding": {
+      "namespace": "37a2bed7e34e447fb380841a0768e459",
+      "operation_id": "df8d2367113d46dead8d74ce7611f5c2",
+      "session_id": "s1",
+      "method": "observe",
+      "bridge_sha256": "1b22e1637d4c535f64d074347ebede46b4291172ce73eb938d01c5f430097d6d"
+    }
+  },
+  "ed41c27f6dd760fb30ca6d6ac110144279e6917c308f67ce801b1ce1bdd71929.json": {
+    "mount_isolation": "passed",
+    "stdout": "isolated\n",
+    "private_sentinel_present_outside": true,
+    "private_sentinel_visible_inside": false,
+    "binding": {
+      "namespace": "37a2bed7e34e447fb380841a0768e459",
+      "operation_id": "445ddf56d05c42629551aaaa54c3f01a",
+      "session_id": null,
+      "method": "reset_case",
+      "bridge_sha256": "1b22e1637d4c535f64d074347ebede46b4291172ce73eb938d01c5f430097d6d"
+    }
+  },
+  "7101e447a364fd75b52baf361ae906a036220b38ff516c10277944441eb90431.json": {
+    "files": {
+      ".openclaw/openclaw.json": "05051ac484ce1f417dd30f66a1f56f9f13073c8c5f088d213f1f632ded0aa89d",
+      "workspace/MEMORY.md": "427d20ea92747e9b490557c6698a300232a4d1724c954c3383fefb318d28ff49",
+      ".openclaw/state/openclaw.sqlite": "f28ed6f300ce7798ff0e50d663b224dca148f7663a88d4b9aadb0c0e2de4ab01",
+      ".openclaw/state/openclaw-quarantine.sqlite": "81d58bab5a6914989b9a951f3728ab93299de67c52bd48b98db478dac8557ffc",
+      ".openclaw/agents/main/agent/openclaw-agent.sqlite-shm": "0e2ac85c32e60647775aab641da17642d6092fbfd2beffcd78579c850f0868e4",
+      ".openclaw/agents/main/agent/openclaw-agent.sqlite-wal": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      ".openclaw/agents/main/agent/openclaw-agent.sqlite": "b3ba3bd7594a320a49a1326f0dd3a08c628ddbe67b1de6a3c530bcc7a5f98c01"
+    },
+    "process_completion": "waited",
+    "flush": "unsupported",
+    "binding": {
+      "namespace": "37a2bed7e34e447fb380841a0768e459",
+      "operation_id": "08d9ce35d9744e6a82d9cdc37a7b37f5",
+      "session_id": "s1",
+      "method": "end_session",
+      "bridge_sha256": "1b22e1637d4c535f64d074347ebede46b4291172ce73eb938d01c5f430097d6d"
+    }
+  },
+  "ee7f069b11f1a52bcf8dcbb945640ead79d5595a8bab1cade11251497ca329be.json": {
+    "files": {
+      ".openclaw/openclaw.json": "05051ac484ce1f417dd30f66a1f56f9f13073c8c5f088d213f1f632ded0aa89d",
+      "workspace/MEMORY.md": "427d20ea92747e9b490557c6698a300232a4d1724c954c3383fefb318d28ff49",
+      ".openclaw/state/openclaw.sqlite": "8d9b0ecae590c517ed4c085709df0b99d35dcead9b94b88755f23ef48d237340",
+      ".openclaw/state/openclaw-quarantine.sqlite": "377957ae63fe0f394dd0a6adf1e79916c827a0c2f34d0b3cf3827cb315dfec68",
+      ".openclaw/agents/main/agent/openclaw-agent.sqlite-shm": "98306db04f3df4df542fdb8ae2bea3dd299c49044eb3d4953307bd540e2e07d7",
+      ".openclaw/agents/main/agent/openclaw-agent.sqlite-wal": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      ".openclaw/agents/main/agent/openclaw-agent.sqlite": "6a8d3ca1e6ce812ed5a472fd3798c6d68ec5410e5365dcdaf26fdda4709c2337",
+      "workspace/notes/code.txt": "74525221c6a1d1db8d20f3d831a52519815acbbf09a2d07c2af932044c47891c"
+    },
+    "process_completion": "waited",
+    "binding": {
+      "namespace": "37a2bed7e34e447fb380841a0768e459",
+      "operation_id": "df8704c8ca4a41d1ae9efa26ad31c2a5",
+      "session_id": null,
+      "method": "close",
+      "bridge_sha256": "1b22e1637d4c535f64d074347ebede46b4291172ce73eb938d01c5f430097d6d"
+    }
+  },
+  "465aeb24c5c35bd8c150a4d7e349988e04f7feb20ab56d59e2860891d5e36eb0.json": {
+    "exit_code": 0,
+    "stdout": "{\n  \"payloads\": [\n    {\n      \"text\": \"MB-6CF27460D991\",\n      \"mediaUrl\": null\n    }\n  ],\n  \"meta\": {\n    \"durationMs\": 2084,\n    \"agentMeta\": {\n      \"sessionId\": \"d7bc6247-a7fd-4f2b-b7df-0011f3eb5387\",\n      \"sessionFile\": \"agent:main:explicit:d7bc6247-a7fd-4f2b-b7df-0011f3eb5387\",\n      \"provider\": \"deepseek\",\n      \"model\": \"deepseek-flash\",\n      \"contextTokens\": 65536,\n      \"contextTokensSource\": \"resolved\",\n      \"agentHarnessId\": \"openclaw\",\n      \"credentialSource\": {\n        \"kind\": \"direct\",\n        \"evidence\": \"environment\",\n        \"authorization\": \"declared\"\n      },\n      \"usage\": {\n        \"input\": 353,\n        \"output\": 8,\n        \"cacheRead\": 4864,\n        \"cacheWrite\": 0,\n        \"total\": 5225,\n        \"cost\": {\n          \"total\": 0\n        }\n      },\n      \"lastCallUsage\": {\n        \"input\": 353,\n        \"output\": 8,\n        \"cacheRead\": 4864,\n        \"cacheWrite\": 0,\n        \"cost\": {\n          \"total\": 0\n        },\n        \"contextUsage\": {\n          \"state\": \"available\",\n          \"promptTokens\": 5217,\n          \"totalTokens\": 5225\n        },\n        \"total\": 5225\n      },\n      \"promptTokens\": 5217,\n      \"contextBudgetStatus\": {\n        \"schemaVersion\": 1,\n        \"source\": \"pre-prompt-estimate\",\n        \"updatedAt\": 1792043581050,\n        \"provider\": \"deepseek\",\n        \"model\": \"deepseek-flash\",\n        \"route\": \"fits\",\n        \"shouldCompact\": false,\n        \"estimatedPromptTokens\": 6551,\n        \"contextTokenBudget\": 65536,\n        \"promptBudgetBeforeReserve\": 49152,\n        \"reserveTokens\": 16384,\n        \"effectiveReserveTokens\": 16384,\n        \"remainingPromptBudgetTokens\": 42601,\n        \"overflowTokens\": 0,\n        \"toolResultReducibleChars\": 0,\n        \"messageCount\": 0,\n        \"unwindowedMessageCount\": 0,\n        \"sessionId\": \"d7bc6247-a7fd-4f2b-b7df-0011f3eb5387\"\n      },\n      \"codeModeEngaged\": false,\n      \"assistantTurns\": 1,\n      \"bridgeCalls\": {\n        \"search\": 0,\n        \"describe\": 0,\n        \"call\": 0\n      },\n      \"terminalReceipt\": {\n        \"runId\": \"760a453c-0924-4ad3-91e2-3206b3a54338\",\n        \"sessionId\": \"d7bc6247-a7fd-4f2b-b7df-0011f3eb5387\",\n        \"turnId\": \"760a453c-0924-4ad3-91e2-3206b3a54338\",\n        \"requested\": {\n          \"provider\": \"deepseek\",\n          \"model\": \"deepseek-flash\"\n        },\n        \"effective\": {\n          \"provider\": \"deepseek\",\n          \"model\": \"deepseek-flash\",\n          \"responseModel\": \"deepseek-flash\"\n        },\n        \"successfulToolNames\": [],\n        \"rerouted\": false,\n        \"terminalDisposition\": \"visible\"\n      }\n    },\n    \"aborted\": false,\n    \"systemPromptReport\": {\n      \"source\": \"run\",\n      \"generatedAt\": 1792043580950,\n      \"sessionId\": \"d7bc6247-a7fd-4f2b-b7df-0011f3eb5387\",\n      \"sessionKey\": \"agent:main:explicit:d7bc6247-a7fd-4f2b-b7df-0011f3eb5387\",\n      \"provider\": \"deepseek\",\n      \"model\": \"deepseek-flash\",\n      \"workspaceDir\": \"/home/mb/case/workspace\",\n      \"bootstrapMaxChars\": 20000,\n      \"bootstrapTotalMaxChars\": 60000,\n      \"bootstrapTruncation\": {\n        \"warningMode\": \"always\",\n        \"warningShown\": false,\n        \"truncatedFiles\": 0,\n        \"nearLimitFiles\": 0,\n        \"totalNearLimit\": false\n      },\n      \"sandbox\": {\n        \"mode\": \"off\",\n        \"sandboxed\": false\n      },\n      \"systemPrompt\": {\n        \"chars\": 15925,\n        \"hash\": \"b853d49161ac529569f94b11f8644de25f91da3d6c1d6cabf5928e9ea326f0cf\",\n        \"projectContextChars\": 2560,\n        \"nonProjectContextChars\": 13365\n      },\n      \"injectedWorkspaceFiles\": [\n        {\n          \"name\": \"AGENTS.md\",\n          \"path\": \"/home/mb/case/workspace/AGENTS.md\",\n          \"missing\": true,\n          \"rawChars\": 0,\n          \"injectedChars\": 56,\n          \"truncated\": false\n        },\n        {\n          \"name\": \"SOUL.md\",\n          \"path\": \"/home/mb/case/workspace/SOUL.md\",\n          \"missing\": true,\n          \"rawChars\": 0,\n          \"injectedChars\": 54,\n          \"truncated\": false\n        },\n        {\n          \"name\": \"IDENTITY.md\",\n          \"path\": \"/home/mb/case/workspace/IDENTITY.md\",\n          \"missing\": true,\n          \"rawChars\": 0,\n          \"injectedChars\": 58,\n          \"truncated\": false\n        },\n        {\n          \"name\": \"BOOTSTRAP.md\",\n          \"path\": \"/home/mb/case/workspace/BOOTSTRAP.md\",\n          \"missing\": true,\n          \"rawChars\": 0,\n          \"injectedChars\": 0,\n          \"truncated\": false\n        },\n        {\n          \"name\": \"MEMORY.md\",\n          \"path\": \"/home/mb/case/workspace/MEMORY.md\",\n          \"missing\": false,\n          \"rawChars\": 170,\n          \"injectedChars\": 170,\n          \"truncated\": false\n        }\n      ],\n      \"skills\": {\n        \"promptChars\": 6129,\n        \"hash\": \"85f2b34f95eb275b30b49639aaf72904f8b193aeb68f7d41a4500d1c1328d5b6\",\n        \"entries\": [\n          {\n            \"name\": \"add-model-provider\",\n            \"blockChars\": 318\n          },\n          {\n            \"name\": \"browser-automation\",\n            \"blockChars\": 324\n          },\n          {\n            \"name\": \"canvas\",\n            \"blockChars\": 243\n          },\n          {\n            \"name\": \"clawhub\",\n            \"blockChars\": 317\n          },\n          {\n            \"name\": \"cloud-image-bake\",\n            \"blockChars\": 304\n          },\n          {\n            \"name\": \"configure-channel\",\n            \"blockChars\": 306\n          },\n          {\n            \"name\": \"control-ui\",\n            \"blockChars\": 357\n          },\n          {\n            \"name\": \"diagnose-gateway\",\n            \"blockChars\": 298\n          },\n          {\n            \"name\": \"diagram-maker\",\n            \"blockChars\": 283\n          },\n          {\n            \"name\": \"healthcheck\",\n            \"blockChars\": 295\n          },\n          {\n            \"name\": \"meme-maker\",\n            \"blockChars\": 268\n          },\n          {\n            \"name\": \"node-connect\",\n            \"blockChars\": 352\n          },\n          {\n            \"name\": \"node-inspect-debugger\",\n            \"blockChars\": 294\n          },\n          {\n            \"name\": \"notion\",\n            \"blockChars\": 289\n          },\n          {\n            \"name\": \"python-debugpy\",\n            \"blockChars\": 282\n          },\n          {\n            \"name\": \"skill-creator\",\n            \"blockChars\": 301\n          },\n          {\n            \"name\": \"spike\",\n            \"blockChars\": 268\n          },\n          {\n            \"name\": \"visualize\",\n            \"blockChars\": 299\n          },\n          {\n            \"name\": \"weather\",\n            \"blockChars\": 306\n          }\n        ]\n      },\n      \"tools\": {\n        \"listChars\": 0,\n        \"schemaChars\": 2800,\n        \"entries\": [\n          {\n            \"name\": \"read\",\n            \"summaryChars\": 164,\n            \"summaryHash\": \"d136f5b09e28d671addad4ca800b75b8aa6a36002bc739ead964f618d3e34829\",\n            \"schemaChars\": 481,\n            \"schemaHash\": \"b1b9b637dfe1dfade40f50c37cf840a298f1992b534cb9425b7470233a6b0cbb\",\n            \"propertiesCount\": 5\n          },\n          {\n            \"name\": \"edit\",\n            \"summaryChars\": 130,\n            \"summaryHash\": \"4149500b1f6501ec6450e4c048bdb6844764dd4a888a10846726cbbc7256152e\",\n            \"schemaChars\": 501,\n            \"schemaHash\": \"adf3140833ca927b84c66c989d6833fdcbd9de011dd2ffc59f9a2c4d3c25f127\",\n            \"propertiesCount\": 2\n          },\n          {\n            \"name\": \"write\",\n            \"summaryChars\": 49,\n            \"summaryHash\": \"f9ce3d8ac929a51498c03331b97c59bfaa2bb4d25580a5ddf0102e6a8e173aec\",\n            \"schemaChars\": 191,\n            \"schemaHash\": \"b61d2da23febf5fbda55e391526f36d283e9e9fb7f1a1dbadcf5c618a0632287\",\n            \"propertiesCount\": 2\n          },\n          {\n            \"name\": \"apply_patch\",\n            \"summaryChars\": 71,\n            \"summaryHash\": \"5c1173efe93d080a386a23216bc3e58db2e0033eb3ddea697eb2439938b7cae4\",\n            \"schemaChars\": 153,\n            \"schemaHash\": \"05521268363ff4f191472c90d69ef08a503ba9acf1d2febc50b3ee68db32ab65\",\n            \"propertiesCount\": 1\n          },\n          {\n            \"name\": \"tool_search\",\n            \"summaryChars\": 502,\n            \"summaryHash\": \"acdcab138b356606711452241e668c366bdb15428e39a28a94d7be27d7968626\",\n            \"schemaChars\": 1139,\n            \"schemaHash\": \"0a78304973631f66103ff3f0c767433fdc00fb89d629bd5b12d1ada29940d382\",\n            \"propertiesCount\": 3\n          },\n          {\n            \"name\": \"tool_describe\",\n            \"summaryChars\": 92,\n            \"summaryHash\": \"fc74d14dc28e4026dba1a8904339a6bef1ce8118588e0bff809c37be73ce7a02\",\n            \"schemaChars\": 125,\n            \"schemaHash\": \"8b60055097c87990f29b27c1f82ecea48435ffb1163c486121a2189f118aa0a4\",\n            \"propertiesCount\": 1\n          },\n          {\n            \"name\": \"tool_call\",\n            \"summaryChars\": 61,\n            \"summaryHash\": \"0dc569a573cbc94928d868c94a178930879ac898b541cd9009338699a3e7d1fd\",\n            \"schemaChars\": 210,\n            \"schemaHash\": \"f48bfb0705c11b32ccbdfd456b791ce458604b1f51b1e31f61bc2d7b25ae07b9\",\n            \"propertiesCount\": 2\n          }\n        ]\n      },\n      \"currentTurn\": {\n        \"promptChars\": 34,\n        \"runtimeContextChars\": 0,\n        \"modelOnlyPromptChars\": 0\n      }\n    },\n    \"finalPromptText\": \"我以前告诉过你的蓝帆项目代号是什么？只回答代号；不知道就回答不知道。\",\n    \"finalAssistantVisibleText\": \"MB-6CF27460D991\",\n    \"finalAssistantRawText\": \"MB-6CF27460D991\",\n    \"replayInvalid\": false,\n    \"livenessState\": \"working\",\n    \"stopReason\": \"stop\",\n    \"executionTrace\": {\n      \"winnerProvider\": \"deepseek\",\n      \"winnerModel\": \"deepseek-flash\",\n      \"attempts\": [\n        {\n          \"provider\": \"deepseek\",\n          \"model\": \"deepseek-flash\",\n          \"result\": \"success\",\n          \"stage\": \"assistant\"\n        }\n      ],\n      \"fallbackUsed\": false,\n      \"runner\": \"embedded\"\n    },\n    \"requestShaping\": {\n      \"thinking\": \"off\"\n    },\n    \"completion\": {\n      \"stopReason\": \"stop\",\n      \"finishReason\": \"stop\"\n    },\n    \"terminalReply\": {\n      \"disposition\": \"visible\",\n      \"text\": \"MB-6CF27460D991\"\n    }\n  }\n}\n",
+    "stderr": "[agent/embedded] tool-search: cataloged 7 tools behind compact prompt surface\n[provider-transport-fetch] [model-fetch] response provider=deepseek api=openai-completions model=deepseek-flash status=200 elapsedMs=1139 dispatcher=new contentType=text/event-stream; charset=utf-8\n[agents/agent-command] [agent] run 760a453c-0924-4ad3-91e2-3206b3a54338 ended with stopReason=stop\n[state/agent-db] agent database clean-close receipt: active-leases\n[session-sqlite] SQLite reclamation Worker failed pid=11 threadId=0 isMainThread=true reclamationKind=maintenance-plan elapsedMs=47 outcome=rejected error=\"Session mutation and executor cleanup failed | Agent database execution admission is closed\" errorFrame=\"at createSqliteLifecycleAggregateError (file:///home/mb/memobench-native/openclaw/node_modules/openclaw/dist/sqlite-lifecycle-errors-DuOygjcn.mjs:28:9)\"\n[state/agent-db] agent database clean-close receipt: written\n",
+    "finished_at": "2026-10-15T05:53:02.913796+00:00",
+    "mode": "embedded_explicit",
+    "product_session": "d7bc6247-a7fd-4f2b-b7df-0011f3eb5387",
+    "native_log": "",
+    "answer": "MB-6CF27460D991",
+    "meta": {
+      "durationMs": 2084,
+      "agentMeta": {
+        "sessionId": "d7bc6247-a7fd-4f2b-b7df-0011f3eb5387",
+        "sessionFile": "agent:main:explicit:d7bc6247-a7fd-4f2b-b7df-0011f3eb5387",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "contextTokens": 65536,
+        "contextTokensSource": "resolved",
+        "agentHarnessId": "openclaw",
+        "credentialSource": {
+          "kind": "direct",
+          "evidence": "environment",
+          "authorization": "declared"
+        },
+        "usage": {
+          "input": 353,
+          "output": 8,
+          "cacheRead": 4864,
+          "cacheWrite": 0,
+          "total": 5225,
+          "cost": {
+            "total": 0
+          }
+        },
+        "lastCallUsage": {
+          "input": 353,
+          "output": 8,
+          "cacheRead": 4864,
+          "cacheWrite": 0,
+          "cost": {
+            "total": 0
+          },
+          "contextUsage": {
+            "state": "available",
+            "promptTokens": 5217,
+            "totalTokens": 5225
+          },
+          "total": 5225
+        },
+        "promptTokens": 5217,
+        "contextBudgetStatus": {
+          "schemaVersion": 1,
+          "source": "pre-prompt-estimate",
+          "updatedAt": 1792043581050,
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "route": "fits",
+          "shouldCompact": false,
+          "estimatedPromptTokens": 6551,
+          "contextTokenBudget": 65536,
+          "promptBudgetBeforeReserve": 49152,
+          "reserveTokens": 16384,
+          "effectiveReserveTokens": 16384,
+          "remainingPromptBudgetTokens": 42601,
+          "overflowTokens": 0,
+          "toolResultReducibleChars": 0,
+          "messageCount": 0,
+          "unwindowedMessageCount": 0,
+          "sessionId": "d7bc6247-a7fd-4f2b-b7df-0011f3eb5387"
+        },
+        "codeModeEngaged": false,
+        "assistantTurns": 1,
+        "bridgeCalls": {
+          "search": 0,
+          "describe": 0,
+          "call": 0
+        },
+        "terminalReceipt": {
+          "runId": "760a453c-0924-4ad3-91e2-3206b3a54338",
+          "sessionId": "d7bc6247-a7fd-4f2b-b7df-0011f3eb5387",
+          "turnId": "760a453c-0924-4ad3-91e2-3206b3a54338",
+          "requested": {
+            "provider": "deepseek",
+            "model": "deepseek-flash"
+          },
+          "effective": {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "responseModel": "deepseek-flash"
+          },
+          "successfulToolNames": [],
+          "rerouted": false,
+          "terminalDisposition": "visible"
+        }
+      },
+      "aborted": false,
+      "systemPromptReport": {
+        "source": "run",
+        "generatedAt": 1792043580950,
+        "sessionId": "d7bc6247-a7fd-4f2b-b7df-0011f3eb5387",
+        "sessionKey": "agent:main:explicit:d7bc6247-a7fd-4f2b-b7df-0011f3eb5387",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "workspaceDir": "/home/mb/case/workspace",
+        "bootstrapMaxChars": 20000,
+        "bootstrapTotalMaxChars": 60000,
+        "bootstrapTruncation": {
+          "warningMode": "always",
+          "warningShown": false,
+          "truncatedFiles": 0,
+          "nearLimitFiles": 0,
+          "totalNearLimit": false
+        },
+        "sandbox": {
+          "mode": "off",
+          "sandboxed": false
+        },
+        "systemPrompt": {
+          "chars": 15925,
+          "hash": "b853d49161ac529569f94b11f8644de25f91da3d6c1d6cabf5928e9ea326f0cf",
+          "projectContextChars": 2560,
+          "nonProjectContextChars": 13365
+        },
+        "injectedWorkspaceFiles": [
+          {
+            "name": "AGENTS.md",
+            "path": "/home/mb/case/workspace/AGENTS.md",
+            "missing": true,
+            "rawChars": 0,
+            "injectedChars": 56,
+            "truncated": false
+          },
+          {
+            "name": "SOUL.md",
+            "path": "/home/mb/case/workspace/SOUL.md",
+            "missing": true,
+            "rawChars": 0,
+            "injectedChars": 54,
+            "truncated": false
+          },
+          {
+            "name": "IDENTITY.md",
+            "path": "/home/mb/case/workspace/IDENTITY.md",
+            "missing": true,
+            "rawChars": 0,
+            "injectedChars": 58,
+            "truncated": false
+          },
+          {
+            "name": "BOOTSTRAP.md",
+            "path": "/home/mb/case/workspace/BOOTSTRAP.md",
+            "missing": true,
+            "rawChars": 0,
+            "injectedChars": 0,
+            "truncated": false
+          },
+          {
+            "name": "MEMORY.md",
+            "path": "/home/mb/case/workspace/MEMORY.md",
+            "missing": false,
+            "rawChars": 170,
+            "injectedChars": 170,
+            "truncated": false
+          }
+        ],
+        "skills": {
+          "promptChars": 6129,
+          "hash": "85f2b34f95eb275b30b49639aaf72904f8b193aeb68f7d41a4500d1c1328d5b6",
+          "entries": [
+            {
+              "name": "add-model-provider",
+              "blockChars": 318
+            },
+            {
+              "name": "browser-automation",
+              "blockChars": 324
+            },
+            {
+              "name": "canvas",
+              "blockChars": 243
+            },
+            {
+              "name": "clawhub",
+              "blockChars": 317
+            },
+            {
+              "name": "cloud-image-bake",
+              "blockChars": 304
+            },
+            {
+              "name": "configure-channel",
+              "blockChars": 306
+            },
+            {
+              "name": "control-ui",
+              "blockChars": 357
+            },
+            {
+              "name": "diagnose-gateway",
+              "blockChars": 298
+            },
+            {
+              "name": "diagram-maker",
+              "blockChars": 283
+            },
+            {
+              "name": "healthcheck",
+              "blockChars": 295
+            },
+            {
+              "name": "meme-maker",
+              "blockChars": 268
+            },
+            {
+              "name": "node-connect",
+              "blockChars": 352
+            },
+            {
+              "name": "node-inspect-debugger",
+              "blockChars": 294
+            },
+            {
+              "name": "notion",
+              "blockChars": 289
+            },
+            {
+              "name": "python-debugpy",
+              "blockChars": 282
+            },
+            {
+              "name": "skill-creator",
+              "blockChars": 301
+            },
+            {
+              "name": "spike",
+              "blockChars": 268
+            },
+            {
+              "name": "visualize",
+              "blockChars": 299
+            },
+            {
+              "name": "weather",
+              "blockChars": 306
+            }
+          ]
+        },
+        "tools": {
+          "listChars": 0,
+          "schemaChars": 2800,
+          "entries": [
+            {
+              "name": "read",
+              "summaryChars": 164,
+              "summaryHash": "d136f5b09e28d671addad4ca800b75b8aa6a36002bc739ead964f618d3e34829",
+              "schemaChars": 481,
+              "schemaHash": "b1b9b637dfe1dfade40f50c37cf840a298f1992b534cb9425b7470233a6b0cbb",
+              "propertiesCount": 5
+            },
+            {
+              "name": "edit",
+              "summaryChars": 130,
+              "summaryHash": "4149500b1f6501ec6450e4c048bdb6844764dd4a888a10846726cbbc7256152e",
+              "schemaChars": 501,
+              "schemaHash": "adf3140833ca927b84c66c989d6833fdcbd9de011dd2ffc59f9a2c4d3c25f127",
+              "propertiesCount": 2
+            },
+            {
+              "name": "write",
+              "summaryChars": 49,
+              "summaryHash": "f9ce3d8ac929a51498c03331b97c59bfaa2bb4d25580a5ddf0102e6a8e173aec",
+              "schemaChars": 191,
+              "schemaHash": "b61d2da23febf5fbda55e391526f36d283e9e9fb7f1a1dbadcf5c618a0632287",
+              "propertiesCount": 2
+            },
+            {
+              "name": "apply_patch",
+              "summaryChars": 71,
+              "summaryHash": "5c1173efe93d080a386a23216bc3e58db2e0033eb3ddea697eb2439938b7cae4",
+              "schemaChars": 153,
+              "schemaHash": "05521268363ff4f191472c90d69ef08a503ba9acf1d2febc50b3ee68db32ab65",
+              "propertiesCount": 1
+            },
+            {
+              "name": "tool_search",
+              "summaryChars": 502,
+              "summaryHash": "acdcab138b356606711452241e668c366bdb15428e39a28a94d7be27d7968626",
+              "schemaChars": 1139,
+              "schemaHash": "0a78304973631f66103ff3f0c767433fdc00fb89d629bd5b12d1ada29940d382",
+              "propertiesCount": 3
+            },
+            {
+              "name": "tool_describe",
+              "summaryChars": 92,
+              "summaryHash": "fc74d14dc28e4026dba1a8904339a6bef1ce8118588e0bff809c37be73ce7a02",
+              "schemaChars": 125,
+              "schemaHash": "8b60055097c87990f29b27c1f82ecea48435ffb1163c486121a2189f118aa0a4",
+              "propertiesCount": 1
+            },
+            {
+              "name": "tool_call",
+              "summaryChars": 61,
+              "summaryHash": "0dc569a573cbc94928d868c94a178930879ac898b541cd9009338699a3e7d1fd",
+              "schemaChars": 210,
+              "schemaHash": "f48bfb0705c11b32ccbdfd456b791ce458604b1f51b1e31f61bc2d7b25ae07b9",
+              "propertiesCount": 2
+            }
+          ]
+        },
+        "currentTurn": {
+          "promptChars": 34,
+          "runtimeContextChars": 0,
+          "modelOnlyPromptChars": 0
+        }
+      },
+      "finalPromptText": "我以前告诉过你的蓝帆项目代号是什么？只回答代号；不知道就回答不知道。",
+      "finalAssistantVisibleText": "MB-6CF27460D991",
+      "finalAssistantRawText": "MB-6CF27460D991",
+      "replayInvalid": false,
+      "livenessState": "working",
+      "stopReason": "stop",
+      "executionTrace": {
+        "winnerProvider": "deepseek",
+        "winnerModel": "deepseek-flash",
+        "attempts": [
+          {
+            "provider": "deepseek",
+            "model": "deepseek-flash",
+            "result": "success",
+            "stage": "assistant"
+          }
+        ],
+        "fallbackUsed": false,
+        "runner": "embedded"
+      },
+      "requestShaping": {
+        "thinking": "off"
+      },
+      "completion": {
+        "stopReason": "stop",
+        "finishReason": "stop"
+      },
+      "terminalReply": {
+        "disposition": "visible",
+        "text": "MB-6CF27460D991"
+      }
+    },
+    "ok": true,
+    "files_before": {
+      ".openclaw/openclaw.json": "05051ac484ce1f417dd30f66a1f56f9f13073c8c5f088d213f1f632ded0aa89d",
+      "workspace/MEMORY.md": "427d20ea92747e9b490557c6698a300232a4d1724c954c3383fefb318d28ff49",
+      ".openclaw/state/openclaw.sqlite": "f28ed6f300ce7798ff0e50d663b224dca148f7663a88d4b9aadb0c0e2de4ab01",
+      ".openclaw/state/openclaw-quarantine.sqlite": "81d58bab5a6914989b9a951f3728ab93299de67c52bd48b98db478dac8557ffc",
+      ".openclaw/agents/main/agent/openclaw-agent.sqlite-shm": "0e2ac85c32e60647775aab641da17642d6092fbfd2beffcd78579c850f0868e4",
+      ".openclaw/agents/main/agent/openclaw-agent.sqlite-wal": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      ".openclaw/agents/main/agent/openclaw-agent.sqlite": "b3ba3bd7594a320a49a1326f0dd3a08c628ddbe67b1de6a3c530bcc7a5f98c01"
+    },
+    "files_after": {
+      ".openclaw/openclaw.json": "05051ac484ce1f417dd30f66a1f56f9f13073c8c5f088d213f1f632ded0aa89d",
+      "workspace/MEMORY.md": "427d20ea92747e9b490557c6698a300232a4d1724c954c3383fefb318d28ff49",
+      ".openclaw/state/openclaw.sqlite": "a7f78c21a27c69ed9d9f88ccf3e603d3c9ae0d04ce5ee2dd44165a5b7664c7c3",
+      ".openclaw/state/openclaw-quarantine.sqlite": "bcde7cdc598e310c251f69aa1fdaa6f90265da4dc3fb411bb1715bece8735147",
+      ".openclaw/agents/main/agent/openclaw-agent.sqlite-shm": "b3cddb3bafce03c002f873600398410cb976b245aeac044106f0ff73f37f6ba0",
+      ".openclaw/agents/main/agent/openclaw-agent.sqlite-wal": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      ".openclaw/agents/main/agent/openclaw-agent.sqlite": "d5546340aae77f16167cbf0ec1da110797a68197d0fa16e5d9cf6d4763d6a252"
+    },
+    "binding": {
+      "namespace": "37a2bed7e34e447fb380841a0768e459",
+      "operation_id": "d7d4d54bf2a849c38db34710fe8086fa",
+      "session_id": "s2",
+      "method": "query",
+      "bridge_sha256": "1b22e1637d4c535f64d074347ebede46b4291172ce73eb938d01c5f430097d6d"
+    }
+  },
+  "60e84be4db3d4180abf931419068fcf51592d0f1f6f922497a65affa536ec843.json": {
+    "files": {
+      ".openclaw/openclaw.json": "05051ac484ce1f417dd30f66a1f56f9f13073c8c5f088d213f1f632ded0aa89d",
+      "workspace/MEMORY.md": "427d20ea92747e9b490557c6698a300232a4d1724c954c3383fefb318d28ff49",
+      ".openclaw/state/openclaw.sqlite": "8d9b0ecae590c517ed4c085709df0b99d35dcead9b94b88755f23ef48d237340",
+      ".openclaw/state/openclaw-quarantine.sqlite": "377957ae63fe0f394dd0a6adf1e79916c827a0c2f34d0b3cf3827cb315dfec68",
+      ".openclaw/agents/main/agent/openclaw-agent.sqlite-shm": "98306db04f3df4df542fdb8ae2bea3dd299c49044eb3d4953307bd540e2e07d7",
+      ".openclaw/agents/main/agent/openclaw-agent.sqlite-wal": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      ".openclaw/agents/main/agent/openclaw-agent.sqlite": "6a8d3ca1e6ce812ed5a472fd3798c6d68ec5410e5365dcdaf26fdda4709c2337",
+      "workspace/notes/code.txt": "74525221c6a1d1db8d20f3d831a52519815acbbf09a2d07c2af932044c47891c"
+    },
+    "process_completion": "waited",
+    "flush": "unsupported",
+    "binding": {
+      "namespace": "37a2bed7e34e447fb380841a0768e459",
+      "operation_id": "4825ce067f984311a9b52d6c615744c7",
+      "session_id": "s2",
+      "method": "end_session",
+      "bridge_sha256": "1b22e1637d4c535f64d074347ebede46b4291172ce73eb938d01c5f430097d6d"
+    }
+  }
+}

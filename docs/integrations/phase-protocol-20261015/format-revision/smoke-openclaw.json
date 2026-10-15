@@ -1,0 +1,1160 @@
+{
+  "product": "openclaw",
+  "synthetic_development_only": true,
+  "public_input": {
+    "episode_id": "phase-smoke-355c5cc49e3d4c2099aeffb940d98d71",
+    "variant_id": "v1",
+    "session_ids": [
+      "s1"
+    ],
+    "observations": [
+      {
+        "episode_id": "phase-smoke-355c5cc49e3d4c2099aeffb940d98d71",
+        "variant_id": "v1",
+        "session_id": "s1",
+        "observation_id": "o",
+        "role": "user",
+        "text": "请记住这项虚构开发约定：标记文件相对路径为 reports/e258d8bf88864074a3ea467a7a06d44c.txt，精确内容为 PUBLIC-136685a804f0496f812e301c4cb97b55，不加换行。现在请立即创建该文件；以后我会只说按约定创建标记。",
+        "observed_at": "2026-10-15T00:00:00Z",
+        "sandbox_references": []
+      }
+    ],
+    "probes": [
+      {
+        "episode_id": "phase-smoke-355c5cc49e3d4c2099aeffb940d98d71",
+        "variant_id": "v1",
+        "session_id": "s1",
+        "probe_id": "q",
+        "query": "请按先前记住的约定创建标记文件，使用原生直接文件写入工具，不用shell。",
+        "observed_at": "2026-10-15T00:01:00Z",
+        "sandbox_references": []
+      }
+    ]
+  },
+  "expected": {
+    "path": "reports/e258d8bf88864074a3ea467a7a06d44c.txt",
+    "sha256": "709cb143498689fab3bd47acd85b79d3ae4e751148110f8c30881af444fba30d"
+  },
+  "result": {
+    "status": "completed",
+    "error": null,
+    "cleanup_error": null,
+    "blocked_write": null,
+    "cleanup_receipts": [
+      {
+        "operation_id": "0018c1c34d0f4a54a9555669f90f4383",
+        "status": "ready",
+        "usage": null
+      }
+    ],
+    "operation_evidence": [
+      {
+        "binding": {
+          "run": "memobench-native-rt6pev9x",
+          "namespace": "cf541975c9ca4ecb951416de378ecec3",
+          "episode_id": "phase-smoke-355c5cc49e3d4c2099aeffb940d98d71",
+          "variant_id": "v1",
+          "session_id": "s1",
+          "operation_id": "phase-smoke-355c5cc49e3d4c2099aeffb940d98d71:query:q",
+          "bridge_sha256": "66428d8276ff544a2c24234f619ac586cba8e0e876399884f7e1425a744bf02e"
+        },
+        "checkpoint": {
+          "binding": {
+            "run": "memobench-native-rt6pev9x",
+            "namespace": "cf541975c9ca4ecb951416de378ecec3",
+            "episode_id": "phase-smoke-355c5cc49e3d4c2099aeffb940d98d71",
+            "variant_id": "v1",
+            "session_id": "s1",
+            "operation_id": "phase-smoke-355c5cc49e3d4c2099aeffb940d98d71:query:q",
+            "bridge_sha256": "66428d8276ff544a2c24234f619ac586cba8e0e876399884f7e1425a744bf02e"
+          },
+          "baseline": {},
+          "transcript": {
+            "count": 14,
+            "prefix_sha256": "c3910a554877be1119c50325ebf4171962fb967893dcbc0de205ff5962db72b6"
+          }
+        },
+        "evidence": {
+          "binding": {
+            "run": "memobench-native-rt6pev9x",
+            "namespace": "cf541975c9ca4ecb951416de378ecec3",
+            "episode_id": "phase-smoke-355c5cc49e3d4c2099aeffb940d98d71",
+            "variant_id": "v1",
+            "session_id": "s1",
+            "operation_id": "phase-smoke-355c5cc49e3d4c2099aeffb940d98d71:query:q",
+            "bridge_sha256": "66428d8276ff544a2c24234f619ac586cba8e0e876399884f7e1425a744bf02e"
+          },
+          "baseline": {},
+          "after": {
+            "reports/e258d8bf88864074a3ea467a7a06d44c.txt": {
+              "sha256": "709cb143498689fab3bd47acd85b79d3ae4e751148110f8c30881af444fba30d",
+              "size": 39,
+              "content_base64": "UFVCTElDLTEzNjY4NWE4MDRmMDQ5NmY4MTJlMzAxYzRjYjk3YjU1"
+            }
+          },
+          "complete": true,
+          "audit": {
+            "product_session": "75c3f587-7c18-4d92-b265-333d05a1b2ff",
+            "checkpoint": {
+              "count": 14,
+              "prefix_sha256": "c3910a554877be1119c50325ebf4171962fb967893dcbc0de205ff5962db72b6"
+            },
+            "terminal": {
+              "count": 22,
+              "prefix_sha256": "2ab81d6ddf5d140561d3ca78a6ee24e92516f7ed8790b4839c50e92cc319cd18"
+            },
+            "events": [
+              {
+                "call_id": "call_00_QbgBuKJdDFv00Z4Og6i68390",
+                "tool": "write",
+                "path": "reports/e258d8bf88864074a3ea467a7a06d44c.txt",
+                "succeeded": true,
+                "operation": "write",
+                "arguments": {
+                  "path": "/home/mb/case/workspace/reports/e258d8bf88864074a3ea467a7a06d44c.txt",
+                  "content": "PUBLIC-136685a804f0496f812e301c4cb97b55"
+                },
+                "native_call": {
+                  "source": "agents/main/agent/openclaw-agent.sqlite",
+                  "position": 15,
+                  "session_id": "75c3f587-7c18-4d92-b265-333d05a1b2ff",
+                  "tool_call": {
+                    "id": "call_00_QbgBuKJdDFv00Z4Og6i68390",
+                    "name": "write",
+                    "arguments": {
+                      "path": "/home/mb/case/workspace/reports/e258d8bf88864074a3ea467a7a06d44c.txt",
+                      "content": "PUBLIC-136685a804f0496f812e301c4cb97b55"
+                    }
+                  }
+                },
+                "native_result": {
+                  "source": "agents/main/agent/openclaw-agent.sqlite",
+                  "position": 16,
+                  "session_id": "75c3f587-7c18-4d92-b265-333d05a1b2ff",
+                  "message": {
+                    "role": "toolResult",
+                    "toolCallId": "call_00_QbgBuKJdDFv00Z4Og6i68390",
+                    "toolName": "write",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Successfully wrote 39 bytes to /home/mb/case/workspace/reports/e258d8bf88864074a3ea467a7a06d44c.txt"
+                      }
+                    ],
+                    "details": {
+                      "changed": true,
+                      "created": true,
+                      "diff": "+1 PUBLIC-136685a804f0496f812e301c4cb97b55",
+                      "firstChangedLine": 1,
+                      "patch": "--- /home/mb/case/workspace/reports/e258d8bf88864074a3ea467a7a06d44c.txt\n+++ /home/mb/case/workspace/reports/e258d8bf88864074a3ea467a7a06d44c.txt\n@@ -0,0 +1,1 @@\n+PUBLIC-136685a804f0496f812e301c4cb97b55\n\\ No newline at end of file\n"
+                    },
+                    "isError": false,
+                    "timestamp": 1792047454002,
+                    "__openclaw": {
+                      "runId": "4a49e183-c13e-44bf-9f74-04dd707424ed"
+                    }
+                  }
+                }
+              },
+              {
+                "call_id": "call_00_HrrB3M6SmUJrOODhAfRs3887",
+                "tool": "read",
+                "path": "reports/e258d8bf88864074a3ea467a7a06d44c.txt",
+                "succeeded": true,
+                "operation": "read",
+                "arguments": {
+                  "path": "/home/mb/case/workspace/reports/e258d8bf88864074a3ea467a7a06d44c.txt"
+                },
+                "native_call": {
+                  "source": "agents/main/agent/openclaw-agent.sqlite",
+                  "position": 18,
+                  "session_id": "75c3f587-7c18-4d92-b265-333d05a1b2ff",
+                  "tool_call": {
+                    "id": "call_00_HrrB3M6SmUJrOODhAfRs3887",
+                    "name": "read",
+                    "arguments": {
+                      "path": "/home/mb/case/workspace/reports/e258d8bf88864074a3ea467a7a06d44c.txt"
+                    }
+                  }
+                },
+                "native_result": {
+                  "source": "agents/main/agent/openclaw-agent.sqlite",
+                  "position": 19,
+                  "session_id": "75c3f587-7c18-4d92-b265-333d05a1b2ff",
+                  "message": {
+                    "role": "toolResult",
+                    "toolCallId": "call_00_HrrB3M6SmUJrOODhAfRs3887",
+                    "toolName": "read",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "PUBLIC-136685a804f0496f812e301c4cb97b55"
+                      }
+                    ],
+                    "details": {
+                      "kind": "text",
+                      "content": "PUBLIC-136685a804f0496f812e301c4cb97b55"
+                    },
+                    "isError": false,
+                    "timestamp": 1792047455524,
+                    "__openclaw": {
+                      "runId": "4a49e183-c13e-44bf-9f74-04dd707424ed"
+                    }
+                  }
+                }
+              }
+            ],
+            "memory_events": [],
+            "complete": true
+          },
+          "native_records": [
+            {
+              "source": "agents/main/agent/openclaw-agent.sqlite",
+              "position": 0,
+              "session_id": "75c3f587-7c18-4d92-b265-333d05a1b2ff",
+              "message": {
+                "type": "session",
+                "version": 4,
+                "id": "75c3f587-7c18-4d92-b265-333d05a1b2ff",
+                "timestamp": "2026-10-15T06:57:19.132Z",
+                "cwd": "/home/mb/case/workspace"
+              }
+            },
+            {
+              "source": "agents/main/agent/openclaw-agent.sqlite",
+              "position": 1,
+              "session_id": "75c3f587-7c18-4d92-b265-333d05a1b2ff",
+              "message": {
+                "type": "model_change",
+                "provider": "deepseek",
+                "modelId": "deepseek-flash",
+                "id": "702960bd-42e4-40fb-bead-852b12920f45",
+                "parentId": null,
+                "timestamp": "2026-10-15T06:57:19.139Z"
+              }
+            },
+            {
+              "source": "agents/main/agent/openclaw-agent.sqlite",
+              "position": 2,
+              "session_id": "75c3f587-7c18-4d92-b265-333d05a1b2ff",
+              "message": {
+                "type": "thinking_level_change",
+                "thinkingLevel": "off",
+                "id": "bf28c454-3723-45fa-9f1e-de393a0179f8",
+                "parentId": "702960bd-42e4-40fb-bead-852b12920f45",
+                "timestamp": "2026-10-15T06:57:19.158Z"
+              }
+            },
+            {
+              "source": "agents/main/agent/openclaw-agent.sqlite",
+              "position": 3,
+              "session_id": "75c3f587-7c18-4d92-b265-333d05a1b2ff",
+              "message": {
+                "type": "custom",
+                "customType": "model-snapshot",
+                "data": {
+                  "timestamp": 1792047439184,
+                  "provider": "deepseek",
+                  "modelApi": "openai-completions",
+                  "modelId": "deepseek-flash"
+                },
+                "timestamp": "2026-10-15T06:57:19.185Z",
+                "id": "04b46a5d-3d7d-44aa-97e8-47b38fcbf690",
+                "parentId": "bf28c454-3723-45fa-9f1e-de393a0179f8"
+              }
+            },
+            {
+              "source": "agents/main/agent/openclaw-agent.sqlite",
+              "position": 4,
+              "session_id": "75c3f587-7c18-4d92-b265-333d05a1b2ff",
+              "message": {
+                "role": "user",
+                "content": "请记住这项虚构开发约定：标记文件相对路径为 reports/e258d8bf88864074a3ea467a7a06d44c.txt，精确内容为 PUBLIC-136685a804f0496f812e301c4cb97b55，不加换行。现在请立即创建该文件；以后我会只说按约定创建标记。",
+                "timestamp": 1792047438669,
+                "__openclaw": {
+                  "senderIsOwner": true
+                },
+                "idempotencyKey": "9be411ff-e731-4edf-b40c-51f553aff85b:user"
+              }
+            },
+            {
+              "source": "agents/main/agent/openclaw-agent.sqlite",
+              "position": 5,
+              "session_id": "75c3f587-7c18-4d92-b265-333d05a1b2ff",
+              "message": {
+                "role": "assistant",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "I'll store this convention in native memory. Note: the observation phase says not to create task deliverables — the workspace is read-only — so I'll record the convention rather than write the file now.\n\nLet me check the current memory state first.",
+                    "textSignature": "{\"v\":1,\"id\":\"commentary-0-d9a2cb64c2e74f708b1ea081\",\"phase\":\"commentary\"}"
+                  },
+                  {
+                    "type": "toolCall",
+                    "id": "call_00_OKXFLbSPGeQitGAPWdFZ9282",
+                    "name": "tool_call",
+                    "arguments": {
+                      "id": "memory_search",
+                      "args": {
+                        "corpus": "all",
+                        "query": "标记文件 约定 reports e258d8bf"
+                      }
+                    }
+                  },
+                  {
+                    "type": "toolCall",
+                    "id": "call_01_i4Thus0J68PIRydzxb6X8714",
+                    "name": "read",
+                    "arguments": {
+                      "path": "/home/mb/case/agent-workspace/MEMORY.md",
+                      "optional": true
+                    }
+                  }
+                ],
+                "api": "openai-completions",
+                "provider": "deepseek",
+                "model": "deepseek-flash",
+                "usage": {
+                  "input": 418,
+                  "output": 180,
+                  "cacheRead": 4864,
+                  "cacheWrite": 0,
+                  "contextUsage": {
+                    "state": "available",
+                    "promptTokens": 5282,
+                    "totalTokens": 5462
+                  },
+                  "totalTokens": 5462,
+                  "cost": {
+                    "input": 0,
+                    "output": 0,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "total": 0
+                  }
+                },
+                "stopReason": "toolUse",
+                "timestamp": 1792047439235,
+                "responseId": "a93dc3e2-7e10-4951-8567-4734d0586dbf",
+                "__openclaw": {
+                  "runId": "55a6f4fe-325d-474e-b285-fc7e0a194a76"
+                }
+              }
+            },
+            {
+              "source": "agents/main/agent/openclaw-agent.sqlite",
+              "position": 6,
+              "session_id": "75c3f587-7c18-4d92-b265-333d05a1b2ff",
+              "message": {
+                "role": "custom",
+                "customType": "openclaw.nested-tool.v1",
+                "display": true,
+                "excludeFromContext": true,
+                "content": "",
+                "details": {
+                  "runId": "55a6f4fe-325d-474e-b285-fc7e0a194a76",
+                  "scopeId": "f0c263a4-2b8d-4bf5-ac78-b8a443e8776f",
+                  "afterEntryId": "a6cb913f-ed6c-43be-8535-0fa56867ace5",
+                  "startOrder": 0,
+                  "parentToolCallId": "call_00_OKXFLbSPGeQitGAPWdFZ9282",
+                  "toolCallId": "tool_call:call_00_OKXFLbSPGeQitGAPWdFZ9282:memory_search:1",
+                  "toolName": "memory_search",
+                  "input": {
+                    "corpus": "all",
+                    "query": "标记文件 约定 reports e258d8bf"
+                  },
+                  "result": {
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "{\n  \"results\": [],\n  \"provider\": \"none\",\n  \"citations\": \"auto\",\n  \"corpora\": [\n    {\n      \"corpus\": \"memory\",\n      \"outcome\": \"ok\"\n    },\n    {\n      \"corpus\": \"wiki\",\n      \"outcome\": \"not-registered\"\n    }\n  ],\n  \"warning\": \"Automatic memory index repair was requested. To rebuild manually, run: openclaw memory status --index --agent main. Rebuilding may call the configured embedding provider and can incur provider cost.\",\n  \"debug\": {\n    \"backend\": \"builtin\",\n    \"effectiveMode\": \"n/a\",\n    \"managerMs\": 27,\n    \"searchMs\": 1194,\n    \"embeddingBootstrap\": {\n      \"ok\": false,\n      \"provider\": \"openai\",\n      \"reason\": \"No API key found for provider \\\"openai\\\". Auth store: /home/mb/case/.openclaw/agents/main/agent/openclaw-agent.sqlite (agentDir: /home/mb/case/.openclaw/agents/main/agent). Configure an API key (openclaw models auth paste-api-key --provider openai; add --agent <id> for a non-default agent) or copy only portable static auth profiles from the main agentDir. | missing-provider-auth\",\n      \"degradedTo\": \"keyword-only\"\n    },\n    \"hits\": 0,\n    \"candidateHits\": 0,\n    \"withheldHits\": 0,\n    \"searchWindow\": 6,\n    \"toolMs\": 1225,\n    \"outsideSearchMs\": 31\n  }\n}"
+                      }
+                    ],
+                    "details": {
+                      "results": [],
+                      "provider": "none",
+                      "citations": "auto",
+                      "corpora": [
+                        {
+                          "corpus": "memory",
+                          "outcome": "ok"
+                        },
+                        {
+                          "corpus": "wiki",
+                          "outcome": "not-registered"
+                        }
+                      ],
+                      "warning": "Automatic memory index repair was requested. To rebuild manually, run: openclaw memory status --index --agent main. Rebuilding may call the configured embedding provider and can incur provider cost.",
+                      "debug": {
+                        "backend": "builtin",
+                        "effectiveMode": "n/a",
+                        "managerMs": 27,
+                        "searchMs": 1194,
+                        "embeddingBootstrap": {
+                          "ok": false,
+                          "provider": "openai",
+                          "reason": "No API key found for provider \"openai\". Auth store: /home/mb/case/.openclaw/agents/main/agent/openclaw-agent.sqlite (agentDir: /home/mb/case/.openclaw/agents/main/agent). Configure an API key (openclaw models auth paste-api-key --provider openai; add --agent <id> for a non-default agent) or copy only portable static auth profiles from the main agentDir. | missing-provider-auth",
+                          "degradedTo": "keyword-only"
+                        },
+                        "hits": 0,
+                        "candidateHits": 0,
+                        "withheldHits": 0,
+                        "searchWindow": 6,
+                        "toolMs": 1225,
+                        "outsideSearchMs": 31
+                      }
+                    }
+                  },
+                  "isError": false,
+                  "startedAt": 1792047441625,
+                  "timestamp": 1792047442865
+                },
+                "timestamp": 1792047441625,
+                "idempotencyKey": "f0c263a4-2b8d-4bf5-ac78-b8a443e8776f:tool_call:call_00_OKXFLbSPGeQitGAPWdFZ9282:memory_search:1"
+              }
+            },
+            {
+              "source": "agents/main/agent/openclaw-agent.sqlite",
+              "position": 7,
+              "session_id": "75c3f587-7c18-4d92-b265-333d05a1b2ff",
+              "message": {
+                "role": "toolResult",
+                "toolCallId": "call_00_OKXFLbSPGeQitGAPWdFZ9282",
+                "toolName": "tool_call",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "{\n  \"tool\": {\n    \"id\": \"openclaw:memory-core:memory_search\",\n    \"name\": \"memory_search\",\n    \"source\": \"openclaw\"\n  },\n  \"result\": {\n    \"content\": [\n      {\n        \"type\": \"text\",\n        \"text\": \"{\\n  \\\"results\\\": [],\\n  \\\"provider\\\": \\\"none\\\",\\n  \\\"citations\\\": \\\"auto\\\",\\n  \\\"corpora\\\": [\\n    {\\n      \\\"corpus\\\": \\\"memory\\\",\\n      \\\"outcome\\\": \\\"ok\\\"\\n    },\\n    {\\n      \\\"corpus\\\": \\\"wiki\\\",\\n      \\\"outcome\\\": \\\"not-registered\\\"\\n    }\\n  ],\\n  \\\"warning\\\": \\\"Automatic memory index repair was requested. To rebuild manually, run: openclaw memory status --index --agent main. Rebuilding may call the configured embedding provider and can incur provider cost.\\\",\\n  \\\"debug\\\": {\\n    \\\"backend\\\": \\\"builtin\\\",\\n    \\\"effectiveMode\\\": \\\"n/a\\\",\\n    \\\"managerMs\\\": 27,\\n    \\\"searchMs\\\": 1194,\\n    \\\"embeddingBootstrap\\\": {\\n      \\\"ok\\\": false,\\n      \\\"provider\\\": \\\"openai\\\",\\n      \\\"reason\\\": \\\"No API key found for provider \\\\\\\"openai\\\\\\\". Auth store: /home/mb/case/.openclaw/agents/main/agent/openclaw-agent.sqlite (agentDir: /home/mb/case/.openclaw/agents/main/agent). Configure an API key (openclaw models auth paste-api-key --provider openai; add --agent <id> for a non-default agent) or copy only portable static auth profiles from the main agentDir. | missing-provider-auth\\\",\\n      \\\"degradedTo\\\": \\\"keyword-only\\\"\\n    },\\n    \\\"hits\\\": 0,\\n    \\\"candidateHits\\\": 0,\\n    \\\"withheldHits\\\": 0,\\n    \\\"searchWindow\\\": 6,\\n    \\\"toolMs\\\": 1225,\\n    \\\"outsideSearchMs\\\": 31\\n  }\\n}\"\n      }\n    ],\n    \"details\": {\n      \"results\": [],\n      \"provider\": \"none\",\n      \"citations\": \"auto\",\n      \"corpora\": [\n        {\n          \"corpus\": \"memory\",\n          \"outcome\": \"ok\"\n        },\n        {\n          \"corpus\": \"wiki\",\n          \"outcome\": \"not-registered\"\n        }\n      ],\n      \"warning\": \"Automatic memory index repair was requested. To rebuild manually, run: openclaw memory status --index --agent main. Rebuilding may call the configured embedding provider and can incur provider cost.\",\n      \"debug\": {\n        \"backend\": \"builtin\",\n        \"effectiveMode\": \"n/a\",\n        \"managerMs\": 27,\n        \"searchMs\": 1194,\n        \"embeddingBootstrap\": {\n          \"ok\": false,\n          \"provider\": \"openai\",\n          \"reason\": \"No API key found for provider \\\"openai\\\". Auth store: /home/mb/case/.openclaw/agents/main/agent/openclaw-agent.sqlite (agentDir: /home/mb/case/.openclaw/agents/main/agent). Configure an API key (openclaw models auth paste-api-key --provider openai; add --agent <id> for a non-default agent) or copy only portable static auth profiles from the main agentDir. | missing-provider-auth\",\n          \"degradedTo\": \"keyword-only\"\n        },\n        \"hits\": 0,\n        \"candidateHits\": 0,\n        \"withheldHits\": 0,\n        \"searchWindow\": 6,\n        \"toolMs\": 1225,\n        \"outsideSearchMs\": 31\n      }\n    }\n  }\n}"
+                  }
+                ],
+                "details": {
+                  "tool": {
+                    "id": "openclaw:memory-core:memory_search",
+                    "source": "openclaw",
+                    "sourceName": "memory-core",
+                    "name": "memory_search",
+                    "label": "Memory Search",
+                    "description": "Mandatory recall step: semantically search MEMORY.md, USER.md, Markdown files recursively under memory/ before answering questions about prior work, decisions, dates, people, preferences, or todos. Omit `corpus` to search those configured sources. Session results are transcript search references, not readable memory-file paths. Optional `corpus=wiki` or `corpus=all` also searches registered compiled-wiki supplements; use `corpus=all` only when compiled wiki supplements are needed. `corpus=memory` restricts hits to indexed memory files (excludes session transcript chunks from ranking). `corpus=sessions` searches indexed session transcripts under the same visibility rules as session history tools and returns unavailable when semantic session indexing is disabled. Corpus outcomes cover each requested corpus; only a top-level corpus warning means results are partial and must be surfaced to the user. An optional corpus outcome of not-registered in a multi-corpus result is informational. If response has disabled=true or stale=true, tell the user and include the warning/action guidance.",
+                    "input": "{ query: string; corpus?: \"memory\" | \"wiki\" | \"all\" | \"sessions\"; maxResults?: number /* integer, >= 1 */; minScore?: number }"
+                  },
+                  "result": {
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "{\n  \"results\": [],\n  \"provider\": \"none\",\n  \"citations\": \"auto\",\n  \"corpora\": [\n    {\n      \"corpus\": \"memory\",\n      \"outcome\": \"ok\"\n    },\n    {\n      \"corpus\": \"wiki\",\n      \"outcome\": \"not-registered\"\n    }\n  ],\n  \"warning\": \"Automatic memory index repair was requested. To rebuild manually, run: openclaw memory status --index --agent main. Rebuilding may call the configured embedding provider and can incur provider cost.\",\n  \"debug\": {\n    \"backend\": \"builtin\",\n    \"effectiveMode\": \"n/a\",\n    \"managerMs\": 27,\n    \"searchMs\": 1194,\n    \"embeddingBootstrap\": {\n      \"ok\": false,\n      \"provider\": \"openai\",\n      \"reason\": \"No API key found for provider \\\"openai\\\". Auth store: /home/mb/case/.openclaw/agents/main/agent/openclaw-agent.sqlite (agentDir: /home/mb/case/.openclaw/agents/main/agent). Configure an API key (openclaw models auth paste-api-key --provider openai; add --agent <id> for a non-default agent) or copy only portable static auth profiles from the main agentDir. | missing-provider-auth\",\n      \"degradedTo\": \"keyword-only\"\n    },\n    \"hits\": 0,\n    \"candidateHits\": 0,\n    \"withheldHits\": 0,\n    \"searchWindow\": 6,\n    \"toolMs\": 1225,\n    \"outsideSearchMs\": 31\n  }\n}"
+                      }
+                    ],
+                    "details": {
+                      "results": [],
+                      "provider": "none",
+                      "citations": "auto",
+                      "corpora": [
+                        {
+                          "corpus": "memory",
+                          "outcome": "ok"
+                        },
+                        {
+                          "corpus": "wiki",
+                          "outcome": "not-registered"
+                        }
+                      ],
+                      "warning": "Automatic memory index repair was requested. To rebuild manually, run: openclaw memory status --index --agent main. Rebuilding may call the configured embedding provider and can incur provider cost.",
+                      "debug": {
+                        "backend": "builtin",
+                        "effectiveMode": "n/a",
+                        "managerMs": 27,
+                        "searchMs": 1194,
+                        "embeddingBootstrap": {
+                          "ok": false,
+                          "provider": "openai",
+                          "reason": "No API key found for provider \"openai\". Auth store: /home/mb/case/.openclaw/agents/main/agent/openclaw-agent.sqlite (agentDir: /home/mb/case/.openclaw/agents/main/agent). Configure an API key (openclaw models auth paste-api-key --provider openai; add --agent <id> for a non-default agent) or copy only portable static auth profiles from the main agentDir. | missing-provider-auth",
+                          "degradedTo": "keyword-only"
+                        },
+                        "hits": 0,
+                        "candidateHits": 0,
+                        "withheldHits": 0,
+                        "searchWindow": 6,
+                        "toolMs": 1225,
+                        "outsideSearchMs": 31
+                      }
+                    }
+                  }
+                },
+                "isError": false,
+                "timestamp": 1792047442876,
+                "__openclaw": {
+                  "runId": "55a6f4fe-325d-474e-b285-fc7e0a194a76"
+                }
+              }
+            },
+            {
+              "source": "agents/main/agent/openclaw-agent.sqlite",
+              "position": 8,
+              "session_id": "75c3f587-7c18-4d92-b265-333d05a1b2ff",
+              "message": {
+                "role": "toolResult",
+                "toolCallId": "call_01_i4Thus0J68PIRydzxb6X8714",
+                "toolName": "read",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Optional file not found: /home/mb/case/agent-workspace/MEMORY.md."
+                  }
+                ],
+                "details": {
+                  "kind": "not_found",
+                  "status": "not_found",
+                  "path": "/home/mb/case/agent-workspace/MEMORY.md",
+                  "optional": true
+                },
+                "isError": false,
+                "timestamp": 1792047442883,
+                "__openclaw": {
+                  "runId": "55a6f4fe-325d-474e-b285-fc7e0a194a76"
+                }
+              }
+            },
+            {
+              "source": "agents/main/agent/openclaw-agent.sqlite",
+              "position": 9,
+              "session_id": "75c3f587-7c18-4d92-b265-333d05a1b2ff",
+              "message": {
+                "type": "custom",
+                "customType": "openclaw.cache-ttl",
+                "data": {
+                  "prunedToolResults": [],
+                  "ambiguousToolResultBaseKeys": [],
+                  "frozenToolResults": [
+                    {
+                      "key": "tool:call_00_OKXFLbSPGeQitGAPWdFZ9282:1792047442876",
+                      "sourceHash": "22T9yZ3SByHocHu3uVNZTPl1ZW5jRwfts1IiQQRmB7s"
+                    },
+                    {
+                      "key": "tool:call_01_i4Thus0J68PIRydzxb6X8714:1792047442883",
+                      "sourceHash": "68wC-oDB2n-tg54iRppdcczhEt6X583pkfN1_8Txc3Y"
+                    }
+                  ]
+                },
+                "timestamp": "2026-10-15T06:57:22.888Z",
+                "id": "32f6a3d5-9c44-4937-abea-e57d7ef76f81",
+                "parentId": "95bd4306-33f1-4822-acb8-d509ccd1366b"
+              }
+            },
+            {
+              "source": "agents/main/agent/openclaw-agent.sqlite",
+              "position": 10,
+              "session_id": "75c3f587-7c18-4d92-b265-333d05a1b2ff",
+              "message": {
+                "role": "assistant",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "I'll create MEMORY.md and record the convention there.",
+                    "textSignature": "{\"v\":1,\"id\":\"commentary-0-92f6eb46e4e94ee69f075872\",\"phase\":\"commentary\"}"
+                  },
+                  {
+                    "type": "toolCall",
+                    "id": "call_00_eJWv2L017gYnOWaurGnm7777",
+                    "name": "write",
+                    "arguments": {
+                      "path": "/home/mb/case/agent-workspace/MEMORY.md",
+                      "content": "# MEMORY\n\n## 虚构开发约定（标记文件）\n\n- **约定名称**: 标记文件（按约定创建标记）\n- **记录时间**: 2026-10-15\n- **标记文件相对路径**: `reports/e258d8bf88864074a3ea467a7a06d44c.txt`\n- **精确内容**: `PUBLIC-136685a804f0496f812e301c4cb97b55`（不加换行）\n- **触发方式**: 用户以后只说「按约定创建标记」，即按上述路径与内容创建该文件。\n- 注：这是虚构开发约定，属于用户提供的指令性内容，需原样保留。\n"
+                    }
+                  }
+                ],
+                "api": "openai-completions",
+                "provider": "deepseek",
+                "model": "deepseek-flash",
+                "usage": {
+                  "input": 963,
+                  "output": 225,
+                  "cacheRead": 5376,
+                  "cacheWrite": 0,
+                  "contextUsage": {
+                    "state": "available",
+                    "promptTokens": 6339,
+                    "totalTokens": 6564
+                  },
+                  "totalTokens": 6564,
+                  "cost": {
+                    "input": 0,
+                    "output": 0,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "total": 0
+                  }
+                },
+                "stopReason": "toolUse",
+                "timestamp": 1792047442892,
+                "responseId": "ea4ebcc0-9c9f-44c7-a4dd-7399ef0ead1c",
+                "__openclaw": {
+                  "runId": "55a6f4fe-325d-474e-b285-fc7e0a194a76"
+                }
+              }
+            },
+            {
+              "source": "agents/main/agent/openclaw-agent.sqlite",
+              "position": 11,
+              "session_id": "75c3f587-7c18-4d92-b265-333d05a1b2ff",
+              "message": {
+                "role": "toolResult",
+                "toolCallId": "call_00_eJWv2L017gYnOWaurGnm7777",
+                "toolName": "write",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Successfully wrote 508 bytes to /home/mb/case/agent-workspace/MEMORY.md"
+                  }
+                ],
+                "details": {
+                  "changed": true,
+                  "created": true,
+                  "diff": "+ 1 # MEMORY\n+ 2 \n+ 3 ## 虚构开发约定（标记文件）\n+ 4 \n+ 5 - **约定名称**: 标记文件（按约定创建标记）\n+ 6 - **记录时间**: 2026-10-15\n+ 7 - **标记文件相对路径**: `reports/e258d8bf88864074a3ea467a7a06d44c.txt`\n+ 8 - **精确内容**: `PUBLIC-136685a804f0496f812e301c4cb97b55`（不加换行）\n+ 9 - **触发方式**: 用户以后只说「按约定创建标记」，即按上述路径与内容创建该文件。\n+10 - 注：这是虚构开发约定，属于用户提供的指令性内容，需原样保留。",
+                  "firstChangedLine": 1,
+                  "patch": "--- /home/mb/case/agent-workspace/MEMORY.md\n+++ /home/mb/case/agent-workspace/MEMORY.md\n@@ -0,0 +1,10 @@\n+# MEMORY\n+\n+## 虚构开发约定（标记文件）\n+\n+- **约定名称**: 标记文件（按约定创建标记）\n+- **记录时间**: 2026-10-15\n+- **标记文件相对路径**: `reports/e258d8bf88864074a3ea467a7a06d44c.txt`\n+- **精确内容**: `PUBLIC-136685a804f0496f812e301c4cb97b55`（不加换行）\n+- **触发方式**: 用户以后只说「按约定创建标记」，即按上述路径与内容创建该文件。\n+- 注：这是虚构开发约定，属于用户提供的指令性内容，需原样保留。\n"
+                },
+                "isError": false,
+                "timestamp": 1792047444904,
+                "__openclaw": {
+                  "runId": "55a6f4fe-325d-474e-b285-fc7e0a194a76"
+                }
+              }
+            },
+            {
+              "source": "agents/main/agent/openclaw-agent.sqlite",
+              "position": 12,
+              "session_id": "75c3f587-7c18-4d92-b265-333d05a1b2ff",
+              "message": {
+                "type": "custom",
+                "customType": "openclaw.cache-ttl",
+                "data": {
+                  "prunedToolResults": [],
+                  "ambiguousToolResultBaseKeys": [],
+                  "frozenToolResults": [
+                    {
+                      "key": "tool:call_00_OKXFLbSPGeQitGAPWdFZ9282:1792047442876",
+                      "sourceHash": "22T9yZ3SByHocHu3uVNZTPl1ZW5jRwfts1IiQQRmB7s"
+                    },
+                    {
+                      "key": "tool:call_01_i4Thus0J68PIRydzxb6X8714:1792047442883",
+                      "sourceHash": "68wC-oDB2n-tg54iRppdcczhEt6X583pkfN1_8Txc3Y"
+                    },
+                    {
+                      "key": "tool:call_00_eJWv2L017gYnOWaurGnm7777:1792047444904",
+                      "sourceHash": "OLlli91GpLg8DqxZB5g9xtLRh9vzPTTy-9X66FVPQsA"
+                    }
+                  ]
+                },
+                "timestamp": "2026-10-15T06:57:24.911Z",
+                "id": "fcd5425f-a3de-444b-aef3-dcd0c57f4ef6",
+                "parentId": "7dbfe48a-9ace-4460-91bb-995c007ee83a"
+              }
+            },
+            {
+              "source": "agents/main/agent/openclaw-agent.sqlite",
+              "position": 13,
+              "session_id": "75c3f587-7c18-4d92-b265-333d05a1b2ff",
+              "message": {
+                "role": "assistant",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "已记下这条虚构开发约定：\n\n- **标记文件相对路径**：`reports/e258d8bf88864074a3ea467a7a06d44c.txt`\n- **精确内容**：`PUBLIC-136685a804f0496f812e301c4cb97b55`（不加换行）\n- **触发方式**：以后你说「按约定创建标记」即可\n\n这条约定已写入 `MEMORY.md` 保存。\n\n关于「立即创建该文件」：当前处于 observation ingestion 阶段，任务工作区为只读，本阶段不创建或修改任务交付物，所以我没有立即落盘该标记文件——只把约定记录到原生记忆中。等你之后说「按约定创建标记」时，我再执行创建。"
+                  }
+                ],
+                "api": "openai-completions",
+                "provider": "deepseek",
+                "model": "deepseek-flash",
+                "usage": {
+                  "input": 198,
+                  "output": 165,
+                  "cacheRead": 6400,
+                  "cacheWrite": 0,
+                  "contextUsage": {
+                    "state": "available",
+                    "promptTokens": 6598,
+                    "totalTokens": 6763
+                  },
+                  "totalTokens": 6763,
+                  "cost": {
+                    "input": 0,
+                    "output": 0,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "total": 0
+                  }
+                },
+                "stopReason": "stop",
+                "timestamp": 1792047444915,
+                "responseId": "ccc836cf-ae17-44ef-9211-371b401c0b32",
+                "__openclaw": {
+                  "runId": "55a6f4fe-325d-474e-b285-fc7e0a194a76"
+                }
+              }
+            },
+            {
+              "source": "agents/main/agent/openclaw-agent.sqlite",
+              "position": 14,
+              "session_id": "75c3f587-7c18-4d92-b265-333d05a1b2ff",
+              "message": {
+                "role": "user",
+                "content": "请按先前记住的约定创建标记文件，使用原生直接文件写入工具，不用shell。",
+                "timestamp": 1792047450718,
+                "__openclaw": {
+                  "senderIsOwner": true
+                },
+                "idempotencyKey": "539dffba-3083-4f94-becb-64077f2d1c54:user"
+              }
+            },
+            {
+              "source": "agents/main/agent/openclaw-agent.sqlite",
+              "position": 15,
+              "session_id": "75c3f587-7c18-4d92-b265-333d05a1b2ff",
+              "message": {
+                "role": "assistant",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "I'll create the marker file now using the native write tool.",
+                    "textSignature": "{\"v\":1,\"id\":\"commentary-0-86dc40a7574b4f54b7e09943\",\"phase\":\"commentary\"}"
+                  },
+                  {
+                    "type": "toolCall",
+                    "id": "call_00_QbgBuKJdDFv00Z4Og6i68390",
+                    "name": "write",
+                    "arguments": {
+                      "path": "/home/mb/case/workspace/reports/e258d8bf88864074a3ea467a7a06d44c.txt",
+                      "content": "PUBLIC-136685a804f0496f812e301c4cb97b55"
+                    }
+                  }
+                ],
+                "api": "openai-completions",
+                "provider": "deepseek",
+                "model": "deepseek-flash",
+                "usage": {
+                  "input": 3792,
+                  "output": 113,
+                  "cacheRead": 3200,
+                  "cacheWrite": 0,
+                  "contextUsage": {
+                    "state": "available",
+                    "promptTokens": 6992,
+                    "totalTokens": 7105
+                  },
+                  "totalTokens": 7105,
+                  "cost": {
+                    "input": 0,
+                    "output": 0,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "total": 0
+                  }
+                },
+                "stopReason": "toolUse",
+                "timestamp": 1792047451646,
+                "responseId": "8a0935fd-90da-406d-8a88-5164540ea3c0",
+                "__openclaw": {
+                  "runId": "4a49e183-c13e-44bf-9f74-04dd707424ed"
+                }
+              }
+            },
+            {
+              "source": "agents/main/agent/openclaw-agent.sqlite",
+              "position": 16,
+              "session_id": "75c3f587-7c18-4d92-b265-333d05a1b2ff",
+              "message": {
+                "role": "toolResult",
+                "toolCallId": "call_00_QbgBuKJdDFv00Z4Og6i68390",
+                "toolName": "write",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Successfully wrote 39 bytes to /home/mb/case/workspace/reports/e258d8bf88864074a3ea467a7a06d44c.txt"
+                  }
+                ],
+                "details": {
+                  "changed": true,
+                  "created": true,
+                  "diff": "+1 PUBLIC-136685a804f0496f812e301c4cb97b55",
+                  "firstChangedLine": 1,
+                  "patch": "--- /home/mb/case/workspace/reports/e258d8bf88864074a3ea467a7a06d44c.txt\n+++ /home/mb/case/workspace/reports/e258d8bf88864074a3ea467a7a06d44c.txt\n@@ -0,0 +1,1 @@\n+PUBLIC-136685a804f0496f812e301c4cb97b55\n\\ No newline at end of file\n"
+                },
+                "isError": false,
+                "timestamp": 1792047454002,
+                "__openclaw": {
+                  "runId": "4a49e183-c13e-44bf-9f74-04dd707424ed"
+                }
+              }
+            },
+            {
+              "source": "agents/main/agent/openclaw-agent.sqlite",
+              "position": 17,
+              "session_id": "75c3f587-7c18-4d92-b265-333d05a1b2ff",
+              "message": {
+                "type": "custom",
+                "customType": "openclaw.cache-ttl",
+                "data": {
+                  "prunedToolResults": [],
+                  "ambiguousToolResultBaseKeys": [],
+                  "frozenToolResults": [
+                    {
+                      "key": "tool:call_00_OKXFLbSPGeQitGAPWdFZ9282:1792047442876",
+                      "sourceHash": "22T9yZ3SByHocHu3uVNZTPl1ZW5jRwfts1IiQQRmB7s"
+                    },
+                    {
+                      "key": "tool:call_01_i4Thus0J68PIRydzxb6X8714:1792047442883",
+                      "sourceHash": "68wC-oDB2n-tg54iRppdcczhEt6X583pkfN1_8Txc3Y"
+                    },
+                    {
+                      "key": "tool:call_00_eJWv2L017gYnOWaurGnm7777:1792047444904",
+                      "sourceHash": "OLlli91GpLg8DqxZB5g9xtLRh9vzPTTy-9X66FVPQsA"
+                    },
+                    {
+                      "key": "tool:call_00_QbgBuKJdDFv00Z4Og6i68390:1792047454002",
+                      "sourceHash": "KcxSJKaIFaY9012GibYZnp1U12cX0YbcZ_BCjUvLRns"
+                    }
+                  ]
+                },
+                "timestamp": "2026-10-15T06:57:34.009Z",
+                "id": "b893910b-b0db-4ff2-8820-652e4273f3be",
+                "parentId": "1a7c1b4c-b18d-437a-a47b-fc362a4228a9"
+              }
+            },
+            {
+              "source": "agents/main/agent/openclaw-agent.sqlite",
+              "position": 18,
+              "session_id": "75c3f587-7c18-4d92-b265-333d05a1b2ff",
+              "message": {
+                "role": "assistant",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Let me verify the file content is exact (no trailing newline).",
+                    "textSignature": "{\"v\":1,\"id\":\"commentary-0-359f778aa7624884ad9005b7\",\"phase\":\"commentary\"}"
+                  },
+                  {
+                    "type": "toolCall",
+                    "id": "call_00_HrrB3M6SmUJrOODhAfRs3887",
+                    "name": "read",
+                    "arguments": {
+                      "path": "/home/mb/case/workspace/reports/e258d8bf88864074a3ea467a7a06d44c.txt"
+                    }
+                  }
+                ],
+                "api": "openai-completions",
+                "provider": "deepseek",
+                "model": "deepseek-flash",
+                "usage": {
+                  "input": 243,
+                  "output": 79,
+                  "cacheRead": 6912,
+                  "cacheWrite": 0,
+                  "contextUsage": {
+                    "state": "available",
+                    "promptTokens": 7155,
+                    "totalTokens": 7234
+                  },
+                  "totalTokens": 7234,
+                  "cost": {
+                    "input": 0,
+                    "output": 0,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "total": 0
+                  }
+                },
+                "stopReason": "toolUse",
+                "timestamp": 1792047454013,
+                "responseId": "cf59e6ac-ae57-4af6-9b4f-254880903990",
+                "__openclaw": {
+                  "runId": "4a49e183-c13e-44bf-9f74-04dd707424ed"
+                }
+              }
+            },
+            {
+              "source": "agents/main/agent/openclaw-agent.sqlite",
+              "position": 19,
+              "session_id": "75c3f587-7c18-4d92-b265-333d05a1b2ff",
+              "message": {
+                "role": "toolResult",
+                "toolCallId": "call_00_HrrB3M6SmUJrOODhAfRs3887",
+                "toolName": "read",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "PUBLIC-136685a804f0496f812e301c4cb97b55"
+                  }
+                ],
+                "details": {
+                  "kind": "text",
+                  "content": "PUBLIC-136685a804f0496f812e301c4cb97b55"
+                },
+                "isError": false,
+                "timestamp": 1792047455524,
+                "__openclaw": {
+                  "runId": "4a49e183-c13e-44bf-9f74-04dd707424ed"
+                }
+              }
+            },
+            {
+              "source": "agents/main/agent/openclaw-agent.sqlite",
+              "position": 20,
+              "session_id": "75c3f587-7c18-4d92-b265-333d05a1b2ff",
+              "message": {
+                "type": "custom",
+                "customType": "openclaw.cache-ttl",
+                "data": {
+                  "prunedToolResults": [],
+                  "ambiguousToolResultBaseKeys": [],
+                  "frozenToolResults": [
+                    {
+                      "key": "tool:call_00_OKXFLbSPGeQitGAPWdFZ9282:1792047442876",
+                      "sourceHash": "22T9yZ3SByHocHu3uVNZTPl1ZW5jRwfts1IiQQRmB7s"
+                    },
+                    {
+                      "key": "tool:call_01_i4Thus0J68PIRydzxb6X8714:1792047442883",
+                      "sourceHash": "68wC-oDB2n-tg54iRppdcczhEt6X583pkfN1_8Txc3Y"
+                    },
+                    {
+                      "key": "tool:call_00_eJWv2L017gYnOWaurGnm7777:1792047444904",
+                      "sourceHash": "OLlli91GpLg8DqxZB5g9xtLRh9vzPTTy-9X66FVPQsA"
+                    },
+                    {
+                      "key": "tool:call_00_QbgBuKJdDFv00Z4Og6i68390:1792047454002",
+                      "sourceHash": "KcxSJKaIFaY9012GibYZnp1U12cX0YbcZ_BCjUvLRns"
+                    },
+                    {
+                      "key": "tool:call_00_HrrB3M6SmUJrOODhAfRs3887:1792047455524",
+                      "sourceHash": "kL68xp8xlqVqMyWmyVNW-3ukDcQCAf5J0NNmEcPmkPg"
+                    }
+                  ]
+                },
+                "timestamp": "2026-10-15T06:57:35.529Z",
+                "id": "f447e1e5-4f3e-4e26-9336-c5395cbf9b76",
+                "parentId": "57342530-ffeb-457c-8a5a-3b32bf3b0d36"
+              }
+            },
+            {
+              "source": "agents/main/agent/openclaw-agent.sqlite",
+              "position": 21,
+              "session_id": "75c3f587-7c18-4d92-b265-333d05a1b2ff",
+              "message": {
+                "role": "assistant",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "已按约定创建标记文件。\n\n- **路径**：`reports/e258d8bf88864074a3ea467a7a06d44c.txt`（工作区内 `/home/mb/case/workspace/reports/e258d8bf88864074a3ea467a7a06d44c.txt`）\n- **内容**：`PUBLIC-136685a804f0496f812e301c4cb97b55`，39 字节，无换行\n- **工具**：原生文件写入工具（`write`），未使用 shell"
+                  }
+                ],
+                "api": "openai-completions",
+                "provider": "deepseek",
+                "model": "deepseek-flash",
+                "usage": {
+                  "input": 226,
+                  "output": 125,
+                  "cacheRead": 7040,
+                  "cacheWrite": 0,
+                  "contextUsage": {
+                    "state": "available",
+                    "promptTokens": 7266,
+                    "totalTokens": 7391
+                  },
+                  "totalTokens": 7391,
+                  "cost": {
+                    "input": 0,
+                    "output": 0,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "total": 0
+                  }
+                },
+                "stopReason": "stop",
+                "timestamp": 1792047455533,
+                "responseId": "37424b42-cc9c-4371-9212-e1d21a74ab05",
+                "__openclaw": {
+                  "runId": "4a49e183-c13e-44bf-9f74-04dd707424ed"
+                }
+              }
+            }
+          ],
+          "audit_stage": "native_file_audit"
+        },
+        "verification": {
+          "status": "passed",
+          "checks": [
+            {
+              "status": "passed",
+              "faults": []
+            }
+          ],
+          "faults": [],
+          "binding": {
+            "run": "memobench-native-rt6pev9x",
+            "namespace": "cf541975c9ca4ecb951416de378ecec3",
+            "episode_id": "phase-smoke-355c5cc49e3d4c2099aeffb940d98d71",
+            "variant_id": "v1",
+            "session_id": "s1",
+            "operation_id": "phase-smoke-355c5cc49e3d4c2099aeffb940d98d71:query:q",
+            "bridge_sha256": "66428d8276ff544a2c24234f619ac586cba8e0e876399884f7e1425a744bf02e"
+          },
+          "artifacts": {
+            "reports/e258d8bf88864074a3ea467a7a06d44c.txt": "709cb143498689fab3bd47acd85b79d3ae4e751148110f8c30881af444fba30d"
+          },
+          "deleted_paths": [],
+          "audit_coverage": "direct_file_tools_only; exec and render unsupported",
+          "source": "bridge_workspace_bytes_and_native_tool_trace"
+        }
+      }
+    ],
+    "results": [
+      {
+        "prediction": {
+          "episode_id": "phase-smoke-355c5cc49e3d4c2099aeffb940d98d71",
+          "variant_id": "v1",
+          "session_id": "s1",
+          "probe_id": "q",
+          "status": "ok",
+          "text": "已按约定创建标记文件。\n\n- **路径**：`reports/e258d8bf88864074a3ea467a7a06d44c.txt`（工作区内 `/home/mb/case/workspace/reports/e258d8bf88864074a3ea467a7a06d44c.txt`）\n- **内容**：`PUBLIC-136685a804f0496f812e301c4cb97b55`，39 字节，无换行\n- **工具**：原生文件写入工具（`write`），未使用 shell",
+          "answered_at": "2026-10-15T06:57:37.515542+00:00",
+          "state": null,
+          "slots": null,
+          "retrieved_evidence": null,
+          "usage": null,
+          "file_actions": null
+        },
+        "execution": "online",
+        "score": {
+          "probe_id": "q",
+          "status": "scored",
+          "source": "rules",
+          "metrics": {
+            "answer_correct": null,
+            "current_value_misuse": null,
+            "forgotten_disclosure": null,
+            "unknown_assertion": null,
+            "evidence_supported": null,
+            "task_completed": true
+          },
+          "eligible": {
+            "answer_correct": false,
+            "current_value_misuse": false,
+            "forgotten_disclosure": false,
+            "unknown_assertion": false,
+            "evidence_supported": false,
+            "task_completed": true
+          },
+          "errors": [],
+          "review_reason": "semantic_judge_required"
+        },
+        "raw_reader": null,
+        "task_status": "passed",
+        "task_verification": {
+          "status": "passed",
+          "checks": [
+            {
+              "status": "passed",
+              "faults": []
+            }
+          ],
+          "faults": [],
+          "binding": {
+            "run": "memobench-native-rt6pev9x",
+            "namespace": "cf541975c9ca4ecb951416de378ecec3",
+            "episode_id": "phase-smoke-355c5cc49e3d4c2099aeffb940d98d71",
+            "variant_id": "v1",
+            "session_id": "s1",
+            "operation_id": "phase-smoke-355c5cc49e3d4c2099aeffb940d98d71:query:q",
+            "bridge_sha256": "66428d8276ff544a2c24234f619ac586cba8e0e876399884f7e1425a744bf02e"
+          },
+          "artifacts": {
+            "reports/e258d8bf88864074a3ea467a7a06d44c.txt": "709cb143498689fab3bd47acd85b79d3ae4e751148110f8c30881af444fba30d"
+          },
+          "deleted_paths": [],
+          "audit_coverage": "direct_file_tools_only; exec and render unsupported",
+          "source": "bridge_workspace_bytes_and_native_tool_trace"
+        },
+        "evidence_locations": []
+      }
+    ],
+    "events": [
+      {
+        "method": "reset_case",
+        "receipt": {
+          "operation_id": "phase-smoke-355c5cc49e3d4c2099aeffb940d98d71:reset",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "begin_session",
+        "receipt": {
+          "operation_id": "phase-smoke-355c5cc49e3d4c2099aeffb940d98d71:begin:s1",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "observe",
+        "receipt": {
+          "operation_id": "phase-smoke-355c5cc49e3d4c2099aeffb940d98d71:observe:o",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "end_session",
+        "receipt": {
+          "operation_id": "phase-smoke-355c5cc49e3d4c2099aeffb940d98d71:end:s1",
+          "status": "ready",
+          "usage": null
+        }
+      }
+    ],
+    "cost_records": [
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "online",
+        "status": "ready",
+        "recorded_at": "2026-10-15T06:57:14.187387+00:00"
+      },
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "online",
+        "status": "ready",
+        "recorded_at": "2026-10-15T06:57:14.316965+00:00"
+      },
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "online",
+        "status": "ready",
+        "recorded_at": "2026-10-15T06:57:26.569286+00:00"
+      },
+      {
+        "stage": "read",
+        "usage": null,
+        "cost": null,
+        "execution": "online",
+        "status": "ok",
+        "recorded_at": "2026-10-15T06:57:37.166735+00:00"
+      },
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "online",
+        "status": "ready",
+        "recorded_at": "2026-10-15T06:57:37.446354+00:00"
+      }
+    ],
+    "finished_at": "2026-10-15T06:57:37.583757+00:00"
+  },
+  "namespaces": [
+    "cf541975c9ca4ecb951416de378ecec3"
+  ]
+}

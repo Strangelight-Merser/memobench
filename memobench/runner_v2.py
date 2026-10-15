@@ -8,6 +8,7 @@ from pathlib import Path
 import tempfile
 from uuid import uuid4
 
+from .adapters_v2.factory import native_factory, native_capabilities
 from .data_v2 import load_dataset, validate_release
 from .protocol_v2 import FakeComponentAdapter, require_ready, adapter_payload
 from .schema_v2 import (Prediction, Observation, Probe, RunManifest,
@@ -16,7 +17,7 @@ from .judge_v2 import judge, overall_label
 from .scoring_v2 import summarize as summarize_scores, strict_json
 from .stats_v2 import Sample, summarize as summarize_stats
 from .llm_v2 import CostLedger, LLMClient, Limits
-from .sandbox_v2 import native_isolation_status, validate_actions, FileSandbox, verify_task
+from .sandbox_v2 import validate_actions, FileSandbox, verify_task
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -109,6 +110,7 @@ def offline_file_checks(gold, prediction):
                 checks.append(checked['status'] == 'passed')
                 results.append(checked)
             return checks, {'audit': sandbox.audit, 'checks': results,
+                            'faults': sorted({f for check in results for f in check['faults']}),
                             'artifacts': sandbox.snapshot()}
 
 
@@ -119,16 +121,21 @@ def execute_case(episode, factory, *, mode, reader=fixture_reader, operation_pre
     rows, events, seen = [], [], []
     ledger = CostLedger()
     error = None
+    cleanup_error = None
+    blocked_write = None
     stage = 'create_adapter'
     caps = None
     def op(name):
         return operation_prefix + ':' + name
     def write(method, *args, name):
+        nonlocal blocked_write
         receipt = getattr(adapter, method)(*args, op(name))
         ledger.record_adapter('write', receipt, execution=execution)
         events.append({'method': method, 'receipt': receipt.to_dict()})
         if receipt.operation_id != op(name):
             raise ValueError('receipt operation mismatch')
+        if receipt.status not in ('ready', 'durable'):
+            blocked_write = receipt.to_dict()
         require_ready(receipt)
     try:
         adapter = factory()
@@ -155,7 +162,11 @@ def execute_case(episode, factory, *, mode, reader=fixture_reader, operation_pre
                     continue
                 raw = None
                 if mode == 'native_agent':
-                    prediction = adapter.query(Probe.from_dict(public), op('query:' + item.probe_id))
+                    query_operation = op('query:' + item.probe_id)
+                    stage = 'task_checkpoint' if golds[item.probe_id].expected_actions else 'query'
+                    task_baseline = adapter.task_checkpoint(Probe.from_dict(public), query_operation) if golds[item.probe_id].expected_actions and hasattr(adapter, 'task_checkpoint') else None
+                    stage = 'query'
+                    prediction = adapter.query(Probe.from_dict(public), query_operation)
                     ledger.record_adapter('read', prediction, execution=execution)
                     actual_execution = execution
                 else:
@@ -180,13 +191,24 @@ def execute_case(episode, factory, *, mode, reader=fixture_reader, operation_pre
                 if gold.expected_actions:
                     validate_actions(gold)
                     task_status = 'blocked: trusted_tool_execution_unavailable'
-                    if execution == 'offline' and prediction.file_actions is not None:
+                    if mode == 'native_agent' and task_baseline is not None:
+                        try:
+                            task_verification = adapter.verify_task(gold, prediction, task_baseline, query_operation)
+                            task_checks = [c['status'] == 'passed' for c in task_verification['checks']]
+                            task_status = task_verification['status']
+                            if task_status == 'unsupported':
+                                task_checks = None
+                                task_status = 'blocked: unsupported_native_tool_execution'
+                        except Exception as exc:
+                            task_verification = {'status': 'blocked', 'faults': ['artifact_evidence_not_verified'],
+                                                 'error_type': type(exc).__name__}
+                            task_status = 'blocked: artifact_evidence_not_verified'
+                    elif mode != 'native_agent' and execution == 'offline' and prediction.file_actions is not None:
                         task_checks, task_verification = offline_file_checks(gold, prediction)
                         task_status = 'passed' if all(task_checks) else 'failed'
                 scored = judge(gold, prediction, item, seen, caps, transport=judge_transport,
                                task_checks=task_checks)
-                if task_verification and any('forgotten_disclosure' in check['faults']
-                                              for check in task_verification['checks']):
+                if task_verification and 'forgotten_disclosure' in task_verification.get('faults', []):
                     from .scoring_v2 import result as scoring_result
                     scored['metrics']['forgotten_disclosure'] = True
                     scored = scoring_result(gold, scored['metrics'], scored.get('review_reason'),
@@ -195,6 +217,9 @@ def execute_case(episode, factory, *, mode, reader=fixture_reader, operation_pre
                              'score': scored, 'raw_reader': raw, 'task_status': task_status,
                              'task_verification': task_verification,
                              'evidence_locations': [e.to_dict() for e in gold.evidence]})
+                if task_status and task_status.startswith('blocked:'):
+                    stage = 'artifact_evidence'
+                    raise RuntimeError('artifact_evidence_not_verified')
                 if prediction.status != 'ok':
                     raise RuntimeError('prediction_failed')
             stage = 'end_session'
@@ -207,7 +232,9 @@ def execute_case(episode, factory, *, mode, reader=fixture_reader, operation_pre
             try:
                 adapter.close()
             except Exception as exc:
-                error = {'stage': 'close', 'type': type(exc).__name__}
+                cleanup_error = {'stage': 'close', 'type': type(exc).__name__}
+                if error is None:
+                    error = cleanup_error
     completed = {r['prediction']['probe_id'] for r in rows}
     for probe, gold in zip(episode.probes, [next(g for g in episode.golds if g.probe_id == p.probe_id)
                                           for p in episode.probes]):
@@ -218,9 +245,13 @@ def execute_case(episode, factory, *, mode, reader=fixture_reader, operation_pre
             from .scoring_v2 import score
             rows.append({'prediction': prediction.to_dict(), 'execution': execution,
                          'score': score(gold, prediction), 'raw_reader': None,
-                         'task_status': None,
+                         'task_status': None, 'query_executed': False,
+                         'not_executed_reason': 'prior_write_' + blocked_write['status'] if blocked_write else 'prior_stage_failure',
                          'evidence_locations': [e.to_dict() for e in gold.evidence]})
-    return {'status': 'failed' if error else 'completed', 'error': error, 'results': rows,
+    return {'status': 'failed' if error or cleanup_error else 'completed', 'error': error,
+            'cleanup_error': cleanup_error, 'blocked_write': blocked_write,
+            'cleanup_receipts': [r.to_dict() for r in getattr(adapter, 'cleanup_receipts', [])],
+            'operation_evidence': getattr(adapter, 'evidence_index', []), 'results': rows,
             'events': events, 'cost_records': ledger.records, 'finished_at': now()}
 
 
@@ -241,27 +272,70 @@ def summarize(episodes, cases, mode, execution):
             'publish_ranking': False}
 
 
-def run(config, out, *, live=False, resume=False):
-    allowed = {'dataset', 'split', 'mode', 'execution', 'adapter', 'reader', 'llm', 'binding_status'}
+def select_cases(episodes, selection):
+    """Select whole approved cases without changing observations or scoring data."""
+    if not isinstance(selection, list) or not selection:
+        raise ValueError('case_selection must be a nonempty list')
+    wanted = []
+    for item in selection:
+        if (type(item) is not dict or set(item) != {'story_id', 'variant_id'}
+                or any(not isinstance(value, str) or not value for value in item.values())):
+            raise ValueError('case_selection requires exact story_id and variant_id')
+        wanted.append((item['story_id'], item['variant_id']))
+    available = {(episode.story_id, episode.variant_id) for episode in episodes}
+    if len(set(wanted)) != len(wanted) or not set(wanted).issubset(available):
+        raise ValueError('case_selection contains duplicate or unavailable approved cases')
+    return [episode for episode in episodes if (episode.story_id, episode.variant_id) in set(wanted)]
+
+
+def run(config, out, *, live=False, resume=False, native_transport_factory=None):
+    root = Path(out).absolute()
+    marker = safe_output(root, 'manifest.json')
+    if root.exists() and any(root.iterdir()) and not resume:
+        raise ValueError('output exists; use --resume or a new directory')
+    if type(config) is dict and config.get('schema_version') == 'native-run-recipe-1':
+        if resume:
+            raise ValueError('native preparation recipe cannot resume a run')
+        summary = {'status': 'blocked', 'reason': 'native preparation recipe: use tools/prepare_native_run.py; run only its generated product config',
+                   'mode': 'native_agent', 'partitions': {}, 'n_case': 0, 'failed_cases': 0,
+                   'publish_ranking': False, 'data_notice': '准备 recipe 尚未验证，不是可运行配置',
+                   'dataset_validation': {'validation': 'not_run'}}
+        save(root, 'summary.json', summary)
+        return summary
+    allowed = {'dataset', 'split', 'mode', 'execution', 'adapter', 'reader', 'llm', 'binding_status', 'native', 'case_selection'}
     if type(config) is not dict or set(config) - allowed:
         raise ValueError('unknown experiment configuration')
     mode, execution = config.get('mode'), config.get('execution')
     if mode not in ('component', 'native_agent') or execution not in ('offline', 'online', 'replay'):
         raise ValueError('invalid mode/execution')
-    root = Path(out).absolute()
-    marker = safe_output(root, 'manifest.json')
-    if root.exists() and any(root.iterdir()) and not resume:
-        raise ValueError('output exists; use --resume or a new directory')
     dataset = Path(config['dataset']).resolve()
     validation = validate_release(dataset)
     episodes = load_dataset(dataset, config.get('split', 'dev'))
     validate_dataset(episodes)
-    notice = '候选数据，未签收' if validation['release_status'] != 'accepted' or config.get('split') != 'test' else '人工签收测试集'
+    if 'case_selection' in config:
+        if mode != 'native_agent':
+            raise ValueError('case_selection is for native acceptance only')
+        episodes = select_cases(episodes, config['case_selection'])
+    notice = '内部评测集：独立 AI 审核，非未见留出' if validation['release_status'] == 'accepted_internal' else '候选数据，未签收' if validation['release_status'] != 'accepted' or config.get('split') != 'test' else '人工签收测试集'
     blocked = None
-    if mode == 'native_agent':
-        blocked = native_isolation_status()['reason']
-        if not live:
-            blocked = 'live_required; ' + blocked
+    native_fixture = mode == 'native_agent' and execution == 'offline' and native_transport_factory is not None
+    if native_fixture:
+        if live or resume or config.get('reader') is not None or config.get('adapter') not in ('kylin', 'openclaw'):
+            raise ValueError('native offline fixture requires product, no reader/live/resume')
+    online_factory = None
+    if mode == 'native_agent' and not native_fixture:
+        try:
+            if resume:
+                raise ValueError('native_restart_unsupported')
+            if any(action['operation'] != 'create' for episode in episodes for g in episode.golds for action in g.expected_actions):
+                raise ValueError('native_render_unsupported')
+            online_factory = native_factory(config.get('adapter'), execution=execution, live=live,
+                settings=config.get('native'), validation=dict(validation,
+                    content_sha256=hash_inventory(dataset, [p for p in dataset.iterdir() if p.is_file()])['sha256']))
+        except (ValueError, OSError, TypeError, KeyError):
+            blocked = 'native_live_purpose_data_approval_isolation_version_evidence_required'
+            if not live:
+                blocked = 'live_required; ' + blocked
     elif execution == 'online' and not live:
         blocked = 'live_required'
     if blocked:
@@ -272,15 +346,18 @@ def run(config, out, *, live=False, resume=False):
                    'publish_ranking': False, 'n_case': 0, 'failed_cases': 0}
         save(root, 'summary.json', summary)
         return summary
-    if config.get('adapter') != 'full-history-fixture':
+    native_run = native_fixture or online_factory is not None
+    if not native_run and config.get('adapter') != 'full-history-fixture':
         raise ValueError('no reviewed component adapter configured')
-    reader_kind = config.get('reader')
-    if reader_kind not in ('echo-fixture', 'llm'):
+    reader_kind = 'native' if native_run else config.get('reader')
+    if reader_kind not in ('echo-fixture', 'llm', 'native'):
         raise ValueError('explicit reader required')
     if reader_kind == 'echo-fixture' and execution != 'offline':
         raise ValueError('fixture is offline only')
     if reader_kind == 'llm' and execution == 'offline':
         raise ValueError('LLM requires online or replay execution')
+    caps = native_capabilities() if native_run else FakeComponentAdapter().capabilities
+    factory = native_factory(config['adapter'], execution=execution, transport_factory=native_transport_factory) if native_fixture else online_factory if online_factory is not None else FakeComponentAdapter
     inventory = {
         'code': hash_inventory(ROOT, list((ROOT / 'memobench').rglob('*.py'))),
         'data': hash_inventory(dataset, [p for p in dataset.iterdir() if p.is_file()]),
@@ -298,11 +375,11 @@ def run(config, out, *, live=False, resume=False):
         if resume and root.exists() and any(root.iterdir()):
             raise ValueError('missing resume manifest')
         manifest = RunManifest(uuid4().hex, mode, execution, config['adapter'], 'contract-0.2',
-            FakeComponentAdapter().capabilities, [], now(), None,
+            caps, [], now(), None,
             inventory['code']['sha256'], inventory['data']['sha256'], inventory['scorer']['sha256'])
         save(root, 'hashes.json', inventory)
         save(root, 'run.json', {'identity': identity, 'config': config, 'data_notice': notice,
-                              'dataset_validation': validation, 'fixture': True})
+                              'dataset_validation': validation, 'fixture': execution == 'offline'})
         save(root, 'manifest.json', manifest.to_dict())
     manifest.finished_at = None
     save(root, 'manifest.json', manifest.to_dict())
@@ -340,26 +417,32 @@ def run(config, out, *, live=False, resume=False):
         case_record = {'episode_id': episode.episode_id, 'variant_id': episode.variant_id,
                        'story_id': episode.story_id, 'public_input': episode.to_public(), 'attempts': attempts}
         save(root, name, case_record)
-        result = execute_case(episode, FakeComponentAdapter, mode=mode, reader=reader,
+        result = execute_case(episode, factory, mode=mode, reader=reader,
                               operation_prefix=manifest.run_id + ':' + attempt_id, execution=execution)
         attempts[-1].update(result)
         save(root, name, case_record)
         cases.append(attempts[-1])
         save(root, 'summary.json', dict(summarize(episodes, cases, mode, execution),
-             status='running', data_notice=notice, dataset_validation=validation, fixture=True))
+             status='running', data_notice=notice, dataset_validation=validation, fixture=execution == 'offline'))
     total_ledger = CostLedger()
     total_ledger.records = [r for c in cases for r in c['cost_records']]
     if client:
         total_ledger.records.extend(client.ledger.records)
     summary = dict(summarize(episodes, cases, mode, execution),
         status='completed_with_errors' if any(c['status'] != 'completed' for c in cases) else 'completed',
-        data_notice=notice, dataset_validation=validation, fixture=True,
+        data_notice=notice, dataset_validation=validation, fixture=execution == 'offline',
         reader=reader_kind, cost=total_ledger.summary(),
         prior_failed_attempts=prior_failed_attempts, interrupted_attempts=interrupted_attempts,
-        integration_gaps=[
-            'echo-fixture 不发起文件操作；文件任务需显式工具请求及可信产物验证',
-            'native 产品桥与外部权限隔离未验证；不支持中断 native 原地续跑',
-            '离线 echo-fixture 非 LLM Reader；语义裁判与人工校准未执行'])
+        integration_gaps=(
+            ['native 原生回答直接评分；文件验收覆盖直接写入，未支持的工具执行单独阻断',
+             'native 不支持中断原地续跑；语义不足的输出仍需独立裁决',
+             '离线 native transport fixture 不构成真实成绩' if execution == 'offline' else
+             '产品生命周期用量不可得的阶段保留 unknown；不推算为零费用']
+            if mode == 'native_agent' else
+            ['component 文件任务需显式工具请求及可信产物验证',
+             '离线 echo-fixture 非 LLM Reader' if reader_kind == 'echo-fixture' else
+             'component 公共 LLM Reader 与 native 原生回答分别报告',
+             '语义裁判与人工校准未执行']))
     if client:
         save(root, 'llm-costs.json', client.ledger.records)
     manifest.finished_at = now()

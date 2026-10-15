@@ -224,7 +224,9 @@ def build_dataset(root, seed=42):
     selected = [s for s in stories if s['split'] == 'test'][:12]
     for size in (2048, 8192, 32768):
         save(f'paired-{size}.jsonl', [e.to_dict() for e in generate(selected, seed, size)])
-    review = {r['story_id']: r for r in read_rows(reviews)}
+    from .approval_v2 import state as approval_state
+    approvals = approval_state(root, seed)
+    review = {r['story_id']: r for r in approvals['records']}
     accepted = set()
     for s in stories:
         r = review.get(s['story_id'], {})
@@ -237,9 +239,11 @@ def build_dataset(root, seed=42):
     save('dev.jsonl', [e.to_dict() for e in episodes if e.split == 'dev'])
     for name in ('sources.jsonl', 'review.jsonl'):
         files[name] = hashlib.sha256(safe_path(root, name).read_bytes()).hexdigest()
-    manifest = {'schema_version': '0.2', 'seed': seed, 'status': 'pending_review',
+    manifest = {'schema_version': '0.2', 'seed': seed, 'status': approvals['release_status'],
+        'approval_context': approvals['context'], 'review_method': approvals['review_method'],
+        'usage_scope': approvals['usage_scope'], 'unseen_holdout_claim': False,
         'generation': 'offline_authored_synthetic_ai_assisted', 'llm_api': 'not_used: offline_only',
-        'openkylin': 'NOT_VERIFIED', 'license': 'pending_maintainer_signoff',
+        'openkylin': 'NOT_VERIFIED', 'license': approvals['license_status'],
         'n_story': len(stories), 'n_query': len(episodes),
         'target_n_story': 60, 'paired_n_story': len(selected),
         'split_counts': {part: sum(s['split'] == part for s in stories) for part in ('dev', 'test')},
@@ -249,6 +253,13 @@ def build_dataset(root, seed=42):
         'formal_test_n_query': sum(e.split == 'test' and e.story_id in accepted for e in episodes),
         'context_unit': 'Unicode code points in observation.text; not tokens',
         'files': files}
+    for name in ('approval.json', 'license-approval.json', 'usage-approval.json'):
+        path = safe_path(root, name)
+        if path.exists(): files[name] = hashlib.sha256(path.read_bytes()).hexdigest()
+    evidence_root = Path(root) / 'evidence'
+    if evidence_root.exists():
+        for path in sorted(evidence_root.glob('*.json')):
+            files[path.relative_to(Path(root)).as_posix()] = hashlib.sha256(path.read_bytes()).hexdigest()
     safe_path(root, 'manifest.json').write_text(encode(manifest), encoding='utf-8')
     return manifest
 
@@ -281,7 +292,15 @@ def validate_release(root):
     reviews = read_rows(safe_path(root, 'review.jsonl'))
     if len(reviews) != len(stories) or {r['story_id'] for r in reviews} != {s['story_id'] for s in stories}:
         raise ContractError('审阅清单不完整')
-    reviewed = {r['story_id']: r for r in reviews}
+    from .approval_v2 import state as approval_state
+    approvals = approval_state(root, manifest['seed'])
+    if 'approval_context' in manifest and manifest['approval_context'] != approvals['context']:
+        raise ContractError('dataset rule or generated variant fingerprint stale; rebuild and re-review')
+    if manifest['status'] != approvals['release_status']:
+        raise ContractError('manifest approval status mismatch')
+    if manifest['license'] != approvals['license_status'] and not (manifest['license'] == 'pending_maintainer_signoff' and approvals['license_status'] == 'pending_review'):
+        raise ContractError('manifest license status mismatch')
+    reviewed = {r['story_id']: r for r in approvals['records']}
     accepted = set()
     for s in stories:
         r = reviewed[s['story_id']]
@@ -294,7 +313,7 @@ def validate_release(root):
         if r['status'] == 'accepted':
             if not (r['source_sha256'] == digest(s) and r['reviewer'] and r['reviewed_at']
                     and r['ledger_query_checked'] is True and r['all_variants_checked'] is True):
-                raise ContractError('人工签收不完整或已过期')
+                raise ContractError('审核记录不完整或已过期')
             accepted.add(s['story_id'])
         if r['status'] == 'rejected' and not r['reason']:
             raise ContractError('拒收缺少原因')
@@ -303,7 +322,7 @@ def validate_release(root):
         wanted = [e.to_dict() for e in actual if e.split == split and
                   (split == 'dev' or e.story_id in accepted)]
         if rows != wanted:
-            raise ContractError('分区或人工签收门禁失败')
+            raise ContractError('分区或审核门禁失败')
     selected = [s for s in stories if s['split'] == 'test'][:12]
     for size in (2048, 8192, 32768):
         rows = read_rows(safe_path(root, f'paired-{size}.jsonl'))
@@ -318,7 +337,12 @@ def validate_release(root):
             or manifest['paired_n_story'] != len(selected)
             or manifest['formal_test_n_query'] != len(read_rows(safe_path(root, 'test.jsonl')))):
         raise ContractError('清单数量不一致')
-    return {'validation': 'ok', 'release_status': 'pending_review',
+    return {'validation': 'ok', 'release_status': approvals['release_status'],
+            'approval_fingerprint': approvals['context']['fingerprint'],
+            'license_status': approvals['license_status'], 'review_method': approvals['review_method'],
+            'usage_scope': approvals['usage_scope'], 'unseen_holdout_claim': False,
+            'internal_usage_status': approvals['internal_usage_status'],
+            'pending_n_story': approvals['pending_n_story'], 'rejected_n_story': approvals['rejected_n_story'],
             'n_story': len(stories), 'formal_test_n_query': len(read_rows(safe_path(root, 'test.jsonl')))}
 
 
@@ -332,7 +356,9 @@ def build_review_page(root, destination):
                            (32768, 'paired-32768.jsonl')):
         for episode in read_rows(safe_path(root, filename)):
             grouped[episode['story_id']].setdefault(str(size), []).append(episode)
-    payload = {'capabilities': OFFICIAL_CAPABILITIES,
+    from .approval_v2 import context as approval_context
+    approval_binding = approval_context(root, json.loads(safe_path(root, 'manifest.json').read_text())['seed'])
+    payload = {'context': approval_binding, 'capabilities': OFFICIAL_CAPABILITIES,
                'source_sha256': hashlib.sha256(safe_path(root, 'sources.jsonl').read_bytes()).hexdigest(),
                'stories': [{'source': s, 'review': reviews[s['story_id']],
                             'episodes': grouped[s['story_id']]} for s in stories]}
@@ -370,20 +396,22 @@ small{display:block;color:#536779;overflow-wrap:anywhere}footer{padding:10px 24p
 </main>
 <footer><div class="reviewline">
 <label><input type="radio" name="decision" value="pending_review"> 待审</label><label><input type="radio" name="decision" value="accepted"> 通过</label><label><input type="radio" name="decision" value="rejected"> 拒收</label>
-<label><input type="checkbox" id="ledgerChecked"> 账本与问题一致</label><label><input type="checkbox" id="variantsChecked"> 两种表述及适用配对负载已检查</label>
+<label><input type="checkbox" id="ledgerChecked"> 账本与问题一致</label><label>开发暴露 <select id="exposed"><option value="">待核对</option><option value="false">未暴露</option><option value="true">已暴露</option></select></label><label>暴露说明 <input id="exposureNotes"></label>
+<label><input type="checkbox" id="variantsChecked"> 两种表述及适用配对负载已检查</label>
 </div><textarea id="reason" aria-label="审核原因" placeholder="通过或拒收原因（必填）；拒收应指出具体事件、措辞或真值问题，不能因模型答错而拒收。"></textarea><div id="notice" role="status">修改仅保存在当前页面内存中，关闭前请导出。三档负载仅适用于选定的 12 个测试故事。</div></footer>
 <script type="application/json" id="dataset">__REVIEW_DATA__</script>
 <script>
 'use strict';
 const dataset=JSON.parse(document.getElementById('dataset').textContent);
 const $=id=>document.getElementById(id);
-const records=dataset.stories.map(s=>({...s.review}));
+const records=dataset.stories.map(s=>({...s.review,development_exposed:null,exposure_notes:''}));
 let current=0;
 const json=x=>JSON.stringify(x,null,2);
 function text(parent,tag,content,className){const e=document.createElement(tag);e.textContent=content;if(className)e.className=className;parent.append(e);return e;}
 function count(){ $('progress').textContent=`${current+1} / ${records.length} · 通过 ${records.filter(r=>r.status==='accepted').length} · 拒收 ${records.filter(r=>r.status==='rejected').length}`; }
 function save(){
  const r=records[current];
+ r.development_exposed=$('exposed').value===''?null:$('exposed').value==='true';r.exposure_notes=$('exposureNotes').value;
  const status=document.querySelector('input[name="decision"]:checked').value;
  const checked=$('ledgerChecked').checked, variants=$('variantsChecked').checked, reason=$('reason').value;
  if(r.status!==status || r.ledger_query_checked!==checked || r.all_variants_checked!==variants || r.reason!==reason){
@@ -427,6 +455,7 @@ function render(){
  $('targets').textContent=json(s.targets);
  $('size').replaceChildren();Object.keys(item.episodes).forEach(n=>{const o=text($('size'),'option',`${n} 字符`);o.value=n;});
  document.querySelectorAll('input[name="decision"]').forEach(el=>el.checked=el.value===r.status);
+ $('exposed').value=r.development_exposed===null?'':String(r.development_exposed);$('exposureNotes').value=r.exposure_notes;
  $('ledgerChecked').checked=r.ledger_query_checked;$('variantsChecked').checked=r.all_variants_checked;$('reason').value=r.reason;
  $('prev').disabled=current===0;$('next').disabled=current===records.length-1;
  renderSessions();count();document.querySelectorAll('section').forEach(s=>s.scrollTop=0);
@@ -434,22 +463,28 @@ function render(){
 dataset.stories.forEach((item,i)=>{const s=item.source;const o=text($('story'),'option',`${i+1}. ${dataset.capabilities[s.official_capability]} · ${s.template_id}`);o.value=i;});
 $('prev').onclick=()=>{save();current--;render();};$('next').onclick=()=>{save();current++;render();};
 $('story').onchange=()=>{save();current=Number($('story').value);render();};$('size').onchange=renderSessions;
-document.querySelectorAll('input[name="decision"],#ledgerChecked,#variantsChecked').forEach(e=>e.onchange=save);
+document.querySelectorAll('input[name="decision"],#ledgerChecked,#variantsChecked,#exposed,#exposureNotes').forEach(e=>e.onchange=save);
 $('reason').oninput=save;
 $('export').onclick=()=>{
  save();const reviewer=$('reviewer').value.trim();
  for(let i=0;i<records.length;i++){
   const r=records[i];if(r.status==='pending_review')continue;
+  if(typeof r.development_exposed!=='boolean'||(r.development_exposed&&!r.exposure_notes.trim())){
+   $('notice').textContent=`第 ${i+1} 个故事：请选择开发暴露状态；已暴露时填写具体说明。`;return;
+  }
+  if(r.status==='accepted'&&dataset.stories[i].source.split==='test'&&r.development_exposed){
+   $('notice').textContent=`第 ${i+1} 个故事：已开发暴露的测试故事不能签收为最终留出。`;return;
+  }
   if(!reviewer||!r.reason.trim()||r.reason===dataset.stories[i].review.reason||
      (r.status==='accepted'&&(!r.ledger_query_checked||!r.all_variants_checked))){
    $('notice').textContent=`第 ${i+1} 个故事：请填写审阅者、具体原因；通过时须勾选两项核对。`;return;
   }
  }
- const output={schema_version:'0.2',source_sha256:dataset.source_sha256,exported_at:new Date().toISOString(),
+ const output={schema_version:'0.2',context:dataset.context,
   records:records.map(r=>r.status==='pending_review'?r:{...r,reviewer})};
  const url=URL.createObjectURL(new Blob([json(output)+'\n'],{type:'application/json;charset=utf-8'}));
  const a=document.createElement('a');a.href=url;a.download='memobench-human-review.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
- $('notice').textContent='审核 JSON 已生成本地下载；仓库数据未改变。维护者核对源摘要后再合入 review.jsonl 并重建。';
+ $('notice').textContent='审核 JSON 已生成本地下载；仓库数据未改变。使用审批导入命令生成新数据副本；原始 review.jsonl 不会改写。';
 };
 render();
 </script></html>

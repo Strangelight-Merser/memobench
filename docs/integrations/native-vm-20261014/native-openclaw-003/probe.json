@@ -1,0 +1,234 @@
+{
+  "product": "openclaw",
+  "started_at": "2026-10-15T02:41:15.864488+00:00",
+  "scope": "synthetic integration acceptance only",
+  "capabilities": {
+    "native_answer": "supported",
+    "retrieved_evidence": "unsupported",
+    "write_usage": "unsupported",
+    "flush": "unsupported",
+    "restart": "unsupported",
+    "storage_inspection": "supported"
+  },
+  "canary": "MB-56B9FE6CFA0D",
+  "events": [
+    {
+      "method": "reset_case",
+      "receipt": {
+        "operation_id": "47d4a377bc364013838dce9784cd49fd",
+        "status": "ready",
+        "usage": null
+      }
+    },
+    {
+      "method": "begin_session",
+      "receipt": {
+        "operation_id": "f6f6ede75152483996f8c134094287f5",
+        "status": "ready",
+        "usage": null
+      }
+    },
+    {
+      "method": "public_observation",
+      "input": {
+        "episode_id": "memory",
+        "variant_id": "v1",
+        "session_id": "s1",
+        "observation_id": "o1",
+        "role": "user",
+        "text": "请记住：我的虚构测试项目“蓝帆”的代号是 MB-56B9FE6CFA0D。后面的新会话会询问，请保存到你的长期记忆。",
+        "observed_at": "2026-10-15T02:41:16.179062+00:00",
+        "sandbox_references": []
+      }
+    },
+    {
+      "method": "observe",
+      "receipt": {
+        "operation_id": "496e2571aa5c43dba9471f0ec7d7f567",
+        "status": "ready",
+        "usage": null
+      }
+    },
+    {
+      "method": "query",
+      "input": {
+        "episode_id": "memory",
+        "variant_id": "v1",
+        "session_id": "s1",
+        "probe_id": "q1",
+        "query": "蓝帆项目的代号是什么？只回答代号；不知道就回答不知道。",
+        "observed_at": "2026-10-15T02:41:34.885769+00:00",
+        "sandbox_references": []
+      },
+      "prediction": {
+        "episode_id": "memory",
+        "variant_id": "v1",
+        "session_id": "s1",
+        "probe_id": "q1",
+        "status": "ok",
+        "text": "MB-56B9FE6CFA0D",
+        "answered_at": "2026-10-15T02:41:44.871790+00:00",
+        "state": null,
+        "slots": null,
+        "retrieved_evidence": null,
+        "usage": null,
+        "file_actions": null
+      }
+    },
+    {
+      "method": "end_session",
+      "receipt": {
+        "operation_id": "fadf21aaa87f42689e574b77fdb650da",
+        "status": "ready",
+        "usage": null
+      }
+    },
+    {
+      "method": "begin_session",
+      "receipt": {
+        "operation_id": "4010cef9d1f34ae58649bf29ff5248c4",
+        "status": "ready",
+        "usage": null
+      }
+    },
+    {
+      "method": "query",
+      "input": {
+        "episode_id": "memory",
+        "variant_id": "v1",
+        "session_id": "s2",
+        "probe_id": "q2",
+        "query": "我以前告诉过你的蓝帆项目代号是什么？只回答代号；不知道就回答不知道。",
+        "observed_at": "2026-10-15T02:41:44.998436+00:00",
+        "sandbox_references": []
+      },
+      "prediction": {
+        "episode_id": "memory",
+        "variant_id": "v1",
+        "session_id": "s2",
+        "probe_id": "q2",
+        "status": "ok",
+        "text": "MB-56B9FE6CFA0D",
+        "answered_at": "2026-10-15T02:41:53.372635+00:00",
+        "state": null,
+        "slots": null,
+        "retrieved_evidence": null,
+        "usage": null,
+        "file_actions": null
+      }
+    },
+    {
+      "method": "query",
+      "input": {
+        "episode_id": "memory",
+        "variant_id": "v1",
+        "session_id": "s2",
+        "probe_id": "q3",
+        "query": "请把蓝帆项目代号写到当前工作目录的 notes/code.txt，文件只含代号和一个换行。如果不知道就不要写。",
+        "observed_at": "2026-10-15T02:41:53.223016+00:00",
+        "sandbox_references": []
+      },
+      "prediction": {
+        "episode_id": "memory",
+        "variant_id": "v1",
+        "session_id": "s2",
+        "probe_id": "q3",
+        "status": "ok",
+        "text": "已写入 /home/mb/case/workspace/notes/code.txt，内容为代号 MB-56B9FE6CFA0D 加一个换行。",
+        "answered_at": "2026-10-15T02:42:08.464375+00:00",
+        "state": null,
+        "slots": null,
+        "retrieved_evidence": null,
+        "usage": null,
+        "file_actions": null
+      }
+    },
+    {
+      "method": "end_session",
+      "receipt": {
+        "operation_id": "71f32f7814bc4ff6bbf45c1c0b5219d8",
+        "status": "ready",
+        "usage": null
+      }
+    },
+    {
+      "method": "reset_case",
+      "receipt": {
+        "operation_id": "9ce16a0a260641fbbeec92d37b3eab3e",
+        "status": "ready",
+        "usage": null
+      }
+    },
+    {
+      "method": "begin_session",
+      "receipt": {
+        "operation_id": "0dfc4ae3111a4a95bff27152f4525e7f",
+        "status": "ready",
+        "usage": null
+      }
+    },
+    {
+      "method": "query",
+      "input": {
+        "episode_id": "isolation",
+        "variant_id": "v1",
+        "session_id": "s1",
+        "probe_id": "q4",
+        "query": "我以前告诉过你的蓝帆项目代号是什么？只回答代号；不知道就回答不知道。",
+        "observed_at": "2026-10-15T02:42:08.729675+00:00",
+        "sandbox_references": []
+      },
+      "prediction": {
+        "episode_id": "isolation",
+        "variant_id": "v1",
+        "session_id": "s1",
+        "probe_id": "q4",
+        "status": "ok",
+        "text": "不知道",
+        "answered_at": "2026-10-15T02:42:23.401201+00:00",
+        "state": null,
+        "slots": null,
+        "retrieved_evidence": null,
+        "usage": null,
+        "file_actions": null
+      }
+    },
+    {
+      "method": "end_session",
+      "receipt": {
+        "operation_id": "21df9c23f2ae4228b36cf1cfe767775b",
+        "status": "ready",
+        "usage": null
+      }
+    }
+  ],
+  "checks": {
+    "same_session": true,
+    "cross_session": true,
+    "cross_case_no_canary": true,
+    "cleanup": true,
+    "file_task": true
+  },
+  "publish_ranking": false,
+  "execution": "online",
+  "model": "deepseek-flash",
+  "openclaw_mode": "embedded_explicit; optional Gateway flush unsupported",
+  "namespaces": [
+    "a9bc7fff46cf44d29b06fd5ee29e3925",
+    "267cd75f8afe4cad9dda63c775aa1ebb"
+  ],
+  "cleanup_receipts": [
+    {
+      "operation_id": "a0d85144b2124e1c8191c017d50eec45",
+      "status": "ready",
+      "usage": null
+    },
+    {
+      "operation_id": "86cb789ef1134ccdaea86d413087b784",
+      "status": "ready",
+      "usage": null
+    }
+  ],
+  "finished_at": "2026-10-15T02:42:23.875853+00:00",
+  "status": "passed"
+}

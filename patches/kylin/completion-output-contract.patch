@@ -1,0 +1,20 @@
+diff --git a/agent/completion_review.py b/agent/completion_review.py
+index 1281d75..153413e 100644
+--- a/agent/completion_review.py
++++ b/agent/completion_review.py
+@@ -32,6 +32,15 @@ a contradiction or an unmet requirement. Do not continue solely because tool log
+ are absent, or claim to have independently verified external actions. TODO remains
+ the executing agent's responsibility; do not require bookkeeping-only work.
+ 
++Explicit output constraints in the CURRENT request are part of completion.
++If the user requires only a value, only JSON, or another exact format, a candidate
++with extra explanation, citations, headings or a confirmation is not completed,
++even if its factual content is correct. Choose continue and ask the executing
++agent to return the existing answer in the requested format, without repeating
++tool actions or adding new requirements. Do not demand evidence in the final
++reply when the user explicitly excludes it. Judge the candidate final reply,
++not an earlier progress message, against these constraints.
++
+ Decisions:
+ - completed: the visible replies address all required outcomes. An ordinary question can be
+   answered completely without tools. Never invent extra work after it is answered.

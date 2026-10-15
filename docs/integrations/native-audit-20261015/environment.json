@@ -1,0 +1,12 @@
+{
+  "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:07:20) [Clang 20.1.8 ]",
+  "platform": "macOS-15.6-arm64-arm-64bit-Mach-O",
+  "commands": [
+    "python3 -m unittest discover -s tests -v",
+    "python3 tools/check_release.py",
+    "python3 tools/dataset_approvals.py prepare --dataset data/v0.2 --out /Users/huaiyi/Documents/oschina/deliverables/memobench-human-review-20261015-remote-audit",
+    "python3 tools/verify_remote_audit_synthetic.py --ssh-config /Users/huaiyi/Documents/oschina/.local-vm/ssh_config --out docs/integrations/native-audit-20261015/remote-synthetic-002",
+    "python3 tools/verify_native_file_query.py --ssh-config /Users/huaiyi/Documents/oschina/.local-vm/ssh_config --out docs/integrations/native-audit-20261015/real-developer-001 --live",
+    "python3 docs/integrations/native-audit-20261015/deploy-and-check.py"
+  ]
+}

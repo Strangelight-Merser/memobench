@@ -1,0 +1,52 @@
+[
+  {
+    "candidate": "MB-EXAMPLE\n\n来源：已检索本地记忆。",
+    "expected": "continue",
+    "decision": "continue",
+    "passed": true,
+    "reason": "事实内容正确，但未满足当前请求的显式格式约束（仅输出代号，不得附加解释或来源说明）。",
+    "seconds": 5.12,
+    "usage": {
+      "completion_tokens": 288,
+      "prompt_tokens": 850,
+      "total_tokens": 1138,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 108,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 850
+    }
+  },
+  {
+    "candidate": "MB-EXAMPLE",
+    "expected": "completed",
+    "decision": "completed",
+    "passed": true,
+    "reason": "用户唯一要求（仅输出代号）已由候选回复精确满足，且内容与可见对话中的信息一致。",
+    "seconds": 4.77,
+    "usage": {
+      "completion_tokens": 199,
+      "prompt_tokens": 841,
+      "total_tokens": 1040,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 58,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 640
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 201
+    }
+  }
+]

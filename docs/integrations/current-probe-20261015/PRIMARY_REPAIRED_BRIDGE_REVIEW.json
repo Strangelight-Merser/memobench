@@ -1,0 +1,31 @@
+{
+  "reviewer": "primary_agent",
+  "scope": "real synthetic integration regression, not benchmark",
+  "bridge_sha256": "6b0ad695c89dc233901eca4561b73a5158db339dcef41e72932394c033da1c81",
+  "products": {
+    "openclaw": {
+      "task_verification": "passed",
+      "complete_native_trace_recomputed": true,
+      "initial_file_absent": true,
+      "final_bytes_sha256": "617b6e2a3082157ea2b52af6dcf79db1619f5df2459d91d55fdc6f6a61657f8b",
+      "failed_root_read_retained": true,
+      "cleanup_verified": true,
+      "original_prediction_preserved": true,
+      "native_profile_completed": null,
+      "raw_sha256": "37766599db9f92c68a54fadeb944ef465dbcf6a4f01948d7760aabd50f2d4f72",
+      "record_sha256": "60a3e296e0040f85db996fe4cad80de073a0c4d44dcd010e7668078ff1a2bc86"
+    },
+    "kylin": {
+      "task_verification": "passed",
+      "complete_native_trace_recomputed": true,
+      "initial_file_absent": true,
+      "final_bytes_sha256": "f77c2f7ea131132dfb8c6f97c00aabe5b11e5b129bcb7cc6e1583f6f3959342a",
+      "failed_root_read_retained": true,
+      "cleanup_verified": true,
+      "original_prediction_preserved": true,
+      "native_profile_completed": true,
+      "raw_sha256": "a9c9fb3925b6e92cba7169533623ac05918f2e950108f56c16dcc16859512124",
+      "record_sha256": "9df8e6acc14169a0c42c13a3f26f4d63447b9a77a9b41eef2baa74ff58eecd41"
+    }
+  }
+}

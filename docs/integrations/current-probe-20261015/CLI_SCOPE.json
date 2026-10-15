@@ -1,0 +1,31 @@
+{
+  "fixed_at": "2026-10-15T05:54:46.551352+00:00",
+  "scope": "bounded real integration acceptance; not full 94-variant comparison",
+  "selection_reason": "Exact-byte file task selected before model results to exercise complete original 80 observations, session transitions, native response, remote file audit and report. Complete probes separately cover recall/profile/isolation.",
+  "recipe": {
+    "schema_version": "native-run-recipe-1",
+    "dataset": "data/v0.2-ai-reviewed",
+    "split": "test",
+    "products": [
+      "kylin",
+      "openclaw"
+    ],
+    "purpose": "internal_evaluation",
+    "case_selection": [
+      {
+        "story_id": "e6a7a9059f826b02f8edd920",
+        "variant_id": "d012611aa89b90909fcea7b9"
+      }
+    ]
+  },
+  "products": 2,
+  "cases_per_product": 1,
+  "observations_per_case": 80,
+  "queries_per_case": 1,
+  "max_initial_product_calls": 162,
+  "automatic_case_retries": 0,
+  "provider_requests": null,
+  "estimated_cost": null,
+  "native_memory_and_profile": "remain enabled",
+  "full_batch_started": false
+}

@@ -1,0 +1,17 @@
+{
+  "model_calls": 0,
+  "actual_native_function": "loadWorkspaceBootstrapFiles",
+  "skipBootstrap_source_semantics": "ensureBootstrapFiles: !skipBootstrap controls seed creation; existing file load independent",
+  "results": [
+    {
+      "phase": "observe",
+      "native_loaded_text": "PUBLIC PHASE observe",
+      "missing": false
+    },
+    {
+      "phase": "query",
+      "native_loaded_text": "PUBLIC PHASE query",
+      "missing": false
+    }
+  ]
+}

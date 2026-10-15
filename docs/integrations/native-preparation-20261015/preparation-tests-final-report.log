@@ -1,0 +1,9 @@
+test_complete_human_export_prepare_official_run_without_network (test_native_preparation_v2.NativePreparationTests.test_complete_human_export_prepare_official_run_without_network) ... ok
+test_moved_probe_bundle_relative_exports_and_stale_config (test_native_preparation_v2.NativePreparationTests.test_moved_probe_bundle_relative_exports_and_stale_config) ... ok
+test_pending_and_missing_probe_never_emit_runnable_config (test_native_preparation_v2.NativePreparationTests.test_pending_and_missing_probe_never_emit_runnable_config) ... ok
+test_prepared_dataset_change_is_blocked_before_transport (test_native_preparation_v2.NativePreparationTests.test_prepared_dataset_change_is_blocked_before_transport) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 6.189s
+
+OK

@@ -1,0 +1,90 @@
+{
+  "reviewer": "primary_agent",
+  "review_method": "independent_evidence_recomputation",
+  "original_observations": 80,
+  "products": {
+    "openclaw": {
+      "case_sha256": "254b5d63c49e1c98f653a655b17aa80834e911bef9a059587e59b25f40c29bd0",
+      "raw_sha256": "c7965d7030f4e78696acf037de18c9b39db0b6530116f47f977c818fe485fe19",
+      "bridge_sha256": "1b22e1637d4c535f64d074347ebede46b4291172ce73eb938d01c5f430097d6d",
+      "public_input_exact_match": true,
+      "single_attempt": true,
+      "operation_counts": {
+        "reset_case": 1,
+        "begin_session": 2,
+        "observe": 80,
+        "end_session": 1,
+        "query": 1,
+        "close": 1
+      },
+      "all_operations_completed": true,
+      "cleanup_verified": true,
+      "prediction_matches_raw_native_answer": true,
+      "native_profile_completed_turns": null,
+      "marker_before_exact_READY": true,
+      "marker_after_exact_READY": true,
+      "marker_changed_by_query": false,
+      "independently_recomputed_verification": {
+        "status": "blocked",
+        "reason": "native tool audit incomplete"
+      },
+      "original_task_status": "blocked: artifact_evidence_not_verified",
+      "original_scoring_status": "pending_review",
+      "original_attempt_status": "failed"
+    },
+    "kylin": {
+      "case_sha256": "95f95831e8b9c47f42f7d448535ea70444baf9a21904f27c87025dedd53cb873",
+      "raw_sha256": "e81ad9aae247288e144b9810bc2a438511aaf960581daaf5f19a3dff99fe7b12",
+      "bridge_sha256": "1b22e1637d4c535f64d074347ebede46b4291172ce73eb938d01c5f430097d6d",
+      "public_input_exact_match": true,
+      "single_attempt": true,
+      "operation_counts": {
+        "reset_case": 1,
+        "begin_session": 2,
+        "observe": 80,
+        "end_session": 2,
+        "query": 1,
+        "close": 1
+      },
+      "all_operations_completed": true,
+      "cleanup_verified": true,
+      "prediction_matches_raw_native_answer": true,
+      "native_profile_completed_turns": 81,
+      "marker_before_exact_READY": true,
+      "marker_after_exact_READY": true,
+      "marker_changed_by_query": false,
+      "independently_recomputed_verification": {
+        "status": "failed",
+        "checks": [
+          {
+            "status": "failed",
+            "faults": [
+              "action_trace_mismatch"
+            ]
+          }
+        ],
+        "faults": [
+          "action_trace_mismatch"
+        ],
+        "binding": {
+          "bridge_sha256": "1b22e1637d4c535f64d074347ebede46b4291172ce73eb938d01c5f430097d6d",
+          "episode_id": "5668053304ca40ac9ef62563",
+          "namespace": "82f950d1044c492b826ce9de3bb1dbed",
+          "operation_id": "1f46e3d8b1834ee8abb862478a14008a:a545b1418c53463eb3dffd36c0a60ee7:query:a076af63e844e732c2fa1d3a",
+          "run": "memobench-native-_otdkjyd",
+          "session_id": "d3302b8b37c4d884c5d1d776",
+          "variant_id": "d012611aa89b90909fcea7b9"
+        },
+        "artifacts": {
+          "markers/ready.txt": "c2e3ac47f4a325469c1a2d5f117e463ec943c721986d5d9f09ac4540b7d80526"
+        },
+        "deleted_paths": [],
+        "audit_coverage": "direct_file_tools_only; exec and render unsupported",
+        "source": "bridge_workspace_bytes_and_native_tool_trace"
+      },
+      "original_task_status": "failed",
+      "original_scoring_status": "pending_review",
+      "original_attempt_status": "completed"
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "kylin": {
+    "status": "incomplete",
+    "checks": {
+      "same_session": true,
+      "cross_session": true,
+      "cross_case_no_canary": true,
+      "cross_case_unknown": false,
+      "profile_cross_session": true,
+      "cleanup": true,
+      "file_task": true,
+      "profile_turns_completed": true,
+      "profile_persisted": true,
+      "profile_prompt_injected": true
+    },
+    "exports": [
+      {
+        "namespace": "3c08f135eb6c4c64a7405b8b9a06967e",
+        "path": "3c08f135eb6c4c64a7405b8b9a06967e.json",
+        "sha256": "594c3ae76422441f3c629a46684f158077df37e586b661578fd3ef5db5634814"
+      },
+      {
+        "namespace": "f680b7fd99a44e1e8bed89ed8db92d05",
+        "path": "f680b7fd99a44e1e8bed89ed8db92d05.json",
+        "sha256": "7af8c1db35a89dab9c0a3368dd72a7c89b41b2e890aceaa8942aae87f4579575"
+      },
+      {
+        "namespace": "f7c305f3d9c64def89d4134c2ecc757d",
+        "path": "f7c305f3d9c64def89d4134c2ecc757d.json",
+        "sha256": "65c5ef05348f04e67007b7bf574617a008b9670c50e05cc614a04a2a8b85c08b"
+      }
+    ],
+    "cleanup_receipts": [
+      {
+        "operation_id": "ae17f2ac71c74ebc912621fe232ac3e1",
+        "status": "ready",
+        "usage": null
+      },
+      {
+        "operation_id": "a7706d5b770a40d8a227e229d74a3111",
+        "status": "ready",
+        "usage": null
+      },
+      {
+        "operation_id": "2f7ec36a74ed4bfda9808f7901101319",
+        "status": "ready",
+        "usage": null
+      }
+    ],
+    "probe_sha256": "ed14f340b6be9ee54e97eda4e81638d918ead23d212b36214f1dfa5552b9decb"
+  },
+  "openclaw": {
+    "status": "passed",
+    "checks": {
+      "same_session": true,
+      "cross_session": true,
+      "cross_case_no_canary": true,
+      "cross_case_unknown": true,
+      "cleanup": true,
+      "file_task": true
+    },
+    "exports": [
+      {
+        "namespace": "b8994fecead14167b1bfb491c105e6c5",
+        "path": "b8994fecead14167b1bfb491c105e6c5.json",
+        "sha256": "546238cb820efe797f334af03e7756e19de12e89b8cfc9cf1effa77b0af16656"
+      },
+      {
+        "namespace": "ea36de2bf13c4cdd891fa2f862e341c1",
+        "path": "ea36de2bf13c4cdd891fa2f862e341c1.json",
+        "sha256": "8506e6f49017213d3e7e2d234025859c9c4f265cf002b8f2737c3c2c04f7d5e0"
+      }
+    ],
+    "cleanup_receipts": [
+      {
+        "operation_id": "3bba70339489494d9e21f2480bfc7260",
+        "status": "ready",
+        "usage": null
+      },
+      {
+        "operation_id": "857bfea87dee4701862d91d3157044e3",
+        "status": "ready",
+        "usage": null
+      }
+    ],
+    "probe_sha256": "c32089d6406c444593b4e304eef83490093bcfa702c7c96398397e244664cbb2"
+  },
+  "openclaw_smoke": {
+    "task_status": "passed",
+    "observation_task_empty": true,
+    "observation_policy": "observe",
+    "query_policy": "query",
+    "query_baseline_empty": true,
+    "audit_complete": true,
+    "closed": true,
+    "raw_sha256": "07118c5ac11ca3de69c100c592d46883ba2011ebe1c47655148a82cd0dfcf12d",
+    "native_injection_reports": {
+      "observe": {
+        "agents_file": {
+          "name": "AGENTS.md",
+          "path": "/home/mb/case/agent-workspace/AGENTS.md",
+          "missing": false,
+          "rawChars": 399,
+          "injectedChars": 399,
+          "truncated": false
+        },
+        "expected_file_chars": 400,
+        "system_prompt_hash": "ed1402b34df713b032022666b718b0a090670b91742e528b6f63333e4c48e939",
+        "memory_file_injected": false,
+        "finalPromptText_is_public_user_message": true
+      },
+      "query": {
+        "agents_file": {
+          "name": "AGENTS.md",
+          "path": "/home/mb/case/agent-workspace/AGENTS.md",
+          "missing": false,
+          "rawChars": 227,
+          "injectedChars": 227,
+          "truncated": false
+        },
+        "expected_file_chars": 228,
+        "system_prompt_hash": "0320a45c407a208c52679ba6933ab467bd08fda45c2a7f9664245ea30dba66d6",
+        "memory_file_injected": true,
+        "finalPromptText_is_public_user_message": true
+      }
+    }
+  },
+  "product_calls_completed": 14,
+  "kylin_smoke_started": false,
+  "automatic_retries": 0
+}

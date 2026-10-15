@@ -1,0 +1,13 @@
+{
+  "reviewer": "primary_agent",
+  "status": "approved_for_bounded_real_validation",
+  "bridge_sha256": "d1e29805c756dd99aff69d2f4a906f52163d87df274000d64acedc99daaf541d",
+  "only_change": "OpenClaw tools.toolSearch=false, tools.codeMode=false",
+  "native_memory_and_allowlist_unchanged": true,
+  "audit_and_scoring_unchanged": true,
+  "native_catalog_verified": true,
+  "tests": 254,
+  "kylin_complete_evidence_reused_from_bridge": "66428d8276ff544a2c24234f619ac586cba8e0e876399884f7e1425a744bf02e",
+  "preserved_files_verified": 112,
+  "old_openclaw_failure_retained": true
+}

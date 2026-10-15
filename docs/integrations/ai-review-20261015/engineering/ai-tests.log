@@ -1,0 +1,10 @@
+test_internal_status_cannot_run_public_purpose_or_grant_license (test_ai_approval_v2.AIApprovalTests.test_internal_status_cannot_run_public_purpose_or_grant_license) ... ok
+test_original_edit_missing_and_variant_change_fail (test_ai_approval_v2.AIApprovalTests.test_original_edit_missing_and_variant_change_fail) ... ok
+test_primary_unchecked_original_cannot_be_promoted_by_package_boolean (test_ai_approval_v2.AIApprovalTests.test_primary_unchecked_original_cannot_be_promoted_by_package_boolean) ... ok
+test_real_artifact_package_import_internal_only_reject_exclusion (test_ai_approval_v2.AIApprovalTests.test_real_artifact_package_import_internal_only_reject_exclusion) ... ok
+test_same_identity_digest_reference_and_decision_fail (test_ai_approval_v2.AIApprovalTests.test_same_identity_digest_reference_and_decision_fail) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 2.833s
+
+OK

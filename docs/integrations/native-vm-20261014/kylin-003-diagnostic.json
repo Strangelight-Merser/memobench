@@ -1,0 +1,20 @@
+{
+  "source": "Live read of VM native logs before case cleanup; excerpt transcribed from tool output, not a full log export",
+  "namespace": "e5b7daf2b80e4c6eae26930664b378c7",
+  "log_path": "home/.kylin-agent-runtime/logs/agent.log",
+  "events": [
+    {
+      "guest_time": "2026-10-15 10:33:20",
+      "event": "DeepSeek HTTP 503; native retry after 2.483948792637236 seconds"
+    },
+    {
+      "guest_time": "2026-10-15 10:33:38.471",
+      "event": "Turn ended: reason=completion_review:completed model=deepseek-flash api_calls=3/12 budget=4/12 tool_turns=2 last_msg_role=assistant response_len=486 session=20261015_103311_34567f"
+    },
+    {
+      "guest_time": "2026-10-15 10:33:38.475",
+      "event": "User-profile extraction LLM call starting: messages=2 model=deepseek-flash attempt=1/1"
+    }
+  ],
+  "conclusion": "Process did not exit before the bridge 300 second timeout. Main-turn completion does not prove profile extraction completion."
+}

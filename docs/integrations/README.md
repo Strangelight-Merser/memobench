@@ -1,4 +1,12 @@
-# 卡4：真实智能体接入与隔离
+当前内部评测采用 [独立 AI 审核与主复核](ai-review-20261015/ENGINEERING.md)，默认 recipe 已指向新审核目录；原始数据和以下历史卡接口记录保留。
+
+# 真实智能体接入与隔离
+
+最新：[观察阶段协议修复与完整真实验收](phase-protocol-20261015/README.md)。两产品当前完整 probe 已通过；各 80 条观察、两会话、最终新建精确文件和清理均通过严格验收，主代理与独立 AI 已复算原始证据。Kylin 的 81 次原生画像处理均完成，原生记忆未关闭。各版失败记录仍保留，不用于排名。历史画像修复见 [KYLIN_PROFILE_FIX.md](KYLIN_PROFILE_FIX.md)。
+
+新增 openKylin VM 产品桥和小规模在线验收，当前结果见 [NATIVE_VM.md](NATIVE_VM.md)。以下为卡4阶段的原始通用适配层记录，保留历史证据；其中本机 PATH 和 VM 状态不代表最新接入状态。
+
+## 卡4历史记录
 
 本次交付通用 subprocess 适配器、JSON-over-HTTP 客户端、native 生命周期控制与离线测试。
 **两款真实智能体接入仍为 blocked，不能进入正式 native 排名。** 没有为未知安装版本编造参数或响应格式；产品专用桥接绑定仍需现场源码与帮助探测后实现、验收。本目录中的假进程测试不是 Kylin Agent Runtime / OpenClaw 的实测。
@@ -126,3 +134,7 @@ PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover tests
 未知 flush 阻断、清理失败、重启拒绝、所有角色、gold 剥离、shell 文本数据化、
 证据与输出归属、HTTP 错误不重试、重定向拒绝以及无安装/无凭据探测。
 既有源码和测试未修改；未 git commit；核心新增代码仅使用标准库。
+
+2026-10-15：已接通 [远端真实文件审计与人工审批闭环](native-audit-20261015/ENGINEERING.md)，包含两产品各一次真实开发文件任务、默认 bridge 部署回执、无 API 生命周期检查及未签收审核包入口。数据与许可仍待人签收。
+
+当前正式入口使用 [native 准备 recipe 与 dry plan](native-preparation-20261015/ENGINEERING.md)：审批数据和产品接入分别验证，自动生成可审阅配置，缺条件不创建 transport。

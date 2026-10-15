@@ -1,0 +1,29 @@
+{
+  "schema_version": "internal-use-source-check-1",
+  "reviewer_identity": {
+    "id": "/root",
+    "model": "unreported",
+    "kind": "ai"
+  },
+  "reviewed_at": "2026-10-15T05:34:34.427348+00:00",
+  "sources_sha256": "a89ef47eff965454edfd4e7b10bf36ca2d7626f4a27bf2b71f3355a6d0512264",
+  "source_file_sha256": "2d5c046750fc9f82abbb6788a671c8c14bc16399de27cd573432d8b537118926",
+  "generation_record_sha256": "21e80dfaeef0216c5b0f8679c322e559e8cc22b1f34cc7c9426c347bd3674b16",
+  "authorization": {
+    "origin": "direct_user_message_current_thread",
+    "text": "那就按独立 AI 审核来，直接安排子代理审，你负责复核，把项目自设的人工审核门槛调整好，能自己处理的做完，别再让我填表了。",
+    "scope": "Internal project evaluation under independent AI review and primary AI review; no public licensing or publication is implied."
+  },
+  "source_findings": {
+    "stories": 60,
+    "source_types": [
+      "authored_synthetic_ai_assisted"
+    ],
+    "generation_record_declares_offline_ai_assisted_synthetic": true,
+    "observed_content": "All 60 source stories directly read; fictional task settings and synthetic canaries. No imported third-party dialogue corpus or real-user log provenance is present in these materials."
+  },
+  "allowed_use": "internal_evaluation_only",
+  "public_redistribution_authorized": false,
+  "public_license_id": null,
+  "is_human_license_signature": false
+}

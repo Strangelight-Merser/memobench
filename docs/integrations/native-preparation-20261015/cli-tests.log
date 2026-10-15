@@ -1,0 +1,11 @@
+test_empty_calibration_is_not_pass (test_cli_v2.CLITests.test_empty_calibration_is_not_pass) ... ok
+test_invalid_config_no_secret_echo (test_cli_v2.CLITests.test_invalid_config_no_secret_echo) ... ok
+test_matrix_help (test_cli_v2.CLITests.test_matrix_help) ... ok
+test_native_blocked_even_with_live_no_transport (test_cli_v2.CLITests.test_native_blocked_even_with_live_no_transport) ... ok
+test_run_report_and_resume (test_cli_v2.CLITests.test_run_report_and_resume) ... ok
+test_validate_current_candidates (test_cli_v2.CLITests.test_validate_current_candidates) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 8.211s
+
+OK

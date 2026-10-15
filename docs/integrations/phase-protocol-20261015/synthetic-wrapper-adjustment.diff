@@ -1,0 +1,11 @@
+--- docs/integrations/phase-protocol-20261015/tests-before/verify_remote_audit_synthetic.py
++++ tools/verify_remote_audit_synthetic.py
+@@ -37,7 +37,7 @@
+     return real_run(*args,**kwargs)
+ bridge.subprocess.run=run_without_profile
+ # Native transcript source is synthetic. Never execute a real product or API.
+-def invoke(home,product,provider,text,session):
++def invoke(home,product,provider,text,session,phase):
+     session.setdefault('product_session','synthetic-'+uuid.uuid4().hex)
+     sid=session['product_session']
+     try: task=json.loads(text)

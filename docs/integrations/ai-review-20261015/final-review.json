@@ -1,0 +1,20 @@
+{
+  "reviewer": "/root",
+  "is_human_review": false,
+  "checks": {
+    "protected_87_unchanged": true,
+    "original_sources_byte_identical": true,
+    "test_94_variants": true,
+    "test_47_stories": true,
+    "qinghe_excluded": true,
+    "review_method_independent_ai": true,
+    "no_unseen_holdout_claim": true,
+    "framework_exposure_records_both": true,
+    "independent_review_archived_exact_bytes": true,
+    "primary_review_archived_exact_bytes": true,
+    "full_suite_237_pass": true
+  },
+  "changed_protected_files": [],
+  "all_passed": true,
+  "verification": "Independent source/semantic review recorded in primary-review.json; engineering inspected and original 5 AI-gate tests independently rerun; full 237 test log inspected; imported dataset separately validate-only checked accepted_internal."
+}

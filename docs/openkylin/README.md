@@ -1,3 +1,5 @@
+当前虚拟机操作通道见 [VM_ACCESS.md](VM_ACCESS.md)，真实智能体接入见 [NATIVE_VM.md](../integrations/NATIVE_VM.md)。[当前版本完整接入与真实验收](../integrations/phase-protocol-20261015/README.md) 提供最新原始证据。下文保留原环境与验收说明。
+
 # 卡5：文件任务与 openKylin 验收
 
 核心只依赖标准库，不调用网络、不需要 root、不安装软件。

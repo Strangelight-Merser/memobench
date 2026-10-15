@@ -1,0 +1,10 @@
+test_duplicate_missing_unknown_timestamp_stale_exposure (test_approval_v2.ApprovalTests.test_duplicate_missing_unknown_timestamp_stale_exposure) ... ok
+test_import_only_new_copy_and_preserves_original_review (test_approval_v2.ApprovalTests.test_import_only_new_copy_and_preserves_original_review) ... ok
+test_manifest_string_cannot_replace_human_approval (test_approval_v2.ApprovalTests.test_manifest_string_cannot_replace_human_approval) ... ok
+test_pending_template_and_real_independent_license_gate (test_approval_v2.ApprovalTests.test_pending_template_and_real_independent_license_gate) ... ok
+test_rules_change_invalidates_approval (test_approval_v2.ApprovalTests.test_rules_change_invalidates_approval) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.453s
+
+OK

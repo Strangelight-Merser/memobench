@@ -1,0 +1,69 @@
+[
+  {
+    "session": "20261015_110908_4ad50e",
+    "profile_completed": true,
+    "profile_prompt_present": true,
+    "events": [
+      "2026-10-15 11:09:32,646 INFO [20261015_110908_4ad50e] agent.user_profile.extractors: Profile HTTP response complete: elapsed=3.618s keepalive_chunks=0 bytes=460",
+      "2026-10-15 11:09:32,647 INFO [20261015_110908_4ad50e] agent.user_profile_runtime: User-profile extraction skipped: precheck found no profile update"
+    ]
+  },
+  {
+    "session": "20261015_110717_d87271",
+    "profile_completed": true,
+    "profile_prompt_present": true,
+    "events": [
+      "2026-10-15 11:07:40,956 INFO [20261015_110717_d87271] agent.user_profile.extractors: Profile HTTP response complete: elapsed=3.630s keepalive_chunks=0 bytes=464",
+      "2026-10-15 11:07:40,957 INFO [20261015_110717_d87271] agent.user_profile_runtime: User-profile extraction LLM call starting: messages=2 model=deepseek-flash attempt=1/2",
+      "2026-10-15 11:07:44,911 INFO [20261015_110717_d87271] agent.user_profile.extractors: Profile HTTP response complete: elapsed=3.953s keepalive_chunks=0 bytes=745",
+      "2026-10-15 11:07:44,918 INFO [20261015_110717_d87271] agent.user_profile_runtime: User-profile extraction LLM call completed: applied=1 deleted=0 conflicts=0 rejected=0 attempts=1"
+    ]
+  },
+  {
+    "session": "20261015_110801_5dcbde",
+    "profile_completed": true,
+    "profile_prompt_present": true,
+    "events": [
+      "2026-10-15 11:09:05,775 INFO [20261015_110801_5dcbde] agent.user_profile.extractors: Profile HTTP response complete: elapsed=3.563s keepalive_chunks=0 bytes=464",
+      "2026-10-15 11:09:05,776 INFO [20261015_110801_5dcbde] agent.user_profile_runtime: User-profile extraction skipped: precheck found no profile update"
+    ]
+  },
+  {
+    "session": "20261015_110801_5dcbde",
+    "profile_completed": true,
+    "profile_prompt_present": true,
+    "events": [
+      "2026-10-15 11:08:39,148 INFO [20261015_110801_5dcbde] agent.user_profile.extractors: Profile HTTP response complete: elapsed=2.975s keepalive_chunks=0 bytes=464",
+      "2026-10-15 11:08:39,148 INFO [20261015_110801_5dcbde] agent.user_profile_runtime: User-profile extraction skipped: precheck found no profile update"
+    ]
+  },
+  {
+    "session": "20261015_110717_d87271",
+    "profile_completed": true,
+    "profile_prompt_present": true,
+    "events": [
+      "2026-10-15 11:08:00,067 INFO [20261015_110717_d87271] agent.user_profile.extractors: Profile HTTP response complete: elapsed=2.785s keepalive_chunks=0 bytes=464",
+      "2026-10-15 11:08:00,068 INFO [20261015_110717_d87271] agent.user_profile_runtime: User-profile extraction skipped: precheck found no profile update"
+    ]
+  },
+  {
+    "session": "20261015_110952_ab73a1",
+    "profile_completed": true,
+    "profile_prompt_present": true,
+    "events": [
+      "2026-10-15 11:10:09,332 INFO [20261015_110952_ab73a1] agent.user_profile.extractors: Profile HTTP response complete: elapsed=2.221s keepalive_chunks=0 bytes=460",
+      "2026-10-15 11:10:09,332 INFO [20261015_110952_ab73a1] agent.user_profile_runtime: User-profile extraction skipped: precheck found no profile update"
+    ]
+  },
+  {
+    "session": "20261015_110934_45cc35",
+    "profile_completed": true,
+    "profile_prompt_present": true,
+    "events": [
+      "2026-10-15 11:09:47,988 INFO [20261015_110934_45cc35] agent.user_profile.extractors: Profile HTTP response complete: elapsed=2.415s keepalive_chunks=0 bytes=460",
+      "2026-10-15 11:09:47,989 INFO [20261015_110934_45cc35] agent.user_profile_runtime: User-profile extraction LLM call starting: messages=2 model=deepseek-flash attempt=1/2",
+      "2026-10-15 11:09:51,022 INFO [20261015_110934_45cc35] agent.user_profile.extractors: Profile HTTP response complete: elapsed=3.032s keepalive_chunks=0 bytes=697",
+      "2026-10-15 11:09:51,028 INFO [20261015_110934_45cc35] agent.user_profile_runtime: User-profile extraction LLM call completed: applied=1 deleted=0 conflicts=0 rejected=0 attempts=1"
+    ]
+  }
+]

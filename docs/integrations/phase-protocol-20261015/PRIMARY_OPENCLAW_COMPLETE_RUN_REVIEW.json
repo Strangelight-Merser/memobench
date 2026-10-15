@@ -1,0 +1,34 @@
+{
+  "reviewer": "primary_agent",
+  "bridge_sha256": "d1e29805c756dd99aff69d2f4a906f52163d87df274000d64acedc99daaf541d",
+  "scope": "selected products; original complete case; no full benchmark ranking",
+  "products": {
+    "openclaw": {
+      "public_input_exact_match": true,
+      "observations_verified": 80,
+      "empty_task_workspace_throughout_observe": true,
+      "phase_policy_separate_from_user_text": true,
+      "original_query_unchanged": true,
+      "single_attempt": true,
+      "operation_counts": {
+        "reset_case": 1,
+        "begin_session": 2,
+        "observe": 80,
+        "end_session": 2,
+        "query": 1,
+        "close": 1
+      },
+      "cleanup_verified": true,
+      "native_profile_completed_turns": null,
+      "final_file_newly_created": true,
+      "exact_file_bytes": "READY",
+      "file_size": 5,
+      "file_sha256": "c2e3ac47f4a325469c1a2d5f117e463ec943c721986d5d9f09ac4540b7d80526",
+      "native_trace_independently_recomputed": true,
+      "task_verification": "passed",
+      "original_scoring_status": "pending_review",
+      "raw_sha256": "b50dee9ddccc571fb4ce9f9a10776d2a10e404da9844185e9e88863553dba1ab",
+      "case_sha256": "625f6a1fc9053c07d1942eccdd034be02a2109c429e49ea8abb5a49f23ee274f"
+    }
+  }
+}

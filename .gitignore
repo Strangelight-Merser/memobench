@@ -6,3 +6,4 @@ artifacts/
 .codex-logs/
 /data/*
 !/data/v0.2/
+!/data/v0.2-ai-reviewed/

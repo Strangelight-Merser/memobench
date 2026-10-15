@@ -1,0 +1,23 @@
+{
+  "observe": {
+    "native_task_status": "completed",
+    "profile_completed": true,
+    "task_workspace_unchanged": true,
+    "phase": "observe",
+    "kylin_toolsets": "memory",
+    "public_text_sha256": "b7caeb25423f10f7035d8d2c656c954d632e45c4c9bcfac4aee8cfbad5cf39f8",
+    "system_policy_sha256": "d90106c389da0d4446dc9251da1c531ef9c5f210b903231ef8dd05444e5c30e7"
+  },
+  "query": {
+    "native_task_status": "completed",
+    "profile_completed": true,
+    "task_workspace_unchanged": null,
+    "phase": "query",
+    "kylin_toolsets": "memory,file",
+    "public_text_sha256": "6ebe85ece810ff1413a4a8037eaa5f1c3b76b3687527e623455e56e2251d0309",
+    "system_policy_sha256": "24cfb75c813ff2811a546923e329d7b8a399bc07d7db0a5d214ab010c569a978",
+    "task_baseline_empty": true,
+    "audit_complete": true
+  },
+  "closed": true
+}

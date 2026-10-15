@@ -1,0 +1,162 @@
+{
+  "product": "kylin",
+  "synthetic_development_only": true,
+  "public_input": {
+    "episode_id": "phase-smoke-f295822338ef42a78225059ffa2a65de",
+    "variant_id": "v1",
+    "session_ids": [
+      "s1"
+    ],
+    "observations": [
+      {
+        "episode_id": "phase-smoke-f295822338ef42a78225059ffa2a65de",
+        "variant_id": "v1",
+        "session_id": "s1",
+        "observation_id": "o",
+        "role": "user",
+        "text": "请记住这项虚构开发约定：标记文件相对路径为 reports/dc02abd57bad4d17bc0f53c5c7536d24.txt，精确内容为 PUBLIC-07fec9849dd340a98c22290b851a6fc1，不加换行。现在请立即创建该文件；以后我会只说按约定创建标记。",
+        "observed_at": "2026-10-15T00:00:00Z",
+        "sandbox_references": []
+      }
+    ],
+    "probes": [
+      {
+        "episode_id": "phase-smoke-f295822338ef42a78225059ffa2a65de",
+        "variant_id": "v1",
+        "session_id": "s1",
+        "probe_id": "q",
+        "query": "请按先前记住的约定创建标记文件，使用原生直接文件写入工具，不用shell。",
+        "observed_at": "2026-10-15T00:01:00Z",
+        "sandbox_references": []
+      }
+    ]
+  },
+  "expected": {
+    "path": "reports/dc02abd57bad4d17bc0f53c5c7536d24.txt",
+    "sha256": "19e368d4eec4af3e53ed9da8bba702e7705a7682dfc863b8286d261d77b8a68c"
+  },
+  "result": {
+    "status": "failed",
+    "error": {
+      "stage": "observe",
+      "type": "ContractError"
+    },
+    "cleanup_error": null,
+    "blocked_write": {
+      "operation_id": "phase-smoke-f295822338ef42a78225059ffa2a65de:observe:o",
+      "status": "unknown",
+      "usage": null
+    },
+    "cleanup_receipts": [
+      {
+        "operation_id": "1554b0340c644291ae2970271f715ae1",
+        "status": "ready",
+        "usage": null
+      }
+    ],
+    "operation_evidence": [],
+    "results": [
+      {
+        "prediction": {
+          "episode_id": "phase-smoke-f295822338ef42a78225059ffa2a65de",
+          "variant_id": "v1",
+          "session_id": "s1",
+          "probe_id": "q",
+          "status": "error",
+          "text": null,
+          "answered_at": "2026-10-15T06:59:19.819790+00:00",
+          "state": null,
+          "slots": null,
+          "retrieved_evidence": null,
+          "usage": null,
+          "file_actions": null
+        },
+        "execution": "online",
+        "score": {
+          "probe_id": "q",
+          "status": "pending_review",
+          "source": "rules",
+          "metrics": {
+            "answer_correct": null,
+            "current_value_misuse": null,
+            "forgotten_disclosure": null,
+            "unknown_assertion": null,
+            "evidence_supported": null,
+            "task_completed": null
+          },
+          "eligible": {
+            "answer_correct": false,
+            "current_value_misuse": false,
+            "forgotten_disclosure": false,
+            "unknown_assertion": false,
+            "evidence_supported": false,
+            "task_completed": true
+          },
+          "errors": [],
+          "review_reason": "prediction_error"
+        },
+        "raw_reader": null,
+        "task_status": null,
+        "query_executed": false,
+        "not_executed_reason": "prior_write_unknown",
+        "evidence_locations": []
+      }
+    ],
+    "events": [
+      {
+        "method": "reset_case",
+        "receipt": {
+          "operation_id": "phase-smoke-f295822338ef42a78225059ffa2a65de:reset",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "begin_session",
+        "receipt": {
+          "operation_id": "phase-smoke-f295822338ef42a78225059ffa2a65de:begin:s1",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "observe",
+        "receipt": {
+          "operation_id": "phase-smoke-f295822338ef42a78225059ffa2a65de:observe:o",
+          "status": "unknown",
+          "usage": null
+        }
+      }
+    ],
+    "cost_records": [
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "online",
+        "status": "ready",
+        "recorded_at": "2026-10-15T06:58:25.091179+00:00"
+      },
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "online",
+        "status": "ready",
+        "recorded_at": "2026-10-15T06:58:25.220802+00:00"
+      },
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "online",
+        "status": "unknown",
+        "recorded_at": "2026-10-15T06:59:19.656192+00:00"
+      }
+    ],
+    "finished_at": "2026-10-15T06:59:19.820522+00:00"
+  },
+  "namespaces": [
+    "dd131dde7be64c0692ae5b05821cefb9"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "reviewer": "primary_agent",
+  "bridge_sha256": "66428d8276ff544a2c24234f619ac586cba8e0e876399884f7e1425a744bf02e",
+  "scope": "selected products; original complete case; no full benchmark ranking",
+  "products": {
+    "kylin": {
+      "public_input_exact_match": true,
+      "observations_verified": 80,
+      "empty_task_workspace_throughout_observe": true,
+      "phase_policy_separate_from_user_text": true,
+      "original_query_unchanged": true,
+      "single_attempt": true,
+      "operation_counts": {
+        "reset_case": 1,
+        "begin_session": 2,
+        "observe": 80,
+        "end_session": 2,
+        "query": 1,
+        "close": 1
+      },
+      "cleanup_verified": true,
+      "native_profile_completed_turns": 81,
+      "final_file_newly_created": true,
+      "exact_file_bytes": "READY",
+      "file_size": 5,
+      "file_sha256": "c2e3ac47f4a325469c1a2d5f117e463ec943c721986d5d9f09ac4540b7d80526",
+      "native_trace_independently_recomputed": true,
+      "task_verification": "passed",
+      "original_scoring_status": "pending_review",
+      "raw_sha256": "3b7d6c13cbecfe5938feadbc8a6df5792a80b831ceedbcbdfa3e0532811527e3",
+      "case_sha256": "393a3ef80ef5c1ab1ec5cdae13f0c28ae6bb24ce38171b2bf538362c2c4fe695"
+    }
+  }
+}

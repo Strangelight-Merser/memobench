@@ -1,0 +1,20 @@
+{
+  "run": "native-kylin-007",
+  "status": "passed",
+  "started_at": "2026-10-15T03:07:16.474098+00:00",
+  "finished_at": "2026-10-15T03:10:10.471899+00:00",
+  "checks": {
+    "same_session": true,
+    "cross_session": true,
+    "cross_case_no_canary": true,
+    "profile_cross_session": true,
+    "cleanup": true,
+    "profile_turns_completed": true,
+    "file_task": true,
+    "profile_prompt_injected": true,
+    "profile_persisted": true
+  },
+  "native_profile_turns": 7,
+  "native_memory_disabled": false,
+  "publish_ranking": false
+}

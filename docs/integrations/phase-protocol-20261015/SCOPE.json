@@ -1,0 +1,63 @@
+{
+  "objective": "Repair observe/query task-side-effect protocol without changing original data, old evidence, native memory, or task scoring",
+  "protocol": "observe ingests unchanged public observations with native memory writable and task filesystem read-only; query enables task writes in the same case",
+  "products": [
+    "kylin",
+    "openclaw"
+  ],
+  "complete_case": {
+    "story_id": "e6a7a9059f826b02f8edd920",
+    "variant_id": "d012611aa89b90909fcea7b9",
+    "observations_per_product": 80,
+    "queries_per_product": 1,
+    "product_calls": 162,
+    "no_truncation": true,
+    "no_score_changes": true
+  },
+  "preflight": {
+    "real_filesystem_permission_checks": "no model calls",
+    "complete_integration_probes_max_product_calls": 31,
+    "phase_specific_synthetic_smoke_max_product_calls": 7
+  },
+  "max_initial_product_calls": 295,
+  "automatic_retries": 0,
+  "full_94_variant_batch": false,
+  "provider_requests": null,
+  "api_cost": null,
+  "forbidden": [
+    "overwrite old evidence",
+    "modify original data",
+    "delete early task files to fake fresh baseline",
+    "disable native memory/profile",
+    "copy gold or bridge-authored answers into memory",
+    "relax create requirements",
+    "rerun unchanged failures until green"
+  ],
+  "bounded_revision": {
+    "first_revision_actual_product_calls": 14,
+    "reason": "Kylin emitted an extra punctuation mark under strict exact-output gate; old failure unchanged; generic system formatting instruction will be added without gold or expected answer literals",
+    "second_revision_probe_max_product_calls": 12,
+    "second_revision_smoke_max_product_calls": 4,
+    "unchanged_attempt_retries": 0,
+    "no_automatic_retries": true
+  },
+  "native_reviewer_revision": {
+    "reason": "Actual native completion reviewer omitted trusted execution scope and blocked observation ingestion on a deferred create request; fix scope propagation without changing blocked handling or scoring",
+    "completed_previous_product_calls": 29,
+    "kylin_new_smoke_max_product_calls": 2,
+    "kylin_new_complete_probe_max_product_calls": 7,
+    "openclaw_unchanged_evidence_reused": true,
+    "automatic_retries": 0
+  },
+  "openclaw_direct_schema_revision": {
+    "reason": "Original long-run tool catalog compaction hid write content schema; real failed tool_call then success remains failed. Native toolSearch/codeMode false exposes existing allowed tool schemas directly without relaxing audit.",
+    "prior_revision_max_product_calls": 200,
+    "new_both_product_integration_probes": 12,
+    "new_openclaw_phase_smoke": 2,
+    "new_openclaw_complete_case": 81,
+    "additional_product_calls": 95,
+    "automatic_retries": 0,
+    "reuse_kylin_complete_case": "OpenClaw-only configuration difference; Kylin code/phase/toolsets/native source unchanged; retain exact previous bridge binding",
+    "failed_openclaw_run_retained": true
+  }
+}

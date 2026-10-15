@@ -1,0 +1,17 @@
+{
+  "README.md": "c055a1da4dabec87a56f179ea336a1779bf6d2510b75fc43be198018936095be",
+  "docs/integrations/README.md": "403e2137315a2999619a830c7aa8d818d029dbab7f30a2a3fdab5acfd9294115",
+  "memobench/data_v2.py": "34bb9fddc37e733dc9b10a0bf341c89afebf84440e8b5f83a18b432b288efd7d",
+  "memobench/approval_v2.py": "6593d545ff6eefbfb7b0595ac13c044abcdc30134d95f458af7657de0b847d16",
+  "memobench/native_artifacts_v2.py": "9ab390a5cd3b8678bf9e9d4ef8036f7637059d51bdca9d0f97d27e94dae293de",
+  "memobench/runner_v2.py": "8dea5c983635cd51f39fa3378384a2ddf5a7f6120e47916713cea2b9b3d9fed9",
+  "memobench/adapters_v2/native.py": "245af3bd14954f01c99903d202468ac0e0339b340d6418f7caf58d79f7971d87",
+  "memobench/adapters_v2/ssh_vm.py": "ef310b2afba37b31d8fdc045e4cf50fe9eb2df86bd90eb9683ad34b685c978ff",
+  "tools/native_vm_product.py": "1b22e1637d4c535f64d074347ebede46b4291172ce73eb938d01c5f430097d6d",
+  "tools/check_release.py": "97f656f0e0abbb4e0ba9bb1c1f8f1a5ad4221fecccf59661a739426f36a208dc",
+  "tools/dataset_approvals.py": "6dccfaabf9c1ff396711fc9cb1f7c70c3ec4f1f84ce6fde41171d91abe1aa83d",
+  "tools/verify_remote_audit_synthetic.py": "459eb38fd4fa27af6bf2f2ad45e922c26f2239b9d9d7448f5037dd4090a9d839",
+  "tools/verify_native_file_query.py": "ab87f41005d85e0f7380c7bfa22dce6f45b9992034a2d06e7cf7a3c68879743d",
+  "tests/test_remote_artifacts_v2.py": "70749bfb3683387b272ba831db0526e3ab94a3af6a1bd9d605829c1de6f47624",
+  "tests/test_approval_v2.py": "420d940f12b8e7db7b867f84babf9f6e36922f3c6b276b4580944c8d96c40dbd"
+}

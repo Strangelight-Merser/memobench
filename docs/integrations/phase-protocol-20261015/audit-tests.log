@@ -1,0 +1,12 @@
+test_failed_and_outside_writes_stay_rejected (test_native_audit_diagnostics_v2.NativeAuditDiagnosticsTests.test_failed_and_outside_writes_stay_rejected) ... ok
+test_failed_audit_keeps_records_and_fixed_reason (test_native_audit_diagnostics_v2.NativeAuditDiagnosticsTests.test_failed_audit_keeps_records_and_fixed_reason) ... ok
+test_failed_root_read_and_successful_write_are_audited (test_native_audit_diagnostics_v2.NativeAuditDiagnosticsTests.test_failed_root_read_and_successful_write_are_audited) ... ok
+test_plain_text_and_json_scalar_reads (test_native_audit_diagnostics_v2.NativeAuditDiagnosticsTests.test_plain_text_and_json_scalar_reads) ... ok
+test_query_prediction_survives_audit_error (test_native_audit_diagnostics_v2.NativeAuditDiagnosticsTests.test_query_prediction_survives_audit_error) ... ok
+test_transcript_integrity_checks_stay_rejected (test_native_audit_diagnostics_v2.NativeAuditDiagnosticsTests.test_transcript_integrity_checks_stay_rejected) ... ok
+test_unknown_errors_do_not_export_messages (test_native_audit_diagnostics_v2.NativeAuditDiagnosticsTests.test_unknown_errors_do_not_export_messages) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.003s
+
+OK

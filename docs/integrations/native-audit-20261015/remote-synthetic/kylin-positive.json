@@ -1,0 +1,142 @@
+{
+  "product": "kylin",
+  "synthetic_transport_audit": true,
+  "untraced_extra": false,
+  "result": {
+    "status": "failed",
+    "error": {
+      "stage": "end_session",
+      "type": "ContractError"
+    },
+    "cleanup_error": null,
+    "blocked_write": {
+      "operation_id": "kylin-positive:end:s1",
+      "status": "unknown",
+      "usage": null
+    },
+    "cleanup_receipts": [
+      {
+        "operation_id": "e5816ce1de394d58827fb1d81237f078",
+        "status": "ready",
+        "usage": null
+      }
+    ],
+    "operation_evidence": [],
+    "results": [
+      {
+        "prediction": {
+          "episode_id": "synthetic-audit",
+          "variant_id": "v",
+          "session_id": "s2",
+          "probe_id": "p",
+          "status": "error",
+          "text": null,
+          "answered_at": "2026-10-15T05:05:48.684625+00:00",
+          "state": null,
+          "slots": null,
+          "retrieved_evidence": null,
+          "usage": null,
+          "file_actions": null
+        },
+        "execution": "offline",
+        "score": {
+          "probe_id": "p",
+          "status": "pending_review",
+          "source": "rules",
+          "metrics": {
+            "answer_correct": null,
+            "current_value_misuse": null,
+            "forgotten_disclosure": null,
+            "unknown_assertion": null,
+            "evidence_supported": null,
+            "task_completed": null
+          },
+          "eligible": {
+            "answer_correct": false,
+            "current_value_misuse": false,
+            "forgotten_disclosure": false,
+            "unknown_assertion": false,
+            "evidence_supported": false,
+            "task_completed": true
+          },
+          "errors": [],
+          "review_reason": "prediction_error"
+        },
+        "raw_reader": null,
+        "task_status": null,
+        "query_executed": false,
+        "not_executed_reason": "prior_write_unknown",
+        "evidence_locations": []
+      }
+    ],
+    "events": [
+      {
+        "method": "reset_case",
+        "receipt": {
+          "operation_id": "kylin-positive:reset",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "begin_session",
+        "receipt": {
+          "operation_id": "kylin-positive:begin:s1",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "observe",
+        "receipt": {
+          "operation_id": "kylin-positive:observe:o1",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "end_session",
+        "receipt": {
+          "operation_id": "kylin-positive:end:s1",
+          "status": "unknown",
+          "usage": null
+        }
+      }
+    ],
+    "cost_records": [
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "offline",
+        "status": "ready",
+        "recorded_at": "2026-10-15T05:05:48.156467+00:00"
+      },
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "offline",
+        "status": "ready",
+        "recorded_at": "2026-10-15T05:05:48.281647+00:00"
+      },
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "offline",
+        "status": "ready",
+        "recorded_at": "2026-10-15T05:05:48.413681+00:00"
+      },
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "offline",
+        "status": "unknown",
+        "recorded_at": "2026-10-15T05:05:48.551770+00:00"
+      }
+    ],
+    "finished_at": "2026-10-15T05:05:48.685445+00:00"
+  }
+}

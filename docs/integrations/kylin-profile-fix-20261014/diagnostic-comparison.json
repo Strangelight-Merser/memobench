@@ -1,0 +1,23 @@
+{
+  "source": "Captured output from two live calls through the original native extractor before patching; both capped at 2048 tokens and 60 seconds for diagnosis",
+  "input": "synthetic software engineer / Python / concise Chinese preferences",
+  "results": [
+    {
+      "mode": "default thinking",
+      "seconds": 8.72,
+      "finish_reason": "stop",
+      "reasoning_tokens": 1270,
+      "completion_tokens": 1414,
+      "validated_updates": 3
+    },
+    {
+      "mode": "explicit non-thinking",
+      "seconds": 2.56,
+      "finish_reason": "stop",
+      "reasoning_tokens": 0,
+      "completion_tokens": 143,
+      "validated_updates": 3
+    }
+  ],
+  "limit": "These bounded calls do not reproduce or uniquely explain the historical 300-second wait."
+}

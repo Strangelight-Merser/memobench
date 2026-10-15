@@ -1,0 +1,11 @@
+{
+  "status": "preserved_failure",
+  "reason": "native tool_call wrapper unsupported; original trace also contains failed write before successful write",
+  "strict_gate_unchanged": true,
+  "do_not_relabel_passed": true,
+  "files": {
+    "docs/integrations/phase-protocol-20261015/cli-final/bridge-source.py": "66428d8276ff544a2c24234f619ac586cba8e0e876399884f7e1425a744bf02e",
+    "docs/integrations/phase-protocol-20261015/cli-final/raw-openclaw/68820279634142f6ba34f64eceaef6be.json": "976d59550988bf3f5ed9867001a95054bf5491cacf020c9ac0f7f62adb2c7e9e",
+    "docs/integrations/phase-protocol-20261015/cli-final/run-openclaw/cases/eb1e07040dd00ab8dd1feea07d0f24d2fa23c72f016a03124a23775780b9ae69.json": "b2c642bacf5bc56bf5f907795870d532065229f090ed0eae1cedd1866dd40dc4"
+  }
+}

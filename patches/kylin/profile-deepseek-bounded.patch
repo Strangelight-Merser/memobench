@@ -1,0 +1,94 @@
+diff --git a/agent/user_profile/extractors.py b/agent/user_profile/extractors.py
+index 48fc659..25cf7b0 100644
+--- a/agent/user_profile/extractors.py
++++ b/agent/user_profile/extractors.py
+@@ -4,8 +4,11 @@ from __future__ import annotations
+ 
+ import hashlib
+ import json
++import logging
+ import os
++import time
+ from typing import Literal, Protocol, Sequence
++from urllib.parse import urlparse
+ 
+ from .models import ExtractionBatch, InteractionMessage, ProfileUpdate, UserProfile
+ from .schema import schema_for_prompt
+@@ -563,6 +566,45 @@ class OpenAICompatibleProfileExtractor:
+                 answer = self._request_chat_precheck(payload)
+         return _parse_precheck_answer(answer)
+ 
++    def _chat_request_options(self) -> dict[str, object]:
++        # DeepSeek enables reasoning by default. A one-token gate can spend its
++        # entire budget on reasoning; unbounded JSON extraction can delay CLI
++        # shutdown for minutes. Keep extraction on the same model, explicitly
++        # use non-thinking structured output and bound this request.
++        if urlparse(str(getattr(self.client, "base_url", ""))).hostname == "api.deepseek.com":
++            return {"extra_body": {"thinking": {"type": "disabled"}},
++                    "max_tokens": 4096, "timeout": 15.0}
++        return {}
++
++    def _create_chat_completion(self, **kwargs):
++        if urlparse(str(getattr(self.client, "base_url", ""))).hostname != "api.deepseek.com":
++            return self.client.chat.completions.create(**kwargs)
++        from openai.types.chat import ChatCompletion
++
++        # DeepSeek sends whitespace while queued, so an idle read timeout does
++        # not bound the complete response. Read HTTP chunks (NOT model SSE),
++        # enforce elapsed time, and close the response before a native retry.
++        # A silent read is bounded separately by the 15-second SDK timeout.
++        started = time.monotonic()
++        deadline = started + 60.0
++        keepalives = 0
++        client = self.client.with_options(max_retries=0)
++        body = bytearray()
++        with client.chat.completions.with_streaming_response.create(**kwargs) as response:
++            for chunk in response.iter_bytes():
++                keepalives += int(not chunk.strip())
++                if time.monotonic() >= deadline:
++                    logging.getLogger(__name__).warning(
++                        "Profile HTTP response deadline reached: keepalive_chunks=%d", keepalives)
++                    raise TimeoutError("Profile request exceeded 60-second response deadline")
++                body.extend(chunk)
++            if time.monotonic() >= deadline:
++                raise TimeoutError("Profile request exceeded 60-second response deadline")
++        logging.getLogger(__name__).info(
++            "Profile HTTP response complete: elapsed=%.3fs keepalive_chunks=%d bytes=%d",
++            time.monotonic() - started, keepalives, len(body))
++        return ChatCompletion.model_validate_json(bytes(body))
++
+     def _request_chat_precheck(self, payload: str) -> str:
+         kwargs = {
+             "model": self.model,
+@@ -570,9 +612,10 @@ class OpenAICompatibleProfileExtractor:
+                 {"role": "system", "content": PROFILE_PRECHECK_INSTRUCTIONS},
+                 {"role": "user", "content": payload},
+             ],
++            **self._chat_request_options(),
+             **_precheck_token_limit(self.model),
+         }
+-        completion = self.client.chat.completions.create(**kwargs)  # type: ignore[attr-defined]
++        completion = self._create_chat_completion(**kwargs)
+         content = completion.choices[0].message.content
+         if not content:
+             raise RuntimeError("Chat Completions returned empty profile precheck")
+@@ -691,7 +734,7 @@ class OpenAICompatibleProfileExtractor:
+     def _request_chat_completions(
+         self, payload: dict[str, object], instructions: str
+     ) -> ExtractionBatch:
+-        completion = self.client.chat.completions.create(  # type: ignore[attr-defined]
++        completion = self._create_chat_completion(
+             model=self.model,
+             messages=[
+                 {
+@@ -704,7 +747,10 @@ class OpenAICompatibleProfileExtractor:
+                 },
+             ],
+             response_format={"type": "json_object"},
++            **self._chat_request_options(),
+         )
++        if getattr(completion.choices[0], "finish_reason", None) == "length":
++            raise RuntimeError("Chat Completions truncated profile extraction")
+         content = completion.choices[0].message.content
+         if not content:
+             raise RuntimeError("Chat Completions returned empty profile extraction")

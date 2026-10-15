@@ -1,0 +1,10 @@
+{
+  "git_status": " M README.md\n M docs/integrations/README.md\n M docs/openkylin/README.md\n M memobench/adapters_v2/native.py\n M memobench/runner_v2.py\n?? docs/integrations/KYLIN_PROFILE_FIX.md\n?? docs/integrations/NATIVE_VM.md\n?? docs/integrations/kylin-profile-fix-20261014/\n?? docs/integrations/native-vm-20261014/\n?? docs/integrations/offline-native-20261015/\n?? docs/openkylin/VM_ACCESS.md\n?? memobench/adapters_v2/factory.py\n?? memobench/adapters_v2/ssh_vm.py\n?? patches/\n?? tests/test_native_offline_v2.py\n?? tests/test_native_vm_binding.py\n?? tools/native_vm_product.py\n?? tools/probe_native_vm.py\n?? tools/vm_proxy.py\n",
+  "sha256": {
+    "memobench/data_v2.py": "20cf36d28025c004f487b3b86bc07ca9d4ab09c1639156502f797493d96e74f0",
+    "memobench/runner_v2.py": "b1c2d429fa9a0f7df3e49a5f89642b57d5f016f52757f583071a5dc3df030034",
+    "memobench/adapters_v2/native.py": "73459733b0f9fe04fb1637f060f5b8342f4939c7113cd3e6018e80e9e6020244",
+    "memobench/adapters_v2/ssh_vm.py": "c17740bc954b64152a219c76024b6e7dfa4777c3cef1e376422140f233fe8c7c",
+    "tools/native_vm_product.py": "68ff5ca85ff82c6ca10aaac55c91aa1e2ff6bec78c5bcf9add21ccd352b1d949"
+  }
+}

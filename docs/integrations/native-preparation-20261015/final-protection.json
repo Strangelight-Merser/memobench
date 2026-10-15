@@ -1,0 +1,18 @@
+{
+  "protected_files": 87,
+  "changed_protected_files": [],
+  "frozen_approval_fingerprint": "4e5672f5a3b0403f506a4be6d08e31ae5d487d45eddbe952ac2e334d936ebb0c",
+  "current_approval_fingerprint": "4e5672f5a3b0403f506a4be6d08e31ae5d487d45eddbe952ac2e334d936ebb0c",
+  "approval_context_unchanged": true,
+  "actual_dataset_validation": {
+    "validation": "ok",
+    "release_status": "pending_review",
+    "approval_fingerprint": "4e5672f5a3b0403f506a4be6d08e31ae5d487d45eddbe952ac2e334d936ebb0c",
+    "license_status": "pending_review",
+    "pending_n_story": 60,
+    "rejected_n_story": 0,
+    "n_story": 60,
+    "formal_test_n_query": 0
+  },
+  "network_or_model_calls_this_batch": 0
+}

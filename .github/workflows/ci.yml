@@ -30,6 +30,7 @@ jobs:
           python3 -m unittest discover tests 2>&1 | tee /tmp/memobench-ci/tests.log
           python3 -m memobench.cli run --distract 6 --out /tmp/memobench-ci/legacy 2>&1 | tee /tmp/memobench-ci/legacy.log
           python3 -m memobench.cli_v2 validate --dataset data/v0.2 2>&1 | tee /tmp/memobench-ci/data.log
+          python3 -m memobench.cli_v2 validate --dataset data/v0.2-ai-reviewed 2>&1 | tee /tmp/memobench-ci/data-internal.log
           python3 -m memobench.cli_v2 run --config configs/experiments/offline.json --out /tmp/memobench-ci/offline 2>&1 | tee /tmp/memobench-ci/v2.log
           python3 tools/check_release.py --root . 2>&1 | tee /tmp/memobench-ci/release.log
       - name: Keep actual offline logs

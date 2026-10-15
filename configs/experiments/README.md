@@ -1,3 +1,9 @@
+# Native 当前准备入口
+
+`native.json` 是准备 recipe，不是 run config。先用 `python3 tools/prepare_native_run.py --help`；默认使用独立 AI 审核后的 data/v0.2-ai-reviewed（内部用途）；提供 SSH 配置、两产品当前完整 probe.json 和新输出目录，生成可审阅 plan.json 及每产品运行配置。prepare 不联网；缺条件返回 blocked，不生成运行配置。无需人工填写审核表或哈希，公开许可证不阻塞内部用途；当前说明见 [AI 审核结果](../../docs/integrations/ai-review-20261015/ENGINEERING.md)，准备命令和边界见 [实际准备说明](../../docs/integrations/native-preparation-20261015/ENGINEERING.md)。
+
+以下卡6内容保留为该阶段的历史接口与验收记录，不代表当前 native 接线状态。
+
 # 卡6接口与待签收项
 
 这里只提供传输策略，不创建卡7 runner。`llm-policy.json` 是待审核策略，不能直接当作已通过的在线运行配置。当前无已批准模型、真实调用结果或价格；无联网 CI。

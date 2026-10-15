@@ -1,0 +1,282 @@
+{
+  "product": "openclaw",
+  "started_at": "2026-10-15T06:51:03.611641+00:00",
+  "scope": "synthetic integration acceptance only",
+  "bridge_sha256": "f902baf78d332e13160234c624d2714a4786e836d5e5a635a73465fd04e3a0cd",
+  "config_sha256": "0e4c9f45079c709f7486822e0f0edeca3c63e45f34ec4419145f3d50ec8b2ac3",
+  "capabilities": {
+    "native_answer": "supported",
+    "retrieved_evidence": "unsupported",
+    "write_usage": "unsupported",
+    "flush": "unsupported",
+    "restart": "unsupported",
+    "storage_inspection": "supported"
+  },
+  "canary": "MB-AC2BD48B603B",
+  "events": [
+    {
+      "method": "reset_case",
+      "receipt": {
+        "operation_id": "dd77ddcc5c284c91991c4353e81da573",
+        "status": "ready",
+        "usage": null
+      },
+      "episode_id": "memory",
+      "variant_id": "v1",
+      "session_id": null
+    },
+    {
+      "method": "begin_session",
+      "receipt": {
+        "operation_id": "f30339fad3cd4e05b4e41a06297c24a8",
+        "status": "ready",
+        "usage": null
+      },
+      "episode_id": "memory",
+      "variant_id": "v1",
+      "session_id": "s1"
+    },
+    {
+      "method": "public_observation",
+      "input": {
+        "episode_id": "memory",
+        "variant_id": "v1",
+        "session_id": "s1",
+        "observation_id": "o1",
+        "role": "user",
+        "text": "请记住：我的虚构测试项目“蓝帆”的代号是 MB-AC2BD48B603B。后面的新会话会询问，请保存到你的长期记忆。",
+        "observed_at": "2026-10-15T06:51:03.931569+00:00",
+        "sandbox_references": []
+      }
+    },
+    {
+      "method": "observe",
+      "receipt": {
+        "operation_id": "8fd6154f4d7d46038ea2fa2e1dbd368b",
+        "status": "ready",
+        "usage": null
+      },
+      "episode_id": "memory",
+      "variant_id": "v1",
+      "session_id": "s1"
+    },
+    {
+      "method": "query",
+      "operation_id": "ede11c882dd746f2bfddd3ced8255df6",
+      "input": {
+        "episode_id": "memory",
+        "variant_id": "v1",
+        "session_id": "s1",
+        "probe_id": "q1",
+        "query": "蓝帆项目的代号是什么？只回答代号；不知道就回答不知道。",
+        "observed_at": "2026-10-15T06:51:14.285055+00:00",
+        "sandbox_references": []
+      },
+      "prediction": {
+        "episode_id": "memory",
+        "variant_id": "v1",
+        "session_id": "s1",
+        "probe_id": "q1",
+        "status": "ok",
+        "text": "MB-AC2BD48B603B",
+        "answered_at": "2026-10-15T06:51:21.261565+00:00",
+        "state": null,
+        "slots": null,
+        "retrieved_evidence": null,
+        "usage": null,
+        "file_actions": null
+      }
+    },
+    {
+      "method": "end_session",
+      "receipt": {
+        "operation_id": "d0a6e98c6fe543d09e38bd639044f9b8",
+        "status": "ready",
+        "usage": null
+      },
+      "episode_id": "memory",
+      "variant_id": "v1",
+      "session_id": "s1"
+    },
+    {
+      "method": "begin_session",
+      "receipt": {
+        "operation_id": "7f8b02a513f7456a90db5534087cecd7",
+        "status": "ready",
+        "usage": null
+      },
+      "episode_id": "memory",
+      "variant_id": "v1",
+      "session_id": "s2"
+    },
+    {
+      "method": "query",
+      "operation_id": "8b1a33774cb844a68ec32fbf333213c1",
+      "input": {
+        "episode_id": "memory",
+        "variant_id": "v1",
+        "session_id": "s2",
+        "probe_id": "q2",
+        "query": "我以前告诉过你的蓝帆项目代号是什么？只回答代号；不知道就回答不知道。",
+        "observed_at": "2026-10-15T06:51:21.219730+00:00",
+        "sandbox_references": []
+      },
+      "prediction": {
+        "episode_id": "memory",
+        "variant_id": "v1",
+        "session_id": "s2",
+        "probe_id": "q2",
+        "status": "ok",
+        "text": "MB-AC2BD48B603B",
+        "answered_at": "2026-10-15T06:51:27.898803+00:00",
+        "state": null,
+        "slots": null,
+        "retrieved_evidence": null,
+        "usage": null,
+        "file_actions": null
+      }
+    },
+    {
+      "method": "query",
+      "operation_id": "3d60f6314eed483182d442e8ef212fce",
+      "input": {
+        "episode_id": "memory",
+        "variant_id": "v1",
+        "session_id": "s2",
+        "probe_id": "q3",
+        "query": "请把蓝帆项目代号写到当前工作目录的 notes/code.txt，文件只含代号和一个换行。如果不知道就不要写。",
+        "observed_at": "2026-10-15T06:51:27.557061+00:00",
+        "sandbox_references": []
+      },
+      "prediction": {
+        "episode_id": "memory",
+        "variant_id": "v1",
+        "session_id": "s2",
+        "probe_id": "q3",
+        "status": "ok",
+        "text": "已写入 `/home/mb/case/workspace/notes/code.txt`，内容为代号 `MB-AC2BD48B603B` 加一个换行。",
+        "answered_at": "2026-10-15T06:51:36.051116+00:00",
+        "state": null,
+        "slots": null,
+        "retrieved_evidence": null,
+        "usage": null,
+        "file_actions": null
+      }
+    },
+    {
+      "method": "end_session",
+      "receipt": {
+        "operation_id": "77b2d565770f4f399b001d5f1be427b1",
+        "status": "ready",
+        "usage": null
+      },
+      "episode_id": "memory",
+      "variant_id": "v1",
+      "session_id": "s2"
+    },
+    {
+      "method": "reset_case",
+      "receipt": {
+        "operation_id": "c4d710c0cc5c42e18d66569a12f9f407",
+        "status": "ready",
+        "usage": null
+      },
+      "episode_id": "isolation",
+      "variant_id": "v1",
+      "session_id": null
+    },
+    {
+      "method": "begin_session",
+      "receipt": {
+        "operation_id": "970cb2ff82474c29a2c71b82818f0fc5",
+        "status": "ready",
+        "usage": null
+      },
+      "episode_id": "isolation",
+      "variant_id": "v1",
+      "session_id": "s1"
+    },
+    {
+      "method": "query",
+      "operation_id": "7d3fd670f62c4a3b811ba11abe3114e8",
+      "input": {
+        "episode_id": "isolation",
+        "variant_id": "v1",
+        "session_id": "s1",
+        "probe_id": "q4",
+        "query": "我以前告诉过你的蓝帆项目代号是什么？只回答代号；不知道就回答不知道。",
+        "observed_at": "2026-10-15T06:51:36.118216+00:00",
+        "sandbox_references": []
+      },
+      "prediction": {
+        "episode_id": "isolation",
+        "variant_id": "v1",
+        "session_id": "s1",
+        "probe_id": "q4",
+        "status": "ok",
+        "text": "不知道",
+        "answered_at": "2026-10-15T06:51:45.920693+00:00",
+        "state": null,
+        "slots": null,
+        "retrieved_evidence": null,
+        "usage": null,
+        "file_actions": null
+      }
+    },
+    {
+      "method": "end_session",
+      "receipt": {
+        "operation_id": "2c302eb0dd5344b4841301018e6f8ed1",
+        "status": "ready",
+        "usage": null
+      },
+      "episode_id": "isolation",
+      "variant_id": "v1",
+      "session_id": "s1"
+    }
+  ],
+  "checks": {
+    "same_session": true,
+    "cross_session": true,
+    "cross_case_no_canary": true,
+    "cross_case_unknown": true,
+    "cleanup": true,
+    "file_task": true
+  },
+  "exports": [
+    {
+      "namespace": "b8994fecead14167b1bfb491c105e6c5",
+      "path": "b8994fecead14167b1bfb491c105e6c5.json",
+      "sha256": "546238cb820efe797f334af03e7756e19de12e89b8cfc9cf1effa77b0af16656"
+    },
+    {
+      "namespace": "ea36de2bf13c4cdd891fa2f862e341c1",
+      "path": "ea36de2bf13c4cdd891fa2f862e341c1.json",
+      "sha256": "8506e6f49017213d3e7e2d234025859c9c4f265cf002b8f2737c3c2c04f7d5e0"
+    }
+  ],
+  "publish_ranking": false,
+  "execution": "online",
+  "model": "deepseek-flash",
+  "openclaw_mode": "embedded_explicit; optional Gateway flush unsupported",
+  "profile_canary": null,
+  "namespaces": [
+    "b8994fecead14167b1bfb491c105e6c5",
+    "ea36de2bf13c4cdd891fa2f862e341c1"
+  ],
+  "cleanup_receipts": [
+    {
+      "operation_id": "3bba70339489494d9e21f2480bfc7260",
+      "status": "ready",
+      "usage": null
+    },
+    {
+      "operation_id": "857bfea87dee4701862d91d3157044e3",
+      "status": "ready",
+      "usage": null
+    }
+  ],
+  "file_baseline_absent": true,
+  "finished_at": "2026-10-15T06:51:46.177674+00:00",
+  "status": "passed"
+}

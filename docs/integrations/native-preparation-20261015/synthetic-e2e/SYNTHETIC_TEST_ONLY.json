@@ -1,0 +1,7 @@
+{
+  "all_data_and_signatures": "synthetic test fixtures",
+  "product_transport": "MockSSH",
+  "network_calls": 0,
+  "model_api_calls": 0,
+  "original_temporary_paths": "Preserved as actual execution evidence; these sample configs are not user run inputs."
+}

@@ -1,0 +1,13 @@
+test_blocked_mock_verdict_is_not_promoted_by_scope (__main__.CompletionExecutionScopeTests.test_blocked_mock_verdict_is_not_promoted_by_scope) ... ok
+test_both_native_review_call_sites_pass_only_ephemeral_scope (__main__.CompletionExecutionScopeTests.test_both_native_review_call_sites_pass_only_ephemeral_scope) ... ok
+test_candidate_or_user_text_cannot_supply_scope_field (__main__.CompletionExecutionScopeTests.test_candidate_or_user_text_cannot_supply_scope_field) ... ok
+test_completed_mixed_visible_evidence_keeps_normal_semantics (__main__.CompletionExecutionScopeTests.test_completed_mixed_visible_evidence_keeps_normal_semantics) ... ok
+test_completed_requires_more_than_scope_only_evidence (__main__.CompletionExecutionScopeTests.test_completed_requires_more_than_scope_only_evidence) ... ok
+test_default_user_task_keeps_original_payload_shape (__main__.CompletionExecutionScopeTests.test_default_user_task_keeps_original_payload_shape) ... ok
+test_noncompleted_scope_only_verdict_stays_noncompleted (__main__.CompletionExecutionScopeTests.test_noncompleted_scope_only_verdict_stays_noncompleted) ... ok
+test_same_original_request_has_separate_trusted_current_objective (__main__.CompletionExecutionScopeTests.test_same_original_request_has_separate_trusted_current_objective) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.118s
+
+OK

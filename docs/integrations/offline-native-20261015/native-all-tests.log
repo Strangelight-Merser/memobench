@@ -1,0 +1,19 @@
+test_bridge_dispatch_query_timeout (test_native_offline_v2.OfflineNativeTests.test_bridge_dispatch_query_timeout) ... ok
+test_component_file_disclosure_preserved (test_native_offline_v2.OfflineNativeTests.test_component_file_disclosure_preserved) ... ok
+test_export_error_and_missing_check (test_native_offline_v2.OfflineNativeTests.test_export_error_and_missing_check) ... ok
+test_forbidden_old_path (test_native_offline_v2.OfflineNativeTests.test_forbidden_old_path) ... ok
+test_formal_run_native_and_actual_files (test_native_offline_v2.OfflineNativeTests.test_formal_run_native_and_actual_files) ... ok
+test_operation_evidence_binding (test_native_offline_v2.OfflineNativeTests.test_operation_evidence_binding) ... ok
+test_preexisting_file_cannot_pass (test_native_offline_v2.OfflineNativeTests.test_preexisting_file_cannot_pass) ... ok
+test_timeout_and_dual_failure (test_native_offline_v2.OfflineNativeTests.test_timeout_and_dual_failure) ... ok
+test_unknown_observe_not_queried (test_native_offline_v2.OfflineNativeTests.test_unknown_observe_not_queried) ... ok
+test_failed_process_does_not_accept_old_answer (test_native_vm_binding.NativeVMBindingTests.test_failed_process_does_not_accept_old_answer) ... ok
+test_kylin_reads_current_committed_answer_not_debug_stdout (test_native_vm_binding.NativeVMBindingTests.test_kylin_reads_current_committed_answer_not_debug_stdout) ... ok
+test_openclaw_has_no_openai_credential_alias (test_native_vm_binding.NativeVMBindingTests.test_openclaw_has_no_openai_credential_alias) ... ok
+test_timeout_preserves_diagnostics_without_key (test_native_vm_binding.NativeVMBindingTests.test_timeout_preserves_diagnostics_without_key) ... ok
+test_transport_requires_explicit_live (test_native_vm_binding.NativeVMBindingTests.test_transport_requires_explicit_live) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.055s
+
+OK

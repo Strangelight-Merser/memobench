@@ -32,7 +32,10 @@ def render(summary, records=()):
                 parts.append('<p>blocked：' + display(summary['reason']) + '</p>')
         else:
             if summary.get('fixture'):
-                parts.append('<p class="notice">协议 fixture / smoke，非真实智能体；回显读取器不代表公共 LLM 能力。</p>')
+                fixture_notice = ('离线 native transport fixture，仅验证协议与工具链，不代表真实产品接入。'
+                                  if summary.get('mode') == 'native_agent' else
+                                  '协议 fixture / smoke，非真实智能体；回显读取器不代表公共 LLM 能力。')
+                parts.append('<p class="notice">' + fixture_notice + '</p>')
             parts.append('<p>case：' + display(summary.get('n_case')) + '；失败 case：' + display(summary.get('failed_cases')) + '</p>')
             for execution in ('offline', 'online', 'replay'):
                 parts.append('<h3>' + execution + '</h3>')
@@ -72,7 +75,16 @@ def render(summary, records=()):
                      '；评分理由：' + display(record['score'].get('review_reason') or record['score'].get('reason')) +
                      '；文件任务：' + display(record.get('task_status')) + '</p><pre>' +
                      display(record.get('evidence_locations')) + '</pre></details>')
-    parts.append('</section><p>openKylin、两款真实智能体、人工校准：未测。未知费用/用量保持 null。</p></html>')
+    if summary.get('mode') == 'native_agent':
+        if summary.get('fixture') or 'offline' in summary.get('partitions', {}):
+            footer = '离线 native fixture 不构成真实产品接入或成绩；未知费用/用量保持 null。'
+        elif summary.get('status') == 'blocked' and not summary.get('partitions'):
+            footer = 'native 尚未执行，请查看阻断原因与准备配置；未知费用/用量保持 null。'
+        else:
+            footer = 'native 原生运行：产品版本与接入证据见运行配置；语义裁判的校准与最终裁决状态单独报告。未知费用/用量保持 null。'
+    else:
+        footer = 'openKylin、两款真实智能体、人工校准：未测。未知费用/用量保持 null。'
+    parts.append('</section><p>' + footer + '</p></html>')
     return ''.join(parts)
 
 

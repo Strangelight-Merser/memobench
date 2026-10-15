@@ -1,0 +1,412 @@
+{
+  "product": "kylin",
+  "synthetic_development_only": true,
+  "public_input": {
+    "episode_id": "phase-smoke-94932c1c9dc94aa0a6d55fe77e68d41b",
+    "variant_id": "v1",
+    "session_ids": [
+      "s1"
+    ],
+    "observations": [
+      {
+        "episode_id": "phase-smoke-94932c1c9dc94aa0a6d55fe77e68d41b",
+        "variant_id": "v1",
+        "session_id": "s1",
+        "observation_id": "o",
+        "role": "user",
+        "text": "请记住这项虚构开发约定：标记文件相对路径为 reports/13abc02fc1e641818aa3edd78fb93763.txt，精确内容为 PUBLIC-8890fabec58e4f60baa99e5fbb3d2840，不加换行。现在请立即创建该文件；以后我会只说按约定创建标记。",
+        "observed_at": "2026-10-15T00:00:00Z",
+        "sandbox_references": []
+      }
+    ],
+    "probes": [
+      {
+        "episode_id": "phase-smoke-94932c1c9dc94aa0a6d55fe77e68d41b",
+        "variant_id": "v1",
+        "session_id": "s1",
+        "probe_id": "q",
+        "query": "请按先前记住的约定创建标记文件，使用原生直接文件写入工具，不用shell。",
+        "observed_at": "2026-10-15T00:01:00Z",
+        "sandbox_references": []
+      }
+    ]
+  },
+  "expected": {
+    "path": "reports/13abc02fc1e641818aa3edd78fb93763.txt",
+    "sha256": "3acbcc27141e1e4ab3747307f6b6bcae52cdbf7583d64e58de4320b266ee5781"
+  },
+  "result": {
+    "status": "completed",
+    "error": null,
+    "cleanup_error": null,
+    "blocked_write": null,
+    "cleanup_receipts": [
+      {
+        "operation_id": "2b7ea8559c614e26a3230d5cbbc84744",
+        "status": "ready",
+        "usage": null
+      }
+    ],
+    "operation_evidence": [
+      {
+        "binding": {
+          "run": "memobench-native-8e3px5tx",
+          "namespace": "923c25e95ea04f399648e83de2b24e05",
+          "episode_id": "phase-smoke-94932c1c9dc94aa0a6d55fe77e68d41b",
+          "variant_id": "v1",
+          "session_id": "s1",
+          "operation_id": "phase-smoke-94932c1c9dc94aa0a6d55fe77e68d41b:query:q",
+          "bridge_sha256": "66428d8276ff544a2c24234f619ac586cba8e0e876399884f7e1425a744bf02e"
+        },
+        "checkpoint": {
+          "binding": {
+            "run": "memobench-native-8e3px5tx",
+            "namespace": "923c25e95ea04f399648e83de2b24e05",
+            "episode_id": "phase-smoke-94932c1c9dc94aa0a6d55fe77e68d41b",
+            "variant_id": "v1",
+            "session_id": "s1",
+            "operation_id": "phase-smoke-94932c1c9dc94aa0a6d55fe77e68d41b:query:q",
+            "bridge_sha256": "66428d8276ff544a2c24234f619ac586cba8e0e876399884f7e1425a744bf02e"
+          },
+          "baseline": {},
+          "transcript": {
+            "count": 2,
+            "prefix_sha256": "f6f70fc825facefbdb24ab3e797ec5a1a1543ac7d8be667856d45a656a933382"
+          }
+        },
+        "evidence": {
+          "binding": {
+            "run": "memobench-native-8e3px5tx",
+            "namespace": "923c25e95ea04f399648e83de2b24e05",
+            "episode_id": "phase-smoke-94932c1c9dc94aa0a6d55fe77e68d41b",
+            "variant_id": "v1",
+            "session_id": "s1",
+            "operation_id": "phase-smoke-94932c1c9dc94aa0a6d55fe77e68d41b:query:q",
+            "bridge_sha256": "66428d8276ff544a2c24234f619ac586cba8e0e876399884f7e1425a744bf02e"
+          },
+          "baseline": {},
+          "after": {
+            "reports/13abc02fc1e641818aa3edd78fb93763.txt": {
+              "sha256": "3acbcc27141e1e4ab3747307f6b6bcae52cdbf7583d64e58de4320b266ee5781",
+              "size": 39,
+              "content_base64": "UFVCTElDLTg4OTBmYWJlYzU4ZTRmNjBiYWE5OWU1ZmJiM2QyODQw"
+            }
+          },
+          "complete": true,
+          "audit": {
+            "product_session": "20261015_151250_a2459d",
+            "checkpoint": {
+              "count": 2,
+              "prefix_sha256": "f6f70fc825facefbdb24ab3e797ec5a1a1543ac7d8be667856d45a656a933382"
+            },
+            "terminal": {
+              "count": 6,
+              "prefix_sha256": "2852b13983020cb312aea056dfb44678bed3732a746459a3260315ee04e627a0"
+            },
+            "events": [
+              {
+                "call_id": "call_00_ng4d6UOMHlWB3Yl2fLcT3228",
+                "tool": "write_file",
+                "path": "reports/13abc02fc1e641818aa3edd78fb93763.txt",
+                "succeeded": true,
+                "operation": "write",
+                "arguments": {
+                  "path": "reports/13abc02fc1e641818aa3edd78fb93763.txt",
+                  "content": "PUBLIC-8890fabec58e4f60baa99e5fbb3d2840"
+                },
+                "native_call": {
+                  "source": "kylin/messages",
+                  "position": 4,
+                  "session_id": "20261015_151250_a2459d",
+                  "tool_call": {
+                    "id": "call_00_ng4d6UOMHlWB3Yl2fLcT3228",
+                    "name": "write_file",
+                    "arguments": {
+                      "path": "reports/13abc02fc1e641818aa3edd78fb93763.txt",
+                      "content": "PUBLIC-8890fabec58e4f60baa99e5fbb3d2840"
+                    }
+                  }
+                },
+                "native_result": {
+                  "source": "kylin/messages",
+                  "position": 5,
+                  "session_id": "20261015_151250_a2459d",
+                  "message": {
+                    "role": "tool",
+                    "content": "{\"bytes_written\": 39, \"dirs_created\": true, \"lint\": {\"status\": \"skipped\", \"message\": \"No linter for .txt files\"}}",
+                    "tool_call_id": "call_00_ng4d6UOMHlWB3Yl2fLcT3228",
+                    "tool_calls": [],
+                    "tool_name": "write_file"
+                  }
+                }
+              }
+            ],
+            "memory_events": [],
+            "complete": true
+          },
+          "native_records": [
+            {
+              "source": "kylin/messages",
+              "position": 1,
+              "session_id": "20261015_151250_a2459d",
+              "message": {
+                "role": "user",
+                "content": "请记住这项虚构开发约定：标记文件相对路径为 reports/13abc02fc1e641818aa3edd78fb93763.txt，精确内容为 PUBLIC-8890fabec58e4f60baa99e5fbb3d2840，不加换行。现在请立即创建该文件；以后我会只说按约定创建标记。",
+                "tool_call_id": null,
+                "tool_calls": [],
+                "tool_name": null
+              }
+            },
+            {
+              "source": "kylin/messages",
+              "position": 2,
+              "session_id": "20261015_151250_a2459d",
+              "message": {
+                "role": "assistant",
+                "content": "已记录该虚构开发约定，内容如下：\n\n  标记：reports/13abc02fc1e641818aa3edd78fb93763.txt\n  内容：PUBLIC-8890fabec58e4f60baa99e5fbb3d2840（精确，不加换行）\n\n说明：本轮是观察记录阶段，工作区为只读，因此本次不实际创建该文件。以后你只要说\"按约定创建标记\"，我就按上述路径与精确内容创建它。",
+                "tool_call_id": null,
+                "tool_calls": [],
+                "tool_name": null
+              }
+            },
+            {
+              "source": "kylin/messages",
+              "position": 3,
+              "session_id": "20261015_151250_a2459d",
+              "message": {
+                "role": "user",
+                "content": "请按先前记住的约定创建标记文件，使用原生直接文件写入工具，不用shell。",
+                "tool_call_id": null,
+                "tool_calls": [],
+                "tool_name": null
+              }
+            },
+            {
+              "source": "kylin/messages",
+              "position": 4,
+              "session_id": "20261015_151250_a2459d",
+              "message": {
+                "role": "assistant",
+                "content": "",
+                "tool_call_id": null,
+                "tool_calls": [
+                  {
+                    "id": "call_00_ng4d6UOMHlWB3Yl2fLcT3228",
+                    "call_id": "call_00_ng4d6UOMHlWB3Yl2fLcT3228",
+                    "response_item_id": "fc_00_ng4d6UOMHlWB3Yl2fLcT3228",
+                    "type": "function",
+                    "function": {
+                      "name": "write_file",
+                      "arguments": "{\"path\": \"reports/13abc02fc1e641818aa3edd78fb93763.txt\", \"content\": \"PUBLIC-8890fabec58e4f60baa99e5fbb3d2840\"}"
+                    }
+                  }
+                ],
+                "tool_name": null
+              }
+            },
+            {
+              "source": "kylin/messages",
+              "position": 5,
+              "session_id": "20261015_151250_a2459d",
+              "message": {
+                "role": "tool",
+                "content": "{\"bytes_written\": 39, \"dirs_created\": true, \"lint\": {\"status\": \"skipped\", \"message\": \"No linter for .txt files\"}}",
+                "tool_call_id": "call_00_ng4d6UOMHlWB3Yl2fLcT3228",
+                "tool_calls": [],
+                "tool_name": "write_file"
+              }
+            },
+            {
+              "source": "kylin/messages",
+              "position": 6,
+              "session_id": "20261015_151250_a2459d",
+              "message": {
+                "role": "assistant",
+                "content": "已按约定创建标记文件。\n\n  路径：/home/mb/case/workspace/reports/13abc02fc1e641818aa3edd78fb93763.txt\n  内容：PUBLIC-8890fabec58e4f60baa99e5fbb3d2840\n  字节数：39（无换行、无多余字符）",
+                "tool_call_id": null,
+                "tool_calls": [],
+                "tool_name": null
+              }
+            }
+          ],
+          "audit_stage": "native_file_audit"
+        },
+        "verification": {
+          "status": "passed",
+          "checks": [
+            {
+              "status": "passed",
+              "faults": []
+            }
+          ],
+          "faults": [],
+          "binding": {
+            "run": "memobench-native-8e3px5tx",
+            "namespace": "923c25e95ea04f399648e83de2b24e05",
+            "episode_id": "phase-smoke-94932c1c9dc94aa0a6d55fe77e68d41b",
+            "variant_id": "v1",
+            "session_id": "s1",
+            "operation_id": "phase-smoke-94932c1c9dc94aa0a6d55fe77e68d41b:query:q",
+            "bridge_sha256": "66428d8276ff544a2c24234f619ac586cba8e0e876399884f7e1425a744bf02e"
+          },
+          "artifacts": {
+            "reports/13abc02fc1e641818aa3edd78fb93763.txt": "3acbcc27141e1e4ab3747307f6b6bcae52cdbf7583d64e58de4320b266ee5781"
+          },
+          "deleted_paths": [],
+          "audit_coverage": "direct_file_tools_only; exec and render unsupported",
+          "source": "bridge_workspace_bytes_and_native_tool_trace"
+        }
+      }
+    ],
+    "results": [
+      {
+        "prediction": {
+          "episode_id": "phase-smoke-94932c1c9dc94aa0a6d55fe77e68d41b",
+          "variant_id": "v1",
+          "session_id": "s1",
+          "probe_id": "q",
+          "status": "ok",
+          "text": "已按约定创建标记文件。\n\n  路径：/home/mb/case/workspace/reports/13abc02fc1e641818aa3edd78fb93763.txt\n  内容：PUBLIC-8890fabec58e4f60baa99e5fbb3d2840\n  字节数：39（无换行、无多余字符）",
+          "answered_at": "2026-10-15T07:13:36.500616+00:00",
+          "state": null,
+          "slots": null,
+          "retrieved_evidence": null,
+          "usage": null,
+          "file_actions": null
+        },
+        "execution": "online",
+        "score": {
+          "probe_id": "q",
+          "status": "scored",
+          "source": "rules",
+          "metrics": {
+            "answer_correct": null,
+            "current_value_misuse": null,
+            "forgotten_disclosure": null,
+            "unknown_assertion": null,
+            "evidence_supported": null,
+            "task_completed": true
+          },
+          "eligible": {
+            "answer_correct": false,
+            "current_value_misuse": false,
+            "forgotten_disclosure": false,
+            "unknown_assertion": false,
+            "evidence_supported": false,
+            "task_completed": true
+          },
+          "errors": [],
+          "review_reason": "semantic_judge_required"
+        },
+        "raw_reader": null,
+        "task_status": "passed",
+        "task_verification": {
+          "status": "passed",
+          "checks": [
+            {
+              "status": "passed",
+              "faults": []
+            }
+          ],
+          "faults": [],
+          "binding": {
+            "run": "memobench-native-8e3px5tx",
+            "namespace": "923c25e95ea04f399648e83de2b24e05",
+            "episode_id": "phase-smoke-94932c1c9dc94aa0a6d55fe77e68d41b",
+            "variant_id": "v1",
+            "session_id": "s1",
+            "operation_id": "phase-smoke-94932c1c9dc94aa0a6d55fe77e68d41b:query:q",
+            "bridge_sha256": "66428d8276ff544a2c24234f619ac586cba8e0e876399884f7e1425a744bf02e"
+          },
+          "artifacts": {
+            "reports/13abc02fc1e641818aa3edd78fb93763.txt": "3acbcc27141e1e4ab3747307f6b6bcae52cdbf7583d64e58de4320b266ee5781"
+          },
+          "deleted_paths": [],
+          "audit_coverage": "direct_file_tools_only; exec and render unsupported",
+          "source": "bridge_workspace_bytes_and_native_tool_trace"
+        },
+        "evidence_locations": []
+      }
+    ],
+    "events": [
+      {
+        "method": "reset_case",
+        "receipt": {
+          "operation_id": "phase-smoke-94932c1c9dc94aa0a6d55fe77e68d41b:reset",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "begin_session",
+        "receipt": {
+          "operation_id": "phase-smoke-94932c1c9dc94aa0a6d55fe77e68d41b:begin:s1",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "observe",
+        "receipt": {
+          "operation_id": "phase-smoke-94932c1c9dc94aa0a6d55fe77e68d41b:observe:o",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "end_session",
+        "receipt": {
+          "operation_id": "phase-smoke-94932c1c9dc94aa0a6d55fe77e68d41b:end:s1",
+          "status": "ready",
+          "usage": null
+        }
+      }
+    ],
+    "cost_records": [
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "online",
+        "status": "ready",
+        "recorded_at": "2026-10-15T07:12:49.033546+00:00"
+      },
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "online",
+        "status": "ready",
+        "recorded_at": "2026-10-15T07:12:49.166360+00:00"
+      },
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "online",
+        "status": "ready",
+        "recorded_at": "2026-10-15T07:13:10.192591+00:00"
+      },
+      {
+        "stage": "read",
+        "usage": null,
+        "cost": null,
+        "execution": "online",
+        "status": "ok",
+        "recorded_at": "2026-10-15T07:13:36.187499+00:00"
+      },
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "online",
+        "status": "ready",
+        "recorded_at": "2026-10-15T07:13:36.646569+00:00"
+      }
+    ],
+    "finished_at": "2026-10-15T07:13:36.811461+00:00"
+  },
+  "namespaces": [
+    "923c25e95ea04f399648e83de2b24e05"
+  ]
+}

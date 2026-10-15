@@ -1,0 +1,170 @@
+{
+  "product": "kylin",
+  "started_at": "2026-10-15T02:22:38.859449+00:00",
+  "scope": "synthetic integration acceptance only",
+  "capabilities": {
+    "native_answer": "supported",
+    "retrieved_evidence": "unsupported",
+    "write_usage": "unsupported",
+    "flush": "unsupported",
+    "restart": "unsupported",
+    "storage_inspection": "supported"
+  },
+  "canary": "MB-4F973FB7FC5E",
+  "events": [
+    {
+      "method": "reset_case",
+      "receipt": {
+        "operation_id": "e34f054617d4465fb6f2a705a103c6dd",
+        "status": "ready",
+        "usage": null
+      }
+    },
+    {
+      "method": "begin_session",
+      "receipt": {
+        "operation_id": "50d4237ea54f4623b23226896ed1f605",
+        "status": "ready",
+        "usage": null
+      }
+    },
+    {
+      "method": "public_observation",
+      "input": {
+        "episode_id": "memory",
+        "variant_id": "v1",
+        "session_id": "s1",
+        "observation_id": "o1",
+        "role": "user",
+        "text": "请记住：我的虚构测试项目“蓝帆”的代号是 MB-4F973FB7FC5E。后面的新会话会询问，请保存到你的长期记忆。",
+        "observed_at": "2026-10-15T02:22:39.152112+00:00",
+        "sandbox_references": []
+      }
+    },
+    {
+      "method": "observe",
+      "receipt": {
+        "operation_id": "df623e8eaf204ac4b4fcf602433b1078",
+        "status": "ready",
+        "usage": null
+      }
+    },
+    {
+      "method": "query",
+      "input": {
+        "episode_id": "memory",
+        "variant_id": "v1",
+        "session_id": "s1",
+        "probe_id": "q1",
+        "query": "蓝帆项目的代号是什么？只回答代号；不知道就回答不知道。",
+        "observed_at": "2026-10-15T02:23:15.053776+00:00",
+        "sandbox_references": []
+      },
+      "prediction": {
+        "episode_id": "memory",
+        "variant_id": "v1",
+        "session_id": "s1",
+        "probe_id": "q1",
+        "status": "ok",
+        "text": "↻ Resumed session 20261015_102240_dfcf5b (1 user message, 5 total messages)\nAPI Request - Model: deepseek-flash, Messages: 6, Tools: 5\n====model.request priority参数: None request_overrides: {}\n[kylinAgent-model] chat.completions.create stream=True model=deepseek-flash priority=None keys=['messages', 'model', 'stream', 'stream_options', 'timeout', 'tools']\nMB-4F973FB7FC5E",
+        "answered_at": "2026-10-15T02:24:26.892848+00:00",
+        "state": null,
+        "slots": null,
+        "retrieved_evidence": null,
+        "usage": null,
+        "file_actions": null
+      }
+    },
+    {
+      "method": "end_session",
+      "receipt": {
+        "operation_id": "485cb2ff220f450fa45a0e093723ab4a",
+        "status": "ready",
+        "usage": null
+      }
+    },
+    {
+      "method": "begin_session",
+      "receipt": {
+        "operation_id": "e56d465ee7f943ddbd4637c378816e80",
+        "status": "ready",
+        "usage": null
+      }
+    },
+    {
+      "method": "query",
+      "input": {
+        "episode_id": "memory",
+        "variant_id": "v1",
+        "session_id": "s2",
+        "probe_id": "q2",
+        "query": "我以前告诉过你的蓝帆项目代号是什么？只回答代号；不知道就回答不知道。",
+        "observed_at": "2026-10-15T02:24:27.087488+00:00",
+        "sandbox_references": []
+      },
+      "prediction": {
+        "episode_id": "memory",
+        "variant_id": "v1",
+        "session_id": "s2",
+        "probe_id": "q2",
+        "status": "ok",
+        "text": "API Request - Model: deepseek-flash, Messages: 1, Tools: 5\n====model.request priority参数: None request_overrides: {}\n[kylinAgent-model] chat.completions.create stream=True model=deepseek-flash priority=None keys=['messages', 'model', 'stream', 'stream_options', 'timeout', 'tools']\nAPI Request - Model: deepseek-flash, Messages: 4, Tools: 5\n====model.request priority参数: None request_overrides: {}\n[kylinAgent-model] chat.completions.create stream=True model=deepseek-flash priority=None keys=['messages', 'model', 'stream', 'stream_options', 'timeout', 'tools']\nMB-4F973FB7FC5E",
+        "answered_at": "2026-10-15T02:25:01.138651+00:00",
+        "state": null,
+        "slots": null,
+        "retrieved_evidence": null,
+        "usage": null,
+        "file_actions": null
+      }
+    },
+    {
+      "method": "query",
+      "input": {
+        "episode_id": "memory",
+        "variant_id": "v1",
+        "session_id": "s2",
+        "probe_id": "q3",
+        "query": "请把蓝帆项目代号写到当前工作目录的 notes/code.txt，文件只含代号和一个换行。如果不知道就不要写。",
+        "observed_at": "2026-10-15T02:25:01.042018+00:00",
+        "sandbox_references": []
+      },
+      "prediction": {
+        "episode_id": "memory",
+        "variant_id": "v1",
+        "session_id": "s2",
+        "probe_id": "q3",
+        "status": "error",
+        "text": null,
+        "answered_at": "2026-10-15T02:27:11.366440+00:00",
+        "state": null,
+        "slots": null,
+        "retrieved_evidence": null,
+        "usage": null,
+        "file_actions": null
+      }
+    }
+  ],
+  "checks": {
+    "same_session": true,
+    "cross_session": true,
+    "cleanup": true,
+    "file_task": true
+  },
+  "publish_ranking": false,
+  "execution": "online",
+  "model": "deepseek-flash",
+  "openclaw_mode": "embedded_explicit; optional Gateway flush unsupported",
+  "error": "RuntimeError: native query failed",
+  "namespaces": [
+    "5726a0cae1df4655a452ed20d06ecd20"
+  ],
+  "cleanup_receipts": [
+    {
+      "operation_id": "6013ee7612824a86adbbc625e10c4c1a",
+      "status": "ready",
+      "usage": null
+    }
+  ],
+  "finished_at": "2026-10-15T02:27:11.664317+00:00",
+  "status": "incomplete"
+}

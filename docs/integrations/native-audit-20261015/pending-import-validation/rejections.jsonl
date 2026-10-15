@@ -1,0 +1,4 @@
+{"kind":"rejection_policy","reason":"昵称龙芯机器不能作为loongarch64的设备证据；缺少证据时使用unknown，不拒收合法未知样本。"}
+{"kind":"rejection_policy","reason":"拒收以KARE为包管理器的错误设定、无依据的设备架构偏好变更、账本与文本冲突但未标冲突的样本。"}
+{"kind":"rejection_policy","reason":"拒收同故事或同情节模板跨开发测试、私有答案或分类进入适配器payload、越界文件路径、未经签收直接进入正式test。"}
+{"kind":"rejection_policy","reason":"不得因任一系统答错而删除合法样本；实际拒收决定须记录在review.jsonl并保留源材料。当前无人工拒收决定。"}

@@ -1,0 +1,16 @@
+{
+  "reviewer": "primary_agent",
+  "bridge_sha256": "66428d8276ff544a2c24234f619ac586cba8e0e876399884f7e1425a744bf02e",
+  "decision": "approved_for_bounded_real_validation",
+  "protocol_review": "Task workspace RO during observe; native memory remains RW. User text and system metadata separate. Query restores task tools. No deletion-to-reset or scoring changes.",
+  "independent_review": "FINAL_IMPLEMENTATION_REVIEW.md",
+  "bounded_policy_revision": "Only appended a generic exact-output instruction after first Kylin probe emitted extra punctuation. Original strict failure retained; criteria unchanged.",
+  "protected_files": 112,
+  "data_and_prior_evidence_unchanged": true,
+  "native_permission_probe": "mount-permissions.json",
+  "native_bootstrap_load": "native-bootstrap.json",
+  "native_memory_proven_on_first_openclaw_smoke": "preflight-receipt.json",
+  "scope": "SCOPE.json",
+  "final_case_must_reuse_original_full_80_observations": true,
+  "human_review_claim": false
+}

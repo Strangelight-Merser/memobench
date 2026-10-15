@@ -1,0 +1,330 @@
+{
+  "product": "openclaw",
+  "synthetic_transport_audit": true,
+  "untraced_extra": false,
+  "result": {
+    "status": "completed",
+    "error": null,
+    "cleanup_error": null,
+    "blocked_write": null,
+    "cleanup_receipts": [
+      {
+        "operation_id": "c9daaafa6f664e718a850c95252aff8a",
+        "status": "ready",
+        "usage": null
+      }
+    ],
+    "operation_evidence": [
+      {
+        "binding": {
+          "run": "memobench-native-tbn9ym22",
+          "namespace": "6e05cb0f7897403cb4614e1f3a30f1a0",
+          "episode_id": "synthetic-audit",
+          "variant_id": "v",
+          "session_id": "s2",
+          "operation_id": "openclaw-positive:query:p",
+          "bridge_sha256": "69c3a6169ef73e279ebc35d5e7b0e437ed0257d5d59e3fc958afb5ab7d102603"
+        },
+        "checkpoint": {
+          "binding": {
+            "run": "memobench-native-tbn9ym22",
+            "namespace": "6e05cb0f7897403cb4614e1f3a30f1a0",
+            "episode_id": "synthetic-audit",
+            "variant_id": "v",
+            "session_id": "s2",
+            "operation_id": "openclaw-positive:query:p",
+            "bridge_sha256": "69c3a6169ef73e279ebc35d5e7b0e437ed0257d5d59e3fc958afb5ab7d102603"
+          },
+          "baseline": {},
+          "transcript": {
+            "count": 0,
+            "prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          }
+        },
+        "evidence": {
+          "binding": {
+            "run": "memobench-native-tbn9ym22",
+            "namespace": "6e05cb0f7897403cb4614e1f3a30f1a0",
+            "episode_id": "synthetic-audit",
+            "variant_id": "v",
+            "session_id": "s2",
+            "operation_id": "openclaw-positive:query:p",
+            "bridge_sha256": "69c3a6169ef73e279ebc35d5e7b0e437ed0257d5d59e3fc958afb5ab7d102603"
+          },
+          "baseline": {},
+          "after": {
+            "reports/synthetic.txt": {
+              "sha256": "e315d2370075b5c022a1b552774b62ed847aeda2efde7e6fb476fae748e52856",
+              "size": 15,
+              "content_base64": "c3ludGhldGljIGhlbGxv"
+            }
+          },
+          "complete": true,
+          "audit": {
+            "product_session": "synthetic-70341a0638a1407b9af36da11e638c18",
+            "checkpoint": {
+              "count": 0,
+              "prefix_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            "terminal": {
+              "count": 2,
+              "prefix_sha256": "35ae091dbea7cd59bcd63c58e6581baf5cbdb60fe71297fb4265222e44b472a3"
+            },
+            "events": [
+              {
+                "call_id": "ac30677438144004bceb89dd643796f1",
+                "tool": "write",
+                "path": "reports/synthetic.txt",
+                "operation": "write",
+                "arguments": {
+                  "path": "reports/synthetic.txt",
+                  "content": "synthetic hello"
+                },
+                "native_call": {
+                  "source": "agents/main/sessions/sessions.sqlite",
+                  "position": 1,
+                  "session_id": "synthetic-70341a0638a1407b9af36da11e638c18",
+                  "message": {
+                    "role": "assistant",
+                    "content": [
+                      {
+                        "type": "toolCall",
+                        "id": "ac30677438144004bceb89dd643796f1",
+                        "name": "write",
+                        "arguments": {
+                          "path": "reports/synthetic.txt",
+                          "content": "synthetic hello"
+                        }
+                      }
+                    ]
+                  }
+                },
+                "native_result": {
+                  "source": "agents/main/sessions/sessions.sqlite",
+                  "position": 2,
+                  "session_id": "synthetic-70341a0638a1407b9af36da11e638c18",
+                  "message": {
+                    "role": "toolResult",
+                    "toolCallId": "ac30677438144004bceb89dd643796f1",
+                    "isError": false,
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "synthetic tool result"
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "complete": true
+          }
+        },
+        "verification": {
+          "status": "passed",
+          "checks": [
+            {
+              "status": "passed",
+              "faults": []
+            }
+          ],
+          "faults": [],
+          "binding": {
+            "run": "memobench-native-tbn9ym22",
+            "namespace": "6e05cb0f7897403cb4614e1f3a30f1a0",
+            "episode_id": "synthetic-audit",
+            "variant_id": "v",
+            "session_id": "s2",
+            "operation_id": "openclaw-positive:query:p",
+            "bridge_sha256": "69c3a6169ef73e279ebc35d5e7b0e437ed0257d5d59e3fc958afb5ab7d102603"
+          },
+          "artifacts": {
+            "reports/synthetic.txt": "e315d2370075b5c022a1b552774b62ed847aeda2efde7e6fb476fae748e52856"
+          },
+          "deleted_paths": [],
+          "audit_coverage": "direct_file_tools_only; exec and render unsupported",
+          "source": "bridge_workspace_bytes_and_native_tool_trace"
+        }
+      }
+    ],
+    "results": [
+      {
+        "prediction": {
+          "episode_id": "synthetic-audit",
+          "variant_id": "v",
+          "session_id": "s2",
+          "probe_id": "p",
+          "status": "ok",
+          "text": "synthetic fixture answer",
+          "answered_at": "2026-10-15T05:06:17.978896+00:00",
+          "state": null,
+          "slots": null,
+          "retrieved_evidence": null,
+          "usage": null,
+          "file_actions": null
+        },
+        "execution": "offline",
+        "score": {
+          "probe_id": "p",
+          "status": "scored",
+          "source": "rules",
+          "metrics": {
+            "answer_correct": null,
+            "current_value_misuse": null,
+            "forgotten_disclosure": null,
+            "unknown_assertion": null,
+            "evidence_supported": null,
+            "task_completed": true
+          },
+          "eligible": {
+            "answer_correct": false,
+            "current_value_misuse": false,
+            "forgotten_disclosure": false,
+            "unknown_assertion": false,
+            "evidence_supported": false,
+            "task_completed": true
+          },
+          "errors": [],
+          "review_reason": "semantic_judge_required"
+        },
+        "raw_reader": null,
+        "task_status": "passed",
+        "task_verification": {
+          "status": "passed",
+          "checks": [
+            {
+              "status": "passed",
+              "faults": []
+            }
+          ],
+          "faults": [],
+          "binding": {
+            "run": "memobench-native-tbn9ym22",
+            "namespace": "6e05cb0f7897403cb4614e1f3a30f1a0",
+            "episode_id": "synthetic-audit",
+            "variant_id": "v",
+            "session_id": "s2",
+            "operation_id": "openclaw-positive:query:p",
+            "bridge_sha256": "69c3a6169ef73e279ebc35d5e7b0e437ed0257d5d59e3fc958afb5ab7d102603"
+          },
+          "artifacts": {
+            "reports/synthetic.txt": "e315d2370075b5c022a1b552774b62ed847aeda2efde7e6fb476fae748e52856"
+          },
+          "deleted_paths": [],
+          "audit_coverage": "direct_file_tools_only; exec and render unsupported",
+          "source": "bridge_workspace_bytes_and_native_tool_trace"
+        },
+        "evidence_locations": []
+      }
+    ],
+    "events": [
+      {
+        "method": "reset_case",
+        "receipt": {
+          "operation_id": "openclaw-positive:reset",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "begin_session",
+        "receipt": {
+          "operation_id": "openclaw-positive:begin:s1",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "observe",
+        "receipt": {
+          "operation_id": "openclaw-positive:observe:o1",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "end_session",
+        "receipt": {
+          "operation_id": "openclaw-positive:end:s1",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "begin_session",
+        "receipt": {
+          "operation_id": "openclaw-positive:begin:s2",
+          "status": "ready",
+          "usage": null
+        }
+      },
+      {
+        "method": "end_session",
+        "receipt": {
+          "operation_id": "openclaw-positive:end:s2",
+          "status": "ready",
+          "usage": null
+        }
+      }
+    ],
+    "cost_records": [
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "offline",
+        "status": "ready",
+        "recorded_at": "2026-10-15T05:06:16.828146+00:00"
+      },
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "offline",
+        "status": "ready",
+        "recorded_at": "2026-10-15T05:06:16.961683+00:00"
+      },
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "offline",
+        "status": "ready",
+        "recorded_at": "2026-10-15T05:06:17.140836+00:00"
+      },
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "offline",
+        "status": "ready",
+        "recorded_at": "2026-10-15T05:06:17.269192+00:00"
+      },
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "offline",
+        "status": "ready",
+        "recorded_at": "2026-10-15T05:06:17.402172+00:00"
+      },
+      {
+        "stage": "read",
+        "usage": null,
+        "cost": null,
+        "execution": "offline",
+        "status": "ok",
+        "recorded_at": "2026-10-15T05:06:17.723758+00:00"
+      },
+      {
+        "stage": "write",
+        "usage": null,
+        "cost": null,
+        "execution": "offline",
+        "status": "ready",
+        "recorded_at": "2026-10-15T05:06:17.986066+00:00"
+      }
+    ],
+    "finished_at": "2026-10-15T05:06:18.122218+00:00"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "process_exit": 0,
+  "attempt_status": "completed",
+  "error": null,
+  "cleanup_error": null,
+  "cleanup_receipts": [
+    {
+      "operation_id": "b0051f56b54043a590fcbb0a3d2922f8",
+      "status": "ready",
+      "usage": null
+    }
+  ],
+  "task_status": [
+    "passed"
+  ],
+  "task_verification": [
+    {
+      "artifacts": {
+        "markers/ready.txt": "c2e3ac47f4a325469c1a2d5f117e463ec943c721986d5d9f09ac4540b7d80526"
+      },
+      "audit_coverage": "direct_file_tools_only; exec and render unsupported",
+      "binding": {
+        "bridge_sha256": "d1e29805c756dd99aff69d2f4a906f52163d87df274000d64acedc99daaf541d",
+        "episode_id": "5668053304ca40ac9ef62563",
+        "namespace": "223c691091f14ffaa424d8cffaeaa15c",
+        "operation_id": "6366116ad6a04202a60653fe3fc8a7e9:306ccc899bda48149ff5506f18853774:query:a076af63e844e732c2fa1d3a",
+        "run": "memobench-native-ng3brepk",
+        "session_id": "d3302b8b37c4d884c5d1d776",
+        "variant_id": "d012611aa89b90909fcea7b9"
+      },
+      "checks": [
+        {
+          "faults": [],
+          "status": "passed"
+        }
+      ],
+      "deleted_paths": [],
+      "faults": [],
+      "source": "bridge_workspace_bytes_and_native_tool_trace",
+      "status": "passed"
+    }
+  ],
+  "prediction_status": [
+    "ok"
+  ],
+  "score_status": [
+    "pending_review"
+  ],
+  "raw_sha256": "b50dee9ddccc571fb4ce9f9a10776d2a10e404da9844185e9e88863553dba1ab",
+  "closed": true,
+  "source_hashes": {
+    "bridge": "d1e29805c756dd99aff69d2f4a906f52163d87df274000d64acedc99daaf541d",
+    "completion_review.py": "15d8728eac8cb05edf832129e2206009790de753131dd97e7b3f94479ddb3dc0",
+    "conversation_loop.py": "3ee4c84af082e69c93fa66b2c9a4169cd196e8a31618b4101aed4bfb83df0823"
+  },
+  "source_unchanged": true
+}

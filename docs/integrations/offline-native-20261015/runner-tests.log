@@ -1,0 +1,16 @@
+test_all_roles_and_no_gold (test_runner_v2.RunnerTests.test_all_roles_and_no_gold) ... ok
+test_cleanup_failure_is_case_failure (test_runner_v2.RunnerTests.test_cleanup_failure_is_case_failure) ... ok
+test_exception_text_is_not_logged (test_runner_v2.RunnerTests.test_exception_text_is_not_logged) ... ok
+test_execution_partitions_are_separate (test_runner_v2.RunnerTests.test_execution_partitions_are_separate) ... ok
+test_future_observation_not_sent_before_probe (test_runner_v2.RunnerTests.test_future_observation_not_sent_before_probe) ... ok
+test_html_escape_and_missing (test_runner_v2.RunnerTests.test_html_escape_and_missing) ... ok
+test_interruption_leaves_running_record_then_restarts_episode (test_runner_v2.RunnerTests.test_interruption_leaves_running_record_then_restarts_episode) ... ok
+test_native_never_uses_reader_and_preserves_sessions (test_runner_v2.RunnerTests.test_native_never_uses_reader_and_preserves_sessions) ... ok
+test_resume_skips_success_retries_failure_and_preserves_attempt (test_runner_v2.RunnerTests.test_resume_skips_success_retries_failure_and_preserves_attempt) ... ok
+test_safe_paths_and_symlinks (test_runner_v2.RunnerTests.test_safe_paths_and_symlinks) ... ok
+test_unknown_write_blocks_query_and_counts_error (test_runner_v2.RunnerTests.test_unknown_write_blocks_query_and_counts_error) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.044s
+
+OK

@@ -1,0 +1,72 @@
+{
+  "scope": "independent primary pre-execution review",
+  "raw_probe_validation": "strict prepare re-derived checks from exported operation evidence, not status string alone",
+  "scope_receipt": "CLI_SCOPE.json",
+  "prepared_cases": 2,
+  "prepared_product_calls": 162,
+  "blockers": [],
+  "all_tests": {
+    "count": 239,
+    "status": "passed",
+    "log": "tests-all.log"
+  },
+  "approval_fingerprint": "e3260d1a75d09157b4fe8391a881e2ca878ae13166d536a9ae0061c80c5593f5",
+  "recipe_sha256": "07c8a8a4166d3a0f888408e64a1a1c6e8de0dfffd4ca94cc66c8bdbbcc236575",
+  "products": {
+    "kylin": {
+      "probe_sha256": "0005fc38a290dad48404eada0a46f164d9cf0943509f3bfef9ebc2788fa9f681",
+      "checks": {
+        "same_session": true,
+        "cross_session": true,
+        "cross_case_no_canary": true,
+        "cross_case_unknown": true,
+        "profile_cross_session": true,
+        "cleanup": true,
+        "file_task": true,
+        "profile_turns_completed": true,
+        "profile_persisted": true,
+        "profile_prompt_injected": true
+      },
+      "exports": [
+        {
+          "path": "kylin/e082d7d1e2284f5b9cb55a49204dd5fe.json",
+          "sha256": "66a9388e5fc18deee7006e5f76879a2214fcb5d1421922270198c07388b48dd9",
+          "closed": true
+        },
+        {
+          "path": "kylin/a6b94745338149ca8df7aa6fa59da072.json",
+          "sha256": "154637181ffcd766482f3be1ccf85b5c62c61d4a9d234a6a031f4b74b8398790",
+          "closed": true
+        },
+        {
+          "path": "kylin/633f648d20df4881967d9dcec01f8ed4.json",
+          "sha256": "14cc2ac3045e05d5c00003f70bca7e114e25bcc9bc31f1805ddc3ca3f611f85d",
+          "closed": true
+        }
+      ]
+    },
+    "openclaw": {
+      "probe_sha256": "24ba02c094ba56101aef8158a9d544f0c8024ef68d23e29d7db8c6580c0c900f",
+      "checks": {
+        "same_session": true,
+        "cross_session": true,
+        "cross_case_no_canary": true,
+        "cross_case_unknown": true,
+        "cleanup": true,
+        "file_task": true
+      },
+      "exports": [
+        {
+          "path": "openclaw/37a2bed7e34e447fb380841a0768e459.json",
+          "sha256": "2885f4f0ed39a221d6b90cc833863ac01743217ce5ad289b84e463d7aca6226e",
+          "closed": true
+        },
+        {
+          "path": "openclaw/7b681ce747744adeaec7e699cac72e53.json",
+          "sha256": "0a4ca4a53f8ad9afdaed6c2aaedb7fc0f5e7cd889892f24282b7a94c924af121",
+          "closed": true
+        }
+      ]
+    }
+  }
+}

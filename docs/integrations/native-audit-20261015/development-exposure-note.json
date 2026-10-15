@@ -1,0 +1,7 @@
+{
+  "story_id": "34b41c4c5a4910ee59758113",
+  "template_id": "archive_delayed_lookup",
+  "exposure": "Initial new approval regression used source structure from first candidate test story before switching to fully synthetic source. No model invocation on this story; this is structure/build exposure, not formal unseen evaluation.",
+  "current_test_source": "fully synthetic-approval-story",
+  "original_data_changed": false
+}

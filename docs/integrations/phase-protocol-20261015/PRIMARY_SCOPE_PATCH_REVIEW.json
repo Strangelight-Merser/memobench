@@ -1,0 +1,17 @@
+{
+  "reviewer": "primary_agent",
+  "patch_sha256": "74e0e09c98d6d270cbc84198a50f40f80e13ac1a064058377eb93e99187f306f",
+  "status": "approved_for_deployment_and_bounded_real_validation",
+  "trusted_scope": "agent.ephemeral_system_prompt at both native call sites",
+  "scope_only_completed": "rejected through existing ReviewValidationError",
+  "native_review_enabled": true,
+  "scoring_changed": false,
+  "preserved_files_verified": 112,
+  "model_semantics": "not yet verified",
+  "validation_sequence": [
+    "VM native venv eight offline tests and compile",
+    "Kylin phase smoke 2 product calls",
+    "Kylin complete integration probe 7 product calls",
+    "fresh complete two-product CLI run 162 product calls after gates pass"
+  ]
+}

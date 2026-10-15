@@ -1,0 +1,17 @@
+▶ running pytest with 4 workers, hermetic env, in /home/mb/memobench-native/agent-runtime
+  (TZ=UTC LANG=C.UTF-8 PYTHONHASHSEED=0; all credential env vars unset)
+============================= test session starts ==============================
+platform linux -- Python 3.12.2, pytest-9.1.1, pluggy-1.6.0
+rootdir: /home/mb/memobench-native/agent-runtime
+configfile: pyproject.toml
+plugins: split-0.11.0, xdist-3.8.0, anyio-4.15.1, timeout-2.4.0, asyncio-1.4.0
+timeout: 30.0s
+timeout method: signal
+timeout func_only: False
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+created: 4/4 workers
+4 workers [115 items]
+
+........................................................................ [ 62%]
+...........................................                              [100%]
+============================= 115 passed in 7.00s ==============================

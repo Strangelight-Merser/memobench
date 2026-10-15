@@ -1,0 +1,1 @@
+{"product": "openclaw", "status": "passed", "checks": {"same_session": true, "cross_session": true, "cross_case_no_canary": true, "cross_case_unknown": true, "cleanup": true, "file_task": true}, "namespaces": ["b8994fecead14167b1bfb491c105e6c5", "ea36de2bf13c4cdd891fa2f862e341c1"]}
