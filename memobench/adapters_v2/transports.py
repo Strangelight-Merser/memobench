@@ -143,7 +143,8 @@ class HTTPTransport:
                     raise TransportError("response_too_large")
                 return decode_response(raw)
         except urllib.error.HTTPError as exc:
-            exc.close()
+            if exc.fp is not None:
+                exc.close()
             raise TransportError("http_error") from None
         except (TimeoutError, urllib.error.URLError, OSError):
             raise TransportError("transport_uncertain") from None

@@ -70,7 +70,7 @@ SAVE
 EXPORT
 $('export').onclick();
 """.replace('INPUT',json.dumps(dataset,ensure_ascii=False)).replace('SAVE',save).replace('EXPORT',export)
-        completed=subprocess.run(['node','-e',harness],capture_output=True,text=True,check=True)
+        completed=subprocess.run(['node'],input=harness,capture_output=True,text=True,check=True)
         decisions=self.root/'downloaded-review.json';decisions.write_text(completed.stdout)
         license=json.loads((package/'license-approval.json').read_text())
         license.update(status='accepted',license_id='CC-BY-4.0',reviewer='SYNTHETIC-TEST-SIGNER',reviewed_at='2026-01-01T00:00:00Z',reason='synthetic fixture')

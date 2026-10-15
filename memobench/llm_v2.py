@@ -311,7 +311,8 @@ class LLMClient:
                             delay = (parsedate_to_datetime(retry_after) - datetime.now(timezone.utc)).total_seconds()
                         except (ValueError, TypeError):
                             pass
-                exc.close()
+                if exc.fp is not None:
+                    exc.close()
             except (TimeoutError, urllib.error.URLError, OSError) as exc:
                 timed_out = isinstance(exc, TimeoutError) or isinstance(getattr(exc, "reason", None), TimeoutError)
                 result = self._result("timeout" if timed_out else "error", "timeout" if timed_out else "transport_error")
